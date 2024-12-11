@@ -1,0 +1,98 @@
+{
+  "_id": "HWLD3zGFBIjCDATo",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Planar Sidestep",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A creature hits you with a melee Strike.</p>\n<hr />\n<p>You shift your body briefly between planes, reducing the damage from your foe's attack. You gain resistance 25 to all damage against the triggering attack. Observers simply see you shimmer with elemental energy for a moment, just as the attack lands.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "planar-sidestep",
+        "toggleable": true
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "planar-sidestep"
+        ],
+        "type": "all-damage",
+        "value": 25
+      }
+    ],
+    "slug": "planar-sidestep",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "arcane",
+        "ardande",
+        "concentrate",
+        "naari",
+        "oread",
+        "suli",
+        "sylph",
+        "talos",
+        "undine"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "frequency": {
+      "max": 1,
+      "per": "day"
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.HWLD3zGFBIjCDATo"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.HWLD3zGFBIjCDATo",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!HWLD3zGFBIjCDATo"
+}

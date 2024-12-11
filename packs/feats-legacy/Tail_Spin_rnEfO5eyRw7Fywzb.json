@@ -1,0 +1,97 @@
+{
+  "_id": "rnEfO5eyRw7Fywzb",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Tail Spin",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You excel at using your tail as a weapon to upend your foes. Attempt a single Athletics check to @UUID[Compendium.pf2e.action-macros.Macro.gRj7xUfcpUZQLrOC]{Trip: Athletics} up to two adjacent creatures. If you roll a success against a target, you get a critical success against that target instead.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:trip",
+          "tail-spin"
+        ],
+        "selector": "athletics",
+        "type": "skill"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "tail-spin",
+        "toggleable": true
+      }
+    ],
+    "slug": "tail-spin",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "goblin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "tailed goblin heritage"
+        },
+        {
+          "value": "Hard Tail"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.rnEfO5eyRw7Fywzb"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.rnEfO5eyRw7Fywzb",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!rnEfO5eyRw7Fywzb"
+}

@@ -1,0 +1,85 @@
+{
+  "_id": "MROG87PQmuBTdCaB",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Jelly Body",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Some of the ooze that surrounded you made its way permanently into parts of your body, turning you soft to the touch and semitransparent enough to show bones. You gain resistance equal to your level to precision damage and damage from critical hits. You can submerge up to 1 Bulk of items within your body by sticking them inside of yourself. While the protrusion of the item is still visible from the outside, the items don't count toward making you encumbered or your maximum Bulk while stored in you. You can @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} to retrieve or store an item submerged into your body.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": [
+          "critical-hits",
+          "precision"
+        ],
+        "value": "@actor.level"
+      }
+    ],
+    "slug": "jelly-body",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "aftermath",
+        "magical"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "You've been reduced to 0 Hit Points while engulfed by an ooze."
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.MROG87PQmuBTdCaB"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.MROG87PQmuBTdCaB",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!MROG87PQmuBTdCaB"
+}

@@ -1,0 +1,79 @@
+{
+  "_id": "mnhpCk9dIwMuFegM",
+  "img": "systems/pf2e/icons/features/ancestry/paddler-shoony.webp",
+  "name": "Paddler Shoony",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You hail from shoonies who have lived long and successfully among the reeds and cattails of swamps and marshes, and have adapted to the challenges of living near waterlogged areas. You ignore difficult terrain and greater difficult terrain from bogs. When you roll a success to @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim}, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "action:swim"
+        ],
+        "selector": "athletics",
+        "text": "When you roll a success to Swim, you get a critical success instead.",
+        "title": "{item|name}"
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:swim"
+        ],
+        "selector": "athletics",
+        "type": "skill"
+      }
+    ],
+    "slug": "paddler-shoony",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #153: Life's Long Shadows",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Shoony",
+      "slug": "shoony",
+      "uuid": "Compendium.pf2e.ancestries.Item.q6rsqYARyOGXZA8F"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.mnhpCk9dIwMuFegM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.mnhpCk9dIwMuFegM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!mnhpCk9dIwMuFegM"
+}

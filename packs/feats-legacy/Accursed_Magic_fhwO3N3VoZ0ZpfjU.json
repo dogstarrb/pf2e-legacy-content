@@ -1,0 +1,82 @@
+{
+  "_id": "fhwO3N3VoZ0ZpfjU",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Accursed Magic",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When the curse within you spills out, you can lay curses on others and claim them for yourself with ease. You can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.5OcZ3HBkrRFhSWCz]{Claim Curse}</em>. At 10th level, you can also cast <em>@UUID[Compendium.pf2e.spells-srd.Item.gfKhtVsXF3HKSdmY]{Seal Fate}</em>, and at 12th level, you can also cast <em>@UUID[Compendium.pf2e.spells-srd.Item.8THDHP0UC7SgOYYF]{Inevitable Disaster}</em>. You can cast these spells once per day as occult innate spells, but only while within your curse maelstrom state. If you couldn't already cast occult spells, these spells use Wisdom as your spellcasting ability, and you become trained in spell attack rolls and spell DCs for occult spells.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.spellcasting.rank",
+        "value": 1
+      }
+    ],
+    "slug": "accursed-magic",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Curse Maelstrom Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.fhwO3N3VoZ0ZpfjU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.fhwO3N3VoZ0ZpfjU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fhwO3N3VoZ0ZpfjU"
+}

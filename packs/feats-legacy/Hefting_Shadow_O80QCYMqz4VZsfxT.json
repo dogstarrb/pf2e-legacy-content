@@ -1,0 +1,88 @@
+{
+  "_id": "O80QCYMqz4VZsfxT",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Hefting Shadow",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your shadow can contain objects. You can Interact with your shadow to store or retrieve objects, just like you would a mundane container (meaning you spend two Interact actions total to store and then retrieve the object, for example). Your shadow can contain 2 Bulk of objects, which don't count toward the Bulk you're carrying. The items remain solid but take on a shadowy patina while stored this way. Though the items are in your shadow and can be detected normally, you gain a +2 circumstance bonus to Stealth checks to Conceal the Objects unless someone knows to check your shadow for items.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:conceal-an-object",
+          "hefting-shadow-items"
+        ],
+        "selector": "stealth",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "hefting-shadow",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fetchling",
+        "occult",
+        "shadow"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Clever Shadow"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.O80QCYMqz4VZsfxT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.O80QCYMqz4VZsfxT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!O80QCYMqz4VZsfxT"
+}

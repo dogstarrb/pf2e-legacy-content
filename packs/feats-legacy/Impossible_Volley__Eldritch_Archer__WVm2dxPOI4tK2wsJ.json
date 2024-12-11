@@ -1,0 +1,86 @@
+{
+  "_id": "WVm2dxPOI4tK2wsJ",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Impossible Volley (Eldritch Archer)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You are wielding a ranged weapon with the volley trait and reload 0</p>\n<hr />\n<p>You fire a volley at all foes in an area. Make one Strike with a -2 penalty against each enemy within a 10-foot-radius burst centered at or beyond your weapon's volley range. Roll the damage only once for all targets.</p>\n<p>Each attack counts toward your multiple attack penalty, but do not increase your penalty until you have made all your attacks.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Impossible Volley",
+        "predicate": [
+          "ranged",
+          "impossible-volley",
+          "volley-30",
+          "reload-0"
+        ],
+        "selector": "attack",
+        "value": -2
+      }
+    ],
+    "slug": "impossible-volley-eldritch-archer",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "flourish",
+        "open"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 3
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.WVm2dxPOI4tK2wsJ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.WVm2dxPOI4tK2wsJ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WVm2dxPOI4tK2wsJ"
+}

@@ -1,0 +1,129 @@
+{
+  "_id": "4Sg6ZngswhphxiBD",
+  "img": "systems/pf2e/icons/spells/swallow-light.webp",
+  "name": "Swallow Light",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You draw magical light into your open mouth, consuming it and turning its essence into fuel for a gout of life-draining shadows. Attempt a counteract check against the light effect. If you successfully counteract it, you gain a breath weapon of chilling shadows you can use until the spell ends. Exhaling the breath is a two-action activity. The breath weapon is a 15-foot cone and deals 1d6 cold damage plus 1d6 negative damage. Creatures in the area can attempt a basic Reflex save against your spell DC. Once activated, you can't use the breath weapon again for [[/r 1d4 #Rounds]] rounds.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> Increase the damage of the breath weapon by 1d6 cold damage and 1d6 negative damage.</p>"
+    },
+    "rules": [],
+    "slug": "swallow-light",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "cold",
+        "concentrate",
+        "darkness",
+        "manipulate",
+        "void"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "arcane",
+        "divine",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder #181: Zombie Feast",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 magical light effect"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": {
+      "type": "cone",
+      "value": 15
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "ab3ptdpkosjwwhas": {
+        "applyMod": false,
+        "formula": "1d6",
+        "type": "cold",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      },
+      "ykcgd1y626dthnzt": {
+        "applyMod": false,
+        "formula": "1d6",
+        "type": "void",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": true,
+    "heightening": {
+      "damage": {
+        "ab3ptdpkosjwwhas": "1d6",
+        "ykcgd1y626dthnzt": "1d6"
+      },
+      "interval": 2,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.4Sg6ZngswhphxiBD"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.4Sg6ZngswhphxiBD",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4Sg6ZngswhphxiBD"
+}

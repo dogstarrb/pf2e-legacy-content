@@ -1,0 +1,119 @@
+{
+  "_id": "hoX2sJiYtJrSp6BH",
+  "img": "systems/pf2e/icons/equipment/consumables/other-consumables/psychic-warding-bracelet.webp",
+  "name": "Psychic Warding Bracelet",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This set of reflective metal wires takes 10 minutes to properly tie along the wrist's energy meridians, then repels attempts at mental manipulation. You gain a +2 item bonus to your next save against a mental effect after tying on the bracelet. After this save, the metal strands tarnish and fall off (possibly alerting the wearer or others that their mind has been tampered with).</p>\n<p>You can remove the bracelet with an Interact action, but doing so breaks the bracelet's alignment and requires you to spend another 10 minutes to carefully tie it back on.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Psychic Warding Braclet (next save vs. mental)",
+        "predicate": [
+          "mental"
+        ],
+        "selector": "saving-throw",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "psychic-warding-bracelet",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "consumable"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Pathfinder Society Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 10
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "other",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "autoDestroy": true
+    },
+    "damage": null,
+    "usage": {
+      "value": "worn"
+    },
+    "stackGroup": null,
+    "spell": null
+  },
+  "type": "consumable",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.hoX2sJiYtJrSp6BH"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.hoX2sJiYtJrSp6BH",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!hoX2sJiYtJrSp6BH"
+}

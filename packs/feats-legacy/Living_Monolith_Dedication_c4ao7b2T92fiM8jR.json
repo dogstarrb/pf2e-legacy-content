@@ -1,0 +1,86 @@
+{
+  "_id": "c4ao7b2T92fiM8jR",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Living Monolith Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Access</strong> You are from the Golden Road region.</p>\n<hr />\n<p>You've begun to inscribe a magical stone called a <em>ka stone</em> that you will some day tie to your soul. You gain knowledge of Ancient Osirion and a connection to your nascent <em>ka stone</em>. If you fail a recovery check while dying, your dying condition does not increase; if you critically fail, your dying condition increases by only 1. You become trained in Ancient Osirion Lore, or expert if you were already trained.</p>\n<hr />\n<p><strong>Special</strong> You cannot select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.PpoPRKuwanrnhd0Y]{Living Monolith} archetype.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.livingMonolith.archetypeFeatCount",
+        "value": 1
+      }
+    ],
+    "slug": "living-monolith-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: World Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Ancient Osiriani and Sphinx languages"
+        },
+        {
+          "value": "trained in Crafting"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.c4ao7b2T92fiM8jR"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.c4ao7b2T92fiM8jR",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!c4ao7b2T92fiM8jR"
+}

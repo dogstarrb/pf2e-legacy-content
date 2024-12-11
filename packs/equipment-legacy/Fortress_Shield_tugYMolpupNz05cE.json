@@ -1,0 +1,126 @@
+{
+  "_id": "tugYMolpupNz05cE",
+  "img": "icons/equipment/shield/wardoor-wooden-boss-brown.webp",
+  "name": "Fortress Shield",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Also known as portable walls, these thick and heavy shields are slightly larger than tower shields. Like tower shields, they're typically made from wood reinforced with metal, but many are made from larger amounts of metal or even stone.</p>"
+    },
+    "rules": [
+      {
+        "domain": "ac",
+        "key": "RollOption",
+        "option": "fortress-shield",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Fortress Shield Cover",
+        "predicate": [
+          "self:effect:cover",
+          "self:shield:equipped",
+          "self:shield:raised",
+          "fortress-shield"
+        ],
+        "selector": "ac",
+        "value": 1
+      }
+    ],
+    "slug": "fortress-shield",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "hefty-2"
+      ],
+      "rarity": "common",
+      "integrated": null
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "quantity": 1,
+    "baseItem": "fortress-shield",
+    "bulk": {
+      "value": 5
+    },
+    "hp": {
+      "value": 24,
+      "max": 24
+    },
+    "hardness": 6,
+    "price": {
+      "value": {
+        "gp": 20
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "acBonus": 3,
+    "speedPenalty": -10,
+    "runes": {
+      "potency": 0,
+      "resilient": 0,
+      "property": [],
+      "reinforcing": 0
+    },
+    "subitems": []
+  },
+  "type": "shield",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.tugYMolpupNz05cE"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.tugYMolpupNz05cE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!tugYMolpupNz05cE"
+}

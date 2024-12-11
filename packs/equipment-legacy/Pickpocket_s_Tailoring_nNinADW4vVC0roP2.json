@@ -1,0 +1,110 @@
+{
+  "_id": "nNinADW4vVC0roP2",
+  "img": "systems/pf2e/icons/equipment/other/attached-items/pickpockets-tailoring.webp",
+  "name": "Pickpocket's Tailoring",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Pickpocket's tailoring modifies an existing outfit by adding concealed interior pockets and strategically opened seams for hiding small objects inside the lining. You gain a +1 item bonus to Stealth checks to Conceal an Object of light Bulk or less in the pockets. When you get a failure (but not a critical failure, which works as normal) on a Stealth check to Conceal such an Object, observers know you're concealing an object somewhere, but they don't find the object unless they succeed at a @Check[type:perception|dc:20|name:Find a Pickpocket Pocket|showDC:all] check to locate the seams in the garment.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Conceal an item (L bulk or less) in a Pickpocket's Pocket",
+        "predicate": [
+          "action:conceal-an-object"
+        ],
+        "selector": "stealth",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "pickpockets-tailoring",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 100
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "sewn-into-clothing"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.nNinADW4vVC0roP2"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.nNinADW4vVC0roP2",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!nNinADW4vVC0roP2"
+}

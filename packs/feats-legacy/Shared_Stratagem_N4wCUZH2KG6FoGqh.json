@@ -1,0 +1,85 @@
+{
+  "_id": "N4wCUZH2KG6FoGqh",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Shared Stratagem",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The plans you make include your allies as well as yourself. When you hit a creature with an attack on which you substituted your attack roll due to @UUID[Compendium.pf2e.actionspf2e.Item.m0f2B7G9eaaTmhFL]{Devise a Strategem}, designate one ally.</p>\n<p>The creature you hit is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to that ally on the next attack the designated ally makes against that creature before the start of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "target:mark:devise-a-stratagem"
+        ],
+        "selector": "strike-attack-roll",
+        "text": "PF2E.SpecificRule.Investigator.SharedStratagem.Note",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "shared-stratagem",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "investigator"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.N4wCUZH2KG6FoGqh"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.N4wCUZH2KG6FoGqh",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!N4wCUZH2KG6FoGqh"
+}

@@ -1,0 +1,94 @@
+{
+  "_id": "tlft5vzk66iWCVRq",
+  "img": "icons/magic/water/barrier-ice-shield.webp",
+  "name": "Effect: Safeguard Soul",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +2 status bonus to saving throws against death effects, possession effects, and effects that attempt to manipulate or steal your soul.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "death",
+              "possession",
+              "manipulate-soul"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "domain": "saving-throw",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.SoulWarden.SafeguardSoul.Label",
+        "option": "manipulate-soul",
+        "toggleable": true
+      }
+    ],
+    "slug": "effect-safeguard-soul",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.tlft5vzk66iWCVRq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.tlft5vzk66iWCVRq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!tlft5vzk66iWCVRq"
+}

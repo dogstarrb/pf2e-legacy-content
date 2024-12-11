@@ -1,0 +1,115 @@
+{
+  "_id": "weYZzyMmlCIC2TZt",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Grasping Reach",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can extend a tangle of vines or tendrils to support your arms and extend your reach. When you wield a melee weapon that requires two hands, doesn't have reach, and deals at least 1d6 damage, you can change between a typical two-handed grip and an extended two-handed grasp using an Interact action. Weapons wielded in your extended grasp gain reach of 10 feet. This grasp is less stable and powerful than a typical grip, reducing the weapon's damage die by 1 step.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "grasping-reach",
+        "toggleable": true
+      },
+      {
+        "definition": [
+          "item:melee",
+          "item:usage:hands:2",
+          {
+            "nor": [
+              "item:damage:die:faces:4",
+              "item:trait:reach"
+            ]
+          }
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          "grasping-reach"
+        ],
+        "property": "weapon-traits",
+        "value": "reach"
+      },
+      {
+        "key": "DamageDice",
+        "override": {
+          "downgrade": true
+        },
+        "predicate": [
+          "item:melee",
+          "item:usage:hands:2",
+          "grasping-reach",
+          {
+            "nor": [
+              "item:traits:reach",
+              "item:damage:die:faces:4"
+            ]
+          }
+        ],
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "grasping-reach",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "leshy"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.weYZzyMmlCIC2TZt"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.weYZzyMmlCIC2TZt",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!weYZzyMmlCIC2TZt"
+}

@@ -1,0 +1,77 @@
+{
+  "_id": "BXrnQ8qKf09f3spc",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Ambush Bladderwort",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You plant the seed of a giant bladderwort in an unoccupied square of ground or water within 30 feet. It lasts for 10 minutes. Using this impulse again ends any previous one. If a creature enters its square, the seed erupts into a voluminous, translucent plant that seals tight around the triggering creature and fills with water. Unless the creature succeeds at a @Check[type:reflex|dc:resolve(@actor.system.proficiencies.classDCs.kineticist.dc)] save against your class DC, it's @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} within the bladderwort and must hold its breath or begin drowning. The @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC is also your class DC. The plant has AC 10 and 50 Hit Points.</p>\n<p>If a creature dies inside it, the plant shrinks down, converting itself and the remains into a watery fruit. A creature can eat this consumable to regain 1d8+4 HP, after which that creature is temporarily immune for 10 minutes. This fruit rots after 1 hour.</p>\n<hr />\n<p><strong>Level (+4)</strong> The bladderwort's HP increase by 25 and the fruit's healing increases by 1d8+4.</p>\n<p>[[/r ((floor((max(4,@actor.level)-4)/4)+1)d8+(floor((max(4,@actor.level)-4)/4)*4+4))[healing]]]{Leveled HP}</p>"
+    },
+    "rules": [],
+    "slug": "ambush-bladderwort",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "composite",
+        "impulse",
+        "kineticist",
+        "plant",
+        "primal",
+        "water",
+        "wood"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 3
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.BXrnQ8qKf09f3spc"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.BXrnQ8qKf09f3spc",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BXrnQ8qKf09f3spc"
+}

@@ -1,0 +1,79 @@
+{
+  "_id": "C1GAlZ6Gmmw0QIJN",
+  "img": "icons/magic/life/cross-beam-green.webp",
+  "name": "Spell Effect: Hymn of Healing",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.gSUQlTDYoLDGAsCP]{Hymn of Healing}</em></p>\n<p>Your divine singing mends wounds and provides a temporary respite from harm. The target gains fast healing 2. When you Cast the Spell and the first time each round you Sustain the Spell, the target gains 2 temporary Hit Points, which last for 1 round.</p>"
+    },
+    "rules": [
+      {
+        "key": "FastHealing",
+        "value": "@item.level * 2"
+      },
+      {
+        "key": "TempHP",
+        "value": "@item.level * 2"
+      }
+    ],
+    "slug": "spell-effect-hymn-of-healing",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 4,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.C1GAlZ6Gmmw0QIJN"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 10800000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.C1GAlZ6Gmmw0QIJN",
+    "duplicateSource": null
+  },
+  "_key": "!items!C1GAlZ6Gmmw0QIJN"
+}

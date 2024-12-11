@@ -1,0 +1,84 @@
+{
+  "_id": "1newzNV5nkLvZ9KE",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Handy with your Paws",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +1 circumstance bonus to Crafting checks to @UUID[Compendium.pf2e.actionspf2e.Item.bT3skovyLUtP22ME]{Repair} non-magical items, and you don't need a @UUID[Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX]{Repair Kit} for such repairs as long as you have any amount of junk, spare parts, or debris at your disposal.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:repair",
+          {
+            "not": "target:trait:magical"
+          }
+        ],
+        "selector": "crafting",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "handy-with-your-paws",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "shoony"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #153: Life's Long Shadows",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.1newzNV5nkLvZ9KE"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.1newzNV5nkLvZ9KE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1newzNV5nkLvZ9KE"
+}

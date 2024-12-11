@@ -1,0 +1,92 @@
+{
+  "_id": "tNjimcyUwn8afeH6",
+  "img": "systems/pf2e/icons/spells/gravity-weapon.webp",
+  "name": "Spell Effect: Gravity Weapon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.IWUe32Y5k2QFd7YQ]{Gravity Weapon}</em> .</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "label": "First weapon strike this round",
+        "option": "gravity-weapon",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "gravity-weapon",
+          {
+            "not": "item:category:unarmed"
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "gravity-weapon",
+        "type": "status",
+        "value": "@weapon.system.damage.dice * 2"
+      }
+    ],
+    "slug": "spell-effect-gravity-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.tNjimcyUwn8afeH6"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 40700000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.tNjimcyUwn8afeH6",
+    "duplicateSource": null
+  },
+  "_key": "!items!tNjimcyUwn8afeH6"
+}

@@ -1,0 +1,161 @@
+{
+  "_id": "UEqntGzFrFA7ncUO",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Aerial Piledriver",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You have a creature @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<hr />\n<p>Heaving both yourself and your opponent into the air, you bring them crashing to the ground. Make an unarmed melee Strike against the creature you have grabbed or restrained. This Strike deals 1d6 additional damage per weapon damage die, and it has the following additional effects on a success, failure, and critical failure.</p>\n<p><strong>Success</strong> The target lands @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Failure</strong> You lose your grip on the target, and it is no longer grabbed or restrained by you.</p>\n<p><strong>Critical Failure</strong> You lose both your grip on the target and your balance. You fall prone, and the target is no longer grabbed or restrained by you.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "aerial-piledriver",
+        "toggleable": true
+      },
+      {
+        "diceNumber": "@weapon.system.damage.dice",
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "predicate": [
+          "aerial-piledriver",
+          "item:category:unarmed",
+          "item:melee",
+          {
+            "or": [
+              "target:condition:grabbed",
+              "target:condition:restrained"
+            ]
+          }
+        ],
+        "selector": "strike-damage"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess",
+          "success"
+        ],
+        "predicate": [
+          "aerial-piledriver",
+          "item:category:unarmed",
+          "item:melee",
+          {
+            "or": [
+              "target:condition:grabbed",
+              "target:condition:restrained"
+            ]
+          }
+        ],
+        "selector": "strike-attack-roll",
+        "text": "PF2E.SpecificRule.AerialPiledriver.SuccessText",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "failure"
+        ],
+        "predicate": [
+          "aerial-piledriver",
+          "item:category:unarmed",
+          "item:melee",
+          {
+            "or": [
+              "target:condition:grabbed",
+              "target:condition:restrained"
+            ]
+          }
+        ],
+        "selector": "strike-attack-roll",
+        "text": "PF2E.SpecificRule.AerialPiledriver.FailureText",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalFailure"
+        ],
+        "predicate": [
+          "aerial-piledriver",
+          "item:category:unarmed",
+          "item:melee",
+          {
+            "or": [
+              "target:condition:grabbed",
+              "target:condition:restrained"
+            ]
+          }
+        ],
+        "selector": "strike-attack-roll",
+        "text": "PF2E.SpecificRule.AerialPiledriver.CriticalFailureText",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "aerial-piledriver",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "attack"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Wrestler Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.UEqntGzFrFA7ncUO"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.UEqntGzFrFA7ncUO",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UEqntGzFrFA7ncUO"
+}

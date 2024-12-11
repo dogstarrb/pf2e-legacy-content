@@ -1,0 +1,119 @@
+{
+  "_id": "enPAJ1oSDutts7ic",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Deadly Aim",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You aim for your prey's weak spots, making your shot more challenging but dealing more damage if you hit.</p>\n<p>Make a ranged Strike against your hunted prey at a -2 penalty. You gain a +4 circumstance bonus to damage on that Strike. This bonus increases to +6 at 11th level and +8 at 15th level.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Use Deadly Aim",
+        "option": "deadly-aim",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "deadly-aim"
+        ],
+        "selector": "attack",
+        "type": "circumstance",
+        "value": -2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "deadly-aim"
+        ],
+        "selector": "strike-damage",
+        "type": "circumstance",
+        "value": {
+          "brackets": [
+            {
+              "end": 10,
+              "start": 8,
+              "value": 4
+            },
+            {
+              "end": 14,
+              "start": 11,
+              "value": 6
+            },
+            {
+              "start": 15,
+              "value": 8
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "deadly-aim",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "open",
+        "ranger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "weapon specialization"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.enPAJ1oSDutts7ic"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.enPAJ1oSDutts7ic",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!enPAJ1oSDutts7ic"
+}

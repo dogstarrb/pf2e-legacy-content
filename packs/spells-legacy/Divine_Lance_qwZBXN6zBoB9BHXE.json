@@ -1,0 +1,204 @@
+{
+  "_id": "qwZBXN6zBoB9BHXE",
+  "img": "systems/pf2e/icons/spells/divine-lance.webp",
+  "name": "Divine Lance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You unleash a beam of divine energy. Choose an alignment your deity has (chaotic, evil, good, or lawful). You can't cast this spell if you don't have a deity or if your deity is true neutral. Make a ranged spell attack roll against the target's AC. On a hit, the target takes damage of the chosen alignment type equal to 1d4 + your spellcasting ability modifier (double damage on a critical hit). The spell gains the trait of the alignment you chose.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
+    },
+    "rules": [],
+    "slug": "divine-lance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "cantrip",
+        "concentrate",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "divine"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": true,
+        "formula": "1d4",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d4"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {
+      "1v6yi847ElANU2Ia": {
+        "_id": "1v6yi847ElANU2Ia",
+        "name": "Divine Lance (Chaotic)",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "damage": {
+            "0": {
+              "type": "spirit",
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "traits": {
+            "value": [
+              "attack",
+              "cantrip",
+              "chaotic"
+            ]
+          },
+          "defense": null
+        }
+      },
+      "7mtAXSD4Zqbb7tiL": {
+        "_id": "7mtAXSD4Zqbb7tiL",
+        "name": "Divine Lance (Lawful)",
+        "overlayType": "override",
+        "sort": 4,
+        "system": {
+          "damage": {
+            "0": {
+              "type": "spirit",
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "traits": {
+            "value": [
+              "attack",
+              "cantrip",
+              "lawful"
+            ]
+          },
+          "defense": null
+        }
+      },
+      "dssJKKcOoERlChM7": {
+        "_id": "dssJKKcOoERlChM7",
+        "name": "Divine Lance (Evil)",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "damage": {
+            "0": {
+              "type": "spirit",
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "traits": {
+            "value": [
+              "attack",
+              "cantrip",
+              "evil"
+            ]
+          },
+          "defense": null
+        }
+      },
+      "m8s40UP1KhhWkUSc": {
+        "_id": "m8s40UP1KhhWkUSc",
+        "name": "Divine Lance (Good)",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "damage": {
+            "0": {
+              "type": "spirit",
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "traits": {
+            "value": [
+              "attack",
+              "cantrip",
+              "good"
+            ]
+          },
+          "defense": null
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.qwZBXN6zBoB9BHXE"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.qwZBXN6zBoB9BHXE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!qwZBXN6zBoB9BHXE"
+}

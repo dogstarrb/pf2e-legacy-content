@@ -1,0 +1,140 @@
+{
+  "_id": "B7RMnrHwQHlezlJT",
+  "img": "systems/pf2e/icons/features/classes/gymnast-style.webp",
+  "name": "Gymnast",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You reposition, maneuver, and bewilder your foes with daring feats of physical prowess.</p>\n<p>You are trained in Athletics. You gain @UUID[Compendium.pf2e.classfeatures.Item.LzYi0OuOoypNb6jd]{Panache} during an encounter whenever you successfully @UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} a foe.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "self:effect:panache",
+          {
+            "or": [
+              "action:grapple",
+              "action:shove",
+              "action:trip"
+            ]
+          }
+        ],
+        "selector": "athletics",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.athletics.rank",
+        "predicate": [
+          "class:swashbuckler"
+        ],
+        "value": 1
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "predicate": [
+          {
+            "or": [
+              "action:grapple",
+              "action:shove",
+              "action:trip"
+            ]
+          },
+          {
+            "not": "self:effect:panache"
+          }
+        ],
+        "selector": "athletics",
+        "text": "PF2E.SpecificRule.Swashbuckler.Panache",
+        "title": "{item|name}"
+      },
+      {
+        "hideIfDisabled": true,
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.ExemplaryFinisher.Name",
+        "predicate": [
+          "finisher",
+          "feature:exemplary-finisher",
+          {
+            "or": [
+              "target:condition:grabbed",
+              "target:condition:restrained",
+              "target:condition:prone"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "type": "circumstance",
+        "value": "2* @weapon.system.damage.dice"
+      }
+    ],
+    "slug": "gymnast",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "swashbuckler-style"
+      ],
+      "value": [
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.B7RMnrHwQHlezlJT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.B7RMnrHwQHlezlJT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!B7RMnrHwQHlezlJT"
+}

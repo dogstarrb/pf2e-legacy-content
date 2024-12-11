@@ -1,0 +1,152 @@
+{
+  "_id": "w5koctOVrEcpxTIq",
+  "img": "icons/commodities/treasure/statuette-gargoyle-green-gold.webp",
+  "name": "Bloodline: Demonic",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Demons debase all they touch. One of your ancestors fell victim to their corruption, and you are burdened by that sin.</p>\n<p><strong>Spell List</strong> divine</p>\n<p><strong>Bloodline Skills</strong> Intimidation, Religion</p>\n<p><strong>Granted Spells</strong> cantrip <em>@UUID[Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt]{Acid Splash}</em>, 1st: <em>@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}</em>, 2nd: <em>@UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Enlarge}</em>, 3rd: <em>@UUID[Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3]{Slow}</em>, 4th: <em>@UUID[Compendium.pf2e.spells-srd.Item.hVU9msO9yGkxKZ3J]{Divine Wrath}</em>, 5th: <em>@UUID[Compendium.pf2e.spells-srd.Item.vJuaxTd6q11OjGqA]{Abyssal Plague}</em>, 6th: <em>@UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{Disintegrate}</em>, 7th: <em>@UUID[Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C]{Divine Decree}</em>, 8th: <em>@UUID[Compendium.pf2e.spells-srd.Item.nsQvjNyg4Whw2mek]{Divine Aura}</em>, 9th: <em>@UUID[Compendium.pf2e.spells-srd.Item.4WS7HrFjwNvTn8T2]{Implosion}</em></p>\n<p><strong>Bloodline Spells</strong> initial: <em>@UUID[Compendium.pf2e.spells-srd.Item.SdXFiQ4Py8761sNO]{Glutton's Jaw}</em>, advanced: <em>@UUID[Compendium.pf2e.spells-srd.Item.iQD8OhhkwhvD8Blw]{Swamp of Sloth}</em>, greater: <em>@UUID[Compendium.pf2e.spells-srd.Item.crF4g9jRN1y84MSD]{Abyssal Wrath}</em></p>\n<p><strong>Blood Magic</strong> The corruption of sin weakens a target's defenses or makes you more imposing. Either a target takes a -1 status penalty to AC for 1 round, or you gain a +1 status bonus to Intimidation checks for 1 round.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.aKRo5TIhUtu0kyEr]{Effect: Demonic Blood Magic (Self)}, @UUID[Compendium.pf2e.feat-effects.Item.yfbP64r4a9e5oyli]{Effect: Demonic Blood Magic (Target)}</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.intimidation.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.religion.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.aliases.sorcerer",
+        "priority": 39,
+        "value": "divine"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.sorcerer.bloodline.spells",
+        "value": {
+          "1st": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D",
+            "slug": "fear"
+          },
+          "2nd": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV",
+            "slug": "enlarge"
+          },
+          "3rd": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3",
+            "slug": "slow"
+          },
+          "4th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.hVU9msO9yGkxKZ3J",
+            "slug": "divine-wrath"
+          },
+          "5th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.vJuaxTd6q11OjGqA",
+            "slug": "abyssal-plague"
+          },
+          "6th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik",
+            "slug": "disintegrate"
+          },
+          "7th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C",
+            "slug": "divine-decree"
+          },
+          "8th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.nsQvjNyg4Whw2mek",
+            "slug": "divine-aura"
+          },
+          "9th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.4WS7HrFjwNvTn8T2",
+            "slug": "implosion"
+          },
+          "advanced": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.iQD8OhhkwhvD8Blw",
+            "slug": "swamp-of-sloth"
+          },
+          "cantrip": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt",
+            "slug": "acid-splash"
+          },
+          "greater": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.crF4g9jRN1y84MSD",
+            "slug": "abyssal-wrath"
+          },
+          "initial": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.SdXFiQ4Py8761sNO",
+            "slug": "gluttons-jaw"
+          }
+        }
+      }
+    ],
+    "slug": "bloodline-demonic",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "sorcerer-bloodline"
+      ],
+      "value": [
+        "sorcerer"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.w5koctOVrEcpxTIq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.w5koctOVrEcpxTIq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!w5koctOVrEcpxTIq"
+}

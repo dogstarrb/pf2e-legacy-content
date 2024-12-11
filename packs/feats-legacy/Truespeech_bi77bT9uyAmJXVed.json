@@ -1,0 +1,87 @@
+{
+  "_id": "bi77bT9uyAmJXVed",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Truespeech",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>It is paramount that you are understood and you understand others; language need not impede your message.</p>\n<p>You can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.SwUiVavHKMWG7t5K]{Truespeech}</em> as a 5th-level divine innate spell once per day on yourself only.</p>\n<p>You gain a +1 status bonus to Diplomacy checks for the duration of the spell when speaking to creatures with whom you already shared a language before casting.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Truespeech (shared language & innate Tongues)",
+        "predicate": [
+          "same-language",
+          "spell-effect:tongues"
+        ],
+        "selector": "diplomacy",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "truespeech",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "nephilim"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Angelkin"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.bi77bT9uyAmJXVed"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.bi77bT9uyAmJXVed",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bi77bT9uyAmJXVed"
+}

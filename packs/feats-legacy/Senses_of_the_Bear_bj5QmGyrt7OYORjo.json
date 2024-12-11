@@ -1,0 +1,96 @@
+{
+  "_id": "bj5QmGyrt7OYORjo",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Senses of the Bear",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>While in ursine form, you gain low-light vision and scent (imprecise) 30 feet. If you already had low-light vision, you instead gain darkvision.</p>"
+    },
+    "rules": [
+      {
+        "acuity": "imprecise",
+        "key": "Sense",
+        "predicate": [
+          "self:effect:ursine-avenger-form"
+        ],
+        "range": 30,
+        "selector": "scent"
+      },
+      {
+        "key": "Sense",
+        "predicate": [
+          "self:effect:ursine-avenger-form"
+        ],
+        "selector": "low-light-vision"
+      },
+      {
+        "key": "Sense",
+        "predicate": [
+          "self:low-light-vision:from-ancestry",
+          "self:effect:ursine-avenger-form"
+        ],
+        "selector": "darkvision"
+      }
+    ],
+    "slug": "senses-of-the-bear",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.bj5QmGyrt7OYORjo"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.bj5QmGyrt7OYORjo",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bj5QmGyrt7OYORjo"
+}

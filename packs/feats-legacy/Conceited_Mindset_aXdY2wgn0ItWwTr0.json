@@ -1,0 +1,95 @@
+{
+  "_id": "aXdY2wgn0ItWwTr0",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Conceited Mindset",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Because you know your mind is superior, you scoff at anyone who would alter your mental state-but this hubris gets the better of you when you're wrong.</p>\n<p>You gain a +2 circumstance bonus to saves against mental effects. If you succeed at a save against a mental effect, you critically succeed instead; similarly, if you fail at a save against a mental effect, you critically fail instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Conceited Mindset (vs. mental)",
+        "predicate": [
+          "mental"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "mental"
+        ],
+        "selector": "saving-throw",
+        "text": "If you succeed at a save against a mental effect, you critically succeed instead; similarly, if you fail at a save against a mental effect, you critically fail instead.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "conceited-mindset",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "champion"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "tenets of evil"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.aXdY2wgn0ItWwTr0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.aXdY2wgn0ItWwTr0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!aXdY2wgn0ItWwTr0"
+}

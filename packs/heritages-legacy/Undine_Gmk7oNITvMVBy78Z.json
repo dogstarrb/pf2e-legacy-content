@@ -1,0 +1,67 @@
+{
+  "_id": "Gmk7oNITvMVBy78Z",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Undine",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A water elemental ancestor influences your bloodline. You gain the undine trait, in addition to the traits from your ancestry. You gain a swim Speed of 10 feet and the amphibious trait. Like all creatures with the amphibious trait, you can breathe both water and air. You can choose from undine feats and feats from your ancestry whenever you gain an ancestry feat.</p>"
+    },
+    "rules": [
+      {
+        "add": [
+          "undine",
+          "amphibious"
+        ],
+        "key": "ActorTraits"
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "swim",
+        "value": 10
+      }
+    ],
+    "slug": "undine",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": null
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.Gmk7oNITvMVBy78Z"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.Gmk7oNITvMVBy78Z",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Gmk7oNITvMVBy78Z"
+}

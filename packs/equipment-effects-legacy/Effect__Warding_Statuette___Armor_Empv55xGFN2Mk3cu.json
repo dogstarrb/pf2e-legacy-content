@@ -1,0 +1,90 @@
+{
+  "_id": "Empv55xGFN2Mk3cu",
+  "img": "icons/commodities/treasure/figurine-idol.webp",
+  "name": "Effect: Warding Statuette - Armor",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.SW6JVF5SP59W8B0Q]{Warding Statuette}</p>\n<p>You gain resistance 1 against ranged weapon attacks.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:ranged",
+          {
+            "or": [
+              "item:type:melee",
+              "item:type:weapon"
+            ]
+          },
+          {
+            "not": "item:category:unarmed"
+          }
+        ],
+        "key": "Resistance",
+        "label": "PF2E.IWR.Custom.RangedWeaponAttacks",
+        "type": "custom",
+        "value": 1
+      }
+    ],
+    "slug": "effect-warding-statuette-armor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "target": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.Empv55xGFN2Mk3cu"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.Empv55xGFN2Mk3cu",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Empv55xGFN2Mk3cu"
+}

@@ -1,0 +1,91 @@
+{
+  "_id": "939OHjW9y8uCmDk3",
+  "img": "systems/pf2e/icons/features/classes/unleash-psyche.webp",
+  "name": "Effect: Unleash Psyche",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When you cast a damaging spell, you gain a status bonus to its damage equal to double the spell's level. This applies only to spells that don't have a duration and that you cast using psychic spellcasting.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "unleash-psyche-damage",
+          "item:duration:0",
+          "damaging-effect"
+        ],
+        "selector": "spell-damage",
+        "type": "status",
+        "value": "2*@spell.level"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Psychic.UnleashPsyche.DamageLabel",
+        "option": "unleash-psyche-damage",
+        "toggleable": true,
+        "value": true
+      }
+    ],
+    "slug": "effect-unleash-psyche",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 2,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.939OHjW9y8uCmDk3"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.939OHjW9y8uCmDk3",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!939OHjW9y8uCmDk3"
+}

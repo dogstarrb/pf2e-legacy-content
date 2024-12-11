@@ -1,0 +1,117 @@
+{
+  "_id": "CQfkyJkRHw4IHWhv",
+  "img": "systems/pf2e/icons/features/feats/sky-and-heaven-stance.webp",
+  "name": "Stance: Sky and Heaven Stance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.UjEeHamC2C8JfgJz]{Sky and Heaven Stance}</p>\n<p>Your jagged blows are like lightning. The only Strikes you can make are skyward slash unarmed attacks. These unarmed attacks deal 1d10 slashing damage; are in the brawling group; and have the nonlethal, unarmed, and versatile P traits. While in Sky and Heaven Stance, you gain resistance 2 to electricity and resistance 2 to sonic damage. These resistances increase to 5 at 12th level and to 8 at 18th level.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "slashing",
+            "dice": 1,
+            "die": "d10"
+          }
+        },
+        "group": "brawling",
+        "img": "systems/pf2e/icons/features/feats/sky-and-heaven-stance.webp",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Stance.Attack.SkywardSlash",
+        "range": null,
+        "replaceAll": true,
+        "traits": [
+          "versatile-p",
+          "unarmed",
+          "nonlethal"
+        ]
+      },
+      {
+        "key": "Resistance",
+        "type": [
+          "electricity",
+          "sonic"
+        ],
+        "value": {
+          "brackets": [
+            {
+              "end": 11,
+              "value": 2
+            },
+            {
+              "end": 17,
+              "start": 12,
+              "value": 5
+            },
+            {
+              "start": 18,
+              "value": 8
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "stance-sky-and-heaven-stance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.CQfkyJkRHw4IHWhv"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.CQfkyJkRHw4IHWhv",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CQfkyJkRHw4IHWhv"
+}

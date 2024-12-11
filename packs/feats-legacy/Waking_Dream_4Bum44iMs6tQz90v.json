@@ -1,0 +1,82 @@
+{
+  "_id": "4Bum44iMs6tQz90v",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Waking Dream",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>While in your trance, you can blur the line between dreams and reality for others. You gain the <em>@UUID[Compendium.pf2e.spells-srd.Item.OmhnoYOzFhrp6rXv]{Waking Dream}</em> focus spell, which you can use only while you're in a Daydream Trance. You gain a pool of Focus Points with 1 Focus Point and you can Refocus by taking a nap for 10 minutes. You become trained in occult spell attack rolls and spell DCs, and your spellcasting ability for these spells is Wisdom.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.spellcasting.rank",
+        "value": 1
+      }
+    ],
+    "slug": "waking-dream",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Sleepwalker Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.4Bum44iMs6tQz90v"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.4Bum44iMs6tQz90v",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4Bum44iMs6tQz90v"
+}

@@ -1,0 +1,114 @@
+{
+  "_id": "zkN2FndJxGt711fj",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Gravel Guts",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Stone never becomes queasy, so why should you? You gain a +1 circumstance bonus to saving throws against the @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} condition. When you succeed at a Fortitude save to reduce your sickened value, you reduce it by 2 (or by 3 on a critical success).</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "inflicts:sickened",
+              "action:retch"
+            ]
+          }
+        ],
+        "selector": "fortitude",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success"
+        ],
+        "predicate": [
+          "action:retch"
+        ],
+        "selector": "fortitude",
+        "text": "PF2E.SpecificRule.Conditions.Sickened.Reduce.success",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "action:retch"
+        ],
+        "selector": "fortitude",
+        "text": "PF2E.SpecificRule.Conditions.Sickened.Reduce.criticalSuccess",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "gravel-guts",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Highhelm",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "stalwart defender dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.zkN2FndJxGt711fj"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.zkN2FndJxGt711fj",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zkN2FndJxGt711fj"
+}

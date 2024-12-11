@@ -1,0 +1,121 @@
+{
+  "_id": "0NZuvpCVr21WcQtH",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/locket-of-sealed-nightmares.webp",
+  "name": "Locket of Sealed Nightmares",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>As long as this locket of horn and silver is closed, you don't need to sleep. However, you can still overexert your body with too much activity, so you still need to rest to avoid becoming fatigued or to remove the fatigued condition.</p>\n<p>You also gain a +4 item bonus on saving throws against mental illusions, magical effects that would make you unconscious, and effects that would make you fatigued.</p>\n<p>Each time dawn occurs, you regain the ability to make your daily preparations as if you had rested for 8 hours. Daily preparations still take about an hour, as normal.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Envision, interact</p>\n<p><strong>Requirements</strong> You aren't fatigued</p>\n<hr />\n<p><strong>Effect</strong> You open the locket to unleash the dreams it has kept at bay. You become fatigued and cast one of the following spells at 9th level (DC 41): <em>@UUID[Compendium.pf2e.spells-srd.Item.U58aQWJ47VrI36yP]{Hallucination}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.Item.qDjeG6dxT4aEEC6J]{Weird}</em>.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Locket of Sealed Nightmare (illusions, unconscious, fatigue",
+        "predicate": [
+          {
+            "or": [
+              "illusion",
+              "unconscious",
+              "fatigue"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "item",
+        "value": 4
+      }
+    ],
+    "slug": "locket-of-sealed-nightmares",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "illusion",
+        "invested",
+        "magical"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder #156: The Apocalypse Prophet",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 19
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 36000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "wornnecklace"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.0NZuvpCVr21WcQtH"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.0NZuvpCVr21WcQtH",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0NZuvpCVr21WcQtH"
+}

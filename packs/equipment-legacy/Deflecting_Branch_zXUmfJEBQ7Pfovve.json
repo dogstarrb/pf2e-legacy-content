@@ -1,0 +1,166 @@
+{
+  "_id": "zXUmfJEBQ7Pfovve",
+  "img": "systems/pf2e/icons/default-icons/weapon.svg",
+  "name": "Deflecting Branch",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This massive branch has been cut into a general club shape but still bears several knots and has a number of runes carved along its length. The <em>deflecting branch</em> is a <em>+2 greater striking greatclub</em>.</p>\n<p>On a critical hit, you knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Activate</strong><span class=\"action-glyph\">r</span> Interact</p>\n<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> You are the target of a physical ranged attack</p>\n<p><strong>Requirements</strong> You're aware of the attack and are not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against it</p>\n<hr />\n<p><strong>Effect</strong> You gain a +4 circumstance bonus to AC against the triggering attack. If the attack misses, you have knocked it away. You can't use this ability to deflect unusually massive ranged projectiles (such as boulders or ballista bolts).</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You knock away a physical ranged attack by using the deflecting branch's other activation</p>\n<hr />\n<p><strong>Effect</strong> You swing the club and reflect the oncoming attack. The attack is redirected toward a creature within 60 feet. Make a ranged attack against the creature using your highest proficiency with a ranged weapon.</p>"
+    },
+    "rules": [
+      {
+        "domain": "ac",
+        "key": "RollOption",
+        "option": "deflecting-branch",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "deflecting-branch"
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 4
+      }
+    ],
+    "slug": "deflecting-branch",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "backswing",
+        "magical",
+        "shove"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #172: Secrets of the Temple-City",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "quantity": 1,
+    "baseItem": "greatclub",
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 4500
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "category": "martial",
+    "group": "club",
+    "bonus": {
+      "value": 0
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d10",
+      "damageType": "bludgeoning",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": null,
+    "reload": {
+      "value": ""
+    },
+    "runes": {
+      "potency": 2,
+      "striking": 2,
+      "property": []
+    },
+    "specific": {
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "runes": {
+        "potency": 2,
+        "striking": 2,
+        "property": []
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.zXUmfJEBQ7Pfovve"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.zXUmfJEBQ7Pfovve",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zXUmfJEBQ7Pfovve"
+}

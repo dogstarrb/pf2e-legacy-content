@@ -1,0 +1,78 @@
+{
+  "_id": "s95P3L72BDKvzYhn",
+  "img": "systems/pf2e/icons/hazards/serpent-ward-curse-of-potent-poison.webp",
+  "name": "Effect: Curse of Potent Poison",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This curse magically speeds poison through your body.</p>\n<hr />\n<p><strong>Effect</strong> You take a -1 status penalty to Fortitude saves and you gain weakness 3 to poison (if you already have weakness to poison, increase it by 3). The curse remains until removed by <em>@UUID[Compendium.pf2e.spells-srd.Item.SUKaxVZW2TlM8lu0]{Cleanse Affliction}</em> or similar magic.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "fortitude",
+        "type": "status",
+        "value": -1
+      }
+    ],
+    "slug": "effect-curse-of-potent-poison",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #170: Spoken on the Song Wind",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.s95P3L72BDKvzYhn"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.s95P3L72BDKvzYhn",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!s95P3L72BDKvzYhn"
+}

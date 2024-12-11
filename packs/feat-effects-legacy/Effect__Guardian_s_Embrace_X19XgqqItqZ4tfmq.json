@@ -1,0 +1,102 @@
+{
+  "_id": "X19XgqqItqZ4tfmq",
+  "img": "systems/pf2e/icons/spells/dancing-shield.webp",
+  "name": "Effect: Guardian's Embrace",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +2 status bonus to AC against physical attacks and can use a reaction to gain resistance 10 to physical damage dealt by that attack, which ends this effect.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.ScionOfDomora.GuardiansEmbrace.PhysicalAttackLabel",
+        "option": "guardians-embrace-ac",
+        "toggleable": true
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.ScionOfDomora.GuardiansEmbrace.ProtectionLabel",
+        "option": "guardians-embrace-resist",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "guardians-embrace-ac"
+        ],
+        "selector": "ac",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "guardians-embrace-resist"
+        ],
+        "type": "physical",
+        "value": 10
+      }
+    ],
+    "slug": "effect-guardians-embrace",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #188: They Watched the Stars",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.X19XgqqItqZ4tfmq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.X19XgqqItqZ4tfmq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!X19XgqqItqZ4tfmq"
+}

@@ -1,0 +1,103 @@
+{
+  "_id": "ZCfPjOn6JJ8Zrgvg",
+  "img": "systems/pf2e/icons/features/classes/segmented-frame.webp",
+  "name": "Segmented Frame",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Hinges, clamps, and telescoping parts make your innovation collapsible and adjustable. It gains the modular trait for bludgeoning, piercing, and slashing. You can Interact to collapse the item down to light Bulk or to return it to your normal form. When it's collapsed to light Bulk, it has the concealable trait, which grants you a +2 circumstance bonus to Stealth checks and DCs to hide or conceal the weapon.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Inventor.Modification.InnovationCollapsed",
+        "option": "innovation-collapsed",
+        "toggleable": true
+      },
+      {
+        "definition": [
+          "item:id:{actor|flags.pf2e.trackedItems.weaponInnovation}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          "innovation-collapsed"
+        ],
+        "property": "weapon-traits",
+        "value": "concealable"
+      },
+      {
+        "definition": [
+          "item:id:{actor|flags.pf2e.trackedItems.weaponInnovation}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "modular"
+      }
+    ],
+    "slug": "segmented-frame",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "inventor"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "actionCategory": {
+      "value": ""
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.ZCfPjOn6JJ8Zrgvg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.ZCfPjOn6JJ8Zrgvg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ZCfPjOn6JJ8Zrgvg"
+}

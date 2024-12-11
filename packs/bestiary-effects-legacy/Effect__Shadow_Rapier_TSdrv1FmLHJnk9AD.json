@@ -1,0 +1,89 @@
+{
+  "_id": "TSdrv1FmLHJnk9AD",
+  "img": "systems/pf2e/icons/equipment/weapons/rapier.webp",
+  "name": "Effect: Shadow Rapier",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The rake shrouds their sword in negative energy, changing the damage type to negative.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess",
+          "success"
+        ],
+        "selector": "damage",
+        "text": "{item|system.description.value}",
+        "title": "{item|name}"
+      },
+      {
+        "key": "DamageDice",
+        "override": {
+          "damageType": "void"
+        },
+        "selector": "damage"
+      }
+    ],
+    "slug": "effect-shadow-rapier",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.TSdrv1FmLHJnk9AD"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.TSdrv1FmLHJnk9AD",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!TSdrv1FmLHJnk9AD"
+}

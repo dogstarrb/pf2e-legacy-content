@@ -1,0 +1,105 @@
+{
+  "_id": "tBg3FZST3nX5TfLf",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Safeguard Soul",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've girded your soul against outside interference. You gain a +2 status bonus to saving throws against death effects, possession effects, and effects that attempt to manipulate or steal your soul. You can't be transformed into an undead by any means. While your spiral is glowing, your allies in the light of the spiral gain this benefit as well.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.tlft5vzk66iWCVRq]{Effect: Safeguard Soul}</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "death",
+              "possession",
+              "manipulate-soul"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "domain": "saving-throw",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.SoulWarden.SafeguardSoul.Label",
+        "option": "manipulate-soul",
+        "toggleable": true
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.soulWarden.featCount",
+        "value": 1
+      }
+    ],
+    "slug": "safeguard-soul",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "divine"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Soul Warden Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.tBg3FZST3nX5TfLf"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.tBg3FZST3nX5TfLf",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!tBg3FZST3nX5TfLf"
+}

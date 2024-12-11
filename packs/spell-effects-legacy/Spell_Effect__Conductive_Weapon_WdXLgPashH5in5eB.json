@@ -1,0 +1,130 @@
+{
+  "_id": "WdXLgPashH5in5eB",
+  "img": "icons/weapons/swords/sword-flanged-lightning.webp",
+  "name": "Spell Effect: Conductive Weapon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.fkUCvynklBGb4LaI]{Conductive Weapon}</em></p>\n<p>The target becomes a <em>+1 shock weapon</em>. If any target of an attack with the weapon is wearing metal armor or is primarily made of metal, the electricity damage die from the <em>shock</em> rune is 1d12.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "weapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "key": "WeaponPotency",
+        "selector": "{item|flags.pf2e.rulesSelections.weapon}-attack",
+        "value": 1
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Target.Metal",
+        "option": "target:metal",
+        "toggleable": true
+      },
+      {
+        "definition": [
+          "item:id:{item|flags.pf2e.rulesSelections.weapon}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          {
+            "not": "target:metal"
+          }
+        ],
+        "property": "property-runes",
+        "value": "shock"
+      },
+      {
+        "damageType": "electricity",
+        "diceNumber": 1,
+        "dieSize": "d12",
+        "key": "DamageDice",
+        "predicate": [
+          "target:metal"
+        ],
+        "selector": "{item|flags.pf2e.rulesSelections.weapon}-damage"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "target:metal"
+        ],
+        "selector": "{item|flags.pf2e.rulesSelections.weapon}-damage",
+        "text": "PF2E.WeaponPropertyRune.shock.Note.criticalSuccess",
+        "title": "PF2E.WeaponPropertyRune.shock.Name"
+      }
+    ],
+    "slug": "spell-effect-conductive-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.WdXLgPashH5in5eB"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 23400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.WdXLgPashH5in5eB",
+    "duplicateSource": null
+  },
+  "_key": "!items!WdXLgPashH5in5eB"
+}

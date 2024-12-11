@@ -1,0 +1,97 @@
+{
+  "_id": "ZEUxZ4Ta1kDPHiq5",
+  "img": "systems/pf2e/icons/features/classes/second-adept.webp",
+  "name": "Second Adept",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've improved your link to your second implement. You gain the adept benefit of your second implement.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "predicate": [
+            "item:tag:thaumaturge-implement",
+            {
+              "not": "item:tag:thaumaturge-implement-adept"
+            }
+          ],
+          "types": [
+            "feat"
+          ]
+        },
+        "flag": "secondAdept",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.UI.RuleElements.ChoiceSet.Prompt",
+        "rollOption": "adept"
+      },
+      {
+        "itemId": "{item|flags.pf2e.rulesSelections.secondAdept}",
+        "key": "ItemAlteration",
+        "mode": "add",
+        "property": "other-tags",
+        "value": "thaumaturge-implement-adept"
+      }
+    ],
+    "slug": "second-adept",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "thaumaturge"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.ZEUxZ4Ta1kDPHiq5"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.ZEUxZ4Ta1kDPHiq5",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ZEUxZ4Ta1kDPHiq5"
+}

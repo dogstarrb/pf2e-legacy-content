@@ -1,0 +1,93 @@
+{
+  "_id": "aVqsE5OedOwdHQvF",
+  "img": "systems/pf2e/icons/spells/summerland-spell.webp",
+  "name": "Summerland Spell",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Summerland Spell is an extension of a unique ritual developed by Brogan the Grasswalker. The ritual dramatically dampens harsh weather around Hillcross, causing the temperature of the area to move up to two categories closer to normal. As a result, autumns and winters are far less brutal around Hillcross, while spring and summer months are practically mild and pleasant.</p>\n<p>The ritual as presented is lower level, easier to cast, and much less dangerous to the casters than the original version cast by Brogan the Grasswalker because it simply extends the original ritual's effects over Hillcross. A character who wishes to duplicate the effects somewhere else would need to develop a unique 10th-level ritual with a 5th-level ritual to extend the duration, as Brogan did, and then find someone willing to cast the deadlier initial ritual.</p>\n<hr />\n<p><strong>Critical Success</strong> The ritual takes effect normally, continuing the duration for 1 more year.</p>\n<p><strong>Success</strong> The ritual takes effect normally, continuing the duration for 1 more year, but the primary caster is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. If the primary caster was already drained, increase the value of the drained condition by 1. This drained condition is a curse effect and is permanent until counteracted with remove curse or similar magic.</p>\n<p><strong>Failure</strong> The ritual fails.</p>\n<p><strong>Critical Failure</strong> The ritual fails. The primary caster is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}, and the secondary casters are drained 1 (increasing the value of any drained condition they already have). This drained condition is a curse effect and is permanent until counteracted with remove curse or similar magic.</p>"
+    },
+    "rules": [],
+    "slug": "summerland-spell",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "unique",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder #177: Burning Tundra",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "touch"
+    },
+    "area": {
+      "type": "burst",
+      "value": 5280
+    },
+    "time": {
+      "value": "1 hour"
+    },
+    "duration": {
+      "value": "1 year",
+      "sustained": false
+    },
+    "damage": {},
+    "defense": null,
+    "cost": {
+      "value": "1,000 gp worth of precious stones ground to dust"
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "ritual": {
+      "primary": {
+        "check": "Nature (master)"
+      },
+      "secondary": {
+        "checks": "Performance, Religion, Society, Mammoth Lord Lore or a similar Lore skill, Survival",
+        "casters": 5
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.aVqsE5OedOwdHQvF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.aVqsE5OedOwdHQvF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!aVqsE5OedOwdHQvF"
+}

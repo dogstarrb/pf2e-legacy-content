@@ -1,0 +1,261 @@
+{
+  "_id": "4osf0dNeZ19KBoTb",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Manifold Modifications",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've modified your innovation using clever workarounds, so you can include another initial modification without compromising its structure. Your innovation gains an additional initial modification from the list for innovations of its type.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "allowedDrops": {
+          "label": "PF2E.SpecificRule.Inventor.Modification.Initial.AllowedDrops",
+          "predicate": [
+            "item:level:1",
+            "item:type:feature",
+            "item:trait:inventor"
+          ]
+        },
+        "choices": [
+          {
+            "predicate": [
+              "feature:armor-innovation",
+              {
+                "not": "feature:harmonic-oscillator"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.dsy2w4LfjMIWgy5D"
+          },
+          {
+            "predicate": [
+              "feature:armor-innovation",
+              {
+                "not": "feature:metallic-reactance"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.xndlv9T3JgYYUtf8"
+          },
+          {
+            "predicate": [
+              "armor-innovation:power-suit",
+              {
+                "not": "feature:muscular-exoskeleton"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.OkxoJWrOXhM25mhi"
+          },
+          {
+            "predicate": [
+              "feature:armor-innovation",
+              {
+                "not": "feature:otherworldly-protection"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.jHE4fPwU0sSIAjMo"
+          },
+          {
+            "predicate": [
+              "feature:armor-innovation",
+              {
+                "not": "feature:phlogistonic-regulator"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.5Xj38QeMKcFdrzqH"
+          },
+          {
+            "predicate": [
+              "feature:armor-innovation",
+              {
+                "not": "feature:speed-boosters"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.sTWY6PLqr1X7icgZ"
+          },
+          {
+            "predicate": [
+              "armor-innovation:subterfuge-suit",
+              {
+                "not": "feature:subtle-dampeners"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.X3TtVdNhrydeQ3SX"
+          },
+          {
+            "predicate": [
+              "weapon-innovation:ranged",
+              {
+                "nor": [
+                  "weapon-innovation:thrown",
+                  "feature:blunt-shot"
+                ]
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.O3r84Uv6HytaSIbX"
+          },
+          {
+            "predicate": [
+              "weapon-innovation:category:simple",
+              {
+                "not": "feature:complex-simplicity"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.qIOKqT93h6CX6V4k"
+          },
+          {
+            "predicate": [
+              "weapon-innovation:usage:hands:1",
+              "weapon-innovation:melee",
+              {
+                "nor": [
+                  "weapon-innovation:trait:agile",
+                  "weapon-innovation:trait:attached",
+                  "weapon-innovation:trait:free-hand",
+                  "feature:dynamic-weighting"
+                ]
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.O9wpXEKtKYJOMIlK"
+          },
+          {
+            "predicate": [
+              "weapon-innovation:melee",
+              {
+                "not": "feature:entangling-form"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.Z1au5zxYcjZvdQpd"
+          },
+          {
+            "predicate": [
+              "weapon-innovation:melee",
+              {
+                "not": "feature:hampering-spikes"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.R8cfRNPdaCkd2bud"
+          },
+          {
+            "predicate": [
+              "weapon-innovation:melee",
+              {
+                "not": "feature:hefty-composition"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.Nbg4ZllDI9uCowZL"
+          },
+          {
+            "predicate": [
+              "feature:weapon-innovation",
+              {
+                "not": "feature:modular-head"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.qwhfPgE2tTW0hvPe"
+          },
+          {
+            "predicate": [
+              "weapon-innovation:melee",
+              {
+                "not": "feature:pacification-tools"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.pSXlZggdCCbkQqNr"
+          },
+          {
+            "predicate": [
+              "weapon-innovation:melee",
+              {
+                "not": "feature:razor-prongs"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.fOulT6iKVqIK4jJX"
+          },
+          {
+            "predicate": [
+              "feature:weapon-innovation",
+              {
+                "not": "feature:segmented-frame"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.ZCfPjOn6JJ8Zrgvg"
+          }
+        ],
+        "flag": "modification",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Inventor.Modification.Initial.Prompt"
+      },
+      {
+        "allowDuplicate": false,
+        "flag": "armorInnovation",
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.modification}"
+      }
+    ],
+    "slug": "manifold-modifications",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "inventor",
+        "modification"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "initial modification"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.4osf0dNeZ19KBoTb"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.4osf0dNeZ19KBoTb",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4osf0dNeZ19KBoTb"
+}

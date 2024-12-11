@@ -1,0 +1,121 @@
+{
+  "_id": "iX25AmfeRbV3M1EF",
+  "img": "systems/pf2e/icons/equipment/worn-items/companion-items/stampede-medallion.webp",
+  "name": "Steadyfoot Tassel",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This handsome tassel comes in a variety of colors to match your companion’s collar or bridle. While attached, the tassel gives the companion a +1 item bonus to Acrobatics checks to Balance, and to their Reflex DC against Trip attacks.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "action:balance",
+              "action:trip"
+            ]
+          }
+        ],
+        "selector": [
+          "acrobatics",
+          "reflex"
+        ],
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "steadyfoot-tassel",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "companion",
+        "invested",
+        "primal"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #193: Mantle of Gold",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 30
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "affixed-to-a-creature"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.iX25AmfeRbV3M1EF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.iX25AmfeRbV3M1EF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!iX25AmfeRbV3M1EF"
+}

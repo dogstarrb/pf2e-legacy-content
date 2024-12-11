@@ -1,0 +1,134 @@
+{
+  "_id": "2TVc8NabmGpc092W",
+  "img": "icons/magic/nature/leaf-drip-light-green.webp",
+  "name": "Life's Fresh Bloom",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The ground around you blooms with life, sprouting sparkling grass, flowers, and small shrubs. Each living and non-nindoru creature that starts its turn standing on the ground in the area recovers 1d6 Hit Points and gains a +5-foot status bonus to its Speed until the end of its next turn. Nindoru fiends and undead that start their turn in the area of life's fresh bloom instead become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} unless they succeed at a Fortitude saving throw.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.yYDj0G4O3q5iGexx]{Spell Effect: Life's Fresh Bloom}</p>\n<hr />\n<p><strong>Heightened (7th)</strong> Increase the Hit Points restored to 1d8 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Heightened (10th)</strong> Increase the Hit Points restored to 1d10 and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.</p>"
+    },
+    "rules": [],
+    "slug": "lifes-fresh-bloom",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "healing",
+        "manipulate",
+        "vitality"
+      ],
+      "rarity": "rare",
+      "traditions": [
+        "divine",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder #197: Let the Leaves Fall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": {
+      "type": "burst",
+      "value": 20
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "5 rounds",
+      "sustained": true
+    },
+    "damage": {
+      "gcU9LYuQezmqqIr2": {
+        "applyMod": false,
+        "formula": "1d6",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "healing"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "7": {
+          "damage": {
+            "gcU9LYuQezmqqIr2": {
+              "applyMod": false,
+              "formula": "1d8",
+              "type": "untyped",
+              "materials": []
+            }
+          }
+        },
+        "10": {
+          "damage": {
+            "gcU9LYuQezmqqIr2": {
+              "applyMod": false,
+              "formula": "1d10",
+              "type": "untyped",
+              "materials": []
+            }
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.2TVc8NabmGpc092W"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.2TVc8NabmGpc092W",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2TVc8NabmGpc092W"
+}

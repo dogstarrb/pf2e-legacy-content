@@ -1,0 +1,126 @@
+{
+  "_id": "fT37dtsByEIc3glC",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Scales Of The Dragon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Scales grow across your body, protecting you against physical and magical threats. When you're unarmored, the scales give you a +2 item bonus to AC with a Dexterity cap of +3. The item bonus to AC from Scales of the Dragon is cumulative with armor potency runes on your explorer's clothing, mage armor, and bracers of armor. Your resistance from Dragon Disciple Dedication increases to 3 + half your level.</p>"
+    },
+    "rules": [
+      {
+        "key": "DexterityModifierCap",
+        "predicate": [
+          {
+            "not": "self:armored"
+          }
+        ],
+        "value": 3
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "relabel": "PF2E.SpecificRule.DragonDisciple.ScalesOfTheDragon.BracersOfArmor",
+        "selector": "ac",
+        "slug": "bracers-of-armor",
+        "value": 2
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "relabel": "PF2E.SpecificRule.DragonDisciple.ScalesOfTheDragon.ExplorersClothing",
+        "selector": "ac",
+        "slug": "explorers-clothing",
+        "value": 2
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "relabel": "PF2E.SpecificRule.DragonDisciple.ScalesOfTheDragon.MageArmor",
+        "selector": "ac",
+        "slug": "mage-armor",
+        "value": 2
+      },
+      {
+        "key": "Resistance",
+        "type": "{actor|flags.pf2e.dragonDisciple.energyType}",
+        "value": "3+floor(@actor.level/2)"
+      },
+      {
+        "fromEquipment": false,
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "not": "self:armored"
+          }
+        ],
+        "selector": "ac",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "scales-of-the-dragon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dragon Disciple Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.fT37dtsByEIc3glC"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.fT37dtsByEIc3glC",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fT37dtsByEIc3glC"
+}

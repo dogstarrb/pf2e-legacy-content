@@ -1,0 +1,147 @@
+{
+  "_id": "7q3B8wvZFltHTpPo",
+  "img": "icons/equipment/finger/ring-inlay-gold.webp",
+  "name": "Ring of the Tiger (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This ring, carved from green wood, bears carvings of tigers chasing each other through grasslands and forests. <em>Rings of the tiger</em> are traditionally crafted by Kellids in northeastern Avistan, and are often worn by scouts or explorers. Many barbarians in these regions react poorly to anyone obviously not part of their people who dare to wear such a ring, but ironically have been known to gift these rings to outsiders who have proven their worth-potentially setting up a further clash in the future should that character encounter another group of Kellids who aren't familiar with how the wearer earned the right to wear the ring. A <em>ring of the tiger</em> grants a +2 item bonus on Stealth checks and Perception checks made in outdoor wilderness areas, and it can be activated to momentarily transform the wearer's hand into a tiger's claw.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p><strong>Requirement</strong> You aren't carrying anything in the hand on which the ring is worn</p>\n<p><strong>Effect</strong> Your hand becomes a tiger's claw, granting you an agile claw unarmed attack that inflicts @Damage[2d6[slashing]] damage, and you Strike with the claw. The additional damage die is not cumulative with additional damage dice from striking runes. Then the claw turns back to normal.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "terrain:outdoor-wilderness"
+        ],
+        "selector": "stealth",
+        "type": "item",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "terrain:outdoor-wilderness"
+        ],
+        "selector": "perception",
+        "value": 2
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "tiger-strike-ring",
+        "toggleable": true
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "slashing",
+            "dice": 2,
+            "die": "d6"
+          }
+        },
+        "group": "brawling",
+        "key": "Strike",
+        "label": "Tiger Claw (Ring of the Tiger)",
+        "predicate": [
+          "tiger-strike-ring"
+        ],
+        "traits": [
+          "agile",
+          "unarmed"
+        ]
+      }
+    ],
+    "slug": "ring-of-the-tiger-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical",
+        "primal"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Kingmaker",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.7q3B8wvZFltHTpPo"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.7q3B8wvZFltHTpPo",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7q3B8wvZFltHTpPo"
+}

@@ -1,0 +1,82 @@
+{
+  "_id": "Cf0CDTZvGaYDAXUN",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Calaca's Showstopper",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You've spent many an evening learning songs and tales featuring calacas, death's wandering minstrels. You dramatically unleash a stunning blast of sound by smashing an instrument you hold or belting out a discordant note. This has the effects of <em>@UUID[Compendium.pf2e.spells-srd.Item.BilnTGuXrof9Dt9D]{Synaptic Pulse}</em>, but the effect is auditory rather than mental. The DC is either your @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)]{class or spell DC}, whichever is higher.</p>"
+    },
+    "rules": [],
+    "slug": "calacas-showstopper",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "auditory",
+        "divine",
+        "duskwalker",
+        "incapacitation"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Performance"
+        }
+      ]
+    },
+    "location": null,
+    "frequency": {
+      "max": 1,
+      "per": "day"
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.Cf0CDTZvGaYDAXUN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.Cf0CDTZvGaYDAXUN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Cf0CDTZvGaYDAXUN"
+}

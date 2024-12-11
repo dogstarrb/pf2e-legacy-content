@@ -1,0 +1,119 @@
+{
+  "_id": "LZsTt6zPZfNyjIZl",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Dragonslayer Oath (Paladin)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've sworn to slay evil dragons. Add the following tenet to your code after the others: \"You must slay evil dragons you encounter as long as you have a reasonable chance of success.</p>\n<p>Your @UUID[Compendium.pf2e.actionspf2e.Item.EAP98XaChJEbgKcK]{Retributive Strike} gains a +4 circumstance bonus to damage against an evil dragon, or +6 if you have master proficiency with the weapon you used.</p>\n<p>You don't consider evil dragons to be legitimate authorities, even in nations they rule.</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "label": "Retributive Strike against an evil dragon",
+        "option": "dragonslayer-oath",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Dragonslayer Oath",
+        "predicate": [
+          "dragonslayer-oath",
+          {
+            "nor": [
+              "proficiency:master",
+              "proficiency:legendary"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "dragonslayer-not-master",
+        "value": 4
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Dragonslayer Oath",
+        "predicate": [
+          "dragonslayer-oath",
+          {
+            "or": [
+              "proficiency:master",
+              "proficiency:legendary"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "dragonslayer-master",
+        "value": 6
+      }
+    ],
+    "slug": "dragonslayer-oath-paladin",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "champion",
+        "oath"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "tenets of good"
+        },
+        {
+          "value": "paladin cause"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.LZsTt6zPZfNyjIZl"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.LZsTt6zPZfNyjIZl",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!LZsTt6zPZfNyjIZl"
+}

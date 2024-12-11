@@ -1,0 +1,93 @@
+{
+  "_id": "PFtYVamw7de2cozU",
+  "img": "icons/equipment/chest/breastplate-banded-steel-studded.webp",
+  "name": "Effect: Blast Suit",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.GPrjYsQiC3jKdQmO]{Blast Suit}</p>\n<p>The <em>blast suit</em> locks together into a rigid bulwark, protecting you from the blast but preventing you from moving from your position under any circumstances. You become immobilized, gain a +2 circumstance bonus to your Reflex save against area effects, and gain resistance 5 to all damage you would normally take from area effects and scatter splash damage (this doesn't damage the <em>blast suit</em>). These effects persist for as long as the suit remains in the locked position. You can Interact with the suit to unlock it.</p>\n<p><strong>Unimplemented effects:</strong> Resistance to scatter splash damage.</p>"
+    },
+    "rules": [
+      {
+        "allowDuplicate": false,
+        "key": "GrantItem",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "uuid": "Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "area-effect"
+        ],
+        "selector": "reflex",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "Resistance",
+        "type": "area-damage",
+        "value": 5
+      }
+    ],
+    "slug": "effect-blast-suit",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #180: The Smoking Gun",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.PFtYVamw7de2cozU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.PFtYVamw7de2cozU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PFtYVamw7de2cozU"
+}

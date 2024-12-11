@@ -1,0 +1,107 @@
+{
+  "_id": "h08Vfel5iIAARWdy",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Instrument of Zeal",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Divine energy fills your weapon. Whenever you critically hit a foe with Blade of Justice or a Retributive Strike, your attack adds an extra damage die, and the target is slowed 1 on its next turn.</p>"
+    },
+    "rules": [
+      {
+        "critical": true,
+        "diceNumber": 1,
+        "key": "DamageDice",
+        "predicate": [
+          {
+            "or": [
+              "blade-justice",
+              "retributive-strike"
+            ]
+          }
+        ],
+        "selector": "strike-damage"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          {
+            "or": [
+              "blade-justice",
+              "retributive-strike"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "text": "Whenever you critically hit a foe with Blade of Justice or a Retributive Strike, the target is slowed 1 on its next turn.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "instrument-of-zeal",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "champion"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "divine ally (blade)"
+        },
+        {
+          "value": "tenets of good"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.h08Vfel5iIAARWdy"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.h08Vfel5iIAARWdy",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!h08Vfel5iIAARWdy"
+}

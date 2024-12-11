@@ -1,0 +1,89 @@
+{
+  "_id": "hLYoIjH8gPEVXyWG",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Distracting Feint",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feints} are far more distracting than normal, drawing your foes' attention and allowing you and your allies to take greater advantage.</p>\n<p>While a creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} by your Feint, it also takes a -2 circumstance penalty to Perception checks and Reflex saves.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.7hRgBo0fRQBxMK7g]{Effect: Distracting Feint}</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess",
+          "success"
+        ],
+        "predicate": [
+          "action:feint"
+        ],
+        "selector": "skill-check",
+        "text": "PF2E.SpecificRule.Rogue.DistractingFeint.Text",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "distracting-feint",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "rogue"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "scoundrel racket"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.hLYoIjH8gPEVXyWG"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.hLYoIjH8gPEVXyWG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!hLYoIjH8gPEVXyWG"
+}

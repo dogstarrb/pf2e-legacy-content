@@ -1,0 +1,118 @@
+{
+  "_id": "XjNROFtWnwovhCsq",
+  "img": "systems/pf2e/icons/spells/teleport.webp",
+  "name": "Unfolding Wind Crash",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You jump up to 120 feet in any direction and then deal 18d6 bludgeoning damage to creatures within a 20‐foot emanation after you land, with a basic Reflex save. Creatures who critically fail are also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Heightened (10th)</strong> The damage increases to 20d6.</p>"
+    },
+    "rules": [],
+    "slug": "unfolding-wind-crash",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "air",
+        "concentrate",
+        "focus",
+        "move"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": ""
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "SkA0hnMkeRZeHBNT": {
+        "applyMod": false,
+        "formula": "18d6",
+        "type": "bludgeoning",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "10": {
+          "damage": {
+            "SkA0hnMkeRZeHBNT": {
+              "applyMod": false,
+              "formula": "20d6",
+              "type": "bludgeoning",
+              "materials": []
+            }
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.XjNROFtWnwovhCsq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.XjNROFtWnwovhCsq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XjNROFtWnwovhCsq"
+}

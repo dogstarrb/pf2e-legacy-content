@@ -1,0 +1,133 @@
+{
+  "_id": "IHybXd0JGwhMrOlr",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/pactmasters-grace.webp",
+  "name": "Pactmaster's Grace",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by Katapesh's Pactmasters to influential merchants, exceptional Zephyr Guards, and favorite retainers, a pactmaster's grace is a crystal-studded blue platinum ring that sharpens the wearer's urban instincts. While invested, the ring grants a +2 item bonus to saving throws while you are in an urban setting, and this increases to a +3 item bonus if you have legendary proficiency in Guild Lore, Katapesh Lore, Mercantile Lore, or Society. You also gain a +3 item bonus to Mercantile Lore checks while wearing the ring, and you can attempt checks that require a proficiency rank of master in Society.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "terrain:urban"
+        ],
+        "selector": "saving-throw",
+        "slug": "pactmasters-grace-saves",
+        "type": "item",
+        "value": 2
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "override",
+        "predicate": [
+          "skill:society:rank:4"
+        ],
+        "selector": "saving-throw",
+        "slug": "pactmasters-grace-saves",
+        "value": 3
+      },
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "mercantile",
+          "mercantile-lore",
+          "lore-mercantile"
+        ],
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "pactmasters-grace",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 4000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.IHybXd0JGwhMrOlr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.IHybXd0JGwhMrOlr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!IHybXd0JGwhMrOlr"
+}

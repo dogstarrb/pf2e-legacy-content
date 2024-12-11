@@ -1,0 +1,89 @@
+{
+  "_id": "RyGaB5hDRcOeb34Q",
+  "img": "icons/skills/melee/strike-sword-slashing-red.webp",
+  "name": "Effect: Emblazon Antimagic (Weapon)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.xAFdoKl7aOP9rVkl]{Emblazon Antimagic}.</p>\n<p>When the weapon's wielder critically hits with the weapon, they can attempt to counteract a spell on their target, using half their level, rounded up, as the counteract level. If they attempt to do so, the emblazoned symbol immediately disappears.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "effectEmblazonAntimagicWeapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "key": "Note",
+        "selector": "{item|flags.pf2e.rulesSelections.effectEmblazonAntimagicWeapon}-attack",
+        "text": "When you critically hit with the this weapon, you can attempt to counteract a spell on your target, using half your level (rounded up) as the counteract level. If you do this, the emblazon symbol immediately disappears.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "effect-emblazon-antimagic-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.RyGaB5hDRcOeb34Q"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.RyGaB5hDRcOeb34Q",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!RyGaB5hDRcOeb34Q"
+}

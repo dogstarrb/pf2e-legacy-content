@@ -1,0 +1,86 @@
+{
+  "_id": "eotqxEWIgaK7nMpD",
+  "img": "systems/pf2e/icons/spells/blade-barrier.webp",
+  "name": "Spell Effect: Blunt the Final Blade (Critical Success)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +2 status bonus to saves against death and fear effects for the next year.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "death",
+              "fear"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-blunt-the-final-blade-critical-success",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Adventure: Night of the Gray Death",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "duration": {
+      "value": 365,
+      "unit": "days",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.eotqxEWIgaK7nMpD"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 28400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.eotqxEWIgaK7nMpD",
+    "duplicateSource": null
+  },
+  "_key": "!items!eotqxEWIgaK7nMpD"
+}

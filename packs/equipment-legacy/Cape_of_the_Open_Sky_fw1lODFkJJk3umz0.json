@@ -1,0 +1,122 @@
+{
+  "_id": "fw1lODFkJJk3umz0",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/cape-of-the-mountebank.webp",
+  "name": "Cape of the Open Sky",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This cloth of gold cape was originally gifted to one of Goka's emperors centuries ago. Since then, it has spawned many imitations, which are all alike in that they are dyed with an elaborate seal depicting two drakes flanking Goka's palace and the Seven Dragons Bridge. The beautiful cape grants you a +3 item bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie} and to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}. While you wear the cape, the weather (including wind and fog) doesn't affect your movement or vision. Additionally, whenever you fall while wearing the cape of the open sky, the cape automatically casts <em>@UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]{Feather Fall}</em> on you.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2 </span> Interact</p>\n<hr />\n<p><strong>Effect</strong> The cape becomes a pair of golden drake wings that grant you a fly Speed of 30 feet for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.UzSrsR9S2pgMDbbp]{Effect: Cape of the Open Sky}</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1 </span> command</p>\n<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The cloak pushes you onward. You Stride or Fly up to your Speed, but you can move only in a straight line. You gain a +15-foot status bonus to your Speed and fly Speed for this movement.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:lie"
+        ],
+        "selector": "deception",
+        "type": "item",
+        "value": 3
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:make-an-impression"
+        ],
+        "selector": "diplomacy",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "cape-of-the-open-sky",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder #167: Ready? Fight!",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 22000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worncloak"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.fw1lODFkJJk3umz0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.fw1lODFkJJk3umz0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fw1lODFkJJk3umz0"
+}

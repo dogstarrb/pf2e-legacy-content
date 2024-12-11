@@ -1,0 +1,82 @@
+{
+  "_id": "1Doigqr1vBzg0tWU",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Silent Stone",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've lived in the shadow of the Shattered Range, and the patience of those ancient mountains expresses itself in your stillness. Your body might have veins of granite, sandstone, or similar sedimentary rocks that make it easier for you to camouflage yourself in certain regions. You become trained in Stealth, and you gain the Terrain Stalker skill feat. If you're already trained in Stealth from another source, you become trained in a skill of your choice instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.stealth.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.beyw5bdA5hkQbmaG"
+      }
+    ],
+    "slug": "silent-stone",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "oread"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.1Doigqr1vBzg0tWU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.1Doigqr1vBzg0tWU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1Doigqr1vBzg0tWU"
+}

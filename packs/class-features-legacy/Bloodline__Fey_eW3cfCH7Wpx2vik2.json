@@ -1,0 +1,152 @@
+{
+  "_id": "eW3cfCH7Wpx2vik2",
+  "img": "icons/commodities/biological/wing-insect-blue.webp",
+  "name": "Bloodline: Fey",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Fey whimsy or a tryst in a moonlit grove put the bewitching magic of the First World into your family's bloodline.</p>\n<p><strong>Spell List</strong> primal</p>\n<p><strong>Bloodline Skills</strong> Deception, Nature</p>\n<p><strong>Granted Spells</strong> cantrip <em>@UUID[Compendium.pf2e.spells-srd.Item.atlgGNI1E1Ox3O3a]{Ghost Sound}</em>, 1st: <em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}</em>, 2nd: <em>@UUID[Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv]{Hideous Laughter}</em>, 3rd: <em>@UUID[Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS]{Enthrall}</em>, 4th: <em>@UUID[Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H]{Suggestion}</em>, 5th: <em>@UUID[Compendium.pf2e.spells-srd.Item.TCk2MDwf5L5OYjFC]{Cloak of Colors}</em>, 6th: <em>@UUID[Compendium.pf2e.spells-srd.Item.WPXzPl7YbMEIGWfi]{Mislead}</em>, 7th: <em>@UUID[Compendium.pf2e.spells-srd.Item.jBGAYmR0BkkbpJvG]{Visions of Danger}</em>, 8th: <em>@UUID[Compendium.pf2e.spells-srd.Item.Jvyy6oVIQsD34MHB]{Uncontrollable Dance}</em>, 9th: <em>@UUID[Compendium.pf2e.spells-srd.Item.KPDHmmjJiw7PhTYF]{Resplendent Mansion}</em></p>\n<p><strong>Bloodline Spells</strong> initial: <em>@UUID[Compendium.pf2e.spells-srd.Item.IkS3lDGUpIOMug7v]{Faerie Dust}</em>, advanced: <em>@UUID[Compendium.pf2e.spells-srd.Item.mBojKJatf9PTYC38]{Fey Disappearance}</em>, greater: <em>@UUID[Compendium.pf2e.spells-srd.Item.DdXKfIjDtORUtUvY]{Fey Glamour}</em></p>\n<p><strong>Blood Magic</strong> Colorful fey glamours dance around you or one target, causing them to be concealed for 1 round. Such obvious concealment can't be used to Hide.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.rJpkKaPRGaH0pLse]{Effect: Fey Blood Magic}</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.deception.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.nature.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.aliases.sorcerer",
+        "priority": 39,
+        "value": "primal"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.sorcerer.bloodline.spells",
+        "value": {
+          "1st": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6",
+            "slug": "charm"
+          },
+          "2nd": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.tlSE7Ly8vi1Dgddv",
+            "slug": "hideous-laughter"
+          },
+          "3rd": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS",
+            "slug": "enthrall"
+          },
+          "4th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H",
+            "slug": "suggestion"
+          },
+          "5th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.TCk2MDwf5L5OYjFC",
+            "slug": "cloak-of-colors"
+          },
+          "6th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.WPXzPl7YbMEIGWfi",
+            "slug": "mislead"
+          },
+          "7th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.jBGAYmR0BkkbpJvG",
+            "slug": "visions-of-danger"
+          },
+          "8th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.Jvyy6oVIQsD34MHB",
+            "slug": "uncontrollable-dance"
+          },
+          "9th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.KPDHmmjJiw7PhTYF",
+            "slug": "resplendent-mansion"
+          },
+          "advanced": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.mBojKJatf9PTYC38",
+            "slug": "fey-disappearance"
+          },
+          "cantrip": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.atlgGNI1E1Ox3O3a",
+            "slug": "ghost-sound"
+          },
+          "greater": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.DdXKfIjDtORUtUvY",
+            "slug": "fey-glamour"
+          },
+          "initial": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.IkS3lDGUpIOMug7v",
+            "slug": "faerie-dust"
+          }
+        }
+      }
+    ],
+    "slug": "bloodline-fey",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "sorcerer-bloodline"
+      ],
+      "value": [
+        "sorcerer"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.eW3cfCH7Wpx2vik2"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.eW3cfCH7Wpx2vik2",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!eW3cfCH7Wpx2vik2"
+}

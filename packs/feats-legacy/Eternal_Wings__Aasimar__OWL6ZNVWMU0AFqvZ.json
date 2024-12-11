@@ -1,0 +1,81 @@
+{
+  "_id": "OWL6ZNVWMU0AFqvZ",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Eternal Wings (Aasimar)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your wings are now a permanent part of your body. You gain the effects of @UUID[Compendium.pf2e.feats-srd.Item.vtCrMziYxNyj8kP7]{Celestial Wings} at all times, rather than just once per day for 10 minutes.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": "@actor.attributes.speed.base"
+      }
+    ],
+    "slug": "eternal-wings-aasimar",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "nephilim"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Celestial Wings"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.OWL6ZNVWMU0AFqvZ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.OWL6ZNVWMU0AFqvZ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OWL6ZNVWMU0AFqvZ"
+}

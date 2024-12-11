@@ -1,0 +1,90 @@
+{
+  "_id": "eh7EqmDBDW30ShCu",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/bravos-brew.webp",
+  "name": "Effect: Bravo's Brew (Lesser)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.zM9VX3QwM81DzDUA]{Bravo's Brew (Lesser)}</p>\n<p>Implemented effects:</p>\n<ul>\n<li>+1 item bonus to Will saves</li>\n<li>+2 item bonus to Will saves against fear</li>\n</ul>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "will",
+        "slug": "bravos-brew-lesser",
+        "type": "item",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.Equipment.BravosBrew.Lesser.FearLabel",
+        "predicate": [
+          "fear"
+        ],
+        "selector": "will",
+        "slug": "bravos-brew-lesser-fear",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "effect-bravos-brew-lesser",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.eh7EqmDBDW30ShCu"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.eh7EqmDBDW30ShCu",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!eh7EqmDBDW30ShCu"
+}

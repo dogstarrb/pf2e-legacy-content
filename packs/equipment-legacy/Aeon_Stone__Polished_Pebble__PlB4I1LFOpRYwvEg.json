@@ -1,0 +1,121 @@
+{
+  "_id": "PlB4I1LFOpRYwvEg",
+  "img": "systems/pf2e/icons/default-icons/equipment.svg",
+  "name": "Aeon Stone (Polished Pebble)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A <em>polished pebble aeon stone</em> imbues you with the strength of the earth, granting a +1 item bonus to Fortitude saves and DCs against attempts to grapple or swallow you.</p>\n<p>The stone's resonant power allows you to cast <em>@UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{Grease}</em> as a primal innate spell once per day. You can target only surfaces, not objects, with this spell.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "action:grapple",
+              "action:swallow-whole"
+            ]
+          }
+        ],
+        "selector": [
+          "fortitude",
+          "fortitude-dc"
+        ],
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "aeon-stone-polished-pebble",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "earth",
+        "invested",
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 3
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 50
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.PlB4I1LFOpRYwvEg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.PlB4I1LFOpRYwvEg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PlB4I1LFOpRYwvEg"
+}

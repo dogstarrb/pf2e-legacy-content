@@ -1,0 +1,111 @@
+{
+  "_id": "XPkhjxSh6tBWk50f",
+  "img": "systems/pf2e/icons/default-icons/equipment.svg",
+  "name": "Horn of the Sun Aurochs",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A horn of the sun aurochs grants a +2 item bonus to Performance checks when played as an instrument.</p>\n<hr />\n<p><strong>Activate</strong> Interact <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The horn is clearly audible for hundreds of feet, but within a @Template[type:emanation|distance:20], the sound causes agony in those who wish harm upon the user; the horn also sheds bright light in that area and dim light to the next 20 feet. Enemies of the user in this area take @Damage[7d6[sonic]] damage and @Damage[7d6[spirit]] damage (@Check[type:fortitude|dc:30|basic:true] save). Creatures that are specifically vulnerable to sunlight are also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} if they fail this save or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure. This activation also attempts to counteract any darkness or sleep effects in the area ([[/r 1d20+23 #Counteract]]{+23} counteract check).</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:perform:horn"
+        ],
+        "selector": "performance",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "horn-of-the-sun-aurochs",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Adventure: Shadows at Sundown",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 3000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.XPkhjxSh6tBWk50f"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.XPkhjxSh6tBWk50f",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XPkhjxSh6tBWk50f"
+}

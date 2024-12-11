@@ -1,0 +1,83 @@
+{
+  "_id": "HBhLR980Q0cb2rxp",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Perfect Debilitation",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have perfected the formulas for bombs that impede your enemies.</p>\n<p>When you use @UUID[Compendium.pf2e.feats-srd.Item.sv4LeEbkOJyLen10]{Debilitating Bomb}, your target avoids the condition the bomb imposes only if it critically succeeds at its saving throw.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "alchemical",
+          "bomb",
+          "debilitating-bomb"
+        ],
+        "selector": "attack-roll",
+        "text": "If your bomb hits, the target must critically succed at its Fortitude save to avoid the condition the bomb imposes.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "perfect-debilitation",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemist"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.HBhLR980Q0cb2rxp"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.HBhLR980Q0cb2rxp",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!HBhLR980Q0cb2rxp"
+}

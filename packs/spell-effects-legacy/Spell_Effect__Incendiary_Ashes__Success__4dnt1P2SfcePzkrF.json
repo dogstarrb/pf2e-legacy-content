@@ -1,0 +1,76 @@
+{
+  "_id": "4dnt1P2SfcePzkrF",
+  "img": "systems/pf2e/icons/spells/incendiary-ashes.webp",
+  "name": "Spell Effect: Incendiary Ashes (Success)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted <em>@UUID[Compendium.pf2e.spells-srd.Item.OTd17oXwJH9qb1cS]{Incendiary Ashes}</em></p>\n<p>The creature has weakness to fire 3 until the start of its next turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "Weakness",
+        "type": "fire",
+        "value": "@item.level"
+      }
+    ],
+    "slug": "spell-effect-incendiary-ashes-success",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #185: A Taste of Ashes",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "duration": {
+      "value": 0,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.4dnt1P2SfcePzkrF"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 4900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.4dnt1P2SfcePzkrF",
+    "duplicateSource": null
+  },
+  "_key": "!items!4dnt1P2SfcePzkrF"
+}

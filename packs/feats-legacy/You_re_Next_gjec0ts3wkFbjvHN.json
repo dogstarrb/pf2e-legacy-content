@@ -1,0 +1,90 @@
+{
+  "_id": "gjec0ts3wkFbjvHN",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "You're Next",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong> You reduce an enemy to 0 Hit Points</p>\n<hr />\n<p>After downing a foe, you menacingly remind another foe that you're coming after them next.</p>\n<p>Attempt an Intimidation check with a +2 circumstance bonus to Demoralize a single creature that you can see and that can see you.</p>\n<p>If you have legendary proficiency in Intimidation, you can use this as a free action with the same trigger.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:demoralize",
+          "youre-next"
+        ],
+        "selector": "intimidation",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "youre-next",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "emotion",
+        "fear",
+        "mental",
+        "rogue",
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Intimidation"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.gjec0ts3wkFbjvHN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.gjec0ts3wkFbjvHN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!gjec0ts3wkFbjvHN"
+}

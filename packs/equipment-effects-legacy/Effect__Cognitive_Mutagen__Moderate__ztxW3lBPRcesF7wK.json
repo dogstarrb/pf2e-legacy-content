@@ -1,0 +1,125 @@
+{
+  "_id": "ztxW3lBPRcesF7wK",
+  "img": "icons/consumables/potions/potion-vial-corked-purple.webp",
+  "name": "Effect: Cognitive Mutagen (Moderate)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.qpzL9UnTi4cDhy6J]{Cognitive Mutagen (Moderate)}</p>\n<p><strong>Implemented effects</strong></p>\n<ul>\n<li>+2 item bonus to Arcana, Crafting, Lore, Occultism and Society checks</li>\n<li>+2 item bonus to all Recall Knowledge checks</li>\n<li>-2 penalty to to Athletics and Acrobatics checks</li>\n<li>-2 penalty to weapon and unarmed attacks</li>\n<li>Treat Recall Knowledge critical failures as failures</li>\n<li>You can carry 2 less Bulk than normal before becoming encumbered</li>\n<li>The maximum Bulk you can carry is reduced by 4</li>\n</ul>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "arcana",
+          "crafting",
+          "lore-skill-check",
+          "occultism",
+          "society"
+        ],
+        "type": "item",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "acrobatics",
+          "athletics",
+          "strike-attack-roll"
+        ],
+        "value": -2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:recall-knowledge"
+        ],
+        "selector": "skill-check",
+        "type": "item",
+        "value": 2
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:recall-knowledge"
+        ],
+        "selector": "skill-check",
+        "type": "skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "subtract",
+        "path": "inventory.bulk.encumberedAfterAddend",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "subtract",
+        "path": "inventory.bulk.maxAddend",
+        "value": 4
+      }
+    ],
+    "slug": "effect-cognitive-mutagen-moderate",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.ztxW3lBPRcesF7wK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.ztxW3lBPRcesF7wK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ztxW3lBPRcesF7wK"
+}

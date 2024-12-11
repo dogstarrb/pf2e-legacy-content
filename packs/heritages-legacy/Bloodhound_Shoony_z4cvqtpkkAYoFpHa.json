@@ -1,0 +1,76 @@
+{
+  "_id": "z4cvqtpkkAYoFpHa",
+  "img": "systems/pf2e/icons/features/ancestry/bloodhound-shoony.webp",
+  "name": "Bloodhound Shoony",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your ancestors were famous trackers, and you carry in your blood that same gift of the hunt.</p>\n<p>You gain a special sense: imprecise scent with a range of 30 feet. This means you can use your sense of smell to determine the location of a creature, but it remains @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}.</p>\n<p>In addition, you gain a +2 circumstance bonus to Survival checks to @UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{Track} creatures that you have previously sensed with your scent.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Bloodhound Shoony (Track smelled creatures)",
+        "predicate": [
+          "action:track",
+          "target:previously-smelled"
+        ],
+        "selector": "survival",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "acuity": "imprecise",
+        "key": "Sense",
+        "range": 30,
+        "selector": "scent"
+      }
+    ],
+    "slug": "bloodhound-shoony",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #153: Life's Long Shadows",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Shoony",
+      "slug": "shoony",
+      "uuid": "Compendium.pf2e.ancestries.Item.q6rsqYARyOGXZA8F"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.z4cvqtpkkAYoFpHa"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.z4cvqtpkkAYoFpHa",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!z4cvqtpkkAYoFpHa"
+}

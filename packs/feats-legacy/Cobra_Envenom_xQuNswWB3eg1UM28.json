@@ -1,0 +1,91 @@
+{
+  "_id": "xQuNswWB3eg1UM28",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Cobra Envenom",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.Item.AkV4Jyllo6nlK2Sl]{Cobra Stance}.</p>\n<hr />\n<p>You lash out with devious intent and the power to envenom your foe. Make a cobra fang Strike. Your reach with this Strike is 5 feet greater than normal.</p>\n<p>If this Strike hits, the target takes @Damage[1d4[persistent,poison]] per weapon damage die.</p>\n<hr />\n<p><strong>Special</strong> If you have this feat, the circumstance bonus to Fortitude saves and Fortitude DC granted by Cobra Stance increases from +1 to +2.</p>"
+    },
+    "rules": [
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "selector": "fortitude",
+        "slug": "cobra-stance",
+        "value": 1
+      }
+    ],
+    "slug": "cobra-envenom",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "monk",
+        "poison"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Cobra Stance"
+        },
+        {
+          "value": "expert in unarmed attacks"
+        }
+      ]
+    },
+    "location": null,
+    "frequency": {
+      "max": 1,
+      "per": "PT1M"
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.xQuNswWB3eg1UM28"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.xQuNswWB3eg1UM28",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xQuNswWB3eg1UM28"
+}

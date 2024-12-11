@@ -1,0 +1,92 @@
+{
+  "_id": "7KT4huf0iPaBGD7R",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Combination Finisher",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You combine a series of attacks with a powerful finishing blow. Your finishers' Strikes have a lower multiple attack penalty: -4 (or -3 with an agile weapon) if it's the second attack on your turn, or -8 (or -6 with an agile weapon) if it's the third or subsequent attack on your turn, instead of -5 and -10, respectively.</p>"
+    },
+    "rules": [
+      {
+        "key": "MultipleAttackPenalty",
+        "predicate": [
+          "agile",
+          "finisher"
+        ],
+        "selector": "attack",
+        "value": -3
+      },
+      {
+        "key": "MultipleAttackPenalty",
+        "predicate": [
+          {
+            "not": "agile"
+          },
+          "finisher"
+        ],
+        "selector": "attack",
+        "value": -4
+      }
+    ],
+    "slug": "combination-finisher",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.7KT4huf0iPaBGD7R"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.7KT4huf0iPaBGD7R",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7KT4huf0iPaBGD7R"
+}

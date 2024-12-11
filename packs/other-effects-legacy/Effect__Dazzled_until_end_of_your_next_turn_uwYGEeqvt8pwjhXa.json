@@ -1,0 +1,79 @@
+{
+  "_id": "uwYGEeqvt8pwjhXa",
+  "img": "systems/pf2e/icons/effects/critical-effect.webp",
+  "name": "Effect: Dazzled until end of your next turn",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Effect applied by @UUID[Compendium.pf2e.criticaldeck.JournalEntry.mwz1Ukw9laGyRocF]{Critical Fumble Deck #51}, @UUID[Compendium.pf2e.criticaldeck.JournalEntry.dvL063pJYJpCMsA6]{Critical Fumble Deck #52}</strong></p>\n<p>You are @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the end of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "uuid": "Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh"
+      }
+    ],
+    "slug": "effect-dazzled-until-end-of-your-next-turn",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Critical Decks",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.other-effects.Item.uwYGEeqvt8pwjhXa"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.other-effects-legacy.Item.uwYGEeqvt8pwjhXa",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uwYGEeqvt8pwjhXa"
+}

@@ -1,0 +1,81 @@
+{
+  "_id": "WLvFC2eE80SEZpUg",
+  "img": "icons/creatures/claws/claw-hooked-purple.webp",
+  "name": "Effect: Wyrm Claw - Armor",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.r81OfbBRPTXi0Fwd]{Wyrm Claw}</p>\n<p>After you cast a conjuration spell by activating the <em>wyrm claw</em>, you gain resistance 5 to acid, cold, electricity, and fire for the next minute.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": [
+          "acid",
+          "cold",
+          "electricity",
+          "fire"
+        ],
+        "value": 5
+      }
+    ],
+    "slug": "effect-wyrm-claw-armor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.WLvFC2eE80SEZpUg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.WLvFC2eE80SEZpUg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WLvFC2eE80SEZpUg"
+}

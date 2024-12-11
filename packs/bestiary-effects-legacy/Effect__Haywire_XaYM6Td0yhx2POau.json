@@ -1,0 +1,91 @@
+{
+  "_id": "XaYM6Td0yhx2POau",
+  "img": "icons/magic/lightning/bolt-strike-forked-blue.webp",
+  "name": "Effect: Haywire",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature takes a -1 circumstance penalty to Strikes but deals an additional @Damage[1d6[bludgeoning]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown}.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "attack-roll",
+        "type": "circumstance",
+        "value": -1
+      },
+      {
+        "damageType": "bludgeoning",
+        "diceNumber": 1,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "selector": "strike-damage"
+      },
+      {
+        "key": "Note",
+        "selector": "attack",
+        "text": "PF2E.NPC.Abilities.Glossary.Knockdown",
+        "title": "<span class=\"pf2-icon\">1</span> @Localize[PF2E.AttackEffectKnockdown] ({item|name})"
+      }
+    ],
+    "slug": "effect-haywire",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #151: The Show Must Go On",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minutes",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.XaYM6Td0yhx2POau"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.XaYM6Td0yhx2POau",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XaYM6Td0yhx2POau"
+}

@@ -1,0 +1,87 @@
+{
+  "_id": "KpRRcLsAiIhJFE03",
+  "img": "systems/pf2e/icons/spells/possession.webp",
+  "name": "Effect: Furious Possession",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature gains 12 temporary Hit Points that are lost when the possession ends. During the possession, the creature has the pulse of rage aura. Each time the possessed creature makes a melee Strike, the spirit can substitute their ephemeral claw attack modifier, damage amount, or both in place of the creature's own statistics.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.GC5441z8i7N8swk1]{Effect: Pulse of Rage}</p>"
+    },
+    "rules": [
+      {
+        "key": "TempHP",
+        "value": 12
+      },
+      {
+        "key": "Aura",
+        "radius": 20,
+        "slug": "pulse-of-rage",
+        "traits": [
+          "aura",
+          "emotion",
+          "mental",
+          "occult"
+        ]
+      }
+    ],
+    "slug": "effect-furious-possession",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary 3",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.KpRRcLsAiIhJFE03"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.KpRRcLsAiIhJFE03",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!KpRRcLsAiIhJFE03"
+}

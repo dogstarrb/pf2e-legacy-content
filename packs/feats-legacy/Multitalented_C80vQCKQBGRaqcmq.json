@@ -1,0 +1,91 @@
+{
+  "_id": "C80vQCKQBGRaqcmq",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Multitalented",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've learned to split your focus between multiple classes with ease. You gain a 2nd-level multiclass dedication feat, even if you normally couldn't take another dedication feat until you take more feats from your current archetype. If you're a half-elf, you don't need to meet the feat's ability score prerequisites.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": {
+          "filter": [
+            "item:level:2",
+            "item:category:class",
+            "item:trait:dedication",
+            "item:trait:multiclass"
+          ],
+          "itemType": "feat"
+        },
+        "flag": "multitalented",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Multitalented.Prompt"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.multitalented}"
+      }
+    ],
+    "slug": "multitalented",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "human"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.C80vQCKQBGRaqcmq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.C80vQCKQBGRaqcmq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!C80vQCKQBGRaqcmq"
+}

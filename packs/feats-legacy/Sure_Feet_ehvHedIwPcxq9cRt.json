@@ -1,0 +1,112 @@
+{
+  "_id": "ehvHedIwPcxq9cRt",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Sure Feet",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Whether keeping your balance or scrambling up a tricky climb, your hairy, calloused feet easily find purchase. If you roll a success on an Acrobatics check to Balance or an Athletics check to Climb, you get a critical success instead. You're not off-guard when you attempt to Balance or Climb.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "action:balance"
+        ],
+        "selector": "acrobatics",
+        "text": "PF2E.SpecificRule.Halfling.SureFeet.BalanceNote",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "action:climb"
+        ],
+        "selector": "athletics",
+        "text": "PF2E.SpecificRule.Halfling.SureFeet.ClimbNote",
+        "title": "{item|name}"
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:balance"
+        ],
+        "selector": "acrobatics",
+        "type": "skill"
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:climb"
+        ],
+        "selector": "athletics",
+        "type": "skill"
+      }
+    ],
+    "slug": "sure-feet",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "halfling"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ehvHedIwPcxq9cRt"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ehvHedIwPcxq9cRt",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ehvHedIwPcxq9cRt"
+}

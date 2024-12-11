@@ -1,0 +1,88 @@
+{
+  "_id": "n6NK7wqhTxWr3ij8",
+  "img": "systems/pf2e/icons/spells/warding-aggression.webp",
+  "name": "Spell Effect: Warding Aggression (+2)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Warding aggression ends if the foe you attacked dies or at the end of any turn in which you didn't hit that foe with a melee Strike.</p>\n<hr />\n<p>You gain a +2 status bonus to AC against the foe for the remaining duration.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "warding-aggression"
+        ],
+        "selector": "ac",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "domain": "ac",
+        "key": "RollOption",
+        "label": "Attacked by Warded Foe",
+        "option": "warding-aggression",
+        "toggleable": true
+      }
+    ],
+    "slug": "spell-effect-warding-aggression-2",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.n6NK7wqhTxWr3ij8"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 35100000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.n6NK7wqhTxWr3ij8",
+    "duplicateSource": null
+  },
+  "_key": "!items!n6NK7wqhTxWr3ij8"
+}

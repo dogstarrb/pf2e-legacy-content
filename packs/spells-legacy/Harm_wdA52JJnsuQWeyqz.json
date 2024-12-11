@@ -1,0 +1,222 @@
+{
+  "_id": "wdA52JJnsuQWeyqz",
+  "img": "systems/pf2e/icons/spells/harm.webp",
+  "name": "Harm",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You channel negative energy to harm the living or heal the undead. If the target is a living creature, you deal 1d8 negative damage to it, and it gets a basic Fortitude save. If the target is a willing undead creature, you restore that amount of Hit Points. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing an undead creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, verbal, somatic)</strong> You disperse negative energy in a 30-foot emanation. This targets all living and undead creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
+    },
+    "rules": [],
+    "slug": "harm",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "manipulate",
+        "void"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "divine"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 living creature or 1 willing undead creature"
+    },
+    "range": {
+      "value": "varies"
+    },
+    "area": null,
+    "time": {
+      "value": "1 to 3"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "1d8",
+        "type": "void",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage",
+          "healing"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d8"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {
+      "4gyp3qlsv5ywdyjq": {
+        "_id": "4gyp3qlsv5ywdyjq",
+        "name": "Harm (vs. Undead)",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "damage": {
+            "0": {
+              "formula": "1d8+8",
+              "kinds": [
+                "healing"
+              ]
+            }
+          },
+          "heightening": {
+            "damage": {
+              "0": "1d8+8"
+            }
+          },
+          "range": {
+            "value": "30 feet"
+          },
+          "target": {
+            "value": "1 willing undead creature"
+          },
+          "time": {
+            "value": "2"
+          },
+          "traits": {
+            "value": [
+              "concentrate",
+              "manipulate",
+              "void"
+            ]
+          },
+          "defense": null
+        }
+      },
+      "pq7cxntbz4s8g5ik": {
+        "_id": "pq7cxntbz4s8g5ik",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "range": {
+            "value": "touch"
+          },
+          "time": {
+            "value": "1"
+          }
+        }
+      },
+      "rvhoa43rqqqp8izn": {
+        "_id": "rvhoa43rqqqp8izn",
+        "overlayType": "override",
+        "sort": 4,
+        "system": {
+          "area": {
+            "type": "emanation",
+            "value": 30
+          },
+          "range": {
+            "value": ""
+          },
+          "target": {
+            "value": "all living and undead creatures"
+          },
+          "time": {
+            "value": "3"
+          },
+          "traits": {
+            "value": [
+              "concentrate",
+              "manipulate",
+              "void"
+            ]
+          }
+        }
+      },
+      "z04svm1cvfcxtplb": {
+        "_id": "z04svm1cvfcxtplb",
+        "name": "Harm (vs. Living)",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "range": {
+            "value": "30 feet"
+          },
+          "target": {
+            "value": "1 living creature"
+          },
+          "time": {
+            "value": "2"
+          },
+          "traits": {
+            "value": [
+              "concentrate",
+              "manipulate",
+              "void"
+            ]
+          },
+          "damage": {
+            "0": {
+              "kinds": [
+                "damage"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.wdA52JJnsuQWeyqz",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!wdA52JJnsuQWeyqz"
+}

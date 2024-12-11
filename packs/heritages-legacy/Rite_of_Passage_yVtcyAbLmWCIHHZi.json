@@ -1,0 +1,80 @@
+{
+  "_id": "yVtcyAbLmWCIHHZi",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Rite of Passage",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your exoskeleton remains connected with the plants that created it. You can ignore difficult terrain and uneven ground caused by undergrowth. In addition, when you use the Acrobatics skill to Balance on narrow surfaces or uneven ground within forests, you aren't off-guard. When you roll a success attempting one of these Acrobatics checks, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:balance",
+          "terrain:forest"
+        ],
+        "selector": "acrobatics",
+        "type": "skill"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "action:balance"
+        ],
+        "selector": "acrobatics",
+        "text": "PF2E.SpecificRule.Conrasu.RiteOfPassage.Note",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "rite-of-passage",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Mwangi Expanse",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Conrasu",
+      "slug": "conrasu",
+      "uuid": "Compendium.pf2e.ancestries.Item.tZn4qIHCUA6wCdnI"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.yVtcyAbLmWCIHHZi"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.yVtcyAbLmWCIHHZi",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!yVtcyAbLmWCIHHZi"
+}

@@ -1,0 +1,89 @@
+{
+  "_id": "dDFQJem5K9Jzxgda",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Expert Fireworks Crafter",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You're particularly adept at crafting fireworks, allowing you to create much more powerful fireworks than you otherwise could. Your advanced alchemy level for fireworks increases to your level - 3.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.crafting.entries.fireworkTechnician.maxItemLevel",
+        "phase": "beforeDerived",
+        "predicate": [
+          "crafting:entry:firework-technician"
+        ],
+        "value": "@actor.level - 3"
+      }
+    ],
+    "slug": "expert-fireworks-crafter",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Firework Technician Dedication"
+        },
+        {
+          "value": "expert in Crafting"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.dDFQJem5K9Jzxgda"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.dDFQJem5K9Jzxgda",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!dDFQJem5K9Jzxgda"
+}

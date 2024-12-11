@@ -1,0 +1,82 @@
+{
+  "_id": "g5Yen1FhEMCzCJkv",
+  "img": "icons/magic/life/heart-shadow-red.webp",
+  "name": "Effect: Profane Gift",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature gains a +1 status bonus to attack rolls, skill checks, and saving throws.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "attack",
+          "saving-throw",
+          "skill-check"
+        ],
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "effect-profane-gift",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.g5Yen1FhEMCzCJkv"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.g5Yen1FhEMCzCJkv",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!g5Yen1FhEMCzCJkv"
+}

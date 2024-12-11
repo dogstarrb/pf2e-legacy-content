@@ -1,0 +1,94 @@
+{
+  "_id": "gyVcJfZTmBytLsXq",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Expanded Splash",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can throw bombs at just the right trajectory to create especially large and powerful explosions. When you throw an alchemical bomb and that bomb has the splash trait, you can add your Intelligence modifier to the bomb's usual splash damage, and it deals splash damage to every creature within 10 feet of the target.</p>"
+    },
+    "rules": [
+      {
+        "damageCategory": "splash",
+        "key": "FlatModifier",
+        "predicate": [
+          "item:trait:splash"
+        ],
+        "selector": "alchemical-bomb-damage",
+        "value": "@actor.abilities.int.mod"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "item:trait:splash"
+        ],
+        "selector": "alchemical-bomb-damage",
+        "text": "The bomb deals splash damage to every creature within 10 feet of the target.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "expanded-splash",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemist"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Calculated Splash"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.gyVcJfZTmBytLsXq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.gyVcJfZTmBytLsXq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!gyVcJfZTmBytLsXq"
+}

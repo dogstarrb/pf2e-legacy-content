@@ -1,0 +1,85 @@
+{
+  "_id": "8gqb5FMTaArsKdWB",
+  "img": "systems/pf2e/icons/spells/prismatic-armor.webp",
+  "name": "Spell Effect: Prismatic Armor",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.4nEY2BcV85wavKLO]{Prismatic Armor}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": [
+          "acid",
+          "electricity",
+          "fire",
+          "force",
+          "mental",
+          "poison",
+          "sonic"
+        ],
+        "value": "ternary(gte(@item.level,9),10,5)"
+      }
+    ],
+    "slug": "spell-effect-prismatic-armor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.8gqb5FMTaArsKdWB"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 8600000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.8gqb5FMTaArsKdWB",
+    "duplicateSource": null
+  },
+  "_key": "!items!8gqb5FMTaArsKdWB"
+}

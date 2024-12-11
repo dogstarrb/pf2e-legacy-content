@@ -1,0 +1,105 @@
+{
+  "_id": "SxRVCc1Q2MtVuPMo",
+  "img": "icons/magic/nature/symbol-sun-yellow.webp",
+  "name": "Sign of Conviction",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You conjure the religious symbol of your deity into the air above you in the same space you stand in, wielding the power of your faith to smite your foes. This religious symbol is immobile, made of pure magical force, and can't be damaged. As long as you Sustain sign of conviction, you gain a +1 status bonus to AC and saving throws and are @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. The DC for any effect to force you to move out of your space (such as the @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} action) is equal to your spell DC or the normal DC, whichever is higher. If you stop being immobilized or are moved out of your space, <em>sign of conviction</em> immediately ends.</p>\n<p>When you Cast the Spell and each time you Sustain the Spell, the religious symbol emits a blast of energy at a target within 100 feet. Make a spell attack roll that deals 2d10 damage on a success (see below for determining damage type) and double damage on a critical success. You can Sustain the Spell multiple times in the same round to emit an array of blasts.</p>\n<p>If you worship a good deity, the spell gains the good and light traits, deals your choice of either fire or good damage, and emits bright light in a @Template[type:burst|distance:20]. If you worship an evil deity, the spell gains the evil and darkness traits, deals your choice of cold or evil damage, and reduces the light level in a @Template[type:burst|distance:20] to dim light if it would be brighter. If you worship a neutral deity, the spell gains the force trait and deals force damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d10.</p>"
+    },
+    "rules": [],
+    "slug": "sign-of-conviction",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "concentrate",
+        "manipulate"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "divine"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Knights of Lastwall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": ""
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": true
+    },
+    "damage": {
+      "j2ds5suvw51ucg4c": {
+        "applyMod": false,
+        "formula": "2d10",
+        "type": "fire",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "j2ds5suvw51ucg4c": "1d10"
+      },
+      "interval": 2,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.SxRVCc1Q2MtVuPMo"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.SxRVCc1Q2MtVuPMo",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!SxRVCc1Q2MtVuPMo"
+}

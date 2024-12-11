@@ -1,0 +1,78 @@
+{
+  "_id": "1RsScTvNdGD9zGWe",
+  "img": "icons/magic/fire/barrier-shield-explosion-yellow.webp",
+  "name": "Spell Effect: Fire Shield",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@Compendium[pf2e-legacy-content.spells-legacy.YrzBLPLd3r9m6t1p]{Fire Shield}</em></p>\n<p>The target gains resistance to cold damage.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "cold",
+        "value": "5 + 5*floor((@item.level -4)/2)"
+      }
+    ],
+    "slug": "spell-effect-fire-shield",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.1RsScTvNdGD9zGWe"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 2100000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.1RsScTvNdGD9zGWe",
+    "duplicateSource": null
+  },
+  "_key": "!items!1RsScTvNdGD9zGWe"
+}

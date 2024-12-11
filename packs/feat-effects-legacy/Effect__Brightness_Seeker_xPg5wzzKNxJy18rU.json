@@ -1,0 +1,165 @@
+{
+  "_id": "xPg5wzzKNxJy18rU",
+  "img": "systems/pf2e/icons/spells/moonlight-bridge.webp",
+  "name": "Effect: Brightness Seeker",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong> You attempt an attack roll, skill check, or saving throw while performing the course of action from your <em>@UUID[Compendium.pf2e.spells-srd.Item.41TZEjhO6D1nWw2X]{Augury}</em>, but you haven't rolled yet.</p>\n<hr />\n<p><strong>Effect</strong> You gain a +1 status bonus to the triggering check, or a +2 status bonus if the result of the augury was woe and you proceeded anyway.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "call-upon-the-brightness",
+          "brightness-seeker:weal"
+        ],
+        "selector": "attack",
+        "slug": "weal-attack",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "call-upon-the-brightness",
+          "brightness-seeker:weal"
+        ],
+        "selector": "skill-check",
+        "slug": "weal-skill",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "call-upon-the-brightness",
+          "brightness-seeker:weal"
+        ],
+        "selector": "saving-throw",
+        "slug": "weal-save",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.SpecificRule.Elf.BrightnessSeeker.Weal",
+            "value": "weal"
+          },
+          {
+            "label": "PF2E.SpecificRule.Elf.BrightnessSeeker.Woe",
+            "value": "woe"
+          },
+          {
+            "label": "PF2E.SpecificRule.Elf.BrightnessSeeker.WealAndWoe",
+            "value": "weal"
+          }
+        ],
+        "flag": "brightnessSeeker",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Elf.BrightnessSeeker.Prompt",
+        "rollOption": "brightness-seeker"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "call-upon-the-brightness",
+          "brightness-seeker:woe"
+        ],
+        "selector": "attack",
+        "slug": "woe-attack",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "call-upon-the-brightness",
+          "brightness-seeker:woe"
+        ],
+        "selector": "skill-check",
+        "slug": "woe-skill",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "call-upon-the-brightness",
+          "brightness-seeker:woe"
+        ],
+        "selector": "saving-throw",
+        "slug": "woe-save",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Elf.BrightnessSeeker.Label",
+        "option": "call-upon-the-brightness",
+        "toggleable": true
+      }
+    ],
+    "slug": "effect-brightness-seeker",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "duration": {
+      "value": 30,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.xPg5wzzKNxJy18rU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.xPg5wzzKNxJy18rU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xPg5wzzKNxJy18rU"
+}

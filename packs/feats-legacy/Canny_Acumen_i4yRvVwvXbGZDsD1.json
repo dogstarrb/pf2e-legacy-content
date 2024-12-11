@@ -1,0 +1,112 @@
+{
+  "_id": "i4yRvVwvXbGZDsD1",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Canny Acumen",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your avoidance or observation is beyond the ken of most in your profession. Choose Fortitude saves, Reflex saves, Will saves, or Perception. You become an expert in your choice. At 17th level, you become a master in your choice.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.SavesFortitude",
+            "value": "system.saves.fortitude.rank"
+          },
+          {
+            "label": "PF2E.SavesReflex",
+            "value": "system.saves.reflex.rank"
+          },
+          {
+            "label": "PF2E.SavesWill",
+            "value": "system.saves.will.rank"
+          },
+          {
+            "label": "PF2E.PerceptionLabel",
+            "value": "system.perception.rank"
+          }
+        ],
+        "flag": "cannyAcumen",
+        "key": "ChoiceSet"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "{item|flags.pf2e.rulesSelections.cannyAcumen}",
+        "value": {
+          "brackets": [
+            {
+              "end": 16,
+              "start": 1,
+              "value": 2
+            },
+            {
+              "start": 17,
+              "value": 3
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "canny-acumen",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "general",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.i4yRvVwvXbGZDsD1"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.i4yRvVwvXbGZDsD1",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!i4yRvVwvXbGZDsD1"
+}

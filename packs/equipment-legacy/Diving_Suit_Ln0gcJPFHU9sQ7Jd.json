@@ -1,0 +1,111 @@
+{
+  "_id": "Ln0gcJPFHU9sQ7Jd",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/diving-suit.webp",
+  "name": "Diving Suit",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Diving suits are bulky, waterproofed leather outfits with copper helmets, worn by divers and underwater salvagers. The suit grants a +1 item bonus to Swim checks made underwater, and the helmet features tubes for connecting <em>@UUID[Compendium.pf2e.equipment-srd.Item.7TQw7V1zZKl0a0Xz]{Bottled Air}</em>. When connected to a diving suit, <em>bottled air</em> doesn't need to be held and can be used to breathe as a free action. If you wear armor over a diving suit, you become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until you remove the diving suit.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Swim in Diving Suit",
+        "predicate": [
+          "action:swim"
+        ],
+        "selector": "athletics",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "diving-suit",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 100
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "wornclothing"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.Ln0gcJPFHU9sQ7Jd"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.Ln0gcJPFHU9sQ7Jd",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Ln0gcJPFHU9sQ7Jd"
+}

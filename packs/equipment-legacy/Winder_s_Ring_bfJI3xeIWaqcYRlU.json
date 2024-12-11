@@ -1,0 +1,111 @@
+{
+  "_id": "bfJI3xeIWaqcYRlU",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/ring-of-maniacal-devices.webp",
+  "name": "Winder's Ring",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This ring contains dozens of minute, interlocking bronze gears that buzz incessantly. The ring grants you a +1 item bonus to all Crafting checks to construct or repair clockworks.</p>\n<hr />\n<p><strong>Activate</strong> (varies) Interact</p>\n<hr />\n<p><strong>Effect</strong> The <em>winder's ring</em> extends a winding key that fits any clockwork contraption or creature, allowing you to fully wind a clockwork device or creature in half the usual time. When you activate a <em>winder's ring</em> in this way, attempt a @Check[type:flat|dc:16]. On a failure, the <em>winder's ring</em> exhausts itself, and you can't activate it again until the next time you make your daily preparations.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The <em>winder's ring</em> transforms into a @UUID[Compendium.pf2e.pathfinder-bestiary-3.Actor.cKZtOsBlN3Qu8Kyq]{Clockwork Spy} that doesn't require winding and obeys your spoken commands for up to 1 hour. In this form, the <em>winder's ring</em> has the minion trait. You can use this action again to return the clockwork spy to <em>winder's ring</em> form as long as you're adjacent to the clockwork spy. If the clockwork spy is slain, it reverts to its ring shape, and the <em>winder's ring</em> can't be activated again until 1 week has passed.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "clockwork"
+        ],
+        "selector": "crafting",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "winders-ring",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #179: Cradle of Quartz",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 360
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.bfJI3xeIWaqcYRlU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.bfJI3xeIWaqcYRlU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bfJI3xeIWaqcYRlU"
+}

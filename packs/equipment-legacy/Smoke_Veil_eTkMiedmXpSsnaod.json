@@ -1,0 +1,114 @@
+{
+  "_id": "eTkMiedmXpSsnaod",
+  "img": "systems/pf2e/icons/default-icons/equipment.svg",
+  "name": "Smoke Veil",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><em>Smoke veils</em> are wigs or headdresses made of flame and ash, giving the wearer a burning coil of fiery hair and concealing their face behind a smoldering, omnipresent haze of smoke and sparking embers. You can use the veil to go unrecognized by hiding your face so that you can attempt Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} without needing a disguise kit. When you do so, it takes you only 1 minute to create the disguise, and you gain a +1 item bonus to the check. You still need a disguise kit and the full time if you're using cosmetics and other props to change other aspects of your disguise, or if Impersonating a specific person.</p>\n<hr />\n<p><strong>Activate—Blazing Stare</strong> <span class=\"action-glyph\">1</span> (concentrate)</p>\n<p><strong>Requirements</strong> You dealt fire damage to a target you can see within 30 feet with your most recent action this turn</p>\n<p><strong>Effect</strong> You set your fiery gaze on your target, eyes burning within a cloud of ash and cinder. Roll an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} the target. Demoralize loses the auditory trait and gains the visual trait, and you don't take a penalty when you attempt to Demoralize a creature that doesn't understand your language.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:impersonate"
+        ],
+        "selector": "deception",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "smoke-veil",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fire",
+        "invested",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 3
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 60
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "wornheadwear"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.eTkMiedmXpSsnaod"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.eTkMiedmXpSsnaod",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!eTkMiedmXpSsnaod"
+}

@@ -1,0 +1,90 @@
+{
+  "_id": "Plga97M3LVFZqhiP",
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "name": "Effect: Resonating Fork - Armor",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.TVpEf9gMFUuwfGoU]{Resonating Fork}</p>\n<p>You gain resistance 2 to sonic damage and a +1 item bonus to saving throws against effects with the auditory or sonic trait.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "sonic",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "auditory",
+              "sonic"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "effect-resonating-fork-armor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.Plga97M3LVFZqhiP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.Plga97M3LVFZqhiP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Plga97M3LVFZqhiP"
+}

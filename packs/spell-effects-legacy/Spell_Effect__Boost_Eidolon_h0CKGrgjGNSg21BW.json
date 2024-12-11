@@ -1,0 +1,82 @@
+{
+  "_id": "h0CKGrgjGNSg21BW",
+  "img": "icons/creatures/magical/humanoid-silhouette-glowing-pink.webp",
+  "name": "Spell Effect: Boost Eidolon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.HStu2Yhw3iQER9tY]{Boost Eidolon}</em></p>\n<p>Your eidolon gains a +2 status bonus to damage with its unarmed attacks per weapon damage die, to a maximum of +8 with four weapon damage dice.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "self:trait:eidolon",
+          "item:category:unarmed"
+        ],
+        "selector": "strike-damage",
+        "type": "status",
+        "value": "@weapon.system.damage.dice * 2"
+      }
+    ],
+    "slug": "spell-effect-boost-eidolon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.h0CKGrgjGNSg21BW"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 29900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.h0CKGrgjGNSg21BW",
+    "duplicateSource": null
+  },
+  "_key": "!items!h0CKGrgjGNSg21BW"
+}

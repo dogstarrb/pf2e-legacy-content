@@ -1,0 +1,103 @@
+{
+  "_id": "TU67AK08CUsP7pl4",
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "name": "Effect: Beastmaster's Sigil - Ranged Weapon (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.fWgH0JxNCOpI7SVr]{Beastmaster's Sigil (Greater)}</p>\n<p>If you critically hit with the affixed weapon, and the target is adjacent to a creature summoned with the <em>sigil</em>, the target takes @Damage[2d6[bleed]]{2d6 persistent bleed} damage.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Spellheart.BeastmastersSigil.AdjacentLabel",
+        "option": "adjacent-sigil-summon",
+        "toggleable": true
+      },
+      {
+        "choices": {
+          "ownedItems": true,
+          "predicate": [
+            "item:ranged"
+          ],
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "effectBeastmastersSigilRangedWeaponGreater",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "critical": true,
+        "damageType": "bleed",
+        "diceNumber": 2,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "predicate": [
+          "adjacent-sigil-summon"
+        ],
+        "selector": "{item|flags.pf2e.rulesSelections.effectBeastmastersSigilRangedWeaponGreater}-damage"
+      }
+    ],
+    "slug": "effect-beastmasters-sigil-ranged-weapon-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.TU67AK08CUsP7pl4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.TU67AK08CUsP7pl4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!TU67AK08CUsP7pl4"
+}

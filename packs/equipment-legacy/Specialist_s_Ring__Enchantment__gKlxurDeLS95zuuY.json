@@ -1,0 +1,124 @@
+{
+  "_id": "gKlxurDeLS95zuuY",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/specialists-ring.webp",
+  "name": "Specialist's Ring (Enchantment)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This <em>specialist's ring</em> is dedicated to the enchantment school of magic, and the ring is covered in symbols and glyphs related to the enchantment school according to the creator's arcane studies. You gain a +2 item bonus to Arcana checks, and a +1 circumstance bonus to recognize magical effects and items of the enchantment school of magic.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You gain 1 Focus Point, which you can use only to cast a wizard school spell of the enchantment school. If not used by the end of your turn, this Focus Point is lost.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "arcana",
+        "type": "item",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:identify-magic"
+        ],
+        "selector": [
+          "arcana",
+          "nature",
+          "occultism",
+          "religion"
+        ],
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "specialists-ring-enchantment",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "focused",
+        "invested",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.gKlxurDeLS95zuuY"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.gKlxurDeLS95zuuY",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!gKlxurDeLS95zuuY"
+}

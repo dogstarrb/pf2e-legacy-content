@@ -1,0 +1,125 @@
+{
+  "_id": "k8gB0eDuAlGRoeQj",
+  "img": "systems/pf2e/icons/spells/dismantle.webp",
+  "name": "Effect: Benevolent Spirit Deck",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +1 status bonus to AC and resistance depending on your harrow omen.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "predicate": [
+          "harrow-omen:crowns"
+        ],
+        "type": "acid",
+        "value": "ternary(gte(@actor.level,15),15,ternary(gte(@actor.level,10),10,5))"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "harrow-omen:hammers"
+        ],
+        "type": "cold",
+        "value": "ternary(gte(@actor.level,15),15,ternary(gte(@actor.level,10),10,5))"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "harrow-omen:books"
+        ],
+        "type": "electricity",
+        "value": "ternary(gte(@actor.level,15),15,ternary(gte(@actor.level,10),10,5))"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "harrow-omen:keys"
+        ],
+        "type": "fire",
+        "value": "ternary(gte(@actor.level,15),15,ternary(gte(@actor.level,10),10,5))"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "harrow-omen:stars"
+        ],
+        "type": "mental",
+        "value": "ternary(gte(@actor.level,15),15,ternary(gte(@actor.level,10),10,5))"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "harrow-omen:shields"
+        ],
+        "type": "poison",
+        "value": "ternary(gte(@actor.level,15),15,ternary(gte(@actor.level,10),10,5))"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "ac",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "effect-benevolent-spirit-deck",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder: Stolen Fate Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.k8gB0eDuAlGRoeQj"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.k8gB0eDuAlGRoeQj",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!k8gB0eDuAlGRoeQj"
+}

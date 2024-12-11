@@ -1,0 +1,117 @@
+{
+  "_id": "p6Asr6f2cI2BWorr",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "name": "Sponsored by Teacher Ot",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have known the Magaambyan teacher Takulu Ot and his wife Niana for many years. Both are amateur bird-watchers and musicians, and you share one of these hobbies. They are pleasant people and well-regarded in Nantambu, although their unshakable generosity and friendliness strike cynics as too earnest to be genuine. You know otherwise; Takulu and Niana are just as sincere as they appear. Takulu always seemed to watch you with a discerning eye, and one day he idly observed that you'd do well at the Magaambya. Talking about it further with him, Takulu agreed that he would sponsor you personally and be the one to give your intake interview. With a twinkle in his eye, he asked that you call him Teacher Ot from now on, just as all of his students do.</p>\n<p>Choose two ability boosts. One must be to <strong>Wisdom</strong> or <strong>Charisma</strong>, and one is a free ability boost.</p>\n<p>You're trained in your choice of the Survival or Performance skill. You gain a skill feat: @UUID[Compendium.pf2e.feats-srd.Item.tGIXuk0XeWmG04CX]{Survey Wildlife} if you chose Survival or @UUID[Compendium.pf2e.feats-srd.Item.xqAdXRd2gSQcqp5E]{Impressive Performance} if you chose Performance. You're also trained in Nantambu Lore.</p>\n<p>Your recommended primary branch is the Emerald Boughs.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.Skill.Performance",
+            "value": "performance"
+          },
+          {
+            "label": "PF2E.Skill.Survival",
+            "value": "survival"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill",
+        "rollOption": "teacher-ot"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "teacher-ot:performance"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.xqAdXRd2gSQcqp5E"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "teacher-ot:survival"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.tGIXuk0XeWmG04CX"
+      }
+    ],
+    "slug": "sponsored-by-teacher-ot",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder: Strength of Thousands Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": [
+          "cha",
+          "wis"
+        ]
+      },
+      "1": {
+        "value": [
+          "cha",
+          "con",
+          "dex",
+          "int",
+          "str",
+          "wis"
+        ]
+      }
+    },
+    "items": {},
+    "trainedSkills": {
+      "value": [],
+      "lore": [
+        "Nantambu Lore"
+      ],
+      "custom": ""
+    }
+  },
+  "type": "background",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.backgrounds.Item.p6Asr6f2cI2BWorr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.backgrounds-legacy.Item.p6Asr6f2cI2BWorr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!p6Asr6f2cI2BWorr"
+}

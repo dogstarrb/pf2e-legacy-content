@@ -1,0 +1,87 @@
+{
+  "_id": "srxzbmm6671nL0YL",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Nourishing Gate",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can sustain yourself on a single drop of elemental dew or the slightest spark from the Plane of Fire. You gain a +2 status bonus to saving throws against poisons, sleep, and effects that would make you @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}. You don't need to breathe, eat, or sleep, though you must still take a full night's rest every 24 hours to be able to make your daily preparations. During this time, you remain awake and alert, but you must spend the time meditating or attuning to your kinetic gate rather than engaging in other complex activities. Each kineticist attunes in their own individual way.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "poison",
+              "sleep",
+              "inflicts:paralyzed"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "nourishing-gate",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "kineticist"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 14
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.srxzbmm6671nL0YL"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.srxzbmm6671nL0YL",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!srxzbmm6671nL0YL"
+}

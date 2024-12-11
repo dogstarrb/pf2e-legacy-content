@@ -1,0 +1,105 @@
+{
+  "_id": "AHMUpMbaVkZ5A1KX",
+  "img": "systems/pf2e/icons/spells/efficient-apport.webp",
+  "name": "Effect: Aid",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a circumstance bonus to the aided check based on the result of your ally's Aid check.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.SpecificRule.BonusLabel.NegativeOne",
+            "value": -1
+          },
+          {
+            "label": "PF2E.SpecificRule.BonusLabel.PlusOne",
+            "value": 1
+          },
+          {
+            "label": "PF2E.SpecificRule.BonusLabel.PlusTwo",
+            "value": 2
+          },
+          {
+            "label": "PF2E.SpecificRule.BonusLabel.PlusThree",
+            "value": 3
+          },
+          {
+            "label": "PF2E.SpecificRule.BonusLabel.PlusFour",
+            "value": 4
+          }
+        ],
+        "flag": "aidBonus",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Aid.Prompt"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "all",
+        "type": "circumstance",
+        "value": "{item|flags.pf2e.rulesSelections.aidBonus}"
+      }
+    ],
+    "slug": "effect-aid",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.other-effects.Item.AHMUpMbaVkZ5A1KX"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.other-effects-legacy.Item.AHMUpMbaVkZ5A1KX",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!AHMUpMbaVkZ5A1KX"
+}

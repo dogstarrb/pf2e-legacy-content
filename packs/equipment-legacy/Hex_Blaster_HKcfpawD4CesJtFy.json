@@ -1,0 +1,165 @@
+{
+  "_id": "HKcfpawD4CesJtFy",
+  "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/hex-blaster.webp",
+  "name": "Hex Blaster",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This <em>+2 striking fearsome arquebus</em> is composed of warped and twisted wood engraved with eerie runes. When the weapon fires, the blast sometimes sounds like the cackling of a diabolical witch.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You afflict a creature you can see with a hex of impending doom. The hex lasts for 1 minute. As long as the creature is hexed, when you hit it with a round from the hex blaster, the creature must attempt a @Check[type:will|dc:28] save at the end of your turn; the creature attempts a single Will save regardless of the number of times you hit it.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}. It also takes @Damage[1d6[persistent,mental]] damage.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}. It also takes @Damage[2d6[persistent,mental]] damage.</p>\n<p><strong>Critical Failure</strong> The creature is frightened 2 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute. It also takes @Damage[4d6[persistent,mental]] damage and is cursed with a hex of impending doom. If the target falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} from damage dealt by this Strike or the persistent mental damage, it remains unconscious for 1 day or until this curse is removed. After 1 day, if the creature is still unconscious, it must succeed at a @Check[type:fortitude|dc:28|traits:death,incapacitation] save or die; this effect has the death and incapacitation traits.</p>"
+    },
+    "rules": [],
+    "slug": "hex-blaster",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concussive",
+        "cursed",
+        "emotion",
+        "fatal-d12",
+        "fear",
+        "kickback",
+        "mental",
+        "occult"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder #180: The Smoking Gun",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "quantity": 1,
+    "baseItem": "arquebus",
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1400
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "category": "martial",
+    "group": "firearm",
+    "bonus": {
+      "value": 0
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d8",
+      "damageType": "piercing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": 150,
+    "reload": {
+      "value": "1"
+    },
+    "runes": {
+      "potency": 2,
+      "striking": 1,
+      "property": [
+        "fearsome"
+      ]
+    },
+    "specific": {
+      "material": {
+        "base": [
+          {
+            "thickness": "thin",
+            "type": "steel"
+          }
+        ],
+        "type": null,
+        "grade": null
+      },
+      "runes": {
+        "potency": 2,
+        "striking": 1,
+        "property": [
+          "fearsome"
+        ]
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.HKcfpawD4CesJtFy"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.HKcfpawD4CesJtFy",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!HKcfpawD4CesJtFy"
+}

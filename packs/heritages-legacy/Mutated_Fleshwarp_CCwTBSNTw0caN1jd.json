@@ -1,0 +1,69 @@
+{
+  "_id": "CCwTBSNTw0caN1jd",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Mutated Fleshwarp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Transformed by uncontrolled magic, you originated in a the Mana Wastes or another region similarly devastated by uncontrolled magic. Due to your toughened or redundant organs, the DC for your checks to recover from persistent bleed damage is 10 instead of 15, and it's reduced to @Check[type:flat|dc:5] instead of 10 if you have particularly effective assistance recovering from the persistent damage.</p>"
+    },
+    "rules": [
+      {
+        "itemType": "condition",
+        "key": "ItemAlteration",
+        "mode": "downgrade",
+        "predicate": [
+          "item:damage:type:bleed"
+        ],
+        "property": "pd-recovery-dc",
+        "value": 10
+      }
+    ],
+    "slug": "mutated-fleshwarp",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Fleshwarp",
+      "slug": "fleshwarp",
+      "uuid": "Compendium.pf2e.ancestries.Item.FXlXmNBFiiz9oasi"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.CCwTBSNTw0caN1jd"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.CCwTBSNTw0caN1jd",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CCwTBSNTw0caN1jd"
+}

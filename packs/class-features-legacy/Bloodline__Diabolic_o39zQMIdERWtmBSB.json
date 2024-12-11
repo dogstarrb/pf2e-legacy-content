@@ -1,0 +1,152 @@
+{
+  "_id": "o39zQMIdERWtmBSB",
+  "img": "icons/sundries/scrolls/scroll-symbol-eye-brown.webp",
+  "name": "Bloodline: Diabolic",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Devils are evil with a silver tongue, and one of your ancestors dallied in darkness or made an infernal pact.</p>\n<p><strong>Spell List</strong> divine</p>\n<p><strong>Bloodline Skills</strong> Deception, Religion</p>\n<p><strong>Granted Spells</strong> cantrip <em>@UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame}</em>, 1st: <em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}</em>, 2nd: <em>@UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{Flaming Sphere}</em>, 3rd: <em>@UUID[Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS]{Enthrall}</em>, 4th: <em>@UUID[Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H]{Suggestion}</em>, 5th: <em>@UUID[Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN]{Crushing Despair}</em>, 6th: <em>@UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{True Seeing}</em>, 7th: <em>@UUID[Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C]{Divine Decree}</em>, 8th: <em>@UUID[Compendium.pf2e.spells-srd.Item.nsQvjNyg4Whw2mek]{Divine Aura}</em>, 9th: <em>@UUID[Compendium.pf2e.spells-srd.Item.jrBa9deU2ULFWvSl]{Falling Stars}</em></p>\n<p><strong>Bloodline Spells</strong> initial: <em>@UUID[Compendium.pf2e.spells-srd.Item.Vctwx1ewa8HUOA94]{Diabolic Edict}</em>, advanced: <em>@UUID[Compendium.pf2e.spells-srd.Item.ilGsyGLGjjIPHbyP]{Embrace the Pit}</em>, greater: <em>@UUID[Compendium.pf2e.spells-srd.Item.9LHr9SuDLTicdbXs]{Hellfire Plume}</em></p>\n<p><strong>Blood Magic</strong> Hellfire scorches a target or fills your tongue with lies. Either a target takes 1 fire damage per spell level (if the spell already deals initial fire damage, combine this with the spell's initial damage before determining weaknesses and resistances), or you gain a +1 status bonus to Deception checks for 1 round.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.n1vhmOd7aNiuR3nk]{Effect: Diabolic Blood Magic (Self)}</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.deception.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.religion.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.aliases.sorcerer",
+        "priority": 39,
+        "value": "divine"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.sorcerer.bloodline.spells",
+        "value": {
+          "1st": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6",
+            "slug": "charm"
+          },
+          "2nd": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG",
+            "slug": "flaming-sphere"
+          },
+          "3rd": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.IihxWhRfpsBgQ5jS",
+            "slug": "enthrall"
+          },
+          "4th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H",
+            "slug": "suggestion"
+          },
+          "5th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.GaRQlC9Yw1BGKHfN",
+            "slug": "crushing-despair"
+          },
+          "6th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki",
+            "slug": "true-seeing"
+          },
+          "7th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.sX2o0HH4RjJDAZ8C",
+            "slug": "divine-decree"
+          },
+          "8th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.nsQvjNyg4Whw2mek",
+            "slug": "divine-aura"
+          },
+          "9th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.jrBa9deU2ULFWvSl",
+            "slug": "falling-stars"
+          },
+          "advanced": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.ilGsyGLGjjIPHbyP",
+            "slug": "embrace-the-pit"
+          },
+          "cantrip": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe",
+            "slug": "produce-flame"
+          },
+          "greater": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.9LHr9SuDLTicdbXs",
+            "slug": "hellfire-plume"
+          },
+          "initial": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.Vctwx1ewa8HUOA94",
+            "slug": "diabolic-edict"
+          }
+        }
+      }
+    ],
+    "slug": "bloodline-diabolic",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "sorcerer-bloodline"
+      ],
+      "value": [
+        "sorcerer"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.o39zQMIdERWtmBSB"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.o39zQMIdERWtmBSB",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!o39zQMIdERWtmBSB"
+}

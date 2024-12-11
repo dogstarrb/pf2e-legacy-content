@@ -1,0 +1,97 @@
+{
+  "_id": "tAsFXMzNkpj964X4",
+  "img": "icons/creatures/magical/spirit-fire-yellow.webp",
+  "name": "Effect: Liberating Step (vs. Aberration)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.VU7aZC7L08Mk1GVA]{Esoteric Oath (Liberator)}</p>\n<p>If you use Liberating Step triggered by an evil aberration, your ally gains a +4 circumstance bonus to checks granted by your Liberating Step, and the ally can Step twice afterward.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Liberating Step (vs. aberration)",
+        "predicate": [
+          "action:escape"
+        ],
+        "selector": [
+          "acrobatics",
+          "athletics",
+          "saving-throw"
+        ],
+        "type": "circumstance",
+        "value": 4
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Liberating Step (vs. aberration)",
+        "predicate": [
+          "action:escape",
+          "unarmed"
+        ],
+        "selector": "attack",
+        "type": "circumstance",
+        "value": 4
+      }
+    ],
+    "slug": "effect-liberating-step-vs-aberration",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.tAsFXMzNkpj964X4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.tAsFXMzNkpj964X4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!tAsFXMzNkpj964X4"
+}

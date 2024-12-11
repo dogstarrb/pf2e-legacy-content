@@ -1,0 +1,99 @@
+{
+  "_id": "M0hhLRC86sASVOk7",
+  "img": "systems/pf2e/icons/equipment/consumables/other-consumables/tteogkuk-of-time-advancement.webp",
+  "name": "Effect: Tteokguk of Time Advancement",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creatures gains a +4 status bonus to Deceptions checks to pass as their chosen age, and can add their level to this check as a proficiency bonus if untrained.</p>"
+    },
+    "rules": [
+      {
+        "domain": "skill-check",
+        "key": "RollOption",
+        "label": "Disguise as chosen age",
+        "option": "act-old",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "act-old"
+        ],
+        "selector": "deception",
+        "slug": "tteokguk-status",
+        "type": "status",
+        "value": 4
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "act-old"
+        ],
+        "selector": "deception",
+        "slug": "tteokguk-proficiency",
+        "type": "proficiency",
+        "value": "@actor.level"
+      }
+    ],
+    "slug": "effect-tteokguk-of-time-advancement",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Blog",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "days",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.M0hhLRC86sASVOk7"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.M0hhLRC86sASVOk7",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!M0hhLRC86sASVOk7"
+}

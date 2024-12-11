@@ -1,0 +1,98 @@
+{
+  "_id": "S7z1LbnSRlBep8rO",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Spirit Strikes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your connection to the Boneyard empowers you to bring death to all forms of life and unlife, exploiting their weaknesses.</p>\n<p>All your weapon and unarmed Strikes are magical and deal 1 additional negative damage to living creatures and 1 additional positive damage to undead.</p>"
+    },
+    "rules": [
+      {
+        "damageType": "vitality",
+        "key": "FlatModifier",
+        "predicate": [
+          "target:mode:undead"
+        ],
+        "selector": "strike-damage",
+        "slug": "spirit-strikes-undead",
+        "value": 1
+      },
+      {
+        "damageType": "void",
+        "key": "FlatModifier",
+        "predicate": [
+          "target:mode:living"
+        ],
+        "selector": "strike-damage",
+        "slug": "spirit-strikes-living",
+        "value": 1
+      },
+      {
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "traits",
+        "value": "magical"
+      }
+    ],
+    "slug": "spirit-strikes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "duskwalker"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.S7z1LbnSRlBep8rO"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.S7z1LbnSRlBep8rO",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!S7z1LbnSRlBep8rO"
+}

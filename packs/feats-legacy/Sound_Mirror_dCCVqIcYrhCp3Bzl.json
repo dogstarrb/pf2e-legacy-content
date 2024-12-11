@@ -1,0 +1,83 @@
+{
+  "_id": "dCCVqIcYrhCp3Bzl",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Sound Mirror",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You twist not just the visual, but the auditory as well, allowing you to pass without a sound and create minor noises as distractions-perfect for misdirection and infiltration. You can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.gIdDLrbswTV3OBJy]{Silence}</em> on yourself as a 2nd-level innate occult spell and <em>@UUID[Compendium.pf2e.spells-srd.Item.yV7Ouzaoe7DHLESI]{Ventriloquism}</em> as a 1st-level innate occult spell, both once per day. You also can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.atlgGNI1E1Ox3O3a]{Ghost Sound}</em> as an innate occult cantrip. You become trained in occult spell attack rolls and spell DCs, and your key spellcasting ability is Charisma.</p>"
+    },
+    "rules": [
+      {
+        "field": "actor|system.details.level.value",
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.spellcasting.rank",
+        "value": 1
+      }
+    ],
+    "slug": "sound-mirror",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Alter Ego Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.dCCVqIcYrhCp3Bzl"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.dCCVqIcYrhCp3Bzl",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!dCCVqIcYrhCp3Bzl"
+}

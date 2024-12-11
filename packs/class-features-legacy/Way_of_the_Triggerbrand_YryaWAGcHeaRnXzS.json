@@ -1,0 +1,94 @@
+{
+  "_id": "YryaWAGcHeaRnXzS",
+  "img": "systems/pf2e/icons/equipment/weapons/gun-sword.webp",
+  "name": "Way of the Triggerbrand",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You prefer firearms that work well as weapons in both melee and ranged combat, particularly those that allow you to exercise a bit of style and flair. You might be a survivor who cobbled your weapon together from the City of Smog's street scrap or a noble wielder of a master smith's bespoke commission for duels among Alkenstar's elite. You gain access to combination weapons.</p>\n<p><strong>Slinger's Reload</strong> @UUID[Compendium.pf2e.actionspf2e.Item.WpCs3QmPVn8SRbXy]{Touch and Go}</p>\n<p><strong>Deeds</strong> <em>Initial @UUID[Compendium.pf2e.actionspf2e.Item.DFRLID6lIRw7CzOT]{Spring the Trap}</em>; <em>Advanced @UUID[Compendium.pf2e.actionspf2e.Item.UyMkWfVqdabLTgkH]{Wind Them Up}</em>; <em>Greater @UUID[Compendium.pf2e.actionspf2e.Item.NYR2IdfUiHevdt1V]{Break Them Down}</em></p>\n<p><strong>Way Skill</strong> Thievery</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.thievery.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "class:gunslinger"
+        ],
+        "uuid": "Compendium.pf2e.actionspf2e.Item.DFRLID6lIRw7CzOT"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "class:gunslinger"
+        ],
+        "uuid": "Compendium.pf2e.actionspf2e.Item.WpCs3QmPVn8SRbXy"
+      }
+    ],
+    "slug": "way-of-the-triggerbrand",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "gunslinger-way"
+      ],
+      "value": [
+        "gunslinger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.YryaWAGcHeaRnXzS"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.YryaWAGcHeaRnXzS",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!YryaWAGcHeaRnXzS"
+}

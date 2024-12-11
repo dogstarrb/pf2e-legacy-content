@@ -1,0 +1,112 @@
+{
+  "_id": "No817gKxdliCVQ9K",
+  "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+  "name": "Effect: Energy Ward",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The cascader gains resistance 15 to the triggering damage, replacing any other resistance gained from this ability. The cascader's melee strikes also deal an additional 4d10 damage of this type.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAcid",
+            "value": "acid"
+          },
+          {
+            "label": "PF2E.TraitCold",
+            "value": "cold"
+          },
+          {
+            "label": "PF2E.TraitElectricity",
+            "value": "electricity"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitPoison",
+            "value": "poison"
+          }
+        ],
+        "flag": "energy",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Fetchling.DeepFetchling.Prompt",
+        "rollOption": "energy-ward"
+      },
+      {
+        "key": "Resistance",
+        "type": "{item|flags.pf2e.rulesSelections.energy}",
+        "value": 15
+      },
+      {
+        "damageType": "{item|flags.pf2e.rulesSelections.energy}",
+        "diceNumber": "4",
+        "dieSize": "d10",
+        "key": "DamageDice",
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "effect-energy-ward",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #185: A Taste of Ashes",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.No817gKxdliCVQ9K"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.No817gKxdliCVQ9K",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!No817gKxdliCVQ9K"
+}

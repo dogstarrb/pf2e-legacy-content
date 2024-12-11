@@ -1,0 +1,100 @@
+{
+  "_id": "ICLUKJc9P0LgwVyt",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Brightsoul",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The fire inside you asserts itself as beaming, radiant light. Your body is naturally luminescent, glowing with the effects of a primal <em>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light}</em> cantrip. A cantrip is heightened to a spell level equal to half your level rounded up. The light is involuntary and constant; if counteracted, it returns in [[/br 1d4 #rounds]]{1d4 rounds}. You suffer a -2 circumstance penalty on Stealth checks to Hide or Sneak and gain a +1 circumstance bonus on saves against light effects and effects that inflict the @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} conditions.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "action:hide",
+              "action:sneak"
+            ]
+          }
+        ],
+        "selector": "stealth",
+        "type": "circumstance",
+        "value": -2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "light"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.spell-effects.Item.cVVZXNbV0nElVOPZ"
+      }
+    ],
+    "slug": "brightsoul",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "lineage",
+        "naari"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": true,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ICLUKJc9P0LgwVyt"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ICLUKJc9P0LgwVyt",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ICLUKJc9P0LgwVyt"
+}

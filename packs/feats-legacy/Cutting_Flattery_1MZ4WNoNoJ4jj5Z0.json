@@ -1,0 +1,89 @@
+{
+  "_id": "1MZ4WNoNoJ4jj5Z0",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Cutting Flattery",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Repeated entries in Firebrand bragging and flyting contests have taught you how to twist pretty words into concealed insults. When you succeed at your check to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} a creature, the target's attitude toward you improves by one step, to a maximum of friendly, and they don't become unfriendly 1 day later.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "action:coerce"
+        ],
+        "selector": "intimidation",
+        "text": "{item|system.description.value}",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "cutting-flattery",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "skill"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Firebrands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dandy Dedication or Pirate Dedication"
+        },
+        {
+          "value": "trained in Intimidation"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.1MZ4WNoNoJ4jj5Z0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.1MZ4WNoNoJ4jj5Z0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1MZ4WNoNoJ4jj5Z0"
+}

@@ -1,0 +1,108 @@
+{
+  "_id": "YIShkE3JCEuwCAxl",
+  "img": "systems/pf2e/icons/spells/face-in-the-crowd.webp",
+  "name": "Effect: Metallic Skin",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You fortify your natural resistances with elemental metal, covering your skin with thick metal. You gain a +2 status bonus to AC and resistance 10 to physical damage (except adamantine), but you take a –10-foot penalty to Speed. If you take fire damage while this ability is active, until the end of your next turn, you deal an additional @Damage[2d6[fire]] damage with all your unarmed melee Strikes.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "ac",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "speed",
+        "value": -10
+      },
+      {
+        "exceptions": [
+          "adamantine"
+        ],
+        "key": "Resistance",
+        "type": "physical",
+        "value": 10
+      },
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "option": "metallic-skin-fire",
+        "toggleable": true
+      },
+      {
+        "damageType": "fire",
+        "diceNumber": 2,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "predicate": [
+          "item:category:unarmed",
+          "item:melee",
+          "metallic-skin-fire"
+        ],
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "effect-metallic-skin",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.YIShkE3JCEuwCAxl"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.YIShkE3JCEuwCAxl",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!YIShkE3JCEuwCAxl"
+}

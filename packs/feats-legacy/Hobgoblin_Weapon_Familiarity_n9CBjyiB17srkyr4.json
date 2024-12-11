@@ -1,0 +1,131 @@
+{
+  "_id": "n9CBjyiB17srkyr4",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Hobgoblin Weapon Familiarity",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You are trained with @UUID[Compendium.pf2e.equipment-srd.Item.dUC8Fsa6FZtVikS3]{Composite Longbows}, @UUID[Compendium.pf2e.equipment-srd.Item.e4NwsnPnpQKbDZ9F]{Composite Shortbows}, @UUID[Compendium.pf2e.equipment-srd.Item.vlnzTSsRmWeSkt9O]{Glaives}, @UUID[Compendium.pf2e.equipment-srd.Item.MVAWttmT0QDa7LsV]{Longbows}, @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]{Longswords}, and @UUID[Compendium.pf2e.equipment-srd.Item.hIgqLgH3YcLZBeoT]{Shortbows}.</p>\n<p>In addition, you gain access to all uncommon hobgoblin weapons. For the purpose of determining your proficiency, martial hobgoblin weapons are simple weapons and advanced hobgoblin weapons are martial weapons.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-composite-longbow.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-composite-shortbow.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-glaive.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-longbow.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-longsword.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-shortbow.rank",
+        "value": 1
+      },
+      {
+        "definition": [
+          "item:trait:hobgoblin",
+          "item:category:advanced"
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.AdvancedHobgoblinWeapons",
+        "sameAs": "martial",
+        "slug": "advanced-hobgoblin-weapons"
+      },
+      {
+        "definition": [
+          "item:trait:hobgoblin",
+          "item:category:martial",
+          {
+            "not": "item:category:advanced"
+          }
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.MartialHobgoblinWeapons",
+        "sameAs": "simple",
+        "slug": "martial-hobgoblin-weapons"
+      }
+    ],
+    "slug": "hobgoblin-weapon-familiarity",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "hobgoblin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.n9CBjyiB17srkyr4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.n9CBjyiB17srkyr4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!n9CBjyiB17srkyr4"
+}

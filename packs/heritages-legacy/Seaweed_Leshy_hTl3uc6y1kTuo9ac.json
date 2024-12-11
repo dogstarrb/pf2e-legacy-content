@@ -1,0 +1,69 @@
+{
+  "_id": "hTl3uc6y1kTuo9ac",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Seaweed Leshy",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your body is made from woven seaweed, and you're just as comfortable underwater as on land. You gain a swim Speed of 20 feet, and you can always breathe underwater. However, your land Speed is reduced by 5 feet (to 20 feet for most seaweed leshys).</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "swim",
+        "value": 20
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "land-speed",
+        "value": -5
+      }
+    ],
+    "slug": "seaweed-leshy",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Leshy",
+      "slug": "leshy",
+      "uuid": "Compendium.pf2e.ancestries.Item.cdhgByGG1WtuaK73"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.hTl3uc6y1kTuo9ac"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.hTl3uc6y1kTuo9ac",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!hTl3uc6y1kTuo9ac"
+}

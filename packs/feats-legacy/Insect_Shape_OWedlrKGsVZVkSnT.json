@@ -1,0 +1,142 @@
+{
+  "_id": "OWedlrKGsVZVkSnT",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Insect Shape",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your understanding of life expands, allowing you to mimic a wider range of creatures.</p>\n<p>Add the forms in <em>@UUID[Compendium.pf2e.spells-srd.Item.XI6Lzd2B5pernkPd]{Insect Form}</em> to your <em>wild shape</em> list.</p>\n<p>Whenever you use <em>wild shape</em> to polymorph into the non-flying <em>insect form</em> listed in <em>@UUID[Compendium.pf2e.spells-srd.Item.gfPjmG6Fe6D3MFjl]{Pest Form}</em>, the duration is 24 hours instead of 10 minutes.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.6IvTWcispcDaw88N"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.amTa9jSml9ioKduN"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.DENMzySYANjUBs4O"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.llrOM8rPP9nxIuEN"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.bOjuEX3qj7XAOoDF"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.782NyomkDHyfsUn6"
+        }
+      }
+    ],
+    "slug": "insect-shape",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Wild Shape"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.OWedlrKGsVZVkSnT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.OWedlrKGsVZVkSnT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OWedlrKGsVZVkSnT"
+}

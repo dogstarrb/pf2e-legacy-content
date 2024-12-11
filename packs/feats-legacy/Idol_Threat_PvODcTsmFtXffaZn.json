@@ -1,0 +1,92 @@
+{
+  "_id": "PvODcTsmFtXffaZn",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Idol Threat",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You're holding something sacred or precious to a creature, such as a relic or personal depiction of their deity or a precious personal memento.</p>\n<hr />\n<p>You brandish the precious object you're holding menacingly, at once mocking it and threatening its safety. Attempt to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} the creature whose precious item you threaten. You gain a +2 circumstance bonus to the Intimidation check to Demoralize, and on a success, the creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} for 1 round out of distraction for the object's safety and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (or stupefied 2 on a critical success). These conditions are both in addition to the normal effects of Demoralize. The creature is then temporarily immune to any Idol Threat using that specific object for 1 day.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "idol-threat",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:demoralize",
+          "idol-threat"
+        ],
+        "selector": "intimidation",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "idol-threat",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "nephilim"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Beastbrood"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.PvODcTsmFtXffaZn"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.PvODcTsmFtXffaZn",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PvODcTsmFtXffaZn"
+}

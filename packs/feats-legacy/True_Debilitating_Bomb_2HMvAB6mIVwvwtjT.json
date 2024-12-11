@@ -1,0 +1,87 @@
+{
+  "_id": "2HMvAB6mIVwvwtjT",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "True Debilitating Bomb",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Ever inventive, you have discovered increasingly devastating ways for your bombs to impede and hamper your foes.</p>\n<p>When you use @UUID[Compendium.pf2e.feats-srd.Item.sv4LeEbkOJyLen10]{Debilitating Bomb}, add the following to the list you can choose from: @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}, or -15-foot status penalty to Speeds.</p>\n<p>If you instead apply one of the effects listed in Debilitating Bomb the target avoids the effect only if the result of its saving throw is a critical success.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "alchemical",
+          "bomb",
+          "debilitating-bomb"
+        ],
+        "selector": "attack-roll",
+        "text": "If your bomb hits, the target must succed at a Fortitude save against your Class DC, or suffer one of the following @UUID[Compendium.pf2e.feats-srd.Item.2HMvAB6mIVwvwtjT]{effects}. If you apply the effects of @UUID[Compendium.pf2e.feats-srd.Item.sv4LeEbkOJyLen10]{Debilitating Bomb}, the target must critically succeed at its save to avoid the condition.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "true-debilitating-bomb",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemist"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "free"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Greater Debilitating Bomb"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.2HMvAB6mIVwvwtjT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.2HMvAB6mIVwvwtjT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2HMvAB6mIVwvwtjT"
+}

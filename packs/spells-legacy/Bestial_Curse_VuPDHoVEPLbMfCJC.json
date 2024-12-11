@@ -1,0 +1,96 @@
+{
+  "_id": "VuPDHoVEPLbMfCJC",
+  "img": "systems/pf2e/icons/spells/bestial-curse.webp",
+  "name": "Bestial Curse",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You tap into the target's inner being and curse it to become a bestial version of itself. The effect is based on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor bestial features. Its insides churn as they partially transform, causing it to be @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round. When it recovers from the Clumsy condition, its features revert to normal and the spell ends.</p>\n<p><strong>Failure</strong> The target transforms into a bestial form for 1 hour. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and gains weakness 1 to silver. It gains a claw, hoof, horn, or jaws Strike(your choice) that uses the target's unarmed Strike statistics except that the damage type changes to bludgeoning, piercing, or slashing, as appropriate. Whenever the target attempts to use any manipulate action, it must succeed at a @Check[type:flat|dc:5] or the action is lost. @UUID[Compendium.pf2e.spell-effects.Item.8wCVSzWYcURWewbd]{Spell Effect: Bestial Curse (Failure)}</p>\n<p><strong>Critical Failure</strong> As failure, but the duration is unlimited. @UUID[Compendium.pf2e.spell-effects.Item.KtAJN4Qr2poTL6BB]{Spell Effect: Bestial Curse (Critical Failure)}</p>"
+    },
+    "rules": [],
+    "slug": "bestial-curse",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "curse",
+        "manipulate",
+        "polymorph"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "occult",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 living humanoid"
+    },
+    "range": {
+      "value": "touch"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "varies",
+      "sustained": false
+    },
+    "damage": {},
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.VuPDHoVEPLbMfCJC"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.VuPDHoVEPLbMfCJC",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VuPDHoVEPLbMfCJC"
+}

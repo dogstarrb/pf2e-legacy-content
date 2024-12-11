@@ -1,0 +1,204 @@
+{
+  "_id": "0fTHqIqXCwGKiykR",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Sprite's Spark",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can fling a portion of your magic at foes. You gain a ranged unarmed attack in the sling weapon group with a maximum range of 20 feet that deals [[/r 1d4]] damage. (No ability modifier is added to the damage roll.) The damage type and name of the unarmed attack depends on your heritage, described below; most sprite heritages not presented in this book also use luminous spark. Like other unarmed attacks, you can improve this attack with @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]{Handwraps of Mighty Blows}.</p>\n<hr />\n<p><strong>Draxie</strong> euphoric spark (mental)</p>\n<p><strong>Firefly Sprite</strong> luminous spark (fire)</p>\n<p><strong>Grig</strong> dissonant note (sonic)</p>\n<p><strong>Melixie</strong> sting shot (poison)</p>\n<p><strong>Nyktera</strong> ultrasonic pulse (sonic)</p>\n<p><strong>Pixie</strong> pixie dust (mental)</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "mental",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "sling",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Sprite.SpritesSpark.Draxie",
+        "predicate": [
+          "self:heritage:draxie"
+        ],
+        "range": {
+          "max": 20
+        },
+        "traits": [
+          "unarmed"
+        ]
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "fire",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "sling",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Sprite.SpritesSpark.LuminousSprite",
+        "predicate": [
+          "self:heritage:luminous-sprite"
+        ],
+        "range": {
+          "max": 20
+        },
+        "traits": [
+          "unarmed"
+        ]
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "sonic",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "sling",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Sprite.SpritesSpark.Grig",
+        "predicate": [
+          "self:heritage:grig"
+        ],
+        "range": {
+          "max": 20
+        },
+        "traits": [
+          "unarmed"
+        ]
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "poison",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "sling",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Sprite.SpritesSpark.Melixie",
+        "predicate": [
+          "self:heritage:melixie"
+        ],
+        "range": {
+          "max": 20
+        },
+        "traits": [
+          "unarmed"
+        ]
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "sonic",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "sling",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Sprite.SpritesSpark.Nyktera",
+        "predicate": [
+          "self:heritage:nyktera"
+        ],
+        "range": {
+          "max": 20
+        },
+        "traits": [
+          "unarmed"
+        ]
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "mental",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "sling",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Sprite.SpritesSpark.Pixie",
+        "predicate": [
+          "self:heritage:pixie"
+        ],
+        "range": {
+          "max": 20
+        },
+        "traits": [
+          "unarmed"
+        ]
+      }
+    ],
+    "slug": "sprites-spark",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "sprite"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.0fTHqIqXCwGKiykR"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.0fTHqIqXCwGKiykR",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0fTHqIqXCwGKiykR"
+}

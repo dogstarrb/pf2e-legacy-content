@@ -1,0 +1,81 @@
+{
+  "_id": "4xtce4xbwZ9wjwMW",
+  "img": "icons/magic/light/explosion-star-glow-blue.webp",
+  "name": "Spell Effect: Angelic Halo",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.spell-effects.Item.jPZXZjetdauqYuEH]{Aura: Angelic Halo}.</p>\n<p>If you are healed by a heal spell, you gain a status bonus to Hit Points regained equal to double the heal spell's level.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "item:type:spell",
+          "item:slug:heal"
+        ],
+        "selector": "healing-received",
+        "type": "status",
+        "value": "@spell.rank * 2"
+      }
+    ],
+    "slug": "spell-effect-angelic-halo",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.4xtce4xbwZ9wjwMW"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 5300000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.4xtce4xbwZ9wjwMW",
+    "duplicateSource": null
+  },
+  "_key": "!items!4xtce4xbwZ9wjwMW"
+}

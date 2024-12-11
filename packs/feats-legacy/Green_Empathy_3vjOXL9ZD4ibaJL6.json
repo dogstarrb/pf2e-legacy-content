@@ -1,0 +1,86 @@
+{
+  "_id": "3vjOXL9ZD4ibaJL6",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Green Empathy",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can communicate with plants and fungi on a basic level and use Diplomacy to Make an Impression on them and to make very simple Requests of them. Non-creature plants and fungi typically can't fulfill most requests you might ask of them unless you have access to other magic such as <em>@UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]{Speak with Plants}</em>.</p>\n<p>Because of your affiliation with the leaf order, plants and fungi have a sense that you support them, so you gain a +2 circumstance bonus on your check to Make a Request of a plant or fungus using Green Empathy.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:request",
+          "target:trait:plant"
+        ],
+        "selector": "diplomacy",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "green-empathy",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "leaf order"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.3vjOXL9ZD4ibaJL6"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.3vjOXL9ZD4ibaJL6",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3vjOXL9ZD4ibaJL6"
+}

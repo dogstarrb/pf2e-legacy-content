@@ -1,0 +1,123 @@
+{
+  "_id": "IfOwz6UoG7pnfbur",
+  "img": "icons/sundries/gaming/playing-cards-grey.webp",
+  "name": "The Fiend",
+  "system": {
+    "description": {
+      "gm": "<p><strong>Epitome</strong> A new room manifests in Harrowheart—a conjuration chamber. Books and tomes stored in this room contain all the information needed to learn the rituals of <em>@UUID[Compendium.pf2e.spells-srd.Item.vgy00hnqxN9VoeoF]{Planar Ally}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.2ykmAVKrsAWcazcC]{Planar Binding}</em>, and inscriptions carved into the floor of the conjuration chamber grant a +2 item bonus to skill checks made to perform either of these rituals. This increases to a +3 item bonus if the creature being conjured is a fiend.</p>",
+      "value": "<p><strong>Suit</strong> Hammer (Str)</p>\n<p><strong>Alignment</strong> lawful evil</p>\n<hr />\n<p><em>The Fiend</em> represents the inevitability of great calamities and pervasive dangers. As long as you have <em>The Fiend</em> invested, when you repeat a non-Strike action you previously took in the same round, you gain a +2 item bonus to checks to perform that action. This increases to a +3 item bonus if you are at least 17th level.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You wave the card to create a vision of destruction around you; you cast <em>@UUID[Compendium.pf2e.spells-srd.Item.0XP2XOxT9VSiXFDr]{Phantasmal Calamity}</em>, except the area is a @Template[type:emanation|distance:20]. The level of the spell is one-half your level, rounded down (minimum 6th level), and the save DC is your class DC or spell DC (@Check[type:will|dc:resolve(@actor.system.attributes.classDC.value)|traits:illusion,mental,spell]). You are immune to the effects of your own phantasmal calamity.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "same-action"
+        ],
+        "selector": [
+          "skill-check",
+          "perception"
+        ],
+        "type": "item",
+        "value": "ternary(gte(@actor.level,17),3,2)"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.HarrowCourt.Fiend.ToggleLabel",
+        "option": "same-action",
+        "toggleable": true
+      }
+    ],
+    "slug": "the-fiend",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "artifact",
+        "harrow-court",
+        "illusion",
+        "invested",
+        "magical"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder #190: The Choosing",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "carried"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.IfOwz6UoG7pnfbur"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.IfOwz6UoG7pnfbur",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!IfOwz6UoG7pnfbur"
+}

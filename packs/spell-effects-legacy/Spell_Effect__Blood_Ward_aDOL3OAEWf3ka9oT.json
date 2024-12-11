@@ -1,0 +1,104 @@
+{
+  "_id": "aDOL3OAEWf3ka9oT",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "name": "Spell Effect: Blood Ward",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.dFejDNEmVj3CwYLL]{Blood Ward}</em></p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Defending vs. target of Blood Ward",
+        "option": "blood-ward",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "blood-ward"
+        ],
+        "selector": [
+          "ac",
+          "saving-throw"
+        ],
+        "type": "status",
+        "value": {
+          "brackets": [
+            {
+              "end": 4,
+              "start": 1,
+              "value": 1
+            },
+            {
+              "start": 5,
+              "value": 2
+            }
+          ],
+          "field": "item|system.level.value"
+        }
+      }
+    ],
+    "slug": "spell-effect-blood-ward",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.aDOL3OAEWf3ka9oT"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 25200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.aDOL3OAEWf3ka9oT",
+    "duplicateSource": null
+  },
+  "_key": "!items!aDOL3OAEWf3ka9oT"
+}

@@ -1,0 +1,76 @@
+{
+  "_id": "pHBHQaqI77pYtaCU",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Sanguivolent Roots",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Blood-drinking vines grow from the ground in a @Template[type:burst|distance:15] within 120 feet. Each living enemy in the area has its blood drained, taking @Damage[(floor((@actor.level -8)/2)+3)d6[piercing]] damage with a @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.kineticist.dc)|basic:true] save against your class DC. Each time the vines drink blood, living creatures in the area who aren't your enemies regain HP equal to half the damage a single creature took; calculate this using the highest damage a single creature took. This is a healing vitality effect. Your enemies with void healing in the area take vitality damage in the same amount as the healing.</p>\n<p>The vines last until the end of your next turn, and you can Sustain the impulse. The first time you Sustain the impulse on subsequent turns, you can repeat the effect.</p>\n<hr />\n<p><strong>Level (+2)</strong> The damage increases by 1d6.</p>"
+    },
+    "rules": [],
+    "slug": "sanguivolent-roots",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "impulse",
+        "kineticist",
+        "overflow",
+        "plant",
+        "primal",
+        "wood"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 3
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.pHBHQaqI77pYtaCU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.pHBHQaqI77pYtaCU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!pHBHQaqI77pYtaCU"
+}

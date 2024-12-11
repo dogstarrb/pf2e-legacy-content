@@ -1,0 +1,166 @@
+{
+  "_id": "x5jaCJxsmD5sx3KB",
+  "img": "systems/pf2e/icons/features/classes/armor-expertise.webp",
+  "name": "Armor Expertise",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have spent so much time in armor that you know how to make the most of its protection. Your proficiency ranks for light, medium, and heavy armor, as well as for unarmored defense, increase to expert. You gain the armor specialization effects of medium and heavy armor.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.defenses.unarmored.rank",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.defenses.light.rank",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.defenses.medium.rank",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.defenses.heavy.rank",
+        "value": 2
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:medium",
+          "armor:group:composite"
+        ],
+        "type": "piercing",
+        "value": "1 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:medium",
+          "armor:group:leather"
+        ],
+        "type": "bludgeoning",
+        "value": "1 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:medium",
+          "armor:group:plate"
+        ],
+        "type": "slashing",
+        "value": "1 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:heavy",
+          "armor:group:composite"
+        ],
+        "type": "piercing",
+        "value": "2 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:heavy",
+          "armor:group:leather"
+        ],
+        "type": "bludgeoning",
+        "value": "2 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:heavy",
+          "armor:group:plate"
+        ],
+        "type": "slashing",
+        "value": "2 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:medium",
+          "armor:group:skeletal"
+        ],
+        "type": "precision",
+        "value": "3 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:heavy",
+          "armor:group:skeletal"
+        ],
+        "type": "precision",
+        "value": "5 + @armor.system.runes.potency"
+      }
+    ],
+    "slug": "armor-expertise",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.x5jaCJxsmD5sx3KB"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.x5jaCJxsmD5sx3KB",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!x5jaCJxsmD5sx3KB"
+}

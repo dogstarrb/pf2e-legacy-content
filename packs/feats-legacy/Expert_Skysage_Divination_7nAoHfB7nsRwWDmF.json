@@ -1,0 +1,82 @@
+{
+  "_id": "7nAoHfB7nsRwWDmF",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Expert Skysage Divination",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your studies of the stars have taught you about the mysteries of the cosmos. You learn a 4th-level spell from any spell list. At 12th level, you learn a 5th-level spell, and at 14th level, you learn a 6th-level spell. Each of these spells must come from the divination school. You become an expert with spell attack rolls and spell DCs for occult spells.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.spellcasting.rank",
+        "value": 2
+      }
+    ],
+    "slug": "expert-skysage-divination",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #187: The Seventh Arch",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Basic Skysage Divination"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.7nAoHfB7nsRwWDmF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.7nAoHfB7nsRwWDmF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7nAoHfB7nsRwWDmF"
+}

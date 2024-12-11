@@ -1,0 +1,79 @@
+{
+  "_id": "su5qLXoweaHxt6ZP",
+  "img": "systems/pf2e/icons/spells/ancestral-defense.webp",
+  "name": "Effect: Aura Junction (Wood)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Any ally that begins its turn in the aura gains 1 temporary Hit Point that lasts until the start of its next turn. This increases to 2 temporary Hit Points if you're 10th level or higher and to 3 temporary Hit Points if you're 15th level or higher.</p>"
+    },
+    "rules": [
+      {
+        "events": {
+          "onCreate": false,
+          "onTurnStart": true
+        },
+        "key": "TempHP",
+        "value": "ternary(gte(@item.level,15), 3, ternary(gte(@item.level,10), 2, 1))"
+      }
+    ],
+    "slug": "effect-aura-junction-wood",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.su5qLXoweaHxt6ZP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.su5qLXoweaHxt6ZP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!su5qLXoweaHxt6ZP"
+}

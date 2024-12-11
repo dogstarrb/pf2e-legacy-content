@@ -1,0 +1,79 @@
+{
+  "_id": "W2OF7VeLHqc7p3DO",
+  "img": "systems/pf2e/icons/effects/critical-effect.webp",
+  "name": "Effect: Deafened until end of your next turn",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Effect applied by @UUID[Compendium.pf2e.criticaldeck.JournalEntry.mcniWnifXwXkZocv]{Critical Fumble Deck #41}</strong></p>\n<p data-pm-slice=\"1 1 [&quot;section&quot;,{&quot;_preserve&quot;:{&quot;class&quot;:&quot;fumble-deck&quot;}},&quot;blockquote&quot;,{&quot;_preserve&quot;:{}}]\">You are @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} until the end of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "uuid": "Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR"
+      }
+    ],
+    "slug": "effect-deafened-until-end-of-your-next-turn",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Critical Decks",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.other-effects.Item.W2OF7VeLHqc7p3DO"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.other-effects-legacy.Item.W2OF7VeLHqc7p3DO",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!W2OF7VeLHqc7p3DO"
+}

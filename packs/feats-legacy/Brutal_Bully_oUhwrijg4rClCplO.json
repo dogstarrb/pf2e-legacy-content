@@ -1,0 +1,96 @@
+{
+  "_id": "oUhwrijg4rClCplO",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Brutal Bully",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You push your foes around and leave bruises. While raging, when you successfully Disarm, Grapple, Shove, or Trip a foe, you deal that foe [[/r @actor.abilties.str.mod[bludgeoning]]]{bludgeoning damage} equal to your Strength modifier; add this to the damage from a critical success to Trip.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "success"
+        ],
+        "predicate": [
+          "self:effect:rage",
+          {
+            "or": [
+              "action:disarm",
+              "action:grapple",
+              "action:trip",
+              "action:shove"
+            ]
+          }
+        ],
+        "selector": "skill-check",
+        "text": "{item|system.description.value}",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "brutal-bully",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "barbarian"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Athletics"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.oUhwrijg4rClCplO"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.oUhwrijg4rClCplO",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!oUhwrijg4rClCplO"
+}

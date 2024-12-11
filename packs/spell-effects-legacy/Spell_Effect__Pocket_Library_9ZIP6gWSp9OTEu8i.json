@@ -1,0 +1,120 @@
+{
+  "_id": "9ZIP6gWSp9OTEu8i",
+  "img": "icons/skills/trades/academics-book-study-runes.webp",
+  "name": "Spell Effect: Pocket Library",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.TjWHgXqPv5jywMti]{Pocket Library}</em></p>\n<p>During the duration of this spell, you can call forth a tome from the extradimensional library when attempting a Recall Knowledge check using your chosen skill. This is part of the action to Recall Knowledge. You must have a hand free to do so. The tome appears in your hand, open to an appropriate page. This grants you a +1 status bonus on the Recall Knowledge check. If you roll a critical failure on this check, you get a failure instead. If the roll is successful and the subject is a creature, you gain additional information or context about the creature.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "pocket-library"
+        ],
+        "selector": "skill-check",
+        "type": "status",
+        "value": {
+          "brackets": [
+            {
+              "end": 2,
+              "value": 1
+            },
+            {
+              "end": 5,
+              "start": 3,
+              "value": 2
+            },
+            {
+              "end": 8,
+              "start": 6,
+              "value": 3
+            },
+            {
+              "start": 9,
+              "value": 4
+            }
+          ],
+          "field": "item|system.level.value"
+        }
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "pocket-library"
+        ],
+        "selector": "skill-check",
+        "type": "skill"
+      },
+      {
+        "domain": "skill-check",
+        "key": "RollOption",
+        "option": "pocket-library",
+        "toggleable": true
+      }
+    ],
+    "slug": "spell-effect-pocket-library",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 24,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.9ZIP6gWSp9OTEu8i"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 9100000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.9ZIP6gWSp9OTEu8i",
+    "duplicateSource": null
+  },
+  "_key": "!items!9ZIP6gWSp9OTEu8i"
+}

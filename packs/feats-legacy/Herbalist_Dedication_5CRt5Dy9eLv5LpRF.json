@@ -1,0 +1,117 @@
+{
+  "_id": "5CRt5Dy9eLv5LpRF",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Herbalist Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can create remedies and other herbal products. You gain the basic alchemy benefits, though they apply only for herbal items: alchemical items with the healing trait, plus @UUID[Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z]{Antidote} and @UUID[Compendium.pf2e.equipment-srd.Item.UqinuuCWePTYGhVO]{Antiplague}.</p>\n<p>You gain batches of infused reagents per day equal to your level or half your level if you didn't make your daily preparations in the wilderness. Your @UUID[Compendium.pf2e.classfeatures.Item.Pe0zmIqyTBc2Td0I]{Advanced Alchemy} level for creating these is 1 and doesn't increase on its own.</p>\n<p>You become an expert in Nature and can use Nature instead of Crafting to @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft} herbal items. You don't need to be trained in Crafting or have the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} feat to do so, and you can use @UUID[Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY]{Healer's Tools} instead of @UUID[Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH]{Alchemist's Tools}.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.Rrjz5tMJtyVEQnh8]{Herbalist} archetype.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.nature.rank",
+        "value": 2
+      },
+      {
+        "craftableItems": [
+          {
+            "or": [
+              "item:tag:herbal",
+              {
+                "and": [
+                  "item:trait:alchemical",
+                  "item:trait:healing"
+                ]
+              }
+            ]
+          }
+        ],
+        "isAlchemical": true,
+        "isDailyPrep": true,
+        "key": "CraftingAbility",
+        "label": "PF2E.SpecificRule.DedicationCraftingEntry.Herbalist",
+        "maxItemLevel": 1,
+        "slug": "herbalist"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.resources.crafting.infusedReagents.max",
+        "value": "@actor.level"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K"
+      }
+    ],
+    "slug": "herbalist-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Nature"
+        },
+        {
+          "value": "Natural Medicine"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.5CRt5Dy9eLv5LpRF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.5CRt5Dy9eLv5LpRF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5CRt5Dy9eLv5LpRF"
+}

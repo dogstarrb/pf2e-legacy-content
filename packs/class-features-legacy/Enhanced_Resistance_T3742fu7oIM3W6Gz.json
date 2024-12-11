@@ -1,0 +1,299 @@
+{
+  "_id": "T3742fu7oIM3W6Gz",
+  "img": "systems/pf2e/icons/features/classes/enhanced-resistance.webp",
+  "name": "Enhanced Resistance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've improved upon your initial modification's ability to resist damage. The resistance from your initial armor modification adds your full level, instead of half your level (for instance, phlogistonic regulator's resistance would increase to your level). If you have more than one initial modification that gives resistance, choose which one this applies to.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "predicate": [
+              "feature:harmonic-oscillator"
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.dsy2w4LfjMIWgy5D"
+          },
+          {
+            "predicate": [
+              "feature:metallic-reactance"
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.xndlv9T3JgYYUtf8"
+          },
+          {
+            "predicate": [
+              "feature:otherworldly-protection"
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.jHE4fPwU0sSIAjMo"
+          },
+          {
+            "predicate": [
+              "feature:phlogistonic-regulator"
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.5Xj38QeMKcFdrzqH"
+          }
+        ],
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Inventor.Modification.Breakthrough.EnhancedResistancePrompt",
+        "slug": "enhanced-resistance",
+        "slugsAsValues": true
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:harmonic-oscillator"
+        ],
+        "type": [
+          "force",
+          "sonic"
+        ],
+        "value": "@actor.level"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:harmonic-oscillator",
+          {
+            "or": [
+              "self:effect:overdrive-success",
+              "self:effect:overdrive-critical-success"
+            ]
+          }
+        ],
+        "type": [
+          "force",
+          "sonic"
+        ],
+        "value": "@actor.level + 2"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:metallic-reactance"
+        ],
+        "type": [
+          "acid",
+          "electricity"
+        ],
+        "value": "@actor.level"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:metallic-reactance",
+          {
+            "or": [
+              "self:effect:overdrive-success",
+              "self:effect:overdrive-critical-success"
+            ]
+          }
+        ],
+        "type": [
+          "acid",
+          "electricity"
+        ],
+        "value": "@actor.level + 2"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:otherworldly-protection",
+          {
+            "not": "self:negative-healing"
+          }
+        ],
+        "type": "vitality",
+        "value": "@actor.level"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:otherworldly-protection",
+          {
+            "not": "self:negative-healing"
+          },
+          {
+            "or": [
+              "self:effect:overdrive-success",
+              "self:effect:overdrive-critical-success"
+            ]
+          }
+        ],
+        "type": "vitality",
+        "value": "@actor.level + 2"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:otherworldly-protection",
+          "self:negative-healing"
+        ],
+        "type": "void",
+        "value": "@actor.level"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:otherworldly-protection",
+          "self:negative-healing",
+          {
+            "or": [
+              "self:effect:overdrive-success",
+              "self:effect:overdrive-critical-success"
+            ]
+          }
+        ],
+        "type": "void",
+        "value": "@actor.level + 2"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:otherworldly-protection"
+        ],
+        "type": "holy",
+        "value": "@actor.level"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:otherworldly-protection",
+          {
+            "or": [
+              "self:effect:overdrive-success",
+              "self:effect:overdrive-critical-success"
+            ]
+          }
+        ],
+        "type": "holy",
+        "value": "@actor.level + 2"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:otherworldly-protection"
+        ],
+        "type": "unholy",
+        "value": "@actor.level"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:otherworldly-protection",
+          {
+            "or": [
+              "self:effect:overdrive-success",
+              "self:effect:overdrive-critical-success"
+            ]
+          }
+        ],
+        "type": "unholy",
+        "value": "@actor.level + 2"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:phlogistonic-regulator"
+        ],
+        "type": [
+          "cold",
+          "fire"
+        ],
+        "value": "@actor.level"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          "enhanced-resistance:phlogistonic-regulator",
+          {
+            "or": [
+              "self:effect:overdrive-success",
+              "self:effect:overdrive-critical-success"
+            ]
+          }
+        ],
+        "type": [
+          "cold",
+          "fire"
+        ],
+        "value": "@actor.level + 2"
+      }
+    ],
+    "slug": "enhanced-resistance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "inventor"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.T3742fu7oIM3W6Gz"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.T3742fu7oIM3W6Gz",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!T3742fu7oIM3W6Gz"
+}

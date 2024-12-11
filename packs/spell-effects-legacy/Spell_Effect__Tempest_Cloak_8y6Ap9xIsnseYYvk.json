@@ -1,0 +1,100 @@
+{
+  "_id": "8y6Ap9xIsnseYYvk",
+  "img": "icons/magic/air/wind-vortex-swirl-blue.webp",
+  "name": "Spell Effect: Tempest Cloak",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.70BjbNRVc4OTLAgN]{Tempest Cloak}</em></p>\n<p>The twisting shield of wind creates difficult terrain in a 5-foot burst surrounding the target. The target also gains a +2 circumstance bonus to its AC against physical ranged attacks, such as attacks made with bows, javelins, or slings. In addition, the sound of the swirling storms makes it easier for the target to ignore anything it doesn't want to hear, granting the target a +2 circumstance bonus to all defenses against auditory effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "Aura",
+        "radius": 5,
+        "slug": "tempest-cloak",
+        "traits": []
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "item:damage:category:physical",
+          "item:ranged"
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "auditory"
+        ],
+        "selector": [
+          "ac",
+          "saving-throw"
+        ],
+        "slug": "auditory-defenses",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-tempest-cloak",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 3
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.8y6Ap9xIsnseYYvk"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 8900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.8y6Ap9xIsnseYYvk",
+    "duplicateSource": null
+  },
+  "_key": "!items!8y6Ap9xIsnseYYvk"
+}

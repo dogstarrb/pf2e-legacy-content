@@ -1,0 +1,127 @@
+{
+  "_id": "uOaFBqnCYWCgyCl6",
+  "img": "icons/magic/nature/leaf-glow-green.webp",
+  "name": "Wildwood Ink",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>These curving, delicate designs resemble leaves, vines, or creepers, most often wrapped around a limb, ear, or throat, or curled around specific muscles. They help you blend in among plants. You gain a +1 item bonus to Stealth checks, which increases to +2 in forests.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">R</span></p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A creature would detect you by Seeking</p>\n<p><strong>Requirements</strong> You're in a forest or similar natural area</p>\n<hr />\n<p><strong>Effect</strong> The tattoo casts <em>@UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}</em> on you before you can be noticed. The duration of this spell is 10 minutes. If you've already Activated the tattoo, you can supply a separate casting of <em>tree shape</em> to recharge the tattoo instead of having the spell's normal effect. This allows you to Activate the tattoo again in the same day. You can do so multiple times each day, but only as many times as you continue to cast <em>tree shape </em>to recharge the tattoo after each use.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "stealth",
+        "type": "item",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.Tattoo.WildwoodInk.Normal.InForestLabel",
+        "predicate": [
+          "terrain:forest"
+        ],
+        "selector": "stealth",
+        "type": "item",
+        "value": 2
+      },
+      {
+        "domain": "stealth",
+        "key": "RollOption",
+        "label": "PF2E.SkillVariant.Forests",
+        "option": "terrain:forest",
+        "toggleable": true
+      }
+    ],
+    "slug": "wildwood-ink",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "primal",
+        "tattoo"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 80
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "tattooed-on-the-body"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.uOaFBqnCYWCgyCl6"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.uOaFBqnCYWCgyCl6",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uOaFBqnCYWCgyCl6"
+}

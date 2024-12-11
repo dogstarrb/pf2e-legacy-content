@@ -1,0 +1,86 @@
+{
+  "_id": "Wb3FHiDuY6Nuc0N0",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Hireling Manager",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You are able to find and secure better labor than most. When securing a hireling for a service, that hireling gains a +2 circumstance bonus to all skill checks. This circumstance bonus applies to both trained and untrained hirelings and has no effect on the cost of the service or labor provided.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Hireling Manager (from your hireling)",
+        "predicate": [
+          "hireling"
+        ],
+        "selector": "skill-check",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "hireling-manager",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "general",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Charisma 14"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.Wb3FHiDuY6Nuc0N0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.Wb3FHiDuY6Nuc0N0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Wb3FHiDuY6Nuc0N0"
+}

@@ -1,0 +1,186 @@
+{
+  "_id": "MYzRfNExDYp25rro",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Marshal Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've combined your social skills and combat training to become a talented combat leader. Choose Diplomacy or Intimidation. You become trained in that skill or become an expert if you were already trained in it.</p>\n<p>In addition, you're surrounded by a marshal's aura in a @Template[type:emanation|distance:10]. Your aura has the emotion, mental, and visual traits and grants you and allies within the aura a +1 status bonus to saving throws against fear.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.1F84oh5hoG86mZIw]{Marshal} archetype.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.Ru4BNABCZ0hUbX7S]{Effect: Marshal's Aura}</p>"
+    },
+    "rules": [
+      {
+        "effects": [
+          {
+            "affects": "allies",
+            "events": [
+              "enter"
+            ],
+            "uuid": "Compendium.pf2e.feat-effects.Item.Ru4BNABCZ0hUbX7S"
+          }
+        ],
+        "key": "Aura",
+        "radius": 10,
+        "slug": "marshals-aura",
+        "traits": [
+          "emotion",
+          "mental",
+          "visual"
+        ]
+      },
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.Skill.Diplomacy",
+            "predicate": [
+              "skill:diplomacy:rank:0"
+            ],
+            "value": "dip-trained"
+          },
+          {
+            "label": "PF2E.Skill.Diplomacy",
+            "predicate": [
+              "skill:diplomacy:rank:1"
+            ],
+            "value": "dip-expert"
+          },
+          {
+            "label": "PF2E.Skill.Intimidation",
+            "predicate": [
+              "skill:intimidation:rank:0"
+            ],
+            "value": "itm-trained"
+          },
+          {
+            "label": "PF2E.Skill.Intimidation",
+            "predicate": [
+              "skill:intimidation:rank:1"
+            ],
+            "value": "itm-expert"
+          }
+        ],
+        "key": "ChoiceSet",
+        "predicate": [
+          {
+            "or": [
+              {
+                "lte": [
+                  "skill:intimidation:rank",
+                  1
+                ]
+              },
+              {
+                "lte": [
+                  "skill:diplomacy:rank",
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        "prompt": "PF2E.SpecificRule.Prompt.Skill",
+        "rollOption": "marshal-skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.diplomacy.rank",
+        "predicate": [
+          "marshal-skill:diplomacy-trained"
+        ],
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.diplomacy.rank",
+        "predicate": [
+          "marshal-skill:diplomacy-expert"
+        ],
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.intimidation.rank",
+        "predicate": [
+          "marshal-skill:intimidation-trained"
+        ],
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.intimidation.rank",
+        "predicate": [
+          "marshal-skill:intimidation-expert"
+        ],
+        "value": 2
+      }
+    ],
+    "slug": "marshal-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in martial weapons and either Diplomacy or Intimidation"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.MYzRfNExDYp25rro"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.MYzRfNExDYp25rro",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!MYzRfNExDYp25rro"
+}

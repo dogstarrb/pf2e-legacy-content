@@ -1,0 +1,98 @@
+{
+  "_id": "PdIN91xKsZ4z7p17",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Transposable Compliance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your protean vitality is fecund and many-succoring: your veins run with life-giving ichor that adapts to the blood and physiology of any body, and your skin molts on command, creating wound-stanching sheaths of tissue for yourself and others. You become trained in Medicine. If you were already trained in Medicine, you instead become trained in a skill of your choice. You can Administer First Aid without healer's tools by using your physiology instead, but you must take 1 damage to make the attempt. Similarly, you can @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds} without healer's tools but take [[/r 2d8 #damage]]{2d8 damage}. You gain a +1 circumstance bonus on all Medicine checks to Administer First Aid and Treat Wounds using your own physiology.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.medicine.rank",
+        "value": 1
+      },
+      {
+        "domain": "medicine",
+        "key": "RollOption",
+        "option": "using-physiolgy"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "using-physiology",
+          {
+            "or": [
+              "action:administer-first-aid",
+              "action:treat-wounds"
+            ]
+          }
+        ],
+        "selector": "medicine",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "transposable-compliance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fleshwarp"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.PdIN91xKsZ4z7p17"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.PdIN91xKsZ4z7p17",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PdIN91xKsZ4z7p17"
+}

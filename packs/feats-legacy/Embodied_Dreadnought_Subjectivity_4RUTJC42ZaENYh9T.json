@@ -1,0 +1,86 @@
+{
+  "_id": "4RUTJC42ZaENYh9T",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Embodied Dreadnought Subjectivity",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Access</strong> You're from Nex.</p>\n<hr />\n<p>Your colossal might marks you as a behemoth, the pride of Nex's Fleshforges, and the heaviest ordnance is a child's toy in your monumental grasp. You're a dreadnought, a living siege weapon, albeit one that wields other siege weapons in battle as your endoskeleton and flesh toughens. You gain the Hefty Hauler skill feat, and your maximum Bulk limit further increases by 3, for a total of 2 to your encumbered limit and 5 to your maximum limit.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.C0Tcelg3BAPhML6J"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "inventory.bulk.maxAddend",
+        "value": 3
+      }
+    ],
+    "slug": "embodied-dreadnought-subjectivity",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fleshwarp"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "cataphract fleshwarp heritage"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.4RUTJC42ZaENYh9T"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.4RUTJC42ZaENYh9T",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4RUTJC42ZaENYh9T"
+}

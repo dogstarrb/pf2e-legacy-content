@@ -1,0 +1,122 @@
+{
+  "_id": "rJan8OyK6gmtxXmt",
+  "img": "icons/sundries/lights/lantern-bullseye-signal-copper.webp",
+  "name": "Queasy Lantern (Lesser)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This @UUID[Compendium.pf2e.equipment-srd.Item.QrNvP9SgnK9DrerA]{Lantern (Bull's Eye)} is wrapped in decrepit leather skin. It constantly emits light in a @Template[type:cone|distance:60] (and dim light in the next 60 feet). You can close or open internal shutters with an Interact action to block or reveal the light.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You slide in a magical lens that causes the lantern to emit a pale green light and then aim the lantern. All creatures in the lantern's @Template[type:cone|distance:60] of bright light (but not those in the dim light), must attempt a @Check[type:fortitude|dc:23|name:Queasy Lantern|traits:uncommon|showDC:all] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). The light then reverts to normal as the lens slides out of place.</p>"
+    },
+    "rules": [
+      {
+        "key": "TokenEffectIcon",
+        "value": "icons/sundries/lights/lantern-bullseye-signal-copper.webp"
+      },
+      {
+        "key": "TokenLight",
+        "value": {
+          "angle": 90,
+          "animation": {
+            "intensity": 4,
+            "speed": 1,
+            "type": "torch"
+          },
+          "bright": 60,
+          "color": "#9b7337",
+          "dim": 120,
+          "shadows": 0.2
+        }
+      }
+    ],
+    "slug": "queasy-lantern-lesser",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "light",
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 325
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.rJan8OyK6gmtxXmt"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.rJan8OyK6gmtxXmt",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!rJan8OyK6gmtxXmt"
+}

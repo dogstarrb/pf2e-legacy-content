@@ -1,0 +1,83 @@
+{
+  "_id": "OoUqJJB77VfWbWRM",
+  "img": "systems/pf2e/icons/features/ancestry/cliifscale-lizardfolk.webp",
+  "name": "Cliffscale Lizardfolk",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your toes are adapted for gripping and climbing.</p>\n<p>You gain the @UUID[Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq]{Combat Climber} feat as a bonus feat, and as long as you aren't wearing footwear, you can use the sticky pads on your feet to climb, leaving your hands free.</p>\n<p>Additionally, if you roll a success on an Athletics check to climb, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "action:climb"
+        ],
+        "selector": "athletics",
+        "text": "When you roll a success to Climb, you get a critical success instead.",
+        "title": "{item|name}"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq"
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:climb"
+        ],
+        "selector": "athletics",
+        "type": "skill"
+      }
+    ],
+    "slug": "cliffscale-lizardfolk",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Lizardfolk",
+      "slug": "lizardfolk",
+      "uuid": "Compendium.pf2e.ancestries.Item.HWEgF7Gmoq55VhTL"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.OoUqJJB77VfWbWRM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.OoUqJJB77VfWbWRM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OoUqJJB77VfWbWRM"
+}

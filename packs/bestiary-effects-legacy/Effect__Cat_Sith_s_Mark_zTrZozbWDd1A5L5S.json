@@ -1,0 +1,88 @@
+{
+  "_id": "zTrZozbWDd1A5L5S",
+  "img": "systems/pf2e/icons/spells/fey-disapperance.webp",
+  "name": "Effect: Cat Sith's Mark",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Whenever the cursed creature rolls a critical success on a skill check or saving throw, it gets a success instead. Each day, a cursed creature can attempt a @Check[type:flat|dc:10|traits:curse,misfortune|name:Break Cat Sith's Mark] check to break the curse.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "criticalSuccess": "one-degree-worse"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "selector": "saving-throw",
+        "type": "save"
+      },
+      {
+        "adjustment": {
+          "criticalSuccess": "one-degree-worse"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "selector": "skill-check",
+        "type": "skill"
+      }
+    ],
+    "slug": "effect-cat-siths-mark",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #153: Life's Long Shadows",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.zTrZozbWDd1A5L5S"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.zTrZozbWDd1A5L5S",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zTrZozbWDd1A5L5S"
+}

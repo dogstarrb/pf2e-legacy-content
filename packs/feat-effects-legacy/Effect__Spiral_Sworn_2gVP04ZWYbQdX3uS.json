@@ -1,0 +1,111 @@
+{
+  "_id": "2gVP04ZWYbQdX3uS",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "name": "Effect: Spiral Sworn",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>For 3 rounds, your Strikes and spells deal additional damage against undead, creatures in possession of an imprisoned soul, or creatures you have witnessed create or command undead. You gain a status bonus to damage with your Strikes against these creatures equal to the number of weapon damage dice. Spells you cast from spell slots gain a status bonus to damage against these creatures equal to the level of the spell; this bonus applies only to spells that deal damage and don't have a duration.</p>"
+    },
+    "rules": [
+      {
+        "domain": "saving-throw",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.SoulWarden.SpiralSworn.Label",
+        "option": "target:imprisoned-soul",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "target:mode:undead",
+              "target:imprisoned-soul"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "type": "status",
+        "value": "@weapon.system.damage.dice"
+      },
+      {
+        "key": "FlatModifier",
+        "phase": "afterDerived",
+        "predicate": [
+          "item:spell-slot",
+          "item:duration:0",
+          "damaging-effect",
+          {
+            "or": [
+              "target:mode:undead",
+              "target:imprisoned-soul"
+            ]
+          }
+        ],
+        "selector": "spell-damage",
+        "type": "status",
+        "value": "@spell.level"
+      }
+    ],
+    "slug": "effect-spiral-sworn",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 3,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.2gVP04ZWYbQdX3uS"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.2gVP04ZWYbQdX3uS",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2gVP04ZWYbQdX3uS"
+}

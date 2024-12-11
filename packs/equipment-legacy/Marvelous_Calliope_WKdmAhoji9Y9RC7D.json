@@ -1,0 +1,113 @@
+{
+  "_id": "WKdmAhoji9Y9RC7D",
+  "img": "systems/pf2e/icons/equipment/structures/marvelous-calliope.webp",
+  "name": "Marvelous Calliope",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This large slide whistle appears to be made of fine brass, the sides of which are engraved with musical notes and dancing clowns.</p>\n<hr />\n<p><strong>Activate</strong> 1 minute (command, envision, Interact)</p>\n<p><strong>Effect</strong> You blow a tune upon the slide whistle, causing the whistle to expand. The whistle sprouts from one into several, and then creates a large wooden frame and keyboard. By the time the unfolding is complete, the whistle fully transforms into a calliope, a wagon-sized contraption consisting of several steam whistles played like an organ. The calliope is heavy and anchored in place.</p>\n<p>You have a +1 item bonus to Performance checks to play the calliope. The calliope has a tendency to produce music for a few seconds after you cease playing it, adding a jaunty and overlong conclusion to your music.</p>\n<p>If you use an Interact action to pull the small metal ring on the underside of the <em>marvelous calliope</em>, the calliope collapses back down into a slide whistle.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Effect</strong> You play the calliope, causing it to cast <em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{Charm}</em> on one of the listeners.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Marvelous Calliope (playing it)",
+        "predicate": [
+          "playing"
+        ],
+        "selector": "performance",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "marvelous-calliope",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical",
+        "structure"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #152: Legacy of the Lost God",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 100
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.WKdmAhoji9Y9RC7D"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.WKdmAhoji9Y9RC7D",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WKdmAhoji9Y9RC7D"
+}

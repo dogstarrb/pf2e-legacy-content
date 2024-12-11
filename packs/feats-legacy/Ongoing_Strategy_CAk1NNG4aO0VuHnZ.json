@@ -1,0 +1,121 @@
+{
+  "_id": "CAk1NNG4aO0VuHnZ",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Ongoing Strategy",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You're constantly studying small aspects of everyone's movements, even if you don't have a stratagem in place ahead of time.</p>\n<p>On any Strike for which you didn't @UUID[Compendium.pf2e.actionspf2e.Item.m0f2B7G9eaaTmhFL]{Devise a Strategem}, you still deal precision damage equal to your number of strategic strike damage dice so long as the weapon or unarmed attack you used is one that would have let you use your Intelligence modifier had you Devised a Stratagem.</p>"
+    },
+    "rules": [
+      {
+        "damageCategory": "precision",
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "agile",
+              "finesse",
+              "ranged",
+              "feat:takedown-expert"
+            ]
+          },
+          {
+            "not": "devise-a-stratagem"
+          }
+        ],
+        "selector": "strike-damage",
+        "value": {
+          "brackets": [
+            {
+              "end": 4,
+              "value": 1
+            },
+            {
+              "end": 8,
+              "start": 5,
+              "value": 2
+            },
+            {
+              "end": 12,
+              "start": 9,
+              "value": 3
+            },
+            {
+              "end": 16,
+              "start": 13,
+              "value": 4
+            },
+            {
+              "start": 17,
+              "value": 5
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "ongoing-strategy",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "investigator"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "strategic strike"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.CAk1NNG4aO0VuHnZ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.CAk1NNG4aO0VuHnZ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CAk1NNG4aO0VuHnZ"
+}

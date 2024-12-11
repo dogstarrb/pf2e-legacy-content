@@ -1,0 +1,107 @@
+{
+  "_id": "5OABp099y6w3didN",
+  "img": "icons/sundries/lights/candle-unlit-grey.webp",
+  "name": "Effect: Soulspark Candle",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Worshippers of Pharasma gain a +3 status bonus to attack rolls, skill checks, saving throws, and Perception checks. Undead creatures and worshippers of Urgathoa within this area take a –3 status penalty to those checks..</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "deity:primary:pharasma"
+        ],
+        "selector": [
+          "attack",
+          "skill-check",
+          "saving-throw",
+          "perception"
+        ],
+        "slug": "soulspark-pharasma",
+        "type": "status",
+        "value": 3
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "deity:primary:urgathoa",
+              "self:mode:undead"
+            ]
+          }
+        ],
+        "selector": [
+          "attack",
+          "skill-check",
+          "saving-throw",
+          "perception"
+        ],
+        "slug": "soulspark-undead",
+        "type": "status",
+        "value": -3
+      }
+    ],
+    "slug": "effect-soulspark-candle",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #186: Ghost King's Rage",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.5OABp099y6w3didN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.5OABp099y6w3didN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5OABp099y6w3didN"
+}

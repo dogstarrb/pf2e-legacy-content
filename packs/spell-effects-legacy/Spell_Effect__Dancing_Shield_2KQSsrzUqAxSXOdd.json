@@ -1,0 +1,97 @@
+{
+  "_id": "2KQSsrzUqAxSXOdd",
+  "img": "systems/pf2e/icons/spells/dancing-shield.webp",
+  "name": "Spell Effect: Dancing Shield",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The touched shield uses the Raise a Shield action to protect the target creature.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "ac",
+        "type": "circumstance",
+        "value": "{item|flags.pf2e.rulesSelections.spellEffectDancingShield}"
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.SpecificRule.BonusLabel.PlusOne",
+            "value": 1
+          },
+          {
+            "label": "PF2E.SpecificRule.BonusLabel.PlusTwo",
+            "value": 2
+          },
+          {
+            "label": "PF2E.SpecificRule.BonusLabel.PlusThree",
+            "value": 3
+          }
+        ],
+        "flag": "spellEffectDancingShield",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.DancingShield.Prompt"
+      }
+    ],
+    "slug": "spell-effect-dancing-shield",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Knights of Lastwall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.2KQSsrzUqAxSXOdd"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 3000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.2KQSsrzUqAxSXOdd",
+    "duplicateSource": null
+  },
+  "_key": "!items!2KQSsrzUqAxSXOdd"
+}

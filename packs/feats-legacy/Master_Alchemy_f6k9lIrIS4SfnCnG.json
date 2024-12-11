@@ -1,0 +1,101 @@
+{
+  "_id": "f6k9lIrIS4SfnCnG",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Master Alchemy",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your advanced alchemy level increases to 7. For every level you gain beyond 12th, your advanced alchemy level increases by 1.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.crafting.entries.alchemist.maxItemLevel",
+        "phase": "beforeDerived",
+        "predicate": [
+          "crafting:entry:alchemist"
+        ],
+        "value": {
+          "brackets": [
+            {
+              "end": 12,
+              "start": 12,
+              "value": 7
+            },
+            {
+              "start": 13,
+              "value": "@actor.level - 5"
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "master-alchemy",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Expert Alchemy"
+        },
+        {
+          "value": "master in Crafting"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.f6k9lIrIS4SfnCnG"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.f6k9lIrIS4SfnCnG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!f6k9lIrIS4SfnCnG"
+}

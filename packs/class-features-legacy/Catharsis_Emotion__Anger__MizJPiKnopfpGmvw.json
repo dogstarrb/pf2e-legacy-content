@@ -1,0 +1,83 @@
+{
+  "_id": "MizJPiKnopfpGmvw",
+  "img": "icons/magic/fire/flame-burning-eye.webp",
+  "name": "Catharsis Emotion (Anger)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your destructive wrath allows you to harm your foes but causes you pain in the process.</p>\n<p><strong>Catharsis Trigger</strong> An enemy deals damage to you. You can't use this reaction if you're @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}.</p>\n<p><strong>Catharsis Activation</strong> If you're @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}, or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, you can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. If you succeed, the creature or hazard imposing the condition on you (if applicable) takes force damage equal to your level.</p>\n<p><strong>Emotional Fervor</strong> When you Cast a Spell from your spell slots, if the spell deals damage and doesn't have a duration, you gain a status bonus to that spell's damage equal to the spell's level. Spell: <em>@UUID[Compendium.pf2e.spells-srd.Item.jsWthW1Qy6tg3SwD]{Draw Ire}</em></p>\n<p><strong>Emotional Fallout</strong> You become fatigued until you Settle your Emotions.</p>\n<p><strong>Focus Spell</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.UGJzJRJDoonfWqqI]{Athletic Rush}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "phase": "afterDerived",
+        "predicate": [
+          "item:spell-slot",
+          "item:duration:0",
+          "damaging-effect",
+          "self:effect:emotional-fervor"
+        ],
+        "selector": "spell-damage",
+        "type": "status",
+        "value": "@spell.level"
+      }
+    ],
+    "slug": "catharsis-emotion-anger",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.MizJPiKnopfpGmvw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.MizJPiKnopfpGmvw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!MizJPiKnopfpGmvw"
+}

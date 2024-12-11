@@ -1,0 +1,123 @@
+{
+  "_id": "PCQtpTKiGfSSRwNV",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-tools/vestige-lenses.webp",
+  "name": "Vestige Lenses",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>These simple lenses are alchemically treated to detect the faint smoke trail from a piece of specially formulated sandalwood incense.</p>\n<p>This incense has an odor undetectable by most people and a long burn time, making it perfect for discreetly tracking individuals. A stick of this incense costs 1 sp and can safely burn for up to 8 hours.</p>\n<p>While wearing the lenses, you see alchemical fumes in a distinct green tint, granting you a +1 item bonus to Survival checks to Track a creature marked with the incense and to Perception checks to Seek any alchemical vapors.</p>\n<p>If the smoke is fresh, Tracking via the incense's fumes might use a lower DC than normal for tracking a creature walking on firm surfaces.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:track",
+          "target:marked-creature"
+        ],
+        "selector": "survival",
+        "type": "item",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:seek",
+          "alchemical-vapors"
+        ],
+        "selector": "perception",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "vestige-lenses",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemical"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Legends",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 40
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worneyepiece"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.PCQtpTKiGfSSRwNV"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.PCQtpTKiGfSSRwNV",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PCQtpTKiGfSSRwNV"
+}

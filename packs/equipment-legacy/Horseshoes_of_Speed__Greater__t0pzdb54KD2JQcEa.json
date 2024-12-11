@@ -1,0 +1,126 @@
+{
+  "_id": "t0pzdb54KD2JQcEa",
+  "img": "icons/sundries/misc/horseshoe-iron.webp",
+  "name": "Horseshoes of Speed (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When you affix these simple iron horseshoes to the hooves of an ordinary horse or a quadrupedal animal companion and the animal companion invests them, that creature gains a +10-foot item bonus to its land Speed and a +3 item bonus to Athletics checks to High Jump and Long Jump.</p>\n<p>In addition, when it Leaps, it can move 5 feet farther if jumping horizontally or 3 feet higher if jumping vertically.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Horseshoes of Speed (long & high jumps)",
+        "predicate": [
+          {
+            "or": [
+              "action:high-jump",
+              "action:long-jump"
+            ]
+          }
+        ],
+        "selector": "athletics",
+        "type": "item",
+        "value": 3
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "land-speed",
+        "type": "item",
+        "value": 10
+      }
+    ],
+    "slug": "horseshoes-of-speed-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "companion",
+        "invested",
+        "primal"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 4250
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "wornhorseshoes"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.t0pzdb54KD2JQcEa"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.t0pzdb54KD2JQcEa",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!t0pzdb54KD2JQcEa"
+}

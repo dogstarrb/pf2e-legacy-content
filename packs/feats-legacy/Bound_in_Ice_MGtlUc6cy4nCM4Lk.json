@@ -1,0 +1,94 @@
+{
+  "_id": "MGtlUc6cy4nCM4Lk",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Bound in Ice",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You become a hybrid of your ancestry and a saumen kar. Your size increases to Large, and your reach becomes 10 feet. Your cold resistance increases to be equal to your level, and you gain fire resistance equal to half your level.</p>\n<p>You also gain the @UUID[Compendium.pf2e.actionspf2e.Item.a47Npi5XHXo47y49]{Blizzard Evasion} reaction.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "cold",
+        "value": "@actor.level"
+      },
+      {
+        "key": "CreatureSize",
+        "value": "large"
+      },
+      {
+        "key": "Resistance",
+        "type": "fire",
+        "value": "floor(@actor.level/2)"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.actionspf2e.Item.a47Npi5XHXo47y49"
+      }
+    ],
+    "slug": "bound-in-ice",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Monsters of Myth",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Frostbite Runes"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.MGtlUc6cy4nCM4Lk"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.MGtlUc6cy4nCM4Lk",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!MGtlUc6cy4nCM4Lk"
+}

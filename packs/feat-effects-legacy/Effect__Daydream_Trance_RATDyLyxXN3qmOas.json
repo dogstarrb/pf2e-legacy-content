@@ -1,0 +1,107 @@
+{
+  "_id": "RATDyLyxXN3qmOas",
+  "img": "systems/pf2e/icons/spells/entrancing-eyes.webp",
+  "name": "Effect: Daydream Trance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You take a -1 penalty to Perception checks and initiative rolls and gain a +1 status bonus to Will saves. This bonus increases to +2 against mental effects. If you're legendary in Occultism, the bonus against mental effects increases to +3.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "initiative",
+          "perception"
+        ],
+        "value": -1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "mental"
+        ],
+        "selector": "will",
+        "slug": "daydream-trance-mental",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "will",
+        "slug": "daydream-trance-will",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "override",
+        "predicate": [
+          "skill:occultism:rank:4"
+        ],
+        "selector": "will",
+        "slug": "daydream-trance-mental",
+        "value": 3
+      }
+    ],
+    "slug": "effect-daydream-trance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.RATDyLyxXN3qmOas"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.RATDyLyxXN3qmOas",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!RATDyLyxXN3qmOas"
+}

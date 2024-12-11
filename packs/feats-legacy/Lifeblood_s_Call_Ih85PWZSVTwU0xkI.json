@@ -1,0 +1,169 @@
+{
+  "_id": "Ih85PWZSVTwU0xkI",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Lifeblood's Call",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The impulse to survive and continue fighting resonates deep within you. You gain a circumstance bonus to damage rolls on your melee Strikes equal to twice the sum of your wounded and doomed conditions (to a maximum of a +8 circumstance bonus to damage) whenever you have one or both conditions.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "item:melee",
+          {
+            "or": [
+              "self:condition:doomed",
+              "self:condition:wounded"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "lifebloods-call",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "upgrade",
+        "predicate": [
+          {
+            "or": [
+              "self:condition:doomed:2",
+              "self:condition:wounded:2",
+              {
+                "and": [
+                  "self:condition:doomed",
+                  "self:condition:wounded"
+                ]
+              }
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "lifebloods-call",
+        "value": 4
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "upgrade",
+        "predicate": [
+          {
+            "or": [
+              "self:condition:doomed:3",
+              "self:condition:wounded:3",
+              {
+                "and": [
+                  "self:condition:doomed:2",
+                  "self:condition:wounded"
+                ]
+              },
+              {
+                "and": [
+                  "self:condition:doomed",
+                  "self:condition:wounded:2"
+                ]
+              }
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "lifebloods-call",
+        "value": 6
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "upgrade",
+        "predicate": [
+          {
+            "or": [
+              "self:condition:doomed:4",
+              "self:condition:wounded:4",
+              {
+                "and": [
+                  "self:condition:doomed:3",
+                  "self:condition:wounded"
+                ]
+              },
+              {
+                "and": [
+                  "self:condition:doomed",
+                  "self:condition:wounded:3"
+                ]
+              },
+              {
+                "and": [
+                  "self:condition:doomed:2",
+                  "self:condition:wounded:2"
+                ]
+              }
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "lifebloods-call",
+        "value": 8
+      }
+    ],
+    "slug": "lifebloods-call",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "orc"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.Ih85PWZSVTwU0xkI"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.Ih85PWZSVTwU0xkI",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Ih85PWZSVTwU0xkI"
+}

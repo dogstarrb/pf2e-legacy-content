@@ -1,0 +1,152 @@
+{
+  "_id": "4nHYSMHito1GUXlm",
+  "img": "systems/pf2e/icons/spells/rebuke-death.webp",
+  "name": "Rebuke Death",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You snatch creatures from the jaws of death. You can spend 1 to 3 actions Casting this Spell, and you can target a number of creatures equal to the actions spent. Each target regains 3d6 Hit Points. If the target had the @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} condition, coming back from Dying due to this healing doesn't increase its @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded} condition.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the healing by 1d6.</p>"
+    },
+    "rules": [],
+    "slug": "rebuke-death",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "cleric",
+        "focus",
+        "healing",
+        "manipulate",
+        "vitality"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 living creature per action spent to cast this spell"
+    },
+    "range": {
+      "value": ""
+    },
+    "area": {
+      "type": "emanation",
+      "value": 20
+    },
+    "time": {
+      "value": "1 to 3"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "3d6",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "healing"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d6"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {
+      "7ry8vc5rj3vz1053": {
+        "_id": "7ry8vc5rj3vz1053",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "target": {
+            "value": "3 living creatures"
+          },
+          "time": {
+            "value": "3"
+          },
+          "defense": null
+        }
+      },
+      "j125ugcqeelz5efk": {
+        "_id": "j125ugcqeelz5efk",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "target": {
+            "value": "2 living creatures"
+          },
+          "time": {
+            "value": "2"
+          },
+          "defense": null
+        }
+      },
+      "vh52k2mfn7q0wuhc": {
+        "_id": "vh52k2mfn7q0wuhc",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "target": {
+            "value": "1 living creature"
+          },
+          "time": {
+            "value": "1"
+          },
+          "defense": null
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.4nHYSMHito1GUXlm"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.4nHYSMHito1GUXlm",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4nHYSMHito1GUXlm"
+}

@@ -1,0 +1,113 @@
+{
+  "_id": "a58MGVX2L589sC9g",
+  "img": "systems/pf2e/icons/features/classes/weapon-specialization.webp",
+  "name": "Psychic Weapon Specialization",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>As you touch a weapon, you glimpse the hands that made and wielded it, teaching you how to inflict greater injuries. You deal 2 additional Damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 if you're a master, and 4 if you're legendary.</p>"
+    },
+    "rules": [
+      {
+        "hideIfDisabled": true,
+        "key": "FlatModifier",
+        "label": "PF2E.WeaponSpecialization",
+        "predicate": [
+          {
+            "gte": [
+              "item:proficiency:rank",
+              2
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "weapon-specialization",
+        "value": 2
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "upgrade",
+        "predicate": [
+          "item:proficiency:rank:3"
+        ],
+        "priority": 0,
+        "selector": "strike-damage",
+        "slug": "weapon-specialization",
+        "value": 3
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "upgrade",
+        "predicate": [
+          "item:proficiency:rank:4"
+        ],
+        "priority": 0,
+        "selector": "strike-damage",
+        "slug": "weapon-specialization",
+        "value": 4
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "feature:weapon-specialization"
+      }
+    ],
+    "slug": "psychic-weapon-specialization",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.a58MGVX2L589sC9g"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.a58MGVX2L589sC9g",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!a58MGVX2L589sC9g"
+}

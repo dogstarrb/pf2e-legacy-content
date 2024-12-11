@@ -1,0 +1,87 @@
+{
+  "_id": "8STJEFVJISujgpMR",
+  "img": "icons/magic/symbols/question-stone-yellow.webp",
+  "name": "Druidic Order",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Upon becoming a druid, you align yourself with a druidic order, which grants you a class feat, an order spell, and an additional trained skill tied to your order. While you'll always be a member of your initial order, it's not unheard of for a druid to request to study with other orders in search of greater understanding of the natural world, and PC druids are among the most likely to blend the powers of different orders.</p>\n<p>Order spells are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to commune with local nature spirits or otherwise tend to the wilderness in a way befitting your order.</p>\n<p>Focus spells are automatically heightened to half your level rounded up, much like cantrips. Focus spells don't require spell slots to cast, and you can't cast them using spell slots. Selecting druid feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 points.</p>\n<hr />\n<ul>\n<li>@UUID[Compendium.pf2e.classfeatures.Item.POBvoXifa9HaejAg]{Animal Order}</li>\n<li>@UUID[Compendium.pf2e.classfeatures.Item.NdeFvIXdHwKYLiUj]{Flame Order}</li>\n<li>@UUID[Compendium.pf2e.classfeatures.Item.u4nlOzPj2WHkIj9l]{Leaf Order}</li>\n<li>@UUID[Compendium.pf2e.classfeatures.Item.fKTewWlYgFuhl4KA]{Stone Order}</li>\n<li>@UUID[Compendium.pf2e.classfeatures.Item.acqqlYmti8D9QJi0]{Storm Order}</li>\n<li>@UUID[Compendium.pf2e.classfeatures.Item.FuUXyv2yBs7zRgqT]{Wave Order}</li>\n<li>@UUID[Compendium.pf2e.classfeatures.Item.v0EjtiwdeMj8ykI0]{Wild Order}</li>\n</ul>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": {
+          "filter": [
+            "item:tag:druid-order"
+          ]
+        },
+        "flag": "druidicOrder",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Druid.DruidicOrder.Prompt"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.druidicOrder}"
+      }
+    ],
+    "slug": "druidic-order",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.8STJEFVJISujgpMR"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.8STJEFVJISujgpMR",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8STJEFVJISujgpMR"
+}

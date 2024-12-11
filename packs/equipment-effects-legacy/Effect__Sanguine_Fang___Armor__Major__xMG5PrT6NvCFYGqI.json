@@ -1,0 +1,85 @@
+{
+  "_id": "xMG5PrT6NvCFYGqI",
+  "img": "icons/creatures/abilities/fang-tooth-blood-red.webp",
+  "name": "Effect: Sanguine Fang - Armor (Major)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.0AxBSojJ2XhcqMvJ]{Sanguine Fang (Major)}</p>\n<p>You gain resistance 10 to persistent bleed damage and a +3 item bonus on saving throws against effects with the negative trait.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "bleed",
+        "value": 10
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "void"
+        ],
+        "selector": "saving-throw",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "effect-sanguine-fang-armor-major",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 15
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.xMG5PrT6NvCFYGqI"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.xMG5PrT6NvCFYGqI",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xMG5PrT6NvCFYGqI"
+}

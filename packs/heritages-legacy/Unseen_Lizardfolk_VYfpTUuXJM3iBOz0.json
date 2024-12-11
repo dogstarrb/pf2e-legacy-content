@@ -1,0 +1,69 @@
+{
+  "_id": "VYfpTUuXJM3iBOz0",
+  "img": "systems/pf2e/icons/features/ancestry/unseen-lizardfolk.webp",
+  "name": "Unseen Lizardfolk",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can change your skin color to blend in with your surroundings, making minor shifts with a single action and dramatic changes over the course of an hour.</p>\n<p>When you're in an area where your coloration is roughly similar to the environment (for instance, forest green in a forest), you can use the minor, single action application of this ability to make localized changes that help you blend into your surroundings, gaining a +2 circumstance bonus to Stealth checks until your surroundings change in coloration or pattern.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Unseen Lizardfolk (coloration matches environment)",
+        "predicate": [
+          "coloration-matches"
+        ],
+        "selector": "stealth",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "unseen-lizardfolk",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Lizardfolk",
+      "slug": "lizardfolk",
+      "uuid": "Compendium.pf2e.ancestries.Item.HWEgF7Gmoq55VhTL"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.VYfpTUuXJM3iBOz0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.VYfpTUuXJM3iBOz0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VYfpTUuXJM3iBOz0"
+}

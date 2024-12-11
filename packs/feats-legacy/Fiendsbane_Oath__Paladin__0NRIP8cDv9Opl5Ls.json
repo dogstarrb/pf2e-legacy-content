@@ -1,0 +1,119 @@
+{
+  "_id": "0NRIP8cDv9Opl5Ls",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Fiendsbane Oath (Paladin)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've sworn an oath to banish the corruption of fiends to the dark planes they call home. Add the following tenet to your champion's code after the other tenets: \"You must banish or slay fiends you come across as long as you have a reasonable chance of success; in the incredibly unlikely event you find a good fiend, you don't have to banish or kill it.\"</p>\n<p>Your @UUID[Compendium.pf2e.actionspf2e.Item.EAP98XaChJEbgKcK]{Retributive Strike} gains a +4 circumstance bonus to damage against a fiend, or a +6 circumstance bonus if you have master proficiency with the weapon you used.</p>\n<p>You don't consider fiends to be legitimate authorities, even in nations ruled by fiends.</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "label": "Retributive Strike against a fiend",
+        "option": "fiendsbane-oath",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Fiendsbane Oath",
+        "predicate": [
+          "fiendsbane-oath",
+          {
+            "nor": [
+              "proficiency:master",
+              "proficiency:legendary"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "fiendsbane-not-master",
+        "value": 4
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Fiendsbane Oath",
+        "predicate": [
+          "fiendsbane-oath",
+          {
+            "or": [
+              "proficiency:master",
+              "proficiency:legendary"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "fiendsbane-master",
+        "value": 6
+      }
+    ],
+    "slug": "fiendsbane-oath-paladin",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "champion",
+        "oath"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "tenets of good"
+        },
+        {
+          "value": "paladin cause"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.0NRIP8cDv9Opl5Ls"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.0NRIP8cDv9Opl5Ls",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0NRIP8cDv9Opl5Ls"
+}

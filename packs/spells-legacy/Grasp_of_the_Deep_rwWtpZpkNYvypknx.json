@@ -1,0 +1,116 @@
+{
+  "_id": "rwWtpZpkNYvypknx",
+  "img": "systems/pf2e/icons/spells/grasp-of-the-deep.webp",
+  "name": "Grasp of the Deep",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You grip one target with the phantasmal pressure of the deep sea, disorienting and crushing its lungs and joints. The target takes @Damage[6d6[bludgeoning]] damage and other effects, depending on its Will saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes half damage, and feels as though it's being crushed. The target becomes @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} and takes @Damage[6d6[bludgeoning]] damage; it can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} with an Escape DC equal to your spell DC.</p>\n<p><strong>Critical Failure</strong> As failure, but the target takes double damage.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> You can target up to 5 creatures.</p>"
+    },
+    "rules": [],
+    "slug": "grasp-of-the-deep",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate",
+        "mental",
+        "water"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "1Yh5PCqtUHHVKkOd": {
+        "applyMod": false,
+        "formula": "6d6",
+        "type": "bludgeoning",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "will",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "6": {
+          "target": {
+            "value": "up to 5 creatures"
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.rwWtpZpkNYvypknx"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.rwWtpZpkNYvypknx",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!rwWtpZpkNYvypknx"
+}

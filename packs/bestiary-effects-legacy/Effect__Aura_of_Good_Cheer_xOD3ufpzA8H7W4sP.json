@@ -1,0 +1,80 @@
+{
+  "_id": "xOD3ufpzA8H7W4sP",
+  "img": "systems/pf2e/icons/spells/captivating-adoration.webp",
+  "name": "Effect: Aura of Good Cheer",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Allies within the aura gain a +1 status bonus to Will saves against emotion effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "emotion"
+        ],
+        "selector": "will",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "effect-aura-of-good-cheer",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #188: They Watched the Stars",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.xOD3ufpzA8H7W4sP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.xOD3ufpzA8H7W4sP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xOD3ufpzA8H7W4sP"
+}

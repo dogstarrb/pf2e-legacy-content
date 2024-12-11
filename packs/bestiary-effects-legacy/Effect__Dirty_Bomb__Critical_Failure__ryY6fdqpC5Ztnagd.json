@@ -1,0 +1,81 @@
+{
+  "_id": "ryY6fdqpC5Ztnagd",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-tools/sun-orchid-poultice.webp",
+  "name": "Effect: Dirty Bomb (Critical Failure)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature takes a -3 circumstance penalty to fortitude saves against the chemist's Crude Bombs.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "crude-bomb"
+        ],
+        "selector": "fortitude",
+        "type": "circumstance",
+        "value": -3
+      }
+    ],
+    "slug": "effect-dirty-bomb-critical-failure",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #159: All or Nothing",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "duration": {
+      "value": 24,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.ryY6fdqpC5Ztnagd"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.ryY6fdqpC5Ztnagd",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ryY6fdqpC5Ztnagd"
+}

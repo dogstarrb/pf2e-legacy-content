@@ -1,0 +1,162 @@
+{
+  "_id": "gYpy9XBPScIlY93p",
+  "img": "icons/commodities/treasure/statue-bust-stone-grey.webp",
+  "name": "Stance: Mountain Stance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.ZL5UU9quCTvcWzfY]{Mountain Stance}</p>\n<p>You enter the stance of an implacable mountain—a technique first discovered by dwarven monks—allowing you to strike with the weight of an avalanche. The only Strikes you can make are falling stone unarmed attacks. These deal 1d8 bludgeoning damage; are in the brawling group; and have the forceful, nonlethal, and unarmed traits.</p>\n<p>While in Mountain Stance, you gain a +4 item bonus to AC and a +2 circumstance bonus to any defenses against being Shoved or Tripped. However, you have a Dexterity modifier cap to your AC of +0, meaning you don't add your Dexterity to your AC, and your Speeds are all reduced by 5 feet. The item bonus to AC from Mountain Stance is cumulative with armor potency runes on your explorer's clothing, mage armor, and bracers of armor.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d8"
+          }
+        },
+        "group": "brawling",
+        "img": "icons/commodities/treasure/statue-bust-stone-grey.webp",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Stance.Attack.FallingStone",
+        "range": null,
+        "replaceAll": true,
+        "traits": [
+          "forceful",
+          "unarmed",
+          "nonlethal"
+        ]
+      },
+      {
+        "fromEquipment": false,
+        "hideIfDisabled": true,
+        "key": "FlatModifier",
+        "selector": "ac",
+        "type": "item",
+        "value": 4
+      },
+      {
+        "key": "DexterityModifierCap",
+        "predicate": [
+          {
+            "nor": [
+              "feat:mountain-stronghold",
+              "feat:mountain-quake"
+            ]
+          }
+        ],
+        "value": 0
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "speed",
+        "value": -5
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "relabel": "PF2E.SpecificRule.MountainStance.BracersOfArmor",
+        "selector": "ac",
+        "slug": "bracers-of-armor",
+        "value": 4
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "relabel": "PF2E.SpecificRule.MountainStance.ExplorersClothing",
+        "selector": "ac",
+        "slug": "explorers-clothing",
+        "value": 4
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "relabel": "PF2E.SpecificRule.MountainStance.MageArmor",
+        "selector": "ac",
+        "slug": "mage-armor",
+        "value": 4
+      },
+      {
+        "hideIfDisabled": true,
+        "key": "FlatModifier",
+        "predicate": [
+          "action:shove"
+        ],
+        "selector": "fortitude",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "hideIfDisabled": true,
+        "key": "FlatModifier",
+        "predicate": [
+          "action:trip"
+        ],
+        "selector": "reflex",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "stance-mountain-stance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.gYpy9XBPScIlY93p"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.gYpy9XBPScIlY93p",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!gYpy9XBPScIlY93p"
+}

@@ -1,0 +1,114 @@
+{
+  "_id": "8DIzXO1YpsU3DpJw",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Snare Genius",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your expertise makes your snares more powerful, and you can place them quickly and efficiently.</p>\n<p>Each day during your daily preparations, you can prepare three snares from your formula book for quick deployment; if the snare normally takes 1 minute to @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft}, you can Craft it with 3 Interact actions. Snares prepared in this way don't cost you any resources to Craft. The number of snares you can prepare this way increases to four if you are a master in Crafting, and to five if you are legendary.</p>\n<p>When you Craft and deploy a snare that deals damage, any creature that critically fails its saving throw against the snare's initial effect and takes damage becomes off-guard until the end of its next turn.</p>"
+    },
+    "rules": [
+      {
+        "craftableItems": [
+          "item:trait:snare"
+        ],
+        "isDailyPrep": false,
+        "isPrepared": true,
+        "key": "CraftingAbility",
+        "slug": "snare-crafting",
+        "label": "Snare Crafting"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.crafting.entries.snareCrafting.maxSlots",
+        "phase": "beforeDerived",
+        "value": {
+          "brackets": [
+            {
+              "end": 2,
+              "start": 2,
+              "value": 3
+            },
+            {
+              "end": 3,
+              "start": 3,
+              "value": 4
+            },
+            {
+              "start": 4,
+              "value": 5
+            }
+          ],
+          "field": "actor|system.skills.crafting.rank"
+        }
+      }
+    ],
+    "slug": "snare-genius",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "kobold"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Crafting"
+        },
+        {
+          "value": "Snare Crafting"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.8DIzXO1YpsU3DpJw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.8DIzXO1YpsU3DpJw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8DIzXO1YpsU3DpJw"
+}

@@ -1,0 +1,94 @@
+{
+  "_id": "vB0yVFxJVZwalt2g",
+  "img": "systems/pf2e/icons/features/classes/way-of-the-vanguard.webp",
+  "name": "Way of the Vanguard",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You practice a unique combat style originated by dwarven siege engineers, using heavy weapons with wide attack areas to blast holes through enemy lines, clear an opening for your allies, and defend the conquered territory.</p>\n<p><strong>Slinger's Reload</strong> @UUID[Compendium.pf2e.actionspf2e.Item.tw1KDRPdBAkg5DlS]{Clear a Path}</p>\n<p><strong>Deeds</strong> <em>Initial </em>@UUID[Compendium.pf2e.actionspf2e.Item.9MJcQEMVVrmMyGyq]{Living Fortification}; <em>Advanced</em> @UUID[Compendium.pf2e.actionspf2e.Item.6OZfIjiPjWTIe7Pr]{Spinning Crush}; <em>Greater</em> @UUID[Compendium.pf2e.actionspf2e.Item.A4L90h7FIgO5EyBx]{Siegebreaker}</p>\n<p><strong>Way Skill</strong> Athletics</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "class:gunslinger"
+        ],
+        "uuid": "Compendium.pf2e.actionspf2e.Item.tw1KDRPdBAkg5DlS"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "class:gunslinger"
+        ],
+        "uuid": "Compendium.pf2e.actionspf2e.Item.9MJcQEMVVrmMyGyq"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.athletics.rank",
+        "value": 1
+      }
+    ],
+    "slug": "way-of-the-vanguard",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "gunslinger-way"
+      ],
+      "value": [
+        "gunslinger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.vB0yVFxJVZwalt2g"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.vB0yVFxJVZwalt2g",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!vB0yVFxJVZwalt2g"
+}

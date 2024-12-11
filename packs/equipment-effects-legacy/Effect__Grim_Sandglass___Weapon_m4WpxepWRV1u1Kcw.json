@@ -1,0 +1,91 @@
+{
+  "_id": "m4WpxepWRV1u1Kcw",
+  "img": "systems/pf2e/icons/equipment/other/spellhearts/grim-sandglass.webp",
+  "name": "Effect: Grim Sandglass - Weapon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.OjOpj9u1EdEUhKuX]{Grim Sandglass}</p>\n<p>After you cast a necromancy spell by Activating the <em>sandglass</em>, your Strikes with the weapon deal an additional 1d4 negative damage until the end of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "includeHandwraps": true,
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "effectGrimSandglassWeapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "damageType": "void",
+        "diceNumber": 1,
+        "dieSize": "d4",
+        "key": "DamageDice",
+        "selector": "{item|flags.pf2e.rulesSelections.effectGrimSandglassWeapon}-damage"
+      }
+    ],
+    "slug": "effect-grim-sandglass-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.m4WpxepWRV1u1Kcw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.m4WpxepWRV1u1Kcw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!m4WpxepWRV1u1Kcw"
+}

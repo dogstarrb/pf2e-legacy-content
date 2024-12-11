@@ -1,0 +1,86 @@
+{
+  "_id": "5KXsyN9J78glG25I",
+  "img": "systems/pf2e/icons/equipment/other/ochre-fulcrum-lenses.webp",
+  "name": "Effect: Ochre Fulcrum Lens",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.I2ul8Bzcth7sleow]{Ochre Fulcrum Lens}</p>\n<p>You gain resistance 10 to mental damage and a +2 status bonus to saves against emotion effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "mental",
+        "value": 10
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "emotion"
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "effect-ochre-fulcrum-lens",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #165: Eyes of Empty Death",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.5KXsyN9J78glG25I"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.5KXsyN9J78glG25I",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5KXsyN9J78glG25I"
+}

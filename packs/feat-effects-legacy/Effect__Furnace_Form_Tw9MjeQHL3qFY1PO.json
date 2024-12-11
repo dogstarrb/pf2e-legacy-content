@@ -1,0 +1,120 @@
+{
+  "_id": "Tw9MjeQHL3qFY1PO",
+  "img": "icons/magic/fire/elemental-fire-humanoid.webp",
+  "name": "Effect: Furnace Form",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.6vHkvQv0j56nZuR3]{Furnace Form}</p>\n<p>You become living flame, giving you fire immunity, resistance 10 to precision damage, and weakness 5 to cold and to water. Your unarmed attacks deal 1d4 additional fire damage, and your fire spells deal one additional die of fire damage (of the same damage die the spell uses). Your fire Elemental Blasts deal an additional die of damage. In fire form, you have a fly Speed of 40 feet.</p>"
+    },
+    "rules": [
+      {
+        "key": "Immunity",
+        "type": "fire"
+      },
+      {
+        "key": "Resistance",
+        "type": "precision",
+        "value": 10
+      },
+      {
+        "key": "Weakness",
+        "type": [
+          "cold",
+          "water"
+        ],
+        "value": 5
+      },
+      {
+        "damageType": "fire",
+        "diceNumber": 1,
+        "dieSize": "d4",
+        "key": "DamageDice",
+        "predicate": [
+          "unarmed"
+        ],
+        "selector": "strike-damage"
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": 40
+      },
+      {
+        "damageType": "fire",
+        "diceNumber": 1,
+        "key": "DamageDice",
+        "predicate": [
+          "item:trait:fire"
+        ],
+        "selector": "spell-damage"
+      },
+      {
+        "diceNumber": 1,
+        "key": "DamageDice",
+        "predicate": [
+          "item:trait:fire"
+        ],
+        "selector": "elemental-blast-damage"
+      }
+    ],
+    "slug": "effect-furnace-form",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.Tw9MjeQHL3qFY1PO"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.Tw9MjeQHL3qFY1PO",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Tw9MjeQHL3qFY1PO"
+}

@@ -1,0 +1,147 @@
+{
+  "_id": "eSP2938INGUG9b3w",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Musetouched",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your blood sings with the liberating power of the azatas, living embodiments of freedom from the wild realm of Elysium.</p>\n<p>You gain a +1 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. When you roll a critical failure on a check to Escape, you get a failure instead, and when you roll a success, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Musetouched (to Escape)",
+        "predicate": [
+          "action:escape"
+        ],
+        "selector": [
+          "attack",
+          "acrobatics",
+          "athletics"
+        ],
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better",
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:escape"
+        ],
+        "selector": "attack-roll"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "action:escape"
+        ],
+        "selector": "attack",
+        "text": "When you roll a critical failure on a check to Escape, you get a failure instead, and when you roll a success, you get a critical success instead.",
+        "title": "{item|name}"
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better",
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:escape"
+        ],
+        "selector": "athletics"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "action:escape"
+        ],
+        "selector": "athletics",
+        "text": "When you roll a critical failure on a check to Escape, you get a failure instead, and when you roll a success, you get a critical success instead.",
+        "title": "{item|name}"
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better",
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:escape"
+        ],
+        "selector": "acrobatics"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "action:escape"
+        ],
+        "selector": "acrobatics",
+        "text": "When you roll a critical failure on a check to Escape, you get a failure instead, and when you roll a success, you get a critical success instead.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "musetouched",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "lineage",
+        "nephilim"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": true,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.eSP2938INGUG9b3w"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.eSP2938INGUG9b3w",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!eSP2938INGUG9b3w"
+}

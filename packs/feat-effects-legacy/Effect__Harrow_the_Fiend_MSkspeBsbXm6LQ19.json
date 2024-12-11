@@ -1,0 +1,80 @@
+{
+  "_id": "MSkspeBsbXm6LQ19",
+  "img": "icons/sundries/gaming/playing-cards-grey.webp",
+  "name": "Effect: Harrow the Fiend",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +1 status bonus on all Strikes or spell attack rolls against fiends.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "target:trait:fiend"
+        ],
+        "selector": "attack",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "effect-harrow-the-fiend",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder: Stolen Fate Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.MSkspeBsbXm6LQ19"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.MSkspeBsbXm6LQ19",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!MSkspeBsbXm6LQ19"
+}

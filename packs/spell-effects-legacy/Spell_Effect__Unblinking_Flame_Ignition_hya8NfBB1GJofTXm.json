@@ -1,0 +1,93 @@
+{
+  "_id": "hya8NfBB1GJofTXm",
+  "img": "icons/magic/fire/projectile-feathers-embers-gold.webp",
+  "name": "Spell Effect: Unblinking Flame Ignition",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.aFd00WT266VYPqOG]{Unblinking Flame Ignition}</em></p>\n<p>You gain greater darkvision, low‐light vision, and the ability to see invisible creatures. You gain a fly Speed equal to your land Speed as you launch flame from your aura to soar through the sky. You become quickened, and you can use the extra action each round only to Strike or Fly using your flames.</p>"
+    },
+    "rules": [
+      {
+        "key": "Sense",
+        "selector": "greater-darkvision"
+      },
+      {
+        "key": "Sense",
+        "selector": "low-light-vision"
+      },
+      {
+        "key": "Sense",
+        "selector": "see-invisibility"
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": "@actor.attributes.speed.total"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl"
+      }
+    ],
+    "slug": "spell-effect-unblinking-flame-ignition",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "duration": {
+      "value": 3,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.hya8NfBB1GJofTXm"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 30600000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.hya8NfBB1GJofTXm",
+    "duplicateSource": null
+  },
+  "_key": "!items!hya8NfBB1GJofTXm"
+}

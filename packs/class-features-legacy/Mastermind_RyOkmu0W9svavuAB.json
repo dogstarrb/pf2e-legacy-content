@@ -1,0 +1,115 @@
+{
+  "_id": "RyOkmu0W9svavuAB",
+  "img": "systems/pf2e/icons/features/classes/mastermind.webp",
+  "name": "Mastermind",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Where others might use sleight of hand or a silver tongue to achieve their objectives, you rely on your intellect to craft intricate schemes. You likely view your operations as a chess game, always planning 10 steps ahead where others might plan three. You might be a detective determined to solve crimes or a spymaster in the service of a powerful family or nation. If you operate outside the law, you might be an aspiring crime lord or information broker, excellent at directing others toward suitable jobs.</p>\n<p>If you successfully identify a creature using @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against your attacks until the start of your next turn; if you critically succeed, it's off-guard against your attacks for 1 minute.</p>\n<p>You're trained in Society and one of the following skills of your choice: Arcana, Nature, Occultism, or Religion. You can choose Intelligence as your key ability score.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.society.rank",
+        "value": 1
+      },
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.Skill.Arcana",
+            "value": "system.skills.arcana.rank"
+          },
+          {
+            "label": "PF2E.Skill.Nature",
+            "value": "system.skills.nature.rank"
+          },
+          {
+            "label": "PF2E.Skill.Occultism",
+            "value": "system.skills.occultism.rank"
+          },
+          {
+            "label": "PF2E.Skill.Religion",
+            "value": "system.skills.religion.rank"
+          }
+        ],
+        "flag": "mastermind",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Rogue.TrainSkill.Prompt"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "{item|flags.pf2e.rulesSelections.mastermind}",
+        "value": 1
+      }
+    ],
+    "slug": "mastermind",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "rogue-racket"
+      ],
+      "value": [
+        "rogue"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "subfeatures": {
+      "keyOptions": [
+        "int"
+      ]
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.RyOkmu0W9svavuAB"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.RyOkmu0W9svavuAB",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!RyOkmu0W9svavuAB"
+}

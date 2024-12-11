@@ -1,0 +1,123 @@
+{
+  "_id": "0PPQl3TEr1yNhhN6",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/persona-mask.webp",
+  "name": "Persona Mask (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Despite covering the entire face, this alabaster mask does not hinder vision or other senses. Wearing the mask grants a +2 item bonus to Performance checks while acting, orating, performing comedy, or singing.</p>\n<p>The mask can be activated.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> envision (fortune)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail a Performance check that benefits from the mask's bonus</p>\n<hr />\n<p><strong>Effect</strong> You change the mask's character and reroll the Performance check, using the second result.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Persona Mask (acting, orating, comedy, singing)",
+        "predicate": [
+          {
+            "or": [
+              "acting",
+              "orating",
+              "performing-comedy",
+              "singing"
+            ]
+          }
+        ],
+        "selector": "performance",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "persona-mask-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fortune",
+        "illusion",
+        "invested",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 650
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "wornmask"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.0PPQl3TEr1yNhhN6"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.0PPQl3TEr1yNhhN6",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0PPQl3TEr1yNhhN6"
+}

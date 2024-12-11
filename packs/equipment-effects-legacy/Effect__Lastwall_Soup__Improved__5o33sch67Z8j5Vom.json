@@ -1,0 +1,86 @@
+{
+  "_id": "5o33sch67Z8j5Vom",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/lastwall-soup.webp",
+  "name": "Effect: Lastwall Soup (Improved)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.VcEd9Bh4q5vQfpLv]{Lastwall Soup (Improved)}</p>\n<p>The creature gains a +3 item bonus to Stealth checks and DCs against undead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "target:mode:undead",
+              "origin:mode:undead"
+            ]
+          }
+        ],
+        "selector": "stealth",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "effect-lastwall-soup-improved",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Knights of Lastwall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.5o33sch67Z8j5Vom"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.5o33sch67Z8j5Vom",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5o33sch67Z8j5Vom"
+}

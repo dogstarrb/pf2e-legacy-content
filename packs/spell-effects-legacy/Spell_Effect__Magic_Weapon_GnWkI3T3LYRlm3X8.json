@@ -1,0 +1,94 @@
+{
+  "_id": "GnWkI3T3LYRlm3X8",
+  "img": "systems/pf2e/icons/spells/magic-weapon.webp",
+  "name": "Spell Effect: Magic Weapon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@Compendium[pf2e-legacy-content.spells-legacy.TFitdEOpQC4SzKQQ]{Magic Weapon}</em></p>\n<p>The target becomes a <em>+1 striking weapon</em>, gaining a +1 item bonus to attack rolls and increasing the number of weapon damage dice to two.</p>\n<p> </p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "weapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "key": "WeaponPotency",
+        "selector": "{item|flags.pf2e.rulesSelections.weapon}-attack",
+        "value": 1
+      },
+      {
+        "key": "Striking",
+        "selector": "{item|flags.pf2e.rulesSelections.weapon}-damage",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-runic-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.GnWkI3T3LYRlm3X8"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 14000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.GnWkI3T3LYRlm3X8",
+    "duplicateSource": null
+  },
+  "_key": "!items!GnWkI3T3LYRlm3X8"
+}

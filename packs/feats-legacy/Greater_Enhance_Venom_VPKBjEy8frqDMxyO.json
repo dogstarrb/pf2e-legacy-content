@@ -1,0 +1,75 @@
+{
+  "_id": "VPKBjEy8frqDMxyO",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Greater Enhance Venom",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You upgrade the vishkanyan venom you can apply with @UUID[Compendium.pf2e.actionspf2e.Item.s4V7JWSMF9JPJAeX]{Envenom} to greater vishkanyan venom. Envenom's frequency becomes once per minute.</p>\n<p><strong>Greater Vishkanyan Venom</strong> (level 17)</p>\n<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[7d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[9d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[11d6[poison]] damage (1 round)</p>"
+    },
+    "rules": [],
+    "slug": "greater-enhance-venom",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "vishkanya"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Moderate Enhance Venom"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.VPKBjEy8frqDMxyO"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.VPKBjEy8frqDMxyO",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VPKBjEy8frqDMxyO"
+}

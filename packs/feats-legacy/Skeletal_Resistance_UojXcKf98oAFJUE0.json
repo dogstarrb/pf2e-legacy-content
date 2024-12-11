@@ -1,0 +1,99 @@
+{
+  "_id": "UojXcKf98oAFJUE0",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Skeletal Resistance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your body becomes resistant, your hardened bones deflecting weapons and other forms of damage. You gain resistance 2 to cold, electricity, fire, piercing, and slashing damage. This resistance increases to 3 at 13th level and 4 at 17th level.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": [
+          "cold",
+          "electricity",
+          "fire",
+          "piercing",
+          "slashing"
+        ],
+        "value": {
+          "brackets": [
+            {
+              "end": 12,
+              "value": 2
+            },
+            {
+              "end": 16,
+              "start": 13,
+              "value": 3
+            },
+            {
+              "start": 17,
+              "value": 4
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "skeletal-resistance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "skeleton"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.UojXcKf98oAFJUE0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.UojXcKf98oAFJUE0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UojXcKf98oAFJUE0"
+}

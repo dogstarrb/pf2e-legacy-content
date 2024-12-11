@@ -1,0 +1,85 @@
+{
+  "_id": "vJAHjBoEuFKGQoGs",
+  "img": "systems/pf2e/icons/equipment/runes/armor-property-runes/armor-property-runes.webp",
+  "name": "Effect: Rune of Destruction (Longspear)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The longspear gains the deadly trait with 3d8, and a creature hit with the longspear is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} unless it succeeds at a @Check[type:fortitude|dc:35|name:Rune of Destruction|traits:arcane] save.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "selector": "longspear-attack",
+        "text": "{item|system.description.value}",
+        "title": "{item|name}"
+      },
+      {
+        "critical": true,
+        "diceNumber": 3,
+        "dieSize": "d8",
+        "key": "DamageDice",
+        "selector": "longspear-damage"
+      }
+    ],
+    "slug": "effect-rune-of-destruction-longspear",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.vJAHjBoEuFKGQoGs"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.vJAHjBoEuFKGQoGs",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!vJAHjBoEuFKGQoGs"
+}

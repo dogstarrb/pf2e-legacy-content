@@ -1,0 +1,80 @@
+{
+  "_id": "CWC2fPmlgixoIKy5",
+  "img": "icons/creatures/claws/claw-hooked-purple.webp",
+  "name": "Spell Effect: Clawsong (Damage Increase D6)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The target's claw attack deals 1d6 slashing damage.</p>"
+    },
+    "rules": [
+      {
+        "damageType": "slashing",
+        "key": "DamageDice",
+        "override": {
+          "dieSize": "d6"
+        },
+        "selector": "claw-damage"
+      }
+    ],
+    "slug": "spell-effect-clawsong-damage-increase-d6",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #171: Hurricane's Howl",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.CWC2fPmlgixoIKy5"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 11200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.CWC2fPmlgixoIKy5",
+    "duplicateSource": null
+  },
+  "_key": "!items!CWC2fPmlgixoIKy5"
+}

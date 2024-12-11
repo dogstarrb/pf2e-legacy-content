@@ -1,0 +1,143 @@
+{
+  "_id": "zdNUbHqqZzjA07oM",
+  "img": "icons/skills/wounds/bone-broken-marrow-red.webp",
+  "name": "Boneshaker",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You reach out a hand and seize a creature's skeleton from afar, harming their body and potentially wrenching them by the bones to move them against their will. The number of actions you spend when Casting this Spell determines the spell's effects. Regardless of the number of actions spent to Cast this Spell, the target must attempt a Fortitude save.</p>\n<p><span class=\"action-glyph\">2</span> (somatic, verbal) You clench your fist, painfully compressing the target's bones and dealing 3d8 bludgeoning damage.</p>\n<p><span class=\"action-glyph\">3</span> (material, somatic, verbal) As the 2-action version, plus you pull the target's body by their bones, moving them around like an awkward marionette. This movement follows the rules for forced movement.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage. If you cast the 3-action version, you can move the target up to 5 feet; it can choose to fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} to avoid moving.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}. If you cast the 3-action version, you can move the target up to 15 feet; it can fall prone to avoid moving.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}. If you cast the 3-action version, you can move the target up to 25 feet, then knock the target prone; if you attempt to move the target to a hazardous location, such as into a pool of acid or off a cliff, it can fall prone to avoid moving.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 3d8.</p>"
+    },
+    "rules": [],
+    "slug": "boneshaker",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon",
+      "traditions": [
+        "arcane",
+        "divine",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder #176: Lost Mammoth Valley",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature with a skeleton"
+    },
+    "range": {
+      "value": "100 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2 or 3"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "ohmjnqzezb9q8i8x": {
+        "applyMod": false,
+        "formula": "3d8",
+        "type": "bludgeoning",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "ohmjnqzezb9q8i8x": "3d8"
+      },
+      "interval": 2,
+      "type": "interval"
+    },
+    "overlays": {
+      "rgpytku9yox1yddh": {
+        "_id": "rgpytku9yox1yddh",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "time": {
+            "value": "3"
+          },
+          "traits": {
+            "value": [
+              "concentrate",
+              "manipulate"
+            ]
+          }
+        }
+      },
+      "wbmv0dtfurrhoq5m": {
+        "_id": "wbmv0dtfurrhoq5m",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "time": {
+            "value": "2"
+          },
+          "traits": {
+            "value": [
+              "concentrate",
+              "manipulate"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.zdNUbHqqZzjA07oM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.zdNUbHqqZzjA07oM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zdNUbHqqZzjA07oM"
+}

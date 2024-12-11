@@ -1,0 +1,114 @@
+{
+  "_id": "1xM9muPRa8hiyJtI",
+  "img": "systems/pf2e/icons/spells/dive-and-breach.webp",
+  "name": "Dive and Breach",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You make the briefest of dives through the Plane of Water. You @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} 10 feet, and where you would land on the ground, you instead disappear in a splash of water, your body entering the surface like a diver entering a pool. You then exit from an unoccupied surface within 40 feet, appearing in another splash of water as you Leap out, landing 10 feet away from where you exited. Each splash deals @Damage[3d10[bludgeoning]] damage to all creatures in a @Template[type:emanation|distance:5]; creatures in multiple splash zones take damage only once.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage dealt by each splash increases by [[/r 1d10]].</p>"
+    },
+    "rules": [],
+    "slug": "dive-and-breach",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "concentrate",
+        "manipulate",
+        "teleportation",
+        "water"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 3
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": ""
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "pUo5MJsp9Gefqth4": {
+        "applyMod": false,
+        "formula": "3d10",
+        "type": "bludgeoning",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "pUo5MJsp9Gefqth4": "1d10"
+      },
+      "interval": 1,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.1xM9muPRa8hiyJtI"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.1xM9muPRa8hiyJtI",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1xM9muPRa8hiyJtI"
+}

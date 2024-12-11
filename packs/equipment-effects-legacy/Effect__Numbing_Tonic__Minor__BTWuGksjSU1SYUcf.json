@@ -1,0 +1,79 @@
+{
+  "_id": "BTWuGksjSU1SYUcf",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/addiction-suppressant.webp",
+  "name": "Effect: Numbing Tonic (Minor)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.V35j3JEJMUbuJZNX]{Numbing Tonic (Minor)}</p>\n<p>You gain 2 temporary Hit Points when you drink the elixir, and again at the start of each of your turns for 1 minute.</p>"
+    },
+    "rules": [
+      {
+        "events": {
+          "onCreate": true,
+          "onTurnStart": true
+        },
+        "key": "TempHP",
+        "value": 2
+      }
+    ],
+    "slug": "effect-numbing-tonic-minor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.BTWuGksjSU1SYUcf"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.BTWuGksjSU1SYUcf",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BTWuGksjSU1SYUcf"
+}

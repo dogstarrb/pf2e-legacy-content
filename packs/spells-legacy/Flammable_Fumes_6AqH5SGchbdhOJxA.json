@@ -1,0 +1,109 @@
+{
+  "_id": "6AqH5SGchbdhOJxA",
+  "img": "systems/pf2e/icons/spells/flammable-fumes.webp",
+  "name": "Flammable Fumes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Sending magic deep underground, you conjure a cloud of toxic gases that swiftly degenerate into volatile fumes. The gases are invisible, requiring a successful Perception check against your spell DC to detect visually, though their acrid smell and toxic effects are clear once a creature has entered the cloud. A creature that enters the cloud or is within the cloud at the start of its turn takes 2d6 poison damage. A creature can take the poison damage from <em>flammable fumes</em> only once per round.</p>\n<p>One round after you conjure the cloud, the gases loses stability and become flammable. If an open flame is brought into the cloud, or if anyone within the area uses a fire effect, the cloud detonates in a massive blaze that deals @Damage[10d6[fire]] damage to all creatures within it, and the spell ends.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The poison damage increases by 1d6 and the fire damage on an explosion increases by 2d6.</p>"
+    },
+    "rules": [],
+    "slug": "flammable-fumes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate",
+        "poison"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "120 feet"
+    },
+    "area": {
+      "type": "burst",
+      "value": 20
+    },
+    "time": {
+      "value": "3"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "2d6",
+        "type": "poison",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d6"
+      },
+      "interval": 2,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.6AqH5SGchbdhOJxA"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.6AqH5SGchbdhOJxA",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6AqH5SGchbdhOJxA"
+}

@@ -1,0 +1,100 @@
+{
+  "_id": "DfLkIIg2reyYW3a8",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Deadly Simplicity",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your deity's weapon is especially powerful in your hands. When you are wielding your deity's favored weapon, increase the damage die size of that weapon by one step. If your deity's favored weapon is an unarmed attack (such as a fist, if you worship Irori) and its damage die is smaller than d6, instead increase its damage die size to d6.</p>"
+    },
+    "rules": [
+      {
+        "key": "DamageDice",
+        "override": {
+          "upgrade": true
+        },
+        "predicate": [
+          "item:deity-favored",
+          {
+            "or": [
+              "item:category:simple",
+              {
+                "and": [
+                  "item:category:unarmed",
+                  "item:damage:die:faces:4"
+                ]
+              }
+            ]
+          }
+        ],
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "deadly-simplicity",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "cleric"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "deity with a simple or unarmed attack favored weapon"
+        },
+        {
+          "value": "trained with your deity's favored weapon"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.DfLkIIg2reyYW3a8"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.DfLkIIg2reyYW3a8",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!DfLkIIg2reyYW3a8"
+}

@@ -1,0 +1,126 @@
+{
+  "_id": "XKsPGGbPKLkrqHwM",
+  "img": "systems/pf2e/icons/equipment/armor/sankeit.webp",
+  "name": "Linnorm's Sankeit",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The first suit of <em>+3 greater resilient antimagic sankeit</em> made in this fashion was crafted for the Varki linnorm king Nankou, after he claimed his title by slaying a taiga linnorm. By Varki tradition, the armor was crafted using some of the slain linnorm's body to decorate the breastplate and helm, which imbued the armor with several of the linnorm's natural abilities. Though the helm is shaped like the beast's head, a linnorm's actual head would be too large for a proper helmet.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Effect</strong> You breathe a @Template[type:cone|distance:60] of electrified vapor, dealing @Damage[17d6[electricity]] to creatures in the area (@Check[type:reflex|dc:38|basic:true]). The electrified mist persists in the area for 2 rounds, dealing @Damage[5d6[electricity]] (@Check[type:reflex|dc:38|basic:true]) to each creature that ends its turn in the mist. If you slew the linnorm this armor is made from, you can use the higher of your class DC or spell DC instead of the listed DCs for this effect (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]).</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> Interact</p>\n<p><strong>Trigger</strong> A creature adjacent to you targets you with a melee attack</p>\n<p><strong>Effect</strong> The creature takes @Damage[4d6[piercing]] as previously invisible magical spines leap outwards from the armor to punish them for the attack.</p>\n<hr />\n<p><strong>Craft Requirements</strong> The initial raw materials must include the hide and skull of a taiga linnorm.</p>"
+    },
+    "rules": [],
+    "slug": "linnorms-sankeit",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "laminar"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "quantity": 1,
+    "baseItem": "sankeit",
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 22750
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "light",
+    "group": "wood",
+    "acBonus": 2,
+    "strength": 1,
+    "dexCap": 3,
+    "checkPenalty": -1,
+    "speedPenalty": 0,
+    "runes": {
+      "potency": 3,
+      "resilient": 2,
+      "property": [
+        "antimagic"
+      ]
+    },
+    "subitems": [],
+    "specific": {
+      "material": {
+        "grade": null,
+        "type": null
+      },
+      "runes": {
+        "potency": 3,
+        "resilient": 2,
+        "property": [
+          "antimagic"
+        ]
+      }
+    }
+  },
+  "type": "armor",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.XKsPGGbPKLkrqHwM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.XKsPGGbPKLkrqHwM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XKsPGGbPKLkrqHwM"
+}

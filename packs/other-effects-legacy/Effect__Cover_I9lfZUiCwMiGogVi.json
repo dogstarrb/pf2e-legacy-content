@@ -1,0 +1,187 @@
+{
+  "_id": "I9lfZUiCwMiGogVi",
+  "img": "systems/pf2e/icons/conditions-2/status_acup.webp",
+  "name": "Effect: Cover",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When you're behind an obstacle that could block weapons, guard you against explosions, and make you harder to detect, you're behind cover. Standard cover gives you a +2 circumstance bonus to AC, to Reflex saves against area effects, and to Stealth checks to Hide, Sneak, or otherwise avoid detection. You can increase this to greater cover using the Take Cover basic action, increasing the circumstance bonus to +4. If cover is especially light, typically when it's provided by a creature, you have lesser cover, which grants a +1 circumstance bonus to AC. A creature with standard cover or greater cover can attempt to use Stealth to Hide, but lesser cover isn't sufficient.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.SpecificRule.Cover.Lesser",
+            "sort": 0,
+            "value": {
+              "bonus": 1,
+              "level": "lesser"
+            }
+          },
+          {
+            "label": "PF2E.SpecificRule.Cover.Standard",
+            "sort": 1,
+            "value": {
+              "bonus": 2,
+              "level": "standard"
+            }
+          },
+          {
+            "label": "PF2E.SpecificRule.Cover.Greater",
+            "sort": 2,
+            "value": {
+              "bonus": 4,
+              "level": "greater"
+            }
+          },
+          {
+            "label": "PF2E.SpecificRule.Cover.Prone",
+            "predicate": [
+              "self:condition:prone"
+            ],
+            "sort": 3,
+            "value": {
+              "bonus": 4,
+              "level": "greater-prone"
+            }
+          }
+        ],
+        "flag": "cover",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Cover.Prompt"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "self:cover-bonus:{item|flags.pf2e.rulesSelections.cover.bonus}"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "self:cover-level:{item|flags.pf2e.rulesSelections.cover.level}"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              {
+                "and": [
+                  "self:condition:prone",
+                  "item:ranged"
+                ]
+              },
+              {
+                "not": "self:cover-level:greater-prone"
+              }
+            ]
+          }
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": "@item.flags.pf2e.rulesSelections.cover.bonus"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "area-effect",
+          {
+            "not": "self:cover-level:greater-prone"
+          }
+        ],
+        "selector": "reflex",
+        "type": "circumstance",
+        "value": "@item.flags.pf2e.rulesSelections.cover.bonus"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "action:hide",
+              "action:sneak",
+              "avoid-detection"
+            ]
+          },
+          {
+            "not": "self:cover-level:greater-prone"
+          }
+        ],
+        "selector": "stealth",
+        "type": "circumstance",
+        "value": "@item.flags.pf2e.rulesSelections.cover.bonus"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:avoid-notice",
+          {
+            "not": "self:cover-level:greater-prone"
+          }
+        ],
+        "selector": "initiative",
+        "type": "circumstance",
+        "value": "@item.flags.pf2e.rulesSelections.cover.bonus"
+      }
+    ],
+    "slug": "effect-cover",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.other-effects.Item.I9lfZUiCwMiGogVi"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.other-effects-legacy.Item.I9lfZUiCwMiGogVi",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!I9lfZUiCwMiGogVi"
+}

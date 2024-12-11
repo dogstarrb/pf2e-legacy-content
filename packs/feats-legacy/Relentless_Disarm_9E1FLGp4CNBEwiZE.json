@@ -1,0 +1,88 @@
+{
+  "_id": "9E1FLGp4CNBEwiZE",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Relentless Disarm",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When you succeed, but don't critically succeed, at a check to Disarm a creature, your circumstance bonus to further checks to Disarm that creature is +4 instead of +2. Other creatures gain only the normal bonus.</p>\n<p>When you critically succeed at a Disarm check, you can immediately Demoralize your target as a reaction.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "action:disarm"
+        ],
+        "selector": "athletics",
+        "text": "When you succeed, but don't critically succeed, at a check to Disarm a creature, your circumstance bonus to further checks to Disarm that creature is +4 instead of +2. Other creatures gain only the normal bonus.  When you critically succeed at a Disarm check, you can immediately <span data-pf2-action=\"demoralize\" data-pf2-glyph=\"A\">Intimidation</span> your target as a reaction.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "relentless-disarm",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #149: Against the Scarlet Triad",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Zephyr Guard Dedication"
+        },
+        {
+          "value": "trained in Athletics"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.9E1FLGp4CNBEwiZE"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.9E1FLGp4CNBEwiZE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9E1FLGp4CNBEwiZE"
+}

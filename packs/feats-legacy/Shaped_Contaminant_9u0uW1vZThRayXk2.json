@@ -1,0 +1,84 @@
+{
+  "_id": "9u0uW1vZThRayXk2",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Shaped Contaminant",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Through a combination of careful manipulation and precise breath control, you can deploy inhaled toxins precisely. When you activate an inhaled poison, you can cause it to fill a @Template[type:line|distance:20] that's 5 feet tall rather than a 10-foot cube. You gain a +3 status bonus to saving throws against inhaled poisons that you activate.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Shaped Containment (vs. inhaled poisons you activate)",
+        "predicate": [
+          "poison",
+          "inhaled",
+          "self-activated"
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 3
+      }
+    ],
+    "slug": "shaped-contaminant",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemist"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #149: Against the Scarlet Triad",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.9u0uW1vZThRayXk2"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.9u0uW1vZThRayXk2",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9u0uW1vZThRayXk2"
+}

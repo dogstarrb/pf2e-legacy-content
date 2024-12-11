@@ -1,0 +1,119 @@
+{
+  "_id": "iG1USiSRXMjCDGAr",
+  "img": "systems/pf2e/icons/spells/percussive-impact.webp",
+  "name": "Percussive Impact",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You lob a compressed ball of sound at a foe. The ball explodes on impact, unleashing a powerful blast of sound. Make a spell attack roll. If you hit, you deal @Damage[4d8[bludgeoning]] damage plus [[/r (1d4[splash])[sonic]]]{1d4 sonic splash damage}. On a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The bludgeoning damages increases by 4d8, the sonic splash damage increases by 1d4, and the duration of the deafened condition increases by 2 rounds.</p>"
+    },
+    "rules": [],
+    "slug": "percussive-impact",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "concentrate",
+        "manipulate",
+        "sonic"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "arcane",
+        "divine",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Firebrands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "1kBezKdL9iXSMfzn": {
+        "applyMod": false,
+        "formula": "4d8",
+        "type": "bludgeoning",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      },
+      "rcaspoacHgRYSM72": {
+        "applyMod": false,
+        "formula": "1d4",
+        "type": "sonic",
+        "category": "splash",
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "1kBezKdL9iXSMfzn": "4d8",
+        "rcaspoacHgRYSM72": "1d4"
+      },
+      "interval": 2,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.iG1USiSRXMjCDGAr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.iG1USiSRXMjCDGAr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!iG1USiSRXMjCDGAr"
+}

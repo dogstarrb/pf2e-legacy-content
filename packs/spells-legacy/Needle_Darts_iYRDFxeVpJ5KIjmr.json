@@ -1,0 +1,169 @@
+{
+  "_id": "iYRDFxeVpJ5KIjmr",
+  "img": "icons/magic/light/projectile-needles-salvo-white.webp",
+  "name": "Needle Darts",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You shape three needles out of a piece of metal in your possession and send them flying in a tight group toward one target. Make a spell attack roll against your target's AC. The needles deal 3d4 piercing damage and might cause bleeding.</p>\n<p>The needles impart any special properties of the metal that forms them; for instance, cold iron needles deal additional damage to creatures with weakness to cold iron. All the needles are made of the same metal, and the metal returns to you after the attack.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and [[/r (@item.level)[bleed]]] damage.</p>\n<p><strong>Success</strong> The target takes full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> You send one additional needle, increasing the regular damage by 1d4 and increasing the persistent bleed damage on a critical hit by 1.</p>"
+    },
+    "rules": [],
+    "slug": "needle-darts",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "cantrip",
+        "concentrate",
+        "manipulate",
+        "metal"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "divine",
+        "occult",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "71hLuboTBYkwkqiR": {
+        "applyMod": false,
+        "formula": "3d4",
+        "type": "piercing",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "71hLuboTBYkwkqiR": "1d4"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {
+      "1gZuxDZYlG9YSzyW": {
+        "_id": "1gZuxDZYlG9YSzyW",
+        "name": "Needle Darts (Adamantine)",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "damage": {
+            "71hLuboTBYkwkqiR": {
+              "materials": [
+                "adamantine"
+              ]
+            }
+          },
+          "defense": null
+        }
+      },
+      "E2DbTTDjNlTp0ztA": {
+        "_id": "E2DbTTDjNlTp0ztA",
+        "name": "Needle Darts (Silver)",
+        "overlayType": "override",
+        "sort": 4,
+        "system": {
+          "damage": {
+            "71hLuboTBYkwkqiR": {
+              "materials": [
+                "silver"
+              ]
+            }
+          },
+          "defense": null
+        }
+      },
+      "ZbRcMkLoWzgq5XvU": {
+        "_id": "ZbRcMkLoWzgq5XvU",
+        "name": "Needle Darts (Cold Iron)",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "damage": {
+            "71hLuboTBYkwkqiR": {
+              "materials": [
+                "cold-iron"
+              ]
+            }
+          },
+          "defense": null
+        }
+      },
+      "hk5Z57VxDZI5WAgq": {
+        "_id": "hk5Z57VxDZI5WAgq",
+        "name": "Needle Darts",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "defense": null
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.iYRDFxeVpJ5KIjmr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.iYRDFxeVpJ5KIjmr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!iYRDFxeVpJ5KIjmr"
+}

@@ -1,0 +1,77 @@
+{
+  "_id": "cTBYHfiXDOA09G4b",
+  "img": "systems/pf2e/icons/spells/travelers-transit.webp",
+  "name": "Spell Effect: Traveler's Transit (Fly)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.LrhTFHUtSS9ahogL]{Traveler's Transit}</em>.</p>\n<p>You gain a fly speed equal to your land speed.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": "@actor.attributes.speed.total"
+      }
+    ],
+    "slug": "spell-effect-travelers-transit-fly",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.cTBYHfiXDOA09G4b"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 26800000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.cTBYHfiXDOA09G4b",
+    "duplicateSource": null
+  },
+  "_key": "!items!cTBYHfiXDOA09G4b"
+}

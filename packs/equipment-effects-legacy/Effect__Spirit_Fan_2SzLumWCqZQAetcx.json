@@ -1,0 +1,87 @@
+{
+  "_id": "2SzLumWCqZQAetcx",
+  "img": "icons/commodities/materials/material-feathers-violet.webp",
+  "name": "Effect: Spirit Fan",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The <em>Spirit Fan</em> sheds light as a torch.</p>"
+    },
+    "rules": [
+      {
+        "key": "TokenLight",
+        "value": {
+          "alpha": 0.45,
+          "animation": {
+            "intensity": 1,
+            "speed": 2,
+            "type": "flame"
+          },
+          "attenuation": 0.4,
+          "bright": 20,
+          "color": "#ffae3d",
+          "dim": 40,
+          "shadows": 0.2
+        }
+      }
+    ],
+    "slug": "effect-spirit-fan",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #197: Let the Leaves Fall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.2SzLumWCqZQAetcx"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.2SzLumWCqZQAetcx",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2SzLumWCqZQAetcx"
+}

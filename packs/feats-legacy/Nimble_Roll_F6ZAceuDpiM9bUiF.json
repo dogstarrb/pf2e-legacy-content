@@ -1,0 +1,86 @@
+{
+  "_id": "F6ZAceuDpiM9bUiF",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Nimble Roll",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can use @UUID[Compendium.pf2e.feats-srd.Item.dNH8OHEvx3vI9NBQ]{Nimble Dodge} before attempting a Reflex save, in addition to its original trigger. If you do, the circumstance bonus applies to your Reflex save against the triggering effect.</p>\n<p>When you use Nimble Dodge and the triggering attack fails or critically fails, or when you succeed or critically succeed at the saving throw, you can also Stride up to 10 feet as part of the reaction. If you do, the reaction gains the move trait.</p>\n<p>You can use Nimble Roll while Flying or Swimming instead of Striding if you have the corresponding movement type.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "nimble-dodge"
+        ],
+        "selector": "reflex",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "nimble-roll",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "rogue",
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Nimble Dodge"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.F6ZAceuDpiM9bUiF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.F6ZAceuDpiM9bUiF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!F6ZAceuDpiM9bUiF"
+}

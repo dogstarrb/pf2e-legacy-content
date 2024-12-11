@@ -1,0 +1,105 @@
+{
+  "_id": "cmuvvPJvt2R16vGe",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Fresh Ingredients",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When using @UUID[Compendium.pf2e.feats-srd.Item.WC4xLBGmBsdOdHWu]{Natural Medicine} to @UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{Treat Wounds}, you can spend a batch of herbs to gain the +2 circumstance bonus from having fresh ingredients, even if not in wilderness. If you spend a batch of herbs in wilderness, you gain a +4 circumstance bonus instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Spend a batch of herbs in wilderness",
+        "predicate": [
+          "action:treat-wounds",
+          "natural-medicine",
+          "terrain:wilderness"
+        ],
+        "selector": "nature",
+        "slug": "fresh-herbs-wild",
+        "type": "circumstance",
+        "value": 4
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Spend a batch of herbs",
+        "predicate": [
+          "action:treat-wounds",
+          "natural-medicine"
+        ],
+        "selector": "nature",
+        "slug": "fresh-herbs",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "fresh-ingredients",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "skill"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Herbalist Dedication"
+        },
+        {
+          "value": "expert in Nature"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.cmuvvPJvt2R16vGe"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.cmuvvPJvt2R16vGe",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!cmuvvPJvt2R16vGe"
+}

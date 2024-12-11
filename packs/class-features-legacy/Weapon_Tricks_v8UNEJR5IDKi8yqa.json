@@ -1,0 +1,138 @@
+{
+  "_id": "v8UNEJR5IDKi8yqa",
+  "img": "systems/pf2e/icons/features/classes/weapon-tricks.webp",
+  "name": "Weapon Tricks",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have become thoroughly familiar with the tools of your trade. You gain expert proficiency in simple weapons as well as the @UUID[Compendium.pf2e.equipment-srd.Item.tH5GirEy7YB3ZgCk]{Rapier}, @UUID[Compendium.pf2e.equipment-srd.Item.TLQErnOpM9Luy7rL]{Sap}, @UUID[Compendium.pf2e.equipment-srd.Item.hIgqLgH3YcLZBeoT]{Shortbow}, @UUID[Compendium.pf2e.equipment-srd.Item.7tKkkF8eZ4iCLJtp]{Shortsword}, and unarmed attacks. When you critically succeed at an attack roll against an off-guard creature while using an agile or finesse simple weapon or unarmed attack, or when using any of the listed weapons, you apply the critical specialization effect for that weapon or unarmed attack.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.simple.rank",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-rapier.rank",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-sap.rank",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-shortbow.rank",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-shortsword.rank",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.unarmed.rank",
+        "value": 2
+      },
+      {
+        "key": "CriticalSpecialization",
+        "predicate": [
+          "target:condition:off-guard",
+          {
+            "or": [
+              {
+                "and": [
+                  {
+                    "or": [
+                      "item:trait:agile",
+                      "item:trait:finesse"
+                    ]
+                  },
+                  {
+                    "or": [
+                      "item:category:simple",
+                      "item:category:unarmed"
+                    ]
+                  }
+                ]
+              },
+              "item:base:rapier",
+              "item:base:sap",
+              "item:base:shortbow",
+              "item:base:shortsword"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": "weapon-tricks",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "rogue"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.v8UNEJR5IDKi8yqa"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.v8UNEJR5IDKi8yqa",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!v8UNEJR5IDKi8yqa"
+}

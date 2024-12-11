@@ -1,0 +1,90 @@
+{
+  "_id": "Qvjw5RYhglGcVRhF",
+  "img": "icons/magic/water/orb-ice-opaque.webp",
+  "name": "Effect: Rime Crystal - Weapon (Major)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.p6tS5mzfGkQJLUDp]{Rime Crystal (Major)}</p>\n<p>After you cast a cold spell by activating the <em>crystal</em>, your Strikes with the weapon deal an additional 1d8 cold damage until the end of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "includeHandwraps": true,
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "rimeCrystalWeapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "damageType": "cold",
+        "diceNumber": 1,
+        "dieSize": "d8",
+        "key": "DamageDice",
+        "selector": "{item|flags.pf2e.rulesSelections.rimeCrystalWeapon}-damage"
+      }
+    ],
+    "slug": "effect-rime-crystal-weapon-major",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.Qvjw5RYhglGcVRhF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.Qvjw5RYhglGcVRhF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Qvjw5RYhglGcVRhF"
+}

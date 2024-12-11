@@ -1,0 +1,92 @@
+{
+  "_id": "4QWayYR3JSL9bk2T",
+  "img": "systems/pf2e/icons/equipment/weapons/tricky-pick.webp",
+  "name": "Effect: Weapon Tampered With (Success)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.SheifYobjKqyK3Fv]{Tamper}</p>\n<p>Your weapon has been tampered with! You take a -2 circumstance penalty to attack rolls and damage rolls with that weapon. The effect ends at the start of the inventor's next turn, or until you @UUID[Compendium.pf2e.actionspf2e.Item.pvQ5rY2zrtPI614F]{Interact} to remove it.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "effectWeaponTamperedWithSuccess",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "{item|flags.pf2e.rulesSelections.effectWeaponTamperedWithSuccess}-attack",
+          "{item|flags.pf2e.rulesSelections.effectWeaponTamperedWithSuccess}-damage"
+        ],
+        "type": "circumstance",
+        "value": -2
+      }
+    ],
+    "slug": "effect-weapon-tampered-with-success",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.4QWayYR3JSL9bk2T"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.4QWayYR3JSL9bk2T",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4QWayYR3JSL9bk2T"
+}

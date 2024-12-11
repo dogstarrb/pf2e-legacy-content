@@ -1,0 +1,148 @@
+{
+  "_id": "7NdMHszAiiveihoW",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Armor Specialist",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have trained hard to optimize your armor's protective qualities. You gain the armor specialization effects of medium and heavy armor.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:medium",
+          "armor:group:composite"
+        ],
+        "type": "piercing",
+        "value": "1 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:medium",
+          "armor:group:leather"
+        ],
+        "type": "bludgeoning",
+        "value": "1 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:medium",
+          "armor:group:plate"
+        ],
+        "type": "slashing",
+        "value": "1 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:heavy",
+          "armor:group:composite"
+        ],
+        "type": "piercing",
+        "value": "2 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:heavy",
+          "armor:group:leather"
+        ],
+        "type": "bludgeoning",
+        "value": "2 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:heavy",
+          "armor:group:plate"
+        ],
+        "type": "slashing",
+        "value": "2 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:medium",
+          "armor:group:skeletal"
+        ],
+        "type": "precision",
+        "value": "3 + @armor.system.runes.potency"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:category:heavy",
+          "armor:group:skeletal"
+        ],
+        "type": "precision",
+        "value": "5 + @armor.system.runes.potency"
+      }
+    ],
+    "slug": "armor-specialist",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Sentinel Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.7NdMHszAiiveihoW"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.7NdMHszAiiveihoW",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7NdMHszAiiveihoW"
+}

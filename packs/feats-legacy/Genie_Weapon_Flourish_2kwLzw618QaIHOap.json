@@ -1,0 +1,96 @@
+{
+  "_id": "2kwLzw618QaIHOap",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Genie Weapon Flourish",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Whenever you critically hit using a @UUID[Compendium.pf2e.equipment-srd.Item.XGtIUZ4ZNKuFx1uL]{Falchion}, @UUID[Compendium.pf2e.equipment-srd.Item.UfurZQK6H6SgOjqe]{Ranseur}, @UUID[Compendium.pf2e.equipment-srd.Item.grmaV4GdoGD7sKbn]{Scimitar}, @UUID[Compendium.pf2e.equipment-srd.Item.FJrsDoaIXksVjld9]{Trident}, or a geniekin weapon, you apply the weapon's critical specialization effect.</p>"
+    },
+    "rules": [
+      {
+        "key": "CriticalSpecialization",
+        "predicate": [
+          {
+            "or": [
+              "item:trait:geniekin",
+              "item:base:falchion",
+              "item:base:ranseur",
+              "item:base:scimitar",
+              "item:base:trident"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": "genie-weapon-flourish",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "ardande",
+        "naari",
+        "oread",
+        "suli",
+        "sylph",
+        "talos",
+        "undine"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Genie Weapon Familiarity"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.2kwLzw618QaIHOap"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.2kwLzw618QaIHOap",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2kwLzw618QaIHOap"
+}

@@ -1,0 +1,81 @@
+{
+  "_id": "T3t9776ataHzrmTs",
+  "img": "systems/pf2e/icons/spells/inside-ropes.webp",
+  "name": "Spell Effect: Inside Ropes (3rd level)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature gains a +1 item bonus to Athletics checks to Climb while using the guts.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:climb"
+        ],
+        "selector": "athletics",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-inside-ropes-3rd-level",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #181: Zombie Feast",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.T3t9776ataHzrmTs"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 20400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.T3t9776ataHzrmTs",
+    "duplicateSource": null
+  },
+  "_key": "!items!T3t9776ataHzrmTs"
+}

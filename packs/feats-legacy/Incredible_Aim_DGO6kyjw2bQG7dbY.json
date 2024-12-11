@@ -1,0 +1,98 @@
+{
+  "_id": "DGO6kyjw2bQG7dbY",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Incredible Aim",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>By spending a moment to focus, you can ensure your attack strikes true.</p>\n<p>Make a ranged weapon Strike. On this Strike, you gain a +2 circumstance bonus to the attack roll and ignore the target's @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition.</p>"
+    },
+    "rules": [
+      {
+        "domain": "attack-roll",
+        "key": "RollOption",
+        "option": "incredible-aim",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "ranged",
+          "incredible-aim"
+        ],
+        "selector": "attack",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "incredible-aim"
+        ],
+        "selector": "attack",
+        "text": "You ignore the target's @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "incredible-aim",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "fighter"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.DGO6kyjw2bQG7dbY"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.DGO6kyjw2bQG7dbY",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!DGO6kyjw2bQG7dbY"
+}

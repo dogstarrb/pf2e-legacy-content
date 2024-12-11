@@ -1,0 +1,124 @@
+{
+  "_id": "jrBa9deU2ULFWvSl",
+  "img": "icons/magic/light/projectile-beams-salvo-yellow.webp",
+  "name": "Meteor Swarm",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Area</strong> 4 40-foot bursts</p>\n<hr />\n<p>You call down four meteors that explode in a fiery blast. Each meteor deals 6d10 bludgeoning damage to any creatures in the 10-foot burst at the center of its area of effect before exploding, dealing 14d6 fire damage to any creatures in its 40-foot burst. The meteors' central 10-foot bursts can't overlap, and a creature attempts only one saving throw against the spell no matter how many overlapping explosions it's caught in, and they can take each type of damage only once. The saving throw applies to both the bludgeoning and the fire damage.</p>\n<hr />\n<p>Heightened (+1) The bludgeoning damage increases by 1d10, and the fire damage increases by 2d6.</p>"
+    },
+    "rules": [],
+    "slug": "falling-stars",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "fire",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "500 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "5hgRJg7CfV9pZSUa": {
+        "applyMod": false,
+        "formula": "14d6",
+        "type": "fire",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      },
+      "RrsNfz6nzSiUPvoY": {
+        "applyMod": false,
+        "formula": "6d10",
+        "type": "bludgeoning",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": ""
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "5hgRJg7CfV9pZSUa": "2d6",
+        "RrsNfz6nzSiUPvoY": "1d10"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {}
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.jrBa9deU2ULFWvSl"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.jrBa9deU2ULFWvSl",
+    "duplicateSource": null
+  },
+  "_key": "!items!jrBa9deU2ULFWvSl"
+}

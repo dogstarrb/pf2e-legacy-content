@@ -1,0 +1,94 @@
+{
+  "_id": "OBxrlZKg0IC5n238",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Venom-Resistant Vishkanya",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your body contains not just venom but numerous antivenoms. You gain poison resistance equal to half your level (minimum 1), and each of your successful saving throws against a poison affliction reduces its stage by 2, or by 1 for a virulent poison. Each critical success against an ongoing poison reduces its stage by 3, or by 2 for a virulent poison.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "poison",
+        "value": "max(1,floor(@actor.level/2))"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "poison",
+          "virulent"
+        ],
+        "selector": "saving-throw",
+        "text": "PF2E.SpecificRule.Vishkanya.VenomResistantVishkanya.VirulentSaveNote",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "poison",
+          {
+            "not": "virulent"
+          }
+        ],
+        "selector": "saving-throw",
+        "text": "PF2E.SpecificRule.Vishkanya.VenomResistantVishkanya.PoisonSaveNote",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "venom-resistant-vishkanya",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Vishkanya",
+      "slug": "vishkanya",
+      "uuid": "Compendium.pf2e.ancestries.Item.u1VJEXsVlmh3Fyx0"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.OBxrlZKg0IC5n238"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.OBxrlZKg0IC5n238",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OBxrlZKg0IC5n238"
+}

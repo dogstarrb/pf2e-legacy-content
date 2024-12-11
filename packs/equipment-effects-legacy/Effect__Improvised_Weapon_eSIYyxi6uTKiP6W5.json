@@ -1,0 +1,81 @@
+{
+  "_id": "eSIYyxi6uTKiP6W5",
+  "img": "systems/pf2e/icons/equipment/held-items/shoony-shovel.webp",
+  "name": "Effect: Improvised Weapon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Automatically applied effects:</p>\n<ul>\n<li>-2 penalty to attack rolls with any weapon with an improvised trait.</li>\n</ul>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "improvised"
+        ],
+        "selector": "attack-roll",
+        "type": "untyped",
+        "value": -2
+      }
+    ],
+    "slug": "effect-improvised-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.eSIYyxi6uTKiP6W5"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.eSIYyxi6uTKiP6W5",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!eSIYyxi6uTKiP6W5"
+}

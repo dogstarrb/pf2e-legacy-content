@@ -1,0 +1,140 @@
+{
+  "_id": "cxVbGSUjmc2yxVh5",
+  "img": "systems/pf2e/icons/default-icons/equipment.svg",
+  "name": "Grub Gloves (Moderate)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Danila Kenn and Depa Stepwell of Common Goods developed these gloves after complaints from an exhausted grindlegrub rancher. Since their development, the gloves have become popular not just among grindlegrub ranchers, but laborers of all kinds in Stonebreach. The thick gloves are designed to help ranchers hold on to the squirming, slimy bodies of grindlegrubs, and help soothe the wear and tear of the day while restoring energy for after-hours pursuits. While wearing the gloves, you gain a +2 item bonus to Athletics checks. The gripping power of the gloves provides you with a +3 circumstance bonus to Reflex saves to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}. If you roll a success to Grab an Edge, you get a critical success instead, as the gripping gloves allow you to hold on even with just a few fingertips.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day;</p>\n<hr />\n<p><strong>Effect</strong> You rub your hands together and take a deep breath to prepare for the rest of your day. You regain [[/r (6d8+20)[healing]]] Hit Points and feel refreshed, losing the @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} condition. As normal for effects that remove fatigue, this doesn't remove any underlying source of fatigue, such as lack of sleep, causing the condition to return if the underlying source isn't addressed.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "athletics",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:grab-an-edge"
+        ],
+        "selector": "reflex",
+        "value": 3
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:grab-an-edge"
+        ],
+        "selector": "reflex",
+        "type": "save"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success"
+        ],
+        "predicate": [
+          "action:grab-an-edge"
+        ],
+        "selector": "reflex",
+        "text": "If you roll a success to Grab an Edge, you get a critical success instead, as the gripping gloves allow you to hold on even with just a few fingertips.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "grub-gloves-moderate",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Highhelm",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1750
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worngloves"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.cxVbGSUjmc2yxVh5"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.cxVbGSUjmc2yxVh5",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!cxVbGSUjmc2yxVh5"
+}

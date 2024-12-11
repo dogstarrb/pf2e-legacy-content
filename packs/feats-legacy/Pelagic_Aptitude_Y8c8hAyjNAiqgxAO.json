@@ -1,0 +1,109 @@
+{
+  "_id": "Y8c8hAyjNAiqgxAO",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Pelagic Aptitude",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've learned special tricks to survive underwater. You gain the trained proficiency rank in Survival.</p>\n<p>When in an aquatic environment, if you roll a critical failure on a Survival skill check to @UUID[Compendium.pf2e.actionspf2e.Item.fJImDBQfqfjKJOhk]{Sense Direction} or @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, you get a failure instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "terrain:aquatic",
+          {
+            "or": [
+              "action:sense-direction",
+              "action:subsist"
+            ]
+          }
+        ],
+        "selector": "survival",
+        "text": "When in an aquatic environment, if you roll a critical failure on a Survival skill check to Sense Direction or Subsist, you get a failure instead.",
+        "title": "{item|name}"
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "terrain:aquatic",
+          {
+            "or": [
+              "action:sense-direction",
+              "action:subsist"
+            ]
+          }
+        ],
+        "selector": "survival"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.survival.rank",
+        "value": 1
+      }
+    ],
+    "slug": "pelagic-aptitude",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "azarketi"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.Y8c8hAyjNAiqgxAO"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.Y8c8hAyjNAiqgxAO",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Y8c8hAyjNAiqgxAO"
+}

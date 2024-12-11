@@ -1,0 +1,131 @@
+{
+  "_id": "5HoEwzLDJGTCZtFa",
+  "img": "systems/pf2e/icons/features/classes/battledancer-style.webp",
+  "name": "Battledancer",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>To you, a fight is a kind of performance art, and you command your foes' attention with mesmerizing motions.</p>\n<p>You are trained in Performance and gain the @UUID[Compendium.pf2e.feats-srd.Item.7LB00jkh6JaJr3vS]{Fascinating Performance} skill feat. You gain @UUID[Compendium.pf2e.classfeatures.Item.LzYi0OuOoypNb6jd]{Panache} during an encounter when the result of your Performance check to @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform} exceeds the Will DC of an observing foe, even if the foe isn't fascinated.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "self:effect:panache",
+          {
+            "or": [
+              "action:perform"
+            ]
+          }
+        ],
+        "selector": "performance",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.performance.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "class:swashbuckler"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.7LB00jkh6JaJr3vS"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "action:perform",
+          {
+            "not": "self:effect:panache"
+          }
+        ],
+        "selector": "performance",
+        "text": "PF2E.SpecificRule.Swashbuckler.Panache",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "finisher",
+          "feature:exemplary-finisher"
+        ],
+        "selector": "strike-attack-roll",
+        "text": "PF2E.SpecificRule.ExemplaryFinisher.Battledancer",
+        "title": "PF2E.SpecificRule.ExemplaryFinisher.Name"
+      }
+    ],
+    "slug": "battledancer",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "swashbuckler-style"
+      ],
+      "value": [
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.5HoEwzLDJGTCZtFa"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.5HoEwzLDJGTCZtFa",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5HoEwzLDJGTCZtFa"
+}

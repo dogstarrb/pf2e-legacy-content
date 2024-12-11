@@ -1,0 +1,111 @@
+{
+  "_id": "lpoWfblSMLcJfxsZ",
+  "img": "systems/pf2e/icons/spells/forbidden-thought.webp",
+  "name": "Forbidden Thought",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You place a psychic lock in a foe's mind that prevents it from a specific action. Choose \"Strike,\" \"Stride,\" \"Cast a Spell,\" or a specific action you know the creature to have (such as \"Breath Weapon\" against a dragon). If the creature attempts that action on its next turn, it must surmount your lock to do so, causing it to take 1d6 mental damage plus your spellcasting ability modifier (with a basic Will save). The target is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by [[/r 1d6]]{1d6}.</p>\n<hr />\n<p><strong>Amp</strong> Your telepathic push is particularly shocking to those who resist it. If the target fails its save, it's also @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+    },
+    "rules": [],
+    "slug": "forbidden-thought",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "cantrip",
+        "concentrate",
+        "manipulate",
+        "mental",
+        "psychic"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "xmlng4v8ws11x8cn": {
+        "applyMod": true,
+        "formula": "1d6",
+        "type": "mental",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "will",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "xmlng4v8ws11x8cn": "1d6"
+      },
+      "interval": 1,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.lpoWfblSMLcJfxsZ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.lpoWfblSMLcJfxsZ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!lpoWfblSMLcJfxsZ"
+}

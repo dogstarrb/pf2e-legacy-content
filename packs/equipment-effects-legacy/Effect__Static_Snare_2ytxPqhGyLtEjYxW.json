@@ -1,0 +1,81 @@
+{
+  "_id": "2ytxPqhGyLtEjYxW",
+  "img": "systems/pf2e/icons/equipment/snares/static-snare-effect.webp",
+  "name": "Effect: Static Snare",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The target takes a -1 circumstance penalty to saving throws against electricity effects for as long as the persistent electricity damage lasts.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "electricity"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": -1
+      }
+    ],
+    "slug": "effect-static-snare",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": false
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.2ytxPqhGyLtEjYxW"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.2ytxPqhGyLtEjYxW",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2ytxPqhGyLtEjYxW"
+}

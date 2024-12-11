@@ -1,0 +1,88 @@
+{
+  "_id": "q8c0LINVNcJrdK91",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Propulsive Leap",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>By expelling flames from your feet or levitating through electrical repulsion, you propel yourself through the air. For 1 minute, you gain a fly Speed equal to your Speed or 20 feet, whichever is greater. If you aren't on solid ground at the end of your turn, you must attempt another backlash check for your deviation, though you remain airborne even if you fail your check unless the damage from the check renders you @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.RU6D7pNQSBt1zSuK]{Effect: Propulsive Leap}</p>\n<hr />\n<p><strong>Awakening</strong> You blast through the air at great speed, gaining a +15-foot status bonus to your Fly speed from Propulsive Leap.</p>\n<hr />\n<p><strong>Awakening</strong> You can use your propulsion as a makeshift weapon. The first time each round you Fly starting from the ground, all creatures adjacent to you take [[/r (floor(@actor.level/2)d4)]]{1d4 damage for every 2 levels} you have, with a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save.</p>"
+    },
+    "rules": [
+      {
+        "allowDuplicate": false,
+        "flag": "dragonDeviantClassification",
+        "key": "GrantItem",
+        "predicate": [
+          {
+            "not": "feature:dragon-deviant-classification"
+          }
+        ],
+        "uuid": "Compendium.pf2e.classfeatures.Item.R41sy7weOd0JhOiW"
+      }
+    ],
+    "slug": "propulsive-leap",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "deviant",
+        "magical"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "selfEffect": {
+      "name": "Effect: Propulsive Leap",
+      "uuid": "Compendium.pf2e.feat-effects.Item.RU6D7pNQSBt1zSuK"
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.q8c0LINVNcJrdK91"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.q8c0LINVNcJrdK91",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!q8c0LINVNcJrdK91"
+}

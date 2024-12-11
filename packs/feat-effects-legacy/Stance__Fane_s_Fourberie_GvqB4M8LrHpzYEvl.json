@@ -1,0 +1,85 @@
+{
+  "_id": "GvqB4M8LrHpzYEvl",
+  "img": "systems/pf2e/icons/equipment/adventuring-gear/playing-cards.webp",
+  "name": "Stance: Fane's Fourberie",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by: @UUID[Compendium.pf2e.feats-srd.Item.80CEAB05TP5ki9iW]{Fane's Fourberie}</p>\n<p>Stella Fane has perfected a technique for using playing cards as weapons that's one part sleight of hand and one part magic.</p>\n<p>When you enter this stance, choose whether to treat playing cards in your possession as daggers or darts; you can wield a playing card in all ways as the chosen weapon until the stance ends. As long as the majority of the deck remains in your possession, any cards that are lost or thrown can be found after 1 minute. Otherwise, the remaining cards are likely lost or destroyed.</p>\n<p>A character who has this feat can enchant a single deck of playing cards as a magic weapon, etching fundamental and property runes directly onto the deck of cards.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Weapon.Base.dagger",
+            "value": "dagger"
+          },
+          {
+            "label": "PF2E.Weapon.Base.dart",
+            "value": "dart"
+          }
+        ],
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.FanesFourberie.Prompt"
+      }
+    ],
+    "slug": "stance-fanes-fourberie",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Pathfinder Society Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.GvqB4M8LrHpzYEvl"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.GvqB4M8LrHpzYEvl",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!GvqB4M8LrHpzYEvl"
+}

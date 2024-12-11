@@ -1,0 +1,122 @@
+{
+  "_id": "00uTUJPgJ6kuGR8O",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Crown of the Saumen Kar",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your body begins to evolve and adapt, taking the first steps towards blending your very self with the ancient curse of the saumen kar. You become larger and bulkier, pushing the very edge of height and weight for your size. You gain scent as an imprecise sense with a range of 30 feet and gain a +1 circumstance bonus to Stealth checks made to @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} or @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} in areas of forest and snow. You sprout a pair of horns from your forehead, gaining a horns unarmed attack that deals 1d8 bludgeoning damage. Your horns are in the brawling group and have the shove and trip traits.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d8"
+          }
+        },
+        "group": "brawling",
+        "img": "systems/pf2e/icons/unarmed-attacks/horn.webp",
+        "key": "Strike",
+        "label": "PF2E.BattleForm.Attack.Horn",
+        "range": null,
+        "traits": [
+          "unarmed",
+          "shove",
+          "trip"
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Sneak or Hide In Forest or Snow",
+        "predicate": [
+          {
+            "or": [
+              "action:sneak",
+              "action:hide"
+            ]
+          },
+          {
+            "or": [
+              "terrain:snow",
+              "terrain:forest"
+            ]
+          }
+        ],
+        "selector": "stealth",
+        "value": 1
+      },
+      {
+        "acuity": "imprecise",
+        "key": "Sense",
+        "range": 30,
+        "selector": "scent"
+      }
+    ],
+    "slug": "crown-of-the-saumen-kar",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Monsters of Myth",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Pactbound Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.00uTUJPgJ6kuGR8O"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.00uTUJPgJ6kuGR8O",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!00uTUJPgJ6kuGR8O"
+}

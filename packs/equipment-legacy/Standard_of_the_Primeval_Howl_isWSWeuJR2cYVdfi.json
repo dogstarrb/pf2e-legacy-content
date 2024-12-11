@@ -1,0 +1,128 @@
+{
+  "_id": "isWSWeuJR2cYVdfi",
+  "img": "icons/sundries/flags/banner-standard-brown.webp",
+  "name": "Standard of the Primeval Howl",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>These standards are always constructed from uncut wood and a leather banner painted with the visage of a snarling beast—a wolf, boar, bear, lion, dragon, or similarly imposing creature. And while it might become lost on a battlefield scattered with gaudier standards, its effect bolsters those around a competent leader. When carrying this banner, you gain a +1 item bonus to Intimidation checks and initiative rolls, and creatures in a @Template[type:emanation|distance:20] also gain a +1 item bonus to initiative checks.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.jlYPMOHplgkvzLa9]{Effect: Standard of the Primeval Howl}</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> command</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> An ally within 20 feet of you critically hits with a Strike</p>\n<p><strong>Requirements</strong> You have the @UUID[Compendium.pf2e.feats-srd.Item.ePObIpaJDgDb9CQj]{Battle Cry} skill feat</p>\n<p><strong>Effect</strong> You attempt to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} the foe the Strike hit.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "intimidation",
+          "initiative"
+        ],
+        "type": "item",
+        "value": 1
+      },
+      {
+        "effects": [
+          {
+            "affects": "all",
+            "events": [
+              "enter"
+            ],
+            "includesSelf": false,
+            "uuid": "Compendium.pf2e.equipment-effects.Item.jlYPMOHplgkvzLa9"
+          }
+        ],
+        "key": "Aura",
+        "radius": 20,
+        "slug": "standard-of-the-primeval-howl",
+        "traits": []
+      }
+    ],
+    "slug": "standard-of-the-primeval-howl",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical",
+        "mental"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 900
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.isWSWeuJR2cYVdfi"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.isWSWeuJR2cYVdfi",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!isWSWeuJR2cYVdfi"
+}

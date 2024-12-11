@@ -1,0 +1,78 @@
+{
+  "_id": "88Q33X2a0iYPkbzd",
+  "img": "systems/pf2e/icons/features/classes/mighty-rage.webp",
+  "name": "Mighty Rage",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your rage intensifies and lets you burst into action. Your proficiency rank for your barbarian class DC increases to expert.</p>\n<p>You gain the @UUID[Compendium.pf2e.actionspf2e.Item.74iat04PtfG8gn2Q]{Mighty Rage} free action.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.classDCs.barbarian.rank",
+        "value": 2
+      }
+    ],
+    "slug": "mighty-rage",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "barbarian"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.88Q33X2a0iYPkbzd"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.88Q33X2a0iYPkbzd",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!88Q33X2a0iYPkbzd"
+}

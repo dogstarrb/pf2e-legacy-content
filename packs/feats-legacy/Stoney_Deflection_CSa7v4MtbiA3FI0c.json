@@ -1,0 +1,86 @@
+{
+  "_id": "CSa7v4MtbiA3FI0c",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Stoney Deflection",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You are in Stonestrike Stance.</p>\n<hr />\n<p>You gather the resiliency of stone to block attacks against you. You gain a +2 circumstance bonus to AC and to any defenses against being Shoved or Tripped until the beginning of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.stoneBrawlerArchetype.featCount",
+        "value": 1
+      }
+    ],
+    "slug": "stoney-deflection",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #195: Heavy is the Crown",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Stone Brawler Dedication"
+        }
+      ]
+    },
+    "location": null,
+    "selfEffect": {
+      "name": "Effect: Stoney Deflection",
+      "uuid": "Compendium.pf2e.feat-effects.Item.ecWVnrjsjubZ4On6"
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.CSa7v4MtbiA3FI0c"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.CSa7v4MtbiA3FI0c",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CSa7v4MtbiA3FI0c"
+}

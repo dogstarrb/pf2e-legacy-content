@@ -1,0 +1,101 @@
+{
+  "_id": "fWT7Mo2vFC10H4Wq",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Songbird Strix",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You descend from a talented line of strix storytellers. From the highest mountains and purest landscapes where your lungs fill with glorious clean air, you trill, whistle, and croon sweet songs. While natural sounds make you predisposed to sing, voices make you predisposed to mimicry. You receive a +1 circumstance bonus on Deception checks to Impersonate a mimicked voice, where the sound of the voice is the only factor; if you are a master in Deception, you gain a +2 circumstance bonus instead. You also gain a +1 circumstance bonus on Performance checks to sing; if you are a master in Performance, you gain a +2 circumstance bonus instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:impersonate"
+        ],
+        "selector": "deception",
+        "type": "circumstance",
+        "value": {
+          "brackets": [
+            {
+              "end": 2,
+              "value": 1
+            },
+            {
+              "start": 3,
+              "value": 2
+            }
+          ],
+          "field": "actor|system.skills.deception.rank"
+        }
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:perform:singing"
+        ],
+        "selector": "performance",
+        "type": "circumstance",
+        "value": {
+          "brackets": [
+            {
+              "end": 2,
+              "value": 1
+            },
+            {
+              "start": 3,
+              "value": 2
+            }
+          ],
+          "field": "actor|system.skills.performance.rank"
+        }
+      }
+    ],
+    "slug": "songbird-strix",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Strix",
+      "slug": "strix",
+      "uuid": "Compendium.pf2e.ancestries.Item.GXcC6oVa5quzgNHD"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.fWT7Mo2vFC10H4Wq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.fWT7Mo2vFC10H4Wq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fWT7Mo2vFC10H4Wq"
+}

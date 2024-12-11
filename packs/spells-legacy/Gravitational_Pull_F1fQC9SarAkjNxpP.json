@@ -1,0 +1,142 @@
+{
+  "_id": "F1fQC9SarAkjNxpP",
+  "img": "systems/pf2e/icons/spells/gravitational-pull.webp",
+  "name": "Gravitational Pull",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>By suddenly altering gravity, you pull the target toward you. The target is pulled 10 feet closer to you unless it succeeds at a Fortitude save. On a critical failure, it's also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. The effects of this spell change depending on the number of actions you spend when you Cast this Spell.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell targets one creature.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(somatic, verbal)</strong> The spell targets one creature and pulls the target 20 feet instead of 10.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> The spell targets up to 5 creatures.</p>"
+    },
+    "rules": [],
+    "slug": "gravitational-pull",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "1 to 3"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {},
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "overlays": {
+      "5lkl4b4xvy2j463q": {
+        "_id": "5lkl4b4xvy2j463q",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "time": {
+            "value": "2"
+          },
+          "traits": {
+            "value": [
+              "concentrate",
+              "manipulate"
+            ]
+          }
+        }
+      },
+      "s1pd6dwotaii79cd": {
+        "_id": "s1pd6dwotaii79cd",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "time": {
+            "value": "1"
+          },
+          "traits": {
+            "value": [
+              "manipulate"
+            ]
+          }
+        }
+      },
+      "xo6fc5njtz8vowkk": {
+        "_id": "xo6fc5njtz8vowkk",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "target": {
+            "value": "5 creatures"
+          },
+          "time": {
+            "value": "3"
+          },
+          "traits": {
+            "value": [
+              "concentrate",
+              "manipulate"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.F1fQC9SarAkjNxpP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.F1fQC9SarAkjNxpP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!F1fQC9SarAkjNxpP"
+}

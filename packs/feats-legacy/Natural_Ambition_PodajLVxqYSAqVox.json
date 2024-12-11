@@ -1,0 +1,114 @@
+{
+  "_id": "PodajLVxqYSAqVox",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Natural Ambition",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You were raised to be ambitious and always reach for the stars, leading you to progress quickly in your chosen field. You gain a 1st-level class feat for your class. You must meet the prerequisites, but you can select the feat later in the character creation process in order to determine which prerequisites you meet.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": {
+          "filter": [
+            "item:level:1",
+            "item:category:class",
+            "item:trait:{actor|system.details.class.trait}",
+            {
+              "or": [
+                "feature:dragon-instinct",
+                {
+                  "not": "item:draconic-arrogance"
+                }
+              ]
+            },
+            {
+              "nor": [
+                "item:animal-companion",
+                "item:animal-companion-druid",
+                "item:bardic-lore",
+                "item:fire-lung",
+                "item:lingering-composition",
+                "item:leshy-familiar",
+                "item:martial-performance",
+                "item:shore-step",
+                "item:steadying-stone",
+                "item:storm-born",
+                "item:versatile-performance",
+                "item:wild-shape"
+              ]
+            }
+          ],
+          "itemType": "feat"
+        },
+        "flag": "naturalAmbition",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.LevelOneClassFeat"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.naturalAmbition}"
+      }
+    ],
+    "slug": "natural-ambition",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "human"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.PodajLVxqYSAqVox"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.PodajLVxqYSAqVox",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PodajLVxqYSAqVox"
+}

@@ -1,0 +1,98 @@
+{
+  "_id": "rJ1XxUEACaQA9Lyo",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Bright Lion Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Access</strong> @UUID[Compendium.pf2e.backgrounds.Item.JfGVkZkaoz2lnmov]{Bright Lion} background</p>\n<hr />\n<p>You become trained in your choice of Deception or Diplomacy and in Mzali Lore; if you were already trained, you become an expert instead. You incorporate enough worship of Walkena in your daily life to avoid suspicion. You typically don't need to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie} or @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} to pass yourself off as a worshipper of Walkena. Against careful inspection, you gain a +4 circumstance bonus to Deception checks specifically to pass yourself off as a version of yourself faithful to Walkena.</p>\n<hr />\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.vS9iMDapZN9uW33Q]{Bright Lion} archetype.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Disguised as faithful to Walkena",
+        "predicate": [
+          "disguised-as-faithful-to-walkena"
+        ],
+        "selector": "deception",
+        "slug": "bright-lion-disguise",
+        "type": "circumstance",
+        "value": 4
+      }
+    ],
+    "slug": "bright-lion-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "uncommon",
+      "selected": {}
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Legends",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "member of the Bright Lions"
+        },
+        {
+          "value": "not a worshipper of Walkena"
+        },
+        {
+          "value": "trained in Stealth"
+        },
+        {
+          "value": "Bright Lion Background"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.rJ1XxUEACaQA9Lyo"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.rJ1XxUEACaQA9Lyo",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!rJ1XxUEACaQA9Lyo"
+}

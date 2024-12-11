@@ -1,0 +1,83 @@
+{
+  "_id": "yPWNbTqOIKdkwaVq",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Takedown Expert",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've mastered combat practices that let you get up close and bring down perpetrators alive.</p>\n<p>You can use your Intelligence modifier on attack rolls when you @UUID[Compendium.pf2e.actionspf2e.Item.m0f2B7G9eaaTmhFL]{Devise a Strategem} if you're using a weapon of the club group in one hand (like a club, staff, or sap), in addition to the usual weapons, and those Strikes qualify for your @UUID[Compendium.pf2e.classfeatures.Item.2Fe4YZCvAr9Yf6w7]{Strategic Strike}.</p>\n<p>Additionally, you can make any of your Strikes nonlethal without taking the normal -2 penalty.</p>"
+    },
+    "rules": [
+      {
+        "ability": "int",
+        "key": "FlatModifier",
+        "predicate": [
+          "class:investigator",
+          "target:mark:devise-a-stratagem",
+          "item:hands-held:1"
+        ],
+        "selector": "club-group-attack-roll",
+        "type": "ability"
+      }
+    ],
+    "slug": "takedown-expert",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "investigator"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.yPWNbTqOIKdkwaVq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.yPWNbTqOIKdkwaVq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!yPWNbTqOIKdkwaVq"
+}

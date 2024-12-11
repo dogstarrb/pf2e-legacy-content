@@ -1,0 +1,131 @@
+{
+  "_id": "wNHUryoRzlfDCFAd",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Soaring Shape",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Wings free you from the shackles of the ground below.</p>\n<p>Add the bat and bird forms in <em>@UUID[Compendium.pf2e.spells-srd.Item.NzXpEzcZAjuDTZjK]{Aerial Form}</em> to your <em>wild shape</em> list.</p>\n<p>If you have @UUID[Compendium.pf2e.feats-srd.Item.OWedlrKGsVZVkSnT]{Insect Shape}, you also add the wasp form to your <em>wild shape</em> list. If you have @UUID[Compendium.pf2e.feats-srd.Item.Le30algCdKIsxmeK]{Ferocious Shape}, you also add the pterosaur form to your <em>wild shape</em> list.</p>\n<p>Whenever you use <em>wild shape</em> to gain a form that grants you a specific Acrobatics modifier, you gain a +1 status bonus to Acrobatics checks.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "battle-form:acrobatics"
+        ],
+        "selector": "acrobatics",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.jvwKRHtOiPAm4uAP"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.0QVufU5o3xIxiHmP"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape",
+          "feat:insect-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.xgZxYqjDPNtsQ3Qp"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape",
+          "feat:ferocious-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.UjoNm3lrhlg4ctAQ"
+        }
+      }
+    ],
+    "slug": "soaring-shape",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Wild Shape"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.wNHUryoRzlfDCFAd"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.wNHUryoRzlfDCFAd",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!wNHUryoRzlfDCFAd"
+}

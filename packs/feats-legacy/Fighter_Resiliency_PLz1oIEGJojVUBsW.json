@@ -1,0 +1,90 @@
+{
+  "_id": "PLz1oIEGJojVUBsW",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Fighter Resiliency",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain 3 additional Hit Points for each fighter archetype class feat you have. As you continue selecting fighter archetype class feats, you continue to gain additional Hit Points in this way.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.fighterDedicationCount",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "hp",
+        "value": "3 * @actor.flags.pf2e.fighterDedicationCount"
+      }
+    ],
+    "slug": "fighter-resiliency",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Fighter Dedication"
+        },
+        {
+          "value": "class granting no more Hit Points per level than 8 + your Constitution modifier"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.PLz1oIEGJojVUBsW"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.PLz1oIEGJojVUBsW",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PLz1oIEGJojVUBsW"
+}

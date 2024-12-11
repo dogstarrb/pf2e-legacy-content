@@ -1,0 +1,98 @@
+{
+  "_id": "TZASOwBqVveGjw77",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Analyze Idiolect",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You break down a specific individual's idiolect, memorizing their speech mannerisms and habits.</p>\n<p>If you interact with someone for at least 10 minutes, when you later attempt to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate} that individual, you gain a +4 circumstance bonus to your Deception checks and DCs. Due to the intense character study required, you can't remember more than one idiolect at a time.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "analyze-idiolect"
+        ],
+        "selector": "deception",
+        "type": "circumstance",
+        "value": 4
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "analyze-idiolect",
+        "toggleable": true
+      }
+    ],
+    "slug": "analyze-idiolect",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "skill"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Linguist Dedication"
+        },
+        {
+          "value": "expert in Deception"
+        },
+        {
+          "value": "expert in Society"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.TZASOwBqVveGjw77"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.TZASOwBqVveGjw77",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!TZASOwBqVveGjw77"
+}

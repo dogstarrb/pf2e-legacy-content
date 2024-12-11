@@ -1,0 +1,78 @@
+{
+  "_id": "bV70ZxnUAoYnfXaZ",
+  "img": "systems/pf2e/icons/equipment/runes/weapon-property-runes/weapon-property-runes.webp",
+  "name": "Effect: Rune of Smiting (Rock)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When the rock hits, the giant can Push the target back 10 feet, or 20 feet on a critical hit.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "selector": "rock-attack",
+        "text": "{item|system.description.value}",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "effect-rune-of-smiting-rock",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.bV70ZxnUAoYnfXaZ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.bV70ZxnUAoYnfXaZ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bV70ZxnUAoYnfXaZ"
+}

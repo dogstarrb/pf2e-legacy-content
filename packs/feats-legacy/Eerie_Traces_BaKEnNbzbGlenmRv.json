@@ -1,0 +1,82 @@
+{
+  "_id": "BaKEnNbzbGlenmRv",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Eerie Traces",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The tracks you leave behind are strange, somehow disconcerting and unnerving-they might travel backward, or through places no one would think to pass through. You change your tracks into eerie traces, moving up to half your travel speed as you do so. You don't need to attempt a Survival check to change your tracks, but anyone tracking you must attempt a @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)] save against the higher of your class DC or spell DC.</p>\n<hr />\n<p><strong>Success</strong> The tracker is unaffected.</p>\n<p><strong>Failure</strong> The tracker becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} for as long as it follows your tracks. This condition doesn't decrease until the tracker stops following you, and it comes back if the tracker resumes following your tracks. If the tracker enters into an encounter with you after following your tracks, it begins the encounter frightened 1.</p>\n<p><strong>Critical Failure</strong> As failure, but your disturbing traces cause the tracker to be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} instead.</p>"
+    },
+    "rules": [],
+    "slug": "eerie-traces",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "druid",
+        "exploration",
+        "move",
+        "ranger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Intimidation"
+        },
+        {
+          "value": "trained in Survival"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.BaKEnNbzbGlenmRv"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.BaKEnNbzbGlenmRv",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BaKEnNbzbGlenmRv"
+}

@@ -1,0 +1,152 @@
+{
+  "_id": "O0uXZRWMNliDbkxU",
+  "img": "icons/commodities/biological/hand-gnarled-green.webp",
+  "name": "Bloodline: Hag",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A hag long ago cursed your family, or you are a descendant of a hag or changeling, and their accursed corruption infests your blood and soul.</p>\n<p><strong>Spell List</strong> occult</p>\n<p><strong>Bloodline Skills</strong> Deception, Occultism</p>\n<p><strong>Granted Spells</strong> cantrip <em>@UUID[Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4]{Daze}</em>, 1st: <em>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}</em>, 2nd: <em>@UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]{Touch of Idiocy}</em>, 3rd: <em>@UUID[Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D]{Blindness}</em>, 4th: <em>@UUID[Compendium.pf2e.spells-srd.Item.KSAEhNfZyXMO7Z7V]{Outcast's Curse}</em>, 5th: <em>@UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{Mariner's Curse}</em>, 6th: <em>@UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Baleful Polymorph}</em>, 7th: <em>@UUID[Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs]{Warp Mind}</em>, 8th: <em>@UUID[Compendium.pf2e.spells-srd.Item.MS60WhVifb45qORJ]{Spiritual Epidemic}</em>, 9th: <em>@UUID[Compendium.pf2e.spells-srd.Item.Tc5NLaMu71vrGTJQ]{Nature's Enmity}</em></p>\n<p><strong>Bloodline Spells</strong> initial: <em>@UUID[Compendium.pf2e.spells-srd.Item.kvm68hVtmADiIvN4]{Jealous Hex}</em>, advanced: <em>@UUID[Compendium.pf2e.spells-srd.Item.aZg3amDcrXz3cLCz]{Horrific Visage}</em>, greater: <em>@UUID[Compendium.pf2e.spells-srd.Item.x2LALaHXO7644GQA]{You're Mine}</em></p>\n<p><strong>Blood Magic</strong> Spiteful curses punish your foes. You deal 2 mental damage per spell level (basic Will save) to the first creature that deals damage to you before the end of your next turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.6fb15XuSV4TNuVAT]{Effect: Hag Blood Magic}</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.deception.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.occultism.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.aliases.sorcerer",
+        "priority": 39,
+        "value": "occult"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.sorcerer.bloodline.spells",
+        "value": {
+          "1st": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo",
+            "slug": "illusory-disguise"
+          },
+          "2nd": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h",
+            "slug": "touch-of-idiocy"
+          },
+          "3rd": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D",
+            "slug": "blindness"
+          },
+          "4th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.KSAEhNfZyXMO7Z7V",
+            "slug": "outcasts-curse"
+          },
+          "5th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY",
+            "slug": "mariners-curse"
+          },
+          "6th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe",
+            "slug": "baleful-polymorph"
+          },
+          "7th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs",
+            "slug": "warp-mind"
+          },
+          "8th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.MS60WhVifb45qORJ",
+            "slug": "spiritual-epidemic"
+          },
+          "9th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.Tc5NLaMu71vrGTJQ",
+            "slug": "natures-enmity"
+          },
+          "advanced": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.aZg3amDcrXz3cLCz",
+            "slug": "horrific-visage"
+          },
+          "cantrip": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4",
+            "slug": "daze"
+          },
+          "greater": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.x2LALaHXO7644GQA",
+            "slug": "youre-mine"
+          },
+          "initial": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.kvm68hVtmADiIvN4",
+            "slug": "jealous-hex"
+          }
+        }
+      }
+    ],
+    "slug": "bloodline-hag",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "sorcerer-bloodline"
+      ],
+      "value": [
+        "sorcerer"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.O0uXZRWMNliDbkxU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.O0uXZRWMNliDbkxU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!O0uXZRWMNliDbkxU"
+}

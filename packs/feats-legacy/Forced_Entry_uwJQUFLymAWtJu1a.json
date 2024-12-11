@@ -1,0 +1,86 @@
+{
+  "_id": "uwJQUFLymAWtJu1a",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Forced Entry",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You are trained to preserve the archaeological value of your location when entering. You don't take a penalty to Force Open doors, windows, or containers without a crowbar. If you roll a success on a check to Force Open, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "AdjustModifier",
+        "selector": "athletics",
+        "slug": "no-crowbar",
+        "suppress": true
+      }
+    ],
+    "slug": "forced-entry",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "skill"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Athletics"
+        },
+        {
+          "value": "Pathfinder Agent Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.uwJQUFLymAWtJu1a"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.uwJQUFLymAWtJu1a",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uwJQUFLymAWtJu1a"
+}

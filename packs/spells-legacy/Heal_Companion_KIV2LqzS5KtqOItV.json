@@ -1,0 +1,165 @@
+{
+  "_id": "KIV2LqzS5KtqOItV",
+  "img": "icons/magic/life/cross-area-circle-green-white.webp",
+  "name": "Heal Companion",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You harness positive energy to heal your animal companion's wounds. You restore 1d10 Hit Points to your animal companion. The number of actions you spend Casting this Spell determines range and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(somatic, verbal)</strong> The spell has a range of 30 feet and restores an additional 8 Hit Points to the target.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 1d10, and the additional healing for the 2-action version increases by 8.</p>"
+    },
+    "rules": [],
+    "slug": "heal-companion",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "focus",
+        "healing",
+        "ranger",
+        "vitality"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "your animal companion"
+    },
+    "range": {
+      "value": "touch or 30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "1 or 2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "1d10",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "healing"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d10"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {
+      "0e58gcb5dwwddtze": {
+        "_id": "0e58gcb5dwwddtze",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "damage": {
+            "0": {
+              "formula": "1d10+8"
+            }
+          },
+          "heightening": {
+            "damage": {
+              "0": "1d10+8"
+            }
+          },
+          "range": {
+            "value": "30 feet"
+          },
+          "time": {
+            "value": "2"
+          },
+          "traits": {
+            "value": [
+              "concentrate",
+              "focus",
+              "healing",
+              "manipulate",
+              "ranger",
+              "vitality"
+            ],
+            "traditions": []
+          },
+          "defense": null
+        }
+      },
+      "9klvzqocf0qn2pkm": {
+        "_id": "9klvzqocf0qn2pkm",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "range": {
+            "value": "touch"
+          },
+          "time": {
+            "value": "1"
+          },
+          "traits": {
+            "value": [
+              "focus",
+              "healing",
+              "manipulate",
+              "ranger",
+              "vitality"
+            ],
+            "traditions": []
+          },
+          "defense": null
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.KIV2LqzS5KtqOItV"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.KIV2LqzS5KtqOItV",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!KIV2LqzS5KtqOItV"
+}

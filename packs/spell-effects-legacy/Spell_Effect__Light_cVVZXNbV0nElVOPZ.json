@@ -1,0 +1,109 @@
+{
+  "_id": "cVVZXNbV0nElVOPZ",
+  "img": "systems/pf2e/icons/spells/light.webp",
+  "name": "Spell Effect: Light",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light}</em></p>\n<hr />\n<p>The target casts bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The target sheds bright light in a 60-foot radius (and dim light for the next 60 feet).</p>"
+    },
+    "rules": [
+      {
+        "key": "TokenLight",
+        "value": {
+          "animation": {
+            "intensity": 1,
+            "speed": 2,
+            "type": "pulse"
+          },
+          "bright": {
+            "brackets": [
+              {
+                "end": 3,
+                "value": 20
+              },
+              {
+                "start": 4,
+                "value": 60
+              }
+            ],
+            "field": "item|system.level.value"
+          },
+          "color": "#343434",
+          "dim": {
+            "brackets": [
+              {
+                "end": 3,
+                "value": 40
+              },
+              {
+                "start": 4,
+                "value": 120
+              }
+            ],
+            "field": "item|system.level.value"
+          }
+        }
+      }
+    ],
+    "slug": "spell-effect-light",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "days",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.cVVZXNbV0nElVOPZ"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 26900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.cVVZXNbV0nElVOPZ",
+    "duplicateSource": null
+  },
+  "_key": "!items!cVVZXNbV0nElVOPZ"
+}

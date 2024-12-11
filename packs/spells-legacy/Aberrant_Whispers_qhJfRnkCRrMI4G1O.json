@@ -1,0 +1,145 @@
+{
+  "_id": "qhJfRnkCRrMI4G1O",
+  "img": "icons/creatures/magical/spirit-fire-yellow.webp",
+  "name": "Aberrant Whispers",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You utter phrases in an unknown tongue, assaulting the minds of those nearby. Each target must attempt a Will save. Regardless of the result of its save, each target is then temporarily immune for 1 minute.</p>\n<p>You can increase the number of actions it takes to Cast the Spell (to a maximum of 3 actions total). For each additional action, increase the emanation's radius by 5 feet, to a maximum of 10 extra feet for 3 actions.</p>\n<hr />\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}.</p>\n<hr />\n<p><strong>Heightened (+3)</strong> The initial radius increases by 5 feet.</p>"
+    },
+    "rules": [],
+    "slug": "aberrant-whispers",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "auditory",
+        "concentrate",
+        "focus",
+        "mental",
+        "sorcerer"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "requirements": "",
+    "target": {
+      "value": "each foe in the area"
+    },
+    "range": {
+      "value": ""
+    },
+    "area": {
+      "details": "5-foot emanation or more",
+      "type": "emanation",
+      "value": 5
+    },
+    "time": {
+      "value": "1 to 3"
+    },
+    "duration": {
+      "value": "1 round",
+      "sustained": false
+    },
+    "damage": {},
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "will",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {},
+      "interval": 3,
+      "type": "interval"
+    },
+    "overlays": {
+      "dfoz8m3dp8dllujj": {
+        "_id": "dfoz8m3dp8dllujj",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "heightening": {
+            "damage": {},
+            "interval": 3,
+            "type": "interval"
+          },
+          "time": {
+            "value": "1"
+          }
+        }
+      },
+      "iyvv4m0qmxo1b08z": {
+        "_id": "iyvv4m0qmxo1b08z",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "area": {
+            "value": "15"
+          },
+          "time": {
+            "value": "3"
+          }
+        }
+      },
+      "s0qqpj2kn6xavdyp": {
+        "_id": "s0qqpj2kn6xavdyp",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "area": {
+            "value": "10"
+          },
+          "time": {
+            "value": "2"
+          }
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.qhJfRnkCRrMI4G1O"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.qhJfRnkCRrMI4G1O",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!qhJfRnkCRrMI4G1O"
+}

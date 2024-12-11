@@ -1,0 +1,158 @@
+{
+  "_id": "8Uzc9WKqRr755S5d",
+  "img": "systems/pf2e/icons/spells/horizon-thunder-sphere.webp",
+  "name": "Horizon Thunder Sphere",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gather magical energy into your palm, forming a concentrated ball of electricity that crackles and rumbles like impossibly distant thunder. Make a ranged spell attack roll against your target's AC. On a success, you deal 3d6 electricity damage. On a critical success, the target takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. The number of actions you spend when Casting this Spell determines the range and other parameters.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(somatic, verbal)</strong> This spell has a range of 30 feet.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> This spell has a range of 60 feet and deals half damage on a failure (but not a critical failure) as the electricity lashes out and jolts the target.</p>\n<p><strong>Two Rounds</strong> If you spend 3 actions Casting the Spell, you can avoid finishing the spell and spend another 3 actions on your next turn to empower the spell even further. If you do, after attacking the target, whether you hit or miss, the ball of lightning explodes, dealing @Damage[2d6[electricity]] damage to all other creatures in a @Template[type:emanation|distance:10] around the target (basic Reflex save). Additionally, you spark with electricity for 1 minute, dealing @Damage[1[electricity]] damage to creatures that Grab you or that hit you with an unarmed Strike or a non-reach melee weapon.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial damage on a hit, as well as the burst damage for two-round casting time, each increase by @Damage[2d6[electricity]], and the damage creatures take if they Grapple or hit you while you're in your sparking state increases by @Damage[1[electricity]].</p>"
+    },
+    "rules": [],
+    "slug": "horizon-thunder-sphere",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "concentrate",
+        "electricity",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "varies"
+    },
+    "area": null,
+    "time": {
+      "value": "2 to 2 rounds"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "3d6",
+        "type": "electricity",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "2d6"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {
+      "9uy5xd2ogc2syzwz": {
+        "_id": "9uy5xd2ogc2syzwz",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "range": {
+            "value": "30 feet"
+          },
+          "time": {
+            "value": "2"
+          },
+          "defense": null
+        }
+      },
+      "ozuci5q5wwe0o0s8": {
+        "_id": "ozuci5q5wwe0o0s8",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "range": {
+            "value": "60 feet"
+          },
+          "time": {
+            "value": "3"
+          },
+          "defense": null
+        }
+      },
+      "px43dahs3eb2rukw": {
+        "_id": "px43dahs3eb2rukw",
+        "name": "Horizon Thunder Sphere (2 Rounds)",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "range": {
+            "value": "60 feet"
+          },
+          "time": {
+            "value": "2 rounds"
+          },
+          "defense": {
+            "passive": null,
+            "save": {
+              "statistic": "reflex",
+              "basic": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.8Uzc9WKqRr755S5d"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.8Uzc9WKqRr755S5d",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8Uzc9WKqRr755S5d"
+}

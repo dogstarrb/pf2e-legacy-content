@@ -1,0 +1,76 @@
+{
+  "_id": "S1062No0sYH35AhN",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Tactile Azarketi",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your skin can detect the slightest changes in ocean currents. You gain imprecise wavesense with a range of 30 feet, allowing you to sense motion in the water around you. You also gain a +1 circumstance bonus to Survival checks to Sense Direction in aquatic environments.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Tactile Azarketi (Sense Direction in aquatic environments)",
+        "predicate": [
+          "action:sense-direction",
+          "terrain:aquatic"
+        ],
+        "selector": "survival",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "acuity": "imprecise",
+        "key": "Sense",
+        "range": 30,
+        "selector": "wavesense"
+      }
+    ],
+    "slug": "tactile-azarketi",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Azarketi",
+      "slug": "azarketi",
+      "uuid": "Compendium.pf2e.ancestries.Item.yFoojz6q3ZjvceFw"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.S1062No0sYH35AhN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.S1062No0sYH35AhN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!S1062No0sYH35AhN"
+}

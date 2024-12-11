@@ -1,0 +1,101 @@
+{
+  "_id": "uVxs1qFMQsGWXNs6",
+  "img": "systems/pf2e/icons/equipment/consumables/potions/potion-of-stable-form.webp",
+  "name": "Effect: Potion of Stable Form",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>For the next hour, you gain a +2 item bonus against transmutation effects, which is +3 against polymorph effects. If you roll a success against a polymorph effect during that time, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "stableFormTransmutation",
+        "predicate": [],
+        "selector": "saving-throw",
+        "type": "item",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "label": "stableFormPolymorph",
+        "predicate": [
+          "polymorph"
+        ],
+        "selector": "saving-throw",
+        "type": "item",
+        "value": 3
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "polymorph"
+        ],
+        "selector": "saving-throw",
+        "type": "save"
+      }
+    ],
+    "slug": "effect-potion-of-stable-form",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.uVxs1qFMQsGWXNs6"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.uVxs1qFMQsGWXNs6",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uVxs1qFMQsGWXNs6"
+}

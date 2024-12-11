@@ -1,0 +1,108 @@
+{
+  "_id": "ByqxxJkJiNFtjghh",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Mask Of Pain",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong> You succeed at a Demoralize check.</p>\n<hr />\n<p><strong>Requirements</strong> You're wearing your <em>warmask</em>.</p>\n<hr />\n<p>Your mask has grown into a manifestation of your pain, which you can release. The creature you successfully Demoralized takes [[/r 2d6[mental] #Mask of Pain]]{2d6 mental damage}, or [[/r 4d6[mental] #Mask of Pain]]{4d6 mental damage} if you're legendary in Intimidation. The target is then temporarily immune to additional damage from Mask of Pain for 24 hours.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess",
+          "success"
+        ],
+        "predicate": [
+          "action:demoralize",
+          {
+            "not": "proficiency:legendary"
+          }
+        ],
+        "selector": "intimidation",
+        "text": "The creature you successfully Demoralized takes [[/r 2d6[mental] #Mask of Pain]]{2d6 mental damage}, and is then temporarily immune to additional damage from Mask of Pain for 24 hours.",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess",
+          "success"
+        ],
+        "predicate": [
+          "proficiency:legendary"
+        ],
+        "selector": "intimidation",
+        "text": "The creature you successfully Demoralized takes [[/r 4d6[mental] #Mask of Pain]]{4d6 mental damage}, and is then temporarily immune to additional damage from Mask of Pain for 24 hours.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "mask-of-pain",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "orc"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Intimidation"
+        },
+        {
+          "value": "Orc Warmask"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ByqxxJkJiNFtjghh"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ByqxxJkJiNFtjghh",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ByqxxJkJiNFtjghh"
+}

@@ -1,0 +1,160 @@
+{
+  "_id": "ITvyvbB234bxceRK",
+  "img": "icons/magic/nature/root-vine-beanstolk-green.webp",
+  "name": "Effect: Mutate Weapon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Select one unarmed attack you gained with Living Weapon. The damage die for that attack increases by one step until the end of your turn. In addition, choose to either have the attack gain a reach of 10 feet until the end of your turn or for you to gain a +1 status bonus to attack rolls with the chosen unarmed attack until the end of your turn.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.BattleForm.Attack.Claw",
+            "predicate": [
+              "living-weapon:claw"
+            ],
+            "value": "claw"
+          },
+          {
+            "label": "PF2E.BattleForm.Attack.Horn",
+            "predicate": [
+              "living-weapon:horn"
+            ],
+            "value": "horn"
+          },
+          {
+            "label": "PF2E.BattleForm.Attack.Jaws",
+            "predicate": [
+              "living-weapon:jaws"
+            ],
+            "value": "jaws"
+          },
+          {
+            "label": "PF2E.BattleForm.Attack.Tusk",
+            "predicate": [
+              "living-weapon:tusk"
+            ],
+            "value": "tusk"
+          },
+          {
+            "label": "PF2E.BattleForm.Attack.Tail",
+            "predicate": [
+              "living-weapon:tail"
+            ],
+            "value": "tail"
+          }
+        ],
+        "flag": "mutateWeaponTarget",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Fleshwarp.MutateWeapon.Target",
+        "rollOption": "mutate-weapon-target"
+      },
+      {
+        "key": "DamageDice",
+        "override": {
+          "upgrade": true
+        },
+        "selector": "{item|flags.pf2e.rulesSelections.mutateWeaponTarget}-damage"
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.SpecificRule.Fleshwarp.MutateWeapon.Reach",
+            "value": "reach"
+          },
+          {
+            "label": "PF2E.SpecificRule.Fleshwarp.MutateWeapon.Accuracy",
+            "value": "accuracy"
+          }
+        ],
+        "flag": "effectMutateWeapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Fleshwarp.MutateWeapon.Bonus",
+        "rollOption": "mutate-weapon-bonus"
+      },
+      {
+        "definition": [
+          "item:{item|flags.pf2e.rulesSelections.mutateWeaponTarget}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          "mutate-weapon-bonus:reach"
+        ],
+        "property": "weapon-traits",
+        "value": "reach"
+      },
+      {
+        "hideIfDisabled": true,
+        "key": "FlatModifier",
+        "predicate": [
+          "mutate-weapon-bonus:accuracy"
+        ],
+        "selector": "{item|flags.pf2e.rulesSelections.mutateWeaponTarget}-attack-roll",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "effect-mutate-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": 0,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.ITvyvbB234bxceRK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.ITvyvbB234bxceRK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ITvyvbB234bxceRK"
+}

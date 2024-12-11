@@ -1,0 +1,85 @@
+{
+  "_id": "uwp7Y4LNtPbhELjS",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Golden Body",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You perfect your body, refining the flex of every muscle and the bend of every joint to maximum efficiency. Your unarmed Strikes gain the deadly d12 trait, and you have fast healing 20, causing you to regain 20 HP at the start of each of your turns provided you have at least 1 HP.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:category:unarmed"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "deadly-d12"
+      },
+      {
+        "key": "FastHealing",
+        "value": 20
+      }
+    ],
+    "slug": "golden-body",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "monk"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #150: Broken Promises",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.uwp7Y4LNtPbhELjS"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.uwp7Y4LNtPbhELjS",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uwp7Y4LNtPbhELjS"
+}

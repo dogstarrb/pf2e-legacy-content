@@ -1,0 +1,81 @@
+{
+  "_id": "hQsqr2sRPp9rNm4U",
+  "img": "systems/pf2e/icons/spells/grease.webp",
+  "name": "Effect: Putrid Blast",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Creature takes a -2 circumstance penalty to Fortitude saves against xulgath bile for 1 minute.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "poison:xulgath-bile"
+        ],
+        "selector": "fortitude",
+        "type": "circumstance",
+        "value": -2
+      }
+    ],
+    "slug": "effect-putrid-blast",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #151: The Show Must Go On",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.hQsqr2sRPp9rNm4U"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.hQsqr2sRPp9rNm4U",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!hQsqr2sRPp9rNm4U"
+}

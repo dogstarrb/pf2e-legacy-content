@@ -1,0 +1,78 @@
+{
+  "_id": "mUL0C7O4HSnPSXea",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Warped Constriction",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You have a foe @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<hr />\n<p>The entity inhabiting your body is an aberrant being with unfathomable motivations, and when you hold a foe close, tendrils and tentacles unfurl from your body to crush your foe and pollute it with alien wrongness. Your grabbed or restrained foe takes bludgeoning damage equal to your level and mental damage equal to your highest mental ability modifier. The creature attempts a @Check[type:will|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save that applies to both types of damage and uses the higher of your class DC or spell DC.</p>\n<p>[[/r (@actor.level)[Bludgeoning]+(max(@actor.abilities.int.mod,@actor.abilities.wis.mod,@actor.abilities.cha.mod))[Mental]]]{Leveled Bludgeoning and Mental Damage}</p>"
+    },
+    "rules": [],
+    "slug": "warped-constriction",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Living Vessel Dedication"
+        },
+        {
+          "value": "your entity is an aberration or outer entity"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.mUL0C7O4HSnPSXea"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.mUL0C7O4HSnPSXea",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!mUL0C7O4HSnPSXea"
+}

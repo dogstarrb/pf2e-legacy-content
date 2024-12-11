@@ -1,0 +1,155 @@
+{
+  "_id": "XKON66YXYLXlGPPg",
+  "img": "icons/equipment/chest/breastplate-gorget-steel-purple.webp",
+  "name": "Breastplate of Command (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This <em>+2 greater resilient breastplate</em> is made from shining bronze overlaid with reinforcing golden panels in the shape of lion's heads. Wearing this breastplate grants you a commanding aura. You gain a +3 item bonus to Diplomacy checks, but you take a -3 item penalty to Stealth checks to @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{Hide} and @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} and Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{Impersonate}.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">A</span>Command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You grant allies within 100 feet a +2 status bonus to saves against fear effects for 1 minute. When you activate this ability, each affected ally who's frightened reduces their frightened value by 1.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.G0lG7IIZnCZtYi6v]{Effect: Breastplate of Command}</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "diplomacy",
+        "type": "item",
+        "value": 3
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Breastplate of Command (Hide, Sneak)",
+        "predicate": [
+          {
+            "or": [
+              "action:hide",
+              "action:sneak"
+            ]
+          }
+        ],
+        "selector": "stealth",
+        "type": "item",
+        "value": -3
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Breastplate of Command (Impersonate)",
+        "predicate": [
+          "action:impersonate"
+        ],
+        "selector": "deception",
+        "type": "item",
+        "value": -3
+      }
+    ],
+    "slug": "breastplate-of-command-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "quantity": 1,
+    "baseItem": "breastplate",
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 22000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "medium",
+    "group": "plate",
+    "acBonus": 4,
+    "strength": 3,
+    "dexCap": 1,
+    "checkPenalty": -3,
+    "speedPenalty": -5,
+    "runes": {
+      "potency": 2,
+      "resilient": 2,
+      "property": []
+    },
+    "subitems": [],
+    "specific": {
+      "material": {
+        "grade": null,
+        "type": null
+      },
+      "runes": {
+        "potency": 2,
+        "resilient": 2,
+        "property": []
+      }
+    }
+  },
+  "type": "armor",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.XKON66YXYLXlGPPg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.XKON66YXYLXlGPPg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XKON66YXYLXlGPPg"
+}

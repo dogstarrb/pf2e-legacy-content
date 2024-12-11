@@ -1,0 +1,76 @@
+{
+  "_id": "OEwNLolzBarx8icm",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Explosive Death Drop",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.Item.rbiMK71SvGZGRLJ1]{Rain of Embers Stance} and have a target @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<hr />\n<p>You lift your enemy into the air before bringing them crashing down with a fiery detonation. Roll an @Check[type:athletics|defense:fortitude] check against your target's Fortitude DC. You take a -1 circumstance penalty to your check if the target is one size larger than you and a -3 circumstance penalty if it's larger than that. You gain a +1 circumstance bonus to your check if the target is one size smaller than you and a +3 circumstance bonus if it's smaller than that.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes @Damage[12d6[fire]] damage and falls @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in an unoccupied adjacent square of your choice. The target is no longer grabbed. The target and any creature adjacent to it also each take @Damage[1d6[persistent,fire]] damage.</p>\n<p><strong>Success</strong> As critical success, but the target takes @Damage[6d6[fire]] damage instead of 12d6, and creatures don't take persistent fire damage.</p>\n<p><strong>Failure</strong> The target is no longer grabbed.</p>\n<p><strong>Critical Failure</strong> As failure, but you fall prone.</p>"
+    },
+    "rules": [],
+    "slug": "explosive-death-drop",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fire",
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Pathfinder Society Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Blazing Talon Surge"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.OEwNLolzBarx8icm"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.OEwNLolzBarx8icm",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OEwNLolzBarx8icm"
+}

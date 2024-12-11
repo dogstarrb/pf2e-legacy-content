@@ -1,0 +1,75 @@
+{
+  "_id": "PANUWN5xXC20WBg2",
+  "img": "systems/pf2e/icons/spells/false-life.webp",
+  "name": "Spell Effect: False Life",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.8ViwItUgwT4lOvvb]{False Life}</em></p>\n<p>You create a reservoir of vitality from necromantic energy, gaining a number of temporary Hit Points.</p>"
+    },
+    "rules": [
+      {
+        "key": "TempHP",
+        "value": "@item.level*3+@item.system.context.origin.spellcasting.attribute.mod"
+      }
+    ],
+    "slug": "spell-effect-false-life",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.PANUWN5xXC20WBg2"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 18300000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.PANUWN5xXC20WBg2",
+    "duplicateSource": null
+  },
+  "_key": "!items!PANUWN5xXC20WBg2"
+}

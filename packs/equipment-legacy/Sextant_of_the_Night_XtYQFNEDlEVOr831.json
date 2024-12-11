@@ -1,0 +1,117 @@
+{
+  "_id": "XtYQFNEDlEVOr831",
+  "img": "systems/pf2e/icons/default-icons/equipment.svg",
+  "name": "Sextant of the Night",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This finely wrought sextant is made from silver with several onyx mirrors and shades made from thin sets of crystal glass. A fine spyglass made of silver is affixed to the frame; removing the spyglass destroys the sextant. By all appearances, the sextant shouldn't function, as the shades and mirrors are swapped, but when you look through the spyglass, you see a night sky during the day and the sun during the night, as if day and night were inverted.</p>\n<p>When you use the sextant, you gain a +1 item bonus to Survival checks, which increases to a +2 item bonus when you Sense Direction.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "survival",
+        "type": "item",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:sense-direction"
+        ],
+        "selector": "survival",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "sextant-of-the-night",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 95
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.XtYQFNEDlEVOr831"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.XtYQFNEDlEVOr831",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XtYQFNEDlEVOr831"
+}

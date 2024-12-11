@@ -1,0 +1,134 @@
+{
+  "_id": "4lGhbEjlEoGP4scl",
+  "img": "systems/pf2e/icons/features/classes/wit-style.webp",
+  "name": "Wit",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You are friendly, clever, and full of humor, always knowing just what to say in any situation. Your witticisms leave foes unprepared for the skill and speed of your attacks.</p>\n<p>You are trained in Diplomacy and gain the @UUID[Compendium.pf2e.feats-srd.Item.0GF2j54roPFIDmXf]{Bon Mot} skill feat. You gain @UUID[Compendium.pf2e.classfeatures.Item.LzYi0OuOoypNb6jd]{Panache} during an encounter whenever you succeed at a Bon Mot against a foe.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "self:effect:panache",
+          {
+            "or": [
+              "action:bon-mot"
+            ]
+          }
+        ],
+        "selector": "diplomacy",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.diplomacy.rank",
+        "predicate": [
+          "class:swashbuckler"
+        ],
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "class:swashbuckler"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.0GF2j54roPFIDmXf"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "action:bon-mot",
+          {
+            "not": "self:effect:panache"
+          }
+        ],
+        "selector": "diplomacy",
+        "text": "PF2E.SpecificRule.Swashbuckler.Panache",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "finisher",
+          "feature:exemplary-finisher"
+        ],
+        "selector": "strike-attack-roll",
+        "text": "PF2E.SpecificRule.ExemplaryFinisher.Wit",
+        "title": "PF2E.SpecificRule.ExemplaryFinisher.Name"
+      }
+    ],
+    "slug": "wit",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "swashbuckler-style"
+      ],
+      "value": [
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.4lGhbEjlEoGP4scl"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.4lGhbEjlEoGP4scl",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4lGhbEjlEoGP4scl"
+}

@@ -1,0 +1,114 @@
+{
+  "_id": "BagxmaKWmG5SYdFV",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/ring-of-maniacal-devices.webp",
+  "name": "Dragon Rune Bracelet",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A <em>dragon rune bracelet</em> is a gold bangle formed around the scale of a famous dragon. The bracelet is etched with esoteric symbols or words in Draconic that indicate kinship with dragons. As many types of <em>dragon rune bracelet</em> exist as there are types of dragons, though bracelets associated with uncommon or rare dragons have the same rarity as the dragon. While wearing a<em> dragon rune bracelet</em>, you gain a +2 item bonus to Diplomacy checks while interacting with dragons of the same type as the bracelet's scale (such as red dragons or cloud dragons). You also gain a +2 item bonus to saving throws against fear effects from any kind of dragon.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You gain 1 Focus Point, which you can spend only to cast a sorcerer draconic bloodline spell. If not used by the end of your turn, this Focus Point is lost.</p>\n<hr />\n<p><strong>Craft Requirements</strong> You are a sorcerer of a draconic bloodline.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "origin:trait:dragon",
+          "fear"
+        ],
+        "selector": "saving-throw",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "dragon-rune-bracelet",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "focused",
+        "invested",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1400
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.BagxmaKWmG5SYdFV"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.BagxmaKWmG5SYdFV",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BagxmaKWmG5SYdFV"
+}

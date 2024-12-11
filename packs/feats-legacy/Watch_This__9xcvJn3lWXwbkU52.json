@@ -1,0 +1,94 @@
+{
+  "_id": "9xcvJn3lWXwbkU52",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Watch This!",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong> An ally misses or critically misses an enemy you can see with their attack.</p>\n<hr />\n<p>A common saying among Firebrands is, \"There's always a fool who thinks they can do it better—and they're often right.\" You verbally commit to using an action on your next turn to make a melee Strike against the same enemy your ally has missed. If your attack hits, you deal additional damage equal to twice the number of damage dice.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "watch-this",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "watch-this"
+        ],
+        "selector": [
+          "strike-damage"
+        ],
+        "value": "2*@weapon.system.damage.dice"
+      }
+    ],
+    "slug": "watch-this",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "auditory",
+        "emotion"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Firebrands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Duelist Dedication or Pirate Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.9xcvJn3lWXwbkU52"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.9xcvJn3lWXwbkU52",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9xcvJn3lWXwbkU52"
+}

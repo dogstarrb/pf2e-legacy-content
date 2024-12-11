@@ -1,0 +1,108 @@
+{
+  "_id": "2sMXAGZfdqiy10kk",
+  "img": "icons/magic/water/barrier-ice-crystal-wall-faceted.webp",
+  "name": "Spell Effect: Clinging Ice",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.MraZBLJ4Be3ogmWL]{Clinging Ice}</em>.</p>\n<p><strong>Failure</strong> The target takes full damage, and takes a -5-foot circumstance penalty to its Speeds until the spell ends.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and a -10-foot circumstance penalty to its Speeds until the spell ends.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "clinging-ice:degree-of-success:failure"
+        ],
+        "selector": "speed",
+        "slug": "clinging-ice-failure",
+        "type": "circumstance",
+        "value": -5
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.Check.Result.Degree.Check.failure",
+            "value": "failure"
+          },
+          {
+            "label": "PF2E.Check.Result.Degree.Check.criticalFailure",
+            "value": "critical-failure"
+          }
+        ],
+        "flag": "clingingIceDegreeOfSuccess",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.UI.RuleElements.ChoiceSet.Prompt",
+        "rollOption": "clinging-ice:degree-of-success"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "clinging-ice:degree-of-success:critical-failure"
+        ],
+        "selector": "speed",
+        "slug": "clinging-ice-critical-failure",
+        "type": "circumstance",
+        "value": -10
+      }
+    ],
+    "slug": "spell-effect-clinging-ice",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.2sMXAGZfdqiy10kk"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 3300000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.2sMXAGZfdqiy10kk",
+    "duplicateSource": null
+  },
+  "_key": "!items!2sMXAGZfdqiy10kk"
+}

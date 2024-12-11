@@ -1,0 +1,131 @@
+{
+  "_id": "1xDMyQ8IHuhDHSXy",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Conrasu Weapon Familiarity",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have taken it upon yourself to learn the ways of combat to aid with your tasks, perhaps in a role as a corrector. You are trained with the @UUID[Compendium.pf2e.equipment-srd.Item.e4NwsnPnpQKbDZ9F]{Composite Shortbow}, @UUID[Compendium.pf2e.equipment-srd.Item.vlnzTSsRmWeSkt9O]{Glaive}, @UUID[Compendium.pf2e.equipment-srd.Item.aXuJh4i8HqSu6NYV]{Longspear}, @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]{Longsword}, @UUID[Compendium.pf2e.equipment-srd.Item.hIgqLgH3YcLZBeoT]{Shortbow}, and @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]{Spear}. You also gain access to all uncommon conrasu weapons(@UUID[Compendium.pf2e.equipment-srd.Item.7WRzbBTOCsJx5f7L]{Buugeng}). For the purpose of determining your proficiency, martial conrasu weapons are simple weapons and advanced conrasu weapons are martial weapons.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-composite-shortbow.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-glaive.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-longspear.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-longsword.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-shortbow.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-spear.rank",
+        "value": 1
+      },
+      {
+        "definition": [
+          "item:trait:conrasu",
+          "item:category:advanced"
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.AdvancedConrasuWeapons",
+        "sameAs": "martial",
+        "slug": "advanced-conrasu-weapons"
+      },
+      {
+        "definition": [
+          "item:trait:conrasu",
+          "item:category:martial",
+          {
+            "not": "item:category:advanced"
+          }
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.MartialConrasuWeapons",
+        "sameAs": "simple",
+        "slug": "martial-conrasu-weapons"
+      }
+    ],
+    "slug": "conrasu-weapon-familiarity",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "conrasu"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Mwangi Expanse",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.1xDMyQ8IHuhDHSXy"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.1xDMyQ8IHuhDHSXy",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1xDMyQ8IHuhDHSXy"
+}

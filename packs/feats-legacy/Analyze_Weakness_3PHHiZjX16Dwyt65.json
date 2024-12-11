@@ -1,0 +1,115 @@
+{
+  "_id": "3PHHiZjX16Dwyt65",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Analyze Weakness",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You must have identified a creature with @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}.</p>\n<hr />\n<p>Your knowledge of a creature's physiology and understanding of tactics helps you attack with pinpoint accuracy. You carefully study a creature that you've identified to scope out particularly weak points in its positioning or physical form.</p>\n<p>The next time you deal sneak attack damage to the chosen creature with a Strike before the end of your turn, add an additional 2d6 precision damage.</p>\n<p>At 11th and 17th levels, if your additional damage from sneak attack increases, increase the additional damage from Analyze Weakness to 3d6 at 11th level and 4d6 at 17th level.</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "label": "Apply Analyze Weakness damage",
+        "option": "analyze-weakness",
+        "toggleable": true
+      },
+      {
+        "category": "precision",
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "predicate": [
+          "analyze-weakness"
+        ],
+        "selector": "strike-damage",
+        "value": {
+          "brackets": [
+            {
+              "end": 10,
+              "value": {
+                "diceNumber": 2
+              }
+            },
+            {
+              "end": 16,
+              "start": 11,
+              "value": {
+                "diceNumber": 3
+              }
+            },
+            {
+              "start": 17,
+              "value": {
+                "diceNumber": 4
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "analyze-weakness",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "rogue"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "sneak attack 2d6"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.3PHHiZjX16Dwyt65"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.3PHHiZjX16Dwyt65",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3PHHiZjX16Dwyt65"
+}

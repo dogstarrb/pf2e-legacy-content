@@ -1,0 +1,103 @@
+{
+  "_id": "gC5EnlP38t1vTlWt",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Esteemed Visitor",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your polite manners and natural ability to comfort others make it easy for you to break down cultural barriers and earn strangers' trust. While you are in a settlement, when you roll a critical failure on a Diplomacy check to @UUID[Compendium.pf2e.actionspf2e.Item.plBGdZhqq5JBl1D8]{Gather Information} or @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression}, you get a failure instead.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "terrain:settlement",
+          {
+            "or": [
+              "action:gather-information",
+              "action:make-an-impression"
+            ]
+          }
+        ],
+        "selector": "diplomacy",
+        "type": "skill"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          {
+            "or": [
+              "action:gather-information",
+              "action:make-an-impression"
+            ]
+          }
+        ],
+        "selector": "diplomacy",
+        "text": "PF2E.SpecificRule.Shoony.EsteemedVisitor.Note",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "esteemed-visitor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "shoony"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #153: Life's Long Shadows",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.gC5EnlP38t1vTlWt"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.gC5EnlP38t1vTlWt",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!gC5EnlP38t1vTlWt"
+}

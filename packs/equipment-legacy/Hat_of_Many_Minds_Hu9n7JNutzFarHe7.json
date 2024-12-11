@@ -1,0 +1,112 @@
+{
+  "_id": "Hu9n7JNutzFarHe7",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/hat-of-many-minds.webp",
+  "name": "Hat of Many Minds",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This pointy, brimmed hat made up of a rainbow patchwork of various materials seems to sit just a little lopsided on your head, no matter how you adjust it. You gain a +2 item bonus to checks to Earn Income.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You tear off a patch of cloth to manifest it into a copy of yourself, dressed in the color and fabric of the patch. The copy follows your specific instructions and performs a single, straightforward task for up to 30 minutes. It takes the copy three times as long to complete the task as it would you, meaning it can perform a task that would take you a maximum of 10 minutes. It doesn't react quickly enough to be of any use during an encounter, and it can't use your spells or other special abilities-just basic actions and skill actions.</p>\n<p>The copy disappears and returns to the hat as a piece of cloth when the given task has been completed, or when you Dismiss the activation.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:earn-income"
+        ],
+        "selector": "skill-check",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "hat-of-many-minds",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1800
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "wornheadwear"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.Hu9n7JNutzFarHe7"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.Hu9n7JNutzFarHe7",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Hu9n7JNutzFarHe7"
+}

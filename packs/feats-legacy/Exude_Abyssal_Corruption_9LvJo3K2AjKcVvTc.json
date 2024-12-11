@@ -1,0 +1,120 @@
+{
+  "_id": "9LvJo3K2AjKcVvTc",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Exude Abyssal Corruption",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Most of the changes from the demon within you have harmed you so far, but you've found a way to expel some of the corruption within you to poison others. Until the beginning of your next turn, you and your weapons are covered in toxic sludge or another similar manifestation of the demonic corruption; your melee Strikes deal an additional @Damage[1d6[poison]] damage, and each time a creature hits you with a melee unarmed attack or otherwise touches you, it takes @Damage[1d6[poison]] damage.</p>\n<p>At 14th level, the poison damage increases to 2d6, and at 20th level, the poison damage increases to 3d6.</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "option": "abyssal-corruption",
+        "toggleable": true
+      },
+      {
+        "damageType": "poison",
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "predicate": [
+          "abyssal-corruption"
+        ],
+        "selector": "damage",
+        "value": {
+          "brackets": [
+            {
+              "end": 13,
+              "start": 8,
+              "value": {
+                "diceNumber": 1
+              }
+            },
+            {
+              "end": 19,
+              "start": 14,
+              "value": {
+                "diceNumber": 2
+              }
+            },
+            {
+              "start": 20,
+              "value": {
+                "diceNumber": 3
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "exude-abyssal-corruption",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "manipulate",
+        "poison"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Living Vessel Dedication"
+        },
+        {
+          "value": "your entity is a demon"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.9LvJo3K2AjKcVvTc"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.9LvJo3K2AjKcVvTc",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9LvJo3K2AjKcVvTc"
+}

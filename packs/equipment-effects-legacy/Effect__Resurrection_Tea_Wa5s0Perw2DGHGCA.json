@@ -1,0 +1,77 @@
+{
+  "_id": "Wa5s0Perw2DGHGCA",
+  "img": "icons/consumables/plants/dried-herb-bundle-brown.webp",
+  "name": "Effect: Resurrection Tea",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Reduce the DC of recovery checks by 1.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "subtract",
+        "path": "system.attributes.dying.recoveryDC",
+        "value": 1
+      }
+    ],
+    "slug": "effect-resurrection-tea",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #197: Let the Leaves Fall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.Wa5s0Perw2DGHGCA"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.Wa5s0Perw2DGHGCA",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Wa5s0Perw2DGHGCA"
+}

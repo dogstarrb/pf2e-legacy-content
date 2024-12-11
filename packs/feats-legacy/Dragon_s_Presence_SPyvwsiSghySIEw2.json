@@ -1,0 +1,118 @@
+{
+  "_id": "SPyvwsiSghySIEw2",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Dragon's Presence",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>As a member of dragonkind, you project unflappable confidence (that collapses catastrophically against the deadliest foes).</p>\n<p>When you roll a success on a saving throw against a fear effect, you get a critical success instead. When you roll a failure against a fear effect, you get a critical failure instead.</p>\n<p>In addition, when you attempt to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a foe of your level or lower, you gain a +1 circumstance bonus to the Intimidation check.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:demoralize",
+          {
+            "lte": [
+              "target:level",
+              "self:level"
+            ]
+          }
+        ],
+        "selector": "intimidation",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "fear"
+        ],
+        "selector": "saving-throw",
+        "type": "save"
+      },
+      {
+        "adjustment": {
+          "failure": "one-degree-worse"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "fear"
+        ],
+        "selector": "saving-throw",
+        "type": "save"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "fear"
+        ],
+        "selector": "saving-throw",
+        "text": "PF2E.SpecificRule.Kobold.DragonsPresence.Note",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "dragons-presence",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "kobold"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.SPyvwsiSghySIEw2"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.SPyvwsiSghySIEw2",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!SPyvwsiSghySIEw2"
+}

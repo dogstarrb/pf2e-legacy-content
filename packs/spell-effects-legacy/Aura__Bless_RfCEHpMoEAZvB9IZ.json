@@ -1,0 +1,105 @@
+{
+  "_id": "RfCEHpMoEAZvB9IZ",
+  "img": "systems/pf2e/icons/spells/bless.webp",
+  "name": "Aura: Bless",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.XSujb7EsSwKl19Uu]{Bless}</em>.</p>\n<p>You and your allies gain a +1 status bonus to attack rolls while within the emanation. Once per turn, starting the turn after you cast bless, you can use a single action, which has the concentrate trait, to increase the emanation's radius by 5 feet.</p>"
+    },
+    "rules": [
+      {
+        "appearance": {
+          "border": {
+            "alpha": 1
+          },
+          "highlight": {
+            "color": "#d20000"
+          }
+        },
+        "effects": [
+          {
+            "affects": "allies",
+            "uuid": "Compendium.pf2e.spell-effects.Item.Gqy7K6FnbLtwGpud"
+          }
+        ],
+        "key": "Aura",
+        "radius": "@item.badge.value * 5",
+        "traits": [
+          "divine"
+        ]
+      }
+    ],
+    "slug": "aura-bless",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": {
+      "labels": [
+        "5 ft.",
+        "10 ft.",
+        "15 ft.",
+        "20 ft.",
+        "25 ft.",
+        "30 ft."
+      ],
+      "type": "counter",
+      "value": 1,
+      "-=min": null,
+      "-=max": null
+    },
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.RfCEHpMoEAZvB9IZ"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 19900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.RfCEHpMoEAZvB9IZ",
+    "duplicateSource": null
+  },
+  "_key": "!items!RfCEHpMoEAZvB9IZ"
+}

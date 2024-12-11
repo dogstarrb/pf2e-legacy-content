@@ -1,0 +1,93 @@
+{
+  "_id": "jS8GamSTl8yMLL4F",
+  "img": "systems/pf2e/icons/unarmed-attacks/fangs.webp",
+  "name": "Fangs (Nagaji)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your mouth contains either rows of hooked, needle-sharp teeth or a pair of vicious serpent fangs. You gain a fangs unarmed attack that deals 1d6 piercing damage. Your fangs are in the brawling group and have the finesse and unarmed traits.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "piercing",
+            "dice": 1,
+            "die": "d6"
+          }
+        },
+        "group": "brawling",
+        "key": "Strike",
+        "label": "PF2E.BattleForm.Attack.Fangs",
+        "predicate": [
+          {
+            "not": "self:heritage:sacred-nagaji"
+          }
+        ],
+        "range": null,
+        "traits": [
+          "finesse",
+          "unarmed"
+        ]
+      }
+    ],
+    "slug": "fangs-nagaji",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "category": "ancestryfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.ancestryfeatures.Item.jS8GamSTl8yMLL4F"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.ancestry-features-legacy.Item.jS8GamSTl8yMLL4F",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!jS8GamSTl8yMLL4F"
+}

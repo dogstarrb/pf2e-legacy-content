@@ -1,0 +1,135 @@
+{
+  "_id": "uV8fEVUuSyMsh1xF",
+  "img": "icons/equipment/chest/breastplate-layered-leather-studded-brown.webp",
+  "name": "Wasp Guard",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Druids and Calistria's faithful alike value this vindictive armor for its ability to turn away pests and exact revenge on foes in a manner that can easily turn coordinated enemies into a chaotic mass. <em>Wasp guard</em> is <em>+1 studded leather</em> studded with the carapaces of wasps, subtly diverting swarms away and granting a +1 status bonus to Reflex saving throws against Swarming Bites, Swarming Stings, and similar abilities from swarms.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> An enemy within 30 feet Strikes you with an attack</p>\n<hr />\n<p><strong>Effect</strong> s You animate the exoskeletons of the <em>wasp guard</em> armor into a spectral swarm of wasps that seeks revenge for the slight. The swarm flies to the triggering enemy's space and swarms about them, dealing @Damage[1d8[persistent,poison]]. If the affected enemy has any allies within 30 feet, the enemy can spend a single action, which has the manipulate trait, to shoo the swarm away. This ends the persistent damage on that enemy automatically, but the swarm instead moves to affect the enemy's ally.</p>\n<hr />\n<p><strong>Craft Requirements</strong> The initial raw materials must include 1 Bulk of wasp exoskeletons.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "action:swarming-bites",
+              "action:swarming-stings"
+            ]
+          }
+        ],
+        "selector": "reflex",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "wasp-guard",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "quantity": 1,
+    "baseItem": "studded-leather-armor",
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 487
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "light",
+    "group": "leather",
+    "acBonus": 2,
+    "strength": 1,
+    "dexCap": 3,
+    "checkPenalty": -1,
+    "speedPenalty": 0,
+    "runes": {
+      "potency": 1,
+      "resilient": 0,
+      "property": []
+    },
+    "subitems": [],
+    "specific": {
+      "material": {
+        "grade": null,
+        "type": null
+      },
+      "runes": {
+        "potency": 1,
+        "resilient": 0,
+        "property": []
+      }
+    }
+  },
+  "type": "armor",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.uV8fEVUuSyMsh1xF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.uV8fEVUuSyMsh1xF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uV8fEVUuSyMsh1xF"
+}

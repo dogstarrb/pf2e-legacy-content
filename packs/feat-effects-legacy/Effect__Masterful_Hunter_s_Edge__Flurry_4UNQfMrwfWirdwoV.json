@@ -1,0 +1,161 @@
+{
+  "_id": "4UNQfMrwfWirdwoV",
+  "img": "icons/skills/melee/strike-polearm-light-orange.webp",
+  "name": "Effect: Masterful Hunter's Edge, Flurry",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted when a ranger shares their @UUID[Compendium.pf2e.classfeatures.Item.JhLncIB10GSQowWL]{Masterful Hunter (Flurry)} with you.</p>\n<p>Your multiple attack penalty for attacks against your hunted prey is -3 (-2 with an agile weapon) on your second attack of the turn instead of -5, and -6 (-4 with an agile weapon) on your third or subsequent attack of the turn, instead of -10.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.HuntPrey.TargetHuntedPrey",
+        "option": "hunted-prey",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "label": "To Track hunted prey (Masterful Hunter)",
+        "predicate": [
+          "action:track",
+          "hunted-prey"
+        ],
+        "selector": "survival",
+        "type": "circumstance",
+        "value": {
+          "brackets": [
+            {
+              "end": 4,
+              "start": 3,
+              "value": 4
+            },
+            {
+              "end": 2,
+              "start": 1,
+              "value": 2
+            }
+          ],
+          "field": "actor|system.skills.survival.rank"
+        }
+      },
+      {
+        "key": "FlatModifier",
+        "label": "To Seek hunted prey (Masterful Hunter)",
+        "predicate": [
+          "action:seek",
+          "hunted-prey"
+        ],
+        "selector": "perception",
+        "type": "circumstance",
+        "value": {
+          "brackets": [
+            {
+              "end": 4,
+              "start": 3,
+              "value": 4
+            },
+            {
+              "end": 2,
+              "start": 1,
+              "value": 2
+            }
+          ],
+          "field": "actor|system.perception.rank"
+        }
+      },
+      {
+        "key": "MultipleAttackPenalty",
+        "predicate": [
+          "hunted-prey",
+          {
+            "or": [
+              "proficiency:master",
+              "proficiency:legendary"
+            ]
+          },
+          {
+            "not": "agile"
+          }
+        ],
+        "selector": "attack",
+        "value": -2
+      },
+      {
+        "key": "MultipleAttackPenalty",
+        "predicate": [
+          "agile",
+          "hunted-prey",
+          {
+            "or": [
+              "proficiency:master",
+              "proficiency:legendary"
+            ]
+          }
+        ],
+        "selector": "attack",
+        "value": -1
+      }
+    ],
+    "slug": "effect-masterful-hunters-edge-flurry",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 3648,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.4UNQfMrwfWirdwoV"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.4UNQfMrwfWirdwoV",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4UNQfMrwfWirdwoV"
+}

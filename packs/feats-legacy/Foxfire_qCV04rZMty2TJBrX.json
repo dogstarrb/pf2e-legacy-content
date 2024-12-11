@@ -1,0 +1,125 @@
+{
+  "_id": "qCV04rZMty2TJBrX",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Foxfire",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A crack of your tail sparks wisps of blue energy. Choose either electricity or fire when you gain this feat. You gain a foxfire ranged unarmed attack with a maximum range of 20 feet. The attack deals [[/r 1d4]] damage of the chosen type (no ability modifier is added to the damage roll). Your foxfire attack is in the sling weapon group and has the magical trait. Like other unarmed attacks, you can improve this attack with @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]{Handwraps of Mighty Blows}.</p>\n<hr />\n<p><strong>Special</strong> If you are a frozen wind kitsune, your foxfire deals cold damage instead of electricity or fire.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.TraitElectricity",
+            "predicate": [
+              {
+                "not": "self:heritage:frozen-wind-kitsune"
+              }
+            ],
+            "value": "electricity"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "predicate": [
+              {
+                "not": "self:heritage:frozen-wind-kitsune"
+              }
+            ],
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitCold",
+            "predicate": [
+              "self:heritage:frozen-wind-kitsune"
+            ],
+            "value": "cold"
+          }
+        ],
+        "flag": "damage",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.UI.RuleElements.ChoiceSet.Prompt"
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "{item|flags.pf2e.rulesSelections.damage}",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "sling",
+        "img": "systems/pf2e/icons/spells/diamond-dust.webp",
+        "key": "Strike",
+        "range": {
+          "max": 20
+        },
+        "traits": [
+          "unarmed",
+          "magical"
+        ]
+      }
+    ],
+    "slug": "foxfire",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "kitsune"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.qCV04rZMty2TJBrX"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.qCV04rZMty2TJBrX",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!qCV04rZMty2TJBrX"
+}

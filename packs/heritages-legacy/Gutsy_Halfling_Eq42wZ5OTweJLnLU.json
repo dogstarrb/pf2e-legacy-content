@@ -1,0 +1,70 @@
+{
+  "_id": "Eq42wZ5OTweJLnLU",
+  "img": "systems/pf2e/icons/features/ancestry/gutsy-halfling.webp",
+  "name": "Gutsy Halfling",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your family line is known for keeping a level head and staving off fear when the chips were down, making them wise leaders and sometimes even heroes. When you roll a success on a saving throw against an emotion effect, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "emotion"
+        ],
+        "selector": "saving-throw",
+        "type": "save"
+      }
+    ],
+    "slug": "gutsy-halfling",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Halfling",
+      "slug": "halfling",
+      "uuid": "Compendium.pf2e.ancestries.Item.GgZAHbrjnzWOZy2v"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.Eq42wZ5OTweJLnLU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.Eq42wZ5OTweJLnLU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Eq42wZ5OTweJLnLU"
+}

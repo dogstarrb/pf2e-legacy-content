@@ -1,0 +1,120 @@
+{
+  "_id": "VZczZNj3ozCj1Lzk",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Second Ally",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your inner grace attracts the attention of a second protective spirit. Choose a second type of divine ally and gain its benefits.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "allowedDrops": {
+          "label": "PF2E.SpecificRule.DivineAlly.AllowedDrops",
+          "predicate": [
+            "item:type:feature",
+            "item:trait:champion"
+          ]
+        },
+        "choices": [
+          {
+            "predicate": [
+              {
+                "not": "feature:blade-ally"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.EtltLdiy9kNfHU0c"
+          },
+          {
+            "predicate": [
+              {
+                "not": "feature:shield-ally"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.QQP0mu0cyWIwNUh9"
+          },
+          {
+            "predicate": [
+              {
+                "not": "divine-ally:steed"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.Z6E1O8X7CFcyczB1"
+          }
+        ],
+        "flag": "divineAlly",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.DivineAlly.Prompt"
+      },
+      {
+        "allowDuplicate": false,
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.divineAlly}"
+      }
+    ],
+    "slug": "second-ally",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "champion"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "divine ally"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.VZczZNj3ozCj1Lzk"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.VZczZNj3ozCj1Lzk",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VZczZNj3ozCj1Lzk"
+}

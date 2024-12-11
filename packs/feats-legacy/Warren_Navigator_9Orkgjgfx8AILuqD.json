@@ -1,0 +1,103 @@
+{
+  "_id": "9Orkgjgfx8AILuqD",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Warren Navigator",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You're particularly good at solving mazes and navigating twists and turns. You gain the trained proficiency rank in Survival. If you would automatically become trained in Survival (from your background or class, for example), you become trained in another skill of your choice.</p>\n<p>When you @UUID[Compendium.pf2e.actionspf2e.Item.fJImDBQfqfjKJOhk]{Sense Direction} or attempt a roll against a <em>@UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7]{Maze}</em> spell, you get a result one degree of success better than you rolled. You don't take a penalty to @UUID[Compendium.pf2e.actionspf2e.Item.fJImDBQfqfjKJOhk]{Sense Direction} when you lack a compass.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.survival.rank",
+        "value": 1
+      },
+      {
+        "adjustment": {
+          "all": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:sense-direction"
+        ],
+        "selector": "survival",
+        "type": "skill"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "action:sense-direction"
+        ],
+        "selector": "survival",
+        "text": "PF2E.SpecificRule.Ratfolk.WarrenNavigator.Note",
+        "title": "{item|name}"
+      },
+      {
+        "domain": "skill-check",
+        "key": "RollOption",
+        "option": "compass-in-possession"
+      }
+    ],
+    "slug": "warren-navigator",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "ratfolk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.9Orkgjgfx8AILuqD"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.9Orkgjgfx8AILuqD",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9Orkgjgfx8AILuqD"
+}

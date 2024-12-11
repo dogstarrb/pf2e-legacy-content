@@ -1,0 +1,76 @@
+{
+  "_id": "WWSwcvIjGUQOKKuD",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Taste Blood",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You retain not only your vampiric parent's taste for blood but their ability to gain vitality from it. You drink fresh blood from a living humanoid creature, gaining temporary Hit Points equal to the target's level that last for 10 minutes. The target must succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against the higher of your class or spell DC or become @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}. Regardless of the outcome of this save, the target is temporarily immune to your Taste Blood for 1 day; further uses of this ability against the target don't increase the drained condition or grant you more temporary Hit Points.</p>\n<p>To drink a creature's blood, either your last action must have been a fangs Strike that damaged the target, or the target must be @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and your last action must have been a Strike that dealt piercing or slashing damage to them. If the target is willing, they don't need to be restrained or unconscious for the latter.</p>\n<p>Draining the life force from an unwilling humanoid creature is a greater violation than just drinking their blood. Taste Blood has the evil trait unless the target is willing or is an active foe in combat.</p>"
+    },
+    "rules": [],
+    "slug": "taste-blood",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "dhampir",
+        "void"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Cel Rau, Straveika, Svetocher, or another lineage from a vampire with the Drink Blood ability"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.WWSwcvIjGUQOKKuD"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.WWSwcvIjGUQOKKuD",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WWSwcvIjGUQOKKuD"
+}

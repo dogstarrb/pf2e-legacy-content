@@ -1,0 +1,87 @@
+{
+  "_id": "sILRkGTwoBywy0BU",
+  "img": "systems/pf2e/icons/spells/gaseous-form.webp",
+  "name": "Spell Effect: Gaseous Form",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e-legacy-content.spells-legacy.Item.V8wXOsoejQhe6CyG]{Gaseous Form}</em></p>\n<p>The target gains resistance 8 to physical damage and is immune to precision damage. The target also gains a fly Speed of 10 feet.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "physical",
+        "value": 8
+      },
+      {
+        "key": "Immunity",
+        "type": "precision"
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": 10
+      }
+    ],
+    "slug": "spell-effect-vapor-form",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Pathfinder",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": 5,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.sILRkGTwoBywy0BU"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 39800000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.sILRkGTwoBywy0BU",
+    "duplicateSource": null
+  },
+  "_key": "!items!sILRkGTwoBywy0BU"
+}

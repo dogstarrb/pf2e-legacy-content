@@ -1,0 +1,101 @@
+{
+  "_id": "bX2WI5k0afqPpCfm",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Ubiquitous Snares",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can prepare a seemingly impossible number of snares in advance, and you're ready to spring them on unsuspecting foes. Double the number of prepared snares from Snare Specialist.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.crafting.entries.snareCrafting.maxSlots",
+        "phase": "beforeDerived",
+        "value": {
+          "brackets": [
+            {
+              "end": 2,
+              "start": 1,
+              "value": 4
+            },
+            {
+              "end": 3,
+              "start": 3,
+              "value": 6
+            },
+            {
+              "start": 4,
+              "value": 8
+            }
+          ],
+          "field": "actor|system.skills.crafting.rank"
+        }
+      }
+    ],
+    "slug": "ubiquitous-snares",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "ranger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Snare Specialist"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.bX2WI5k0afqPpCfm"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.bX2WI5k0afqPpCfm",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bX2WI5k0afqPpCfm"
+}

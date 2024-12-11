@@ -1,0 +1,120 @@
+{
+  "_id": "BV5jpSifVJsTwoO7",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Wilderness Spotter",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Select one type of terrain from the following list: aquatic, arctic, desert, forest, mountain, plains, sky, swamp, or underground. You can use Survival in place of Perception to roll initiative when in the selected terrain in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter. You can also use Survival instead of Perception to notice traps in natural locations in the chosen terrain; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Terrain.Aquatic",
+            "value": "aquatic"
+          },
+          {
+            "label": "PF2E.Terrain.Arctic",
+            "value": "arctic"
+          },
+          {
+            "label": "PF2E.Terrain.Desert",
+            "value": "desert"
+          },
+          {
+            "label": "PF2E.Terrain.Forest",
+            "value": "forest"
+          },
+          {
+            "label": "PF2E.Terrain.Mountain",
+            "value": "mountain"
+          },
+          {
+            "label": "PF2E.Terrain.Plains",
+            "value": "plain"
+          },
+          {
+            "label": "PF2E.Terrain.Sky",
+            "value": "sky"
+          },
+          {
+            "label": "PF2E.Terrain.Swamp",
+            "value": "swamp"
+          },
+          {
+            "label": "PF2E.Terrain.Underground",
+            "value": "underground"
+          }
+        ],
+        "flag": "terrain",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.TerrainExpertise.Prompt"
+      }
+    ],
+    "slug": "wilderness-spotter",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Adventure: The Fall of Plaguestone",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Survival"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.BV5jpSifVJsTwoO7"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.BV5jpSifVJsTwoO7",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BV5jpSifVJsTwoO7"
+}

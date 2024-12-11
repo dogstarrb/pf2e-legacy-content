@@ -1,0 +1,112 @@
+{
+  "_id": "fqVYXvfhHIclVnu2",
+  "img": "icons/sundries/gaming/playing-cards-grey.webp",
+  "name": "The Marriage",
+  "system": {
+    "description": {
+      "gm": "<p><strong>Epitome</strong> When you epitomize <em>The Marriage</em>, a chapel appears in the village surrounding Harrowheart, run by a pleasant priest who pays homage to all of the faiths the PCs follow. The priest knows the <em>@UUID[Compendium.pf2e.spells-srd.Item.7Fd4lxozd11MQ55N]{Atone}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.dZV8nZUKRhGIr6g9]{Heartbond}</em> rituals, and can teach them to the PCs. Skill checks attempted at the chapel to perform either of these rituals gain a +2 item bonus.</p>",
+      "value": "<p><strong>Suit</strong> Crowns (Cha)</p>\n<p><strong>Alignment</strong> lawful neutral</p>\n<hr />\n<p><em>The Marriage</em> symbolizes a union of body, mind, spirit, or any of the three. When <em>The Marriage</em> is invested, you gain a +2 item bonus to attempts made to @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Request}. This increases to a +3 item bonus at 17th level.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Choose one adjacent willing creature. By brushing <em>The Marriage</em> against their body, you form a magical bond with that creature that persists until you activate <em>The Marriage</em> again to form a bond with a different creature. While the bond persists, you and the other creature can communicate via telepathy to a distance of 120 feet. As long as you and the target are on the same plane of existence and are both alive, you each remain aware of the other's state—you know the other's direction from you, distance from you, and any conditions affecting them. If your bonded target becomes @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled}, @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned}, you can use a reaction to attempt to counter the condition affecting the target, which also ends the bond between you and the target. The modifier on this counter check is equal to your class DC – 10. If you fail to counter the condition, that condition also afflicts you, and the bond with the other still ends.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:request"
+        ],
+        "selector": "diplomacy",
+        "type": "item",
+        "value": "ternary(gte(@actor.level,17),3,2)"
+      }
+    ],
+    "slug": "the-marriage",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "artifact",
+        "harrow-court",
+        "invested",
+        "magical"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder #191: The Destiny War",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "carried"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.fqVYXvfhHIclVnu2"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.fqVYXvfhHIclVnu2",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fqVYXvfhHIclVnu2"
+}

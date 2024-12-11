@@ -1,0 +1,118 @@
+{
+  "_id": "Ub1GoxOzuTR1l1r4",
+  "img": "systems/pf2e/icons/equipment/adventuring-gear/hourglass.webp",
+  "name": "Redsand Hourglass",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This platinum hourglass is filled with red sand, is decorated with imagery of roses and whippoorwills with tiny black onyx eyes, and has the ability to manipulate time. Once used by Pharasma herself, the <em>Redsand Hourglass</em> was stolen from Pharasma's court a millennia ago. While the hourglass is in your possession, you're immune to the @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed}, and @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned} conditions.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> Interact (divine, fortune, transmutation)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail a saving throw</p>\n<hr />\n<p><strong>Effect</strong> You flip the hourglass upside down then immediately right it again, rewinding time by a few moments. Reroll the saving throw with a +4 circumstance bonus. You must use the results of this new saving throw.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (divine, transmutation)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You flip the hourglass upside down, unhinging you from the flow of time. You become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. You can use this extra action only to Step, Stride, or Sustain a Spell.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> Interact (divine, transmutation)</p>\n<p><strong>Frequency</strong> once per week</p>\n<hr />\n<p><strong>Effect</strong> You flip the hourglass sideways, pausing time for everyone but yourself. You cast <em>@UUID[Compendium.pf2e.spells-srd.Item.1dsahW4g1ggXtypx]{Time Stop}</em>.</p>\n<p><strong>Destruction</strong> The <em>Redsand Hourglass</em> is destroyed if it's used within the Dimension of Time.</p>"
+    },
+    "rules": [
+      {
+        "key": "Immunity",
+        "type": [
+          "paralyzed",
+          "slowed",
+          "stunned"
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "redsand-hourglass"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 4
+      }
+    ],
+    "slug": "redsand-hourglass",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "artifact",
+        "divine"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder #186: Ghost King's Rage",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 23
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.Ub1GoxOzuTR1l1r4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.Ub1GoxOzuTR1l1r4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Ub1GoxOzuTR1l1r4"
+}

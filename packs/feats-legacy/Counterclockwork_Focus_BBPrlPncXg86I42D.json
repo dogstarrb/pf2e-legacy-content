@@ -1,0 +1,112 @@
+{
+  "_id": "BBPrlPncXg86I42D",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Counterclockwork Focus",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p>You understand the need for law enforcement doctrine to adapt to the ever-changing innovations in technology and arcana. Your training in special weapons and tactics give you access to unusual techniques to respond to clockwork- and magic-related crimes. You apply special additives to a loaded firearm. On your next Strike with that firearm before the end of your turn, you deal an additional 2d6 damage if the target is a construct, and you can treat the ammunition as your choice of cold iron or adamantine. At 18th level, this additional damage increases to 3d6, and you can choose to instead treat the ammunition as orichalcum.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "counterclockwork",
+        "toggleable": true
+      },
+      {
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "predicate": [
+          "target:trait:construct",
+          "counterclockwork"
+        ],
+        "selector": "strike-damage",
+        "value": {
+          "brackets": [
+            {
+              "end": 17,
+              "value": {
+                "diceNumber": 2
+              }
+            },
+            {
+              "start": 18,
+              "value": {
+                "diceNumber": 3
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "counterclockwork-focus",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Shieldmarshal Dedication"
+        }
+      ]
+    },
+    "location": null,
+    "frequency": {
+      "max": 1,
+      "per": "round",
+      "value": 1
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.BBPrlPncXg86I42D"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.BBPrlPncXg86I42D",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BBPrlPncXg86I42D"
+}

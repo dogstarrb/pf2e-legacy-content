@@ -1,0 +1,149 @@
+{
+  "_id": "5fPfP74t4NYnRnnc",
+  "img": "icons/sundries/gaming/playing-cards-black.webp",
+  "name": "Effect: Deck of Destiny",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Choose either weal or woe. With weal (a fortune effect), the triggering creature rolls twice and takes the better result on their check. With woe (a misfortune effect), the triggering creature is forced to roll twice and take the worse result. If the card you drew is related to the check, such as drawing a card from the suit of shields for a Fortitude saving throw or a card from the suit of crowns for a Deception check, the creature is affected further. When choosing weal, the creature gains a +4 circumstance bonus to the triggering check. When faced with woe, the triggering creature takes a –4 circumstance penalty to the triggering check</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.SpecificRule.Elf.BrightnessSeeker.Weal",
+            "value": "weal"
+          },
+          {
+            "label": "PF2E.SpecificRule.Elf.BrightnessSeeker.Woe",
+            "value": "woe"
+          }
+        ],
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Equipment.DeckOfDestiny.WealOrWoePrompt",
+        "rollOption": "deck-of-destiny"
+      },
+      {
+        "choices": [
+          {
+            "label": "UI.RuleElements.ChoiceSet.YesLabel",
+            "value": "matching-suit"
+          },
+          {
+            "label": "UI.RuleElements.ChoiceSet.NoLabel",
+            "value": "non-matching-suit"
+          }
+        ],
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Equipment.DeckOfDestiny.MatchingSuitPrompt",
+        "rollOption": "deck-of-destiny"
+      },
+      {
+        "keep": "higher",
+        "key": "RollTwice",
+        "predicate": [
+          "deck-of-destiny:weal"
+        ],
+        "selector": "all"
+      },
+      {
+        "keep": "lower",
+        "key": "RollTwice",
+        "predicate": [
+          "deck-of-destiny:woe"
+        ],
+        "selector": "all"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "deck-of-destiny:weal",
+          "deck-of-destiny:matching-suit"
+        ],
+        "selector": [
+          "skill-check",
+          "saving-throw",
+          "attack",
+          "perception"
+        ],
+        "slug": "deck-of-destiny-weal",
+        "type": "circumstance",
+        "value": 4
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "deck-of-destiny:woe",
+          "deck-of-destiny:matching-suit"
+        ],
+        "selector": [
+          "skill-check",
+          "saving-throw",
+          "attack",
+          "perception"
+        ],
+        "slug": "deck-of-destiny-woe",
+        "type": "circumstance",
+        "value": -4
+      }
+    ],
+    "slug": "effect-deck-of-destiny",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #192: Worst of All Possible Worlds",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 25
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.5fPfP74t4NYnRnnc"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.5fPfP74t4NYnRnnc",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5fPfP74t4NYnRnnc"
+}

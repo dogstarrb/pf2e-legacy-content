@@ -1,0 +1,90 @@
+{
+  "_id": "n2hawNmzW7DBn1Lm",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Mountain Stronghold",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.Item.ZL5UU9quCTvcWzfY]{Mountain Stance}</p>\n<hr />\n<p>You focus on your connection to the earth and call upon the mountain to block attacks against you. You gain a +2 circumstance bonus to AC until the beginning of your next turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.EfMaI6AnROP4X9lN]{Effect: Mountain Stronghold}</p>\n<hr />\n<p><strong>Special</strong> If you have this feat, the Dexterity modifier cap to your AC while you're in @UUID[Compendium.pf2e.feats-srd.Item.ZL5UU9quCTvcWzfY]{Mountain Stance} increases from +0 to +1.</p>"
+    },
+    "rules": [
+      {
+        "key": "DexterityModifierCap",
+        "predicate": [
+          "self:effect:mountain-stance",
+          {
+            "not": "feat:mountain-quake"
+          }
+        ],
+        "value": 1
+      }
+    ],
+    "slug": "mountain-stronghold",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Mountain Stance"
+        }
+      ]
+    },
+    "location": null,
+    "selfEffect": {
+      "name": "Effect: Mountain Stronghold",
+      "uuid": "Compendium.pf2e.feat-effects.Item.EfMaI6AnROP4X9lN"
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.n2hawNmzW7DBn1Lm"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.n2hawNmzW7DBn1Lm",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!n2hawNmzW7DBn1Lm"
+}

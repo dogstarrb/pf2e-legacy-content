@@ -1,0 +1,109 @@
+{
+  "_id": "NBHyoTrI8q62uDsU",
+  "img": "icons/creatures/invertebrates/spider-web-black.webp",
+  "name": "Outwit",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You are talented at outwitting and evading your prey. You gain a +2 circumstance bonus to Deception checks, Intimidation checks, Stealth checks, and any checks to Recall Knowledge about the prey, and a +1 circumstance bonus to AC against your prey's attacks.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Vs. hunted prey",
+        "predicate": [
+          "hunted-prey"
+        ],
+        "selector": [
+          "deception",
+          "intimidation",
+          "stealth"
+        ],
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Recall knowledge on hunted prey",
+        "predicate": [
+          "action:recall-knowledge",
+          "hunted-prey"
+        ],
+        "selector": "skill-check",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Vs. attacks from hunted prey",
+        "predicate": [
+          "hunted-prey"
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "outwit",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "ranger-hunters-edge"
+      ],
+      "value": [
+        "ranger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.NBHyoTrI8q62uDsU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.NBHyoTrI8q62uDsU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!NBHyoTrI8q62uDsU"
+}

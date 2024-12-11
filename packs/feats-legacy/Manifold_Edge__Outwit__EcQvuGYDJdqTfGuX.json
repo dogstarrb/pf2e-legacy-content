@@ -1,0 +1,114 @@
+{
+  "_id": "EcQvuGYDJdqTfGuX",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Manifold Edge (Outwit)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've learned every possible edge to use against your foes.</p>\n<p>When you use @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]{Hunt Prey} you can gain a different hunter's edge benefit instead of the one you selected at 1st level.</p>\n<p>This feat grants @UUID[Compendium.pf2e.classfeatures.Item.NBHyoTrI8q62uDsU]{Outwit}.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Vs. hunted prey",
+        "predicate": [
+          "hunted-prey"
+        ],
+        "selector": [
+          "deception",
+          "intimidation",
+          "stealth"
+        ],
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Recall knowledge on hunted prey",
+        "predicate": [
+          "action:recall-knowledge",
+          "hunted-prey"
+        ],
+        "selector": "skill-check",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Vs. attacks from hunted prey",
+        "predicate": [
+          "hunted-prey"
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "manifold-edge-outwit",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "ranger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "hunter's edge"
+        },
+        {
+          "value": "masterful hunter"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.EcQvuGYDJdqTfGuX"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.EcQvuGYDJdqTfGuX",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!EcQvuGYDJdqTfGuX"
+}

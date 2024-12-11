@@ -1,0 +1,71 @@
+{
+  "_id": "ywNXVLZtwrAStyh1",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Elusive Vishkanya",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your flexible body seems unnaturally fluid to some, though they can rarely put a finger on what seems strange about you. You can escape foes with ease. You gain a +1 circumstance bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}. Additionally, you move twice as fast when Squeezing.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:escape"
+        ],
+        "selector": [
+          "athletics",
+          "acrobatics"
+        ],
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "elusive-vishkanya",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Vishkanya",
+      "slug": "vishkanya",
+      "uuid": "Compendium.pf2e.ancestries.Item.u1VJEXsVlmh3Fyx0"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.ywNXVLZtwrAStyh1"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.ywNXVLZtwrAStyh1",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ywNXVLZtwrAStyh1"
+}

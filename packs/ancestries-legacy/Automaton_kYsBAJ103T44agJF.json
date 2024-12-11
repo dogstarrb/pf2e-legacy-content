@@ -1,0 +1,153 @@
+{
+  "_id": "kYsBAJ103T44agJF",
+  "img": "systems/pf2e/icons/default-icons/alternatives/ancestries/automaton.svg",
+  "name": "Automaton",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><em>These intelligent constructs house actual souls and represent what remains of a dying empire's last attempt at greatness. Automatons combine technological ingenuity with magical power, creating a blended being wholly unique to Golarion.</em></p>\n<p>@UUID[Compendium.pf2e.journals.JournalEntry.45SK8rdbbxvEHfMn.JournalEntryPage.rsx8cRI20oEDgfQh]{Automaton}</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.ActorSizeMedium",
+            "value": "medium"
+          },
+          {
+            "label": "PF2E.ActorSizeSmall",
+            "value": "small"
+          }
+        ],
+        "flag": "size",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.CreatureSize"
+      },
+      {
+        "key": "CreatureSize",
+        "value": "{item|flags.pf2e.rulesSelections.size}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.automaton.enhancements",
+        "priority": 10,
+        "value": {
+          "greater": [],
+          "lesser": []
+        }
+      }
+    ],
+    "slug": "automaton",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "automaton",
+        "construct"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "hp": 8,
+    "size": "med",
+    "reach": 5,
+    "speed": 25,
+    "boosts": {
+      "0": {
+        "value": [
+          "str"
+        ]
+      },
+      "1": {
+        "value": []
+      },
+      "2": {
+        "value": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    },
+    "flaws": {
+      "0": {
+        "value": []
+      }
+    },
+    "languages": {
+      "value": [
+        "common",
+        "utopian"
+      ],
+      "custom": ""
+    },
+    "additionalLanguages": {
+      "count": 0,
+      "value": [
+        "chthonian",
+        "empyrean",
+        "dwarven",
+        "elven",
+        "diabolic",
+        "jistkan",
+        "petran",
+        "pyric",
+        "sussuran",
+        "thalassic"
+      ],
+      "custom": ""
+    },
+    "items": {
+      "l0mdk": {
+        "img": "systems/pf2e/icons/default-icons/feat.svg",
+        "level": 1,
+        "name": "Constructed Body",
+        "uuid": "Compendium.pf2e.ancestryfeatures.Item.E28a45fUC2OkXZXY"
+      },
+      "l6cpr": {
+        "img": "systems/pf2e/icons/default-icons/feat.svg",
+        "level": 1,
+        "name": "Automaton Core",
+        "uuid": "Compendium.pf2e.ancestryfeatures.Item.RYrY7o0i6s7KW9io"
+      }
+    },
+    "vision": "low-light-vision"
+  },
+  "type": "ancestry",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.ancestries.Item.kYsBAJ103T44agJF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.ancestries-legacy.Item.kYsBAJ103T44agJF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!kYsBAJ103T44agJF"
+}

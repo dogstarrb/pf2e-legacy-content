@@ -1,0 +1,77 @@
+{
+  "_id": "LMXxICrByo7XZ3Q3",
+  "img": "systems/pf2e/icons/spells/downpour.webp",
+  "name": "Spell Effect: Downpour",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.K4LXpaBWrGy6jIER]{Downpour}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "fire",
+        "value": "2 + 2*@item.level"
+      }
+    ],
+    "slug": "spell-effect-downpour",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.LMXxICrByo7XZ3Q3"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 16700000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.LMXxICrByo7XZ3Q3",
+    "duplicateSource": null
+  },
+  "_key": "!items!LMXxICrByo7XZ3Q3"
+}

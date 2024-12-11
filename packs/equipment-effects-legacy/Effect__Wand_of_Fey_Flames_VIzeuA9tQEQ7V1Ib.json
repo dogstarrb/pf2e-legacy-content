@@ -1,0 +1,86 @@
+{
+  "_id": "VIzeuA9tQEQ7V1Ib",
+  "img": "systems/pf2e/icons/equipment/wands/specialty-wands/wand-of-fey-flames-effect.webp",
+  "name": "Effect: Wand of Fey Flames",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>For the duration of the spell, you can use the limning flames as a source for your magic. Creatures affected by your <em>faerie fire</em> must succeed at a Will save against your spell DC or take a -2 status penalty to their Will saves against enchantment and illusions spells as long as they are affected by <em>faerie fire</em>. You can cast an enchantment or illusion spell on such a creature up to a distance twice the spell's normal range. If the spell has a range of touch, or doesn't have a range, it is unaffected by the increase in range from the <em>faerie fire</em>.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "enchantment",
+              "illusion"
+            ]
+          }
+        ],
+        "selector": "will",
+        "type": "status",
+        "value": -2
+      }
+    ],
+    "slug": "effect-wand-of-fey-flames",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "duration": {
+      "value": 5,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.VIzeuA9tQEQ7V1Ib"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.VIzeuA9tQEQ7V1Ib",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VIzeuA9tQEQ7V1Ib"
+}

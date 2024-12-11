@@ -1,0 +1,81 @@
+{
+  "_id": "YIXeQFdrt0vPvmsW",
+  "img": "icons/creatures/abilities/tail-swipe-green.webp",
+  "name": "Effect: Snake Form",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The bunyip's tail Strike gains reach 10 and @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab}, but it's Jaws Strike looses the persistent bleed damage.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "selector": "tail-attack",
+        "text": "<p>@Localize[PF2E.AttackEffects.IncreasedReach5]</p><hr /><p><strong><span class='pf2-icon'>1</span> @Localize[PF2E.AttackEffectGrab]</strong> ({item|name})</p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
+      }
+    ],
+    "slug": "effect-snake-form",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.YIXeQFdrt0vPvmsW"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.YIXeQFdrt0vPvmsW",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!YIXeQFdrt0vPvmsW"
+}

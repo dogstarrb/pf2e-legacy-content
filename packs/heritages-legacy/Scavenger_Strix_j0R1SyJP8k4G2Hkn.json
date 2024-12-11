@@ -1,0 +1,78 @@
+{
+  "_id": "j0R1SyJP8k4G2Hkn",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Scavenger Strix",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your ancestors originated from a land where food was scarce and threats were many. You are trained in Survival. You gain the @UUID[Compendium.pf2e.feats-srd.Item.8qebBeOJsyRIchcu]{Forager} skill feat as a bonus feat. Your thoroughness when gathering food provides you a +1 circumstance bonus to Survival checks to Subsist.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.survival.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.8qebBeOJsyRIchcu"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:subsist"
+        ],
+        "selector": "survival",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "scavenger-strix",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Strix",
+      "slug": "strix",
+      "uuid": "Compendium.pf2e.ancestries.Item.GXcC6oVa5quzgNHD"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.j0R1SyJP8k4G2Hkn"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.j0R1SyJP8k4G2Hkn",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!j0R1SyJP8k4G2Hkn"
+}

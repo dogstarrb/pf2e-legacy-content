@@ -1,0 +1,99 @@
+{
+  "_id": "ihN8gkHSdPG9Trte",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Adopted Ancestry",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You're fully immersed in another ancestry's culture and traditions, whether born into them, earned through rite of passage, or bonded through a deep friendship or romance. Choose a common ancestry. You can select ancestry feats from the ancestry you chose, in addition to your character's own ancestry, as long as the ancestry feats don't require any physiological feature that you lack, as determined by the GM.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "filter": [
+            "item:rarity:common",
+            {
+              "not": "item:slug:{actor|system.details.ancestry.trait}"
+            }
+          ],
+          "itemType": "ancestry",
+          "slugsAsValues": true
+        },
+        "flag": "ancestry",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.AdoptedAncestry.Prompt"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.details.ancestry.adopted",
+        "value": "{item|flags.pf2e.rulesSelections.ancestry}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.details.ancestry.countsAs",
+        "value": "{item|flags.pf2e.rulesSelections.ancestry}"
+      }
+    ],
+    "slug": "adopted-ancestry",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "general",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ihN8gkHSdPG9Trte"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ihN8gkHSdPG9Trte",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ihN8gkHSdPG9Trte"
+}

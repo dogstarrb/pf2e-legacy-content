@@ -1,0 +1,113 @@
+{
+  "_id": "qGWORxQ0aSsH2taf",
+  "img": "systems/pf2e/icons/spells/agitate.webp",
+  "name": "Suffocate",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You forcefully and cruelly draw the living breath from a creature's lungs, dealing 4d8 bludgeoning damage. The creature must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage. For the duration, the creature must hold its breath or suffocate.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, and all the air is pulled from the creature's lungs. The creature falls @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} and starts suffocating for the duration.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can target up to 5 creatures.</p>"
+    },
+    "rules": [],
+    "slug": "suffocate",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "incapacitation",
+        "manipulate",
+        "nonlethal"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder #186: Ghost King's Rage",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 living creature that needs to breathe"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": true
+    },
+    "damage": {
+      "S01QYJk4ki5zDbr9": {
+        "applyMod": false,
+        "formula": "4d8",
+        "type": "bludgeoning",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "9": {
+          "target": {
+            "value": "up to 5 creatures"
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.qGWORxQ0aSsH2taf"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.qGWORxQ0aSsH2taf",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!qGWORxQ0aSsH2taf"
+}

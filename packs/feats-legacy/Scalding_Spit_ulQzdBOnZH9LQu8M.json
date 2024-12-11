@@ -1,0 +1,99 @@
+{
+  "_id": "ulQzdBOnZH9LQu8M",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Scalding Spit",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your bodily fluids burn with surprising volatility, as if you ran on oil instead of blood. As long as you are taking @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, you gain a boiling spit ranged unarmed attack with a range of 30 feet that deals @Damage[1d6[fire]] damage.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "fire",
+            "dice": 1,
+            "die": "d6"
+          }
+        },
+        "img": "systems/pf2e/icons/unarmed-attacks/fire-mote.webp",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Goblin.ScaldingSpit.BoilingSpit",
+        "predicate": [
+          "self:condition:persistent-damage:fire"
+        ],
+        "range": {
+          "max": 30
+        },
+        "slug": "boiling-spit",
+        "traits": [
+          "unarmed"
+        ]
+      }
+    ],
+    "slug": "scalding-spit",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "goblin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Torch Goblin"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ulQzdBOnZH9LQu8M"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ulQzdBOnZH9LQu8M",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ulQzdBOnZH9LQu8M"
+}

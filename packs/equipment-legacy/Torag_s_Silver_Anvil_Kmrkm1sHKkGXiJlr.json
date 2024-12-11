@@ -1,0 +1,170 @@
+{
+  "_id": "Kmrkm1sHKkGXiJlr",
+  "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/torags-silver-anvil.webp",
+  "name": "Torag's Silver Anvil",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This portable silver anvil has a narrow hoop on one end, through which a long, sturdy chain has been strung. Torag's Silver Anvil can be wielded as a +3 @UUID[Compendium.pf2e.equipment-srd.Item.DH0kB9Wbr5pDeunX]{Holy} @UUID[Compendium.pf2e.equipment-srd.Item.RSZwUlCzUX7Nb4UA]{Greater Flaming} greater striking silver meteor hammer.</p>\n<p>Outside of combat, the anvil can be used with a hammer as an incredibly effective portable forge, heating up the metal to be forged without a furnace and granting a +3 item bonus to Crafting checks involving metalworking.</p>\n<p>When you use the anvil to successfully Repair a metal item, the item recovers an additional 10 Hit Points (or an additional 20 on a critical success).</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Torag's Silver Anvil (metalworking)",
+        "predicate": [
+          "metalworking"
+        ],
+        "selector": "crafting",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "torags-silver-anvil",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "backswing",
+        "disarm",
+        "divine",
+        "magical",
+        "reach",
+        "trip"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Gods & Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "quantity": 1,
+    "baseItem": "meteor-hammer",
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 24000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": "silver",
+      "grade": "high"
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "category": "martial",
+    "group": "flail",
+    "bonus": {
+      "value": 3
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d8",
+      "damageType": "bludgeoning",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": null
+    },
+    "range": null,
+    "reload": {
+      "value": ""
+    },
+    "runes": {
+      "potency": 3,
+      "striking": 2,
+      "property": [
+        "holy",
+        "greaterFlaming"
+      ]
+    },
+    "specific": {
+      "material": {
+        "type": "silver",
+        "grade": "high"
+      },
+      "runes": {
+        "potency": 3,
+        "striking": 2,
+        "property": [
+          "holy",
+          "greaterFlaming"
+        ]
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.Kmrkm1sHKkGXiJlr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.Kmrkm1sHKkGXiJlr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Kmrkm1sHKkGXiJlr"
+}

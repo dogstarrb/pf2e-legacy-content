@@ -1,0 +1,145 @@
+{
+  "_id": "yEfHCwsbsbP6K13Q",
+  "img": "icons/equipment/shoulder/pauldron-segmented-steel-worn.webp",
+  "name": "Heavy Construction",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've expanded your innovation into a heavy bulwark, and your groundbreaking design ensures you don't take any of the drawbacks for such heavy defenses. Your innovation becomes heavy armor, and your proficiency in your innovation armor (but no other heavy armor) advances to be equal to your proficiency in medium armor. If your Strength modifier is at least +4, you remove the Speed penalty entirely instead of reducing it to –5 feet.</p>\n<p>The armor's adjusted statistics are: AC Bonus +5; Dex Cap +1; Check Penalty –2; Speed Penalty –10 feet; Strength 16; Bulk 3; Group composite; Armor Traits bulwark.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:id:{actor|flags.pf2e.innovationId}"
+        ],
+        "key": "MartialProficiency",
+        "kind": "defense",
+        "label": "PF2E.Item.Armor.Base.power-suit",
+        "sameAs": "medium"
+      },
+      {
+        "itemId": "{actor|flags.pf2e.innovationId}",
+        "itemType": "armor",
+        "key": "ItemAlteration",
+        "mode": "override",
+        "property": "category",
+        "value": "heavy"
+      },
+      {
+        "itemId": "{actor|flags.pf2e.innovationId}",
+        "itemType": "armor",
+        "key": "ItemAlteration",
+        "mode": "override",
+        "property": "ac-bonus",
+        "value": 5
+      },
+      {
+        "itemId": "{actor|flags.pf2e.innovationId}",
+        "itemType": "armor",
+        "key": "ItemAlteration",
+        "mode": "override",
+        "predicate": [
+          {
+            "lt": [
+              "attribute:str:mod",
+              4
+            ]
+          }
+        ],
+        "property": "speed-penalty",
+        "value": -10
+      },
+      {
+        "itemId": "{actor|flags.pf2e.innovationId}",
+        "itemType": "armor",
+        "key": "ItemAlteration",
+        "mode": "override",
+        "property": "strength",
+        "value": 4
+      },
+      {
+        "itemId": "{actor|flags.pf2e.innovationId}",
+        "itemType": "armor",
+        "key": "ItemAlteration",
+        "mode": "add",
+        "property": "traits",
+        "value": "bulwark"
+      },
+      {
+        "itemId": "{actor|flags.pf2e.innovationId}",
+        "itemType": "armor",
+        "key": "ItemAlteration",
+        "mode": "override",
+        "property": "bulk-held-or-stowed",
+        "value": 4
+      },
+      {
+        "itemId": "{actor|flags.pf2e.innovationId}",
+        "itemType": "armor",
+        "key": "ItemAlteration",
+        "mode": "override",
+        "property": "bulk",
+        "value": 3
+      }
+    ],
+    "slug": "heavy-construction",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "inventor"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.yEfHCwsbsbP6K13Q"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.yEfHCwsbsbP6K13Q",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!yEfHCwsbsbP6K13Q"
+}

@@ -1,0 +1,81 @@
+{
+  "_id": "xiG3kmPJBpX2KA7l",
+  "img": "systems/pf2e/icons/equipment/consumables/oils/shielding-salve.webp",
+  "name": "Effect: Oil of Corpse Restoration",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The dead creature gains a +2 circumstance bonus on Deception checks to look like a living creature.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:disguise",
+          "disguise-as-living"
+        ],
+        "selector": "deception",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "effect-oil-of-corpse-restoration",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #189: Dreamers of the Nameless Spires",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.xiG3kmPJBpX2KA7l"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.xiG3kmPJBpX2KA7l",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xiG3kmPJBpX2KA7l"
+}

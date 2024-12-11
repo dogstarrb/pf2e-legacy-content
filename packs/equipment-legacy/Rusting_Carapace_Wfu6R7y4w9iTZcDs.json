@@ -1,0 +1,132 @@
+{
+  "_id": "Wfu6R7y4w9iTZcDs",
+  "img": "icons/equipment/chest/breastplate-scale-leather.webp",
+  "name": "Rusting Carapace",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This <em>+1 leather lamellar</em> armor incorporates the plates of a rust monster's hide, woven together with the creature's own antennae and sinew into a functional set of armor. While wearing the <em>rusting carapace</em>, you gain a +2 item bonus to your Reflex save to prevent an object you're holding from being affected by rust; this also increases your Reflex DC to avoid being Disarmed by a rust monster's Antenna @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} ability.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> Feathery antennae extend from between the segments of the rusting hide and brush against a nearby metal creature, non-magical metal hazard, or non-magical metal item of up to 1 Bulk, with the effects of <em>@UUID[Compendium.pf2e.spells-srd.Item.0fYE64odlKqISzft]{Rusting Grasp}</em> @Check[type:fortitude|dc:24|basic:true|traits:transmutation,primal].</p>\n<hr />\n<p><strong>Craft Requirements</strong> The initial raw materials must include the hide of a rust monster.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:antenna-disarm"
+        ],
+        "selector": "reflex",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "rusting-carapace",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "laminar"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "quantity": 1,
+    "baseItem": "leather-lamellar",
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 476
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "light",
+    "group": "composite",
+    "acBonus": 1,
+    "strength": 0,
+    "dexCap": 4,
+    "checkPenalty": -1,
+    "speedPenalty": 0,
+    "runes": {
+      "potency": 1,
+      "resilient": 0,
+      "property": []
+    },
+    "subitems": [],
+    "specific": {
+      "material": {
+        "grade": null,
+        "type": null
+      },
+      "runes": {
+        "potency": 1,
+        "resilient": 0,
+        "property": []
+      }
+    }
+  },
+  "type": "armor",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.Wfu6R7y4w9iTZcDs"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.Wfu6R7y4w9iTZcDs",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Wfu6R7y4w9iTZcDs"
+}

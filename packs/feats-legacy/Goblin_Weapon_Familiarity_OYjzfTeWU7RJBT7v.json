@@ -1,0 +1,107 @@
+{
+  "_id": "OYjzfTeWU7RJBT7v",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Goblin Weapon Familiarity",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Others might look upon them with disdain, but you know that the weapons of your people are as effective as they are sharp. You are trained with the @UUID[Compendium.pf2e.equipment-srd.Item.olwngGXM3hpgoLEP]{Dogslicer} and @UUID[Compendium.pf2e.equipment-srd.Item.YnwEttFE1bJacLDh]{Horsechopper}.</p>\n<p>In addition, you gain access to all uncommon goblin weapons. For the purpose of determining your proficiency, martial goblin weapons are simple weapons and advanced goblin weapons are martial weapons.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-dogslicer.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-horsechopper.rank",
+        "value": 1
+      },
+      {
+        "definition": [
+          "item:trait:goblin",
+          "item:category:advanced"
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.AdvancedGoblinWeapons",
+        "sameAs": "martial",
+        "slug": "advanced-goblin-weapons"
+      },
+      {
+        "definition": [
+          "item:trait:goblin",
+          "item:category:martial",
+          {
+            "not": "item:category:advanced"
+          }
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.MartialGoblinWeapons",
+        "sameAs": "simple",
+        "slug": "martial-goblin-weapons"
+      }
+    ],
+    "slug": "goblin-weapon-familiarity",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "goblin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.OYjzfTeWU7RJBT7v"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.OYjzfTeWU7RJBT7v",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OYjzfTeWU7RJBT7v"
+}

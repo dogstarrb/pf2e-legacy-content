@@ -1,0 +1,114 @@
+{
+  "_id": "Zqs1VvRm5Oq7DwX0",
+  "img": "systems/pf2e/icons/spells/glimpse-weakness.webp",
+  "name": "Effect: Brass Dwarf Weakness",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain weakness equal to half your level to the previous energy type of <em>The Brass Dwarf</em>.</p>"
+    },
+    "rules": [
+      {
+        "alwaysActive": true,
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.HarrowCourt.BrassDwarf.WeaknessLabel",
+        "option": "brass-dwarf-weakness",
+        "suboptions": [
+          {
+            "label": "PF2E.TraitAcid",
+            "value": "acid"
+          },
+          {
+            "label": "PF2E.TraitCold",
+            "value": "cold"
+          },
+          {
+            "label": "PF2E.TraitElectricity",
+            "value": "electricity"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitMental",
+            "value": "mental"
+          },
+          {
+            "label": "PF2E.TraitPoison",
+            "value": "poison"
+          },
+          {
+            "label": "PF2E.TraitSonic",
+            "value": "sonic"
+          }
+        ],
+        "toggleable": true,
+        "value": true
+      },
+      {
+        "key": "Weakness",
+        "type": "{item|flags.pf2e.rulesSelections.brassDwarfWeakness}",
+        "value": "floor(@actor.level/2)"
+      }
+    ],
+    "slug": "effect-brass-dwarf-weakness",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #190: The Choosing",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.Zqs1VvRm5Oq7DwX0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.Zqs1VvRm5Oq7DwX0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Zqs1VvRm5Oq7DwX0"
+}

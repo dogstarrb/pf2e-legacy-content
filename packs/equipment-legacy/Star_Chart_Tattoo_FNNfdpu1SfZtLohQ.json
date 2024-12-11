@@ -1,0 +1,113 @@
+{
+  "_id": "FNNfdpu1SfZtLohQ",
+  "img": "icons/skills/trades/academics-astronomy-navigation-purple.webp",
+  "name": "Star Chart Tattoo",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This tattoo consists of numerous asterisks at regular intervals along the fingers of one hand, perfect for measuring stars against the horizon. When used against a clear night sky, the tattoo grants a +2 circumstance bonus to Survival checks to Sense Direction and counts as a compass for the purpose of that action.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact (divination, metamagic)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The dots of the tattoo turn to points of light and fly above the head of a creature within 30 feet, where they form a three-star constellation that guides your spells further than they could normally travel. The constellation sheds dim light and remains visible even if the creature hides, aiding in locating it. Furthermore, while the constellation lasts, if you @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} that has a range and that spell would affect only the marked creature, the spell's range is increased by 30 feet. As is standard for increasing spell ranges, if the spell normally has a range of touch, you extend its range to 30 feet. Each time you use this benefit, one of the stars above the creature's head winks out; when all three have winked out or after 1 minute has passed, the effect ends.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:sense-direction"
+        ],
+        "selector": "survival",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "star-chart-tattoo",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical",
+        "tattoo"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Monsters of Myth",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 900
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "tattooed-on-the-body"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.FNNfdpu1SfZtLohQ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.FNNfdpu1SfZtLohQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!FNNfdpu1SfZtLohQ"
+}

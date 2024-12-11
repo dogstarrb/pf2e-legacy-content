@@ -1,0 +1,78 @@
+{
+  "_id": "uHYQ0F7FzeMDNrAD",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Elemental Explosion",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You're raging, and you haven't used this ability since you last Raged.</p>\n<hr />\n<p>You unleash the energy roiling within you, exploding elemental matter in a @Template[type:emanation|distance:15]. Each creature in the area takes [[/r max(1, floor(@actor.level/2))d8]]{leveled damage}, with the same type you chose for elemental rage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]. Elemental Explosion gains the trait of your element.</p>"
+    },
+    "rules": [],
+    "slug": "elemental-explosion",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "barbarian",
+        "concentrate",
+        "primal",
+        "rage"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "elemental instinct"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.uHYQ0F7FzeMDNrAD"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.uHYQ0F7FzeMDNrAD",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uHYQ0F7FzeMDNrAD"
+}

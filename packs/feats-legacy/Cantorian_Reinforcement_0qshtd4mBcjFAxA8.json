@@ -1,0 +1,86 @@
+{
+  "_id": "0qshtd4mBcjFAxA8",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Cantorian Reinforcement",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The life energy that helped create the first hobgoblins is particularly potent in you, protecting you from ongoing maladies. When you succeed at a saving throw against a disease or poison, you reduce the stage by 2 (or 1 for a virulent disease or poison), and when you critically succeed, you reduce the stage by 3 (or 2 for a virulent disease or poison).</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          {
+            "or": [
+              "poison",
+              "disease"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "text": "PF2E.SpecificRule.Hobgoblin.CantorianReinforcement.Note",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "cantorian-reinforcement",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "hobgoblin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.0qshtd4mBcjFAxA8"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.0qshtd4mBcjFAxA8",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0qshtd4mBcjFAxA8"
+}

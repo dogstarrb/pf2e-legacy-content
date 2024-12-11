@@ -1,0 +1,108 @@
+{
+  "_id": "sJ7WTLDwAbIA9Elc",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Burn It!",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Fire fascinates you. Your spells and alchemical items that deal fire damage gain a status bonus to damage equal to half the spell's level or one-quarter the item's level (minimum 1). You also gain a +1 status bonus to any @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Fire Damage} you deal.</p>"
+    },
+    "rules": [
+      {
+        "damageType": "fire",
+        "key": "FlatModifier",
+        "predicate": [
+          "item:trait:alchemical"
+        ],
+        "selector": "strike-damage",
+        "slug": "burn-it-strike",
+        "type": "status",
+        "value": "max(floor(@weapon.level/4), 1)"
+      },
+      {
+        "damageType": "fire",
+        "key": "FlatModifier",
+        "selector": "spell-damage",
+        "slug": "burn-it-spell",
+        "type": "status",
+        "value": "max(floor(@spell.level/2), 1)"
+      },
+      {
+        "damageCategory": "persistent",
+        "damageType": "fire",
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "item:trait:alchemical",
+              "item:type:spell"
+            ]
+          }
+        ],
+        "selector": "damage",
+        "slug": "burn-it-persistent",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "burn-it",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "goblin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.sJ7WTLDwAbIA9Elc"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.sJ7WTLDwAbIA9Elc",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!sJ7WTLDwAbIA9Elc"
+}

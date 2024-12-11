@@ -1,0 +1,81 @@
+{
+  "_id": "U2Pgm6B4nmdQ2Gpd",
+  "img": "icons/magic/symbols/runes-star-pentagon-orange-purple.webp",
+  "name": "Effect: Holy Castigation",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Imposed by @UUID[Compendium.pf2e.feats-srd.Item.142QRyK2aPIrJu48]{Holy Castigation}</p>\n<p><em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em> spells you cast damage fiends as though they were undead.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.attributes.hp.negativeHealing",
+        "phase": "beforeDerived",
+        "predicate": [
+          "self:trait:fiend"
+        ],
+        "value": true
+      }
+    ],
+    "slug": "effect-holy-castigation",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.U2Pgm6B4nmdQ2Gpd"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.U2Pgm6B4nmdQ2Gpd",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!U2Pgm6B4nmdQ2Gpd"
+}

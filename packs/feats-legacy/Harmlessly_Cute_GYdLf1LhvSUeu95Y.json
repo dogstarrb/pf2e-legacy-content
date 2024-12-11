@@ -1,0 +1,85 @@
+{
+  "_id": "GYdLf1LhvSUeu95Y",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Harmlessly Cute",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your size and demeanor make it easy for you to convince others that you mean no harm. You gain the @UUID[Compendium.pf2e.feats-srd.Item.KIK2Eza9TK47MEb2]{Shameless Request} skill feat as a bonus feat. Additionally, you gain a +1 circumstance bonus to initiative checks when you roll Deception for initiative.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "deception"
+        ],
+        "selector": "initiative",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.KIK2Eza9TK47MEb2"
+      }
+    ],
+    "slug": "harmlessly-cute",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "leshy"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.GYdLf1LhvSUeu95Y"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.GYdLf1LhvSUeu95Y",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!GYdLf1LhvSUeu95Y"
+}

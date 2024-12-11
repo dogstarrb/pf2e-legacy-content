@@ -1,0 +1,120 @@
+{
+  "_id": "MjW8mZrCUw1lEhGP",
+  "img": "icons/commodities/stone/geode-raw-brown.webp",
+  "name": "Shard of the Third Seal",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This stone fragment from the Third Seal retains a tiny sliver of that legendary item's power. The shard sheds light constantly, with the effects of a torch requiring no oxygen and generating no heat. The flame can be covered or @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, but it can't be smothered or quenched.</p>\n<hr />\n<p><strong>Activate</strong><span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Effect</strong> You generate the effects of a <em>@UUID[Compendium.pf2e.spells-srd.Item.kcelf6IHl3L9VXXg]{Disrupt Undead}</em> cantrip, heightened to 3rd level.</p>\n<hr />\n<p><strong>Activate</strong><span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> By passing the shard over a creature or object, you can produce the effects of a <em>@UUID[Compendium.pf2e.spells-srd.Item.EoKBlgf6Smt8opaU]{Veil of Privacy}</em> spell on that target.</p>\n<hr />\n<p><strong>Activate</strong><span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> By gripping the shard tightly and waving it before you, you can produce the effects of a <em>@UUID[Compendium.pf2e.spells-srd.Item.fI20AVwOzJMHXRdo]{Levitate}</em> spell on yourself.</p>"
+    },
+    "rules": [
+      {
+        "key": "TokenLight",
+        "value": {
+          "animation": {
+            "intensity": 4,
+            "speed": 1,
+            "type": "torch"
+          },
+          "bright": 20,
+          "color": "#9b7337",
+          "dim": 40,
+          "shadows": 0.2
+        }
+      },
+      {
+        "key": "TokenEffectIcon",
+        "value": "icons/commodities/stone/geode-raw-brown.webp"
+      }
+    ],
+    "slug": "shard-of-the-third-seal",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder Adventure: Crown of the Kobold King",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 600
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.MjW8mZrCUw1lEhGP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.MjW8mZrCUw1lEhGP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!MjW8mZrCUw1lEhGP"
+}

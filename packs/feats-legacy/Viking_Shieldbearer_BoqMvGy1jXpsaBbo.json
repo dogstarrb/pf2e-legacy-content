@@ -1,0 +1,97 @@
+{
+  "_id": "BoqMvGy1jXpsaBbo",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Viking Shieldbearer",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Access</strong> Ulfen ethnicity</p>\n<hr />\n<p>You trained with shields and weapons as soon as you were old enough to hold them, eager to win honor and glory for yourself. You gain the @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block} reaction and are trained in your choice of the battle axe or longsword.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8"
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.Weapon.Base.longsword",
+            "value": "longsword"
+          },
+          {
+            "label": "PF2E.Weapon.Base.battle-axe",
+            "value": "battle-axe"
+          }
+        ],
+        "flag": "weapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Human.VikingShieldbearer.Prompt"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-{item|flags.pf2e.rulesSelections.weapon}.rank",
+        "value": 1
+      }
+    ],
+    "slug": "viking-shieldbearer",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "human"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.BoqMvGy1jXpsaBbo"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.BoqMvGy1jXpsaBbo",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BoqMvGy1jXpsaBbo"
+}

@@ -1,0 +1,76 @@
+{
+  "_id": "DdqWMj7cuf4S1bgr",
+  "img": "icons/magic/movement/trail-streak-impact-blue.webp",
+  "name": "Spell Effect: Frostbite",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The target gains weakness to bludgeoning equal to the spell rank.</p>"
+    },
+    "rules": [
+      {
+        "key": "Weakness",
+        "type": "bludgeoning",
+        "value": "@item.level"
+      }
+    ],
+    "slug": "spell-effect-frostbite",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Player Core",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.DdqWMj7cuf4S1bgr"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 11900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.DdqWMj7cuf4S1bgr",
+    "duplicateSource": null
+  },
+  "_key": "!items!DdqWMj7cuf4S1bgr"
+}

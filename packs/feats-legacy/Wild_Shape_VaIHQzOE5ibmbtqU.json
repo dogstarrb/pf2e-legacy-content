@@ -1,0 +1,133 @@
+{
+  "_id": "VaIHQzOE5ibmbtqU",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Wild Shape",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You are one with the wild, always changing and adapting to meet any challenge. You gain the <em>@UUID[Compendium.pf2e.spells-srd.Item.8RWfKConLYFZpQ9X]{Wild Shape}</em> order spell, which lets you transform into a variety of forms that you can expand with druid feats.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.wildShapeForms",
+        "priority": 10,
+        "value": [
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.ydsLEGjY89Akc4oZ"
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          {
+            "gte": [
+              "self:level",
+              3
+            ]
+          }
+        ],
+        "priority": 11,
+        "value": [
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.ydsLEGjY89Akc4oZ"
+          },
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.tk3go5Cl6Qt130Dk"
+          },
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.gQnDKDeBTtjwOWAk"
+          },
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.BT1ofB6RvRocQOWO"
+          },
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.sN3mQ7YrPBogEJRn"
+          },
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.ptOqsN5FS0nQh7RW"
+          },
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.F4DTpDXNu5IliyhJ"
+          },
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.j2LhQ7kEQhq3J3zZ"
+          },
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.qPaEEhczUWCQo6ux"
+          },
+          {
+            "value": "Compendium.pf2e.spell-effects.Item.kz3mlFwb9tV9bFwu"
+          }
+        ]
+      }
+    ],
+    "slug": "wild-shape",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "wild order"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.VaIHQzOE5ibmbtqU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.VaIHQzOE5ibmbtqU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VaIHQzOE5ibmbtqU"
+}

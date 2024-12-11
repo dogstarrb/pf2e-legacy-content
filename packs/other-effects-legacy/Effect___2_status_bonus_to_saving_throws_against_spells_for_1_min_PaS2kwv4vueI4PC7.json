@@ -1,0 +1,83 @@
+{
+  "_id": "PaS2kwv4vueI4PC7",
+  "img": "systems/pf2e/icons/effects/critical-effect.webp",
+  "name": "Effect: +2 status bonus to saving throws against spells for 1 min",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Effect applied by @UUID[Compendium.pf2e.criticaldeck.JournalEntry.yBE9e9l5KW7SdHZH]{Critical Fumble Deck #31}</strong></p>\n<p>+2 status bonus to saving throws against spells for 1 min</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.CriticalDeck.Effect.Label",
+        "predicate": [
+          "spell"
+        ],
+        "selector": "saving-throw",
+        "slug": "critical-effect-bonus-to-saves-vs-spells",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "effect-2-status-bonus-to-saving-throws-against-spells-for-1-min",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Critical Decks",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.other-effects.Item.PaS2kwv4vueI4PC7"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.other-effects-legacy.Item.PaS2kwv4vueI4PC7",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PaS2kwv4vueI4PC7"
+}

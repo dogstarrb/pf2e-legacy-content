@@ -1,0 +1,89 @@
+{
+  "_id": "MqZ6FScbfGtXB8tt",
+  "img": "systems/pf2e/icons/spells/magic-fang.webp",
+  "name": "Spell Effect: Magic Fang",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e-legacy-content.spells-legacy.Item.EE7Q5BHIrfWNCPtT]{Magic Fang}</em></p>\n<p>The chosen unarmed attack becomes a +1 striking unarmed attack, gaining a +1 item bonus to attack rolls and increasing the number of damage dice to two if it had only one.</p>"
+    },
+    "rules": [
+      {
+        "key": "WeaponPotency",
+        "predicate": [
+          "unarmed"
+        ],
+        "selector": "strike-attack-roll",
+        "value": 1
+      },
+      {
+        "key": "Striking",
+        "predicate": [
+          "unarmed"
+        ],
+        "selector": "strike-damage",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-runic-body",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.MqZ6FScbfGtXB8tt"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.MqZ6FScbfGtXB8tt",
+    "duplicateSource": null
+  },
+  "_key": "!items!MqZ6FScbfGtXB8tt"
+}

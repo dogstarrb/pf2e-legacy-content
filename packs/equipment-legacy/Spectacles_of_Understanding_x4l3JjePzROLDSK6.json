@@ -1,0 +1,114 @@
+{
+  "_id": "x4l3JjePzROLDSK6",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/spectacles-of-understanding.webp",
+  "name": "Spectacles of Understanding",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>These folding, wood-framed spectacles hold flat discs of cut crystal as lenses and are held in place with thin cords that wrap around each ear, with another strap holding them around the neck while not in use. While you are wearing the spectacles, you gain a +1 item bonus to checks to Decipher Writing.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Unfolding the spectacles onto the bridge of the nose, you gain the effects of 2nd-level <em>@UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]{Translate}</em> for one hour except that it applies to all languages you see rather than a single language, and it does not apply to language you hear.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Spectacles of Understanding (Decipher Writing)",
+        "predicate": [
+          "action:decipher-writing"
+        ],
+        "selector": "skill-check",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "spectacles-of-understanding",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Pathfinder Society Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 130
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worneyepiece"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.x4l3JjePzROLDSK6"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.x4l3JjePzROLDSK6",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!x4l3JjePzROLDSK6"
+}

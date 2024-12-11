@@ -1,0 +1,86 @@
+{
+  "_id": "8ecGfjmxnBY3WWao",
+  "img": "systems/pf2e/icons/spells/thicket-of-knives.webp",
+  "name": "Spell Effect: Thicket of Knives",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You create numerous phantom copies of your weapon arm, hiding your true movements and rendering your attacks unpredictable. You gain a +2 status bonus to Deception checks. If you're untrained in Deception, you can use the Feint action anyway, and add your level as your proficiency bonus despite being untrained.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "thicket-of-knives-proficiency",
+        "selector": "deception",
+        "type": "proficiency",
+        "value": "@actor.level"
+      },
+      {
+        "key": "FlatModifier",
+        "label": "thicket-of-knives-status",
+        "selector": "deception",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-thicket-of-knives",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.8ecGfjmxnBY3WWao"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 8500000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.8ecGfjmxnBY3WWao",
+    "duplicateSource": null
+  },
+  "_key": "!items!8ecGfjmxnBY3WWao"
+}

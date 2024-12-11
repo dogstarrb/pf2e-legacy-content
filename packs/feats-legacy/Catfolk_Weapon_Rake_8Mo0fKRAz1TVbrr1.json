@@ -1,0 +1,91 @@
+{
+  "_id": "8Mo0fKRAz1TVbrr1",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Catfolk Weapon Rake",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You know how to efficiently use weapons that rake across your enemies. Whenever you critically hit using a catfolk weapon or one of the weapons listed in @UUID[Compendium.pf2e.feats-srd.Item.bEh5qUgX5eFaQwzU]{Catfolk Weapon Familiarity}, you apply the weapon's critical specialization effect.</p>"
+    },
+    "rules": [
+      {
+        "key": "CriticalSpecialization",
+        "predicate": [
+          {
+            "or": [
+              "item:trait:catfolk",
+              "item:base:hatchet",
+              "item:base:kama",
+              "item:base:kukri",
+              "item:base:scimitar",
+              "item:base:sickle"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": "catfolk-weapon-rake",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "catfolk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Catfolk Weapon Familiarity"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.8Mo0fKRAz1TVbrr1"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.8Mo0fKRAz1TVbrr1",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8Mo0fKRAz1TVbrr1"
+}

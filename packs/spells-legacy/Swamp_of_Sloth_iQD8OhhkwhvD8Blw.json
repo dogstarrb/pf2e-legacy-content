@@ -1,0 +1,167 @@
+{
+  "_id": "iQD8OhhkwhvD8Blw",
+  "img": "systems/pf2e/icons/spells/swamp-of-sloth.webp",
+  "name": "Swamp of Sloth",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Ground in the area turns swampy and fetid. The area is difficult terrain. The sludge at the bottom of the morass animates into diminutive sludge beasts that have a demonic appearance. These don't function as normal creatures, but they swarm over creatures in the swamp and exude a noxious stench. The swamp deals 1d6 poison damage; creatures that end their turn in the area must attempt a basic Fortitude save. You can increase the number of actions it takes to Cast the Spell. For each additional action, increase the burst's radius by 5 feet.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6, and the initial radius increases by 5 feet.</p>"
+    },
+    "rules": [],
+    "slug": "swamp-of-sloth",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "focus",
+        "manipulate",
+        "olfactory",
+        "sorcerer"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "120 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "1 to 3"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "1d6",
+        "type": "poison",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d6"
+      },
+      "interval": 2,
+      "type": "interval"
+    },
+    "overlays": {
+      "jnp3ni6b93pdifaq": {
+        "_id": "jnp3ni6b93pdifaq",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "area": {
+            "areaType": "burst",
+            "value": "15"
+          },
+          "damage": {
+            "0": {
+              "applyMod": false
+            }
+          },
+          "time": {
+            "value": "3"
+          },
+          "defense": null
+        }
+      },
+      "lq4yc6ojcujar4xa": {
+        "_id": "lq4yc6ojcujar4xa",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "area": {
+            "areaType": "burst",
+            "value": "5"
+          },
+          "damage": {
+            "0": {
+              "applyMod": false
+            }
+          },
+          "time": {
+            "value": "1"
+          },
+          "defense": null
+        }
+      },
+      "pf2bpfyrg68sglcv": {
+        "_id": "pf2bpfyrg68sglcv",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "area": {
+            "areaType": "burst",
+            "value": "10"
+          },
+          "damage": {
+            "0": {
+              "applyMod": false
+            }
+          },
+          "time": {
+            "value": "2"
+          },
+          "defense": null
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.iQD8OhhkwhvD8Blw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.iQD8OhhkwhvD8Blw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!iQD8OhhkwhvD8Blw"
+}

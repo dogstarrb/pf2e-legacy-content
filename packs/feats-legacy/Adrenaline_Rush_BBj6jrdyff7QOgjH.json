@@ -1,0 +1,90 @@
+{
+  "_id": "BBj6jrdyff7QOgjH",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Adrenaline Rush",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>In the heat of battle, you are capable of amazing feats of strength.</p>\n<p>While you are @UUID[Compendium.pf2e.actionspf2e.Item.Ah5g9pDwWF9b9VW9]{Raging}, increase your encumbered and maximum Bulk limits by 2; you also gain a +1 status bonus to Athletics checks to lift heavy objects, @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, and @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Force Open}.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SkillVariant.EscapeForceOpenOrLift",
+        "predicate": [
+          "self:effect:rage",
+          {
+            "or": [
+              "action:escape",
+              "action:force-open",
+              "action:lift-heavy-object"
+            ]
+          }
+        ],
+        "selector": "athletics",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "adrenaline-rush",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "barbarian",
+        "rage"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.BBj6jrdyff7QOgjH"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.BBj6jrdyff7QOgjH",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BBj6jrdyff7QOgjH"
+}

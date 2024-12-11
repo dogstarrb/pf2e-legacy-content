@@ -1,0 +1,80 @@
+{
+  "_id": "IjoYgBgEYSTZKmab",
+  "img": "systems/pf2e/icons/spells/healers-blessing.webp",
+  "name": "Spell Effect: Healer's Blessing",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.rhJyqB9g3ziImQgM]{Healer's Blessing}</em></p>\n<p>When the target regains Hit Points from a healing spell, it regains 2 additional Hit Points. The target regains additional Hit Points from healer's blessing only the first time it regains HP from a given healing spell, so a spell that heals the creature repeatedly over a duration would restore additional Hit Points only once.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "item:type:spell",
+          "item:trait:healing"
+        ],
+        "selector": "healing-received",
+        "value": "2 * @item.level"
+      }
+    ],
+    "slug": "spell-effect-healers-blessing",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.IjoYgBgEYSTZKmab"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 15500000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.IjoYgBgEYSTZKmab",
+    "duplicateSource": null
+  },
+  "_key": "!items!IjoYgBgEYSTZKmab"
+}

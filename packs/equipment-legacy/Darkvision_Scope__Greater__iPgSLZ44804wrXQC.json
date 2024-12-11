@@ -1,0 +1,118 @@
+{
+  "_id": "iPgSLZ44804wrXQC",
+  "img": "systems/pf2e/icons/equipment/other/attached-items/scope.webp",
+  "name": "Darkvision Scope (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>These scopes, popular with snipers and other sneaky sharpshooters who ply their trade in the dead of night, incorporate clouded crystals with magical properties into their design. While relatively useless under normal lighting conditions, these crystals can help bring things into focus when used in dim light. The scope is then given an enchantment to enhance these properties for use in darkness. The scope grants an item bonus to Perception checks involving sight in areas of dim light visible through the scope (as well as in areas of darkness, if the scope has been activated).</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">a</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> The item bonus is +2 and activating the scope grants greater darkvision until the beginning of your next turn, as long as you continue to look through the scope.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "looking-through-sight"
+        ],
+        "selector": "perception",
+        "type": "item",
+        "value": 2
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Looking through sight into dim light",
+        "option": "looking-through-sight",
+        "toggleable": true
+      }
+    ],
+    "slug": "darkvision-scope-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 15
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 5500
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "sm",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "attached-to-crossbow-or-firearm-scope"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.iPgSLZ44804wrXQC"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.iPgSLZ44804wrXQC",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!iPgSLZ44804wrXQC"
+}

@@ -1,0 +1,80 @@
+{
+  "_id": "IlNjAwsIZShlVsCT",
+  "img": "icons/sundries/books/book-tooled-silver-blue.webp",
+  "name": "Effect: Architect's Pattern Book",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>If your next action is to cast a <em>@UUID[Compendium.pf2e.spells-srd.Item.mwPfoYfVGSMAaUec]{Cozy Cabin}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.vPWMEyVTreMOoFnm]{Planar Palace}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.Item.KPDHmmjJiw7PhTYF]{Resplendent Mansion}</em> spell, you add a room to the structure that is up to 10 feet per side per level of the spell. This room is outfitted with all the accoutrements for a particular type of recreation, determined by you when you cast the spell. Any character who spends at least 1 hour using this recreational facility and then sleeps a full 8 hours inside the location created by the spell is exceptionally well-rested. They regain double the amount of Hit Points they would normally receive for an 8-hour rest, and when they make the next day's preparations, they gain a +1 circumstance bonus to Athletics checks and Will saves for the next 12 hours.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "will",
+          "athletics"
+        ],
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "effect-architects-pattern-book",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "duration": {
+      "value": 12,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.IlNjAwsIZShlVsCT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.IlNjAwsIZShlVsCT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!IlNjAwsIZShlVsCT"
+}

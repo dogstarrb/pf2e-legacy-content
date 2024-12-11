@@ -1,0 +1,143 @@
+{
+  "_id": "6tDIVv2gafdO6GV4",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Through the Gate",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a 1st- or 2nd-level kineticist feat of your choice. Your options include impulse feats for your kinetic element, as normal for a kineticist.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": {
+          "filter": [
+            {
+              "lte": [
+                "item:level",
+                2
+              ]
+            },
+            "item:category:class",
+            "item:trait:kineticist",
+            {
+              "or": [
+                {
+                  "not": "item:trait:impulse"
+                },
+                {
+                  "and": [
+                    "item:trait:air",
+                    "kinetic-gate:air"
+                  ]
+                },
+                {
+                  "and": [
+                    "item:trait:earth",
+                    "kinetic-gate:earth"
+                  ]
+                },
+                {
+                  "and": [
+                    "item:trait:fire",
+                    "kinetic-gate:fire"
+                  ]
+                },
+                {
+                  "and": [
+                    "item:trait:metal",
+                    "kinetic-gate:metal"
+                  ]
+                },
+                {
+                  "and": [
+                    "item:trait:water",
+                    "kinetic-gate:water"
+                  ]
+                },
+                {
+                  "and": [
+                    "item:trait:wood",
+                    "kinetic-gate:wood"
+                  ]
+                }
+              ]
+            }
+          ],
+          "itemType": "feat"
+        },
+        "flag": "throughTheGate",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.LevelOneOrTwoClassFeat"
+      },
+      {
+        "allowDuplicate": false,
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.throughTheGate}"
+      }
+    ],
+    "slug": "through-the-gate",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Kineticist Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.6tDIVv2gafdO6GV4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.6tDIVv2gafdO6GV4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6tDIVv2gafdO6GV4"
+}

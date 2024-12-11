@@ -1,0 +1,74 @@
+{
+  "_id": "jEtVesbqYcWGbBYk",
+  "img": "systems/pf2e/icons/features/ancestry/seer-elf.webp",
+  "name": "Seer Elf",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have an inborn ability to detect and understand magical phenomena. You can cast the <em>@UUID[Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl]{Detect Magic}</em> cantrip as an arcane innate spell at will. A cantrip is heightened to a spell level equal to half your level rounded up.</p>\n<p>In addition, you gain a +1 circumstance bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identify Magic} and to @UUID[Compendium.pf2e.actionspf2e.Item.d9gbpiQjChYDYA2L]{Decipher Writing} of a magical nature. These skill actions typically use the Arcana, Nature, Occultism, or Religion skill.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Seer Elf (Identity Magic or Decipher Writing)",
+        "predicate": [
+          {
+            "or": [
+              "action:identify-magic",
+              "action:decipher-writing"
+            ]
+          }
+        ],
+        "selector": "skill-check",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "seer-elf",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Elf",
+      "slug": "elf",
+      "uuid": "Compendium.pf2e.ancestries.Item.PgKmsA2aKdbLU6O0"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.jEtVesbqYcWGbBYk"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.jEtVesbqYcWGbBYk",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!jEtVesbqYcWGbBYk"
+}

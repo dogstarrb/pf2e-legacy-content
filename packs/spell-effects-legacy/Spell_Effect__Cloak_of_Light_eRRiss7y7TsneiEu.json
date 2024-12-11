@@ -1,0 +1,84 @@
+{
+  "_id": "eRRiss7y7TsneiEu",
+  "img": "icons/skills/targeting/target-glowing-yellow.webp",
+  "name": "Spell Effect: Cloak of Light",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.ba1RyDpwq6tfW8VM]{Cloak of Light}</p>\n<p>You glow with bright light in a 30-foot radius and dim light to the next 30 feet.</p>"
+    },
+    "rules": [
+      {
+        "key": "TokenLight",
+        "value": {
+          "animation": {
+            "intensity": 4,
+            "speed": 3,
+            "type": "vortex"
+          },
+          "bright": 30,
+          "color": "#343434",
+          "dim": 60
+        }
+      }
+    ],
+    "slug": "spell-effect-cloak-of-light",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #172: Secrets of the Temple-City",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": 5,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.eRRiss7y7TsneiEu"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 28200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.eRRiss7y7TsneiEu",
+    "duplicateSource": null
+  },
+  "_key": "!items!eRRiss7y7TsneiEu"
+}

@@ -1,0 +1,110 @@
+{
+  "_id": "lbrWMnS2pecKaSVB",
+  "img": "icons/commodities/stone/stone-cratered-brown.webp",
+  "name": "Swampcall",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You call upon the spirits of the soil to twist and churn, transforming the terrain in the targeted area into a sodden mess. The area becomes difficult terrain. Creatures in the area when you Cast this Spell must attempt a Reflex saving throw.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature sinks partially into the mud. The creature takes a -10-foot circumstance penalty to its Speeds (except for its swim Speed, if any) and becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}. These effects last until the creature leaves the area or until the end of its next turn, whichever comes first.</p>\n<p><strong>Critical Failure</strong> As failure, but the penalty to Speeds (except Swim speed) is -15 feet.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> The range increases to 60 feet, and the area increases to a 20-foot burst.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.ROuGwXEvFznzGE9k]{Spell Effect: Swampcall (Failure)}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.otK6eG3b3FV7n2xP]{Spell Effect: Swampcall (Critical Failure)}</p>"
+    },
+    "rules": [],
+    "slug": "swampcall",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "earth",
+        "manipulate"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder #171: Hurricane's Howl",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": {
+      "type": "burst",
+      "value": 10
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {},
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "3": {
+          "area": {
+            "areaType": "burst",
+            "value": "20"
+          },
+          "range": {
+            "value": "60 feet"
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.lbrWMnS2pecKaSVB"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.lbrWMnS2pecKaSVB",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!lbrWMnS2pecKaSVB"
+}

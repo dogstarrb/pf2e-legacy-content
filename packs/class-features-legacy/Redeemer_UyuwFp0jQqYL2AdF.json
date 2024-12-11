@@ -1,0 +1,81 @@
+{
+  "_id": "UyuwFp0jQqYL2AdF",
+  "img": "icons/magic/nature/symbol-sun-yellow.webp",
+  "name": "Redeemer",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You're full of kindness and forgiveness. You gain the Glimpse of Redemption champion's reaction and the <em>@UUID[Compendium.pf2e.spells-srd.Item.zNN9212H2FGfM7VS]{Lay on Hands}</em> devotion spell. After the tenets of good, add these:</p>\n<ul>\n<li>You must first try to redeem those who commit evil acts, rather than killing them or meting out punishment. If they then continue on a wicked path, you might need to take more extreme measures.</li>\n<li>You must show compassion for others, regardless of their authority or station.</li>\n</ul>\n<h2 class=\"title\">Champion's Reaction</h2>\n<h3 class=\"title\">@UUID[Compendium.pf2e.actionspf2e.Item.tuZnRWHixLArvaIf]{Glimpse of Redemption} <span class=\"action-glyph\">R</span></h3>\n<p><strong>Trigger</strong> An enemy damages your ally, and both are within 15 feet of you.</p>\n<hr />\n<p>Your foe hesitates under the weight of sin as visions of redemption play in their mind's eye. The foe must choose one of the following options:</p>\n<ul>\n<li>The ally is unharmed by the triggering damage.</li>\n<li>The ally gains resistance to all damage against the triggering damage equal to 2 + your level. After the damaging effect is applied, the enemy becomes enfeebled 2 until the end of its next turn.</li>\n</ul>\n<h2 class=\"title\">Divine Smite<span style=\"float:right\">Level 9</span></h2>\n<p>A guilty conscience assails foes who spurn your Glimpse of Redemption. A foe that responds to your Glimpse of Redemption by dealing damage takes [[/r @actor.abilities.cha.mod[persistent,spirit]]]{Persistent Good Damage} equal to your Charisma modifier.</p>\n<h2 class=\"title\">Exalt<span style=\"float:right\">Level 11</span></h2>\n<p>You protect multiple allies. You can apply the resistance granted by Glimpse of Redemption to yourself and all allies within 15 feet of you, including the triggering ally, except the resistance is reduced by 2 for all.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "class:champion:alignment:ng"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.actionspf2e.Item.tuZnRWHixLArvaIf"
+      }
+    ],
+    "slug": "redeemer",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "champion"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.UyuwFp0jQqYL2AdF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.UyuwFp0jQqYL2AdF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UyuwFp0jQqYL2AdF"
+}

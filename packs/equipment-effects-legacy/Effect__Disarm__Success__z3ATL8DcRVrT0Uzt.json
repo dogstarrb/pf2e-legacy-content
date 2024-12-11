@@ -1,0 +1,88 @@
+{
+  "_id": "z3ATL8DcRVrT0Uzt",
+  "img": "systems/pf2e/icons/unarmed-attacks/fist.webp",
+  "name": "Effect: Disarm (Success)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The target takes a -2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item.</p>"
+    },
+    "rules": [
+      {
+        "domain": "attack-roll",
+        "key": "RollOption",
+        "label": "PF2E.Actions.Disarm.EffectLabel",
+        "option": "partially-disarmed",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "partially-disarmed"
+        ],
+        "selector": "attack",
+        "type": "circumstance",
+        "value": -2
+      }
+    ],
+    "slug": "effect-disarm-success",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.z3ATL8DcRVrT0Uzt",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!z3ATL8DcRVrT0Uzt"
+}

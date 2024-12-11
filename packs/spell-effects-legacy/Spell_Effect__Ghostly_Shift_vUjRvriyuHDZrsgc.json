@@ -1,0 +1,79 @@
+{
+  "_id": "vUjRvriyuHDZrsgc",
+  "img": "systems/pf2e/icons/spells/ghostly-shift.webp",
+  "name": "Spell Effect: Ghostly Shift",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.JqHAxsMUZ4Mr5bTr]{Ghostly Shift}</em></p>\n<p>You gain resistance 2 to all damage (except force).</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistance increases by 1.</p>"
+    },
+    "rules": [
+      {
+        "exceptions": [
+          "force"
+        ],
+        "key": "Resistance",
+        "type": "all-damage",
+        "value": "ceil(@item.level/2)"
+      }
+    ],
+    "slug": "spell-effect-ghostly-shift",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.vUjRvriyuHDZrsgc"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 42000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.vUjRvriyuHDZrsgc",
+    "duplicateSource": null
+  },
+  "_key": "!items!vUjRvriyuHDZrsgc"
+}
