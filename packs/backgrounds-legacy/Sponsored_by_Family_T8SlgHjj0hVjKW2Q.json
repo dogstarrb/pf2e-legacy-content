@@ -1,0 +1,117 @@
+{
+  "_id": "T8SlgHjj0hVjKW2Q",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "name": "Sponsored by Family",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Several members of your family have studied at the Magaambya, although not all of them have graduated as lore-speakers (or even advanced past initiates to become attendants). Your family has decided that you're an excellent candidate to join their ranks. Although lore-speakers of the Magaambya know they are supported by the strength of thousands of graduates who have come before them, you can take the smaller, more personal comfort in the support of your family.</p>\n<p>Choose two ability boosts. One must be to <strong>Intelligence</strong> or <strong>Charisma</strong>, and one is a free ability boost.</p>\n<p>You're trained in your choice of the Diplomacy or Society skill. You gain a skill feat: @UUID[Compendium.pf2e.feats-srd.Item.4RjDxgvNXNl5GG9d]{Hobnobber} if you chose Diplomacy or @UUID[Compendium.pf2e.feats-srd.Item.0N8TtGSk5enoLBZ8]{Eye For Numbers} if you chose Society. You're also trained in Magaambya Lore.</p>\n<p>Your recommended primary branch is the Uzunjati.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.Skill.Diplomacy",
+            "value": "diplomacy"
+          },
+          {
+            "label": "PF2E.Skill.Society",
+            "value": "society"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill",
+        "rollOption": "family"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "family:diplomacy"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.4RjDxgvNXNl5GG9d"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "family:society"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.0N8TtGSk5enoLBZ8"
+      }
+    ],
+    "slug": "sponsored-by-family",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder: Strength of Thousands Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": [
+          "cha",
+          "int"
+        ]
+      },
+      "1": {
+        "value": [
+          "cha",
+          "con",
+          "dex",
+          "int",
+          "str",
+          "wis"
+        ]
+      }
+    },
+    "items": {},
+    "trainedSkills": {
+      "value": [],
+      "lore": [
+        "Magaambya Lore"
+      ],
+      "custom": ""
+    }
+  },
+  "type": "background",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.backgrounds.Item.T8SlgHjj0hVjKW2Q"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.backgrounds-legacy.Item.T8SlgHjj0hVjKW2Q",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!T8SlgHjj0hVjKW2Q"
+}

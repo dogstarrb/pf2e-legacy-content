@@ -1,0 +1,91 @@
+{
+  "_id": "hkLhZsH3T6jc9S1y",
+  "img": "systems/pf2e/icons/spells/veil-of-dreams.webp",
+  "name": "Spell Effect: Veil of Dreams",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.NNoKWiWKqJkdD2ln]{Veil of Dreams}</em></p>\n<p>The target takes a -1 status penalty to Perception, attack rolls, and Will saves. This penalty increases to -2 for Will saves against sleep effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "attack",
+          "perception",
+          "will"
+        ],
+        "type": "status",
+        "value": -1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "sleep"
+        ],
+        "selector": "will",
+        "type": "status",
+        "value": -1
+      }
+    ],
+    "slug": "spell-effect-veil-of-dreams",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.hkLhZsH3T6jc9S1y"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 30400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.hkLhZsH3T6jc9S1y",
+    "duplicateSource": null
+  },
+  "_key": "!items!hkLhZsH3T6jc9S1y"
+}

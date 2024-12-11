@@ -1,0 +1,112 @@
+{
+  "_id": "vZaXDOrp5Faxw5fS",
+  "img": "systems/pf2e/icons/equipment/held-items/possibility-tome.webp",
+  "name": "Possibility Tome",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>An array of semiprecious stones is set into the ornate silver and beaten copper cover of this thick and weighty tome. If you open the book before it's been activated, its vellum pages are blank and pristine, but once activated, words dance and swim onto the pages before your eyes.</p>\n<p><strong>Activate</strong> 10 minutes (envision, Interact)</p>\n<hr />\n<p><strong>Effect</strong> As you flip through the book, you think about a broad topic you want to know more about.</p>\n<p>Choose one skill: Arcana, Crafting, Medicine, Nature, Occultism, Religion, Society, or a single subcategory of Lore. The book's pages fill with information about that skill, though only you can see the information.</p>\n<p>While the pages are full, you can spend an Interact action perusing the book just before attempting a check to Recall Knowledge with the chosen skill. This grants you a +3 item bonus to the check, and if you roll a critical failure, you get a failure instead.</p>\n<p>The information within the book disappears after 24 hours or when the tome is activated again.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Possibility Tome (Recall Knowledge)",
+        "predicate": [
+          "action:recall-knowledge"
+        ],
+        "selector": "skill-check",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "possibility-tome",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 22000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.vZaXDOrp5Faxw5fS"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.vZaXDOrp5Faxw5fS",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!vZaXDOrp5Faxw5fS"
+}

@@ -1,0 +1,78 @@
+{
+  "_id": "6YhbQmOmbmy84W1C",
+  "img": "systems/pf2e/icons/spells/sanguine-mist.webp",
+  "name": "Effect: Crimson Shroud",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.M2V1vqAziOkWV30B]{Crimson Shroud}.</p>"
+    },
+    "rules": [
+      {
+        "details": "",
+        "key": "FastHealing",
+        "type": "fast-healing",
+        "value": "floor(@actor.level / 2)"
+      }
+    ],
+    "slug": "effect-crimson-shroud",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: World Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.6YhbQmOmbmy84W1C"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.6YhbQmOmbmy84W1C",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6YhbQmOmbmy84W1C"
+}

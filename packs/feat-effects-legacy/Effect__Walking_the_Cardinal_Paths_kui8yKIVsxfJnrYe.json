@@ -1,0 +1,118 @@
+{
+  "_id": "kui8yKIVsxfJnrYe",
+  "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+  "name": "Effect: Walking the Cardinal Paths",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.adventure-specific-actions.Item.GpT5RXUwhINODqkJ]{(Affinity Ablaze) Arms of Balance: Walking the Cardinal Paths}</p>\n<p>One of your weapons or your unarmed Strikes deal an additional 2d6 fire, cold, acid, or electricity damage. The Strikes gain the appropriate energy trait as well.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAcid",
+            "value": "acid"
+          },
+          {
+            "label": "PF2E.TraitCold",
+            "value": "cold"
+          },
+          {
+            "label": "PF2E.TraitElectricity",
+            "value": "electricity"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          }
+        ],
+        "flag": "damage",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.DamageType"
+      },
+      {
+        "choices": {
+          "attacks": true
+        },
+        "flag": "strike",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.WeaponOrUnarmed"
+      },
+      {
+        "damageType": "{item|flags.pf2e.rulesSelections.damage}",
+        "diceNumber": 2,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "selector": "{item|flags.pf2e.rulesSelections.strike}-damage"
+      },
+      {
+        "definition": [
+          "item:{item|flags.pf2e.rulesSelections.strike}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "{item|flags.pf2e.rulesSelections.damage}"
+      }
+    ],
+    "slug": "effect-walking-the-cardinal-paths",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Fists of the Ruby Phoenix Hardcover Compilation",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.kui8yKIVsxfJnrYe"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.kui8yKIVsxfJnrYe",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!kui8yKIVsxfJnrYe"
+}

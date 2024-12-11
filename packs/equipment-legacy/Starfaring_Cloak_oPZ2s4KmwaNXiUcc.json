@@ -1,0 +1,131 @@
+{
+  "_id": "oPZ2s4KmwaNXiUcc",
+  "img": "icons/equipment/back/cloak-collared-blue-gold.webp",
+  "name": "Starfaring Cloak",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The swirling folds of a <em>starfaring cloak</em> appear to contain the night sky, with the stars rotating hypnotically through its firmament shedding dim light to a range of 10 feet. While wearing the cloak, you gain a +10-foot item bonus to your Speed and a fly Speed equal to your Speed. You can survive comfortably without breathing, in the void of space, and in severe or extreme cold or heat. Also, you gain sustenance from starlight and sunlight, so if you're outdoors for an hour or more per day, you don't need to eat or drink. While wearing the cloak, you can navigate perfectly and unerringly by looking up at the sky.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You make an attack roll, skill check, or saving throw</p>\n<p><strong>Effect</strong> Reroll the triggering roll and take the higher result. This is a fortune effect.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> The cloak casts <em>@UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep}</em> at 4th level (DC 42).</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">3</span> envision</p>\n<p><strong>Frequency</strong> once per week</p>\n<p><strong>Effect</strong> The cloak casts <em>@UUID[Compendium.pf2e.spells-srd.Item.69L70wKfGDY66Mk9]{Teleport}</em> at 10th level. If you name no destination, it teleports you to a random planet in a random location that's safe for you.</p>\n<hr />\n<p><strong>Destruction</strong> If the wearer of a <em>starfaring cloak</em> is bound by <em>@UUID[Compendium.pf2e.spells-srd.Item.2CNqkt2s2IYkVnv6]{Imprisonment}</em> for a century and a day, the cloak dissolves into light. This time is reduced to a year and a day if the wearer is placed in eternal slumber by <em>imprisonment</em> and subjected to the <em>@UUID[Compendium.pf2e.spells-srd.Item.Uqj344bezBq3ESdq]{Nightmare}</em> spell once per day.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": "@actor.attributes.speed.total"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "speed",
+        "type": "item",
+        "value": 10
+      },
+      {
+        "key": "TokenLight",
+        "value": {
+          "animation": {
+            "intensity": 4,
+            "speed": 1,
+            "type": "torch"
+          },
+          "color": "#9b7337",
+          "dim": 10,
+          "shadows": 0.2
+        }
+      },
+      {
+        "key": "TokenEffectIcon",
+        "value": "icons/equipment/back/cloak-collared-blue-gold.webp"
+      }
+    ],
+    "slug": "starfaring-cloak",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "artifact",
+        "divine",
+        "invested",
+        "light"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 24
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.oPZ2s4KmwaNXiUcc"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.oPZ2s4KmwaNXiUcc",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!oPZ2s4KmwaNXiUcc"
+}

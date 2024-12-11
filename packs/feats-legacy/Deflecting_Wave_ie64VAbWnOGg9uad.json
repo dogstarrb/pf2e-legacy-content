@@ -1,0 +1,131 @@
+{
+  "_id": "ie64VAbWnOGg9uad",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Deflecting Wave",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong> You would take acid, bludgeoning, fire, or slashing damage from an enemy's attack, spell, or other hostile effect.</p>\n<p><strong>Requirements</strong> You're aware of the hostile effect, and you aren't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against it.</p>\n<hr />\n<p>A cascade of water blunts or disperses the incoming attack. You gain resistance to damage from the triggering effect equal to your level if it's bludgeoning or slashing, or double your level if it's acid or fire damage. If the effect deals more than one applicable type of damage, apply the highest resistance, but apply it only once.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "deflecting-wave",
+        "suboptions": [
+          {
+            "label": "PF2E.TraitAcid",
+            "value": "acid"
+          },
+          {
+            "label": "PF2E.TraitBludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitSlashing",
+            "value": "slashing"
+          }
+        ],
+        "toggleable": true
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          {
+            "or": [
+              "deflecting-wave:bludgeoning",
+              "deflecting-wave:slashing"
+            ]
+          },
+          {
+            "not": "self:condition:off-guard"
+          }
+        ],
+        "type": "{item|flags.pf2e.rulesSelections.deflectingWave}",
+        "value": "@actor.level"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          {
+            "or": [
+              "deflecting-wave:acid",
+              "deflecting-wave:fire"
+            ]
+          },
+          {
+            "not": "self:condition:off-guard"
+          }
+        ],
+        "type": "{item|flags.pf2e.rulesSelections.deflectingWave}",
+        "value": "@actor.level*2"
+      }
+    ],
+    "slug": "deflecting-wave",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "impulse",
+        "kineticist",
+        "primal",
+        "water"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ie64VAbWnOGg9uad"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ie64VAbWnOGg9uad",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ie64VAbWnOGg9uad"
+}

@@ -1,0 +1,113 @@
+{
+  "_id": "3ySPK8qwNcuESwa0",
+  "img": "icons/magic/water/orb-water-bubbles.webp",
+  "name": "Purifying Veil",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Drawing on the purifying powers of water, you call forth a veil of fine water droplets suffused with holy energy. The veil surrounds the target. Everything on each side of the veil is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} from creatures on the opposite side, but the water doesn't impede attacks or movement across the veil. If the target moves through the veil, it takes 4d6 spirit damage with a basic Will save. If the target leaves the veil, the spell ends.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The good damage increases by [[/r 1d6]]{1d6}.</p>"
+    },
+    "rules": [],
+    "slug": "purifying-veil",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "cleric",
+        "concentrate",
+        "focus",
+        "good",
+        "holy",
+        "manipulate",
+        "water"
+      ],
+      "rarity": "rare",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 Large or smaller creature"
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "vd71gprd4cz7vb2j": {
+        "applyMod": false,
+        "formula": "4d6",
+        "type": "spirit",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "will",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "vd71gprd4cz7vb2j": "1d6"
+      },
+      "interval": 1,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.3ySPK8qwNcuESwa0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.3ySPK8qwNcuESwa0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3ySPK8qwNcuESwa0"
+}

@@ -1,0 +1,101 @@
+{
+  "_id": "TOqm2yCf1IE1DKtF",
+  "img": "icons/consumables/potions/vial-cork-red.webp",
+  "name": "Effect: Blood Booster (Moderate)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.LNzJ2WwTg58g7vam]{Blood Booster (Moderate)}</p>\n<p>You receive resistance 10 to persistent bleed and persistent poison damage, and you lower the DC for any flat checks to end persistent bleed or persistent poison damage as if you received particularly appropriate aid.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "bleed",
+        "value": 10
+      },
+      {
+        "definition": [
+          "damage:category:persistent",
+          "damage:type:poison"
+        ],
+        "key": "Resistance",
+        "label": "PF2E.IWR.Custom.PersistentPoison",
+        "type": "custom",
+        "value": 10
+      },
+      {
+        "itemType": "condition",
+        "key": "ItemAlteration",
+        "mode": "downgrade",
+        "predicate": [
+          {
+            "or": [
+              "item:damage:type:bleed",
+              "item:damage:type:poison"
+            ]
+          }
+        ],
+        "property": "pd-recovery-dc",
+        "value": 10
+      }
+    ],
+    "slug": "effect-blood-booster-moderate",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.TOqm2yCf1IE1DKtF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.TOqm2yCf1IE1DKtF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!TOqm2yCf1IE1DKtF"
+}

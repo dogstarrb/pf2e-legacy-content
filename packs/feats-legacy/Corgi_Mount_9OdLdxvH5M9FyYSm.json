@@ -1,0 +1,79 @@
+{
+  "_id": "9OdLdxvH5M9FyYSm",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Corgi Mount",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The smallest of fey have ridden corgis as mounts since time immemorial, leading to a pattern on corgis' backs called a “faerie saddle.” You have formed a magical connection with a corgi that can serve as your mount. Your corgi familiar is Small rather than Tiny, and it's appropriate for use as your mount, unlike most familiars. It has the scent ability, which counts against your limit for familiar and master abilities as normal. Furthermore, it can never gain a familiar ability that grants it any Speeds other than a land Speed. If you're a pixie, you can't ride a corgi due to your Size, but you can take this feat to gain a corgi familiar.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.attributes.familiarAbilities.value",
+        "priority": 9,
+        "value": 2
+      }
+    ],
+    "slug": "corgi-mount",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "sprite"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.9OdLdxvH5M9FyYSm"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.9OdLdxvH5M9FyYSm",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9OdLdxvH5M9FyYSm"
+}

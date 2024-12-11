@@ -1,0 +1,109 @@
+{
+  "_id": "LF8xzzFsFJKxejqv",
+  "img": "icons/sundries/scrolls/scroll-writing-tan-grey.webp",
+  "name": "Effect: Enforce Oath",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.YZ138OqflDhrkqmR]{Enforce Oath}</p>\n<p>You gain a +1 status bonus to AC and saves against attacks and effects by the chosen creature. You also gain a +1 status bonus to attack rolls against the chosen creature.</p>\n<p>However, your dedication to Enforcing your Oath draws your focus away from all other foes. While you are Enforcing your Oath, you take a -1 status penalty to AC, attack rolls, and saves against all other creatures until you stop Enforcing your Oath.</p>\n<p>You stop Enforcing your Oath once the chosen creature is reduced to 0 Hit Points or offers a legitimate surrender to you or your allies. You immediately stop Enforcing your Oath if you are @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} or if the chosen creature goes @UUID[Compendium.pf2e.conditionitems.Item.9evPzg9E6muFcoSk]{Unnoticed} by you for more than 1 minute. You can also stop Enforcing your Oath at any time during your turn as a free action.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Target is subject of your Enforce Oath",
+        "option": "enforce-oath",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "label": "oath-target",
+        "predicate": [
+          "enforce-oath"
+        ],
+        "selector": [
+          "ac",
+          "attack",
+          "saving-throw"
+        ],
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "not-oath-target",
+        "predicate": [
+          {
+            "not": "enforce-oath"
+          }
+        ],
+        "selector": [
+          "ac",
+          "attack",
+          "saving-throw"
+        ],
+        "type": "status",
+        "value": -1
+      }
+    ],
+    "slug": "effect-enforce-oath",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.LF8xzzFsFJKxejqv"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.LF8xzzFsFJKxejqv",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!LF8xzzFsFJKxejqv"
+}

@@ -1,0 +1,64 @@
+{
+  "_id": "ViKRoVgog172r163",
+  "img": "systems/pf2e/icons/features/ancestry/vivacious-gnome.webp",
+  "name": "Vivacious Gnome",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have an incredibly strong connection to the positive energy that flows through the First World, making it harder to attack your life force with negative energy. You gain negative resistance equal to half your level (minimum 1). When you have the @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed} condition, the condition affects you as if its value was 1 lower than it actually is (doomed 1 has no effect, doomed 2 causes you to die at @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying 3}, and so on).</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "void",
+        "value": "max(1,floor(@actor.level/2))"
+      }
+    ],
+    "slug": "vivacious-gnome",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Gnome",
+      "slug": "gnome",
+      "uuid": "Compendium.pf2e.ancestries.Item.CYlfsYLJcBOgqKtD"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.ViKRoVgog172r163"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.ViKRoVgog172r163",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ViKRoVgog172r163"
+}

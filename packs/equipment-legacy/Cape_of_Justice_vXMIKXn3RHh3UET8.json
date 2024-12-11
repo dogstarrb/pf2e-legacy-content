@@ -1,0 +1,121 @@
+{
+  "_id": "vXMIKXn3RHh3UET8",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/backfire-mantle.webp",
+  "name": "Cape of Justice",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>While Yaezhing is feared and seldom worshipped in the open, some regions of Tian Xia see him as a god of necessary evil and their only hope for justice. This garment is often worn by bounty hunters or priests of Yaezhing, yet non-worshippers of the god of harsh justice sometimes wear this item without fear of religious persecution. The red cape appears almost black while in the shadows, with a lighter red mandala pattern on it that resembles a shuriken.</p>\n<p>When you invest a cape of justice, you must designate a single creature as your offender. You must have met the creature before, or the creature should have a persona well known to the public (for instance, a bandit's epithet, if not their face as shown on a wanted poster). You gain a +1 item bonus to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} this creature. If you don't designate a creature as your offender when you invest the cape of justice, or if 24 hours pass without you either slaying or capturing your offender, your thoughts become worried and distracted and you take a –1 item penalty to Perception checks for the next 24 hours.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.wdN3sa1Qs2rEdiDC]{Effect: Cape of Justice (Distracted)}</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> command, Interact (force)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Effect</strong> By using a free hand to grab the edge of your cape and give it a quick flourish, you cause a red, shuriken-shaped bolt of force to fire at a target within 60 feet that you can see. The shuriken hits automatically and deals @Damage[(1d4+1)[force]] damage, or @Damage[(2d4+2)[force]] damage if the target is your designated offender. If the target is within 30 feet, you can attempt to Demoralize the target as a free action after the shuriken strikes them.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, Interact (incapacitation)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You produce manacles from the cape and then fling them at a Medium or Small bipedal target within 30 feet. The target must attempt a @Check[type:reflex|dc:18|traits:incapacitation] save.</p>\n<p><strong>Critical Success</strong> The target is unaffected, and the manacles vanish.</p>\n<p><strong>Success</strong> The manacles strike the target's legs but fail to latch properly. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn, at which point the manacles vanish.</p>\n<p><strong>Failure</strong> The manacles lock on the target's legs, causing the target to take a –15-foot circumstance penalty to its Speeds for 1 minute, or until it Escapes or is freed by someone using Pick a Lock (DC 18), after which the manacles vanish.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for as long as the manacles remain in place.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.CapeOfJustice.Toggle",
+        "option": "named-offender",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:demoralize",
+          "named-offender"
+        ],
+        "selector": "intimidation",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "cape-of-justice",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder #196: The Summer That Never Was",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 100
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worncloak"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.vXMIKXn3RHh3UET8"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.vXMIKXn3RHh3UET8",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!vXMIKXn3RHh3UET8"
+}

@@ -1,0 +1,82 @@
+{
+  "_id": "4uy4Ygf5KD2WrtGW",
+  "img": "systems/pf2e/icons/equipment/held-items/nosoi-charm.webp",
+  "name": "Effect: Nosoi Charm (Diplomacy)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +2 item bonus to Diplomacy checks to make a request.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.Equipment.NosoiCharm.RequestLabel",
+        "predicate": [
+          "action:request"
+        ],
+        "selector": "diplomacy",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "effect-nosoi-charm-diplomacy",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Adventure: Night of the Gray Death",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": false
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.4uy4Ygf5KD2WrtGW"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.4uy4Ygf5KD2WrtGW",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4uy4Ygf5KD2WrtGW"
+}

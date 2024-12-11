@@ -1,0 +1,111 @@
+{
+  "_id": "VGK9s6LCMMS027zP",
+  "img": "systems/pf2e/icons/spells/enthrall.webp",
+  "name": "Confront Selves",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You show the target the spiraling web of actions and consequences that is their life and the changes wrought by these decisions upon themselves and those around them. These events swirl around the target like shards of broken pottery. The creature must attempt a Will save to resist these visions.</p>\n<p>Each time you sustain this spell, you force the target to confront an alternate permutation of themselves, witnessing the events of their life as if they'd chosen another path. They take 2d6 mental damage (basic Will save) and are @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7]{Encumbered}. On a critical success, the spell ends and can no longer be sustained.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The mental damage increases by 1d6.</p>"
+    },
+    "rules": [],
+    "slug": "confront-selves",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "focus",
+        "illusion",
+        "manipulate",
+        "mental"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder #186: Ghost King's Rage",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": true
+    },
+    "damage": {
+      "aCPbEUxslprwNRxh": {
+        "applyMod": false,
+        "formula": "2d6",
+        "type": "mental",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "will",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "aCPbEUxslprwNRxh": "1d6"
+      },
+      "interval": 1,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.VGK9s6LCMMS027zP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.VGK9s6LCMMS027zP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VGK9s6LCMMS027zP"
+}

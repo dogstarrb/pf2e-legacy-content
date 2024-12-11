@@ -1,0 +1,85 @@
+{
+  "_id": "BRGdj5leyVFRHEUM",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Waxed Feathers",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your feathers are coated in a waxy substance that repels water. You gain a +1 circumstance bonus to saving throws against effects that have the water trait. So long as you're in a dry place, you can spend one action to shake off any water that clings to your clothing and feathers to instantly become dry.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "water"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "waxed-feathers",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "tengu"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "wavediver tengu heritage"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.BRGdj5leyVFRHEUM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.BRGdj5leyVFRHEUM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BRGdj5leyVFRHEUM"
+}

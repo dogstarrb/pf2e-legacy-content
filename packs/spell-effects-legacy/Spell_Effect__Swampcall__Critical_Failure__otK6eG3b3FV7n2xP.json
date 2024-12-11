@@ -1,0 +1,83 @@
+{
+  "_id": "otK6eG3b3FV7n2xP",
+  "img": "icons/commodities/stone/stone-cratered-brown.webp",
+  "name": "Spell Effect: Swampcall (Critical Failure)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.lbrWMnS2pecKaSVB]{Swampcall}</em></p>\n<p>You call upon the spirits of the soil to twist and churn, transforming the terrain in the targeted area into a sodden mess. The area becomes difficult terrain. Creatures in the area when you Cast this Spell must attempt a Reflex saving throw.</p>\n<hr />\n<p><strong>Critical Failure</strong> The creature sinks partially into the mud. The creature takes a -15-foot circumstance penalty to its Speeds (except for its swim Speed, if any) and becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}. These effects last until the creature leaves the area or until the end of its next turn, whichever comes first.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "burrow-speed",
+          "climb-speed",
+          "fly-speed",
+          "land-speed"
+        ],
+        "type": "circumstance",
+        "value": -15
+      }
+    ],
+    "slug": "spell-effect-swampcall-critical-failure",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #171: Hurricane's Howl",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.otK6eG3b3FV7n2xP"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 36700000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.otK6eG3b3FV7n2xP",
+    "duplicateSource": null
+  },
+  "_key": "!items!otK6eG3b3FV7n2xP"
+}

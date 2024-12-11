@@ -1,0 +1,114 @@
+{
+  "_id": "uJpghjJtNbqKUxRd",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Wolf Drag",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.Item.AN9jY1JVcU20Qdw6]{Wolf Stance}</p>\n<hr />\n<p>You rip your enemy off their feet.</p>\n<p>Make a wolf jaw Strike. Your wolf jaw gains the fatal d12 trait for this Strike, and if the attack succeeds, you knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>"
+    },
+    "rules": [
+      {
+        "disabledIf": [
+          {
+            "not": "self:effect:wolf-stance"
+          }
+        ],
+        "disabledValue": false,
+        "domain": "all",
+        "key": "RollOption",
+        "option": "wolf-drag",
+        "toggleable": true
+      },
+      {
+        "definition": [
+          "item:slug:wolf-jaws"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          "wolf-drag"
+        ],
+        "property": "weapon-traits",
+        "value": "fatal-d12"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess",
+          "success"
+        ],
+        "predicate": [
+          "item:slug:wolf-jaws",
+          "wolf-drag"
+        ],
+        "selector": "wolf-jaws-attack",
+        "text": "PF2E.SpecificRule.Monk.WolfDrag.Note",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "wolf-drag",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Wolf Stance"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.uJpghjJtNbqKUxRd"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.uJpghjJtNbqKUxRd",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uJpghjJtNbqKUxRd"
+}

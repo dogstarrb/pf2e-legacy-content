@@ -1,0 +1,91 @@
+{
+  "_id": "jzLDrpvaov8PX9vv",
+  "img": "icons/magic/death/undead-ghost-scream-teal.webp",
+  "name": "Effect: Ghost Strike",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.pM0g4ColXTiQ3gTa]{Ghost Strike}</p>\n<p>The weapon gains the effects of the <em>ghost touch</em> property rune for 10 minutes. At 10th level, you can apply this effect to two weapons instead of one.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "ghostStrikeWeapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "definition": [
+          "item:id:{item|flags.pf2e.rulesSelections.ghostStrikeWeapon}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "property-runes",
+        "value": "ghost-touch"
+      }
+    ],
+    "slug": "effect-ghost-strike",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #163: Ruins of Gauntlight",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.jzLDrpvaov8PX9vv"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.jzLDrpvaov8PX9vv",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!jzLDrpvaov8PX9vv"
+}

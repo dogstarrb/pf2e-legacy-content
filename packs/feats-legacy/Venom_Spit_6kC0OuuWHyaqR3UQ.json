@@ -1,0 +1,112 @@
+{
+  "_id": "6kC0OuuWHyaqR3UQ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Venom Spit",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've learned the art of lobbing toxic spittle at vulnerable spots on your foes, especially the eyes. You gain a venomous spit ranged unarmed attack with a range increment of 10 feet that deals 1d4 poison damage. On a critical hit, the target takes persistent poison damage equal to the number of weapon damage dice. Your spit doesn't have a weapon group, nor a critical specialization effect.</p>\n<p><strong>Special</strong> If you have the hooded nagaji heritage, in addition to your venomous spit's normal critical hit effect, the target is also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "poison",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "img": "systems/pf2e/icons/spells/diamond-dust.webp",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Nagaji.VenomSpit.StrikeLabel",
+        "range": {
+          "increment": 10
+        },
+        "traits": [
+          "unarmed"
+        ]
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "selector": "{item|_id}-damage",
+        "text": "PF2E.SpecificRule.Nagaji.VenomSpit.CriticalNote",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "self:heritage:hooded-nagaji"
+        ],
+        "selector": "{item|_id}-damage",
+        "text": "PF2E.SpecificRule.Nagaji.VenomSpit.HoodedNote",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "venom-spit",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "nagaji"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.6kC0OuuWHyaqR3UQ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.6kC0OuuWHyaqR3UQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6kC0OuuWHyaqR3UQ"
+}

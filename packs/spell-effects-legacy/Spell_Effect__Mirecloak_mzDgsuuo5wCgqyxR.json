@@ -1,0 +1,109 @@
+{
+  "_id": "mzDgsuuo5wCgqyxR",
+  "img": "icons/magic/water/ice-snowman.webp",
+  "name": "Spell Effect: Mirecloak",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You wrap the targeted creatures in thin, sickly green shrouds that sap information from attackers. The shroud settles about each target's shoulders, granting a +1 status bonus to AC and a +2 status bonus to Stealth checks, both only while the target is in dim light or darkness.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SkillVariant.DimLightOrDarkness",
+        "option": "mireclock-darkness",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "mirecloak-darkness",
+              "lighting:dim-light",
+              "lighting:darkness"
+            ]
+          }
+        ],
+        "selector": "ac",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "mirecloak-darkness",
+              "lighting:dim-light",
+              "lighting:darkness"
+            ]
+          }
+        ],
+        "selector": "stealth",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-mirecloak",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #171: Hurricane's Howl",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.mzDgsuuo5wCgqyxR"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 35000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.mzDgsuuo5wCgqyxR",
+    "duplicateSource": null
+  },
+  "_key": "!items!mzDgsuuo5wCgqyxR"
+}

@@ -1,0 +1,85 @@
+{
+  "_id": "KZJJ0WxcRd4RZKJR",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Elemental Familiar",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your familiar becomes an elemental spirit capable of taking on aspects of the elements. Other than taking the form of an elemental instead of an animal, this familiar continues to use all the same rules as other familiars.</p>\n<p>Your familiar gains one additional familiar ability each day, which must be one of the following elemental familiar abilities. While your familiar has an elemental familiar ability, your familiar is composed of the associated elemental matter and gains the matching elemental trait. You can't select more than one elemental familiar ability at a time.</p>\n<ul>\n<li><strong>Air</strong> If your familiar stays completely still for 1 round, it becomes @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} until it next takes an action. Any motion, even being moved or carried by another creature, ends this effect.</li>\n<li><strong>Earth</strong> Your familiar gains resistance to physical damage (except adamantine) equal to half your level.</li>\n<li><strong>Fire</strong> Your familiar sheds bright light in a 20-foot radius (and dim light for the next 20 feet) and emits warmth. Creatures that remain within a @Template[type:emanation|distance:15] don't take damage from severe environmental cold.</li>\n<li><strong>Metal</strong> Your familiar gains resistance to physical damage from metal weapons equal to half your level.</li>\n<li><strong>Water</strong> Your familiar can move through a gap at least 2 inches wide without @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeezing} and can Squeeze through a gap at least 1 inch wide.</li>\n<li><strong>Wood</strong> If your familiar remains in bright light for 1 round, it gains fast healing equal to half your level. Once it is out of bright light, this effect ends.</li>\n</ul>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.attributes.familiarAbilities.value",
+        "value": 1
+      }
+    ],
+    "slug": "elemental-familiar",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Elementalist Dedication"
+        },
+        {
+          "value": "Familiar"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.KZJJ0WxcRd4RZKJR"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.KZJJ0WxcRd4RZKJR",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!KZJJ0WxcRd4RZKJR"
+}

@@ -1,0 +1,143 @@
+{
+  "_id": "0koqUuC1YW4F1l5z",
+  "img": "systems/pf2e/icons/spells/anima-invocation.webp",
+  "name": "Spell Effect: Anima Invocation",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.X0t0gr7S7CeCt2Q5]{Anima Invocation (Modified)}</em></p>\n<p><strong>Critical Success</strong> You gain full access to your own potential for 1 day. You gain resistance 10 to all damage and a +4 status bonus to saves against effects created by evil creatures. Your Strikes gain the effects of the @UUID[Compendium.pf2e.equipment-srd.Item.JQdwHECogcTzdd8R]{Ghost Touch} rune and deal an additional @Damage[1d10[spirit]] damage. You are immune to the soul-draining effect within Alseta's Landing.</p>\n<p><strong>Success</strong> You tap into your own potential for 1 day. You gain resistance 5 to all damage and a +2 status bonus to saves against effects created by evil creatures. Your Strikes gain the effects of the ghost touch rune and deal an additional @Damage[1[spirit]] damage. You are immune to the soul-draining effect within Alseta's Landing.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.Check.Result.Degree.Check.criticalSuccess",
+            "value": "critical-success"
+          },
+          {
+            "label": "PF2E.Check.Result.Degree.Check.success",
+            "value": "success"
+          }
+        ],
+        "flag": "outcome",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.DegreeOfSuccess",
+        "rollOption": "anima-invocation"
+      },
+      {
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "property-runes",
+        "value": "ghost-touch"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "anima-invocation:critical-success",
+          "origin:trait:evil"
+        ],
+        "selector": "saving-throw",
+        "slug": "anima-invocation-save-critical",
+        "type": "status",
+        "value": 4
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "anima-invocation:critical-success"
+        ],
+        "type": "all-damage",
+        "value": 10
+      },
+      {
+        "damageType": "spirit",
+        "diceNumber": 1,
+        "dieSize": "d10",
+        "key": "DamageDice",
+        "predicate": [
+          "anima-invocation:critical-success"
+        ],
+        "selector": "strike-damage"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "anima-invocation:success",
+          "origin:trait:evil"
+        ],
+        "selector": "saving-throw",
+        "slug": "anima-invocation-save-success",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "damageType": "spirit",
+        "key": "FlatModifier",
+        "predicate": [
+          "anima-invocation:success"
+        ],
+        "selector": "strike-damage",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-anima-invocation",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #150: Broken Promises",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "days",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.0koqUuC1YW4F1l5z"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 1200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.0koqUuC1YW4F1l5z",
+    "duplicateSource": null
+  },
+  "_key": "!items!0koqUuC1YW4F1l5z"
+}

@@ -1,0 +1,158 @@
+{
+  "_id": "6VrKQ0PhRXuteusQ",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "name": "Effect: Giant's Stature",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.W21jKAcG0GtEtBiK]{Giant's Stature}</p>\n<p>You become Large, increasing your reach by 5 feet and gaining the @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} condition until you stop raging</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.ActorSizeLarge",
+            "value": "large"
+          },
+          {
+            "label": "PF2E.ActorSizeHuge",
+            "predicate": [
+              "feat:titans-stature"
+            ],
+            "value": "huge"
+          }
+        ],
+        "flag": "size",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.CreatureSize",
+        "rollOption": "giants-stature"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.attributes.reach.value",
+        "predicate": [
+          "giants-stature:large"
+        ],
+        "value": 5
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.attributes.reach.manipulate",
+        "predicate": [
+          "giants-stature:large"
+        ],
+        "value": 5
+      },
+      {
+        "allowDuplicate": false,
+        "key": "GrantItem",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "uuid": "Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm"
+      },
+      {
+        "key": "CreatureSize",
+        "predicate": [
+          "giants-stature:large"
+        ],
+        "reach": {
+          "upgrade": 10
+        },
+        "resizeEquipment": true,
+        "value": "large"
+      },
+      {
+        "key": "CreatureSize",
+        "predicate": [
+          "giants-stature:huge"
+        ],
+        "reach": {
+          "upgrade": 15
+        },
+        "resizeEquipment": true,
+        "value": "huge"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.attributes.reach.value",
+        "predicate": [
+          "giants-stature:huge"
+        ],
+        "value": 10
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.attributes.reach.manipulate",
+        "predicate": [
+          "giants-stature:huge"
+        ],
+        "value": 10
+      }
+    ],
+    "slug": "effect-giants-stature",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.6VrKQ0PhRXuteusQ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.6VrKQ0PhRXuteusQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6VrKQ0PhRXuteusQ"
+}

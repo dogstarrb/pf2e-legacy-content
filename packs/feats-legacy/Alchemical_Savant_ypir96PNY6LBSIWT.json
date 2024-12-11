@@ -1,0 +1,96 @@
+{
+  "_id": "ypir96PNY6LBSIWT",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Alchemical Savant",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can identify alchemical items quickly. When using the Crafting skill to @UUID[Compendium.pf2e.actionspf2e.Item.Q4kdWVOf2ztIBFg1]{Identify Alchemy} on an alchemical item you hold, you can do so as a single action, which has the concentrate and manipulate traits, instead of spending 10 minutes.</p>\n<p>If you have the formula for the item you are attempting to identify, you gain a +2 circumstance bonus to your check, and if you roll a critical failure, you get a failure instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Alchemical Savant (identify alchemical items with formula)",
+        "predicate": [
+          "action:identify-alchemy",
+          "have-formula"
+        ],
+        "selector": "crafting",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "action:identify-alchemy"
+        ],
+        "selector": "crafting",
+        "text": "If have the formula for the item you're identifying, and you roll a critical failure, you get a failure instead.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "alchemical-savant",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemist"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Crafting"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ypir96PNY6LBSIWT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ypir96PNY6LBSIWT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ypir96PNY6LBSIWT"
+}

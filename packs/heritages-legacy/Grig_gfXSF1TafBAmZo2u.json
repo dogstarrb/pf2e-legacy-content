@@ -1,0 +1,73 @@
+{
+  "_id": "gfXSF1TafBAmZo2u",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Grig",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have the hindquarters of a cricket and adore art and music. Your cricket legs grant you a +2 circumstance bonus on Athletics checks to High Jump or Long Jump, and you gain <em>@UUID[Compendium.pf2e.spells-srd.Item.atlgGNI1E1Ox3O3a]{Ghost Sound}</em> as a primal innate cantrip.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SkillVariant.HighJumpOrLongJump",
+        "predicate": [
+          {
+            "or": [
+              "action:high-jump",
+              "action:long-jump"
+            ]
+          }
+        ],
+        "selector": "athletics",
+        "value": 2
+      }
+    ],
+    "slug": "grig",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Sprite",
+      "slug": "sprite",
+      "uuid": "Compendium.pf2e.ancestries.Item.TRqoeYfGAFjQbviF"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.gfXSF1TafBAmZo2u"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.gfXSF1TafBAmZo2u",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!gfXSF1TafBAmZo2u"
+}

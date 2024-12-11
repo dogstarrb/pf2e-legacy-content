@@ -1,0 +1,92 @@
+{
+  "_id": "Obm4ItMIIr0whYeO",
+  "img": "systems/pf2e/icons/features/classes/implement-adept.webp",
+  "name": "Implement Adept",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have deepened your connection to one of your implements, unlocking its adept power. Choose one of your implements and gain the adept benefit for that implement.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "predicate": [
+            "item:tag:thaumaturge-implement"
+          ],
+          "types": [
+            "feat"
+          ]
+        },
+        "flag": "implementAdept",
+        "key": "ChoiceSet"
+      },
+      {
+        "itemId": "{item|flags.pf2e.rulesSelections.implementAdept}",
+        "key": "ItemAlteration",
+        "mode": "add",
+        "property": "other-tags",
+        "value": "thaumaturge-implement-adept"
+      }
+    ],
+    "slug": "implement-adept",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "thaumaturge"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.Obm4ItMIIr0whYeO"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.Obm4ItMIIr0whYeO",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Obm4ItMIIr0whYeO"
+}

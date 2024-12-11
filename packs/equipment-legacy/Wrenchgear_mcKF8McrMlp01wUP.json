@@ -1,0 +1,109 @@
+{
+  "_id": "mcKF8McrMlp01wUP",
+  "img": "systems/pf2e/icons/default-icons/equipment.svg",
+  "name": "Wrenchgear",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The ubiquity of clockwork constructs in Alkenstar spurred the development of the wrenchgear (a shortened \"wrench in the gears\") by innovative criminals (\"wrenchers\") to create security exploits and larcenous opportunities. You gain a +2 item bonus to Disable a Device checks made against clockwork creatures (typically to wind them down).</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:disable-a-device"
+        ],
+        "selector": "thievery",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "wrenchgear",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 50
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.mcKF8McrMlp01wUP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.mcKF8McrMlp01wUP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!mcKF8McrMlp01wUP"
+}

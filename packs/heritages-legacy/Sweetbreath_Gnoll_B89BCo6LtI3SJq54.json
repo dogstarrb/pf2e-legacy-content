@@ -1,0 +1,74 @@
+{
+  "_id": "B89BCo6LtI3SJq54",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Sweetbreath Gnoll",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You're a striped, pale-furred gnoll with oddly pleasant breath, which you can use to entrance your prey. You are trained in Diplomacy (or another skill if you were already trained in Diplomacy). You also gain a +1 circumstance bonus to checks to Make an Impression if the target can smell your breath.</p>\n<hr />\n<p><em>Note: If you are already trained in the skill provided by this feat, you need to manually select an alternative skill.</em></p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:make-an-impression"
+        ],
+        "selector": "diplomacy",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.diplomacy.rank",
+        "value": 1
+      }
+    ],
+    "slug": "sweetbreath-gnoll",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Mwangi Expanse",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Gnoll",
+      "slug": "gnoll",
+      "uuid": "Compendium.pf2e.ancestries.Item.vxbQ1Yw4qwgjTzqo"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.B89BCo6LtI3SJq54"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.B89BCo6LtI3SJq54",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!B89BCo6LtI3SJq54"
+}

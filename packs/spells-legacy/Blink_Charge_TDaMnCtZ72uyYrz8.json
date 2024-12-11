@@ -1,0 +1,108 @@
+{
+  "_id": "TDaMnCtZ72uyYrz8",
+  "img": "icons/magic/sonic/projectile-shock-wave-blue.webp",
+  "name": "Blink Charge",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You propel yourself through the fabric of space to deal a blow carrying the momentum of your teleportation. You teleport to an empty space adjacent to a creature you can see within range, then make a Strike against the creature with a weapon you're wielding. The Strike deals damage, plus an extra 2d8 force damage, depending on the result of your Strike.</p>\n<hr />\n<p><strong>Critical Success</strong> Double damage, plus after the Strike, you can teleport the target into an empty space up to 5 feet away from its current position. The new space must be on the ground if it started on the ground, in the air if it was flying, and so on.</p>\n<p><strong>Success</strong> The Strike deals full damage.</p>\n<p><strong>Failure</strong> The Strike deals no damage, but the target takes @Damage[1d8[force]] damage.</p>\n<p><strong>Critical Failure</strong> The Strike deals no damage, and you take 1d8 force damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The spell's range increases by 60 feet, and any force damage the spell deals is increased by @Damage[1d8[force]].</p>"
+    },
+    "rules": [],
+    "slug": "blink-charge",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "force",
+        "manipulate",
+        "teleportation"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "divine",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "2d8",
+        "type": "force",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d8"
+      },
+      "interval": 2,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.TDaMnCtZ72uyYrz8"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.TDaMnCtZ72uyYrz8",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!TDaMnCtZ72uyYrz8"
+}

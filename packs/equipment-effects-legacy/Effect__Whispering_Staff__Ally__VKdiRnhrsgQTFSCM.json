@@ -1,0 +1,89 @@
+{
+  "_id": "VKdiRnhrsgQTFSCM",
+  "img": "icons/weapons/staves/staff-simple-spiral-brown.webp",
+  "name": "Effect: Whispering Staff (Ally)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Whenever you and your affected allies attempt to Recall Knowledge or attempt a saving throw against a mental effect, you roll twice and take the better result. This is a fortune effect.</p>"
+    },
+    "rules": [
+      {
+        "keep": "higher",
+        "key": "RollTwice",
+        "predicate": [
+          "mental"
+        ],
+        "removeAfterRoll": false,
+        "selector": "saving-throw"
+      },
+      {
+        "keep": "higher",
+        "key": "RollTwice",
+        "predicate": [
+          "action:recall-knowledge"
+        ],
+        "removeAfterRoll": false,
+        "selector": "skill-check"
+      }
+    ],
+    "slug": "effect-whispering-staff-ally",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.VKdiRnhrsgQTFSCM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.VKdiRnhrsgQTFSCM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VKdiRnhrsgQTFSCM"
+}

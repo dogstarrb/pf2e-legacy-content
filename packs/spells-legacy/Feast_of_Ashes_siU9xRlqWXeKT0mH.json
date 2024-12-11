@@ -1,0 +1,112 @@
+{
+  "_id": "siU9xRlqWXeKT0mH",
+  "img": "systems/pf2e/icons/spells/feast-of-ashes.webp",
+  "name": "Feast of Ashes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You curse the target with a hunger no food can sate. You can Dismiss the spell. The target must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune for 1 hour.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for 1 round.</p>\n<p><strong>Failure</strong> The creature is immediately afflicted by hunger as if it hadn't eaten food in days. It becomes Fatigued and takes 1d4 damage each day that can't be healed until it sates its hunger. No amount of eating can sate the creature's hunger during the spell's duration. After the spell's duration, the creature takes damage from starvation.</p>\n<p><strong>Critical Failure</strong> As failure but the creature takes 2d4 damage each day, twice as much as usual for hunger.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The hunger becomes more unbearable, increasing the damage each day by 1d4, or by 2d4 on a critical failure.</p>"
+    },
+    "rules": [],
+    "slug": "feast-of-ashes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "curse",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "occult",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Gods & Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 living creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "3"
+    },
+    "duration": {
+      "value": "1 week",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "formula": "1d4",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d4"
+      },
+      "interval": 1,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.siU9xRlqWXeKT0mH"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.siU9xRlqWXeKT0mH",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!siU9xRlqWXeKT0mH"
+}

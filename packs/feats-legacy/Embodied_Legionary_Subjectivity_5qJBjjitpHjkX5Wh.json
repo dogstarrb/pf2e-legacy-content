@@ -1,0 +1,88 @@
+{
+  "_id": "5qJBjjitpHjkX5Wh",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Embodied Legionary Subjectivity",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Access</strong> You're from Nex.</p>\n<hr />\n<p>Nex's Fleshforges shaped you not to achieve individual greatness at arms, but rather to become a part of a legion, a modular piece integral to the combined arms stratagems of Nexian battlemages. You become trained in Arcana and Athletics. If you would automatically become trained in one of those skills, you instead gain the trained rank in another skill of your choice. You also become trained in Warfare Lore.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.arcana.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.athletics.rank",
+        "value": 1
+      }
+    ],
+    "slug": "embodied-legionary-subjectivity",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fleshwarp"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "cataphract fleshwarp heritage"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.5qJBjjitpHjkX5Wh"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.5qJBjjitpHjkX5Wh",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5qJBjjitpHjkX5Wh"
+}

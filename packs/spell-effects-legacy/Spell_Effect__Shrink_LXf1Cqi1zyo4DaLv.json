@@ -1,0 +1,77 @@
+{
+  "_id": "LXf1Cqi1zyo4DaLv",
+  "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
+  "name": "Spell Effect: Shrink",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.PjhUmyKnq6K5uDby]{Shrink}</em></p>\n<p>You warp space to make a creature smaller. The target shrinks to become Tiny in size. Its equipment shrinks with it but returns to its original size if removed. The creature's reach changes to 0 feet. This spell has no effect on a Tiny creature.</p>"
+    },
+    "rules": [
+      {
+        "key": "CreatureSize",
+        "resizeEquipment": true,
+        "value": "tiny"
+      }
+    ],
+    "slug": "spell-effect-shrink",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 5,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.LXf1Cqi1zyo4DaLv"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 17000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.LXf1Cqi1zyo4DaLv",
+    "duplicateSource": null
+  },
+  "_key": "!items!LXf1Cqi1zyo4DaLv"
+}

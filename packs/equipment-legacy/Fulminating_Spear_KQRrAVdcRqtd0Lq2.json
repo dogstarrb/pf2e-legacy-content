@@ -1,0 +1,186 @@
+{
+  "_id": "KQRrAVdcRqtd0Lq2",
+  "img": "icons/weapons/polearms/spear-flared-bronze-teal.webp",
+  "name": "Fulminating Spear",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This <em>+1 striking returning spear</em> is warm to the touch. The head of the spear is crafted from gold with ivory inlay and has a ruby set into the shaft. You can make the spear glow like a torch or suppress its light by using an action, which has the concentrate trait.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You touch the ruby and hurl the spear at a square within 40 feet. When the spear lands, it detonates, dealing @Damage[6d6[fire]] damage (@Check[type:reflex|dc:23|basic:true|name:Fulminating Spear Explosion|traits:uncommon|showDC:all]) to all creatures in a @Template[type:emanation|distance:10]. It then flies back to your hand.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.LitFulminatingSpear",
+        "option": "lit-fulminating-spear",
+        "toggleable": true
+      },
+      {
+        "key": "TokenLight",
+        "predicate": [
+          "lit-fulminating-spear"
+        ],
+        "value": {
+          "animation": {
+            "intensity": 4,
+            "speed": 1,
+            "type": "torch"
+          },
+          "bright": 20,
+          "color": "#9b7337",
+          "dim": 40,
+          "shadows": 0.2
+        }
+      },
+      {
+        "key": "TokenEffectIcon",
+        "predicate": [
+          "lit-fulminating-spear"
+        ],
+        "value": "icons/weapons/polearms/spear-flared-bronze-teal.webp"
+      }
+    ],
+    "slug": "fulminating-spear",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fire",
+        "magical",
+        "thrown-20"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #170: Spoken on the Song Wind",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "quantity": 1,
+    "baseItem": "spear",
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 360
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "category": "simple",
+    "group": "spear",
+    "bonus": {
+      "value": 0
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d6",
+      "damageType": "piercing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": null,
+    "reload": {
+      "value": "-"
+    },
+    "runes": {
+      "potency": 1,
+      "striking": 1,
+      "property": [
+        "returning"
+      ]
+    },
+    "specific": {
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "runes": {
+        "potency": 1,
+        "striking": 1,
+        "property": [
+          "returning"
+        ]
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.KQRrAVdcRqtd0Lq2"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.KQRrAVdcRqtd0Lq2",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!KQRrAVdcRqtd0Lq2"
+}

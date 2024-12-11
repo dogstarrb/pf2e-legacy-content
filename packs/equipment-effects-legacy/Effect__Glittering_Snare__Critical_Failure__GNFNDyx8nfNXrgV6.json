@@ -1,0 +1,78 @@
+{
+  "_id": "GNFNDyx8nfNXrgV6",
+  "img": "systems/pf2e/icons/equipment/snares/glittering-snare-effect.webp",
+  "name": "Effect: Glittering Snare (Critical Failure)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature takes a -4 status penalty to Stealth checks for 5 minutes or until it spends a 3-action activity, which has the manipulate trait, to remove the glitter. The glitter continues to fall around the creature until completely removed, leaving a trail behind it as it moves and revealing its rough location; the creature is @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden}, rather than @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected}, to any creature that can see the glitter whenever it would otherwise have been undetected.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "stealth",
+        "type": "status",
+        "value": -4
+      }
+    ],
+    "slug": "effect-glittering-snare-critical-failure",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": 5,
+      "unit": "minutes",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.GNFNDyx8nfNXrgV6"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.GNFNDyx8nfNXrgV6",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!GNFNDyx8nfNXrgV6"
+}

@@ -1,0 +1,90 @@
+{
+  "_id": "nRjyyDulHnP5OewA",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Gorilla Pound",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.Item.DqD7htz8Sd1dh3BT]{Gorilla Stance}.</p>\n<hr />\n<p>You pound your chest before slamming into your foes.</p>\n<p>Attempt an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}, then make one gorilla slam Strike against the same target. If your Strike hits, you gain a circumstance bonus to the damage roll equal to triple the value of the target's @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition.</p>\n<hr />\n<p><strong>Special</strong> If you have this feat, while you are in Gorilla Stance, you gain a @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} Speed of 15 feet.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "predicate": [
+          "self:effect:gorilla-stance"
+        ],
+        "selector": "climb",
+        "value": 15
+      }
+    ],
+    "slug": "gorilla-pound",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "emotion",
+        "flourish",
+        "mental",
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Intimidation"
+        },
+        {
+          "value": "Gorilla Stance"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.nRjyyDulHnP5OewA"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.nRjyyDulHnP5OewA",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!nRjyyDulHnP5OewA"
+}

@@ -1,0 +1,81 @@
+{
+  "_id": "kMoOWWBqDYmPcYyS",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "name": "Spell Effect: Bathe in Blood",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>While remaining recognizably yourself, you also become preternaturally attractive, gaining a +1 circumstance bonus to Make an Impression.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:make-an-impression"
+        ],
+        "selector": "diplomacy",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-bathe-in-blood",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.kMoOWWBqDYmPcYyS"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 32700000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.kMoOWWBqDYmPcYyS",
+    "duplicateSource": null
+  },
+  "_key": "!items!kMoOWWBqDYmPcYyS"
+}

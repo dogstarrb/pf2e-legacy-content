@@ -1,0 +1,112 @@
+{
+  "_id": "3b0wleCdaPw3c9UX",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-red.webp",
+  "name": "Sun Sight",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Placed under the eyes like rays of light, this tattoo burns away illusions with the unmerciful brilliance of the sun. You gain a +2 bonus to Perception checks that involve sight. If you're @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, you receive a new save at the start of each of your turns to end your dazzled condition.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The tattoo casts a 4th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.ZxHC7V7HtjUsB8zH]{Blazing Bolt}</em>, with the rays emitting from your eyes. The number of actions you spend Activating the tattoo determines scorching ray's number of rays. The tattoo also attempts to dispel each illusion on a creature hit by a ray (counteract level 5th, counteract modifier +19).</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "sight"
+        ],
+        "selector": "perception",
+        "value": 2
+      }
+    ],
+    "slug": "sun-sight",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical",
+        "tattoo"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 850
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "tattooed-on-the-body"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.3b0wleCdaPw3c9UX"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.3b0wleCdaPw3c9UX",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3b0wleCdaPw3c9UX"
+}

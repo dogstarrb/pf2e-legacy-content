@@ -1,0 +1,92 @@
+{
+  "_id": "acqqlYmti8D9QJi0",
+  "img": "icons/magic/lightning/bolt-strike-clouds-blue.webp",
+  "name": "Storm Order",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You carry the fury of the storm within you, channeling it to terrifying effect and riding the winds through the sky.</p>\n<p>You are trained in Acrobatics. You also gain the @UUID[Compendium.pf2e.feats-srd.Item.UpEjRfQkCJCruAfb]{Storm Born} druid feat. You gain the <em>@UUID[Compendium.pf2e.spells-srd.Item.ho1jSoYKrHUNnM90]{Tempest Surge}</em> order spell, and you increase the number of Focus Points in your focus pool by 1. Polluting the air or allowing those who cause major air pollution or climate shifts to go unpunished is anathema to your order. (This doesn't force you to take action against merely potential harm to the environment or to sacrifice yourself against an obviously superior foe.)</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.acrobatics.rank",
+        "predicate": [
+          {
+            "not": "feat:order-explorer:storm-order"
+          }
+        ],
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "class:druid"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.UpEjRfQkCJCruAfb"
+      }
+    ],
+    "slug": "storm-order",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "druid-order"
+      ],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.acqqlYmti8D9QJi0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.acqqlYmti8D9QJi0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!acqqlYmti8D9QJi0"
+}

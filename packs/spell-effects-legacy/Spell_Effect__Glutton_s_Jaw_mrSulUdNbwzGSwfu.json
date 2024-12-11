@@ -1,0 +1,95 @@
+{
+  "_id": "mrSulUdNbwzGSwfu",
+  "img": "icons/creatures/abilities/mouth-teeth-sharp.webp",
+  "name": "Spell Effect: Glutton's Jaw",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.SdXFiQ4Py8761sNO]{Glutton's Jaw}</em></p>\n<p>Your mouth transforms into a shadowy maw bristling with pointed teeth. These jaws are an unarmed attack with the forceful trait dealing 1d8 piercing damage. If you hit with your jaws and deal damage, you gain temporary Hit Points.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "piercing",
+            "dice": 1,
+            "die": "d8"
+          }
+        },
+        "key": "Strike",
+        "label": "PF2E.BattleForm.Attack.Jaws",
+        "range": null,
+        "traits": [
+          "forceful",
+          "unarmed"
+        ]
+      },
+      {
+        "key": "Note",
+        "selector": "{item|id}-damage",
+        "text": "PF2E.SpecificRule.SpellEffectGluttonsJaw.Text",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "spell-effect-gluttons-jaw",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.mrSulUdNbwzGSwfu"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 34800000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.mrSulUdNbwzGSwfu",
+    "duplicateSource": null
+  },
+  "_key": "!items!mrSulUdNbwzGSwfu"
+}

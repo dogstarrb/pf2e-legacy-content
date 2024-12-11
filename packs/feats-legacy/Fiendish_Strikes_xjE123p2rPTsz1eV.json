@@ -1,0 +1,106 @@
+{
+  "_id": "xjE123p2rPTsz1eV",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Fiendish Strikes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your festering connection to the forces of evil infuses your weapons with debilitating malevolence, tearing down creatures of good with every attack.</p>\n<p>All your weapon and unarmed Strikes deal @Damage[1[spirit]] damage and have the evil and magical traits.</p>"
+    },
+    "rules": [
+      {
+        "damageType": "spirit",
+        "key": "FlatModifier",
+        "selector": "strike-damage",
+        "value": 1
+      },
+      {
+        "definition": [
+          {
+            "or": [
+              "item:melee",
+              "item:ranged"
+            ]
+          }
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "traits",
+        "value": "evil"
+      },
+      {
+        "definition": [
+          {
+            "or": [
+              "item:melee",
+              "item:ranged"
+            ]
+          }
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "traits",
+        "value": "magical"
+      }
+    ],
+    "slug": "fiendish-strikes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "nephilim"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.xjE123p2rPTsz1eV"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.xjE123p2rPTsz1eV",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xjE123p2rPTsz1eV"
+}

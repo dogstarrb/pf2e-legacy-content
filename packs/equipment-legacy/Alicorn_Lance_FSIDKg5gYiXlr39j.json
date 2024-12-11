@@ -1,0 +1,188 @@
+{
+  "_id": "FSIDKg5gYiXlr39j",
+  "img": "systems/pf2e/icons/equipment/weapons/lance.webp",
+  "name": "Alicorn Lance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This white <em>+1 striking lance</em> is made from the horn of a unicorn, willingly granted at the end of its lifetime. In addition to its normal damage, it deals 1 good damage on successful attacks. You can make the lance glow like a torch or suppress its light by using an action, which has the concentrate trait.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact (magical, necromancy)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Effect</strong> You evoke the spirit of the unicorn that donated the <em>alicorn lance</em>'s horn, which you ride in a shining charge. Move up to twice your Speed and make a Strike with the <em>alicorn lance</em>; you gain the effects of the lance's jousting trait on this Strike. If you were already mounted when you Activate the horn, the unicorn spirit takes shape around your steed, granting it a +10–foot status bonus to its Speed for the charge.</p>\n<hr />\n<p><strong>Craft Requirements</strong> The initial raw materials must include a horn willingly gifted by a unicorn. In rare instances, an <em>alicorn lance</em> can be made with a forcibly taken horn. However this heinous act pollutes the horn's magic, causing it to glow with a sickly red light, deal evil damage instead of good damage, and make the unicorn spirit evoked in the charge to whinny visibly in pain.</p>"
+    },
+    "rules": [
+      {
+        "damageType": "spirit",
+        "key": "FlatModifier",
+        "selector": "{item|_id}-damage",
+        "value": 1
+      },
+      {
+        "key": "TokenLight",
+        "predicate": [
+          "lit-alicorn-lance"
+        ],
+        "value": {
+          "animation": {
+            "intensity": 4,
+            "speed": 1,
+            "type": "torch"
+          },
+          "bright": 20,
+          "color": "#9b7337",
+          "dim": 40,
+          "shadows": 0.2
+        }
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.LitAlicornLance",
+        "option": "lit-alicorn-lance",
+        "toggleable": true
+      },
+      {
+        "key": "TokenEffectIcon",
+        "predicate": [
+          "lit-alicorn-lance"
+        ],
+        "value": "systems/pf2e/icons/equipment/weapons/lance.webp"
+      }
+    ],
+    "slug": "alicorn-lance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "deadly-d8",
+        "jousting-d6",
+        "reach"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "quantity": 1,
+    "baseItem": "lance",
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 150
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "category": "martial",
+    "group": "spear",
+    "bonus": {
+      "value": 0
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d8",
+      "damageType": "piercing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": null,
+    "reload": {
+      "value": ""
+    },
+    "runes": {
+      "potency": 1,
+      "striking": 1,
+      "property": []
+    },
+    "specific": {
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "runes": {
+        "potency": 1,
+        "striking": 1,
+        "property": []
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.FSIDKg5gYiXlr39j"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.FSIDKg5gYiXlr39j",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!FSIDKg5gYiXlr39j"
+}

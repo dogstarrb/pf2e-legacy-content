@@ -1,0 +1,122 @@
+{
+  "_id": "gBJtUhewnihlqxm7",
+  "img": "systems/pf2e/icons/spells/roses-thorns.webp",
+  "name": "Rose's Thorns",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Rose bushes with razor-sharp thorns sprout from the ground in the area. The rose bushes deal @Damage[8d8[piercing]] damage to each creature that's in the area when the spell is cast or that ends its turn in the area (basic Reflex save). A creature that critically fails its saving throw also takes @Damage[1d8[persistent,bleed]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round or until the creature @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escapes} (against your spell DC), whichever comes first. The area is difficult terrain and hazardous terrain. A creature that moves through the area takes @Damage[5[piercing]] for every square of that area it moves into. Each time you sustain this spell, the radius of the burst increases by 5 feet.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The initial damage increases to @Damage[12d8[piercing]], the persistent bleed damage increases to @Damage[2d8[persistent,bleed]], and the hazardous terrain damage increases to @Damage[8[piercing]].</p>"
+    },
+    "rules": [],
+    "slug": "roses-thorns",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate",
+        "plant"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Firebrands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "120 feet"
+    },
+    "area": {
+      "type": "burst",
+      "value": 20
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": true
+    },
+    "damage": {
+      "G3HdXE0YaAVaevwg": {
+        "applyMod": false,
+        "formula": "8d8",
+        "type": "piercing",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "7": {
+          "damage": {
+            "G3HdXE0YaAVaevwg": {
+              "applyMod": false,
+              "formula": "12d8",
+              "type": "piercing",
+              "materials": []
+            }
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.gBJtUhewnihlqxm7"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.gBJtUhewnihlqxm7",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!gBJtUhewnihlqxm7"
+}

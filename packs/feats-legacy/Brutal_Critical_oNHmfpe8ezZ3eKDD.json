@@ -1,0 +1,91 @@
+{
+  "_id": "oNHmfpe8ezZ3eKDD",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Brutal Critical",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your critical hits are particularly devastating. On a critical hit with a melee Strike, add one extra damage die. This is in addition to any extra dice you gain if the weapon is deadly or fatal. The target also takes persistent bleed damage equal to two damage dice.</p>"
+    },
+    "rules": [
+      {
+        "critical": true,
+        "diceNumber": 1,
+        "key": "DamageDice",
+        "predicate": [
+          "melee"
+        ],
+        "selector": "strike-damage"
+      },
+      {
+        "critical": true,
+        "damageType": "bleed",
+        "diceNumber": 2,
+        "key": "DamageDice",
+        "predicate": [
+          "melee"
+        ],
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "brutal-critical",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "barbarian"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.oNHmfpe8ezZ3eKDD"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.oNHmfpe8ezZ3eKDD",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!oNHmfpe8ezZ3eKDD"
+}

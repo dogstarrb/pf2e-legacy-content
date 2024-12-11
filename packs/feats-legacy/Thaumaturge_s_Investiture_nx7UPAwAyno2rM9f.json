@@ -1,0 +1,109 @@
+{
+  "_id": "nx7UPAwAyno2rM9f",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Thaumaturge's Investiture",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Magical equipment and gear are the tools of your trade, and you know you need as many as possible to help you against the supernatural. You gain the @UUID[Compendium.pf2e.feats-srd.Item.4vu6P3cYoOOeUbLK]{Incredible Investiture} skill feat, increasing your limit on invested items from 10 to 12. The limit increases to 14 if you have Charisma 18, 16 if you have Charisma 20, 18 if you have Charisma 22, and 20 if you have Charisma 24.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.4vu6P3cYoOOeUbLK"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.resources.investiture.max",
+        "value": {
+          "brackets": [
+            {
+              "end": 4,
+              "start": 4,
+              "value": 14
+            },
+            {
+              "end": 5,
+              "start": 5,
+              "value": 16
+            },
+            {
+              "end": 6,
+              "start": 6,
+              "value": 18
+            },
+            {
+              "start": 7,
+              "value": 20
+            }
+          ],
+          "field": "system.abilities.cha.mod"
+        }
+      }
+    ],
+    "slug": "thaumaturges-investiture",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "thaumaturge"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Charisma 16"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.nx7UPAwAyno2rM9f"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.nx7UPAwAyno2rM9f",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!nx7UPAwAyno2rM9f"
+}

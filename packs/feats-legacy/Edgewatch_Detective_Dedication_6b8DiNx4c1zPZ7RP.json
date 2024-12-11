@@ -1,0 +1,93 @@
+{
+  "_id": "6b8DiNx4c1zPZ7RP",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Edgewatch Detective Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You become trained in Society or Thievery; if you are already trained in both of these skills, you instead become trained in a skill of your choice. You can use Perception instead of Survival to Track, and you gain the @UUID[Compendium.pf2e.feats-srd.Item.urQZwmzg2kS53vd5]{Experienced Tracker} skill feat.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.5RH1CkZQHYpsOium]{Edgewatch Detective} archetype.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.society.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.thievery.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.urQZwmzg2kS53vd5"
+      }
+    ],
+    "slug": "edgewatch-detective-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "uncommon",
+      "selected": {
+        "archetype": "Archetype",
+        "dedication": "Dedication"
+      }
+    },
+    "publication": {
+      "title": "Pathfinder #157: Devil at the Dreaming Palace",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.6b8DiNx4c1zPZ7RP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.6b8DiNx4c1zPZ7RP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6b8DiNx4c1zPZ7RP"
+}

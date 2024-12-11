@@ -1,0 +1,83 @@
+{
+  "_id": "RGs4uR3CAvgbtBAA",
+  "img": "systems/pf2e/icons/features/classes/greater-field-discovery-bomber.webp",
+  "name": "Greater Field Discovery (Bomber)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You learn an incredible discovery that advances your understanding of your field.</p>\n<p>You can increase the splash on your bombs to damage creatures within 10 feet, or 15 feet if you have @UUID[Compendium.pf2e.feats-srd.Item.gyVcJfZTmBytLsXq]{Expanded Splash}.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "alchemical",
+          "bomb",
+          "splash"
+        ],
+        "selector": "strike-damage",
+        "text": "The bomb deals splash damage to every creature within 10 feet of the target, or 15 feet if you have Expanded Splash.",
+        "title": "Bomber (Greater Field Discovery)"
+      }
+    ],
+    "slug": "greater-field-discovery-bomber",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemist"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.RGs4uR3CAvgbtBAA"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.RGs4uR3CAvgbtBAA",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!RGs4uR3CAvgbtBAA"
+}

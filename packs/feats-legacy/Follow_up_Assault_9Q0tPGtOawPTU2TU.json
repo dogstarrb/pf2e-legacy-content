@@ -1,0 +1,103 @@
+{
+  "_id": "9Q0tPGtOawPTU2TU",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Follow-up Assault",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You used your previous action to make a melee Strike that missed.</p>\n<hr />\n<p>Even in the face of failure you press the attack, determined to succeed. Make a Strike with the same weapon, adding the effects of the backswing and forceful weapon traits.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "follow-up-assault",
+        "toggleable": true
+      },
+      {
+        "definition": [
+          "item:melee"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          "follow-up-assault"
+        ],
+        "property": "weapon-traits",
+        "value": "backswing"
+      },
+      {
+        "definition": [
+          "item:melee"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          "follow-up-assault"
+        ],
+        "property": "weapon-traits",
+        "value": "forceful"
+      }
+    ],
+    "slug": "follow-up-assault",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "barbarian",
+        "rage"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.9Q0tPGtOawPTU2TU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.9Q0tPGtOawPTU2TU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9Q0tPGtOawPTU2TU"
+}

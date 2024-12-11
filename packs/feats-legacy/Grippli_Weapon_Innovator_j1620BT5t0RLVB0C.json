@@ -1,0 +1,90 @@
+{
+  "_id": "j1620BT5t0RLVB0C",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Grippli Weapon Innovator",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've learned devious ways to make the most of your grippli weapons. Whenever you critically hit using a @UUID[Compendium.pf2e.equipment-srd.Item.FPwsiGqMCNPLHmjX]{Blowgun}, @UUID[Compendium.pf2e.equipment-srd.Item.LGgvev6AV0So8tP9]{Hatchet}, @UUID[Compendium.pf2e.equipment-srd.Item.H74vYwHJ8XT4qOPI]{Scythe}, @UUID[Compendium.pf2e.equipment-srd.Item.hIgqLgH3YcLZBeoT]{Shortbow}, and @UUID[Compendium.pf2e.equipment-srd.Item.e4NwsnPnpQKbDZ9F]{Composite Shortbow}, or grippli weapon, you apply the weapon's critical specialization effect.</p>"
+    },
+    "rules": [
+      {
+        "key": "CriticalSpecialization",
+        "predicate": [
+          {
+            "or": [
+              "item:trait:grippli",
+              "item:base:blowgun",
+              "item:base:hatchet",
+              "item:base:scythe",
+              "item:base:shortbow"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": "grippli-weapon-innovator",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "grippli"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Mwangi Expanse",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Grippli Weapon Familiarity"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.j1620BT5t0RLVB0C"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.j1620BT5t0RLVB0C",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!j1620BT5t0RLVB0C"
+}

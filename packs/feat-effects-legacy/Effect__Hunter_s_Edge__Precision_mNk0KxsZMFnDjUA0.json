@@ -1,0 +1,140 @@
+{
+  "_id": "mNk0KxsZMFnDjUA0",
+  "img": "icons/skills/ranged/target-bullseye-archer-orange.webp",
+  "name": "Effect: Hunter's Edge, Precision",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted when a ranger shares their @UUID[Compendium.pf2e.classfeatures.Item.u6cBjqz2fiRBadBt]{Precision} edge with you.</p>\n<p>You have trained to aim for your prey's weak points. The first time you hit your hunted prey in a round, you also deal 1d8 additional precision damage. (Precision damage increases the damage you already deal, using the same type, but is ineffective against creatures that lack vital organs or weak points.)</p>\n<p>At 11th level, the extra damage increases to 2d8 precision damage, and at 19th level, the extra damage increases to 3d8 precision damage.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.HuntPrey.TargetHuntedPrey",
+        "option": "hunted-prey",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.HuntPrey.SeekHuntedPrey",
+        "predicate": [
+          "action:seek",
+          "hunted-prey"
+        ],
+        "selector": "perception",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.HuntPrey.TrackHuntedPrey",
+        "predicate": [
+          "action:track",
+          "hunted-prey"
+        ],
+        "selector": "survival",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "First attack on hunted prey this round",
+        "option": "first-attack",
+        "toggleable": true
+      },
+      {
+        "category": "precision",
+        "dieSize": "d8",
+        "key": "DamageDice",
+        "predicate": [
+          "first-attack"
+        ],
+        "selector": "strike-damage",
+        "value": {
+          "brackets": [
+            {
+              "end": 10,
+              "value": {
+                "diceNumber": 1
+              }
+            },
+            {
+              "end": 18,
+              "start": 11,
+              "value": {
+                "diceNumber": 2
+              }
+            },
+            {
+              "start": 19,
+              "value": {
+                "diceNumber": 3
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "effect-hunters-edge-precision",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 3648,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.mNk0KxsZMFnDjUA0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.mNk0KxsZMFnDjUA0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!mNk0KxsZMFnDjUA0"
+}

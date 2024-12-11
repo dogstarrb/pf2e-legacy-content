@@ -1,0 +1,100 @@
+{
+  "_id": "i86JRWsFRpfEJnZP",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Pirate Weapon Training",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You're particularly skilled at wielding traditional pirate weapons. You become trained with the following weapons: @UUID[Compendium.pf2e.equipment-srd.Item.LGgvev6AV0So8tP9]{Hatchet}, @UUID[Compendium.pf2e.equipment-srd.Item.tH5GirEy7YB3ZgCk]{Rapier}, @UUID[Compendium.pf2e.equipment-srd.Item.grmaV4GdoGD7sKbn]{Scimitar}, and @UUID[Compendium.pf2e.equipment-srd.Item.f1gwoTkf3Nn0v3PN]{Whip}.</p>\n<p>Whenever you gain a class feature that grants you expert or greater proficiency with a given weapon or weapons, you also gain that proficiency rank for these weapons.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-hatchet.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-rapier.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-scimitar.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-whip.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      }
+    ],
+    "slug": "pirate-weapon-training",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Pirate Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.i86JRWsFRpfEJnZP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.i86JRWsFRpfEJnZP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!i86JRWsFRpfEJnZP"
+}

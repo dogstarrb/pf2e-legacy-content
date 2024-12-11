@@ -1,0 +1,81 @@
+{
+  "_id": "RxIPBjodIRm7Pd6W",
+  "img": "systems/pf2e/icons/actions/FreeAction.webp",
+  "name": "Lucky Break",
+  "system": {
+    "actionType": {
+      "value": "free"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "offensive",
+    "description": {
+      "value": "<p><strong>Trigger</strong> You attempt a skill check during Exploration or Downtime</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Draw a harrow card, then reroll the skill check. If you draw a card from the suit of Keys, add a +4 status bonus to the original roll and your reroll, then take the result you prefer as your actual result. If you drew any other card, you gain no bonus and must take the result of the rerolled skill check.</p>",
+      "gm": ""
+    },
+    "frequency": {
+      "max": 1,
+      "per": "day",
+      "value": 1
+    },
+    "publication": {
+      "license": "OGL",
+      "remaster": false,
+      "title": "Pathfinder: Stolen Fate Player's Guide",
+      "authors": ""
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "lucky-break",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "lucky-break"
+        ],
+        "selector": "skill-check",
+        "type": "status",
+        "value": 4
+      }
+    ],
+    "traits": {
+      "value": [
+        "fortune"
+      ],
+      "otherTags": []
+    },
+    "slug": "lucky-break",
+    "_migration": {
+      "version": 0.935,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    }
+  },
+  "type": "action",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.actionspf2e.Item.RxIPBjodIRm7Pd6W"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.actions-legacy.Item.RxIPBjodIRm7Pd6W",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!RxIPBjodIRm7Pd6W"
+}

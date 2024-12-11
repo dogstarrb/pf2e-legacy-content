@@ -1,0 +1,116 @@
+{
+  "_id": "m03NrKvfKcXrCXke",
+  "img": "systems/pf2e/icons/equipment/shields/precious-material-shields/noqual-buckler.webp",
+  "name": "Noqual Buckler (High Grade)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Noqual shields are notoriously difficult to make, requiring high-grade materials, but they're especially effective against magic. When you have a noqual shield Raised, you gain its circumstance bonus to saving throws against spells that target you (as well as AC).</p>\n<p>Additionally, while the shield is Raised, when an opponent casting a spell that targets you critically fails a spell attack roll against your AC, you can reflect the spell back toward them as a reaction. Attempt a ranged attack roll against the triggering creature using your highest proficiency with a ranged weapon. If you succeed, your opponent takes the effects of a successful spell attack roll for their own spell (or the effects of a critical success if your attack roll was a critical success).</p>\n<p><strong>Craft Requirements</strong> noqual worth at least 7,000 gp</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "self:shield:raised",
+          "spell"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "noqual-buckler-high-grade",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "rare",
+      "integrated": null
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 7,
+    "price": {
+      "value": {
+        "gp": 14000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "acBonus": 1,
+    "speedPenalty": 0,
+    "runes": {
+      "potency": 0,
+      "resilient": 0,
+      "property": [],
+      "reinforcing": 0
+    },
+    "subitems": []
+  },
+  "type": "shield",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.m03NrKvfKcXrCXke"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.m03NrKvfKcXrCXke",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!m03NrKvfKcXrCXke"
+}

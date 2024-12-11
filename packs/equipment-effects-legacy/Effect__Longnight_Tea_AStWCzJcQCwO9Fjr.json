@@ -1,0 +1,81 @@
+{
+  "_id": "AStWCzJcQCwO9Fjr",
+  "img": "icons/consumables/plants/dried-herb-bundle-brown.webp",
+  "name": "Effect: Longnight Tea",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +1 item bonus to saving throws against sleep effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "sleep"
+        ],
+        "selector": "saving-throw",
+        "slug": "sweetest-solstace-fear",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "effect-longnight-tea",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #197: Let the Leaves Fall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.AStWCzJcQCwO9Fjr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.AStWCzJcQCwO9Fjr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!AStWCzJcQCwO9Fjr"
+}

@@ -1,0 +1,79 @@
+{
+  "_id": "EjLVjt3GMeHM0Ai3",
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "name": "Effect: Ghostcaller's Planchette - Armor",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.v7YHA9UhDgsvQ47Q]{Ghostcaller's Planchette}</p>\n<p>After you cast a necromancy spell by activating the <em>planchette</em>, you gain resistance 5 to all physical damage (except <em>ghost touch</em>) until the start of your next turn. Attacks by incorporeal creatures (such as a ghost’s ghostly hand) count as <em>ghost touch</em>.</p>"
+    },
+    "rules": [
+      {
+        "exceptions": [
+          "ghost-touch"
+        ],
+        "key": "Resistance",
+        "type": "physical",
+        "value": 5
+      }
+    ],
+    "slug": "effect-ghostcallers-planchette-armor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.EjLVjt3GMeHM0Ai3"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.EjLVjt3GMeHM0Ai3",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!EjLVjt3GMeHM0Ai3"
+}

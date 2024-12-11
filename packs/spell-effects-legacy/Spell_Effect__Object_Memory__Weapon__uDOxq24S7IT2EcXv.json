@@ -1,0 +1,102 @@
+{
+  "_id": "uDOxq24S7IT2EcXv",
+  "img": "icons/magic/air/air-smoke-casting.webp",
+  "name": "Spell Effect: Object Memory (Weapon)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.RztmhJrLLQWoGVdB]{Object Memory}</em>.</p>\n<p>If you touch a weapon, your proficiency rank with that weapon temporarily increases to trained (if it is not already higher).</p>\n<hr />\n<p><strong>Heightened (6th)</strong> Your proficiency rank increases to expert instead of trained.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "spellEffectObjectMemoryWeapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "ability": "str",
+        "key": "FixedProficiency",
+        "selector": "{item|flags.pf2e.rulesSelections.spellEffectObjectMemoryWeapon}-attack",
+        "value": {
+          "brackets": [
+            {
+              "end": 5,
+              "start": 1,
+              "value": "2 + @actor.level"
+            },
+            {
+              "start": 6,
+              "value": "4 + @actor.level"
+            }
+          ],
+          "field": "item|system.level.value"
+        }
+      }
+    ],
+    "slug": "spell-effect-object-memory-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Gods & Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.uDOxq24S7IT2EcXv"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 41400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.uDOxq24S7IT2EcXv",
+    "duplicateSource": null
+  },
+  "_key": "!items!uDOxq24S7IT2EcXv"
+}

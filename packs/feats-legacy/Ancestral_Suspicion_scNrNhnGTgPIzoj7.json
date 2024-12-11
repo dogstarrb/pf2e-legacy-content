@@ -1,0 +1,101 @@
+{
+  "_id": "scNrNhnGTgPIzoj7",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Ancestral Suspicion",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Long-lived elves have seen civilizations rise and fall, often at the hands of outside forces. As a result, they have developed a wariness of others who might seek to influence or control them.</p>\n<p>You've been trained to resist such manipulation, gaining a +2 circumstance bonus to saving throws against effects that would make you controlled, such as <em>@UUID[Compendium.pf2e.spells-srd.Item.OsOhx3TGIZ7AhD0P]{Dominate}</em>, and to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} when trying to determine if a creature is under the influence of such an effect.</p>\n<p>When you roll a success on a saving throw against such an effect, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Against Control Effects",
+        "predicate": [
+          "control-effects"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "label": "To Determine if Under a Control Effect",
+        "predicate": [
+          "control-effects"
+        ],
+        "selector": "perception",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success"
+        ],
+        "selector": "saving-throw",
+        "text": "When you roll a success on a saving throw against an effect that would make you controlled, you get a critical success instead.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "ancestral-suspicion",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "elf"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.scNrNhnGTgPIzoj7"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.scNrNhnGTgPIzoj7",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!scNrNhnGTgPIzoj7"
+}

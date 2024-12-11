@@ -1,0 +1,100 @@
+{
+  "_id": "VYdZmTifZRkRF7ey",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Deflecting Cloud",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once every 10 minutes</p>\n<p><strong>Trigger</strong> You are the target of a ranged attack.</p>\n<p><strong>Requirements</strong> You are aware of the attack and currently have dragon wings active.</p>\n<hr />\n<p>You've mastered a defensive technique unique to the ancient dragons of Bloodsalt: beating your wings to create a billowing cloud of mist. You become momentarily @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} from the triggering attack if vision is the attacker's only precise sense. Normally this means the attacker must succeed at a @Check[type:flat|dc:11|name:Hidden Flat Check|traits:hidden|showDC:owner] check to target you. You also gain a +4 circumstance bonus to AC against the triggering attack.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Use Deflecting Cloud",
+        "option": "deflecting-cloud",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "deflecting-cloud"
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 4
+      }
+    ],
+    "slug": "deflecting-cloud",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #171: Hurricane's Howl",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dragon Disciple Dedication"
+        },
+        {
+          "value": "dragon wings sorcerer bloodline spell"
+        }
+      ]
+    },
+    "location": null,
+    "frequency": {
+      "max": 1,
+      "per": "PT10M",
+      "value": 1
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.VYdZmTifZRkRF7ey"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.VYdZmTifZRkRF7ey",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VYdZmTifZRkRF7ey"
+}

@@ -1,0 +1,94 @@
+{
+  "_id": "MD33E76f2olLnDZb",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Uncanny Suction",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your limbs produce strange, sucker-like growths that allow you to adhere to walls, objects, and most other surfaces. You gain a @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} Speed equal to your half your land Speed (minimum 5 feet). If you have the @UUID[Compendium.pf2e.feats-srd.Item.P04Hw8E6WAWARKHP]{Quick Climb} feat, your climb Speed is equal to your land Speed. In addition, you gain a +2 circumstance bonus to your Reflex DC to avoid being @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarmed}.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.oozemorphDedicationCount",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:disarm"
+        ],
+        "selector": "reflex-dc",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "uncanny-suction",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common",
+      "selected": {
+        "archetype": "Archetype"
+      }
+    },
+    "publication": {
+      "title": "Pathfinder Adventure: The Slithering",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Oozemorph Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.MD33E76f2olLnDZb"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.MD33E76f2olLnDZb",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!MD33E76f2olLnDZb"
+}

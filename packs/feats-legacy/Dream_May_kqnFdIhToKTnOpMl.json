@@ -1,0 +1,94 @@
+{
+  "_id": "kqnFdIhToKTnOpMl",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Dream May",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You are the child of a night hag, making one of your eyes violet or even black. Your mother's powers over sleep and dreams have given you a degree of resistance to those effects, granting you a +2 circumstance bonus to all saving throws against sleep effects and effects that cause or alter dreams.</p>\n<p>In addition, sleep is more restorative for you. You regain [[/r (@actor.level*2)*(max(@actor.abilities.con.mod,1))]]{HP equal to your Constitution modifier times double your level} instead of just times your level, and you reduce any @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained} and @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed} conditions you have by 2 instead of by 1.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "vs. sleep or dream-related effects (Dream May)",
+        "predicate": [
+          {
+            "or": [
+              "sleep",
+              "dream"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.attributes.hp.recoveryMultiplier",
+        "value": 1
+      }
+    ],
+    "slug": "dream-may",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "changeling",
+        "lineage"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": true,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.kqnFdIhToKTnOpMl"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.kqnFdIhToKTnOpMl",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!kqnFdIhToKTnOpMl"
+}

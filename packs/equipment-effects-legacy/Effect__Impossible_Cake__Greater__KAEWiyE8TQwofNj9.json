@@ -1,0 +1,86 @@
+{
+  "_id": "KAEWiyE8TQwofNj9",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-tapas/impossible-cake.webp",
+  "name": "Effect: Impossible Cake (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>For 30 minutes after the meal, you gain a +3 item bonus to your Deception checks to Impersonate, as well as to Lie to convince others that you possess knowledge about the type of item that the cake resembles.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "action:impersonate",
+              "action:lie"
+            ]
+          }
+        ],
+        "selector": "deception",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "effect-impossible-cake-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "duration": {
+      "value": 30,
+      "unit": "minutes",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.KAEWiyE8TQwofNj9"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.KAEWiyE8TQwofNj9",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!KAEWiyE8TQwofNj9"
+}

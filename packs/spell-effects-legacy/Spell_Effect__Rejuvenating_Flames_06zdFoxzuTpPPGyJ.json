@@ -1,0 +1,78 @@
+{
+  "_id": "06zdFoxzuTpPPGyJ",
+  "img": "icons/magic/fire/flame-burning-yellow-orange.webp",
+  "name": "Spell Effect: Rejuvenating Flames",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.lZx8jZfKrMEtyGY0]{Rejuvenating Flames}</em></p>\n<p>You create a gout of flame that both heals and burns. You restore 1d4 HP to all allies in the area, and those allies gain a +1 status bonus to Fortitude saves for 1 minute. Enemies in the area take @Damage[1d4[fire]] damage with a basic Reflex save. Heightened (+1) You restore an additional 1d4 HP to your allies and deal an additional @Damage[1d4[fire]] damage to enemies.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "fortitude",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-rejuvenating-flames",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #168: King of the Mountain",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.06zdFoxzuTpPPGyJ"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.06zdFoxzuTpPPGyJ",
+    "duplicateSource": null
+  },
+  "_key": "!items!06zdFoxzuTpPPGyJ"
+}

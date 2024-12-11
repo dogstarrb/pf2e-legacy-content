@@ -1,0 +1,97 @@
+{
+  "_id": "HOUHs5rahwIsQoBf",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Stonecunning",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have a knack for noticing even small inconsistencies and craftsmanship techniques in the stonework around you. You gain a +2 circumstance bonus to Perception checks to notice unusual stonework. This bonus applies to checks to discover mechanical traps made of stone or hidden within stone. If you aren't using the Seek action or searching, the GM automatically rolls a secret check for you to notice unusual stonework anyway. This check doesn't gain the circumstance bonus, and it takes a -2 circumstance penalty.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "To Notice Unusual Stonework",
+        "predicate": [
+          "action:seek",
+          "terrain:unusual-stonework"
+        ],
+        "selector": "perception",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "label": "GM: To Notice Unusual Stonework",
+        "predicate": [
+          "terrain:unusual-stonework",
+          "secret",
+          {
+            "not": "action:seek"
+          }
+        ],
+        "selector": "perception",
+        "type": "circumstance",
+        "value": -2
+      }
+    ],
+    "slug": "stonecunning",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "dwarf"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.HOUHs5rahwIsQoBf"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.HOUHs5rahwIsQoBf",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!HOUHs5rahwIsQoBf"
+}

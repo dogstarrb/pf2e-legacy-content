@@ -1,0 +1,105 @@
+{
+  "_id": "QVMjPfXlpnmeuWKS",
+  "img": "icons/creatures/invertebrates/tick-cross-glowing-purple.webp",
+  "name": "Leng Sting",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You use the power of nightmares to magically replicate the venomous attack of the aberrant and cunning Leng spiders. You deal @Damage[2d6[piercing]] damage to the touched creature and afflict it with Leng spider venom. If the target takes piercing damage, they must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes @Damage[2d6[poison]] damage.</p>\n<p><strong>Failure</strong> The target is afflicted with Leng Spider Venom at stage 1.</p>\n<p><strong>Critical Failure</strong> The target is afflicted with Leng spider venom at stage 2.</p>\n<hr />\n<p><strong>Leng Spider Venom</strong> (incapacitation, poison) <strong>Level 13</strong></p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2} (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]] damage, @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 2}, and @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} (1 round)</p>"
+    },
+    "rules": [],
+    "slug": "leng-sting",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate",
+        "poison"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "arcane",
+        "occult"
+      ],
+      "selected": []
+    },
+    "publication": {
+      "title": "Pathfinder #160: Assault on Hunting Lodge Seven",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "touch"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "formula": "2d6",
+        "type": "piercing",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.QVMjPfXlpnmeuWKS"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.QVMjPfXlpnmeuWKS",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!QVMjPfXlpnmeuWKS"
+}

@@ -1,0 +1,90 @@
+{
+  "_id": "zwjoAOGkT44MmDKT",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "name": "Alloysmith",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Blacksmithing might be an ancient profession, but you are its cutting edge. You've studied the properties of different metals, experimented with them by combining them, exposing them to different elements and processes, and have even delved into the metaphysical nature of metal in your quest to master it. You might have taken up adventuring to acquire more funding and materials or to test your designs.</p>\n<p>Choose two attribute boosts. One must be to <strong>Strength</strong> or <strong>Intelligence</strong>, and one is a free attribute boost.</p>\n<p>You're trained in the Crafting skill and the Plane of Metal Lore skill. You gain the @UUID[Compendium.pf2e.feats-srd.Item.QLeMH5mQgh28sa5o]{Specialty Crafting} skill feat with the blacksmithing specialty.</p>"
+    },
+    "rules": [
+      {
+        "allowDuplicate": false,
+        "key": "GrantItem",
+        "preselectChoices": {
+          "specialtyCrafting": "blacksmithing"
+        },
+        "uuid": "Compendium.pf2e.feats-srd.Item.QLeMH5mQgh28sa5o"
+      }
+    ],
+    "slug": "alloysmith",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "boosts": {
+      "0": {
+        "value": [
+          "int",
+          "str"
+        ]
+      },
+      "1": {
+        "value": [
+          "cha",
+          "con",
+          "dex",
+          "int",
+          "str",
+          "wis"
+        ]
+      }
+    },
+    "items": {},
+    "trainedSkills": {
+      "value": [
+        "crafting"
+      ],
+      "lore": [
+        "Plane of Metal Lore"
+      ],
+      "custom": ""
+    }
+  },
+  "type": "background",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.backgrounds.Item.zwjoAOGkT44MmDKT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.backgrounds-legacy.Item.zwjoAOGkT44MmDKT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zwjoAOGkT44MmDKT"
+}

@@ -1,0 +1,141 @@
+{
+  "_id": "9onf3uGvZRnNLPR6",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Order Explorer",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have learned the secrets of another druidic order, passing whatever rites of initiation that order requires and gaining access to its secrets. Choose an order other than your own. You gain a 1st-level feat that lists that order as a prerequisite, and you are now a member of that order for the purpose of meeting feat prerequisites. If you commit acts anathema to your new order, you lose all feats and abilities requiring that order but retain your other druid feats and abilities. You don't gain any of the other benefits of the order you chose.</p>\n<p><strong>Special</strong> You can take this feat multiple times. Each time you do, you must choose a different order other than your own.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "predicate": [
+              {
+                "not": "feature:animal-order"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.POBvoXifa9HaejAg"
+          },
+          {
+            "predicate": [
+              {
+                "not": "feature:flame-order"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.NdeFvIXdHwKYLiUj"
+          },
+          {
+            "predicate": [
+              {
+                "not": "feature:leaf-order"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.u4nlOzPj2WHkIj9l"
+          },
+          {
+            "predicate": [
+              {
+                "not": "feature:stone-order"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.fKTewWlYgFuhl4KA"
+          },
+          {
+            "predicate": [
+              {
+                "not": "feature:storm-order"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.acqqlYmti8D9QJi0"
+          },
+          {
+            "predicate": [
+              {
+                "not": "feature:wave-order"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.FuUXyv2yBs7zRgqT"
+          },
+          {
+            "predicate": [
+              {
+                "not": "feature:wild-order"
+              }
+            ],
+            "value": "Compendium.pf2e.classfeatures.Item.v0EjtiwdeMj8ykI0"
+          }
+        ],
+        "flag": "order",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Druid.DruidicOrder.Prompt",
+        "rollOption": "feat:order-explorer"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.order}"
+      }
+    ],
+    "slug": "order-explorer",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.9onf3uGvZRnNLPR6"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.9onf3uGvZRnNLPR6",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9onf3uGvZRnNLPR6"
+}

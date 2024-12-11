@@ -1,0 +1,120 @@
+{
+  "_id": "u4idmXH5dd2gU9uA",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Warding Rune",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your runes provide a warding effect that protects you against a specific school of magic. Choose a school of magic other than divination. You gain a rune on your body corresponding to that school, and you gain a +2 circumstance bonus to all saving throws against effects of that school.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAbjuration",
+            "value": "abjuration"
+          },
+          {
+            "label": "PF2E.TraitConjuration",
+            "value": "conjuration"
+          },
+          {
+            "label": "PF2E.TraitEnchantment",
+            "value": "enchantment"
+          },
+          {
+            "label": "PF2E.TraitEvocation",
+            "value": "evocation"
+          },
+          {
+            "label": "PF2E.TraitIllusion",
+            "value": "illusion"
+          },
+          {
+            "label": "PF2E.TraitNecromancy",
+            "value": "necromancy"
+          },
+          {
+            "label": "PF2E.TraitTransmutation",
+            "value": "transmutation"
+          }
+        ],
+        "flag": "school",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.WardingRune.Prompt"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "{item|flags.pf2e.rulesSelections.school}"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "warding-rune",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: World Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Runescarred Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.u4idmXH5dd2gU9uA"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.u4idmXH5dd2gU9uA",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!u4idmXH5dd2gU9uA"
+}

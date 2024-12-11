@@ -1,0 +1,147 @@
+{
+  "_id": "N9bhBhJ6JawzVitu",
+  "img": "systems/pf2e/icons/equipment/other/attached-items/large-bore-modification.webp",
+  "name": "Large Bore Modifications",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>These modifications include a heavier stock and larger replacement barrel designed to increase the stopping power of firearms. <em>Large bore modifications</em> can only be applied to firearms with the kickback or scatter traits, and attaching <em>large bore modifications</em> takes 1 hour, though this time can overlap with the standard time required to maintain and clean your firearm to prevent misfires.</p>\n<p>When you attach <em>large bore modifications</em> to a kickback weapon, the circumstance bonus to damage granted by the kickback trait increases from 1 to 2 additional Damage and the Strength requirement to fire the weapon without penalty increases to 18.</p>\n<p>When you attach <em>large bore modifications</em> to a weapon with the scatter trait, the radius of the scatter effect increases by 5 feet, but the weapon imposes a -2 penalty on attack rolls if the wielder's Strength score is less than 14. If the weapon has both the kickback and scatter traits, apply both sets of modifications with the Strength requirement raised to 18 to avoid penalties when firing.</p>"
+    },
+    "rules": [
+      {
+        "key": "AdjustModifier",
+        "mode": "upgrade",
+        "predicate": [
+          "item:trait:kickback"
+        ],
+        "relabel": "{item|name}",
+        "selectors": [
+          "ranged-strike-damage"
+        ],
+        "slug": "kickback",
+        "value": 2
+      },
+      {
+        "hideIfDisabled": true,
+        "key": "FlatModifier",
+        "predicate": [
+          "item:trait:scatter",
+          {
+            "lt": [
+              "attribute:str:mod",
+              2
+            ]
+          }
+        ],
+        "selector": "ranged-strike-attack-roll",
+        "slug": "large-bore-scatter",
+        "type": "circumstance",
+        "value": -2
+      },
+      {
+        "hideIfDisabled": true,
+        "key": "FlatModifier",
+        "predicate": [
+          "item:trait:kickback",
+          {
+            "lt": [
+              "attribute:str:mod",
+              4
+            ]
+          }
+        ],
+        "selector": "ranged-strike-attack-roll",
+        "slug": "large-bore-kickback",
+        "type": "circumstance",
+        "value": -2
+      }
+    ],
+    "slug": "large-bore-modifications",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 120
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "attached-to-firearm"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.N9bhBhJ6JawzVitu"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.N9bhBhJ6JawzVitu",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!N9bhBhJ6JawzVitu"
+}

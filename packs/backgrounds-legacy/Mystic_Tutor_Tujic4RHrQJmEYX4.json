@@ -1,0 +1,109 @@
+{
+  "_id": "Tujic4RHrQJmEYX4",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "name": "Mystic Tutor",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You spent years predicting, identifying, and harnessing the innate magical talents of those around you. A magic-rich world has taught you that you can never have too much training when everyone around you is capable of magic.</p>\n<p>Choose two ability boosts. One must be <strong>Intelligence</strong> or <strong>Wisdom</strong> and one is a free ability boost. Your innate magical trait is arcane or occult.</p>\n<p>You're trained in either Arcana or Occultism, depending on your innate magical trait, and the Academia Lore skill. You gain the @UUID[Compendium.pf2e.feats-srd.Item.MjQyTcV8Jiv1Jtln]{Recognize Spell} skill feat.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.Skill.Arcana",
+            "value": "arcana"
+          },
+          {
+            "label": "PF2E.Skill.Occultism",
+            "value": "occultism"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      }
+    ],
+    "slug": "mystic-tutor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": [
+          "int",
+          "wis"
+        ]
+      },
+      "1": {
+        "value": [
+          "cha",
+          "con",
+          "dex",
+          "int",
+          "str",
+          "wis"
+        ]
+      }
+    },
+    "items": {
+      "jh8bn": {
+        "img": "systems/pf2e/icons/features/feats/feats.webp",
+        "level": 1,
+        "name": "Recognize Spell",
+        "uuid": "Compendium.pf2e.feats-srd.Item.MjQyTcV8Jiv1Jtln"
+      }
+    },
+    "trainedSkills": {
+      "value": [],
+      "lore": [
+        "Academia Lore"
+      ],
+      "custom": ""
+    }
+  },
+  "type": "background",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.backgrounds.Item.Tujic4RHrQJmEYX4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.backgrounds-legacy.Item.Tujic4RHrQJmEYX4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Tujic4RHrQJmEYX4"
+}

@@ -1,0 +1,98 @@
+{
+  "_id": "GqXIV46JqB8x8eEN",
+  "img": "icons/sundries/books/book-symbol-link-brown.webp",
+  "name": "Effect: Book of Warding Prayers",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.5Dk8NQMW8NXFEKPy]{Book of Warding Prayers}</p>\n<p>You and all allies within 30 feet are suffused with your deity's protection, gaining resistance 10 to damage of that type for 1 minute.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitChaotic",
+            "value": "chaotic"
+          },
+          {
+            "label": "PF2E.TraitEvil",
+            "value": "evil"
+          },
+          {
+            "label": "PF2E.TraitGood",
+            "value": "good"
+          },
+          {
+            "label": "PF2E.TraitLawful",
+            "value": "lawful"
+          }
+        ],
+        "flag": "bowpResistance",
+        "key": "ChoiceSet"
+      },
+      {
+        "key": "Resistance",
+        "type": "{item|flags.pf2e.rulesSelections.bowpResistance}",
+        "value": 10
+      }
+    ],
+    "slug": "effect-book-of-warding-prayers",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.GqXIV46JqB8x8eEN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.GqXIV46JqB8x8eEN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!GqXIV46JqB8x8eEN"
+}

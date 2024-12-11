@@ -1,0 +1,142 @@
+{
+  "_id": "sUr5KCpeE6AXfvPp",
+  "img": "systems/pf2e/icons/spells/imaginary-weapon.webp",
+  "name": "Imaginary Weapon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You create a simple weapon of force. Make a melee spell attack roll against your target's AC. If you hit, you deal your choice of bludgeoning or slashing damage equal to 1d8 plus your spellcasting ability modifier. On a critical success, you deal double damage and can choose to detonate your weapon to push the target 10 feet away from you.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>\n<hr />\n<p><strong>Amp</strong> You form multiple force weapons to lash out at multiple foes. You make two imaginary weapon Strikes, each against a different target. Your multiple attack penalty doesn't increase until you've made both Strikes.</p>\n<p><strong>Amp Heightened (+1)</strong> The damage increases by 2d8 instead of 1d8.</p>"
+    },
+    "rules": [],
+    "slug": "imaginary-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "cantrip",
+        "concentrate",
+        "force",
+        "manipulate",
+        "psychic"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "touch"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "ky50hzqhwvdu8luq": {
+        "applyMod": true,
+        "formula": "1d8",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "ky50hzqhwvdu8luq": "1d8"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {
+      "DXSeNnk6UK2ScLGI": {
+        "_id": "DXSeNnk6UK2ScLGI",
+        "name": "Imaginary Weapon (Bludgeoning)",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "damage": {
+            "ky50hzqhwvdu8luq": {
+              "type": "bludgeoning",
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "defense": null
+        }
+      },
+      "uqBNqB55cCGnzmcX": {
+        "_id": "uqBNqB55cCGnzmcX",
+        "name": "Imaginary Weapon (Slashing)",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "damage": {
+            "ky50hzqhwvdu8luq": {
+              "type": "slashing",
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "defense": null
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.sUr5KCpeE6AXfvPp"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.sUr5KCpeE6AXfvPp",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!sUr5KCpeE6AXfvPp"
+}

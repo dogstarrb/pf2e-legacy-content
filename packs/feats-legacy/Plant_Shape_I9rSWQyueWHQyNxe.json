@@ -1,0 +1,120 @@
+{
+  "_id": "I9rSWQyueWHQyNxe",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Plant Shape",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can take the form of a plant creature.</p>\n<p>Add the forms listed in <em>@UUID[Compendium.pf2e.spells-srd.Item.zCcfPS4y5SrZzU2x]{Plant Form}</em> to your wild shape list; if you don't have <em>wild shape</em>, you can instead cast <em>plant form</em> once per day, heightened to the same level as your highest-level druid spell slot.</p>\n<p>Whenever you're polymorphed into another form using <em>wild shape</em>, you gain resistance 5 to poison.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "predicate": [
+          "self:effect:wild-shape",
+          {
+            "not": "self:effect:plant-form"
+          }
+        ],
+        "type": "poison",
+        "value": 5
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.tu8FyCtmL3YYR2jL"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.JrNHFNxJayevlv2G"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.fIloZhZVH1xTnX4B"
+        }
+      }
+    ],
+    "slug": "plant-shape",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "leaf order or Wild Shape"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.I9rSWQyueWHQyNxe"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.I9rSWQyueWHQyNxe",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!I9rSWQyueWHQyNxe"
+}

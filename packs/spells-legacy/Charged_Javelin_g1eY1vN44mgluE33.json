@@ -1,0 +1,117 @@
+{
+  "_id": "g1eY1vN44mgluE33",
+  "img": "systems/pf2e/icons/spells/charged-javelin.webp",
+  "name": "Charged Javelin",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You fire a javelin of electricity that leaves a charged field around its target. Make a spell attack roll. The javelin deals 1d6 electricity damage and 1 persistent electricity damage.</p>\n<p>As long as the target is taking persistent damage from this spell, creatures gain a +1 status bonus to attack rolls with metal weapons or electricity effects against the target, and the target takes a -1 status penalty to saves against electricity effects.</p>\n<hr />\n<p><strong>Critical Success</strong> The javelin deals double damage, both initial and persistent.</p>\n<p><strong>Success</strong> The javelin deals full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial damage increases by 1d6, and the Persistent Damage increases by 1.</p>"
+    },
+    "rules": [],
+    "slug": "charged-javelin",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "cleric",
+        "concentrate",
+        "electricity",
+        "focus",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Gods & Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 or more creatures"
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "1d6",
+        "type": "electricity",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      },
+      "1": {
+        "applyMod": false,
+        "formula": "1",
+        "type": "electricity",
+        "category": "persistent",
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d6",
+        "1": "1"
+      },
+      "interval": 1,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.g1eY1vN44mgluE33"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.g1eY1vN44mgluE33",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!g1eY1vN44mgluE33"
+}

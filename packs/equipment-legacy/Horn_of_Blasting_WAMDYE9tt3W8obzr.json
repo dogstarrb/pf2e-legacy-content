@@ -1,0 +1,108 @@
+{
+  "_id": "WAMDYE9tt3W8obzr",
+  "img": "systems/pf2e/icons/equipment/held-items/horn-of-blasting.webp",
+  "name": "Horn of Blasting",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A <em>horn of blasting</em> is a bright brass trumpet. It can be played as an instrument, granting a +2 item bonus to your Performance check.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> When you activate the horn by blowing into it with destructive intent, you create a blast note targeting one creature or object within 30 feet. The blast deals @Damage[3d6[sonic]] damage. (@Check[type:fortitude|dc:28|basic:true] save).</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can blow even louder to create an intense blast wave in a @Template[type:cone|distance:30] that deals @Damage[8d6[sonic]] damage. Each creature attempts a @Check[type:fortitude|dc:28] save with the following effects.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is deafened for [[/br 2d6 #rounds]]{2d6 rounds}.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "performance",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "horn-of-blasting",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "sonic"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 700
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.WAMDYE9tt3W8obzr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.WAMDYE9tt3W8obzr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WAMDYE9tt3W8obzr"
+}

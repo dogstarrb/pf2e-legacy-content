@@ -1,0 +1,87 @@
+{
+  "_id": "XFTWJO6txmLNRLae",
+  "img": "icons/commodities/currency/coin-oval-rune-copper.webp",
+  "name": "Night Patron",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your patron speaks from the shadows, granting you power over darkness and dreams.</p>\n<p><strong>Spell List</strong> occult</p>\n<p><strong>Patron Skill</strong> Occultism</p>\n<p><strong>Hex Cantrip</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.cE7PRAX8Up7fmYef]{Shroud of Night}</em></p>\n<p><strong>Granted Spell</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.occultism.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.aliases.witch",
+        "priority": 39,
+        "value": "occult"
+      }
+    ],
+    "slug": "night-patron",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "witch-patron"
+      ],
+      "value": [
+        "witch"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.XFTWJO6txmLNRLae"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.XFTWJO6txmLNRLae",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XFTWJO6txmLNRLae"
+}

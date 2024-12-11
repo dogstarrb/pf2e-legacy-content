@@ -1,0 +1,129 @@
+{
+  "_id": "lFwfUvH2708rl6i3",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Virtuosic Performer",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when making a certain type of performance. If you are a master in Performance, this bonus increases to +2. Select one of the following specialties and apply the bonus when attempting Performance checks of that type. If it's unclear whether the specialty applies, the GM decides.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.SpecificRule.VirtuosicPerformer.Acting",
+            "value": "acting"
+          },
+          {
+            "label": "PF2E.SpecificRule.VirtuosicPerformer.Comedy",
+            "value": "comedy"
+          },
+          {
+            "label": "PF2E.SpecificRule.VirtuosicPerformer.Dance",
+            "value": "dance"
+          },
+          {
+            "label": "PF2E.SpecificRule.VirtuosicPerformer.Keyboards",
+            "value": "keyboards"
+          },
+          {
+            "label": "PF2E.SpecificRule.VirtuosicPerformer.Oratory",
+            "value": "oratory"
+          },
+          {
+            "label": "PF2E.SpecificRule.VirtuosicPerformer.Percussion",
+            "value": "percussion"
+          },
+          {
+            "label": "PF2E.SpecificRule.VirtuosicPerformer.Singing",
+            "value": "singing"
+          },
+          {
+            "label": "PF2E.SpecificRule.VirtuosicPerformer.Strings",
+            "value": "strings"
+          },
+          {
+            "label": "PF2E.SpecificRule.VirtuosicPerformer.Winds",
+            "value": "winds"
+          }
+        ],
+        "flag": "performanceType",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.VirtuosicPerformer.Prompt"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:perform:{item|flags.pf2e.rulesSelections.performanceType}"
+        ],
+        "selector": "performance",
+        "type": "circumstance",
+        "value": "ternary(gte(@actor.system.skills.performance.rank,3),2,1)"
+      }
+    ],
+    "slug": "virtuosic-performer",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Performance"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.lFwfUvH2708rl6i3"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.lFwfUvH2708rl6i3",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!lFwfUvH2708rl6i3"
+}

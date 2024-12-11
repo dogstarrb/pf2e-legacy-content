@@ -1,0 +1,79 @@
+{
+  "_id": "nUCRd8tmz3C6LM0T",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Wajaghand Vanara",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your ancestors were forced into labor by the rakshasa immortal Ravana, the First and the Last. Although their cleverness while in captivity saved countless lives, and they're bound no longer, the time marked your family with scars upon the mind that will never truly heal, even across the generations. You gain a +1 circumstance bonus to saving throws against emotion effects, and whenever you roll a success on a saving throw against an emotion effect, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "emotion"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "emotion"
+        ],
+        "selector": "saving-throw",
+        "type": "saves"
+      }
+    ],
+    "slug": "wajaghand-vanara",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Vanara",
+      "slug": "vanara",
+      "uuid": "Compendium.pf2e.ancestries.Item.cLtOGIkuSSa4UDHY"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.nUCRd8tmz3C6LM0T"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.nUCRd8tmz3C6LM0T",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!nUCRd8tmz3C6LM0T"
+}

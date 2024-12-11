@@ -1,0 +1,93 @@
+{
+  "_id": "dmXd68ilbuGR6eUP",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Archaeologist's Luck",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You fail a check against a trap, such as a Thievery check to @UUID[Compendium.pf2e.actionspf2e.Item.cYdz2grcOcRt4jk6]{Disable} the trap or a Reflex save to avoid its effects.</p>\n<hr />\n<p>You are more than just skillful; your drive to find the secrets of the past manifests as a strange kind of luck. Reroll the failed check and use the new result.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "failure"
+        ],
+        "predicate": [
+          "trap"
+        ],
+        "selector": "all",
+        "text": "<em>Once per hour</em>: Reroll the failed check and use the new result.",
+        "title": "Failure"
+      }
+    ],
+    "slug": "archaeologists-luck",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "fortune"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Archaeologist Dedication"
+        }
+      ]
+    },
+    "location": null,
+    "frequency": {
+      "max": 1,
+      "per": "PT1H"
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.dmXd68ilbuGR6eUP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.dmXd68ilbuGR6eUP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!dmXd68ilbuGR6eUP"
+}

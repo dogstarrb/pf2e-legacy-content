@@ -1,0 +1,92 @@
+{
+  "_id": "POBvoXifa9HaejAg",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "name": "Animal Order",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have a strong connection to beasts, and you are allied with a beast companion. You are trained in Athletics. You also gain the @UUID[Compendium.pf2e.feats-srd.Item.f2Pl5dWEL9ZvEyI1]{Animal Companion (Druid)} druid feat. You gain the <em>@UUID[Compendium.pf2e.spells-srd.Item.Zmh4ynfnCtwKeAYl]{Heal Animal}</em> order spell. Committing wanton cruelty to animals or killing animals unnecessarily is anathema to your order. (This doesn't prevent you from defending yourself against animals or killing them cleanly for food.)</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.athletics.rank",
+        "predicate": [
+          {
+            "not": "feat:order-explorer:animal-order"
+          }
+        ],
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "class:druid"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.f2Pl5dWEL9ZvEyI1"
+      }
+    ],
+    "slug": "animal-order",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "druid-order"
+      ],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.POBvoXifa9HaejAg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.POBvoXifa9HaejAg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!POBvoXifa9HaejAg"
+}

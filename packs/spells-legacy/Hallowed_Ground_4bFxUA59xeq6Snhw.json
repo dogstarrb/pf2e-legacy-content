@@ -1,0 +1,126 @@
+{
+  "_id": "4bFxUA59xeq6Snhw",
+  "img": "icons/sundries/flags/banner-flag-blue.webp",
+  "name": "Hallowed Ground",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>One small space becomes inhospitable to undead as you fill it with life-infused benevolent magic. Each undead creature in the area takes 1d6 positive damage and 1d4 spirit damage when you Cast the Spell, with a basic Fortitude save. After that, undead creatures have weakness 1 to positive damage and your necromancy spells while in the area.</p>\n<p>This spell also automatically attempts to counteract any attempt to raise undead in the area (if either the undead would appear in the area or the effect's caster or creator is in it).</p>\n<p>If you Cast this Spell again, any previous <em>hallowed ground</em> you had cast ends.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The positive damage increases by 1d6, good damage increases by 1d4, and weakness increases by 1.</p>"
+    },
+    "rules": [],
+    "slug": "hallowed-ground",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "focus",
+        "good",
+        "holy",
+        "manipulate",
+        "vitality"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": {
+      "type": "burst",
+      "value": 10
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "3o31msqzx758ickw": {
+        "applyMod": false,
+        "formula": "1d4",
+        "type": "spirit",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      },
+      "du9crcjpajdppdxo": {
+        "applyMod": false,
+        "formula": "1d6",
+        "type": "vitality",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": true,
+    "heightening": {
+      "damage": {
+        "3o31msqzx758ickw": "1d4",
+        "du9crcjpajdppdxo": "1d6"
+      },
+      "interval": 2,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.4bFxUA59xeq6Snhw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.4bFxUA59xeq6Snhw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4bFxUA59xeq6Snhw"
+}

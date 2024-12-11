@@ -1,0 +1,220 @@
+{
+  "_id": "7irlzyZA50KqTwce",
+  "img": "icons/weapons/guns/rifle-brown.webp",
+  "name": "Boastful Hunter",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Perception</strong> +11; precise vision 30 feet, imprecise hearing 30 feet</p>\n<p><strong>Communication</strong> speech (Common)</p>\n<p><strong>Skills</strong> Nature +9, Performance +10, Survival +11</p>\n<p><strong>Int</strong> +0, <strong>Wis</strong> +2, <strong>Cha</strong> +3</p>\n<p><strong>Will</strong> +11</p>\n<p>Possessing a boisterous, proud demeanor, this <em>+1 jezail</em> is an aspiring big game hunter, always quick to share a tale of its bold adventures and predatory conquests-although the veracity of such tales is often questionable. A <em>boastful hunter</em> enjoys tracking and hunting animals of all kinds but takes particular pleasure in taking down large, dangerous, or rare animals. Against an animal, the <em>boastful hunter</em> deals 1d6 additional damage. On a critical hit against an animal, the <em>boastful hunter</em> also deals 1d6 persistent bleed damage.</p>\n<p>A <em>boastful hunter</em> urges you to face off against tougher and tougher creatures-a challenge the ambitious rifle may not be adequate to deal with. If the <em>boastful hunter</em> goes one week without participating in a hunt against an animal of at least your level, it becomes bored. A bored <em>boastful hunter</em> complains incessantly and imposes a -1 item penalty to attack rolls against non-animal targets. A bored <em>boastful hunter</em> can be appeased by using it in combat against an animal of at least your level.</p>\n<p>Unable to accept its own weaknesses, a <em>boastful hunter</em> blames any failed hunts on you, and considers remarks about its strength or quality a terrible insult. An insulted <em>boastful hunter</em> badmouths you to sentient creatures you interact with, imposing a -1 item penalty to Deception, Diplomacy, and Intimidation skill checks, and all attacks with it incur a misfire chance until the weapon is appeased. An insulted <em>boastful hunter</em> can be appeased by complimenting it and succeeding at a @Check[type:diplomacy|dc:21|name:Boastful Hunter Appeasement] check against its Will DC two days in a row. You can only attempt a Diplomacy check to appease the <em>boastful hunter</em> once each day.</p>"
+    },
+    "rules": [
+      {
+        "diceNumber": 1,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "predicate": [
+          "target:trait:animal"
+        ],
+        "selector": "{item|_id}-damage"
+      },
+      {
+        "critical": true,
+        "damageType": "bleed",
+        "diceNumber": 1,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "predicate": [
+          "target:trait:animal"
+        ],
+        "selector": "{item|_id}-damage"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "bored-weapon",
+          {
+            "not": "target:trait:animal"
+          }
+        ],
+        "selector": "{item|_id}-attack",
+        "type": "item",
+        "value": -1
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Equipment.BoastfulHunter.BoredLabel",
+        "option": "bored-weapon",
+        "toggleable": true
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Equipment.BoastfulHunter.InsultedLabel",
+        "option": "insulted-weapon",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "insulted-weapon"
+        ],
+        "selector": [
+          "deception",
+          "diplomacy",
+          "intimidation",
+          "{item|_id}-attack"
+        ],
+        "slug": "insulted",
+        "type": "item",
+        "value": -1
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "insulted-weapon"
+        ],
+        "selector": "{item|_id}-attack",
+        "text": "PF2E.SpecificRule.Equipment.BoastfulHunter.MisfireNote",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "boastful-hunter",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concussive",
+        "fatal-aim-d12"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "quantity": 1,
+    "baseItem": "jezail",
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 35
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "category": "martial",
+    "group": "firearm",
+    "bonus": {
+      "value": 0
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d8",
+      "damageType": "piercing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": 90,
+    "reload": {
+      "value": "1"
+    },
+    "runes": {
+      "potency": 1,
+      "striking": 0,
+      "property": []
+    },
+    "specific": {
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "runes": {
+        "potency": 1,
+        "striking": 0,
+        "property": []
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.7irlzyZA50KqTwce"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.7irlzyZA50KqTwce",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7irlzyZA50KqTwce"
+}

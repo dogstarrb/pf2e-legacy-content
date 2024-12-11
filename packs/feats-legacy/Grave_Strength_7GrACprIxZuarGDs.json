@@ -1,0 +1,100 @@
+{
+  "_id": "7GrACprIxZuarGDs",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Grave Strength",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The flesh you've consumed over the course of your existence as a ghoul has made you stronger, gifting you with strange insights from the minds of the sapient creatures you've devoured and bringing you closer to a state of undead perfection. You gain the @UUID[Compendium.pf2e.ancestryfeatures.Item.YGk41WV42aTM7CQV]{Advanced Undead Benefits}. In addition, you gain a +5-foot status bonus to your Speed while you're satiated.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "ghoul-satiated"
+        ],
+        "selector": "land-speed",
+        "slug": "speed-satiated",
+        "type": "status",
+        "value": 5
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "ghoul-fully-satiated"
+        ],
+        "selector": "land-speed",
+        "slug": "speed-fully-satiated",
+        "type": "status",
+        "value": 10
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.ancestryfeatures.Item.YGk41WV42aTM7CQV"
+      }
+    ],
+    "slug": "grave-strength",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Ghoul Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.7GrACprIxZuarGDs"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.7GrACprIxZuarGDs",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7GrACprIxZuarGDs"
+}

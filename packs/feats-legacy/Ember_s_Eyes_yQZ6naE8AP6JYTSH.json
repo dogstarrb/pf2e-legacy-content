@@ -1,0 +1,83 @@
+{
+  "_id": "yQZ6naE8AP6JYTSH",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Ember's Eyes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your eyes blaze with inner flame. You gain Low-Light Vision, or you gain @UUID[Compendium.pf2e.ancestryfeatures.Item.HHVQDp61ehcpdiU8]{Darkvision} if your ancestry already has low-light vision.</p>\n<hr />\n<p><strong>Special</strong> If your ancestry has neither low-light vision nor darkvision, you can take this ancestry feat a second time to gain darkvision. You can't retrain out of this feat.</p>"
+    },
+    "rules": [
+      {
+        "key": "Sense",
+        "selector": "low-light-vision"
+      },
+      {
+        "key": "Sense",
+        "predicate": [
+          "self:low-light-vision:from-ancestry"
+        ],
+        "selector": "darkvision"
+      }
+    ],
+    "slug": "embers-eyes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "naari"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 2,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.yQZ6naE8AP6JYTSH"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.yQZ6naE8AP6JYTSH",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!yQZ6naE8AP6JYTSH"
+}

@@ -1,0 +1,112 @@
+{
+  "_id": "hIA3qiUsxvLZXrFP",
+  "img": "systems/pf2e/icons/default-icons/alternatives/ancestries/fetchling.svg",
+  "name": "Fetchling",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><em>Once human and now something apart, fetchlings display the Shadow Plane's ancient influence through monochrome complexions, glowing eyes, and the casting of supernatural shadows.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.45SK8rdbbxvEHfMn.JournalEntryPage.RlMgeku1FNJjF7YR]{Fetchling}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.colorDarkvision",
+        "value": true
+      }
+    ],
+    "slug": "fetchling",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fetchling",
+        "humanoid"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "hp": 8,
+    "size": "med",
+    "reach": 5,
+    "speed": 25,
+    "boosts": {
+      "0": {
+        "value": [
+          "dex"
+        ]
+      },
+      "1": {
+        "value": []
+      },
+      "2": {
+        "value": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    },
+    "flaws": {
+      "0": {
+        "value": []
+      }
+    },
+    "languages": {
+      "value": [
+        "common",
+        "shadowtongue"
+      ],
+      "custom": ""
+    },
+    "additionalLanguages": {
+      "count": 0,
+      "value": [
+        "aklo",
+        "draconic",
+        "dziriak",
+        "necril",
+        "sakvroth"
+      ],
+      "custom": ""
+    },
+    "items": {},
+    "vision": "darkvision"
+  },
+  "type": "ancestry",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.ancestries.Item.hIA3qiUsxvLZXrFP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.ancestries-legacy.Item.hIA3qiUsxvLZXrFP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!hIA3qiUsxvLZXrFP"
+}

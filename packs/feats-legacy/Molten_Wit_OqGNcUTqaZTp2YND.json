@@ -1,0 +1,141 @@
+{
+  "_id": "OqGNcUTqaZTp2YND",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Molten Wit",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your elemental soul has sparked not just your body but also your mind. You either become trained in Deception and gain the @UUID[Compendium.pf2e.feats-srd.Item.B6HbYsLBWb1RR6Fx]{Charming Liar} skill feat, or you become trained in Diplomacy and gain the @UUID[Compendium.pf2e.feats-srd.Item.KpFetnUqTiweypZk]{Group Impression} skill feat. If you're already trained in one of these skills, you must take the other and can choose from either skill feat. If you're trained in both skills, you become trained in a different skill of your choice instead and can choose from either skill feat.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.Skill.Deception",
+            "predicate": [
+              "skill:deception:rank:0"
+            ],
+            "value": "deception"
+          },
+          {
+            "label": "PF2E.Skill.Diplomacy",
+            "predicate": [
+              "skill:diplomacy:rank:0"
+            ],
+            "value": "diplomacy"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "predicate": [
+          {
+            "or": [
+              "skill:diplomacy:rank:0",
+              "skill:deception:rank:0"
+            ]
+          }
+        ],
+        "prompt": "PF2E.SpecificRule.Prompt.Skill",
+        "rollOption": "molten-wit"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "predicate": [
+          {
+            "or": [
+              "molten-wit:deception",
+              "molten-wit:diplomacy"
+            ]
+          }
+        ],
+        "value": 1
+      },
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "predicate": [
+              "molten-wit:deception"
+            ],
+            "value": "Compendium.pf2e.feats-srd.Item.B6HbYsLBWb1RR6Fx"
+          },
+          {
+            "predicate": [
+              "molten-wit:diplomacy"
+            ],
+            "value": "Compendium.pf2e.feats-srd.Item.KpFetnUqTiweypZk"
+          }
+        ],
+        "flag": "feat",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.SkillFeat"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.feat}"
+      }
+    ],
+    "slug": "molten-wit",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "naari"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.OqGNcUTqaZTp2YND"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.OqGNcUTqaZTp2YND",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OqGNcUTqaZTp2YND"
+}

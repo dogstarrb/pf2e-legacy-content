@@ -1,0 +1,97 @@
+{
+  "_id": "WSxHCapuTn8uRdLI",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Dragon Grip",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your hold has a unique draconic connection. You gain a +2 circumstance bonus when you attempt to Make an Impression on a creature with the dragon trait. You gain access to the Riding Drake animal companion.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Attempting to Make an Impression on a Dragon",
+        "option": "target:trait:dragon",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:make-an-impression",
+          {
+            "or": [
+              "target:trait:dragon"
+            ]
+          }
+        ],
+        "selector": "diplomacy",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "dragon-grip",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "orc"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Beast Trainer"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.WSxHCapuTn8uRdLI"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.WSxHCapuTn8uRdLI",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WSxHCapuTn8uRdLI"
+}

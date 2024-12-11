@@ -1,0 +1,119 @@
+{
+  "_id": "1K6m6AVmn3r8XZ9d",
+  "img": "systems/pf2e/icons/features/classes/path-to-perfection.webp",
+  "name": "Path to Perfection",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have progressed along your own path to enlightenment. Choose your Fortitude, Reflex, or Will saving throw. Your proficiency rank for the chosen saving throw increases to master. When you roll a success on the chosen saving throw, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.SavesFortitude",
+            "value": "fortitude"
+          },
+          {
+            "label": "PF2E.SavesReflex",
+            "value": "reflex"
+          },
+          {
+            "label": "PF2E.SavesWill",
+            "value": "will"
+          }
+        ],
+        "flag": "pathToPerfection",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.PathToPerfection"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.saves.{item|flags.pf2e.rulesSelections.pathToPerfection}.rank",
+        "value": 3
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "selector": "{item|flags.pf2e.rulesSelections.pathToPerfection}",
+        "type": "save"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success"
+        ],
+        "selector": "{item|flags.pf2e.rulesSelections.pathToPerfection}",
+        "text": "When you roll a success on a save, you get a critical success instead.",
+        "title": "{item|name}"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "self:path-to-perfection:{item|flags.pf2e.rulesSelections.pathToPerfection}"
+      }
+    ],
+    "slug": "path-to-perfection",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.1K6m6AVmn3r8XZ9d"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.1K6m6AVmn3r8XZ9d",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1K6m6AVmn3r8XZ9d"
+}

@@ -1,0 +1,93 @@
+{
+  "_id": "w1GFspPIQ9f5MbFL",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Touch Focus",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong> You begin to Cast a Spell that requires a spell attack roll.</p>\n<hr />\n<p>You can redirect a spell's power through you to deliver it within striking distance. If your next action is to Cast a Spell with 1 or more targets and a range farther than touch, you change the range to touch. You gain a +2 circumstance bonus to the attack. This only allows you to touch a single target with the spell, even if the spell originally affected more than 1 target. As long as your spell attack is successful, the target is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} in addition to the spell's normal effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "touch-focus"
+        ],
+        "selector": "spell-attack",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "domain": "attack-roll",
+        "key": "RollOption",
+        "option": "touch-focus",
+        "toggleable": true
+      }
+    ],
+    "slug": "touch-focus",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "manipulate",
+        "spellshape"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Fists of the Ruby Phoenix Hardcover Compilation",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "free"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Sixth Pillar Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.w1GFspPIQ9f5MbFL"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.w1GFspPIQ9f5MbFL",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!w1GFspPIQ9f5MbFL"
+}

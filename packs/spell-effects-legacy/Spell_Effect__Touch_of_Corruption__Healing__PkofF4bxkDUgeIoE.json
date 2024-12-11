@@ -1,0 +1,78 @@
+{
+  "_id": "PkofF4bxkDUgeIoE",
+  "img": "systems/pf2e/icons/spells/touch-of-corruption.webp",
+  "name": "Spell Effect: Touch of Corruption (Healing)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted from willingly receiving <em>@UUID[Compendium.pf2e.spells-srd.Item.jFmWSIpJGGebim6y]{Touch of Corruption (Healing)}</em>.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "damage",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-touch-of-corruption-healing",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.PkofF4bxkDUgeIoE"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 18900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.PkofF4bxkDUgeIoE",
+    "duplicateSource": null
+  },
+  "_key": "!items!PkofF4bxkDUgeIoE"
+}

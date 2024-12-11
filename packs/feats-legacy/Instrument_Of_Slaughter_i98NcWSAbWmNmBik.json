@@ -1,0 +1,94 @@
+{
+  "_id": "i98NcWSAbWmNmBik",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Instrument Of Slaughter",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your blade ally thirsts for the blood of your foes.</p>\n<p>Whenever you critically hit an enemy with the weapon inhabited by your blade ally while dealing extra damage from your champion's reaction, the target takes @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} equal to two of the weapon's damage dice.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          {
+            "or": [
+              "destructive-vengeance",
+              "iron-command",
+              "selfish-shield"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "text": "Whenever you critically hit an enemy with the weapon inhabited by your blade ally while dealing extra damage from your champion's reaction, the target takes @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} equal to two of the weapon's damage dice.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "instrument-of-slaughter",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "champion"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "divine ally (blade)"
+        },
+        {
+          "value": "tenets of evil"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.i98NcWSAbWmNmBik"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.i98NcWSAbWmNmBik",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!i98NcWSAbWmNmBik"
+}

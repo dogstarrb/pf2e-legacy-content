@@ -1,0 +1,113 @@
+{
+  "_id": "6Qq7F1wlH5cx189e",
+  "img": "systems/pf2e/icons/equipment/consumables/ammunition/dreaming-round.webp",
+  "name": "Dreaming Round",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Ammunition</strong> round</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> command</p>\n<p>The night sky seems contained in this glass projectile. When an activated <em>dreaming round</em> damages a creature, it induces drowsiness. The creature must attempt a @Check[type:fortitude|dc:30] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and becomes temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} and @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} for 1 round.</p>\n<p><strong>Failure</strong> The creature becomes fatigued and slowed 1, and must attempt another Fortitude save at the end of each of its turns. If it fails, its slowed condition increases by 1. A successful save reduces the slowed condition by 1. If the slowed condition is removed or reduced to 0, the effect and the fatigued condition end. If the target's actions are reduced to 0 by this effect, it immediately falls into a deep sleep and is @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, during which it no longer attempts a save at the end of its turn. It wakes up automatically after 1 hour or if it takes damage, but not due to non-painful stimuli (such as noise or being nudged). When it wakes up, its slowed condition decreases by 1, though it must once again save at the end of each of its turns and might risk falling asleep again.</p>\n<p><strong>Critical Failure</strong> As failure, except the target is initially @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>"
+    },
+    "rules": [],
+    "slug": "dreaming-round",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemical",
+        "consumable",
+        "incapacitation",
+        "magical",
+        "mental",
+        "sleep"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 900
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "ammo",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "autoDestroy": true
+    },
+    "damage": null,
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "stackGroup": "rounds10",
+    "spell": null
+  },
+  "type": "consumable",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.6Qq7F1wlH5cx189e"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.6Qq7F1wlH5cx189e",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6Qq7F1wlH5cx189e"
+}

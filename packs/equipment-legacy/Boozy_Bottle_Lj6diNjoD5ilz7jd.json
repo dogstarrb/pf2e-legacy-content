@@ -1,0 +1,113 @@
+{
+  "_id": "Lj6diNjoD5ilz7jd",
+  "img": "icons/consumables/drinks/water-jug-clay-brown.webp",
+  "name": "Boozy Bottle",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This tattoo depicts a container of alcohol, traditionally a small, uncorked brown bottle. You gain a +1 item bonus to saving throws against poison.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">R</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail (but don't critically fail) an initial saving throw against a poison, or you gain persistent poison damage</p>\n<hr />\n<p><strong>Effect</strong> You pick your poison. Calling out the name of a drink as though ordering at a bar, you negate the triggering poison. Instead, you gain the alcohol affliction at stage 2. The DC of this magical alcohol is the DC of the triggering poison save or DC 20 for persistent poison damage.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "poison"
+        ],
+        "selector": "fortitude",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "boozy-bottle",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical",
+        "tattoo"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 140
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "tattooed-on-the-body"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.Lj6diNjoD5ilz7jd"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.Lj6diNjoD5ilz7jd",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Lj6diNjoD5ilz7jd"
+}

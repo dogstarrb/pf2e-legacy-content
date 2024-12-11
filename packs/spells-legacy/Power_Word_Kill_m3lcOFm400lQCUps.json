@@ -1,0 +1,99 @@
+{
+  "_id": "m3lcOFm400lQCUps",
+  "img": "icons/magic/death/projectile-skull-fire-orange.webp",
+  "name": "Power Word Kill",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You utter the most powerful arcane word of power. Once targeted, the target is then temporarily immune for 10 minutes. The effect of the spell depends on the target's level.</p><ul>\n<li><strong>14th or Lower</strong> The target dies instantly.</li>\n<li><strong>15th</strong> If the target has 50 Hit Points or fewer, it dies instantly; otherwise, it drops to 0 Hit Points and becomes @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying 1}, or increases its Dying condition by 1 if it's already Dying.</li>\n<li><strong>16th or Higher</strong> The target takes 50 damage; if this brings the target to 0 Hit Points, the target dies instantly.</li>\n</ul>\n<hr />\n<p><strong>Heightened (10th)</strong> The levels at which each outcome applies increase by 2.</p>"
+    },
+    "rules": [],
+    "slug": "power-word-kill",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "auditory",
+        "concentrate",
+        "death",
+        "mental"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "arcane"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "1"
+    },
+    "duration": {
+      "value": "varies",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "50",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.m3lcOFm400lQCUps"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.m3lcOFm400lQCUps",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!m3lcOFm400lQCUps"
+}

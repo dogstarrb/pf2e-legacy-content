@@ -1,0 +1,168 @@
+{
+  "_id": "NSQOijKqomyotXkj",
+  "img": "systems/pf2e/icons/equipment/consumables/ammunition/antler-arrow.webp",
+  "name": "Antler Arrow",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Creation of these arrows was inspired by an encounter with a horned archon scout who sought to peacefully restrain their foes. When an activated antler arrow hits a target, bone antlers extend to pin it down. The target must succeed at a @Check[type:reflex|dc:16] save or become stuck to the surface, taking the critical specialization effects of a bow.</p>\n<p>If the hit with the <em>antler arrow</em> is a critical hit and you have access to the bow critical specialization effect, the DC of the Athletics check increases to 15.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "success"
+        ],
+        "selector": "{item|_id}-damage",
+        "text": "PF2E.AmmunitionNotes.AntlerArrow.Text",
+        "title": "PF2E.AmmunitionNotes.AntlerArrow.Title"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success"
+        ],
+        "selector": "{item|_id}-damage",
+        "text": "PF2E.Item.Weapon.CriticalSpecialization.bow",
+        "title": "PF2E.Actor.Creature.CriticalSpecialization"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          {
+            "not": "critical-specialization"
+          }
+        ],
+        "selector": "{item|_id}-damage",
+        "text": "PF2E.AmmunitionNotes.AntlerArrow.Text",
+        "title": "PF2E.AmmunitionNotes.AntlerArrow.Title"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          {
+            "not": "critical-specialization"
+          }
+        ],
+        "selector": "{item|_id}-damage",
+        "text": "PF2E.Item.Weapon.CriticalSpecialization.bow",
+        "title": "PF2E.Actor.Creature.CriticalSpecialization"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "critical-specialization"
+        ],
+        "selector": "{item|_id}-damage",
+        "text": "PF2E.AmmunitionNotes.AntlerArrow.CriticalText",
+        "title": "PF2E.AmmunitionNotes.AntlerArrow.Title"
+      }
+    ],
+    "slug": "antler-arrow",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "consumable",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 7
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "ammo",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "autoDestroy": true
+    },
+    "damage": null,
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "stackGroup": "arrows",
+    "spell": null
+  },
+  "type": "consumable",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.NSQOijKqomyotXkj"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.NSQOijKqomyotXkj",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!NSQOijKqomyotXkj"
+}

@@ -1,0 +1,81 @@
+{
+  "_id": "pE2TWhG97XbhgAdH",
+  "img": "systems/pf2e/icons/spells/incendiary-aura.webp",
+  "name": "Spell Effect: Incendiary Aura",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.AspA30tzKCHFWRf0]{Incendiary Aura}</em></p>\n<p>Each time a creature within the emanation takes fire damage, it catches on fire, taking [[/r (ceil(@item.level/2)+1)d4[persistent,fire]]] damage.</p>"
+    },
+    "rules": [
+      {
+        "key": "Aura",
+        "radius": "ceil(@item.level/2)*5+5",
+        "slug": "incendiary-aura",
+        "traits": [
+          "cursebound",
+          "fire",
+          "oracle"
+        ]
+      }
+    ],
+    "slug": "spell-effect-incendiary-aura",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.pE2TWhG97XbhgAdH"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 36900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.pE2TWhG97XbhgAdH",
+    "duplicateSource": null
+  },
+  "_key": "!items!pE2TWhG97XbhgAdH"
+}

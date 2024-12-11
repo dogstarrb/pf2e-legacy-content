@@ -1,0 +1,98 @@
+{
+  "_id": "sgaqlDFTVC7Ryurt",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Deflect Arrow",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong> You are the target of a physical ranged attack.</p>\n<p><strong>Requirements</strong> You're aware of the attack, are not off-guard against it, and have a hand free.</p>\n<hr />\n<p>You gain a +4 circumstance bonus to AC against the triggering attack. If the attack misses, you have deflected it. You cannot use this feat to deflect unusually massive ranged projectiles (such as boulders or ballista bolts).</p>"
+    },
+    "rules": [
+      {
+        "domain": "ac",
+        "key": "RollOption",
+        "option": "deflect-arrow",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "deflect-arrow",
+          "item:damage:category:physical",
+          "item:ranged",
+          {
+            "gte": [
+              "hands-free",
+              1
+            ]
+          },
+          {
+            "not": "self:condition:off-guard"
+          }
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 4
+      }
+    ],
+    "slug": "deflect-arrow",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.sgaqlDFTVC7Ryurt"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.sgaqlDFTVC7Ryurt",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!sgaqlDFTVC7Ryurt"
+}

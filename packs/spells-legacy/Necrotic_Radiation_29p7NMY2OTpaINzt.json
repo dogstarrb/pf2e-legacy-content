@@ -1,0 +1,111 @@
+{
+  "_id": "29p7NMY2OTpaINzt",
+  "img": "systems/pf2e/icons/spells/necrotic-radiation.webp",
+  "name": "Necrotic Radiation",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You imbue the touched object or space with slow-acting necrotic radiation. If you cast the spell on an object, any creature ending its turn holding or carrying the object takes 2d6 negative damage. If you cast the spell on an area, any creature ending its turn in the area takes 2d6 negative damage. You can attempt to use this spell on an attended object by touching the object. If you do, the creature attempts a Reflex save to reduce the effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The object is unaffected.</p>\n<p><strong>Success</strong> The creature pulls the object away quickly. The spell only lasts 1 minute.</p>\n<p><strong>Failure</strong> The creature manages to slightly protect the object. The spell lasts 10 minutes.</p>\n<p><strong>Critical Failure</strong> The spell lasts the full 24 hours.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> Increase the radiation's negative damage by 1d6</p>"
+    },
+    "rules": [],
+    "slug": "necrotic-radiation",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "manipulate",
+        "void"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "arcane",
+        "divine",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder #154: Siege of the Dinosaurs",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": "one object or one 10-foot-square area"
+    },
+    "range": {
+      "value": "touch"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "24 hours",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "formula": "2d6",
+        "type": "void",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d6"
+      },
+      "interval": 2,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.29p7NMY2OTpaINzt"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.29p7NMY2OTpaINzt",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!29p7NMY2OTpaINzt"
+}

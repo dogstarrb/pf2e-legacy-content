@@ -1,0 +1,104 @@
+{
+  "_id": "S1Z5dFAkMKkFSofk",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "War Conditioning",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have extensive training in remote environments, allowing you to move through these areas easily. When you gain this feat, you can choose to gain either a climb Speed of 20 feet or a swim Speed of 20 feet.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.SpeedTypesClimb",
+            "value": "climb"
+          },
+          {
+            "label": "PF2E.SpeedTypesSwim",
+            "value": "swim"
+          }
+        ],
+        "flag": "warConditioning",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Hobgoblin.WarConditioning.Prompt",
+        "rollOption": "conditioning"
+      },
+      {
+        "key": "BaseSpeed",
+        "predicate": [
+          "conditioning:climb"
+        ],
+        "selector": "climb",
+        "value": 20
+      },
+      {
+        "key": "BaseSpeed",
+        "predicate": [
+          "conditioning:swim"
+        ],
+        "selector": "swim",
+        "value": 20
+      }
+    ],
+    "slug": "war-conditioning",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "hobgoblin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.S1Z5dFAkMKkFSofk"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.S1Z5dFAkMKkFSofk",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!S1Z5dFAkMKkFSofk"
+}

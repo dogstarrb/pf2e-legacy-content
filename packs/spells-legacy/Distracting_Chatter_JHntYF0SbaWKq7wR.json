@@ -1,0 +1,105 @@
+{
+  "_id": "JHntYF0SbaWKq7wR",
+  "img": "icons/creatures/abilities/mouth-teeth-human.webp",
+  "name": "Distracting Chatter",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You bombard a target with distracting auditory illusions, surrounding them with a tumultuous cacophony of overlapping speech, whispers, screams, and muttering. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, takes a -2 status penalty to purely auditory Perception checks, and must succeed at a @Check[type:flat|dc:5] to use auditory abilities or verbal spell components. Similarly, a creature who attempts to affect the target with an auditory effect must succeed at a @Check[type:flat|dc:5] or the attempt fails. The duration depends on the target's Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The duration is 1 round.</p>\n<p><strong>Failure</strong> The duration is 3 rounds.</p>\n<p><strong>Critical Failure</strong> The duration is 1 minute.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> You can target up to five creatures.</p>"
+    },
+    "rules": [],
+    "slug": "distracting-chatter",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "auditory",
+        "concentrate",
+        "illusion",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "varies",
+      "sustained": false
+    },
+    "damage": {},
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "will",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "7": {
+          "target": {
+            "value": "5 creatures"
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.JHntYF0SbaWKq7wR"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.JHntYF0SbaWKq7wR",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!JHntYF0SbaWKq7wR"
+}

@@ -1,0 +1,110 @@
+{
+  "_id": "deG1dtfuQph03Kkg",
+  "img": "systems/pf2e/icons/spells/shillelagh.webp",
+  "name": "Spell Effect: Shillelagh",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.s3abwDbTV43pGFFW]{Shillelagh}</em></p>\n<p>The target grows vines and leaves, brimming with primal energy. The target becomes a +1 striking weapon while in your hands, gaining a +1 item bonus to attack rolls and increasing the number of weapon damage dice to two. Additionally, as long as you are on your home plane, attacks you make with the target against aberrations, extraplanar creatures, and undead increase the number of weapon damage dice to three.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "spellEffectShillelagh",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "key": "WeaponPotency",
+        "selector": "{item|flags.pf2e.rulesSelections.spellEffectShillelagh}-attack",
+        "value": 1
+      },
+      {
+        "key": "Striking",
+        "label": "Shillelagh",
+        "selector": "{item|flags.pf2e.rulesSelections.spellEffectShillelagh}-damage",
+        "value": 1
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Get third damage die from Shillelagh",
+        "option": "shillelagh-third-die",
+        "toggleable": true
+      },
+      {
+        "key": "Striking",
+        "label": "Shillelagh bonus damage",
+        "predicate": [
+          "shillelagh-third-die"
+        ],
+        "selector": "{item|flags.pf2e.rulesSelections.spellEffectShillelagh}-damage",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-shillelagh",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 103462347,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.deG1dtfuQph03Kkg"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 28100000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.deG1dtfuQph03Kkg",
+    "duplicateSource": null
+  },
+  "_key": "!items!deG1dtfuQph03Kkg"
+}

@@ -1,0 +1,109 @@
+{
+  "_id": "wJsOZsYI2ZUVcGxc",
+  "img": "systems/pf2e/icons/spells/soothing-words.webp",
+  "name": "Effect: Fiddle",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A catchy fiddling tune compels the creature to dance about.</p>\n<p><strong>Failure</strong> Off-guard and -10-foot status penalty to Speeds<br /><strong>Critical Failure</strong> As failure, and also slowed 1</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.Check.Result.Degree.Check.failure",
+            "value": "failure"
+          },
+          {
+            "label": "PF2E.Check.Result.Degree.Check.criticalFailure",
+            "value": "critical-failure"
+          }
+        ],
+        "key": "ChoiceSet",
+        "rollOption": "fiddle"
+      },
+      {
+        "key": "GrantItem",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "uuid": "Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg"
+      },
+      {
+        "key": "GrantItem",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "predicate": [
+          "fiddle:critical-failure"
+        ],
+        "uuid": "Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "all-speeds",
+        "type": "status",
+        "value": -10
+      }
+    ],
+    "slug": "effect-fiddle",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.wJsOZsYI2ZUVcGxc",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!wJsOZsYI2ZUVcGxc"
+}

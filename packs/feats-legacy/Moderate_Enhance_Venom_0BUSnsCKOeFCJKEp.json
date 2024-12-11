@@ -1,0 +1,79 @@
+{
+  "_id": "0BUSnsCKOeFCJKEp",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Moderate Enhance Venom",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You upgrade the vishkanyan venom you can apply with @UUID[Compendium.pf2e.actionspf2e.Item.s4V7JWSMF9JPJAeX]{Envenom} to moderate vishkanyan venom. Envenom's frequency becomes once per 10 minutes.</p>\n<p><strong>Moderate Vishkanyan Venom</strong> (level 9)</p>\n<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[3d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[5d6[poison]] damage (1 round)</p>"
+    },
+    "rules": [],
+    "slug": "moderate-enhance-venom",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "vishkanya"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Lesser Enhance Venom"
+        }
+      ]
+    },
+    "location": null,
+    "frequency": {
+      "max": 1,
+      "per": "PT10M"
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.0BUSnsCKOeFCJKEp"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.0BUSnsCKOeFCJKEp",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0BUSnsCKOeFCJKEp"
+}

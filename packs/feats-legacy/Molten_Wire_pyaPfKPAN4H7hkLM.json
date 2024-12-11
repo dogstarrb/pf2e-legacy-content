@@ -1,0 +1,76 @@
+{
+  "_id": "pyaPfKPAN4H7hkLM",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Molten Wire",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Spinning molten iron through a vortex of fire, you trap your foe in searing wires. Make an @Check[type:impulse|defense:ac]{impulse attack} roll against a creature within 15 feet. On a success, the target takes @Damage[(floor((@actor.level -6)/4)+2)d6[slashing]] damage and is wrapped in molten wire for 1 minute. It is @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and takes @Damage[(floor((@actor.level -6)/4)+2)d4[fire]] damage at the start of each of its turns, with a basic Reflex save. The wire's @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} DC is your class DC. The wire has AC 10 and 75 HP. The impulse ends if the creature Escapes or the wire is destroyed.</p>\n<hr />\n<p><strong>Level (+4)</strong> The slashing damage increases by 1d6, the fire damage increases by 1d4, and the wire's HP increases by 25.</p>"
+    },
+    "rules": [],
+    "slug": "molten-wire",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "composite",
+        "fire",
+        "impulse",
+        "kineticist",
+        "metal",
+        "primal"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.pyaPfKPAN4H7hkLM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.pyaPfKPAN4H7hkLM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!pyaPfKPAN4H7hkLM"
+}

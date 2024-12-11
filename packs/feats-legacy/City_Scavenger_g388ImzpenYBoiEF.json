@@ -1,0 +1,126 @@
+{
+  "_id": "g388ImzpenYBoiEF",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "City Scavenger",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You know that the greatest treasures often look like refuse, and you scoff at those who throw away perfectly good scraps. You gain a +1 circumstance bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.49y9Ec4bDii8pcD3]{Subsist}, and you can use Society or Survival when you Subsist in a settlement. When you Subsist in a city, you also gather valuable junk that silly longshanks threw away. You can @UUID[Compendium.pf2e.actionspf2e.Item.QyzlsLrqM0EEwd7j]{Earn Income} using Society or Survival in the same time as you Subsist, without spending any additional days of downtime. You also gain a +1 circumstance bonus to this check.</p>\n<hr />\n<p><strong>Special</strong> If you have the irongut goblin heritage, increase the bonuses to +2.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:subsist"
+        ],
+        "selector": [
+          "society",
+          "survival"
+        ],
+        "slug": "scavenger-subsist",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.Goblin.CityScavenger.EarnIncome",
+        "predicate": [
+          "action:earn-income",
+          "with-subsist"
+        ],
+        "selector": [
+          "society",
+          "survival"
+        ],
+        "slug": "scavenger-earn",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "predicate": [
+          "heritage:irongut-goblin"
+        ],
+        "selectors": [
+          "society",
+          "survival"
+        ],
+        "slug": "scavenger-subsist",
+        "value": 1
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "predicate": [
+          "heritage:irongut-goblin"
+        ],
+        "selectors": [
+          "society",
+          "survival"
+        ],
+        "slug": "scavenger-earn",
+        "value": 1
+      }
+    ],
+    "slug": "city-scavenger",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "goblin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.g388ImzpenYBoiEF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.g388ImzpenYBoiEF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!g388ImzpenYBoiEF"
+}

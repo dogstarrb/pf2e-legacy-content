@@ -1,0 +1,100 @@
+{
+  "_id": "I10dkdvL6kAnqZWA",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Lie Detector",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You're adept at noticing the tells of a liar - sweat, flushing, a quavering voice, a quickening pulse.</p>\n<p>You gain a +1 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.Item.1xRFPTFtWtGJ9ELw]{Sense Motive} and to Perception DCs against attempts to @UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]{Lie} to you.</p>\n<p>When you determine someone is lying to you, you can use their deceit to your advantage to gain a +1 circumstance bonus to the next Deception, Diplomacy, Intimidation, or Performance check you attempt against that creature within the next minute.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:sense-motive"
+        ],
+        "selector": "perception",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Lie Detector (against a known liar)",
+        "predicate": [
+          "known-liar"
+        ],
+        "selector": [
+          "deception",
+          "diplomacy",
+          "intimidation",
+          "performance"
+        ],
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "lie-detector",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "investigator"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "empiricism or interrogation methodology"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.I10dkdvL6kAnqZWA"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.I10dkdvL6kAnqZWA",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!I10dkdvL6kAnqZWA"
+}

@@ -1,0 +1,81 @@
+{
+  "_id": "jrfuplUEq3PIo6j1",
+  "img": "icons/creatures/magical/spirit-poison-smoke-green.webp",
+  "name": "Effect: Blasphemous Utterances",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature takes a -2 circumstance penalty to saves against mental effects.</p>\n<p>It can't take actions that have the concentrate trait unless it succeeds at a @Check[type:flat|dc:10] check. Failing this check wastes the action.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "mental"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": -2
+      }
+    ],
+    "slug": "effect-blasphemous-utterances",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.jrfuplUEq3PIo6j1"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.jrfuplUEq3PIo6j1",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!jrfuplUEq3PIo6j1"
+}

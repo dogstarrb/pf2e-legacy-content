@@ -1,0 +1,100 @@
+{
+  "_id": "hkdP5tsTAoqJDR8v",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Triple Shot",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can quickly fire multiple shots with greater control.</p>\n<p>When you use @UUID[Compendium.pf2e.feats-srd.Item.PwcmmJOLY8C9JHau]{Double Shot}, you can make the attacks against the same target. You can add an additional action to Double Shot to make three ranged Strikes instead of two. If you do, the penalty is -4. All attacks count toward your multiple attack penalty, but the penalty doesn't increase until after you've made all of them.</p>"
+    },
+    "rules": [
+      {
+        "disabledIf": [
+          {
+            "not": "double-shot"
+          }
+        ],
+        "domain": "ranged-attack-roll",
+        "key": "RollOption",
+        "option": "triple-shot",
+        "priority": 51,
+        "toggleable": true
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "override",
+        "predicate": [
+          "double-shot",
+          "triple-shot"
+        ],
+        "relabel": "{item|name}",
+        "selector": "ranged-attack-roll",
+        "slug": "double-shot",
+        "value": -4
+      }
+    ],
+    "slug": "triple-shot",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fighter"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Double Shot"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.hkdP5tsTAoqJDR8v"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.hkdP5tsTAoqJDR8v",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!hkdP5tsTAoqJDR8v"
+}

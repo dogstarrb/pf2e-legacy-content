@@ -1,0 +1,113 @@
+{
+  "_id": "CXS0ryG2SODSobm9",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Dwarven Weapon Familiarity",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your kin have instilled in you an affinity for hard-hitting weapons, and you prefer these to more elegant arms. You are trained with the @UUID[Compendium.pf2e.equipment-srd.Item.War0uyLBx1jA0Ge7]{Battle Axe}, @UUID[Compendium.pf2e.equipment-srd.Item.6I4YJAQUbTAqbpsI]{Pick}, and @UUID[Compendium.pf2e.equipment-srd.Item.rXt4629QSg7KDTgJ]{Warhammer}.</p>\n<p>You also gain access to all uncommon dwarf weapons. For the purpose of determining your proficiency, martial dwarf weapons are simple weapons and advanced dwarf weapons are martial weapons.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-battle-axe.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-pick.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-warhammer.rank",
+        "value": 1
+      },
+      {
+        "definition": [
+          "item:trait:dwarf",
+          "item:category:advanced"
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.AdvancedDwarfWeapons",
+        "sameAs": "martial",
+        "slug": "advanced-dwarf-weapons"
+      },
+      {
+        "definition": [
+          "item:trait:dwarf",
+          "item:category:martial",
+          {
+            "not": "item:category:advanced"
+          }
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.MartialDwarfWeapons",
+        "sameAs": "simple",
+        "slug": "martial-dwarf-weapons"
+      }
+    ],
+    "slug": "dwarven-weapon-familiarity",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "dwarf"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.CXS0ryG2SODSobm9"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.CXS0ryG2SODSobm9",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CXS0ryG2SODSobm9"
+}

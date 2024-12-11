@@ -1,0 +1,104 @@
+{
+  "_id": "xKJVqN1ETnNH3tFg",
+  "img": "systems/pf2e/icons/spells/corrosive-body.webp",
+  "name": "Spell Effect: Corrosive Body (Heightened 9th)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.9aFg4EuOBVz0i3Lb]{Corrosive Body}</em></p>\n<p>You exhale corrosive gas, and acidic secretions coat your skin as you transform into a being of living acid. You gain acid immunity. Any creature that touches you or damages you with an unarmed melee attack or non-reach melee weapon takes @Damage[4d6[acid]] damage, and your unarmed attacks deal 2d4 additional acid damage. The first time each round that you deal acid damage to a creature in this way, you gain [[/r 5d6 #Temporary Hit Points]]{5d6 temporary Hit Points} as your body digests the eroded material and transforms it into a protective acid. When the spell ends, any remaining temporary HP expires as well. Your acid spells deal one additional die of acid damage (of the same damage die the spell uses). You can cast acid splash as an innate spell; the splash damage affects all creatures within 15 feet instead of the normal 5 feet.</p>"
+    },
+    "rules": [
+      {
+        "damageType": "acid",
+        "diceNumber": 2,
+        "dieSize": "d4",
+        "key": "DamageDice",
+        "predicate": [
+          "unarmed"
+        ],
+        "selector": "strike-damage"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "unarmed"
+        ],
+        "selector": "strike-damage",
+        "text": "PF2E.SpecificRule.CorrosiveBody.Note9th",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Immunity",
+        "type": "acid"
+      },
+      {
+        "damageType": "acid",
+        "diceNumber": 1,
+        "key": "DamageDice",
+        "predicate": [
+          "acid"
+        ],
+        "selector": "spell-damage"
+      }
+    ],
+    "slug": "spell-effect-corrosive-body-heightened-9th",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.xKJVqN1ETnNH3tFg"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 42600000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.xKJVqN1ETnNH3tFg",
+    "duplicateSource": null
+  },
+  "_key": "!items!xKJVqN1ETnNH3tFg"
+}

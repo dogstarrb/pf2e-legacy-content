@@ -1,0 +1,66 @@
+{
+  "_id": "Qj36ramjkoKE8kzJ",
+  "img": "systems/pf2e/icons/actions/TwoActions.webp",
+  "name": "Decompose",
+  "system": {
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "category": "offensive",
+    "description": {
+      "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Void energy seeps out of you, decaying everything within a @Template[type:emanation|distance:5] and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or wood trait take @Damage[1d6[void]] damage with a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save against your class DC or spell DC, whichever is higher.</p>",
+      "gm": ""
+    },
+    "frequency": {
+      "max": 1,
+      "per": "day",
+      "value": 1
+    },
+    "publication": {
+      "license": "OGL",
+      "remaster": true,
+      "title": "Pathfinder Rage of Elements",
+      "authors": ""
+    },
+    "rules": [],
+    "traits": {
+      "value": [
+        "primal",
+        "void"
+      ],
+      "otherTags": []
+    },
+    "slug": "decompose",
+    "_migration": {
+      "version": 0.935,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    }
+  },
+  "type": "action",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.actionspf2e.Item.Qj36ramjkoKE8kzJ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.actions-legacy.Item.Qj36ramjkoKE8kzJ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Qj36ramjkoKE8kzJ"
+}

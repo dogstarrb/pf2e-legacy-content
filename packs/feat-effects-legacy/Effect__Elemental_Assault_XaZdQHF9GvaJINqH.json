@@ -1,0 +1,141 @@
+{
+  "_id": "XaZdQHF9GvaJINqH",
+  "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+  "name": "Effect: Elemental Assault",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You shroud your arms and held weapons in elemental magic. Choose one element. Until the end of your next turn, your Strikes deal an additional 1d6 damage of the indicated type and have the trait corresponding to the element: electricity for air, bludgeoning for earth, fire for fire, or cold for water.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAir",
+            "predicate": [
+              {
+                "or": [
+                  {
+                    "not": "feat:dualborn"
+                  },
+                  "dualborn:air"
+                ]
+              }
+            ],
+            "value": "electricity"
+          },
+          {
+            "label": "PF2E.TraitEarth",
+            "predicate": [
+              {
+                "or": [
+                  {
+                    "not": "feat:dualborn"
+                  },
+                  "dualborn:earth"
+                ]
+              }
+            ],
+            "value": "bludgeoning"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "predicate": [
+              {
+                "or": [
+                  {
+                    "not": "feat:dualborn"
+                  },
+                  "dualborn:fire"
+                ]
+              }
+            ],
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitWater",
+            "predicate": [
+              {
+                "or": [
+                  {
+                    "not": "feat:dualborn"
+                  },
+                  "dualborn:water"
+                ]
+              }
+            ],
+            "value": "cold"
+          }
+        ],
+        "flag": "element",
+        "key": "ChoiceSet"
+      },
+      {
+        "damageType": "{item|flags.pf2e.rulesSelections.element}",
+        "diceNumber": 1,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "effect-elemental-assault",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.XaZdQHF9GvaJINqH"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.XaZdQHF9GvaJINqH",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XaZdQHF9GvaJINqH"
+}

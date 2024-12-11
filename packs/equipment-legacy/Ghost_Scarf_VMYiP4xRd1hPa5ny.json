@@ -1,0 +1,137 @@
+{
+  "_id": "VMYiP4xRd1hPa5ny",
+  "img": "icons/equipment/waist/sash-cloth-purple.webp",
+  "name": "Ghost Scarf",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This 6-foot-long scarf shimmers with the silvery light of the River of Souls while worn, providing illumination equivalent to that of a candle. You can deactivate or activate this radiance as an Interact action. The dangling lengths of a ghost scarf softly billow in the presence of haunts, granting the wearer a +1 item bonus to all Perception checks and Perception DCs to resolve discovering a haunt or rolling initiative when a haunt triggers.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The scarf extends silvery threads that wrap around a weapon you carry, granting the effects of a ghost touch property rune to that weapon for 5 minutes. If the weapon already bears a ghost touch rune, you instead gain a +1 item bonus to Fortitude saves against effects from incorporeal undead for 5 minutes.</p>"
+    },
+    "rules": [
+      {
+        "key": "TokenLight",
+        "predicate": [
+          "ghost-scarf-light"
+        ],
+        "value": {
+          "animation": {
+            "intensity": 4,
+            "speed": 1,
+            "type": "torch"
+          },
+          "bright": 0,
+          "color": "#9b7337",
+          "dim": 10,
+          "shadows": 0.2
+        }
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.GhostScarfLit",
+        "option": "ghost-scarf-light",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "target:trait:haunt"
+        ],
+        "selector": "perception",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "ghost-scarf",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder #197: Let the Leaves Fall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 360
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "wornbelt"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.VMYiP4xRd1hPa5ny"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.VMYiP4xRd1hPa5ny",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VMYiP4xRd1hPa5ny"
+}

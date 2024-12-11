@@ -1,0 +1,86 @@
+{
+  "_id": "SNhhx0hPWlERpQRr",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Corpse Tender Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have a connection to mindless undead that allows you to communicate your intentions to them on a rudimentary level. You can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on mindless undead and to make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of them; their mindless trait doesn't grant immunity to these mental effects. Most mindless undead are likely hostile toward you by default and must be kept at a safe distance to give you time to Make an Impression.</p>\n<p>You become trained in Diplomacy; if already trained, you instead become trained in another skill of your choice.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.jFhTp57zO3ej6HDt]{Corpse Tender} archetype.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.diplomacy.rank",
+        "value": 1
+      }
+    ],
+    "slug": "corpse-tender-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #181: Zombie Feast",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "evil alignment"
+        },
+        {
+          "value": "trained in Religion"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.SNhhx0hPWlERpQRr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.SNhhx0hPWlERpQRr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!SNhhx0hPWlERpQRr"
+}

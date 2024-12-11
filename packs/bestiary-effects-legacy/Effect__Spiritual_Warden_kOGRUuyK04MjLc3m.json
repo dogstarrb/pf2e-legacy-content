@@ -1,0 +1,93 @@
+{
+  "_id": "kOGRUuyK04MjLc3m",
+  "img": "systems/pf2e/icons/spells/divine-aura.webp",
+  "name": "Effect: Spiritual Warden",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Allies in the aura gain a +2 status bonus to saving throws against death effects and effects that target or manipulate their souls.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "death",
+              "manipulate-soul"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "domain": "saving-throw",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.SoulWarden.SafeguardSoul.Label",
+        "option": "manipulate-soul",
+        "toggleable": true
+      }
+    ],
+    "slug": "effect-spiritual-warden",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary 2",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.kOGRUuyK04MjLc3m"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.kOGRUuyK04MjLc3m",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!kOGRUuyK04MjLc3m"
+}

@@ -1,0 +1,84 @@
+{
+  "_id": "RlhvppSmQRqL2RUe",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Quick Fix",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can attach a talisman using only a bit of glue and some string. You gain the @UUID[Compendium.pf2e.feats-srd.Item.x9xA8P2Vlz98He7C]{Rapid Affixture} skill feat, even if you don't meet the prerequisites. When you use it, you can affix or remove up to four talismans in 1 minute instead of just one.</p>\n<p>You gain the ability to @UUID[Compendium.pf2e.actionspf2e.Item.UAaQk93a30nx0nYY]{Affix a Talisman} as a 3-action activity from that feat at 12th level, regardless of your Crafting proficiency.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.actionspf2e.Item.UAaQk93a30nx0nYY"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.x9xA8P2Vlz98He7C"
+      }
+    ],
+    "slug": "quick-fix",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Talisman Dabbler Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.RlhvppSmQRqL2RUe"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.RlhvppSmQRqL2RUe",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!RlhvppSmQRqL2RUe"
+}

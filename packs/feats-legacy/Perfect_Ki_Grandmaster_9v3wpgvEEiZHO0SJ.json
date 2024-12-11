@@ -1,0 +1,82 @@
+{
+  "_id": "9v3wpgvEEiZHO0SJ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Perfect Ki Grandmaster",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain an appropriate ki spell for your School of Perfection: <em>@UUID[Compendium.pf2e.spells-srd.Item.aFd00WT266VYPqOG]{Unblinking Flame Ignition}</em> for Unblinking Flame, <em>@UUID[Compendium.pf2e.spells-srd.Item.axYqY70kYu2lN20R]{Unbreaking Wave Containment}</em> for Unbreaking Waves, <em>@UUID[Compendium.pf2e.spells-srd.Item.XjNROFtWnwovhCsq]{Unfolding Wind Crash}</em> for Unfolding Wind, or <em>@UUID[Compendium.pf2e.spells-srd.Item.9DtuMEyHhtHFRp5a]{Untwisting Iron Pillar}</em> for Untwisting Iron. Increase the number of Focus Points in your focus pool by 1. You become a master in occult spell DCs and occult spell attack rolls.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.spellcasting.rank",
+        "value": 3
+      }
+    ],
+    "slug": "perfect-ki-grandmaster",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Perfect Ki Expert or Perfect Ki Exemplar"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.9v3wpgvEEiZHO0SJ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.9v3wpgvEEiZHO0SJ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9v3wpgvEEiZHO0SJ"
+}

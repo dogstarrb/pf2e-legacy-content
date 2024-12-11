@@ -1,0 +1,97 @@
+{
+  "_id": "41WThj17MZBXTO2X",
+  "img": "systems/pf2e/icons/spells/enlarge.webp",
+  "name": "Spell Effect: Enlarge (Heightened 4th)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Enlarge}</em></p>\n<p>Bolstered by magical power, the target grows to size Huge. Its equipment grows with it but returns to natural size if removed. The creature is clumsy 1. Its reach increases by 10 feet (or by 15 feet if it started out Tiny), and it gains a +4 status bonus to melee damage. The Spell has no effect on a Huge or larger creature.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Enlarge",
+        "predicate": [
+          "item:melee"
+        ],
+        "selector": "strike-damage",
+        "type": "status",
+        "value": 4
+      },
+      {
+        "key": "CreatureSize",
+        "reach": {
+          "override": 15
+        },
+        "resizeEquipment": true,
+        "value": "huge"
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Enlarge",
+        "selector": "dex-based",
+        "type": "status",
+        "value": -1
+      }
+    ],
+    "slug": "spell-effect-enlarge-heightened-4th",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": 5,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.41WThj17MZBXTO2X"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 4200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.41WThj17MZBXTO2X",
+    "duplicateSource": null
+  },
+  "_key": "!items!41WThj17MZBXTO2X"
+}

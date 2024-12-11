@@ -1,0 +1,148 @@
+{
+  "_id": "ivaL0xt33k6QNwQK",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-bombs/crystal-shards.webp",
+  "name": "Crystal Shards (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Usage</strong> held in 1 hand</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>This flask holds a pressurized red-brown gas flecked with bits of sublimated crystal. You gain a +2 item bonus to attack rolls. When the bomb explodes, it deals @Damage[3d4[piercing]] damage and [[/r (5[splash])[piercing]]]{5 piercing splash damage} as the mixture suddenly turns into solid crystals flying at high speeds.</p>\n<p>Surfaces in the splash area grow brittle, gleaming red crystals that crumble to dust after 1 minute. The crystals on level surfaces are @UUID[Compendium.pf2e.equipment-srd.Item.7fSnvJ2xoSfa6JXD]{Caltrops}. The crystals on vertical surfaces can be used briefly as handholds, granting the listed item bonus to the next Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} each space. The crystals in each space crumble after the creature leaves, whether Climbing or moving through the caltrops.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "selector": "{item|_id}-damage",
+        "text": "PF2E.BombNotes.CrystalShards.Greater.success"
+      }
+    ],
+    "slug": "crystal-shards-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemical",
+        "bomb",
+        "consumable",
+        "earth",
+        "splash"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "quantity": 1,
+    "baseItem": "alchemical-bomb",
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 350
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "category": "martial",
+    "group": "bomb",
+    "bonus": {
+      "value": 2
+    },
+    "damage": {
+      "dice": 3,
+      "die": "d4",
+      "damageType": "piercing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": null
+    },
+    "splashDamage": {
+      "value": 5
+    },
+    "range": 20,
+    "reload": {
+      "value": "-"
+    },
+    "runes": {
+      "potency": 0,
+      "striking": 0,
+      "property": []
+    },
+    "specific": null,
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.ivaL0xt33k6QNwQK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.ivaL0xt33k6QNwQK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ivaL0xt33k6QNwQK"
+}

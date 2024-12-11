@@ -1,0 +1,88 @@
+{
+  "_id": "50CRpoP5XS1MVbu8",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Titan Slinger",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have learned how to use your sling to fell enormous creatures. When you hit on an attack with a sling against a Large or larger creature, increase the size of the weapon damage die by one step.</p>"
+    },
+    "rules": [
+      {
+        "key": "DamageDice",
+        "override": {
+          "upgrade": true
+        },
+        "predicate": [
+          {
+            "or": [
+              "target:size:large",
+              "target:size:huge",
+              "target:size:gargantuan"
+            ]
+          }
+        ],
+        "selector": "sling-weapon-group-damage"
+      }
+    ],
+    "slug": "titan-slinger",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "halfling"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.50CRpoP5XS1MVbu8"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.50CRpoP5XS1MVbu8",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!50CRpoP5XS1MVbu8"
+}

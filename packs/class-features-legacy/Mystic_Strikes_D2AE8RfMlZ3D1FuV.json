@@ -1,0 +1,93 @@
+{
+  "_id": "D2AE8RfMlZ3D1FuV",
+  "img": "systems/pf2e/icons/features/classes/mystic-strikes.webp",
+  "name": "Mystic Strikes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Focusing your will into your physical attacks imbues them with mystical energy. Your unarmed attacks become magical, allowing them to get past resistances to non-magical attacks. However, you still need an item such as @UUID[Compendium.pf2e.equipment-srd.Item.FNDq4NFSN0g2HKWO]{Handwraps of Mighty Blows (+1)} to gain an item bonus to attack rolls or increase your attacks' weapon damage dice.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:category:unarmed"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "magical"
+      },
+      {
+        "definition": [
+          "item:trait:monk"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          "feat:monastic-weaponry"
+        ],
+        "property": "weapon-traits",
+        "value": "magical"
+      }
+    ],
+    "slug": "mystic-strikes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.D2AE8RfMlZ3D1FuV"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.D2AE8RfMlZ3D1FuV",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!D2AE8RfMlZ3D1FuV"
+}

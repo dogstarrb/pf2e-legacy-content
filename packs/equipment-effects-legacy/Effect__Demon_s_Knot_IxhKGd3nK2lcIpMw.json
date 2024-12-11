@@ -1,0 +1,84 @@
+{
+  "_id": "IxhKGd3nK2lcIpMw",
+  "img": "systems/pf2e/icons/equipment/treasure/gems/greater-precious-stones/large-ruby.webp",
+  "name": "Effect: Demon's Knot",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +2 status bonus to Intimidation checks, and your Strikes deal an additional 1d6 spirit damage.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "intimidation",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "damageType": "spirit",
+        "diceNumber": 1,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "effect-demons-knot",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #195: Heavy is the Crown",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.IxhKGd3nK2lcIpMw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.IxhKGd3nK2lcIpMw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!IxhKGd3nK2lcIpMw"
+}

@@ -1,0 +1,93 @@
+{
+  "_id": "Nbg4ZllDI9uCowZL",
+  "img": "systems/pf2e/icons/features/classes/hefty-composition.webp",
+  "name": "Hefty Composition",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Blunt surfaces and sturdy construction make your weapon hefty and mace-like. Your innovation gains the shove and versatile B traits.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:id:{actor|flags.pf2e.trackedItems.weaponInnovation}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "shove"
+      },
+      {
+        "definition": [
+          "item:id:{actor|flags.pf2e.trackedItems.weaponInnovation}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "versatile-b"
+      }
+    ],
+    "slug": "hefty-composition",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "inventor"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "actionCategory": {
+      "value": ""
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.Nbg4ZllDI9uCowZL"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.Nbg4ZllDI9uCowZL",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Nbg4ZllDI9uCowZL"
+}

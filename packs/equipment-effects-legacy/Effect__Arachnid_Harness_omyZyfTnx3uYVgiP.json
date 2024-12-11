@@ -1,0 +1,92 @@
+{
+  "_id": "omyZyfTnx3uYVgiP",
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "name": "Effect: Arachnid Harness",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a climb Speed equal to half your land Speed and have your limbs free as you climb. If you use all your free limbs to help you Climb, your climb Speed equals your land Speed.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "climb",
+        "value": "floor(@actor.attributes.speed.total/2)"
+      },
+      {
+        "key": "BaseSpeed",
+        "predicate": [
+          "use-all-limbs"
+        ],
+        "selector": "climb",
+        "value": "@actor.attributes.speed.total"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Climb with all limbs",
+        "option": "use-all-limbs",
+        "toggleable": true
+      }
+    ],
+    "slug": "effect-arachnid-harness",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.omyZyfTnx3uYVgiP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.omyZyfTnx3uYVgiP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!omyZyfTnx3uYVgiP"
+}

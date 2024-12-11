@@ -1,0 +1,126 @@
+{
+  "_id": "qDfTqetM9UEpp8ty",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Greater Lesson",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your patron grants you greater knowledge.</p>\n<p>Choose a greater or basic lesson from the list of witch lessons. You gain its associated hex, and your familiar learns the associated spell. Increase the number of Focus Points in your focus pool by 1.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "allowedDrops": {
+          "predicate": [
+            "item:trait:witch",
+            "item:type:feature",
+            {
+              "or": [
+                "item:level:6",
+                "item:level:2"
+              ]
+            }
+          ]
+        },
+        "choices": [
+          {
+            "value": "Compendium.pf2e.classfeatures.Item.XBgBh3xZhgGQP7lF"
+          },
+          {
+            "value": "Compendium.pf2e.classfeatures.Item.YSxymsAe2Dvq47f2"
+          },
+          {
+            "value": "Compendium.pf2e.classfeatures.Item.rECRfbkVwHuG06vO"
+          },
+          {
+            "value": "Compendium.pf2e.classfeatures.Item.PLMmDXJCDdMS0V5C"
+          },
+          {
+            "value": "Compendium.pf2e.classfeatures.Item.evKUM58ymuuypRn9"
+          },
+          {
+            "value": "Compendium.pf2e.classfeatures.Item.HbREpzudMXPscgCj"
+          },
+          {
+            "value": "Compendium.pf2e.classfeatures.Item.KHKe3PmctOFUeh85"
+          },
+          {
+            "value": "Compendium.pf2e.classfeatures.Item.FuOHRoEU8nHOXZnk"
+          },
+          {
+            "value": "Compendium.pf2e.classfeatures.Item.DtmKrCvsmutVLAhH"
+          },
+          {
+            "value": "Compendium.pf2e.classfeatures.Item.2IhZbkx889pATIjq"
+          }
+        ],
+        "flag": "lesson",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Lesson"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.lesson}"
+      }
+    ],
+    "slug": "greater-lesson",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "witch"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.qDfTqetM9UEpp8ty"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.qDfTqetM9UEpp8ty",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!qDfTqetM9UEpp8ty"
+}

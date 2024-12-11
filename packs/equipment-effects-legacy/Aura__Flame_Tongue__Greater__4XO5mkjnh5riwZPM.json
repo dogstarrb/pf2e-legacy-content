@@ -1,0 +1,86 @@
+{
+  "_id": "4XO5mkjnh5riwZPM",
+  "img": "icons/magic/fire/flame-burning-earth-orange.webp",
+  "name": "Aura: Flame Tongue (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.pvxRcuBexbFawjCg]{Flame Tongue (Greater)}</p>\n<p>A @Template[type:emanation|distance:10] of flame radiates from the <em>greater flame tongue</em> for 1 minute. All weapon and unarmed attacks by you and your allies within the area gain the effect of the <em>flaming</em> property rune.</p>"
+    },
+    "rules": [
+      {
+        "effects": [
+          {
+            "affects": "allies",
+            "events": [
+              "enter"
+            ],
+            "uuid": "Compendium.pf2e.equipment-effects.Item.jqbEIA6249vqgqwq"
+          }
+        ],
+        "key": "Aura",
+        "radius": 10,
+        "slug": "flame-tongue-aura",
+        "traits": []
+      }
+    ],
+    "slug": "aura-flame-tongue-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.4XO5mkjnh5riwZPM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.4XO5mkjnh5riwZPM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4XO5mkjnh5riwZPM"
+}

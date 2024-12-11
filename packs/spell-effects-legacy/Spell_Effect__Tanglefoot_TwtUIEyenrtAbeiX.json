@@ -1,0 +1,79 @@
+{
+  "_id": "TwtUIEyenrtAbeiX",
+  "img": "icons/magic/nature/root-vine-entangled-hand.webp",
+  "name": "Spell Effect: Tanglefoot",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@Compendium[pf2e-legacy-content.spells-legacy.uZK2BYzPnxUBnDjr]{Tanglefoot}</em></p>\n<p>You take a -10-foot circumstance penalty to your Speeds.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "speed",
+        "type": "circumstance",
+        "value": -10
+      }
+    ],
+    "slug": "spell-effect-tangle-vine",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.TwtUIEyenrtAbeiX"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 21300000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.TwtUIEyenrtAbeiX",
+    "duplicateSource": null
+  },
+  "_key": "!items!TwtUIEyenrtAbeiX"
+}

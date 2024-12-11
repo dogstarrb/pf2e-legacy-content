@@ -1,0 +1,134 @@
+{
+  "_id": "4XYnZij3BqhFuayG",
+  "img": "systems/pf2e/icons/default-icons/armor.svg",
+  "name": "Tales in Timber (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Dozens of pictorial stories—told in wood carvings, painting, or pyrography—adorn every outer surface of this <em>+2 resilient wooden breastplate</em>. All are old, and many truly ancient, depicting tales set eons ago on the Plane of Wood. You gain a +2 item bonus to Nature checks to Recall Knowledge. If you know the <em>@UUID[Compendium.pf2e.spells-srd.Item.z8fSURhfBombYMxh]{Collective Memories}</em> ritual, you can use Nature instead of Occultism if you're the primary caster.</p>\n<hr />\n<p><strong>Activate—Statue Disguise</strong> <span class=\"action-glyph\">2</span></p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> The armor makes you look like a wooden statue version of one of the creatures depicted on the armor for 1 hour. This is a 3rd-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}</em>, but it can make you look like any creature depicted on the armor. This doesn't change your size or the capabilities of your body, and it scales the appearance of the creature to match yours. You can Dismiss the activation. This disguise is just real enough to make you somewhat closer to a creature of wood. You're affected by two spells while it lasts: 4th-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.YWrfKetOqDwVFut7]{Oaken Resilience}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Item.qvwIwJ9QBihy8R0t]{Speak with Plants}</em>. If you stand still, you gain a +2 item bonus to Deception checks and DCs to appear as an inanimate wooden statue, in addition to the status bonus to Deception from <em>illusory disguise</em>.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:recall-knowledge"
+        ],
+        "selector": "nature",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "tales-in-timber-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical",
+        "wood"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 13
+    },
+    "quantity": 1,
+    "baseItem": "wooden-breastplate",
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 2800
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "medium",
+    "group": "wood",
+    "acBonus": 3,
+    "strength": 2,
+    "dexCap": 2,
+    "checkPenalty": -2,
+    "speedPenalty": -5,
+    "runes": {
+      "potency": 2,
+      "resilient": 1,
+      "property": []
+    },
+    "subitems": [],
+    "specific": {
+      "material": {
+        "grade": null,
+        "type": null
+      },
+      "runes": {
+        "potency": 2,
+        "resilient": 1,
+        "property": []
+      }
+    }
+  },
+  "type": "armor",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.4XYnZij3BqhFuayG"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.4XYnZij3BqhFuayG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4XYnZij3BqhFuayG"
+}

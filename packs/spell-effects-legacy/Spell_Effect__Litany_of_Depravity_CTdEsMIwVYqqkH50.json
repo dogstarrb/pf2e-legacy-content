@@ -1,0 +1,77 @@
+{
+  "_id": "CTdEsMIwVYqqkH50",
+  "img": "icons/consumables/food/cooked-ribs-rack-glazed-bones-brown-white.webp",
+  "name": "Spell Effect: Litany of Depravity",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.tYP8unoR0a5Dq9EA]{Litany of Depravity}</em>.</p>\n<p>You gain weakness 7 to evil.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The weakness increases by 1.</p>"
+    },
+    "rules": [
+      {
+        "key": "Weakness",
+        "type": "unholy",
+        "value": "@item.level"
+      }
+    ],
+    "slug": "spell-effect-litany-of-depravity",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.CTdEsMIwVYqqkH50"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 11100000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.CTdEsMIwVYqqkH50",
+    "duplicateSource": null
+  },
+  "_key": "!items!CTdEsMIwVYqqkH50"
+}

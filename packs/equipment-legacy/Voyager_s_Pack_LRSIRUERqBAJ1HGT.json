@@ -1,0 +1,115 @@
+{
+  "_id": "LRSIRUERqBAJ1HGT",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/voyagers-pack.webp",
+  "name": "Voyager's Pack",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This leather rucksack has icons burned into it, and every time it's taken to a plane it hasn't been to before, a new icon representing that plane scorches into the surface.</p>\n<p>The pack grants you a +3 bonus to Survival checks.</p>\n<p>It also enables you to see the magical traces of creatures' passage, allowing you to Track a creature that has teleported. The GM sets the DC of this check, usually using the level and DC of the teleportation spell. This lets you find the location of the creature's destination, and you can use that destination when casting <em>@UUID[Compendium.pf2e.spells-srd.Item.69L70wKfGDY66Mk9]{Teleport}</em> or activating the pack, even though you don't know what it looks like.</p>\n<p>The pack contains an extradimensional space with the same properties as a @UUID[Compendium.pf2e.equipment-srd.Item.JBMBaN9dZLytfFLQ]{Bag of Holding (Type II)}.</p>\n<p>This space contains the contents of a @UUID[Compendium.pf2e.equipment-srd.Item.9UJbMaglf35GVzaZ]{Climbing Kit}. If any components of that kit are removed and not returned, they return to the pack at dawn each day.</p>\n<p><strong>Activate</strong> 10 minutes (command, envision, Interact)</p>\n<hr />\n<p><strong>Effect</strong> As you activate the pack, you can harness up to four willing creatures to the ropes on the pack. At the end of the activation time, the pack casts a 7th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]{Plane Shift}</em> or <em>@UUID[Compendium.pf2e.spells-srd.Item.69L70wKfGDY66Mk9]{Teleport}</em> spell, transporting you and everyone attached to the pack. Attempt a @Check[type:survival|dc:45] check. On a success, you arrive 25 miles off target using <em>plane shift</em> or halve the distance you're off-target with <em>teleport</em>. On a critical success, you arrive exactly on target</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "survival",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "voyagers-pack",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "extradimensional",
+        "invested",
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0,
+      "heldOrStowed": 0,
+      "capacity": 50,
+      "ignored": 50
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 14800
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "collapsed": false,
+    "stowing": true,
+    "usage": {
+      "value": "wornbackpack"
+    }
+  },
+  "type": "backpack",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.LRSIRUERqBAJ1HGT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.LRSIRUERqBAJ1HGT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!LRSIRUERqBAJ1HGT"
+}

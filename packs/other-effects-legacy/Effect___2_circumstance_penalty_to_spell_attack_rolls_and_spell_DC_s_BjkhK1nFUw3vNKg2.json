@@ -1,0 +1,88 @@
+{
+  "_id": "BjkhK1nFUw3vNKg2",
+  "img": "systems/pf2e/icons/effects/critical-effect.webp",
+  "name": "Effect: -2 circumstance penalty to spell attack rolls and spell DC's",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Effect applied by @UUID[Compendium.pf2e.criticaldeck.JournalEntry.NNfsKAHcKvTuyha4]{Critical Fumble Deck #36}</strong></p>\n<p>-2 circumstance penalty to spell attack rolls and spell DC's</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.CriticalDeck.Effect.Label",
+        "selector": "spell-attack",
+        "slug": "critical-effect-penalty-to-spell-attacks",
+        "type": "circumstance",
+        "value": -2
+      },
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.CriticalDeck.Effect.Label",
+        "selector": "spell-dc",
+        "slug": "critical-effect-penalty-to-spell-dc",
+        "type": "circumstance",
+        "value": -2
+      }
+    ],
+    "slug": "effect-2-circumstance-penalty-to-spell-attack-rolls-and-spell-dcs",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Critical Decks",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.other-effects.Item.BjkhK1nFUw3vNKg2"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.other-effects-legacy.Item.BjkhK1nFUw3vNKg2",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BjkhK1nFUw3vNKg2"
+}

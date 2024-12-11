@@ -1,0 +1,95 @@
+{
+  "_id": "ePObIpaJDgDb9CQj",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Battle Cry",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When you roll initiative, you can yell a mighty battle cry and <span data-pf2-action=\"demoralize\" data-pf2-glyph=\"F\">Demoralize</span> an observed foe as a free action.</p>\n<p>If you're legendary in Intimidation, you can use a reaction to <span data-pf2-action=\"demoralize\" data-pf2-glyph=\"R\">Demoralize</span> your foe when you critically succeed at an attack roll.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "selector": "initiative",
+        "text": "You can yell a mighty battle cry and <span data-pf2-action=\"demoralize\" data-pf2-glyph=\"F\">Demoralize</span> an observed foe as a free action.",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "skill:intimidation:rank:4"
+        ],
+        "selector": "attack",
+        "text": "You can use a reaction to <span data-pf2-action=\"demoralize\" data-pf2-glyph=\"R\">Demoralize</span> your foe when you critically succeed at an attack roll.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "battle-cry",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Intimidation"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ePObIpaJDgDb9CQj"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ePObIpaJDgDb9CQj",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ePObIpaJDgDb9CQj"
+}

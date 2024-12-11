@@ -1,0 +1,148 @@
+{
+  "_id": "FayzcoNaiIdyPS2j",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Greater Animal Senses",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your senses advance to match those of your animal aspect. You gain one of the following senses available to your inherent animal: echolocation (imprecise) 30 feet or tremorsense (imprecise) 30 feet. If your inherent animal doesn't typically have a specific type of sense, you can't gain the sense with this feat.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times, either choosing a different sense or improving an imprecise sense granted by this feat to a precise sense.</p>"
+    },
+    "rules": [
+      {
+        "acuity": "imprecise",
+        "key": "Sense",
+        "predicate": [
+          "beastkin-greater-senses:echo-imprecise"
+        ],
+        "range": 30,
+        "selector": "echolocation"
+      },
+      {
+        "acuity": "imprecise",
+        "key": "Sense",
+        "predicate": [
+          "beastkin-greater-senses:tremor-imprecise"
+        ],
+        "range": 30,
+        "selector": "tremorsense"
+      },
+      {
+        "acuity": "precise",
+        "key": "Sense",
+        "predicate": [
+          "beastkin-greater-senses:tremor-precise"
+        ],
+        "range": 30,
+        "selector": "tremorsense"
+      },
+      {
+        "acuity": "precise",
+        "key": "Sense",
+        "predicate": [
+          "beastkin-greater-senses:echo-precise"
+        ],
+        "range": 30,
+        "selector": "echolocation"
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.SpecificRule.Beastkin.Senses.EcholocationImprecise",
+            "predicate": [
+              {
+                "not": "beastkin-greater-senses:echo-imprecise"
+              }
+            ],
+            "value": "echo-imprecise"
+          },
+          {
+            "label": "PF2E.SpecificRule.Beastkin.Senses.EcholocationPrecise",
+            "predicate": [
+              "beastkin-greater-senses:echo-imprecise"
+            ],
+            "value": "echo-precise"
+          },
+          {
+            "label": "PF2E.SpecificRule.Beastkin.Senses.TremorsenseImprecise",
+            "predicate": [
+              {
+                "not": "beastkin-greater-senses:tremor-imprecise"
+              }
+            ],
+            "value": "tremor-imprecise"
+          },
+          {
+            "label": "PF2E.SpecificRule.Beastkin.Senses.TremorsensePrecise",
+            "predicate": [
+              "beastkin-greater-senses:tremor-imprecise"
+            ],
+            "value": "tremor-precise"
+          }
+        ],
+        "flag": "greaterAnimalSenses",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Beastkin.AnimalSenses.Prompt",
+        "rollOption": "beastkin-greater-senses"
+      }
+    ],
+    "slug": "greater-animal-senses",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "beastkin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.FayzcoNaiIdyPS2j"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.FayzcoNaiIdyPS2j",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!FayzcoNaiIdyPS2j"
+}

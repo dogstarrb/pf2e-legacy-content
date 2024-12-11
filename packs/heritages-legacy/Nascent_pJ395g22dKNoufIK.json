@@ -1,0 +1,77 @@
+{
+  "_id": "pJ395g22dKNoufIK",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Nascent",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>While most kashrishi are fully adapted to their environment by the time they reach adulthood, some retain unrealized potential well into adulthood before unlocking it. You gain a 1st-level kashrishi ancestry feat for which you meet the prerequisites, if any.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": {
+          "filter": [
+            "item:level:1",
+            "item:category:ancestry",
+            "item:trait:kashrishi"
+          ],
+          "itemType": "feat"
+        },
+        "flag": "nascent",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.AncestralParagon.Prompt"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.nascent}"
+      }
+    ],
+    "slug": "nascent",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Kashrishi",
+      "slug": "kashrishi",
+      "uuid": "Compendium.pf2e.ancestries.Item.dw2K1AJR9mQ25nDP"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.pJ395g22dKNoufIK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.pJ395g22dKNoufIK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!pJ395g22dKNoufIK"
+}

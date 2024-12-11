@@ -1,0 +1,115 @@
+{
+  "_id": "uIMaMzd6pcKmMNPJ",
+  "img": "icons/magic/fire/elemental-fire-humanoid.webp",
+  "name": "Spell Effect: Fiery Body",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.XS7Wyh5YC0NWeWyB]{Fiery Body}</em></p>\n<p>You become living flame, giving you fire immunity, resistance 10 to precision damage, and weakness 5 to cold and to water. Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon takes @Damage[3d6[fire]] damage. Your unarmed attacks deal 1d4 additional fire damage, and your fire spells deal one additional die of fire damage (of the same damage die the spell uses). You can cast <em>@UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame}</em> as an innate spell; the casting is reduced from 2 actions to 1. In fire form, you have a fly Speed of 40 feet and don't need to breathe.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> Creatures touching you take @Damage[4d6[fire]] damage instead of 3d6, your unarmed attacks deal 2d4 additional fire damage, and you have a fly Speed of 60 feet.</p>"
+    },
+    "rules": [
+      {
+        "key": "Immunity",
+        "type": "fire"
+      },
+      {
+        "key": "Resistance",
+        "type": "precision",
+        "value": 10
+      },
+      {
+        "key": "Weakness",
+        "type": [
+          "cold",
+          "water"
+        ],
+        "value": 5
+      },
+      {
+        "damageType": "fire",
+        "diceNumber": "ternary(gte(@item.level, 9),2,1)",
+        "dieSize": "d4",
+        "key": "DamageDice",
+        "label": "Fiery Body",
+        "predicate": [
+          "unarmed"
+        ],
+        "selector": "strike-damage"
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": 40
+      },
+      {
+        "damageType": "fire",
+        "diceNumber": 1,
+        "key": "DamageDice",
+        "label": "Fiery Body",
+        "predicate": [
+          "fire"
+        ],
+        "selector": "spell-damage"
+      }
+    ],
+    "slug": "spell-effect-fiery-body",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.uIMaMzd6pcKmMNPJ"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 41500000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.uIMaMzd6pcKmMNPJ",
+    "duplicateSource": null
+  },
+  "_key": "!items!uIMaMzd6pcKmMNPJ"
+}

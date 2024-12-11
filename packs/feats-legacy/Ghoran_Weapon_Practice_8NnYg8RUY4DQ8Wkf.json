@@ -1,0 +1,91 @@
+{
+  "_id": "8NnYg8RUY4DQ8Wkf",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Ghoran Weapon Practice",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>With plenty of practice, the memories of previous fights from previous lives come flooding back. Whenever you critically hit using a glaive, greatclub, hatchet, scythe, sickle, or ghoran weapon, you apply the weapon's critical specialization effect.</p>"
+    },
+    "rules": [
+      {
+        "key": "CriticalSpecialization",
+        "predicate": [
+          {
+            "or": [
+              "item:trait:ghoran",
+              "item:base:glaive",
+              "item:base:greatclub",
+              "item:base:hatchet",
+              "item:base:scythe",
+              "item:base:sickle"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": "ghoran-weapon-practice",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "ghoran"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Ghoran Weapon Familiarity"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.8NnYg8RUY4DQ8Wkf"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.8NnYg8RUY4DQ8Wkf",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8NnYg8RUY4DQ8Wkf"
+}

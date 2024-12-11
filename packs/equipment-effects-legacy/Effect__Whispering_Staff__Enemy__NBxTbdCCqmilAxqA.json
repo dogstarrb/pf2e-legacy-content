@@ -1,0 +1,85 @@
+{
+  "_id": "NBxTbdCCqmilAxqA",
+  "img": "icons/weapons/staves/staff-simple-spiral-brown.webp",
+  "name": "Effect: Whispering Staff (Enemy)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Through the staff's strange whispering, you gain a glimpse into the mind and desires of one creature you can see within 30 feet. Until the end of your next turn, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to you and takes a –2 circumstance penalty to saving throws against your spells.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Whispering Staff",
+        "predicate": [
+          "origin"
+        ],
+        "selector": [
+          "fortitude",
+          "reflex",
+          "will"
+        ],
+        "type": "circumstance",
+        "value": -2
+      }
+    ],
+    "slug": "effect-whispering-staff-enemy",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.NBxTbdCCqmilAxqA"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.NBxTbdCCqmilAxqA",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!NBxTbdCCqmilAxqA"
+}

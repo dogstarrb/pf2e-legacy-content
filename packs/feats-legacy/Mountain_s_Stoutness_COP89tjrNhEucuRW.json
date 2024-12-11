@@ -1,0 +1,97 @@
+{
+  "_id": "COP89tjrNhEucuRW",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Mountain's Stoutness",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your hardiness lets you withstand more punishment than most before going down. Increase your maximum Hit Points by your level. When you have the @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} condition, the DC of your recovery checks is equal to 9 + your dying value (instead of 10 + your dying value).</p>\n<p>If you also have the @UUID[Compendium.pf2e.feats-srd.Item.AmP0qu7c5dlBSath]{Toughness} feat, the Hit Points gained from it and this feat are cumulative, and the DC of your recovery checks is equal to 6 + your dying value.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "hp",
+        "value": "@actor.level"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "downgrade",
+        "path": "system.attributes.dying.recoveryDC",
+        "predicate": [
+          {
+            "not": "feat:toughness"
+          }
+        ],
+        "value": 9
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "downgrade",
+        "path": "system.attributes.dying.recoveryDC",
+        "predicate": [
+          "feat:toughness"
+        ],
+        "value": 6
+      }
+    ],
+    "slug": "mountains-stoutness",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "dwarf"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.COP89tjrNhEucuRW"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.COP89tjrNhEucuRW",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!COP89tjrNhEucuRW"
+}

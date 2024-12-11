@@ -1,0 +1,87 @@
+{
+  "_id": "x2gzQMPvLwHWDdAC",
+  "img": "icons/consumables/plants/leaf-elm-glowing-green.webp",
+  "name": "Wild Patron",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The wild places of the world feel the touch of your patron.</p>\n<p><strong>Spell List</strong> primal</p>\n<p><strong>Patron Skill</strong> Nature</p>\n<p><strong>Hex Cantrip</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.GdN5YQE47gd79k7X]{Wilding Word}</em></p>\n<p><strong>Granted Spell</strong> Your choice of <em>@UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]{Summon Animal}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.Item.jSRAyd57kd4WZ4yE]{Summon Plant or Fungus}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.nature.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.aliases.witch",
+        "priority": 39,
+        "value": "primal"
+      }
+    ],
+    "slug": "wild-patron",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "witch-patron"
+      ],
+      "value": [
+        "witch"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.x2gzQMPvLwHWDdAC"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.x2gzQMPvLwHWDdAC",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!x2gzQMPvLwHWDdAC"
+}

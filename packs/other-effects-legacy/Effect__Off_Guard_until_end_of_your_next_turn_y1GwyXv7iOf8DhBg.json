@@ -1,0 +1,79 @@
+{
+  "_id": "y1GwyXv7iOf8DhBg",
+  "img": "systems/pf2e/icons/effects/critical-effect.webp",
+  "name": "Effect: Off-Guard until end of your next turn",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Effect applied by @UUID[Compendium.pf2e.criticaldeck.JournalEntry.IrUeMJoKEYUSJKs1]{Critical Fumble Deck #19}, @UUID[Compendium.pf2e.criticaldeck.JournalEntry.gWa7wGUfUvYoIK8z]{Critical Fumble Deck #20}, @UUID[Compendium.pf2e.criticaldeck.JournalEntry.I5omhoK6rqfCZiUZ]{Critical Fumble Deck #21}, @UUID[Compendium.pf2e.criticaldeck.JournalEntry.Ps9VYxI2zJPG6PEV]{Critical Fumble Deck #22}, @UUID[Compendium.pf2e.criticaldeck.JournalEntry.qD8KoshDJsayGbCB]{Critical Fumble Deck #40}</strong></p>\n<p>You are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        },
+        "uuid": "Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg"
+      }
+    ],
+    "slug": "effect-off-guard-until-end-of-your-next-turn",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Critical Decks",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.other-effects.Item.y1GwyXv7iOf8DhBg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.other-effects-legacy.Item.y1GwyXv7iOf8DhBg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!y1GwyXv7iOf8DhBg"
+}

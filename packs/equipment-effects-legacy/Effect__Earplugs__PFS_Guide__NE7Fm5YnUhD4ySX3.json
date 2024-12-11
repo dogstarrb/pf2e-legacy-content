@@ -1,0 +1,90 @@
+{
+  "_id": "NE7Fm5YnUhD4ySX3",
+  "img": "systems/pf2e/icons/equipment/adventuring-gear/earplugs.webp",
+  "name": "Effect: Earplugs (PFS Guide)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Grants a +1 item bonus to saves vs. auditory effects and a -2 penalty to perception checks that rely on hearing.</p>\n<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.iYiA6CMR1N2E2Ny2]{Earplugs (PFS Guide)}</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "auditory"
+        ],
+        "selector": "saving-throw",
+        "type": "item",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "auditory"
+        ],
+        "selector": "perception",
+        "type": "item",
+        "value": -2
+      }
+    ],
+    "slug": "effect-earplugs-pfs-guide",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Pathfinder Society Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.NE7Fm5YnUhD4ySX3"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.NE7Fm5YnUhD4ySX3",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!NE7Fm5YnUhD4ySX3"
+}

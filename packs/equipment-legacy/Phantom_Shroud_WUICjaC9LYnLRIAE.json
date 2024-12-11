@@ -1,0 +1,135 @@
+{
+  "_id": "WUICjaC9LYnLRIAE",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/unmemorable-mantle.webp",
+  "name": "Phantom Shroud",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This pale blue cloak is wispy, thin, and cold to the touch. When worn, the cloak turns your hands pale and translucent, imbuing you with the dangerous touch of a ghost. This effect doesn't impede the normal use of your hands. You also gain an unarmed attack that deals 3d6 negative damage with the agile, finesse, and magical traits. You gain the benefits of a +2 weapon potency rune with these unarmed attacks (granting a +2 item bonus to your attack rolls).</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You fold the cloak around yourself, and it casts <em>@UUID[Compendium.pf2e.spells-srd.Item.D2nPKbIS67m9199U]{Ethereal Jaunt}</em> on you. You can Sustain the activation for up to 10 minutes. When the activation ends, you return to material form.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "void",
+            "dice": 1,
+            "die": "d6"
+          }
+        },
+        "group": "brawling",
+        "img": "systems/pf2e/icons/unarmed-attacks/talon.webp",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Equipment.PhantomShroud.StrikeLabel",
+        "range": null,
+        "traits": [
+          "unarmed",
+          "agile",
+          "finesse",
+          "magical"
+        ]
+      },
+      {
+        "key": "WeaponPotency",
+        "selector": "{item|_id}-attack",
+        "value": 2
+      },
+      {
+        "key": "Striking",
+        "selector": "{item|_id}-damage",
+        "value": 2
+      }
+    ],
+    "slug": "phantom-shroud",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #185: A Taste of Ashes",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 15000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worncloak"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.WUICjaC9LYnLRIAE"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.WUICjaC9LYnLRIAE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WUICjaC9LYnLRIAE"
+}

@@ -1,0 +1,98 @@
+{
+  "_id": "NIUSBGMmdqhkYtmo",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Rock Runner",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your innate connection to stone makes you adept at moving across uneven surfaces. You can ignore difficult terrain caused by rubble and uneven ground made of stone and earth. In addition, when you use the Acrobatics skill to @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance} on narrow surfaces or uneven ground made of stone or earth, you aren't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}, and when you roll a success at one of these Acrobatics checks, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:balance",
+          {
+            "or": [
+              "terrain:stone",
+              "terrain:earth"
+            ]
+          }
+        ],
+        "selector": "acrobatics",
+        "type": "save"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "action:balance"
+        ],
+        "selector": "acrobatics",
+        "text": "PF2E.SpecificRule.Dwarf.RockRunner.Note",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "rock-runner",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "dwarf"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.NIUSBGMmdqhkYtmo"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.NIUSBGMmdqhkYtmo",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!NIUSBGMmdqhkYtmo"
+}

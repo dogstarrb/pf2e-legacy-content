@@ -1,0 +1,76 @@
+{
+  "_id": "VsGdiAuVbYmDTR82",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Black Powder Flash",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You're in Powder Punch Stance.</p>\n<hr />\n<p>You ignite a pinch of black powder in a foe's face. Choose an adjacent creature. It must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)] save against your class DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and dazzled for 1 minute. The creature can rub its eyes as an Interact action to end this blinded condition.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 round and dazzled for 1 hour.</p>"
+    },
+    "rules": [],
+    "slug": "black-powder-flash",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "visual"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #178: Punks in a Powder Keg",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Powder Punch Stance"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.VsGdiAuVbYmDTR82"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.VsGdiAuVbYmDTR82",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VsGdiAuVbYmDTR82"
+}

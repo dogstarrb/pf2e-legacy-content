@@ -1,0 +1,92 @@
+{
+  "_id": "FzUe8oKad59VRDjQ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Stone Blood (Stonebound)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your blood becomes thick and sluggish, but no less effective at oxygenating your cells. You can selectively stop your bleeding with ease. Reduce the DC of flat checks to stop persistent bleed damage from 15 to 10, and you can use a single action that has the concentrate trait to gain an early flat check without physically binding the wounds. You recover from the drained condition twice as quickly as normal.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.stoneboundArchetype.featCount",
+        "value": 1
+      },
+      {
+        "itemType": "condition",
+        "key": "ItemAlteration",
+        "mode": "downgrade",
+        "predicate": [
+          "item:damage:type:bleed"
+        ],
+        "property": "pd-recovery-dc",
+        "value": 10
+      }
+    ],
+    "slug": "stone-blood-stonebound",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #195: Heavy is the Crown",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Stonebound Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.FzUe8oKad59VRDjQ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.FzUe8oKad59VRDjQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!FzUe8oKad59VRDjQ"
+}

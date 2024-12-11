@@ -1,0 +1,90 @@
+{
+  "_id": "MjtPtndJx31q2N9R",
+  "img": "systems/pf2e/icons/spells/lay-on-hands.webp",
+  "name": "Spell Effect: Amplifying Touch",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.zNN9212H2FGfM7VS]{Lay on Hands}</em> if you have @UUID[Compendium.pf2e.feats-srd.Item.Cy5W8U4yN9P1EvBy]{Amplifying Touch}.</p>\n<p>If the target is one of your allies, they also gain a +2 status bonus to AC, a +1 status bonus to their attack rolls and deals 1 additional good damage on all their strikes until the end of their next turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "ac",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "attack",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "damageType": "spirit",
+        "key": "FlatModifier",
+        "selector": "strike-damage",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-amplifying-touch",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.MjtPtndJx31q2N9R"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 17400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.MjtPtndJx31q2N9R",
+    "duplicateSource": null
+  },
+  "_key": "!items!MjtPtndJx31q2N9R"
+}

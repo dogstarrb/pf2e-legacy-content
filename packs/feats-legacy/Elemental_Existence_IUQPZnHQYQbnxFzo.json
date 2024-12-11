@@ -1,0 +1,113 @@
+{
+  "_id": "IUQPZnHQYQbnxFzo",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Elemental Existence",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your body becomes infused with elemental earth. You gain the @UUID[Compendium.pf2e.feats-srd.Item.ihN8gkHSdPG9Trte]{Adopted Ancestry} feat and gain a 1st level oread ancestry feat as a bonus feat, ignoring the limitations of the lineage trait. When you gain new ancestry feats, you can select oread feats in addition to feats allowed by your ancestry and heritage.</p>"
+    },
+    "rules": [
+      {
+        "allowDuplicate": false,
+        "key": "GrantItem",
+        "preselectCoices": {
+          "ancestry": "oread"
+        },
+        "uuid": "Compendium.pf2e.feats-srd.Item.ihN8gkHSdPG9Trte"
+      },
+      {
+        "adjustName": false,
+        "choices": {
+          "filter": [
+            {
+              "lte": [
+                "item:level",
+                1
+              ]
+            },
+            "item:trait:oread"
+          ],
+          "itemType": "feat"
+        },
+        "flag": "elementalExistence",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.LevelOneAncestryFeat"
+      },
+      {
+        "allowDuplicate": false,
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.elementalExistence}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.stoneboundArchetype.featCount",
+        "value": 1
+      }
+    ],
+    "slug": "elemental-existence",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #195: Heavy is the Crown",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Stonebound Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.IUQPZnHQYQbnxFzo"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.IUQPZnHQYQbnxFzo",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!IUQPZnHQYQbnxFzo"
+}

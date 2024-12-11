@@ -1,0 +1,70 @@
+{
+  "_id": "wn4EbYk1QN3tyFhh",
+  "img": "systems/pf2e/icons/features/ancestry/deep-orc.webp",
+  "name": "Deep Orc",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your calloused hands and red eyes speak to a life spent in the deep darkness of mountain caverns, where you learned to battle on rocky cliffs and survive with minimal resources. You gain the @UUID[Compendium.pf2e.feats-srd.Item.4tTkRyOQ0VuRBac3]{Terrain Expertise (Underground)} skill feat and the @UUID[Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq]{Combat Climber} skill feat.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "preselectChoices": {
+          "terrain": "underground"
+        },
+        "uuid": "Compendium.pf2e.feats-srd.Item.4tTkRyOQ0VuRBac3"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.09PurtIanNUPfNRq"
+      }
+    ],
+    "slug": "deep-orc",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Orc",
+      "slug": "orc",
+      "uuid": "Compendium.pf2e.ancestries.Item.lSGWXjcbOa6O5fTx"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.wn4EbYk1QN3tyFhh"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.wn4EbYk1QN3tyFhh",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!wn4EbYk1QN3tyFhh"
+}

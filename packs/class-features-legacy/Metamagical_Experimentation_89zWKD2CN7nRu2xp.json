@@ -1,0 +1,110 @@
+{
+  "_id": "89zWKD2CN7nRu2xp",
+  "img": "systems/pf2e/icons/features/classes/metamagic-experimentation.webp",
+  "name": "Metamagical Experimentation",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've realized that the practice known as metamagic is a holdover from a time long ago, when wizards had to work out their own spells and variations rather than rely on spells recorded by others and passed down over the years. This allows you efficient access to various metamagic effects. You gain one 1st-level metamagic wizard feat of your choice. Starting at 4th level, during your daily preparations, you can gain a metamagic wizard feat of your choice that has a level requirement of no more than half your level, which you can use until your next daily preparations.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "allowedDrops": {
+          "label": "level 1 Wizard metamagic feat",
+          "predicate": [
+            "item:trait:wizard",
+            "item:level:1",
+            "item:trait:metamagic"
+          ]
+        },
+        "choices": [
+          {
+            "predicate": [
+              {
+                "not": "feat:reach-spell"
+              }
+            ],
+            "value": "Compendium.pf2e.feats-srd.Item.BWomK7EVY0WXxWgh"
+          },
+          {
+            "predicate": [
+              {
+                "not": "feat:widen-spell"
+              }
+            ],
+            "value": "Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q"
+          }
+        ],
+        "flag": "metamagicalExperimentation",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Wizard.Metamagic1.Prompt"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.metamagicalExperimentation}"
+      }
+    ],
+    "slug": "metamagical-experimentation",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "wizard-arcane-thesis"
+      ],
+      "value": [
+        "wizard"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.89zWKD2CN7nRu2xp"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.89zWKD2CN7nRu2xp",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!89zWKD2CN7nRu2xp"
+}

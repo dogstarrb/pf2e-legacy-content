@@ -1,0 +1,109 @@
+{
+  "_id": "9o8DDJMWoaZiC5N2",
+  "img": "systems/pf2e/icons/equipment/held-items/drum-of-upheaval.webp",
+  "name": "Drum of Upheaval",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This heavy drum is engraved along the sides with images of centaurs in fierce combat. The drum grants you a +3 item bonus on Performance checks you make using the drum. Additionally, it imparts the rhythms of two songs upon your mind as soon as you touch it. One is a fast marching cadence; the other is a frenetic ritual dance. Each song has a different activation.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> Dozens of spectral centaurs burst from the drum and stampede in a @Template[type:cone|distance:60]. The stampede deals @Damage[7d10[force]] damage (@Check[type:reflex|dc:43|basic:true|name:Spectral Centaur Stampede|showDC:all]).</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The drum casts a @Check[type:reflex|dc:43|name:Earthquake|traits:damaging-effect|showDC:all] <em>@UUID[Compendium.pf2e.spells-srd.Item.x7SPrsRxGb2Vy2nu]{Earthquake}</em> spell.</p>\n<hr />\n<p><strong>Craft Requirements</strong> You are a centaur.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "performance",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "drum-of-upheaval",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "earth",
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 60000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.9o8DDJMWoaZiC5N2"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.9o8DDJMWoaZiC5N2",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9o8DDJMWoaZiC5N2"
+}

@@ -1,0 +1,70 @@
+{
+  "_id": "VAo6NnrCEAAOUSkc",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Resolute Fetchling",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your ancestors have long dealt with the horrific—in the Shadow Plane or elsewhere—and you bear their mental fortitude. When you roll a success on a saving throw against an emotion effect, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "emotion"
+        ],
+        "selector": "saving-throw",
+        "type": "skill"
+      }
+    ],
+    "slug": "resolute-fetchling",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Fetchling",
+      "slug": "fetchling",
+      "uuid": "Compendium.pf2e.ancestries.Item.hIA3qiUsxvLZXrFP"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.VAo6NnrCEAAOUSkc"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.VAo6NnrCEAAOUSkc",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VAo6NnrCEAAOUSkc"
+}

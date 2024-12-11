@@ -1,0 +1,78 @@
+{
+  "_id": "cy42NXgx1vjYzSxN",
+  "img": "systems/pf2e/icons/spells/daydreamers-curse.webp",
+  "name": "Effect: Suit of Armoire Frustration",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>On a failure, you and all creatures within 30 feet must succeed at a @Check[type:will|dc:31] save or be overcome with frustration at how you can't follow the simple, easy-to-understand diagrams for assembling the armoire, imposing a -1 status penalty to Will saves for 1 hour.</p>\n<hr />\n<p><em><strong>Note</strong>: This item originates from the 2022 Paizo April Fools Blog post.</em></p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "will",
+        "type": "status",
+        "value": -1
+      }
+    ],
+    "slug": "effect-suit-of-armoire-frustration",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Blog: April Fools",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.cy42NXgx1vjYzSxN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.cy42NXgx1vjYzSxN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!cy42NXgx1vjYzSxN"
+}

@@ -1,0 +1,90 @@
+{
+  "_id": "WxkZMlETXo165XnC",
+  "img": "systems/pf2e/icons/features/classes/tangle-line.webp",
+  "name": "Tangle Line",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Thrown Only</strong></p>\n<hr />\n<p>Your weapon has an extensible line that you can use to knock your enemies over and quickly recall the weapon back to your hand. Your innovation gains the ranged trip trait and the tethered trait.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:id:{actor|flags.pf2e.trackedItems.weaponInnovation}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "ranged-trip"
+      },
+      {
+        "definition": [
+          "item:id:{actor|flags.pf2e.trackedItems.weaponInnovation}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "tethered"
+      }
+    ],
+    "slug": "tangle-line",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "inventor"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.WxkZMlETXo165XnC"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.WxkZMlETXo165XnC",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WxkZMlETXo165XnC"
+}

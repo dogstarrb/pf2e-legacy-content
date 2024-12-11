@@ -1,0 +1,86 @@
+{
+  "_id": "XmF4q4rzKWg55vG4",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Assured Identification",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You rarely misidentify an item. When using Arcana, Nature, Occultism, or Religion checks to Identify Magic, if you roll a critical failure, you get a failure instead. If you would misidentify a cursed item because you roll a success but not a critical success, you simply can't identify it instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "action:identify-magic"
+        ],
+        "selector": "skill-check",
+        "text": "When Identifying Magic, if you roll a critical failure, you get a failure instead. If you would misidentify a cursed item becuase you roll a success, you simply can't identify it.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "assured-identification",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "expert in Arcana, Nature, Occultism, or Religion"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.XmF4q4rzKWg55vG4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.XmF4q4rzKWg55vG4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XmF4q4rzKWg55vG4"
+}

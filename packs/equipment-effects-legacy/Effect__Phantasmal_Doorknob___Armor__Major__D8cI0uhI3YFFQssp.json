@@ -1,0 +1,80 @@
+{
+  "_id": "D8cI0uhI3YFFQssp",
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "name": "Effect: Phantasmal Doorknob - Armor (Major)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.9BXiGLvOFxDBmQrQ]{Phantasmal Doorknob (Major)}</p>\n<p>You gain a +2 item bonus to Thievery checks to Pick a Lock.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:pick-a-lock"
+        ],
+        "selector": "thievery",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "effect-phantasmal-doorknob-armor-major",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 15
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.D8cI0uhI3YFFQssp"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.D8cI0uhI3YFFQssp",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!D8cI0uhI3YFFQssp"
+}

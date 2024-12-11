@@ -1,0 +1,113 @@
+{
+  "_id": "F2uej7timkyYGg83",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/aluum-charm.webp",
+  "name": "The Lens of the Outreaching Eye",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>As long as you have the <em>Lens of the Outreaching Eye</em> invested, the Harrowed Realm's impediments to magic don't apply to you, and you gain a +3 item bonus on all checks made to resolve divination effects.</p>\n<hr />\n<p><strong>Activate</strong> 10 minutes (command, envision, Interact)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> By peering through the Lens of the Outreaching Eye, for one hour you can treat the Deck of Harrowed Tales as the source of your hearing and vision, no matter the deck's location in the multiverse. You can see in all directions from the deck and hear from it as if using your normal visual senses. You can Dismiss the activation.</p>\n<hr />\n<p><strong>Activate</strong> 10 minutes (command, envision, Interact)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> The Lens of the Outreaching Eye casts <em>@UUID[Compendium.pf2e.spells-srd.Item.CeSh8QcVnqP5OlLj]{Discern Location}</em> on the Deck of Harrowed Tales.</p>\n<hr />\n<p><strong>Destruction</strong> The Lens of the Outreaching Eye is destroyed if the Deck of Harrowed Tales is destroyed.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "item:trait:divination"
+        ],
+        "selector": "skill-check",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "the-lens-of-the-outreaching-eye",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "artifact",
+        "invested",
+        "magical",
+        "scrying"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder #191: The Destiny War",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "wornnecklace"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.F2uej7timkyYGg83"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.F2uej7timkyYGg83",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!F2uej7timkyYGg83"
+}

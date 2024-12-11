@@ -1,0 +1,115 @@
+{
+  "_id": "yy2K51kK3a60rRIe",
+  "img": "icons/magic/air/fog-gas-smoke-orange.webp",
+  "name": "Rust Cloud",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Red-blown flecks of rust jitter in the air, forming a cloud of agitated particles. All creatures within the cloud become @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the cloud become concealed to creatures within it. The cloud deals @Damage[5d10[slashing]] damage to any creature that starts its turn in the area, with a basic Fortitude save.</p>\n<p>Metal that rusts off of a creature adds to the cloud. When a metal creature takes damage from the cloud, the cloud's area increases by 5 feet (to a maximum of a @Template[type:burst|distance:40]), and the creature starts to rust, taking @Damage[1d4[persistent,slashing]] damage. You can Dismiss the cloud.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The cloud's slashing damage increases by 1d10 and the persistent damage increases by [[/r 1d4]].</p>"
+    },
+    "rules": [],
+    "slug": "rust-cloud",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate",
+        "metal"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "120 feet"
+    },
+    "area": {
+      "type": "burst",
+      "value": 20
+    },
+    "time": {
+      "value": "3"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "kmgVwzdXySlwrW7I": {
+        "applyMod": false,
+        "formula": "5d10",
+        "type": "slashing",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "kmgVwzdXySlwrW7I": "1d10"
+      },
+      "interval": 2,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.yy2K51kK3a60rRIe"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.yy2K51kK3a60rRIe",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!yy2K51kK3a60rRIe"
+}

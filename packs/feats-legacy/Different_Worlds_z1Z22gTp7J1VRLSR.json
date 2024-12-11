@@ -1,0 +1,86 @@
+{
+  "_id": "z1Z22gTp7J1VRLSR",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Different Worlds",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your separate experiences in different societies have evolved into entirely separate lives. Create a second identity for yourself with a different name, history, and background. This identity must correspond to one of the ancestries whose ancestry feats you can select. You gain the trained proficiency rank in the Lore skill from the second background you chose (but you don't gain any of the background's other benefits), and you gain a +4 circumstance bonus to Deception checks when making a statement that would be true of your second identity or when disguising yourself as your second identity.</p>\n<p><strong>Special</strong> At the GM's discretion, this feat can be used against non-humanoids if they have regular contact with humanoids or you are able to disguise yourself as a member of the target's ancestry or type of creature.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Different Worlds (second identity)",
+        "predicate": [
+          "second-identity"
+        ],
+        "selector": "deception",
+        "type": "circumstance",
+        "value": 4
+      }
+    ],
+    "slug": "different-worlds",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #147: Tomorrow Must Burn",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "general",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "ability to select ancestry feats from multiple ancestries"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.z1Z22gTp7J1VRLSR"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.z1Z22gTp7J1VRLSR",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!z1Z22gTp7J1VRLSR"
+}

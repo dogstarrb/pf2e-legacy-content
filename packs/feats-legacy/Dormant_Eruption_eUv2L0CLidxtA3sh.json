@@ -1,0 +1,101 @@
+{
+  "_id": "eUv2L0CLidxtA3sh",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Dormant Eruption",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A sweltering heat and sparks of flame that take the form of tiny copies of you surround your body. You're hot to the touch, gaining resistance 5 to cold and fire. Whenever an adjacent creature Strikes you with a melee attack or touches you, it takes @Damage[1d6[persistent,fire]] damage. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.cx5tBTy6weK6YSw9]{Thermal Eruption} action.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "predicate": [
+          {
+            "not": "thermal-eruption"
+          }
+        ],
+        "type": [
+          "cold",
+          "fire"
+        ],
+        "value": 5
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.actionspf2e.Item.cx5tBTy6weK6YSw9"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.AftermathFeats.DormantEruptionToggle",
+        "option": "thermal-eruption",
+        "toggleable": true
+      }
+    ],
+    "slug": "dormant-eruption",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "aftermath",
+        "fire"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "You've been brought to 0 Hit Points by an enemy that has the fire trait or an enemy's ability that has the fire trait"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.eUv2L0CLidxtA3sh"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.eUv2L0CLidxtA3sh",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!eUv2L0CLidxtA3sh"
+}

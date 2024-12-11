@@ -1,0 +1,115 @@
+{
+  "_id": "0jJ5FG72lydY3HHR",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Hydraulic Maneuvers",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You batter your foes with a torrent of water siphoned from your surroundings.</p>\n<p>If the next action you take is an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm}, @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove}, or @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip}, that action has a range of 15 feet. You don't receive any item bonuses to that check or any circumstance bonuses related to your physical body, but if you roll a critical failure on that Athletics check, you get a failure instead.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Activate Hydraulic Maneuvers",
+        "option": "hydraulic-maneuvers",
+        "toggleable": true
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "hydraulic-maneuvers",
+          {
+            "or": [
+              "action:disarm",
+              "action:shove",
+              "action:trip"
+            ]
+          }
+        ],
+        "selector": "athletics",
+        "text": "<p class='compact-text'>If you roll a critical failure on your Athletics check to Disarm, Shove or Trip using Hydraulic Maneuvers, you get a failure instead.</p> <p class='compact-text'>You don't receive any item bonuses to the triggering Athletics check or any circumstance bonuses related to your physical body when using Hydraulic Maneuvers.</p>"
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "hydraulic-maneuvers",
+          {
+            "or": [
+              "action:disarm",
+              "action:shove",
+              "action:trip"
+            ]
+          }
+        ],
+        "selector": "athletics"
+      }
+    ],
+    "slug": "hydraulic-maneuvers",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "azarketi",
+        "concentrate",
+        "manipulate",
+        "primal",
+        "water"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.0jJ5FG72lydY3HHR"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.0jJ5FG72lydY3HHR",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0jJ5FG72lydY3HHR"
+}

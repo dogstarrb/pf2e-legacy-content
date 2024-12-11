@@ -1,0 +1,171 @@
+{
+  "_id": "qgpufYE8gHRWUPiQ",
+  "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/glaive-of-the-artist.webp",
+  "name": "Songbird's Brush",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The blade of this <em>+2 greater striking holy glaive</em> shimmers with a prismatic sheen, as if faintly reflecting a rainbow. A songbird's brush sheds bright light in a 20-foot radius (and dim light for the next 40 feet). When wielded in combat, the sound of the blade cutting through the air creates a soft, musical trill as if produced by a songbird. Sacred to the faithful of Shelyn, a songbird's brush is so named for the fighting style developed by worshippers of the Eternal Rose, which equates its sweeping swings to painting with a brush. A songbird's brush grants a +2 item bonus to Performance checks made to dance or sing as long as the glaive is held in two hands.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You sweep the songbird's brush in an arc before you, casting <em>@UUID[Compendium.pf2e.spells-srd.Item.d6o52BnjViNz7Gub]{Prismatic Spray}</em> from the glaive. The spell DC is 34. This <em>prismatic spray</em> does not affect good-aligned creatures in its area.</p>\n<hr />\n<p><strong>Craft Requirements</strong> You are a worshipper of Shelyn.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "action:perform:dance",
+              "action:perform:singing"
+            ]
+          }
+        ],
+        "selector": "performance",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "songbirds-brush",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "deadly-d8",
+        "forceful",
+        "good",
+        "magical",
+        "reach"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Kingmaker",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "quantity": 1,
+    "baseItem": "glaive",
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 6000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "category": "martial",
+    "group": "polearm",
+    "bonus": {
+      "value": 2
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d8",
+      "damageType": "slashing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": null,
+    "reload": {
+      "value": ""
+    },
+    "runes": {
+      "potency": 2,
+      "striking": 2,
+      "property": [
+        "holy"
+      ]
+    },
+    "specific": {
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "runes": {
+        "potency": 2,
+        "striking": 2,
+        "property": [
+          "holy"
+        ]
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.qgpufYE8gHRWUPiQ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.qgpufYE8gHRWUPiQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!qgpufYE8gHRWUPiQ"
+}

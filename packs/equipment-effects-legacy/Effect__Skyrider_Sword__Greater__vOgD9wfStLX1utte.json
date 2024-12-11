@@ -1,0 +1,77 @@
+{
+  "_id": "vOgD9wfStLX1utte",
+  "img": "icons/weapons/swords/greatsword-crossguard-silver.webp",
+  "name": "Effect: Skyrider Sword (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You leap upon your sword as it soars through the air. You gain a fly Speed of 25 feet or your land Speed, whichever is slower, but you can't Strike with your weapon except via the weapon's other activation. You can Dismiss the activation, and it ends automatically if you cease holding the weapon with at least one hand.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": "min(25, @actor.attributes.speed.total)"
+      }
+    ],
+    "slug": "effect-skyrider-sword-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.vOgD9wfStLX1utte"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.vOgD9wfStLX1utte",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!vOgD9wfStLX1utte"
+}

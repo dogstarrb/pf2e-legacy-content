@@ -1,0 +1,86 @@
+{
+  "_id": "4Lo2qb5PmavSsLNk",
+  "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+  "name": "Spell Effect: Energy Aegis",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.m2xFMNyQiUKQDRaj]{Energy Aegis}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": [
+          "acid",
+          "cold",
+          "electricity",
+          "fire",
+          "force",
+          "void",
+          "vitality",
+          "sonic"
+        ],
+        "value": "5*floor((@item.level -5)/2)"
+      }
+    ],
+    "slug": "spell-effect-energy-aegis",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "duration": {
+      "value": 24,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.4Lo2qb5PmavSsLNk"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 4500000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.4Lo2qb5PmavSsLNk",
+    "duplicateSource": null
+  },
+  "_key": "!items!4Lo2qb5PmavSsLNk"
+}

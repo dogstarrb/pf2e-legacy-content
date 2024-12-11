@@ -1,0 +1,81 @@
+{
+  "_id": "nUJSdm4fy6fcwsvv",
+  "img": "systems/pf2e/icons/spells/air-bubble.webp",
+  "name": "Spell Effect: Lashunta's Life Bubble",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +1 status bonus to saves against inhaled dangers.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "inhaled"
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-lashuntas-life-bubble",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #187: The Seventh Arch",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.nUJSdm4fy6fcwsvv"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 35700000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.nUJSdm4fy6fcwsvv",
+    "duplicateSource": null
+  },
+  "_key": "!items!nUJSdm4fy6fcwsvv"
+}

@@ -1,0 +1,151 @@
+{
+  "_id": "JIpjpZ8VneQomkZw",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Inventor Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You become trained in Crafting and inventor class DC. You gain the @UUID[Compendium.pf2e.feats-srd.Item.XR95taODq1sq82Du]{Inventor} skill feat, even if you don't meet the skill feat's requirements. Choose an innovation. You gain that @UUID[Compendium.pf2e.classfeatures.Item.jIAgXe2FetAKBwt7]{Innovation}, though you don't gain any other abilities that modify or use that innovation, such as modifications or Explode.</p>\n<p><strong>Special</strong> You cannot select another dedication feat until you have first gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.aAm6jY2k5qBuWETd]{Inventor} archetype.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.crafting.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.XR95taODq1sq82Du"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.classfeatures.Item.jIAgXe2FetAKBwt7"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.classDCs.inventor",
+        "priority": 39,
+        "value": {
+          "ability": "int",
+          "label": "PF2E.TraitInventor",
+          "rank": 1
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.inventor.explode",
+        "priority": 49,
+        "value": "fire"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "self:action:trait:unstable"
+        ],
+        "selector": [
+          "inline-damage",
+          "inline-healing",
+          "strike-attack-roll"
+        ],
+        "text": "PF2E.SpecificRule.Inventor.Unstable.Note",
+        "title": "PF2E.TraitUnstable"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "failure"
+        ],
+        "predicate": [
+          "unstable-check"
+        ],
+        "selector": [
+          "flat-check"
+        ],
+        "text": "PF2E.SpecificRule.Inventor.Unstable.FlatCheck.Failure",
+        "title": "PF2E.Check.Result.Degree.Check.failure"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalFailure"
+        ],
+        "predicate": [
+          "unstable-check"
+        ],
+        "selector": [
+          "flat-check"
+        ],
+        "text": "PF2E.SpecificRule.Inventor.Unstable.FlatCheck.CriticalFailure",
+        "title": "PF2E.Check.Result.Degree.Check.criticalFailure"
+      }
+    ],
+    "slug": "inventor-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication",
+        "multiclass"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Intelligence 14"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.JIpjpZ8VneQomkZw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.JIpjpZ8VneQomkZw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!JIpjpZ8VneQomkZw"
+}

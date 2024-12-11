@@ -1,0 +1,133 @@
+{
+  "_id": "Jgid6Ja6Y879COlN",
+  "img": "systems/pf2e/icons/features/classes/fencer-style.webp",
+  "name": "Fencer",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You move carefully, feinting and creating false openings to lead your foes into inopportune attacks.</p>\n<p>You are trained in Deception. You gain @UUID[Compendium.pf2e.classfeatures.Item.LzYi0OuOoypNb6jd]{Panache} during an encounter whenever you successfully @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint} or @UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]{Create a Diversion} against a foe.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "self:effect:panache",
+          {
+            "or": [
+              "action:feint",
+              "action:create-a-diversion"
+            ]
+          }
+        ],
+        "selector": "deception",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.deception.rank",
+        "predicate": [
+          "class:swashbuckler"
+        ],
+        "value": 1
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "predicate": [
+          {
+            "or": [
+              "action:feint",
+              "action:create-a-diversion"
+            ]
+          },
+          {
+            "not": "self:effect:panache"
+          }
+        ],
+        "selector": "deception",
+        "text": "PF2E.SpecificRule.Swashbuckler.Panache",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "finisher",
+          "feature:exemplary-finisher"
+        ],
+        "selector": "strike-attack-roll",
+        "text": "PF2E.SpecificRule.ExemplaryFinisher.Fencer",
+        "title": "PF2E.SpecificRule.ExemplaryFinisher.Name"
+      }
+    ],
+    "slug": "fencer",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "swashbuckler-style"
+      ],
+      "value": [
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.Jgid6Ja6Y879COlN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.Jgid6Ja6Y879COlN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Jgid6Ja6Y879COlN"
+}

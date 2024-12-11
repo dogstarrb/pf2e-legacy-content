@@ -1,0 +1,117 @@
+{
+  "_id": "lX5KDS2hU5LihZRs",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "name": "Martial Disciple",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You dedicated yourself to intense training and rigorous study to become a great warrior. The school you attended might have been a traditionalist monastery, an elite military academy, or the local branch of a prestigious mercenary organization.</p>\n<p>Choose two ability boosts. One must be to <strong>Strength</strong> or <strong>Dexterity</strong>, and one is a free ability boost.</p>\n<p>You're trained in your choice of the Acrobatics or Athletics skill. You gain a skill feat: @UUID[Compendium.pf2e.feats-srd.Item.LQw0yIMDUJJkq1nD]{Cat Fall} if you chose Acrobatics or @UUID[Compendium.pf2e.feats-srd.Item.ZBhvJ9O8MvBFAlhq]{Quick Jump} if you chose Athletics. You're also trained in the Warfare Lore skill.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.Skill.Acrobatics",
+            "value": "acrobatics"
+          },
+          {
+            "label": "PF2E.Skill.Athletics",
+            "value": "athletics"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill",
+        "rollOption": "martial-disciple"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "martial-disciple:acrobatics"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.LQw0yIMDUJJkq1nD"
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "martial-disciple:athletics"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.ZBhvJ9O8MvBFAlhq"
+      }
+    ],
+    "slug": "martial-disciple",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": [
+          "dex",
+          "str"
+        ]
+      },
+      "1": {
+        "value": [
+          "cha",
+          "con",
+          "dex",
+          "int",
+          "str",
+          "wis"
+        ]
+      }
+    },
+    "items": {},
+    "trainedSkills": {
+      "value": [],
+      "lore": [
+        "Warfare Lore"
+      ],
+      "custom": ""
+    }
+  },
+  "type": "background",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.backgrounds.Item.lX5KDS2hU5LihZRs"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.backgrounds-legacy.Item.lX5KDS2hU5LihZRs",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!lX5KDS2hU5LihZRs"
+}

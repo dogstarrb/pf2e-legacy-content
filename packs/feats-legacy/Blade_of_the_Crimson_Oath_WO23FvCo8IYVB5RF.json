@@ -1,0 +1,91 @@
+{
+  "_id": "WO23FvCo8IYVB5RF",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Blade of the Crimson Oath",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You call upon the Crimson Oath to smite undead and then make a weapon or unarmed Strike against an undead foe. The Strike deals two extra weapon damage dice, and you can convert all the physical damage from the attack into positive damage.</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "option": "blade-crimson-oath",
+        "toggleable": true
+      },
+      {
+        "diceNumber": 2,
+        "key": "DamageDice",
+        "predicate": [
+          "blade-crimson-oath",
+          "target:mode:undead"
+        ],
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "blade-of-the-crimson-oath",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Knight Reclaimant Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.WO23FvCo8IYVB5RF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.WO23FvCo8IYVB5RF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WO23FvCo8IYVB5RF"
+}

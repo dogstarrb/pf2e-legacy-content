@@ -1,0 +1,105 @@
+{
+  "_id": "5x0XpNftvx9uGbXt",
+  "img": "systems/pf2e/icons/spells/claim-undead.webp",
+  "name": "Effect: Death Gasp (Etioling)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature gains the undead and incorporeal traits, a fly Speed of 25 feet, resistance 10 to all damage (except force, ghost touch, or positive; double this resistance vs. non-magical) and becomes immune to bleed, death effects, disease, paralyzed, poison, and sleep.</p>"
+    },
+    "rules": [
+      {
+        "add": [
+          "undead",
+          "incorporeal"
+        ],
+        "key": "ActorTraits"
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "bleed",
+          "death-effects",
+          "disease",
+          "paralyzed",
+          "poison",
+          "sleep"
+        ]
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": 25
+      },
+      {
+        "exceptions": [
+          "force",
+          "ghost-touch",
+          "vitality"
+        ],
+        "key": "Resistance",
+        "type": "all-damage",
+        "value": 10
+      }
+    ],
+    "slug": "effect-death-gasp-etioling",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary 3",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": 8,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.5x0XpNftvx9uGbXt"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.5x0XpNftvx9uGbXt",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5x0XpNftvx9uGbXt"
+}

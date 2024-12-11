@@ -1,0 +1,108 @@
+{
+  "_id": "ba1RyDpwq6tfW8VM",
+  "img": "icons/skills/targeting/target-glowing-yellow.webp",
+  "name": "Cloak of Light",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You surround yourself in holy light that restores the living and rebuffs undead. You glow with bright light in a 30-foot radius and dim light to the next 30 feet.</p>\n<p>Living creatures that begin their turn adjacent to you recover 2d4 Hit Points. Undead creatures that begin their turn adjacent to you take @Damage[(floor(@item.level/2)*2)d4[vitality]] damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The healing increases by 1d4, and the damage to undead increases by 2d4.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.eRRiss7y7TsneiEu]{Spell Effect: Cloak of Light}</p>"
+    },
+    "rules": [],
+    "slug": "cloak-of-light",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "healing",
+        "light",
+        "manipulate",
+        "vitality"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "divine",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder #172: Secrets of the Temple-City",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": ""
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "5 rounds",
+      "sustained": true
+    },
+    "damage": {
+      "gftav8gvt4i3mqj6": {
+        "applyMod": false,
+        "formula": "2d4",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "healing"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "gftav8gvt4i3mqj6": "1d4"
+      },
+      "interval": 2,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.ba1RyDpwq6tfW8VM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.ba1RyDpwq6tfW8VM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ba1RyDpwq6tfW8VM"
+}

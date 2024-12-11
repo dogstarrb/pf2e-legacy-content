@@ -1,0 +1,84 @@
+{
+  "_id": "81XYZZ3H0GL8thdQ",
+  "img": "icons/magic/water/wave-water-blue.webp",
+  "name": "Effect: Countered by Water",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature takes a -1 circumstance penalty to attack rolls, and its jaws Strike doesn't deal fire damage.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "attack",
+        "type": "circumstance",
+        "value": -1
+      },
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "option": "countered-by-water",
+        "value": true
+      }
+    ],
+    "slug": "effect-countered-by-water",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary 3",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.81XYZZ3H0GL8thdQ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.81XYZZ3H0GL8thdQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!81XYZZ3H0GL8thdQ"
+}

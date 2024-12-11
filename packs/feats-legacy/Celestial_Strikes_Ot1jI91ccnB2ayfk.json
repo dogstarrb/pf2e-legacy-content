@@ -1,0 +1,106 @@
+{
+  "_id": "Ot1jI91ccnB2ayfk",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Celestial Strikes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your connection to good arms all your attacks against forces of evil. All your weapon and unarmed Strikes deal @Damage[1[spirit]] damage and have the good and magical traits.</p>"
+    },
+    "rules": [
+      {
+        "damageType": "spirit",
+        "key": "FlatModifier",
+        "selector": "strike-damage",
+        "value": 1
+      },
+      {
+        "definition": [
+          {
+            "or": [
+              "item:melee",
+              "item:ranged"
+            ]
+          }
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "traits",
+        "value": "magical"
+      },
+      {
+        "definition": [
+          {
+            "or": [
+              "item:melee",
+              "item:ranged"
+            ]
+          }
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "traits",
+        "value": "good"
+      }
+    ],
+    "slug": "celestial-strikes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "nephilim"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.Ot1jI91ccnB2ayfk"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.Ot1jI91ccnB2ayfk",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Ot1jI91ccnB2ayfk"
+}

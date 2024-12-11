@@ -1,0 +1,88 @@
+{
+  "_id": "142QRyK2aPIrJu48",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Holy Castigation",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You combine holy energy with positive energy to damage demons, devils, and their evil ilk. <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em> spells you cast damage fiends as though they were undead.</p>"
+    },
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "predicate": [
+          "item:type:spell",
+          "item:slug:heal",
+          "target:trait:fiend"
+        ],
+        "selectors": [
+          "damage-received"
+        ],
+        "uuid": "Compendium.pf2e.feat-effects.Item.U2Pgm6B4nmdQ2Gpd"
+      }
+    ],
+    "slug": "holy-castigation",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "cleric"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "good alignment"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.142QRyK2aPIrJu48"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.142QRyK2aPIrJu48",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!142QRyK2aPIrJu48"
+}

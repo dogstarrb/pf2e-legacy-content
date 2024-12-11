@@ -1,0 +1,81 @@
+{
+  "_id": "8QAFgy9U8PxEa7Dw",
+  "img": "systems/pf2e/icons/features/classes/field-discovery-bomber.webp",
+  "name": "Field Discovery (Bomber)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You learn a special discovery depending on your field.</p>\n<p>When using @UUID[Compendium.pf2e.classfeatures.Item.Pe0zmIqyTBc2Td0I]{Advanced Alchemy} to make bombs during your daily preparations, you can use a batch of @UUID[Compendium.pf2e.classfeatures.Item.wySB9VHOW1v3TX1L]{reagents} to create any three bombs instead of just two of the same bomb.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.crafting.entries.alchemist.fieldDiscovery",
+        "phase": "beforeDerived",
+        "value": [
+          "item:base:alchemical-bomb"
+        ]
+      }
+    ],
+    "slug": "field-discovery-bomber",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemist"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.8QAFgy9U8PxEa7Dw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.8QAFgy9U8PxEa7Dw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8QAFgy9U8PxEa7Dw"
+}

@@ -1,0 +1,164 @@
+{
+  "_id": "o9IErbpmItz9NZT3",
+  "img": "systems/pf2e/icons/equipment/artifacts/blackaxe.webp",
+  "name": "Blackaxe",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This potent weapon used by Treerazer is a +4 @UUID[Compendium.pf2e.equipment-srd.Item.vQUIUAFOTOWj3ohh]{Corrosive (Greater)} major striking obsidian greataxe that grants a +4 item bonus to attack rolls, deals an extra 2d6 damage to plants, and has the properties of adamantine.</p>\n<hr />\n<p><strong>Activate</strong><span class=\"action-glyph\">1</span> (divination, scrying)</p>\n<p><strong>Requirements</strong> You aren't wielding <em>Blackaxe</em> and you are its true owner.</p>\n<hr />\n<p><strong>Effect</strong> You sense the world around <em>Blackaxe</em> as though you were in its location and can use any of your innate spells through the link as if it were the source of the spell. If another creature is wielding Blackaxe, it must succeed at a @Check[type:will|dc:50] or be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} until it relinquishes the weapon.</p>\n<hr />\n<p><strong>Activate</strong><span class=\"action-glyph\">f</span> command (conjuration, teleportation)</p>\n<p><strong>Requirements</strong> You aren't wielding <em>Blackaxe</em> and you are its true owner.</p>\n<hr />\n<p><strong>Effect</strong> <em>Blackaxe</em> appears in your hands, teleporting instantly from its prior location.</p>\n<hr />\n<p><strong>Activate</strong><span class=\"action-glyph\">1</span> command (death, healing, necromancy)</p>\n<p><strong>Frequency</strong> once per minute.</p>\n<hr />\n<p><strong>Effect</strong> Make a Strike against a living tree with <em>Blackaxe</em>. If it hits, the tree withers to ash and you heal 250 Hit Points and gain the benefit of <em>@UUID[Compendium.pf2e.spells-srd.Item.SnaLVgxZ9ryUFmUr]{Restoration}</em> (6th) and <em>@UUID[Compendium.pf2e.spells-srd.Item.Et8RSCLx8w7uOLvo]{Restore Senses}</em>.</p>"
+    },
+    "rules": [
+      {
+        "diceNumber": 2,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "label": "vs. plants",
+        "predicate": [
+          "target:trait:plant"
+        ],
+        "selector": "{item|_id}-damage"
+      }
+    ],
+    "slug": "blackaxe",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "artifact",
+        "cursed",
+        "primal",
+        "sweep"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 25
+    },
+    "quantity": 1,
+    "baseItem": "greataxe",
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "huge",
+    "material": {
+      "type": "adamantine",
+      "grade": "high"
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "category": "martial",
+    "group": "axe",
+    "bonus": {
+      "value": 4
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d12",
+      "damageType": "slashing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": null
+    },
+    "range": null,
+    "reload": {
+      "value": ""
+    },
+    "runes": {
+      "potency": 4,
+      "striking": 3,
+      "property": [
+        "greaterCorrosive"
+      ]
+    },
+    "specific": {
+      "material": {
+        "type": "adamantine",
+        "grade": "high"
+      },
+      "runes": {
+        "potency": 4,
+        "striking": 3,
+        "property": [
+          "greaterCorrosive"
+        ]
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.o9IErbpmItz9NZT3"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.o9IErbpmItz9NZT3",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!o9IErbpmItz9NZT3"
+}

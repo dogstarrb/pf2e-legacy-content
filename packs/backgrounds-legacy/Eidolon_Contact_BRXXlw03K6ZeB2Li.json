@@ -1,0 +1,117 @@
+{
+  "_id": "BRXXlw03K6ZeB2Li",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "name": "Eidolon Contact",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've come into contact with a disembodied being of magical essence known as an eidolon. You might have forged a powerful conduit with that eidolon, allowing you to manifest it as a summoner, but it's much more likely that you lost contact over time, though not before learning a few half-remembered secrets. If you lost contact, you might have become an adventurer to try to reach the eidolon again, or to be sure that you're rid of it forever.</p>\n<p>Choose two ability boosts. One must be to <strong>Constitution</strong> or <strong>Charisma</strong>, and one is a free ability boost.</p>\n<p>You're trained in your choice of Arcana, Nature, Occultism, or Religion, and a Lore skill for the creature associated with your contacted eidolon (such as Angel Lore or Dragon Lore). You gain the @UUID[Compendium.pf2e.feats-srd.Item.1Bt7uCW2WI4sM84P]{Dubious Knowledge} skill feat.</p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.Skill.Arcana",
+            "value": "arcana"
+          },
+          {
+            "label": "PF2E.Skill.Nature",
+            "value": "nature"
+          },
+          {
+            "label": "PF2E.Skill.Occultism",
+            "value": "occultism"
+          },
+          {
+            "label": "PF2E.Skill.Religion",
+            "value": "religion"
+          }
+        ],
+        "flag": "skill",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1
+      }
+    ],
+    "slug": "eidolon-contact",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "boosts": {
+      "0": {
+        "value": [
+          "cha",
+          "con"
+        ]
+      },
+      "1": {
+        "value": [
+          "cha",
+          "con",
+          "dex",
+          "int",
+          "str",
+          "wis"
+        ]
+      }
+    },
+    "items": {
+      "fy5xi": {
+        "img": "systems/pf2e/icons/features/feats/feats.webp",
+        "level": 1,
+        "name": "Dubious Knowledge",
+        "uuid": "Compendium.pf2e.feats-srd.Item.1Bt7uCW2WI4sM84P"
+      }
+    },
+    "trainedSkills": {
+      "value": [],
+      "lore": [
+        "<Eidolon Type> Lore"
+      ],
+      "custom": ""
+    }
+  },
+  "type": "background",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.backgrounds.Item.BRXXlw03K6ZeB2Li"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.backgrounds-legacy.Item.BRXXlw03K6ZeB2Li",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BRXXlw03K6ZeB2Li"
+}

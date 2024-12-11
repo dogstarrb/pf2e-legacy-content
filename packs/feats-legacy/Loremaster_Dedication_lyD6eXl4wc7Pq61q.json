@@ -1,0 +1,89 @@
+{
+  "_id": "lyD6eXl4wc7Pq61q",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Loremaster Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've compiled a vast repository of information that touches on nearly every subject. You are trained in Loremaster Lore, a special Lore skill that can be used only to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}, but on any topic.</p>\n<p>If you have legendary proficiency in a skill used to @UUID[Compendium.pf2e.actionspf2e.Item.d9gbpiQjChYDYA2L]{Decipher Writing}, you gain expert proficiency in Loremaster Lore, but you can't increase your proficiency rank in Loremaster Lore by any other means.</p>\n<p>You can take feats in the loremaster's additional feats entry even if you don't meet the @UUID[Compendium.pf2e.classfeatures.Item.4ripp6EfdVpS0d60]{enigma muse} prerequisite.</p>\n<p>If you have the @UUID[Compendium.pf2e.feats-srd.Item.uVXEZblPRuCyPRua]{Bardic Lore} class feat, you gain a +1 circumstance bonus to skill checks with Bardic Lore.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.ackdHdIAmSb0AiVL]{Loremaster} archetype.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "feat:bardic-lore"
+        ],
+        "selector": [
+          "bardic",
+          "bardic-lore"
+        ],
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "loremaster-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in at least one skill to Decipher Writing"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.lyD6eXl4wc7Pq61q"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.lyD6eXl4wc7Pq61q",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!lyD6eXl4wc7Pq61q"
+}

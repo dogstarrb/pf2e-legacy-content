@@ -1,0 +1,102 @@
+{
+  "_id": "i5agc4lBE6GfeCXq",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-tools/cold-iron-blanch.webp",
+  "name": "Effect: Cold Iron Blanch (Lesser)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.cImNgwDCqwa6Dil1]{Cold Iron Blanch (Lesser)}</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "predicate": [
+            {
+              "lte": [
+                "item:level",
+                8
+              ]
+            }
+          ],
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "effectColdIronBlanchLesser",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "definition": [
+          "item:id:{item|flags.pf2e.rulesSelections.effectColdIronBlanchLesser}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "materials",
+        "value": "cold-iron"
+      }
+    ],
+    "slug": "effect-cold-iron-blanch-lesser",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Pathfinder Society Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": {
+      "type": "counter",
+      "value": 10
+    },
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.i5agc4lBE6GfeCXq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.i5agc4lBE6GfeCXq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!i5agc4lBE6GfeCXq"
+}

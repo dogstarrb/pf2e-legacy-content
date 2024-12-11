@@ -1,0 +1,134 @@
+{
+  "_id": "7uL4XhHpxZpgNJPh",
+  "img": "systems/pf2e/icons/spells/blinding-foam.webp",
+  "name": "Blinding Foam",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You spray a colorful, caustic foam into the target's eyes, which clings to their face. Make a spell attack roll. If you hit, you deal @Damage[5d10[acid]] damage and @Damage[1d6[persistent,acid]] damage, and the target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for the duration. The foam can be removed with 3 Interact actions, which ends the persistent acid damage. These Interact actions don't need to be consecutive. When the target's persistent acid damage ends, the spell automatically ends.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> The initial damage increases to @Damage[9d10[acid]], and the persistent acid damage increases to @Damage[2d6[persistent,acid]].</p>"
+    },
+    "rules": [],
+    "slug": "blinding-foam",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "acid",
+        "attack",
+        "concentrate",
+        "incapacitation",
+        "manipulate"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "arcane",
+        "occult",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Firebrands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "NE5nfcJxF8gmPf1n": {
+        "applyMod": false,
+        "formula": "5d6",
+        "type": "acid",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      },
+      "rt4oeXP3SqcClH6r": {
+        "applyMod": false,
+        "formula": "1d6",
+        "type": "acid",
+        "category": "persistent",
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "8": {
+          "damage": {
+            "NE5nfcJxF8gmPf1n": {
+              "applyMod": false,
+              "formula": "9d6",
+              "type": "acid",
+              "materials": []
+            },
+            "rt4oeXP3SqcClH6r": {
+              "applyMod": false,
+              "formula": "2d6",
+              "type": "acid",
+              "category": "persistent",
+              "materials": []
+            }
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.7uL4XhHpxZpgNJPh"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.7uL4XhHpxZpgNJPh",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7uL4XhHpxZpgNJPh"
+}

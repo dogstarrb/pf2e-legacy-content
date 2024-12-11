@@ -1,0 +1,77 @@
+{
+  "_id": "Um25D1qLtZWOSBny",
+  "img": "icons/creatures/claws/claw-bear-paw-swipe-red.webp",
+  "name": "Spell Effect: Shifting Form (Swim Speed)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by casting <em>@UUID[Compendium.pf2e.spells-srd.Item.SDkIFrrO1PsE02Kd]{Shifting Form}</em> and choosing to gain a swim speed equal to half your Speed.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "swim",
+        "value": "round(@actor.attributes.speed.total/2)"
+      }
+    ],
+    "slug": "spell-effect-shifting-form-swim-speed",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.Um25D1qLtZWOSBny"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 22200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.Um25D1qLtZWOSBny",
+    "duplicateSource": null
+  },
+  "_key": "!items!Um25D1qLtZWOSBny"
+}

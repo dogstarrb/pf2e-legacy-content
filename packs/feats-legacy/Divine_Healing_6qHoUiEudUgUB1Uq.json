@@ -1,0 +1,88 @@
+{
+  "_id": "6qHoUiEudUgUB1Uq",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Divine Healing",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Although you aren't a proper champion of your faith, your deity still recognizes your efforts and provides you with a small divine ability to help others. You gain the <em>@UUID[Compendium.pf2e.spells-srd.Item.zNN9212H2FGfM7VS]{Lay on Hands}</em> devotion spell.</p>\n<p>You gain a focus pool of 1 Focus Point or increase the number of Focus Points in your focus pool by 1. You refill your focus pool during your daily preparations, and you regain 1 Focus Point by spending 10 minutes using the Refocus activity to pray to your deity or perform service toward their causes. You are trained in divine spell attack rolls and spell DCs. Your spellcasting ability is Charisma.</p>\n<p>You must refrain from performing your deity's anathema or lose the ability to cast this spell until you atone.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.spellcasting.rank",
+        "value": 1
+      }
+    ],
+    "slug": "divine-healing",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Knights of Lastwall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Knight Vigilant Dedication"
+        },
+        {
+          "value": "expert in religion"
+        },
+        {
+          "value": "worship a deity with a divine font that grants heal"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.6qHoUiEudUgUB1Uq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.6qHoUiEudUgUB1Uq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6qHoUiEudUgUB1Uq"
+}

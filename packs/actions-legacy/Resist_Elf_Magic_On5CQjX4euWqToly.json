@@ -1,0 +1,93 @@
+{
+  "_id": "On5CQjX4euWqToly",
+  "img": "systems/pf2e/icons/actions/Reaction.webp",
+  "name": "Resist Elf Magic",
+  "system": {
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "defensive",
+    "description": {
+      "value": "<p><strong>Trigger</strong> You attempt a saving throw against a magical effect but haven't rolled yet</p>\n<hr />\n<p>Your ancestral resistance to magic protects you. You gain a +1 circumstance bonus to the triggering saving throw. If the triggering effect is arcane, you gain a +2 circumstance bonus instead.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "license": "OGL",
+      "remaster": false,
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": ""
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "resist-elf-magic",
+          {
+            "or": [
+              "magical",
+              "divine",
+              "primal",
+              "occult"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "slug": "resist-elf-magic",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "predicate": [
+          "arcane"
+        ],
+        "selector": "saving-throw",
+        "slug": "resist-elf-magic",
+        "value": 1
+      },
+      {
+        "domain": "saving-throw",
+        "key": "RollOption",
+        "option": "resist-elf-magic",
+        "toggleable": true
+      }
+    ],
+    "traits": {
+      "value": [],
+      "otherTags": []
+    },
+    "slug": "resist-elf-magic",
+    "_migration": {
+      "version": 0.935,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    }
+  },
+  "type": "action",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.actionspf2e.Item.On5CQjX4euWqToly"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.actions-legacy.Item.On5CQjX4euWqToly",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!On5CQjX4euWqToly"
+}

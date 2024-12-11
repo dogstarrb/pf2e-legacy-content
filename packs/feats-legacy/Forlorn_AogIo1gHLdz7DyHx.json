@@ -1,0 +1,105 @@
+{
+  "_id": "AogIo1gHLdz7DyHx",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Forlorn",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Watching your friends age and die fills you with moroseness that protects you against harmful emotions. You gain a +1 circumstance bonus to saving throws against emotion effects. If you roll a success on a saving throw against an emotion effect, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Against emotion effects",
+        "predicate": [
+          "emotion"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success"
+        ],
+        "predicate": [
+          "emotion"
+        ],
+        "selector": "saving-throw",
+        "text": "If you roll a success on a saving throw against an emotion effect, you get a critical success instead.",
+        "title": "{item|name}"
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "emotion"
+        ],
+        "selector": "saving-throw",
+        "type": "save"
+      }
+    ],
+    "slug": "forlorn",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "elf"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.AogIo1gHLdz7DyHx"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.AogIo1gHLdz7DyHx",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!AogIo1gHLdz7DyHx"
+}

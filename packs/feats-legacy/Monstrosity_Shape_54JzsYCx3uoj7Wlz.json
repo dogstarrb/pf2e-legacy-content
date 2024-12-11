@@ -1,0 +1,110 @@
+{
+  "_id": "54JzsYCx3uoj7Wlz",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Monstrosity Shape",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can transform into a powerful magical creature. Add the purple worm and sea serpent forms listed in <em>@UUID[Compendium.pf2e.spells-srd.Item.8AMvNVOUEtxBCDvJ]{Monstrosity Form}</em> to your wild shape list. If you have @UUID[Compendium.pf2e.feats-srd.Item.wNHUryoRzlfDCFAd]{Soaring Shape}, also add the phoenix form to your wild shape list.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.rEsgDhunQ5Yx8KZx"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.Eik8Fj8nGo2GLcbn"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.wildShapeForms",
+        "predicate": [
+          "feat:wild-shape",
+          "feat:soaring-shape"
+        ],
+        "value": {
+          "value": "Compendium.pf2e.spell-effects.Item.b8bfWIICHOsGVzjp"
+        }
+      }
+    ],
+    "slug": "monstrosity-shape",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Wild Shape"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.54JzsYCx3uoj7Wlz"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.54JzsYCx3uoj7Wlz",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!54JzsYCx3uoj7Wlz"
+}

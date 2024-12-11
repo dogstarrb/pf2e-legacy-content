@@ -1,0 +1,80 @@
+{
+  "_id": "R7c4PyTNkZb0yvoT",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Dread Marshal Stance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Putting on a grim face for the battle ahead, you encourage your allies to strike fear into their foes with vicious attacks.</p>\n<p>When you use this action, attempt an @Check[type:intimidation|dc:@self.level|roller:self] check. The DC is usually a standard-difficulty DC of your level, but the GM can assign a different DC based on the circumstances. The effect depends on the result of your check.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.qX62wJzDYtNxDbFv]{Stance: Dread Marshal Stance}</p>\n<hr />\n<p><strong>Critical Success</strong> Your marshal's aura increases to a @Template[type:emanation|distance:20], and it grants you and allies a status bonus to damage rolls equal to the number of weapon damage dice of the unarmed attack or weapon you are wielding that has the most weapon damage dice. When you or an ally in the aura critically hits an enemy with a Strike, that enemy is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Success</strong> As critical success, but your aura's size doesn't increase.</p>\n<p><strong>Failure</strong> You fail to enter the stance.</p>\n<p><strong>Critical Failure</strong> You fail to enter the stance and can't take this action again for 1 minute.</p>"
+    },
+    "rules": [],
+    "slug": "dread-marshal-stance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "open",
+        "stance"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Marshal Dedication"
+        },
+        {
+          "value": "trained in Intimidation"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.R7c4PyTNkZb0yvoT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.R7c4PyTNkZb0yvoT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!R7c4PyTNkZb0yvoT"
+}

@@ -1,0 +1,93 @@
+{
+  "_id": "tC0Qk4AjYRd3csL7",
+  "img": "icons/creatures/mammals/bat-movement-flying-purple.webp",
+  "name": "Spell Effect: Swarm Form",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.Pd2M1XY8EXrSfWgJ]{Swarm Form}</em></p>\n<p>While in swarm form, you have the swarm trait and you gain resistance to slashing and piercing damage and weakness to area and splash damage.</p>"
+    },
+    "rules": [
+      {
+        "add": [
+          "swarm"
+        ],
+        "key": "ActorTraits"
+      },
+      {
+        "key": "Resistance",
+        "type": [
+          "piercing",
+          "slashing"
+        ],
+        "value": "max((floor(@item.level/2)-1)*5,5)"
+      },
+      {
+        "key": "Weakness",
+        "type": [
+          "area-damage",
+          "splash-damage"
+        ],
+        "value": "max((floor(@item.level/2)-1)*5,5)"
+      }
+    ],
+    "slug": "spell-effect-swarm-form",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Gods & Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": 5,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.tC0Qk4AjYRd3csL7"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 40600000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.tC0Qk4AjYRd3csL7",
+    "duplicateSource": null
+  },
+  "_key": "!items!tC0Qk4AjYRd3csL7"
+}

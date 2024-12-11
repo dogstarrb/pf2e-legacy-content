@@ -1,0 +1,91 @@
+{
+  "_id": "ewfHVi6NWBGM8B6f",
+  "img": "icons/weapons/swords/sword-flanged-lightning.webp",
+  "name": "Effect: Disrupting Strikes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.Nm8n3urzpDqXni1i]{Disrupting Strikes}</p>\n<p>Your weapon and unarmed Strikes gain the effects of a <em>disrupting</em> property rune until the start of your next turn.</p>\n<p>If you're 14th level or higher, your Strikes instead gain the effects of a <em>greater disrupting</em> property rune.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:type:weapon"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "property-runes",
+        "value": {
+          "brackets": [
+            {
+              "end": 13,
+              "value": "disrupting"
+            },
+            {
+              "start": 14,
+              "value": "greater-disrupting"
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "effect-disrupting-strikes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder #166: Despair on Danger Island",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.ewfHVi6NWBGM8B6f"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.ewfHVi6NWBGM8B6f",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ewfHVi6NWBGM8B6f"
+}

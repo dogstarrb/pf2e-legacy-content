@@ -1,0 +1,89 @@
+{
+  "_id": "VruIzuysxw4tY6rk",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Expert Poisoner",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your @UUID[Compendium.pf2e.classfeatures.Item.Pe0zmIqyTBc2Td0I]{Advanced Alchemy} level for poison increases to your level -3.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.crafting.entries.poisoner.maxItemLevel",
+        "phase": "beforeDerived",
+        "predicate": [
+          "crafting:entry:poisoner"
+        ],
+        "value": "@actor.level - 3"
+      }
+    ],
+    "slug": "expert-poisoner",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Poisoner Dedication"
+        },
+        {
+          "value": "expert in Crafting"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.VruIzuysxw4tY6rk"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.VruIzuysxw4tY6rk",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VruIzuysxw4tY6rk"
+}

@@ -1,0 +1,90 @@
+{
+  "_id": "qoV03Fk6HSzZUCmv",
+  "img": "icons/creatures/abilities/fang-tooth-blood-red.webp",
+  "name": "Effect: Sanguine Fang - Weapon (Major)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.0AxBSojJ2XhcqMvJ]{Sanguine Fang (Major)}</p>\n<p>After you cast a necromancy spell by activating the <em>fang</em>, your Strikes with the weapon deal 2d6 persistent bleed damage until the end of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "includeHandwraps": true,
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "effectSanguineFangWeaponMajor",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "damageType": "bleed",
+        "diceNumber": 2,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "selector": "{item|flags.pf2e.rulesSelections.effectSanguineFangWeaponMajor}-damage"
+      }
+    ],
+    "slug": "effect-sanguine-fang-weapon-major",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 15
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.qoV03Fk6HSzZUCmv"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.qoV03Fk6HSzZUCmv",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!qoV03Fk6HSzZUCmv"
+}

@@ -1,0 +1,81 @@
+{
+  "_id": "nHXKK4pRXAzrLdEP",
+  "img": "icons/creatures/slimes/slime-movement-swirling-green.webp",
+  "name": "Spell Effect: Take its Course (Affliction, Help)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.ZeHeNQ5BNq6m5F1j]{Take its Course}</em>, when used to help a target against an affliction.</p>\n<p>The target gains a +2 status bonus to its saving throw against the affliction.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "affliction"
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-take-its-course-affliction-help",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.nHXKK4pRXAzrLdEP"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 35300000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.nHXKK4pRXAzrLdEP",
+    "duplicateSource": null
+  },
+  "_key": "!items!nHXKK4pRXAzrLdEP"
+}

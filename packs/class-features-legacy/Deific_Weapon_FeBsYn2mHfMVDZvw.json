@@ -1,0 +1,101 @@
+{
+  "_id": "FeBsYn2mHfMVDZvw",
+  "img": "icons/skills/melee/weapons-crossed-swords-purple.webp",
+  "name": "Deific Weapon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You zealously bear your deity's favored weapon. If it's uncommon, you gain access to it. If it's an unarmed attack with a d4 damage die or a simple weapon, increase the damage die by one step (d4 to d6, d6 to d8, d8 to d10, d10 to d12).</p>"
+    },
+    "rules": [
+      {
+        "fist": true,
+        "key": "Strike",
+        "predicate": [
+          "deity:primary:favored-weapon:fist"
+        ],
+        "priority": 99
+      },
+      {
+        "key": "DamageDice",
+        "override": {
+          "upgrade": true
+        },
+        "predicate": [
+          "item:deity-favored",
+          {
+            "or": [
+              "item:category:simple",
+              {
+                "and": [
+                  "item:category:unarmed",
+                  "item:damage:die:faces:4"
+                ]
+              }
+            ]
+          }
+        ],
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "deific-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "champion"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.FeBsYn2mHfMVDZvw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.FeBsYn2mHfMVDZvw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!FeBsYn2mHfMVDZvw"
+}

@@ -1,0 +1,100 @@
+{
+  "_id": "u2z1BgpZsxl7Zc2z",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/nightmare-vapor.webp",
+  "name": "Effect: Poison Frenzy",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The poison eater flies into a frenzy that lasts for 1 minute. While in a frenzy, the poison eater gains a +1 status bonus to attack rolls with melee Strikes, gains a +4 status bonus to damage rolls with melee Strikes, gains 20 temporary Hit Points until the end of the frenzy, and takes a -2 status penalty to AC.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "melee"
+        ],
+        "selector": "attack",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "melee"
+        ],
+        "selector": "damage",
+        "type": "status",
+        "value": 4
+      },
+      {
+        "key": "TempHP",
+        "value": 20
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "ac",
+        "type": "status",
+        "value": -2
+      }
+    ],
+    "slug": "effect-poison-frenzy",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #160: Assault on Hunting Lodge Seven",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.u2z1BgpZsxl7Zc2z"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.u2z1BgpZsxl7Zc2z",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!u2z1BgpZsxl7Zc2z"
+}

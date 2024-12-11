@@ -1,0 +1,106 @@
+{
+  "_id": "2vlQ09QIBli5u9Gz",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Called",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have heard the Call, and in constantly resisting that persistent demand, you've developed a mental bulwark against effects that would target your mind.</p>\n<p>You gain a +1 circumstance bonus to Will saving throws against mental effects. If you roll a success on your saving throw against a mental effect that would make you @UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{Controlled}, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "vs. mental effects (Called)",
+        "predicate": [
+          "mental"
+        ],
+        "selector": "will",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success"
+        ],
+        "predicate": [
+          "mental"
+        ],
+        "selector": "saving-throw",
+        "text": "When you roll a success on an saving throw against a mental effect that would make you controlled, you get a critical success instead.",
+        "title": "{item|name}"
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "mental",
+          "target:condition:controlled"
+        ],
+        "selector": "saving-throw",
+        "type": "save"
+      }
+    ],
+    "slug": "called",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "changeling"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.2vlQ09QIBli5u9Gz"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.2vlQ09QIBli5u9Gz",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2vlQ09QIBli5u9Gz"
+}

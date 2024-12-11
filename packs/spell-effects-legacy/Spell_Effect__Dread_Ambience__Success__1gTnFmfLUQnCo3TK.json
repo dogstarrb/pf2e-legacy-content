@@ -1,0 +1,81 @@
+{
+  "_id": "1gTnFmfLUQnCo3TK",
+  "img": "systems/pf2e/icons/spells/dread-ambience.webp",
+  "name": "Spell Effect: Dread Ambience (Success)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Every creature in the area takes a -1 status penalty to saving throws against fear effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "fear"
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": -1
+      }
+    ],
+    "slug": "spell-effect-dread-ambience-success",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.1gTnFmfLUQnCo3TK"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 2500000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.1gTnFmfLUQnCo3TK",
+    "duplicateSource": null
+  },
+  "_key": "!items!1gTnFmfLUQnCo3TK"
+}

@@ -1,0 +1,95 @@
+{
+  "_id": "9BUk7zy1aE092XCS",
+  "img": "systems/pf2e/icons/features/classes/lightning-reflexes.webp",
+  "name": "Kinetic Quickness",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your body flows with the elegance of a flame a wave, a breeze. Your proficiency rank for Reflex saves increases to master. When you roll a success on a Reflex save, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.saves.reflex.rank",
+        "value": 3
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "selector": "reflex",
+        "type": "save"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "success"
+        ],
+        "selector": "reflex",
+        "text": "PF2E.SpecificRule.SaveSuccessToCriticalSuccess.Reflex",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "kinetic-quickness",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "kineticist"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 11
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.9BUk7zy1aE092XCS"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.9BUk7zy1aE092XCS",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9BUk7zy1aE092XCS"
+}

@@ -1,0 +1,92 @@
+{
+  "_id": "VFereWC1agrwgzPL",
+  "img": "systems/pf2e/icons/spells/inspire-heroics.webp",
+  "name": "Spell Effect: Inspire Heroics (Courage, +3)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by critically succeeding on <em>@UUID[Compendium.pf2e.spells-srd.Item.kF0rs9mCPvJGfAZE]{Inspire Heroics}</em> to enhance <em>@UUID[Compendium.pf2e.spells-srd.Item.IAjvwqgiDr3qGYxY]{Inspire Courage}</em>.</p>\n<p>You are inspired by words or tunes of encouragement. You gain a +3 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Inspire Courage",
+        "selector": [
+          "attack",
+          "damage"
+        ],
+        "type": "status",
+        "value": 3
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Inspire Courage (vs fear)",
+        "predicate": [
+          "fear"
+        ],
+        "selector": "will",
+        "type": "status",
+        "value": 3
+      }
+    ],
+    "slug": "spell-effect-inspire-heroics-courage-3",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.VFereWC1agrwgzPL"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 22600000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.VFereWC1agrwgzPL",
+    "duplicateSource": null
+  },
+  "_key": "!items!VFereWC1agrwgzPL"
+}

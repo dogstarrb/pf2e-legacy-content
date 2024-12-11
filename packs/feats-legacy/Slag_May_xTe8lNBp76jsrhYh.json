@@ -1,0 +1,101 @@
+{
+  "_id": "xTe8lNBp76jsrhYh",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Slag May",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your mother was an annis hag, known for physical prowess, and you have one violet or steel-gray eye. You have thick, sturdy claws made of cold iron that grow naturally from your body. You gain a claw unarmed attack that deals @Damage[1d6[slashing]] damage. Your claws are in the brawling group, have the unarmed and grapple traits, and are cold iron.</p>"
+    },
+    "rules": [
+      {
+        "baseType": "claw",
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "slashing",
+            "dice": 1,
+            "die": "d6"
+          }
+        },
+        "group": "brawling",
+        "img": "icons/commodities/claws/claw-bear-brown-grey.webp",
+        "key": "Strike",
+        "label": "PF2E.Weapon.Base.claw",
+        "slug": "slag-may-claw",
+        "traits": [
+          "grapple"
+        ]
+      },
+      {
+        "definition": [
+          "item:slug:slag-may-claw"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "materials",
+        "value": "cold-iron"
+      }
+    ],
+    "slug": "slag-may",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "changeling",
+        "lineage"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": true,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.xTe8lNBp76jsrhYh"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.xTe8lNBp76jsrhYh",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xTe8lNBp76jsrhYh"
+}

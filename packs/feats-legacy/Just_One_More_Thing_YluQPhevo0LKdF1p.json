@@ -1,0 +1,91 @@
+{
+  "_id": "YluQPhevo0LKdF1p",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Just One More Thing",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> Your most recent action was to Feint, Request, or Demoralize, and you failed but didn't critically fail.</p>\n<hr />\n<p>After your attempt to influence someone goes poorly, you add another bit of information or ask a pointed question, possibly salvaging your previous attempt.</p>\n<p>Reroll the failed check and use the new result. If the target of the failed check is the subject of a lead you're pursuing, double your bonus from @UUID[Compendium.pf2e.actionspf2e.Item.xTK2zsWFyxSJvYbX]{Pursue a Lead} on the rerolled check. That creature is temporarily immune to Just One More Thing for 1 day.</p>\n<p>You can also use this action if you failed, but didn't critically fail, at a check to Lie, Gather Information, Make an Impression, or Coerce. In this case, rather than spending 1 action, adding Just One More Thing takes you half the amount of time you initially spent on the check, to a minimum of 1 more round.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "just-one-more-thing",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "just-one-more-thing"
+        ],
+        "selector": [
+          "perception",
+          "skill-check"
+        ],
+        "type": "circumstance",
+        "value": 4
+      }
+    ],
+    "slug": "just-one-more-thing",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fortune",
+        "investigator"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.YluQPhevo0LKdF1p"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.YluQPhevo0LKdF1p",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!YluQPhevo0LKdF1p"
+}

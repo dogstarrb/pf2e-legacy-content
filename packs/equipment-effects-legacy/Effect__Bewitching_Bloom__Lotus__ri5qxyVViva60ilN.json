@@ -1,0 +1,89 @@
+{
+  "_id": "ri5qxyVViva60ilN",
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "name": "Effect: Bewitching Bloom (Lotus)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A glow envelops your ally as a sense of enlightened peace ripples out from within. The ally gains a +2 status bonus to Will saves against mental effects for 1 minute. This bonus increases to +3 against emotion effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "mental"
+        ],
+        "selector": "will",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "emotion"
+        ],
+        "selector": "will",
+        "type": "status",
+        "value": 3
+      }
+    ],
+    "slug": "effect-bewitching-bloom-lotus",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.ri5qxyVViva60ilN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.ri5qxyVViva60ilN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ri5qxyVViva60ilN"
+}

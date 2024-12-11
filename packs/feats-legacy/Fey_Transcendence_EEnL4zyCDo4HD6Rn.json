@@ -1,0 +1,89 @@
+{
+  "_id": "EEnL4zyCDo4HD6Rn",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Fey Transcendence",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You become a powerful fey creature, gaining strengths tied to the First World but also some of the weakness against which all fey must contend. You gain a +2 status bonus to saves against illusion, emotion, and enchantment effects, and you can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on and to make very simple @UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{Requests} of animals and plants. You regain twice the number of Hit Points when resting in a natural wooded area, such as a forest or jungle. You have weakness to cold iron equal to half your level.</p>\n<hr />\n<p><strong>Special</strong> This feat gains the trait appropriate for your ancestry (human for human, goblin for goblin, etc.).</p>"
+    },
+    "rules": [
+      {
+        "key": "Weakness",
+        "type": "cold-iron",
+        "value": "max(1,floor(@actor.level/2))"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "illusion",
+          "emotion"
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "fey-transcendence",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Fey Influence"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.EEnL4zyCDo4HD6Rn"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.EEnL4zyCDo4HD6Rn",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!EEnL4zyCDo4HD6Rn"
+}

@@ -1,0 +1,85 @@
+{
+  "_id": "b8JCq6n1STl3Wkwy",
+  "img": "systems/pf2e/icons/spells/illusory-shroud.webp",
+  "name": "Spell Effect: Illusory Shroud",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.kLyyJayja75K9rXX]{Illusory Shroud}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "action:hide",
+              "action:sneak"
+            ]
+          }
+        ],
+        "selector": "stealth",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-illusory-shroud",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Firebrands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.b8JCq6n1STl3Wkwy"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 25800000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.b8JCq6n1STl3Wkwy",
+    "duplicateSource": null
+  },
+  "_key": "!items!b8JCq6n1STl3Wkwy"
+}

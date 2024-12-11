@@ -1,0 +1,133 @@
+{
+  "_id": "Wkh5rQx3IqInEKdT",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/robe-of-the-archmagi.webp",
+  "name": "Robe of the Archmagi",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Embroidered with fine silver thread in ornate arcane patterns, these robes come in one of three colors depending on their attuned alignment. Good robes are gold, neutral robes are light blue, and evil robes are red. An evil or good robe gains the appropriate trait. The robes benefit only characters who can cast arcane spells and whose alignment on the good-evil axis matches that of the robe. If your alignment does not match that of the robe, or you are not an arcane spellcaster, you are instead @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} while wearing a robe of the archmagi. This condition can't be removed in any way until you remove the robe.</p>\n<p>The robes are <em>+2 greater resilient explorer's clothing</em>, and they grant a +1 circumstance bonus to saving throws against arcane spells and resistance 5 to damage from arcane spells.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You attempt a saving throw against an arcane spell, but you haven't rolled yet</p>\n<hr />\n<p><strong>Effect</strong> You automatically succeed at your save against the triggering arcane spell.</p>\n<hr />\n<p><strong>Craft Requirements</strong> You are an arcane spellcaster.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Robe of the Archmagi (against arcane spells)",
+        "predicate": [
+          "arcane"
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "robe-of-the-archmagi",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "comfort"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 15
+    },
+    "quantity": 1,
+    "baseItem": "explorers-clothing",
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 6500
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "unarmored",
+    "group": null,
+    "acBonus": 0,
+    "strength": null,
+    "dexCap": 5,
+    "checkPenalty": 0,
+    "speedPenalty": 0,
+    "runes": {
+      "potency": 2,
+      "resilient": 2,
+      "property": []
+    },
+    "subitems": [],
+    "specific": {
+      "material": {
+        "grade": null,
+        "type": null
+      },
+      "runes": {
+        "potency": 2,
+        "resilient": 2,
+        "property": []
+      }
+    }
+  },
+  "type": "armor",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.Wkh5rQx3IqInEKdT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.Wkh5rQx3IqInEKdT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Wkh5rQx3IqInEKdT"
+}

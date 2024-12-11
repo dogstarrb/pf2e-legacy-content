@@ -1,0 +1,110 @@
+{
+  "_id": "0ykBs92jTd4dmNqb",
+  "img": "systems/pf2e/icons/default-icons/equipment.svg",
+  "name": "Brazier of Harmony",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The <em>brazier of harmony</em> is a circular, orb-shaped censer etched with celebrating creatures shaking hands and dancing. The brazier contains a pleasant-smelling potpourri of dried flowers and incenses, designed to create a calm atmosphere that encourages meditation, thoughtfulness, and camaraderie. While holding the lit censer, you gain a +1 item bonus to Diplomacy checks, whether the censer is activated or not.</p>\n<hr />\n<p><strong>Activate—Light Incense</strong> <span class=\"action-glyph\">2</span> (aura, manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Cost</strong> incense worth at least 1 sp</p>\n<p><strong>Effect</strong> When the incense is lit, pleasant, floral smoke surrounds the censer in a @Template[type:emanation|distance:20], creating a space of peace and harmony. Each creature that breathes the smoke is affected by 3rd-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{Calm}</em> and is then temporarily immune for 24 hours. The spell's effects end when the incense burns out.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "diplomacy",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "brazier-of-harmony",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "censer",
+        "fire",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 5
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 150
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.0ykBs92jTd4dmNqb"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.0ykBs92jTd4dmNqb",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0ykBs92jTd4dmNqb"
+}

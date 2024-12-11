@@ -1,0 +1,75 @@
+{
+  "_id": "VqgrYMaAwnNjT9Mn",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Enchanting Lily",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You smell ever so sweet—a delicate, floral scent like the intoxicating fragrance of lilies and the soft scent of lilacs. You're trained in Diplomacy (or another skill if you were already trained in Diplomacy). You also gain a +1 circumstance bonus to checks to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} if the target can smell your fragrance.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.diplomacy.rank",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:make-an-impression",
+          "enchanting-lily"
+        ],
+        "selector": "diplomacy",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "enchanting-lily",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Ghoran",
+      "slug": "ghoran",
+      "uuid": "Compendium.pf2e.ancestries.Item.tSurOqRcfumadTfr"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.VqgrYMaAwnNjT9Mn"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.VqgrYMaAwnNjT9Mn",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VqgrYMaAwnNjT9Mn"
+}

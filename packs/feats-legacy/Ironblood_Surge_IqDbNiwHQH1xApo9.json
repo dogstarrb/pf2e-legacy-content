@@ -1,0 +1,105 @@
+{
+  "_id": "IqDbNiwHQH1xApo9",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Ironblood Surge",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.Item.x9cYkB8DrUBBwqJd]{Ironblood Stance}</p>\n<hr />\n<p>You steel yourself, preparing to resist oncoming attacks and using your muscles to absorb the impact.</p>\n<p>You gain the benefits of your iron sweep's parry trait (a +1 circumstance bonus to AC until the start of your next turn) and your resistance from Ironblood Stance increases to your Strength modifier (if it's higher) for the same duration.</p>"
+    },
+    "rules": [
+      {
+        "disabledIf": [
+          {
+            "not": "self:effect:ironblood-stance"
+          }
+        ],
+        "disabledValue": false,
+        "domain": "all",
+        "key": "RollOption",
+        "option": "ironblood-surge",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "ironblood-surge"
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "ironblood-surge"
+        ],
+        "type": "all-damage",
+        "value": "@actor.abilities.str.mod"
+      }
+    ],
+    "slug": "ironblood-surge",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Ironblood Stance"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.IqDbNiwHQH1xApo9"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.IqDbNiwHQH1xApo9",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!IqDbNiwHQH1xApo9"
+}

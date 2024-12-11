@@ -1,0 +1,108 @@
+{
+  "_id": "JhLncIB10GSQowWL",
+  "img": "icons/skills/melee/strike-polearm-light-orange.webp",
+  "name": "Masterful Hunter (Flurry)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<h2 class=\"title\">Masterful Hunter Upgrade<span style=\"float:right\">Level 17</span></h2>\n<p>You can blend your weapon mastery with skillful targeting to make a series of precise attacks.</p>\n<p>If you have master proficiency with your weapon, your multiple attack penalty for attacks against your hunted prey is -2 (-1 with an agile weapon) on your second attack of the turn, and -4 (-2 with an agile weapon) on your third and subsequent attacks of the turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "MultipleAttackPenalty",
+        "predicate": [
+          "hunted-prey",
+          {
+            "or": [
+              "proficiency:master",
+              "proficiency:legendary"
+            ]
+          },
+          {
+            "not": "agile"
+          }
+        ],
+        "selector": "attack",
+        "value": -2
+      },
+      {
+        "key": "MultipleAttackPenalty",
+        "predicate": [
+          "agile",
+          "hunted-prey",
+          {
+            "or": [
+              "proficiency:master",
+              "proficiency:legendary"
+            ]
+          }
+        ],
+        "selector": "attack",
+        "value": -1
+      }
+    ],
+    "slug": "masterful-hunter-flurry",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "ranger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Hunter's Edge: Flurry"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.JhLncIB10GSQowWL"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.JhLncIB10GSQowWL",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!JhLncIB10GSQowWL"
+}

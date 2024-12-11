@@ -1,0 +1,75 @@
+{
+  "_id": "VTtXwBxrfRUXSL38",
+  "img": "systems/pf2e/icons/features/ancestry/death-warden-dwarf.webp",
+  "name": "Death Warden Dwarf",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your ancestors have been tomb guardians for generations, and the power they cultivated to ward off necromancy has passed on to you. If you roll a success on a saving throw against a necromancy effect, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [],
+        "selector": "saving-throw",
+        "text": "PF2E.SpecificRule.Dwarf.DeathWardenDwarf.Note",
+        "title": "{item|name}"
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [],
+        "selector": "saving-throw",
+        "type": "save"
+      }
+    ],
+    "slug": "death-warden-dwarf",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Dwarf",
+      "slug": "dwarf",
+      "uuid": "Compendium.pf2e.ancestries.Item.BYj5ZvlXZdpaEgA6"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.VTtXwBxrfRUXSL38"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.VTtXwBxrfRUXSL38",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VTtXwBxrfRUXSL38"
+}

@@ -1,0 +1,88 @@
+{
+  "_id": "zL6zUrt44tZYyuh4",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Between The Scales",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Underestimating you is a grave mistake, but it's one others keep making. You've learned to take advantage of slips in your foes' defenses.</p>\n<p>When you Strike an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creature using a melee weapon or unarmed attack that has the agile and finesse traits, it gains the backstabber trait.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:trait:agile",
+          "item:trait:finesse",
+          {
+            "not": "item:ranged"
+          }
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          "target:condition:off-guard"
+        ],
+        "property": "weapon-traits",
+        "value": "backstabber"
+      }
+    ],
+    "slug": "between-the-scales",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "kobold"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.zL6zUrt44tZYyuh4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.zL6zUrt44tZYyuh4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zL6zUrt44tZYyuh4"
+}

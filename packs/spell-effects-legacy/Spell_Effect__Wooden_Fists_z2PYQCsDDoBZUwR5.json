@@ -1,0 +1,122 @@
+{
+  "_id": "z2PYQCsDDoBZUwR5",
+  "img": "icons/commodities/wood/log-cut-cherry-brown.webp",
+  "name": "Spell Effect: Wooden Fists",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.IHjiWCouSacC5b3g]{Wooden Fists}</em></p>\n<p>Your fists deal more bludgeoning damage, lose the nonlethal trait, and have reach.</p>"
+    },
+    "rules": [
+      {
+        "fist": true,
+        "key": "Strike"
+      },
+      {
+        "key": "DamageDice",
+        "override": {
+          "dieSize": "d6"
+        },
+        "selector": "{item|_id}-damage"
+      },
+      {
+        "definition": [
+          "item:base:fist"
+        ],
+        "key": "AdjustStrike",
+        "mode": "remove",
+        "property": "weapon-traits",
+        "value": "nonlethal"
+      },
+      {
+        "definition": [
+          "item:base:fist"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "reach"
+      },
+      {
+        "definition": [
+          "item:base:fist"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          {
+            "gte": [
+              "{item|level}",
+              3
+            ]
+          }
+        ],
+        "property": "weapon-traits",
+        "value": "magical"
+      },
+      {
+        "key": "Striking",
+        "selector": "{item|_id}-damage",
+        "value": "ternary(gte(@item.level,9),3,ternary(gte(@item.level,7),2,ternary(gte(@item.level,3),1,0)))"
+      }
+    ],
+    "slug": "spell-effect-wooden-fists",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.z2PYQCsDDoBZUwR5"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 43500000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.z2PYQCsDDoBZUwR5",
+    "duplicateSource": null
+  },
+  "_key": "!items!z2PYQCsDDoBZUwR5"
+}

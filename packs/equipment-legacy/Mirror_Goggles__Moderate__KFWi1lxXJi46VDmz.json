@@ -1,0 +1,116 @@
+{
+  "_id": "KFWi1lxXJi46VDmz",
+  "img": "icons/equipment/head/goggles-leather-tan.webp",
+  "name": "Mirror Goggles (Moderate)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>These goggles feature highly reflective lenses. While wearing the goggles, you gain a +2 item bonus to visual Perception checks and to saving throws against visual effects.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">R</span> Interact</p>\n<p><strong>Trigger</strong> A creature within 60 feet targets you with a visual effect</p>\n<hr />\n<p><strong>Effect</strong> You turn your head to reflect aspects of the triggering effect back at its creator. The creature must attempt a @Check[type:fortitude|dc:30] save as it becomes disoriented by this reflection. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). The creature is temporarily immune for 1 hour.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "visual"
+        ],
+        "selector": [
+          "perception",
+          "saving-throw"
+        ],
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "mirror-goggles-moderate",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1200
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worneyepiece"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.KFWi1lxXJi46VDmz"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.KFWi1lxXJi46VDmz",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!KFWi1lxXJi46VDmz"
+}

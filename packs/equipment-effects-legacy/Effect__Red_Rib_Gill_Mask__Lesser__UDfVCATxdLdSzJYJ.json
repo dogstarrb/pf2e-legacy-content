@@ -1,0 +1,92 @@
+{
+  "_id": "UDfVCATxdLdSzJYJ",
+  "img": "systems/pf2e/icons/equipment/worn-items/apex-items/headband-of-inspired-wisdom.webp",
+  "name": "Effect: Red-Rib Gill Mask (Lesser)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>After Activating the mask, you also gain a +1 item bonus to Fortitude saves against inhaled effects; this bonus is increased to +2 against the deadly volcanic gas known around Terwa Lake as Dead Man's Breath, and possibly against other similar volcanic gases at the GM's discretion.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Red-Rib Gill (Inhaled Effects)",
+        "predicate": [
+          "inhaled"
+        ],
+        "selector": "fortitude",
+        "type": "item",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Red-Rib Gill (Dead Man's Breath)",
+        "predicate": [
+          "dead-mans-breath"
+        ],
+        "selector": "fortitude",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "effect-red-rib-gill-mask-lesser",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #171: Hurricane's Howl",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.UDfVCATxdLdSzJYJ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.UDfVCATxdLdSzJYJ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UDfVCATxdLdSzJYJ"
+}

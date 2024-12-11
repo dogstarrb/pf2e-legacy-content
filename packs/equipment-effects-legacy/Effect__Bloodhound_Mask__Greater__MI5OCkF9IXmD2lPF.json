@@ -1,0 +1,88 @@
+{
+  "_id": "MI5OCkF9IXmD2lPF",
+  "img": "icons/equipment/head/mask-carved-wood-white.webp",
+  "name": "Effect: Bloodhound Mask (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.2x8F5s3PyKzYsRrZ]{Bloodhound Mask (Greater)}</p>"
+    },
+    "rules": [
+      {
+        "acuity": "imprecise",
+        "key": "Sense",
+        "range": 60,
+        "selector": "scent"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:track",
+          "scent"
+        ],
+        "selector": "survival",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "effect-bloodhound-mask-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.MI5OCkF9IXmD2lPF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.MI5OCkF9IXmD2lPF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!MI5OCkF9IXmD2lPF"
+}

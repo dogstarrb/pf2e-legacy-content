@@ -1,0 +1,195 @@
+{
+  "_id": "tPwYYwxNqdGQp2nW",
+  "img": "systems/pf2e/icons/equipment/artifacts/axe-of-the-dwarven-lords.webp",
+  "name": "Axe of the Dwarven Lords",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The blade of this +4 major striking @UUID[Compendium.pf2e.equipment-srd.Item.hg3IogR8ue2IWwgS]{Keen} @UUID[Compendium.pf2e.equipment-srd.Item.qlunQzfnzPQpMG6U]{Returning} @UUID[Compendium.pf2e.equipment-srd.Item.KnZL0xPWDzQx9vWQ]{Speed} dwarven waraxe is carved with an intricate design depicting countless generations of great dwarven warriors and leaders.</p>\n<p>The axe has the thrown 30 feet weapon trait, in addition to the normal weapon traits for a dwarven waraxe. Strikes with the axe deal an additional 1d6 damage to orcs.</p>\n<p>While the axe is in your possession, you gain a +4 item bonus when Crafting armor, jewelry, metalworking, stonemasonry, snares, traps, and weapons.</p>\n<p>If you are a dwarf, you gain greater darkvision while holding the axe. If you are not a dwarf, you are @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 4} while holding the axe, and if you are an orc, you are also drained 4 and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} while holding it.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">T</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per week</p>\n<hr />\n<p><strong>Effect</strong> The axe casts a 10th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.lpT6LotUaQPfinjj]{Summon Elemental}</em> spell to conjure an elite elemental avalanche. The spell is automatically sustained, requiring no action on your part but still allowing you to command the elemental on each of your turns. You can Dismiss the Spell.</p>\n<hr />\n<p><strong>Destruction</strong> If an orc beheads a dwarven king with the <em>Axe of the Dwarven Lords</em>, the axe rusts away to nothing.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:craft",
+          {
+            "or": [
+              "armor",
+              "jewelry",
+              "metalworking",
+              "stonemasonry",
+              "snare",
+              "trap",
+              "weapon"
+            ]
+          }
+        ],
+        "selector": "crafting",
+        "type": "item",
+        "value": 4
+      },
+      {
+        "diceNumber": 1,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "predicate": [
+          "target:trait:orc"
+        ],
+        "selector": "strike-damage"
+      },
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "label": "Target is an orc",
+        "option": "orc",
+        "toggleable": true
+      }
+    ],
+    "slug": "axe-of-the-dwarven-lords",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "dwarf",
+        "magical",
+        "sweep",
+        "thrown-30",
+        "two-hand-d12"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder Gamemastery Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 26
+    },
+    "quantity": 1,
+    "baseItem": "dwarven-war-axe",
+    "bulk": {
+      "value": 3
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "category": "advanced",
+    "group": "axe",
+    "bonus": {
+      "value": 4
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d8",
+      "damageType": "slashing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": null,
+    "reload": {
+      "value": "-"
+    },
+    "runes": {
+      "potency": 4,
+      "striking": 3,
+      "property": [
+        "keen",
+        "returning",
+        "speed"
+      ]
+    },
+    "specific": {
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "runes": {
+        "potency": 4,
+        "striking": 3,
+        "property": [
+          "keen",
+          "returning",
+          "speed"
+        ]
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.tPwYYwxNqdGQp2nW"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.tPwYYwxNqdGQp2nW",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!tPwYYwxNqdGQp2nW"
+}

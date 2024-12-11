@@ -1,0 +1,77 @@
+{
+  "_id": "DyX4E7KDkzRnDxzc",
+  "img": "systems/pf2e/icons/spells/endure-elements.webp",
+  "name": "Effect: Perfect Resistance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.QN55ToyJIjxgPmhs]{Perfect Resistance}</p>\n<p>After using a Student of Perfection ki spell, the resistance increases to be equal to your level for 1 round.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "{actor|flags.pf2e.houseOfPerfection.element}",
+        "value": "@actor.level"
+      }
+    ],
+    "slug": "effect-perfect-resistance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.DyX4E7KDkzRnDxzc"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.DyX4E7KDkzRnDxzc",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!DyX4E7KDkzRnDxzc"
+}

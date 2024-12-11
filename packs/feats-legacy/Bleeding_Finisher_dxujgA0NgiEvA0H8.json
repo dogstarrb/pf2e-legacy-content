@@ -1,0 +1,93 @@
+{
+  "_id": "dxujgA0NgiEvA0H8",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Bleeding Finisher",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your blow inflicts profuse bleeding. Make a slashing or piercing Strike with a weapon or unarmed attack that allows you to add your precise strike damage.</p>\n<p>If you hit, the target also takes @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} equal to your precise strike finisher damage.</p>"
+    },
+    "rules": [
+      {
+        "disabledIf": [
+          {
+            "not": "self:effect:panache"
+          }
+        ],
+        "disabledValue": false,
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Swashbuckler.Finisher.Label",
+        "mergeable": true,
+        "option": "finisher",
+        "suboptions": [
+          {
+            "label": "PF2E.SpecificRule.Swashbuckler.Finisher.Bleeding",
+            "value": "bleeding"
+          }
+        ],
+        "toggleable": true
+      }
+    ],
+    "slug": "bleeding-finisher",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "finisher",
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.dxujgA0NgiEvA0H8"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.dxujgA0NgiEvA0H8",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!dxujgA0NgiEvA0H8"
+}

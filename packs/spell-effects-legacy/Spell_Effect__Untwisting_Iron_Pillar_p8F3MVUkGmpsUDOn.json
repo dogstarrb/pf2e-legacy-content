@@ -1,0 +1,84 @@
+{
+  "_id": "p8F3MVUkGmpsUDOn",
+  "img": "systems/pf2e/icons/spells/earthquake.webp",
+  "name": "Spell Effect: Untwisting Iron Pillar",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.9DtuMEyHhtHFRp5a]{Untwisting Iron Pillar}</em></p>\n<p>You gain 50 temporary Hit Points that last for the duration or until you lose them, as well as resistance 5 to all physical damage (except adamantine).</p>"
+    },
+    "rules": [
+      {
+        "key": "TempHP",
+        "value": 50
+      },
+      {
+        "exceptions": [
+          "adamantine"
+        ],
+        "key": "Resistance",
+        "type": "physical",
+        "value": 5
+      }
+    ],
+    "slug": "spell-effect-untwisting-iron-pillar",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "duration": {
+      "value": 5,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.p8F3MVUkGmpsUDOn"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 36800000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.p8F3MVUkGmpsUDOn",
+    "duplicateSource": null
+  },
+  "_key": "!items!p8F3MVUkGmpsUDOn"
+}

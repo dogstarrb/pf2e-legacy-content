@@ -1,0 +1,108 @@
+{
+  "_id": "XlQBVvlDWGrGlApl",
+  "img": "systems/pf2e/icons/spells/establish-ward.webp",
+  "name": "Establish Ward",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You bind a part of your essence to your surroundings, creating a warded area that grants you power within it, but drains you outside of it. While within the area, you can make nature's wrath Strikes by commanding plants, wind, rocks, and other natural features to attack enemies. These are melee Strikes that use your spell attack modifier, can target any creature within the ward, and deal bludgeoning, piercing, or slashing damage equal to [[/r 2d8]] plus your spellcasting ability modifier.</p>\n<p>Upon @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Casting the Spell}, you can immediately make a single nature's wrath Strike. You are @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} while inside the ward, and can use the additional action only to make nature's wrath Strikes. You are @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} while outside the area.</p>\n<hr />\n<p>Heightened (+2) The area increases by 5 feet, and the Strikes deal an additional [[/r 1d8]] damage.</p>"
+    },
+    "rules": [],
+    "slug": "establish-ward",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "concentrate",
+        "focus",
+        "manipulate",
+        "sorcerer"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": ""
+    },
+    "area": {
+      "type": "burst",
+      "value": 30
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": true,
+        "formula": "2d8",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d8"
+      },
+      "interval": 2,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.XlQBVvlDWGrGlApl"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.XlQBVvlDWGrGlApl",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XlQBVvlDWGrGlApl"
+}

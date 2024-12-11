@@ -1,0 +1,203 @@
+{
+  "_id": "PEszRpnrcB7VPS9G",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Gruesome Strike",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> Your Strikes currently deal extra damage from your champion's reaction.</p>\n<hr />\n<p>Make a Strike against the creature that triggered your champion's reaction. If you hit, the target takes double the extra damage from your reaction and must succeed at a Fortitude save against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p>Regardless of the result, the creature is temporarily immune to your Gruesome Strike for 24 hours.</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "option": "gruesome-strike",
+        "toggleable": true
+      },
+      {
+        "damageType": "void",
+        "key": "FlatModifier",
+        "predicate": [
+          "gruesome-strike",
+          {
+            "or": [
+              "iron-command:negative",
+              "selfish-shield:negative"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "gruesome-ic-neg",
+        "value": {
+          "brackets": [
+            {
+              "end": 8,
+              "value": 1
+            },
+            {
+              "end": 15,
+              "start": 9,
+              "value": 2
+            },
+            {
+              "start": 16,
+              "value": 3
+            }
+          ]
+        }
+      },
+      {
+        "damageType": "spirit",
+        "key": "FlatModifier",
+        "predicate": [
+          "gruesome-strike",
+          {
+            "or": [
+              "iron-command:evil",
+              "selfish-shield:evil"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "gruesome-ic-evil",
+        "value": {
+          "brackets": [
+            {
+              "end": 8,
+              "value": 1
+            },
+            {
+              "end": 15,
+              "start": 9,
+              "value": 2
+            },
+            {
+              "start": 16,
+              "value": 3
+            }
+          ]
+        }
+      },
+      {
+        "damageType": "void",
+        "key": "FlatModifier",
+        "predicate": [
+          "destructive-vengeance:negative",
+          "gruesome-strike"
+        ],
+        "selector": "strike-damage",
+        "slug": "gruesome-ds-neg",
+        "value": {
+          "brackets": [
+            {
+              "end": 8,
+              "value": 2
+            },
+            {
+              "end": 15,
+              "start": 9,
+              "value": 4
+            },
+            {
+              "start": 16,
+              "value": 6
+            }
+          ]
+        }
+      },
+      {
+        "damageType": "spirit",
+        "key": "FlatModifier",
+        "predicate": [
+          "destructive-vengeance:evil",
+          "gruesome-strike"
+        ],
+        "selector": "strike-damage",
+        "slug": "gruesome-ds-evil",
+        "value": {
+          "brackets": [
+            {
+              "end": 8,
+              "value": 2
+            },
+            {
+              "end": 15,
+              "start": 9,
+              "value": 4
+            },
+            {
+              "start": 16,
+              "value": 6
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "gruesome-strike",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "champion"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "tenets of evil"
+        },
+        {
+          "value": "champion's reaction that grants extra damage with your Strikes"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.PEszRpnrcB7VPS9G"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.PEszRpnrcB7VPS9G",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PEszRpnrcB7VPS9G"
+}

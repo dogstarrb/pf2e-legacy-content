@@ -1,0 +1,113 @@
+{
+  "_id": "n6ZmkKhxd0iuS1RG",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/ring-of-lies.webp",
+  "name": "Bangles of Crowns",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This pair of silver bangles is engraved with images of crowns. While wearing the bangles, you are filled with an overwhelming sense of assertiveness and a more commanding presence. You gain a +3 item bonus to Intimidation checks. When you invest the bangles, you either increase your Charisma score by 2 or increase it to 18, whichever is higher.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Effect</strong> You cast a 3rd-level <em>@UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}</em> spell (@Check[type:will|dc:38|traits:emotion,fear,mental,spell]).</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> An enemy within 60 feet becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}</p>\n<p><strong>Effect</strong> You become emboldened by your enemy's fear. You gain a +1 circumstance bonus to checks against the triggering creature for 1 round. You also gain 15 temporary Hit Points. You lose any remaining temporary Hit Points after 1 minute.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "intimidation",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "bangles-of-crowns",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "apex",
+        "invested",
+        "magical"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder #192: Worst of All Possible Worlds",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 15000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": [],
+    "apex": {
+      "attribute": "cha"
+    }
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.n6ZmkKhxd0iuS1RG"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.n6ZmkKhxd0iuS1RG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!n6ZmkKhxd0iuS1RG"
+}

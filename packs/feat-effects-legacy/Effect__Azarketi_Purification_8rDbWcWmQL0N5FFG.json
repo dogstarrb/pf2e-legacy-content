@@ -1,0 +1,82 @@
+{
+  "_id": "8rDbWcWmQL0N5FFG",
+  "img": "icons/magic/nature/leaf-glow-maple-teal.webp",
+  "name": "Effect: Azarketi Purification",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.u94fcPT5Oukqzql5]{Azarketi Purification}</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Azarketi Purification (vs. ongoing saves against poisons already in your body)",
+        "predicate": [
+          "poison"
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "effect-azarketi-purification",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.8rDbWcWmQL0N5FFG"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.8rDbWcWmQL0N5FFG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8rDbWcWmQL0N5FFG"
+}

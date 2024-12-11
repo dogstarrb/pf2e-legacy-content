@@ -1,0 +1,143 @@
+{
+  "_id": "IZupJre7o5We2VrK",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Vicious Fangs",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You aim for your victim's prominent arteries. Your fangs Strike deals an additional 1d6 persistent bleed damage on a critical hit. At 14th level, the persistent bleed damage increases to 2d6, and at 20th level, the persistent bleed damage increases to 3d6.</p>"
+    },
+    "rules": [
+      {
+        "critical": true,
+        "damageType": "bleed",
+        "diceNumber": "ternary(gte(@actor.level,20),3,ternary(gte(@actor.level,14),2,1))",
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "selector": "fangs-damage"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          {
+            "lte": [
+              "self:level",
+              13
+            ]
+          }
+        ],
+        "selector": "fangs-damage",
+        "text": "PF2E.SpecificRule.Vampire.ViciousFangs.Note.Base",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          {
+            "gte": [
+              "self:level",
+              14
+            ]
+          },
+          {
+            "not": {
+              "gte": [
+                "self:level",
+                20
+              ]
+            }
+          }
+        ],
+        "selector": "fangs-damage",
+        "text": "PF2E.SpecificRule.Vampire.ViciousFangs.Note.FourteenthLevel",
+        "title": "{item|name}"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          {
+            "gte": [
+              "self:level",
+              20
+            ]
+          }
+        ],
+        "selector": "fangs-damage",
+        "text": "PF2E.SpecificRule.Vampire.ViciousFangs.Note.TwentiethLevel",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "vicious-fangs",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Vampire Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.IZupJre7o5We2VrK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.IZupJre7o5We2VrK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!IZupJre7o5We2VrK"
+}

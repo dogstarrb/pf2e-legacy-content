@@ -1,0 +1,81 @@
+{
+  "_id": "MT5gxuuxBaN2RdYf",
+  "img": "systems/pf2e/icons/spells/unfathomable-song.webp",
+  "name": "Effect: Inspired Recitation",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>All allies within 60 feet gain a +1 status bonus to saving throws and 10 temporary Hit Points for 1 minute.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "TempHP",
+        "value": 10
+      }
+    ],
+    "slug": "effect-inspired-recitation",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Adventure: The Enmity Cycle",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.MT5gxuuxBaN2RdYf"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.MT5gxuuxBaN2RdYf",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!MT5gxuuxBaN2RdYf"
+}

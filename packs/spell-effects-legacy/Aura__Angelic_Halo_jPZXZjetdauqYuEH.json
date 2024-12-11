@@ -1,0 +1,85 @@
+{
+  "_id": "jPZXZjetdauqYuEH",
+  "img": "icons/magic/light/explosion-star-glow-blue.webp",
+  "name": "Aura: Angelic Halo",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.w3uGXDVEdbLFZVO0]{Angelic Halo}</em>.</p>\n<p>You gain an angelic halo with an aura that increases allies' healing from the <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em> spell. Allies in your halo's emanation who are healed by a heal spell gain a status bonus to Hit Points regained equal to double the heal spell's level.</p>"
+    },
+    "rules": [
+      {
+        "effects": [
+          {
+            "affects": "allies",
+            "events": [
+              "enter"
+            ],
+            "uuid": "Compendium.pf2e.spell-effects.Item.4xtce4xbwZ9wjwMW"
+          }
+        ],
+        "key": "Aura",
+        "radius": 15,
+        "slug": "angelic-halo"
+      }
+    ],
+    "slug": "aura-angelic-halo",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.jPZXZjetdauqYuEH"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 32000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.jPZXZjetdauqYuEH",
+    "duplicateSource": null
+  },
+  "_key": "!items!jPZXZjetdauqYuEH"
+}

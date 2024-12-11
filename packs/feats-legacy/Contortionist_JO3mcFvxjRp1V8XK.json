@@ -1,0 +1,89 @@
+{
+  "_id": "JO3mcFvxjRp1V8XK",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Contortionist",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can squeeze out of tight situations surprisingly quickly, gaining an advantage against foes that try to pin you down. You gain the @UUID[Compendium.pf2e.feats-srd.Item.3G8xUlgCjRmRJNfP]{Quick Squeeze} skill feat, and if you're a master in Acrobatics, you can @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze} at full Speed.</p>\n<p>Whenever you successfully @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} using Acrobatics, the creature you Escaped from is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the next attack you make against it before the end of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "action:escape"
+        ],
+        "selector": "acrobatics",
+        "text": "Whenever you successfully @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} using Acrobatics, the creature you Escaped from is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against the next attack you make against it before the end of your next turn.",
+        "title": "Success"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.3G8xUlgCjRmRJNfP"
+      }
+    ],
+    "slug": "contortionist",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Acrobat Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.JO3mcFvxjRp1V8XK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.JO3mcFvxjRp1V8XK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!JO3mcFvxjRp1V8XK"
+}

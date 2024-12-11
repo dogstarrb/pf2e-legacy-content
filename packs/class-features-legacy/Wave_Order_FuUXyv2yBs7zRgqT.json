@@ -1,0 +1,92 @@
+{
+  "_id": "FuUXyv2yBs7zRgqT",
+  "img": "icons/magic/water/wave-water-blue.webp",
+  "name": "Wave Order",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Water is the source of life, and you've learned to shape how it flows. You're trained in Medicine. You also gain the @UUID[Compendium.pf2e.feats-srd.Item.kS4wxSKrZxcOvSNK]{Shore Step} druid feat. You gain the <em>@UUID[Compendium.pf2e.spells-srd.Item.zTN6zuruDUKOea6h]{Rising Surf}</em> order spell. Polluting water or allowing those who pollute water sources to go unpunished is anathema to your order (this doesn't force you to take action against potential water pollution or to sacrifice yourself against an obviously superior foe).</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.medicine.rank",
+        "predicate": [
+          {
+            "not": "feat:order-explorer:wave-order"
+          }
+        ],
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "class:druid"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.kS4wxSKrZxcOvSNK"
+      }
+    ],
+    "slug": "wave-order",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "druid-order"
+      ],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.FuUXyv2yBs7zRgqT"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.FuUXyv2yBs7zRgqT",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!FuUXyv2yBs7zRgqT"
+}

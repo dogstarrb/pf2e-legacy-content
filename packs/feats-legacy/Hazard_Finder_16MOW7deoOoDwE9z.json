@@ -1,0 +1,117 @@
+{
+  "_id": "16MOW7deoOoDwE9z",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Hazard Finder",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have an intuitive ability to sense hazards. You gain a +1 circumstance bonus to Perception checks to find traps and hazards, to AC against their attacks, and to saves against their effects. You can find hazards that would normally require you to @UUID[Compendium.pf2e.actionspf2e.Item.TiNDYUGlMmxzxBYU]{Search} even if you aren't Searching.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Hazard Finder (to find traps and hazards)",
+        "predicate": [
+          {
+            "or": [
+              "trap",
+              "hazard"
+            ]
+          }
+        ],
+        "selector": "perception",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Hazard Finder (vs. attacks from traps and hazards)",
+        "predicate": [
+          {
+            "or": [
+              "trap",
+              "hazard"
+            ]
+          }
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Hazard Finder (saves vs. traps and hazards)",
+        "predicate": [
+          {
+            "or": [
+              "trap",
+              "hazard"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "hazard-finder",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "ranger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.16MOW7deoOoDwE9z"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.16MOW7deoOoDwE9z",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!16MOW7deoOoDwE9z"
+}

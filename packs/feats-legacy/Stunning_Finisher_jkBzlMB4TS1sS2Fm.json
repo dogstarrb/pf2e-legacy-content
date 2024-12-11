@@ -1,0 +1,102 @@
+{
+  "_id": "jkBzlMB4TS1sS2Fm",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Stunning Finisher",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You attempt a dizzying blow. Make a melee Strike. If you hit, your foe must attempt a @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.swashbuckler.dc)|traits:incapacitation] save against your class DC with the following results; the save has the incapacitation trait.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can't use reactions until its next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "finisher:lethal"
+        ],
+        "selector": "strike-damage",
+        "text": "{item|system.description.value}",
+        "title": "{item|name}"
+      },
+      {
+        "disabledIf": [
+          {
+            "not": "self:effect:panache"
+          }
+        ],
+        "disabledValue": false,
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Swashbuckler.Finisher.Label",
+        "mergeable": true,
+        "option": "finisher",
+        "suboptions": [
+          {
+            "label": "PF2E.SpecificRule.Swashbuckler.Finisher.Stunning",
+            "value": "stunning"
+          }
+        ],
+        "toggleable": true
+      }
+    ],
+    "slug": "stunning-finisher",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "finisher",
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.jkBzlMB4TS1sS2Fm"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.jkBzlMB4TS1sS2Fm",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!jkBzlMB4TS1sS2Fm"
+}

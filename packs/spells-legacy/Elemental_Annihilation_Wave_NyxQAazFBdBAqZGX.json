@@ -1,0 +1,165 @@
+{
+  "_id": "NyxQAazFBdBAqZGX",
+  "img": "systems/pf2e/icons/spells/elemental-annihilation-wave.webp",
+  "name": "Elemental Annihilation Wave",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You draw elemental power from your surroundings, and combining it with your own magical energy, unleash a wave of utter destruction and swirling colors that deals 1d6 fire damage and 3d6 bludgeoning damage with a basic Reflex save. You can replace the air trait with the metal and wood traits when you cast the spell. The number of actions you spend when Casting this Spell determines the area and other parameters.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(somatic, verbal)</strong> The spell is a 30-foot cone.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(material, somatic, verbal)</strong> The spell is a 30-foot cone. On a failed saving throw, creatures are pushed 5 feet away from you, and on a critical failure they are pushed 10 feet away and are knocked prone.</p>\n<p><strong>Two Rounds</strong> If you spend 3 actions Casting the Spell, you can avoid finishing the spell and spend another 3 actions on your next turn to empower the spell even further. If you do, the spell is as 3 actions, but the area is a @Template[type:cone|distance:60], and for 1 round, the elements linger in the cone, racing off into the distance and making approaching you difficult, with the effects of <em>@UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind}</em>.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 2d6, and the distance that enemies are pushed back if you spent 3 actions or 2 rounds increases by 5 feet on a failed save and 10 feet on a critical failure.</p>"
+    },
+    "rules": [],
+    "slug": "elemental-annihilation-wave",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "air",
+        "concentrate",
+        "earth",
+        "fire",
+        "manipulate",
+        "water"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 3
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": ""
+    },
+    "area": {
+      "type": "cone",
+      "value": 30
+    },
+    "time": {
+      "value": "2 to 2 rounds"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "1d6",
+        "type": "fire",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      },
+      "1": {
+        "applyMod": false,
+        "formula": "3d6",
+        "type": "bludgeoning",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d6",
+        "1": "1d6"
+      },
+      "interval": 2,
+      "type": "interval"
+    },
+    "overlays": {
+      "m962exgm87kqsyrm": {
+        "_id": "m962exgm87kqsyrm",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "time": {
+            "value": "3"
+          }
+        }
+      },
+      "px0sdwr4arjpycne": {
+        "_id": "px0sdwr4arjpycne",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "time": {
+            "value": "2"
+          }
+        }
+      },
+      "yamv3l9tw0na3g2h": {
+        "_id": "yamv3l9tw0na3g2h",
+        "name": "Elemental Annihilation Wave (2 Rounds)",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "area": {
+            "value": "60"
+          },
+          "time": {
+            "value": "2 rounds"
+          }
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.NyxQAazFBdBAqZGX"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.NyxQAazFBdBAqZGX",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!NyxQAazFBdBAqZGX"
+}

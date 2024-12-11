@@ -1,0 +1,100 @@
+{
+  "_id": "8YSwzLNlmBLoEyUj",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Cross the Final Horizon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You're in Sky and Heaven Stance.</p>\n<hr />\n<p>You Stride up to your Speed, and your ki enshrouds your limbs in terrifying stormy energy, increasing the reach of your @UUID[Compendium.pf2e.feats-srd.Item.UjEeHamC2C8JfgJz]{Sky and Heaven Stance} unarmed attacks by 5 feet. At the end of your movement, make up to three Strikes against a target you can reach, each at a –2 penalty. Each attack counts toward your multiple attack penalty, but the multiple attack penalty doesn't increase until after you've made all your attacks. Instead of the usual slashing or piercing damage, the damage for these Strikes is either electricity or sonic, as you choose with each Strike. If you successfully hit with all three Strikes, the target is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 3}.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "final-horizon"
+        ],
+        "selector": "attack",
+        "value": -2
+      },
+      {
+        "domain": "attack-roll",
+        "key": "RollOption",
+        "option": "final-horizon",
+        "toggleable": true
+      }
+    ],
+    "slug": "cross-the-final-horizon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "electricity",
+        "force",
+        "sonic"
+      ],
+      "rarity": "common",
+      "selected": {
+        "archetype": "Archetype",
+        "electricity": "Electricity",
+        "evocation": "Evocation",
+        "force": "Force",
+        "sonic": "Sonic"
+      }
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 3
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Sky and Heaven Stance"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.8YSwzLNlmBLoEyUj"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.8YSwzLNlmBLoEyUj",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8YSwzLNlmBLoEyUj"
+}

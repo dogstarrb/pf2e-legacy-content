@@ -1,0 +1,79 @@
+{
+  "_id": "PQHP7Oph3BQX1GhF",
+  "img": "systems/pf2e/icons/spells/longstrider.webp",
+  "name": "Spell Effect: Longstrider",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e-legacy-content.spells-legacy.Item.KcLVELhCUcKXxiKE]{Longstrider}</em></p>\n<p>You gain a +10-foot status bonus to your Speed.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "land-speed",
+        "type": "status",
+        "value": 10
+      }
+    ],
+    "slug": "spell-effect-tailwind",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.PQHP7Oph3BQX1GhF"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 18600000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.PQHP7Oph3BQX1GhF",
+    "duplicateSource": null
+  },
+  "_key": "!items!PQHP7Oph3BQX1GhF"
+}

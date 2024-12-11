@@ -1,0 +1,87 @@
+{
+  "_id": "NPATYCDg2cryH0Ya",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Conrasu Weapon Understanding",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have come to know conrasu weapons as you know yourself. Whenever you critically hit using a @UUID[Compendium.pf2e.equipment-srd.Item.e4NwsnPnpQKbDZ9F]{Composite Shortbow}, @UUID[Compendium.pf2e.equipment-srd.Item.vlnzTSsRmWeSkt9O]{Glaive}, @UUID[Compendium.pf2e.equipment-srd.Item.aXuJh4i8HqSu6NYV]{Longspear}, @UUID[Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi]{Longsword}, @UUID[Compendium.pf2e.equipment-srd.Item.hIgqLgH3YcLZBeoT]{Shortbow}, @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]{Spear}, or a conrasu weapon(@UUID[Compendium.pf2e.equipment-srd.Item.7WRzbBTOCsJx5f7L]{Buugeng}), you apply the weapon's critical specialization effect.</p>"
+    },
+    "rules": [
+      {
+        "key": "CriticalSpecialization",
+        "predicate": [
+          {
+            "or": [
+              "item:trait:conrasu",
+              "item:base:glaive",
+              "item:base:longspear",
+              "item:base:longsword",
+              "item:base:shortbow",
+              "item:base:spear"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": "conrasu-weapon-understanding",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "conrasu"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Mwangi Expanse",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.NPATYCDg2cryH0Ya"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.NPATYCDg2cryH0Ya",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!NPATYCDg2cryH0Ya"
+}

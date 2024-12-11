@@ -1,0 +1,79 @@
+{
+  "_id": "C5tSxOwDILefw4zq",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Buckler Expertise",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've learned a flexible way to position your buckler to provide more protection. When you @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise a Shield} to gain a circumstance bonus to AC from a @UUID[Compendium.pf2e.equipment-srd.Item.1k3AsSW7lpU0kEpY]{Buckler}, increase the bonus from +1 to +2.</p>"
+    },
+    "rules": [
+      {
+        "key": "AdjustModifier",
+        "mode": "upgrade",
+        "selector": "ac",
+        "slug": "raised-shield",
+        "value": 2
+      }
+    ],
+    "slug": "buckler-expertise",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.C5tSxOwDILefw4zq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.C5tSxOwDILefw4zq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!C5tSxOwDILefw4zq"
+}

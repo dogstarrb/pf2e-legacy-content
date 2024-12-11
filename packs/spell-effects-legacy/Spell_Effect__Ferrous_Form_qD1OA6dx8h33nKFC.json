@@ -1,0 +1,106 @@
+{
+  "_id": "qD1OA6dx8h33nKFC",
+  "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+  "name": "Spell Effect: Ferrous Form",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.89Hj5QuqvcwVXcqj]{Ferrous Form}</em></p>\n<p>Your body transforms entirely into flexible iron. You gain resistance to physical damage, except adamantine. You're immune to death effects, disease, drained, fatigued, healing, nonlethal attacks, paralyzed, poison, sickened, vitality, and void; any of those conditions you had when the spell is cast are suspended until the spell ends, then return with their remaining duration when the spell ends. While made of iron, you're subject to rusting effects like the <em>rust cloud</em> spell.</p>\n<p>Your fist Strikes have a 1d10 damage die, and your metal spells deal one additional die of damage (of the same damage die and damage type the spell uses). You can cast <em>needle darts</em> as an innate spell; the casting is reduced from 2 actions to 1.</p>\n<p>In this form, you don't need to breathe. Your Bulk doubles (to 6 if you're Small or 12 if you're Medium), and you become too dense to Swim in water, automatically sinking to the bottom. You can Dismiss the spell.</p>"
+    },
+    "rules": [
+      {
+        "key": "Immunity",
+        "type": [
+          "death-effects",
+          "disease",
+          "drained",
+          "fatigued",
+          "healing",
+          "nonlethal-attacks",
+          "paralyzed",
+          "poison",
+          "sickened",
+          "vitality",
+          "void"
+        ]
+      },
+      {
+        "exceptions": [
+          "adamantine"
+        ],
+        "key": "Resistance",
+        "type": "physical",
+        "value": "ternary(gte(@item.level,9),15,10)"
+      },
+      {
+        "fist": true,
+        "key": "Strike"
+      },
+      {
+        "key": "DamageDice",
+        "override": {
+          "dieSize": "d10"
+        },
+        "selector": "{item|_id}-damage"
+      }
+    ],
+    "slug": "spell-effect-ferrous-form",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 8
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.qD1OA6dx8h33nKFC"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 37700000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.qD1OA6dx8h33nKFC",
+    "duplicateSource": null
+  },
+  "_key": "!items!qD1OA6dx8h33nKFC"
+}

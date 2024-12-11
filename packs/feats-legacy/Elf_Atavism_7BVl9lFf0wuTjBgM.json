@@ -1,0 +1,88 @@
+{
+  "_id": "7BVl9lFf0wuTjBgM",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Elf Atavism",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your elven blood runs particularly strong, granting you features far more elven than those of a typical half-elf. You may also have been raised among elves, steeped in your elven ancestors' heritage. You gain the benefits of the elf heritage of your elven parent or ancestors. You typically can't select a heritage that depends on or improves an elven feature you don't have. For example, you couldn't gain the cavern elf's darkvision ability if you didn't have low-light vision. In these cases, at the GM's discretion, you might gain a different benefit.</p>\n<p><strong>Special</strong> You can take this feat only at 1st level, and you can't retrain out of this feat or into this feat.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "filter": [
+            "item:ancestry:elf"
+          ],
+          "itemType": "heritage"
+        },
+        "flag": "heritage",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Elf.Atavism.Prompt"
+      },
+      {
+        "allowDuplicate": false,
+        "key": "GrantItem",
+        "uuid": "{item|flags.pf2e.rulesSelections.heritage}"
+      }
+    ],
+    "slug": "elf-atavism",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "aiuvarin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.7BVl9lFf0wuTjBgM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.7BVl9lFf0wuTjBgM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7BVl9lFf0wuTjBgM"
+}

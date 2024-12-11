@@ -1,0 +1,109 @@
+{
+  "_id": "YGk41WV42aTM7CQV",
+  "img": "icons/magic/death/skull-humanoid-white-red.webp",
+  "name": "Advanced Undead Benefits",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Darkvision:</strong> You gain darkvision if you don't already have it.</p>\n<p><strong>Greater Disease and Poison Protection:</strong> Your bonus against disease and poison increases to +2. You gain poison resistance equal to half your level.</p>\n<p><strong>Paralysis and Sleep Protection:</strong> You gain a +1 circumstance bonus to saving throws (or any other defense) against effects that would make you @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} or have the sleep trait.</p>"
+    },
+    "rules": [
+      {
+        "key": "Sense",
+        "selector": "darkvision"
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "disease",
+              "poison"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "slug": "advanced-undead-disease-poison",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "inflicts:paralyzed",
+              "sleep"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "slug": "advanced-undead-paralyzed-sleep",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "Resistance",
+        "type": "poison",
+        "value": "floor(@actor.level/2)"
+      }
+    ],
+    "slug": "advanced-undead-benefits",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "category": "ancestryfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.ancestryfeatures.Item.YGk41WV42aTM7CQV"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.ancestry-features-legacy.Item.YGk41WV42aTM7CQV",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!YGk41WV42aTM7CQV"
+}

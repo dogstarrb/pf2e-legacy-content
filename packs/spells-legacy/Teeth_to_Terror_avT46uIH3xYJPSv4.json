@@ -1,0 +1,201 @@
+{
+  "_id": "avT46uIH3xYJPSv4",
+  "img": "icons/commodities/bones/tooth-molar-white-red.webp",
+  "name": "Teeth to Terror",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The target believes its teeth are falling out, crawling along its face, stabbing into its body, and cramming themselves down its throat. The target takes 2d4 mental damage and @Damage[1d4[persistent,mental]], depending on its Will save. The target takes a -1 circumstance penalty to Strikes with its jaws or teeth while it is taking persistent mental damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and no persistent mental damage.</p>\n<p><strong>Failure</strong> The target takes full damage and persistent mental damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The target takes full damage and persistent mental damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You can target two additional creatures, the mental damage increases by 2d4, and the persistent mental damage increases by 1d4.</p>"
+    },
+    "rules": [],
+    "slug": "teeth-to-terror",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "fear",
+        "illusion",
+        "manipulate",
+        "mental"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder #181: Zombie Feast",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature with teeth"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "lhtty9ufzih9gfue": {
+        "applyMod": false,
+        "formula": "2d4",
+        "type": "mental",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      },
+      "pxacolqtc1zeoqw3": {
+        "applyMod": false,
+        "formula": "1d4",
+        "type": "mental",
+        "category": "persistent",
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "will",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "4": {
+          "damage": {
+            "lhtty9ufzih9gfue": {
+              "applyMod": false,
+              "formula": "4d4",
+              "type": "mental",
+              "materials": []
+            },
+            "pxacolqtc1zeoqw3": {
+              "applyMod": false,
+              "formula": "2d4",
+              "type": "mental",
+              "category": "persistent",
+              "materials": []
+            }
+          },
+          "target": {
+            "value": "3 creatures with teeth"
+          }
+        },
+        "6": {
+          "damage": {
+            "lhtty9ufzih9gfue": {
+              "applyMod": false,
+              "formula": "6d4",
+              "type": "mental",
+              "materials": []
+            },
+            "pxacolqtc1zeoqw3": {
+              "applyMod": false,
+              "formula": "3d4",
+              "type": "mental",
+              "category": "persistent",
+              "materials": []
+            }
+          },
+          "target": {
+            "value": "5 creatures with teeth"
+          }
+        },
+        "8": {
+          "damage": {
+            "lhtty9ufzih9gfue": {
+              "applyMod": false,
+              "formula": "8d4",
+              "type": "mental",
+              "materials": []
+            },
+            "pxacolqtc1zeoqw3": {
+              "applyMod": false,
+              "formula": "4d4",
+              "type": "mental",
+              "category": "persistent",
+              "materials": []
+            }
+          },
+          "target": {
+            "value": "7 creatures with teeth"
+          }
+        },
+        "10": {
+          "damage": {
+            "lhtty9ufzih9gfue": {
+              "applyMod": false,
+              "formula": "10d4",
+              "type": "mental",
+              "materials": []
+            },
+            "pxacolqtc1zeoqw3": {
+              "applyMod": false,
+              "formula": "5d4",
+              "type": "mental",
+              "category": "persistent",
+              "materials": []
+            }
+          },
+          "target": {
+            "value": "9 creatures with teeth"
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.avT46uIH3xYJPSv4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.avT46uIH3xYJPSv4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!avT46uIH3xYJPSv4"
+}

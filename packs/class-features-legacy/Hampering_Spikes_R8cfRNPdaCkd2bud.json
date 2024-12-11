@@ -1,0 +1,93 @@
+{
+  "_id": "R8cfRNPdaCkd2bud",
+  "img": "systems/pf2e/icons/features/classes/hampering-spikes.webp",
+  "name": "Hampering Spikes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've added long, snagging spikes to your weapon, which you can use to impede your foes' movement. Your innovation gains the hampering and versatile P traits.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:id:{actor|flags.pf2e.trackedItems.weaponInnovation}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "hampering"
+      },
+      {
+        "definition": [
+          "item:id:{actor|flags.pf2e.trackedItems.weaponInnovation}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "versatile-p"
+      }
+    ],
+    "slug": "hampering-spikes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "inventor"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "actionCategory": {
+      "value": ""
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.R8cfRNPdaCkd2bud"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.R8cfRNPdaCkd2bud",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!R8cfRNPdaCkd2bud"
+}

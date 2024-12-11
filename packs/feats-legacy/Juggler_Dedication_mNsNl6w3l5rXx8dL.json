@@ -1,0 +1,87 @@
+{
+  "_id": "mNsNl6w3l5rXx8dL",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Juggler Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You become trained in Performance; if you were already trained in Performance, you instead become trained in a skill of your choice. You also gain the @UUID[Compendium.pf2e.feats-srd.Item.AYb8PmGJ37HwIMwj]{Juggle} skill feat, even if you don't meet its prerequisites.</p>\n<p><strong>Special</strong> You cannot select another dedication feat until you have gained one other feat from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.bQeLZt29NnHEn6fh]{Juggler} archetype.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.performance.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.AYb8PmGJ37HwIMwj"
+      }
+    ],
+    "slug": "juggler-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #151: The Show Must Go On",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dexterity 14"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.mNsNl6w3l5rXx8dL"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.mNsNl6w3l5rXx8dL",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!mNsNl6w3l5rXx8dL"
+}

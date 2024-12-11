@@ -1,0 +1,91 @@
+{
+  "_id": "s6CwkSsMDGfUmotn",
+  "img": "icons/magic/defensive/shield-barrier-deflect-gold.webp",
+  "name": "Spell Effect: Death Ward",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.YvXKGlHOt7mdW2jZ]{Death Ward}</em>.</p>\n<p>You are shielded from negative energy, you gain a +4 status bonus to saves against death and negative effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "void",
+              "death"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 4
+      },
+      {
+        "key": "Resistance",
+        "type": "void",
+        "value": 10
+      }
+    ],
+    "slug": "spell-effect-death-ward",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.s6CwkSsMDGfUmotn"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 39500000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.s6CwkSsMDGfUmotn",
+    "duplicateSource": null
+  },
+  "_key": "!items!s6CwkSsMDGfUmotn"
+}

@@ -1,0 +1,161 @@
+{
+  "_id": "bVvGpSOg2WaTUItS",
+  "img": "icons/magic/fire/projectile-meteor-salvo-strong-red.webp",
+  "name": "Cinder Swarm",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You breathe life into a mass of fiery critters. They swarm the target and create an aura around it in a @Template[type:emanation|distance:5]. The target and enemies in the aura are subject to an effect depending on the insects you choose. On subsequent rounds, the first time you Sustain this spell each round, you repeat the effect on the target and all your enemies in the insect aura. Pick a type of insect to determine the effects.</p>\n<ul>\n<li><strong>Fire Ants</strong> You create fiery flying ants that deal 3d6 piercing damage plus 2d6 persistent fire damage with a basic Reflex save. A creature that fails its save must move 5 feet in a direction of your choice as it tries to escape the biting ants; this happens after all the creatures attempt their saves and can't add new creatures to the aura if the main target moves.</li>\n<li><strong>Fireflies</strong> (incapacitation) You create a flurry of fireflies that deal 3d6 fire damage and can dazzle or blind, depending on the target's Fortitude save.</li>\n</ul>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage and is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round. It's then temporarily immune to being blinded by cinder swarm for 24 hours.</p>\n<p><strong>Critical Failure</strong> As failure, but double damage and blinded for 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Increase the ants' piercing damage and fireflies' fire damage by 2d6.</p>"
+    },
+    "rules": [],
+    "slug": "cinder-swarm",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "fire",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": true
+    },
+    "damage": {},
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "overlays": {
+      "Dn2urqase1klSlXN": {
+        "_id": "Dn2urqase1klSlXN",
+        "name": "Cinder Swarm (Fireflies)",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "damage": {
+            "2MvpaX0V8xQX6CsS": {
+              "applyMod": false,
+              "formula": "3d6",
+              "type": "fire",
+              "materials": [],
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "heightening": {
+            "damage": {
+              "2MvpaX0V8xQX6CsS": "2d6"
+            },
+            "interval": 1,
+            "type": "interval"
+          },
+          "defense": null
+        }
+      },
+      "OsMweS7nFHnNhCy1": {
+        "_id": "OsMweS7nFHnNhCy1",
+        "name": "Cinder Swarm (Fire Ants)",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "damage": {
+            "6VDpVfnth5Jo4Ik5": {
+              "applyMod": false,
+              "formula": "3d6",
+              "type": "piercing",
+              "materials": [],
+              "kinds": [
+                "damage"
+              ]
+            },
+            "Zz4wGcMxD0oYt8b5": {
+              "applyMod": false,
+              "formula": "2d6",
+              "type": "fire",
+              "category": "persistent",
+              "materials": [],
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "heightening": {
+            "damage": {
+              "6VDpVfnth5Jo4Ik5": "2d6",
+              "Zz4wGcMxD0oYt8b5": "0"
+            },
+            "interval": 1,
+            "type": "interval"
+          },
+          "defense": {
+            "passive": null,
+            "save": {
+              "statistic": "reflex",
+              "basic": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.bVvGpSOg2WaTUItS"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.bVvGpSOg2WaTUItS",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bVvGpSOg2WaTUItS"
+}

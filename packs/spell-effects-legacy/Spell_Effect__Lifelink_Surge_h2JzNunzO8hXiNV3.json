@@ -1,0 +1,76 @@
+{
+  "_id": "h2JzNunzO8hXiNV3",
+  "img": "systems/pf2e/icons/spells/lifelink-surge.webp",
+  "name": "Spell Effect: Lifelink Surge",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.lOZhcvtej10TqlQm]{Lifelink Surge}</em>.</p>"
+    },
+    "rules": [
+      {
+        "key": "FastHealing",
+        "value": "@item.level * 2"
+      }
+    ],
+    "slug": "spell-effect-lifelink-surge",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 4,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.h2JzNunzO8hXiNV3"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 30000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.h2JzNunzO8hXiNV3",
+    "duplicateSource": null
+  },
+  "_key": "!items!h2JzNunzO8hXiNV3"
+}

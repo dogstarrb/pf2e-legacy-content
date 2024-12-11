@@ -1,0 +1,128 @@
+{
+  "_id": "A61eVVVyUuaUl3tz",
+  "img": "icons/magic/fire/barrier-wall-flame-ring-yellow.webp",
+  "name": "Spell Effect: Celestial Brand",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by attacking a target under the effect of <em>@UUID[Compendium.pf2e.spells-srd.Item.9WlTR9JlEcjRmGiD]{Celestial Brand}</em></p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Target is affected by Celestial Brand",
+        "option": "celestial-brand",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "celestial-brand"
+        ],
+        "selector": [
+          "attack",
+          "skill-check"
+        ],
+        "type": "status",
+        "value": 1
+      },
+      {
+        "damageType": "spirit",
+        "key": "FlatModifier",
+        "predicate": [
+          "celestial-brand"
+        ],
+        "selector": "strike-damage",
+        "value": {
+          "brackets": [
+            {
+              "end": 6,
+              "start": 5,
+              "value": 0
+            },
+            {
+              "end": 8,
+              "start": 7,
+              "value": 1
+            },
+            {
+              "start": 9,
+              "value": 2
+            }
+          ],
+          "field": "item|system.level.value"
+        }
+      },
+      {
+        "damageType": "spirit",
+        "diceNumber": 1,
+        "dieSize": "d4",
+        "key": "DamageDice",
+        "predicate": [
+          "celestial-brand"
+        ],
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "spell-effect-celestial-brand",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.A61eVVVyUuaUl3tz"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 9400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.A61eVVVyUuaUl3tz",
+    "duplicateSource": null
+  },
+  "_key": "!items!A61eVVVyUuaUl3tz"
+}

@@ -1,0 +1,111 @@
+{
+  "_id": "RGBZrVRIEDb2G48h",
+  "img": "systems/pf2e/icons/spells/soothing-mist.webp",
+  "name": "Soothing Mist",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You call forth a magical mist of positive energy that envelops a creature.</p>\n<p>The mist restores [[/r 2d8[healing]]]{2d8 Hit Points} to a target living creature and ends one source of persistent acid, bleed, fire, negative, or poison damage affecting it. If the creature is taking persistent damage from multiple sources, you select which one is removed.</p>\n<p>Against an undead target, you deal @Damage[2d8[vitality]] damage (basic Fortitude save); if it fails the save, it also takes @Damage[2[persistent,vitality]] damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing (or damage to an undead target) increases by [[/r 1d8]], and the persistent positive damage to an undead creature increases by 1.</p>"
+    },
+    "rules": [],
+    "slug": "soothing-mist",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "focus",
+        "healing",
+        "manipulate",
+        "ranger",
+        "vitality"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 willing living creature or 1 undead creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "formula": "2d8",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "healing"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d8"
+      },
+      "interval": 1,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.RGBZrVRIEDb2G48h"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.RGBZrVRIEDb2G48h",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!RGBZrVRIEDb2G48h"
+}

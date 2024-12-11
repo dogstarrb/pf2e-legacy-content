@@ -1,0 +1,124 @@
+{
+  "_id": "erP57YMboay9Ns4L",
+  "img": "systems/pf2e/icons/equipment/worn-items/apex-items/titans-grasp.webp",
+  "name": "Titan's Grasp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>These bronze gauntlets each have a small red gem embedded in the wrist. You gain a +3 item bonus to Athletics checks and a +1 circumstance bonus to Athletics checks to Grapple. If you successfully Grapple an enemy that's at least one size category larger than you, the gauntlets dig into it, dealing bludgeoning damage equal to your Strength modifier, plus an additional @Damage[2d6[bludgeoning]] damage on a critical success.</p>\n<p>When you invest the gloves, you either increase your Strength score by 2 or increase it to 18, whichever would give you a higher score.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact (sonic)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> You have two hands free</p>\n<hr />\n<p><strong>Effect</strong> You clap the gauntlets together with a thunderous crack that deals @Damage[6d10[sonic]] damage in a @Template[type:emanation|distance:30]. Each creature in the area must attempt a @Check[type:fortitude|dc:35|name:Titan's Grasp Sonic Clap|traits:sonic|showDC:all] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "athletics",
+        "type": "item",
+        "value": 3
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Titan's Grasp (Grapple)",
+        "predicate": [
+          "action:grapple"
+        ],
+        "selector": "athletics",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "titans-grasp",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "apex",
+        "invested",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 24000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worngloves"
+    },
+    "subitems": [],
+    "apex": {
+      "attribute": "str"
+    }
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.erP57YMboay9Ns4L"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.erP57YMboay9Ns4L",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!erP57YMboay9Ns4L"
+}

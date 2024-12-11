@@ -1,0 +1,68 @@
+{
+  "_id": "evXJISqyhl3fHE9u",
+  "img": "icons/magic/nature/root-vine-entangled-hand.webp",
+  "name": "Vine Leshy",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The prehensile vines woven into your body grant you unmatched skill at climbing. You do not need to have any hands free to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb}. Additionally, if you roll a success on an Athletics check to climb, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "action:climb"
+        ],
+        "selector": "athletics",
+        "text": "When you roll a success to Climb, you get a critical success instead.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "vine-leshy",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Leshy",
+      "slug": "leshy",
+      "uuid": "Compendium.pf2e.ancestries.Item.cdhgByGG1WtuaK73"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.evXJISqyhl3fHE9u"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.evXJISqyhl3fHE9u",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!evXJISqyhl3fHE9u"
+}

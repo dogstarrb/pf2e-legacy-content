@@ -1,0 +1,77 @@
+{
+  "_id": "uC6KjfiWrTBXYtP8",
+  "img": "systems/pf2e/icons/spells/chain-lightning.webp",
+  "name": "Effect: Storm Chair",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>For 1 minute, you gain a fly Speed equal to your Speed, and adjacent creatures that hit you with a melee attack, as well as creatures that touch or hit you with an unarmed attack, take @Damage[2d6[electricity]] damage each time. As normal, this applies to creatures who choose to touch you, not when you touch or attack another creature.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": "@actor.attributes.speed.total"
+      }
+    ],
+    "slug": "effect-storm-chair",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.uC6KjfiWrTBXYtP8"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.uC6KjfiWrTBXYtP8",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uC6KjfiWrTBXYtP8"
+}

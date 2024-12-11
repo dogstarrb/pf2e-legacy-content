@@ -1,0 +1,91 @@
+{
+  "_id": "y24ykEUfpIu5Gp6D",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Warrior Automaton",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Sporting a bulkier, powerful design, your body has been designed for combat. You have a bulky, humanoid shape. The damage die for your fist increases to 1d6 instead of 1d4. You don't take a penalty when making a lethal attack with your fist or any other unarmed attack.</p>"
+    },
+    "rules": [
+      {
+        "baseType": "fist",
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d6"
+          }
+        },
+        "group": "brawling",
+        "img": "icons/skills/melee/unarmed-punch-fist.webp",
+        "key": "Strike",
+        "label": "PF2E.Strike.Fist.Label",
+        "predicate": [
+          {
+            "nor": [
+              "feature:powerful-fist",
+              "feat:martial-artist-dedication",
+              "feat:arcane-fist"
+            ]
+          }
+        ],
+        "range": null,
+        "slug": "fist",
+        "traits": [
+          "agile",
+          "finesse",
+          "nonlethal",
+          "unarmed"
+        ]
+      }
+    ],
+    "slug": "warrior-automaton",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Automaton",
+      "slug": "automaton",
+      "uuid": "Compendium.pf2e.ancestries.Item.kYsBAJ103T44agJF"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.y24ykEUfpIu5Gp6D"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.y24ykEUfpIu5Gp6D",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!y24ykEUfpIu5Gp6D"
+}

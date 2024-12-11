@@ -1,0 +1,87 @@
+{
+  "_id": "KBEJVRrie2JTHWIK",
+  "img": "systems/pf2e/icons/features/feats/dread-marshal-stance.webp",
+  "name": "Effect: Dread Marshal Stance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.R7c4PyTNkZb0yvoT]{Dread Marshal Stance}</p>\n<p>You gain a status bonus to damage rolls equal to the number of weapon damage dice of the unarmed attack or weapon the originator of the aura is wielding that has the most weapon damage dice. When you or an ally in the aura critically hits an enemy with a Strike, that enemy is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "selector": "strike-damage",
+        "text": "PF2E.SpecificRule.Marshal.DreadMarshalStance.Note",
+        "title": "PF2E.SpecificRule.Marshal.DreadMarshalStance.Title"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "damage",
+        "type": "status",
+        "value": "@item.origin.flags.pf2e.highestWeaponDamageDice"
+      }
+    ],
+    "slug": "effect-dread-marshal-stance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.KBEJVRrie2JTHWIK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.KBEJVRrie2JTHWIK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!KBEJVRrie2JTHWIK"
+}

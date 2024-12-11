@@ -1,0 +1,120 @@
+{
+  "_id": "c9GaJKCxxqXKZokZ",
+  "img": "icons/equipment/neck/necklace-simple-teeth.webp",
+  "name": "Broken Tusk Pendant",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The followers of the Broken Tusk have passed down their custom of crafting and gifting these small ivory necklaces for generations. They're typically made from mammoth tusk (though any type of ivory will do), and each is carved to resemble a particular kind of animal-usually a raven, a moose, an ox, or an otter. Because tradition dictates that Broken Tusk followers take ivory only from already-dead animals, <em>Broken Tusk pendants</em> are especially rare; if an individual loses their pendant, it might be years before they acquire the materials necessary to fashion a replacement. <em>Broken Tusk pendants</em> bear no magical powers if they are made for oneself; only gifted pendants have true magical properties.</p>\n<p>You wear a <em>Broken Tusk pendant</em> like jewelry or tie it to your clothing. A <em>Broken Tusk pendant</em> grants you a +1 item bonus to Nature checks; this bonus increases to +2 when you Command an Animal of the specific kind depicted by the pendant.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> An animal targets you with a melee attack, and you can see the animal</p>\n<hr />\n<p><strong>Effect</strong> You gain a +1 item bonus to AC against the triggering attack, or a +2 item bonus if the animal is the specific kind depicted by the pendant.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "nature",
+        "type": "item",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Broken Tusk Pendant - Commanding the Animal Depicted",
+        "predicate": [
+          "action:command-an-animal",
+          "brokenTuskPendant"
+        ],
+        "selector": "nature",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "broken-tusk-pendant",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "primal"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder #175: Broken Tusk Moon",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 50
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.c9GaJKCxxqXKZokZ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.c9GaJKCxxqXKZokZ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!c9GaJKCxxqXKZokZ"
+}

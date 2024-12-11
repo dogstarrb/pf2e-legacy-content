@@ -1,0 +1,129 @@
+{
+  "_id": "Y1YysjZ40ft0aLFN",
+  "img": "systems/pf2e/icons/spells/airburst.webp",
+  "name": "Spiritual Torrent",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You release your spiritual essence in a torrential blast of energy, dealing 10d6 damage. If you're a living creature, this spell deals positive damage and gains the positive trait. If you're an undead creature, this spell deals negative damage and gains the negative trait. The spell's effect is based on how many actions you spend when Casting the Spell.</p>\n<p><span class=\"action-glyph\">2</span> (somatic, verbal) The spell targets all creatures in a 60-foot line.</p>\n<p><span class=\"action-glyph\">3</span> (material, somatic, verbal) The spell targets all creatures in a 60-foot cone.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The spell's damage increases by 2d6.</p>"
+    },
+    "rules": [],
+    "slug": "spiritual-torrent",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "divine",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder #186: Ghost King's Rage",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": ""
+    },
+    "area": {
+      "type": "line",
+      "value": 60
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "lI9EQaXqSWU8wuZI": {
+        "applyMod": false,
+        "formula": "10d6",
+        "type": "vitality",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "lI9EQaXqSWU8wuZI": "2d6"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {
+      "YK6X9Uqj3TmG199H": {
+        "_id": "YK6X9Uqj3TmG199H",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "area": {
+            "areaType": "cone"
+          },
+          "time": {
+            "value": "3"
+          }
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.Y1YysjZ40ft0aLFN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.Y1YysjZ40ft0aLFN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Y1YysjZ40ft0aLFN"
+}

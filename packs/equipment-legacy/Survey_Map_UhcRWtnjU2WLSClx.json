@@ -1,0 +1,121 @@
+{
+  "_id": "UhcRWtnjU2WLSClx",
+  "img": "systems/pf2e/icons/equipment/adventuring-gear/survey-map.webp",
+  "name": "Survey Map",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Maps are uncommon. Most maps you can find are simple and functional. A survey map details a single location in excellent detail.</p>\n<p>One of these maps gives you a +1 item bonus to Survival checks and any skill checks to Recall Knowledge, provided the checks are related to the location detailed on the map.</p>\n<p>The GM determines what maps are available in any location.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Survey Map (mapped area)",
+        "predicate": [
+          "mapped-area"
+        ],
+        "selector": "survival",
+        "type": "item",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Survey Map (Recall knowledge on mapped area)",
+        "predicate": [
+          "mapped-area",
+          "action:recall-knowledge"
+        ],
+        "selector": "skill-check",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "survey-map",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 10
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.UhcRWtnjU2WLSClx"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.UhcRWtnjU2WLSClx",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UhcRWtnjU2WLSClx"
+}

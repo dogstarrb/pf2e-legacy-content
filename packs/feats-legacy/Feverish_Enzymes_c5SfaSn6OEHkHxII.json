@@ -1,0 +1,95 @@
+{
+  "_id": "c5SfaSn6OEHkHxII",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Feverish Enzymes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your claws and fangs exude an infectious enzyme, related to the necrotic effects of ghoul fever, that causes a creature's wounds to heal slowly. Strike with your claw or jaws. This attack deals negative damage instead of its normal type; on a hit, the target halves any healing it receives until the start of your next turn. The target or an adjacent ally can spend two interact actions to squeeze the enzymes from the wound and remove the effect.</p>\n<p>If you are satiated, when you hit you can choose to end your satiation and boost your enzymes, increasing the duration to 1 minute.</p>"
+    },
+    "rules": [
+      {
+        "key": "DamageDice",
+        "override": {
+          "damageType": "void"
+        },
+        "predicate": [
+          "feverish-enzymes"
+        ],
+        "selector": [
+          "claw-damage",
+          "jaws-damage"
+        ]
+      },
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "option": "feverish-enzymes",
+        "toggleable": true
+      }
+    ],
+    "slug": "feverish-enzymes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Ghoul Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.c5SfaSn6OEHkHxII"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.c5SfaSn6OEHkHxII",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!c5SfaSn6OEHkHxII"
+}

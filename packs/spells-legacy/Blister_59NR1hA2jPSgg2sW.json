@@ -1,0 +1,111 @@
+{
+  "_id": "59NR1hA2jPSgg2sW",
+  "img": "icons/magic/acid/dissolve-arm-flesh.webp",
+  "name": "Blister",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You point at a target in range, and its skin grows searing blisters filled with caustic fluid. The target must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target grows one blister. You can spend a single action, which has the concentrate trait, to pop a blister. The target and each creature in a 15-foot cone originating from the target takes @Damage[7d6[acid]] damage (basic Fortitude save). You choose the direction of the cone, which can't include the target. When no blisters are left, the spell ends.</p>\n<p><strong>Failure</strong> As success, but the target grows two blisters.</p>\n<p><strong>Critical Failure</strong> As success, but the target grows four blisters.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage of a popped blister increases by @Damage[1d6[acid]] damage.</p>"
+    },
+    "rules": [],
+    "slug": "blister",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "occult",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "formula": "7d6",
+        "type": "acid",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d6"
+      },
+      "interval": 1,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.59NR1hA2jPSgg2sW"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.59NR1hA2jPSgg2sW",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!59NR1hA2jPSgg2sW"
+}

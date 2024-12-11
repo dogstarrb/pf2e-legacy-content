@@ -1,0 +1,81 @@
+{
+  "_id": "1mKjaWC65KWPuFR4",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/antidote.webp",
+  "name": "Effect: Antidote (Major)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.ANzB9WzlGQXDn76G]{Antidote (Major)}</p>\n<p>Implemented effects:</p>\n<ul>\n<li>+4 item bonus to Fortitude saves against poisons</li>\n</ul>\n<p>Unimplemented effects:</p>\n<ul>\n<li>Immediately attempt a saving throw against one poison of 14th level or lower affecting you. If you succeed, the poison is neutralised. </li>\n</ul>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "poison"
+        ],
+        "selector": "fortitude",
+        "type": "item",
+        "value": 4
+      }
+    ],
+    "slug": "effect-antidote-major",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "duration": {
+      "value": 6,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.1mKjaWC65KWPuFR4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.1mKjaWC65KWPuFR4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1mKjaWC65KWPuFR4"
+}

@@ -1,0 +1,123 @@
+{
+  "_id": "pGZqqxYzZpe3iaiS",
+  "img": "systems/pf2e/icons/equipment/treasure/gems/moderate-semiprecious-stones/chrysoprase.webp",
+  "name": "Aeon Stone (Olivine Pendeloque)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>An <em>olivine pendeloque aeon stone</em> imparts the calmness of still earth and a solidity of thought, granting you a +2 item bonus to saving throws against effects that cause the @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} conditions.</p>\n<p><strong>Activate—Still Earth</strong> <span class=\"action-glyph\">R</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You become confused, frightened, or stupefied</p>\n<hr />\n<p><strong>Effect</strong> The stone suppresses the triggering effect for 1 minute, but the calming urges impose a –1 status penalty to your attack rolls.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "inflicts:confused",
+              "inflicts:frightened",
+              "inflicts:stupefied"
+            ]
+          }
+        ],
+        "selector": [
+          "fortitude",
+          "reflex",
+          "will"
+        ],
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "aeon-stone-olivine-pendeloque",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "earth",
+        "invested",
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 14
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1200
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.pGZqqxYzZpe3iaiS"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.pGZqqxYzZpe3iaiS",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!pGZqqxYzZpe3iaiS"
+}

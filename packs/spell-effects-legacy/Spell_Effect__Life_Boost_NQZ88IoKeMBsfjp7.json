@@ -1,0 +1,76 @@
+{
+  "_id": "NQZ88IoKeMBsfjp7",
+  "img": "systems/pf2e/icons/spells/life-boost.webp",
+  "name": "Spell Effect: Life Boost",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.fAlzXtQAASaJx0mY]{Life Boost}</em>.</p>"
+    },
+    "rules": [
+      {
+        "key": "FastHealing",
+        "value": "@item.level * 2"
+      }
+    ],
+    "slug": "spell-effect-life-boost",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 4,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.NQZ88IoKeMBsfjp7"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 17800000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.NQZ88IoKeMBsfjp7",
+    "duplicateSource": null
+  },
+  "_key": "!items!NQZ88IoKeMBsfjp7"
+}

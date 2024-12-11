@@ -1,0 +1,71 @@
+{
+  "_id": "1wVDYY9Wue0G5R9Q",
+  "img": "systems/pf2e/icons/features/ancestry/whisper-elf.webp",
+  "name": "Whisper Elf",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your ears are finely tuned, able to detect even the slightest whispers of sound.</p>\n<p>As long as you can hear normally, you can use the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to sense @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} creatures in a @Template[type:cone|distance:60] instead of a @Template[type:cone|distance:30].</p>\n<p>You also gain a +2 circumstance bonus to locate undetected creatures that you could hear within 30 feet with a seek action.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Whisper Elf (locate audible undetected within range)",
+        "predicate": [
+          "target:undetected",
+          "target:within-30-feet",
+          "target:audible"
+        ],
+        "selector": "perception",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "whisper-elf",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Elf",
+      "slug": "elf",
+      "uuid": "Compendium.pf2e.ancestries.Item.PgKmsA2aKdbLU6O0"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.1wVDYY9Wue0G5R9Q"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.1wVDYY9Wue0G5R9Q",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1wVDYY9Wue0G5R9Q"
+}

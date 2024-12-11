@@ -1,0 +1,97 @@
+{
+  "_id": "grXFmNl8Zy3VRVpR",
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "name": "Effect: Ghostcaller's Planchette - Weapon",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.v7YHA9UhDgsvQ47Q]{Ghostcaller's Planchette}</p>\n<p>After you cast a necromancy spell by activating the <em>planchette</em>, the affixed weapon gains the effects of the <em>ghost touch</em> property rune until the end of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "includeHandwraps": true,
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "effectGhostcallersPlanchetteWeapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "definition": [
+          {
+            "or": [
+              "item:category:{item|flags.pf2e.rulesSelections.effectGhostcallersPlanchetteWeapon}",
+              "item:id:{item|flags.pf2e.rulesSelections.effectGhostcallersPlanchetteWeapon}"
+            ]
+          }
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "property-runes",
+        "value": "ghost-touch"
+      }
+    ],
+    "slug": "effect-ghostcallers-planchette-weapon",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.grXFmNl8Zy3VRVpR"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.grXFmNl8Zy3VRVpR",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!grXFmNl8Zy3VRVpR"
+}

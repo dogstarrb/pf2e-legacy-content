@@ -1,0 +1,79 @@
+{
+  "_id": "Csezts78L4FMaskB",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Lethoci",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You come from a kashrishi family adapted to coastal shores, or inland ponds and lakes. You gain a +2 circumstance bonus to Athletics checks to Swim. If you critically fail an Athletics check to Swim, you get a failure instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:swim"
+        ],
+        "selector": "athletics",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:swim"
+        ],
+        "selector": "athletics",
+        "type": "skill"
+      }
+    ],
+    "slug": "lethoci",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Kashrishi",
+      "slug": "kashrishi",
+      "uuid": "Compendium.pf2e.ancestries.Item.dw2K1AJR9mQ25nDP"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.Csezts78L4FMaskB"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.Csezts78L4FMaskB",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Csezts78L4FMaskB"
+}

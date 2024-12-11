@@ -1,0 +1,94 @@
+{
+  "_id": "P04Hw8E6WAWARKHP",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Quick Climb",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When Climbing, you move 5 more feet on a success and 10 more feet on a critical success, to a maximum of your Speed. If you're legendary in Athletics, you gain a climb Speed equal to your Speed.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "predicate": [
+          "skill:athletics:rank:4"
+        ],
+        "selector": "climb",
+        "value": "@actor.attributes.speed.total"
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "action:climb"
+        ],
+        "selector": "athletics",
+        "text": "You move 5 more feet on a success, and 10 more feet on a critical success.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "quick-climb",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "master in Athletics"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.P04Hw8E6WAWARKHP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.P04Hw8E6WAWARKHP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!P04Hw8E6WAWARKHP"
+}

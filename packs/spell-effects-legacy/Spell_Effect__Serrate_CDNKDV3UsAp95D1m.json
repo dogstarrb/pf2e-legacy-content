@@ -1,0 +1,89 @@
+{
+  "_id": "CDNKDV3UsAp95D1m",
+  "img": "icons/weapons/swords/sword-broad-serrated-blue.webp",
+  "name": "Spell Effect: Serrate",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Strikes with the target weapon deal additional slashing damage until the start of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "serrateWeapon",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "damageType": "slashing",
+        "diceNumber": "ceil(@item.level/2)",
+        "dieSize": "d4",
+        "key": "DamageDice",
+        "selector": "{item|flags.pf2e.rulesSelections.serrateWeapon}-damage"
+      }
+    ],
+    "slug": "spell-effect-serrate",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.CDNKDV3UsAp95D1m"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 11000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.CDNKDV3UsAp95D1m",
+    "duplicateSource": null
+  },
+  "_key": "!items!CDNKDV3UsAp95D1m"
+}

@@ -1,0 +1,160 @@
+{
+  "_id": "60sgbuMWN0268dB7",
+  "img": "systems/pf2e/icons/spells/telekinetic-projectile.webp",
+  "name": "Telekinetic Projectile",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You hurl a loose, unattended object that is within range and that has 1 Bulk or less at the target. Make a spell attack roll against the target. If you hit, you deal bludgeoning, piercing, or slashing damage-as appropriate for the object you hurled-equal to 1d6 plus your spellcasting ability modifier. No specific traits or magic properties of the hurled item affect the attack or the damage.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal double damage.</p>\n<p><strong>Success</strong> You deal full damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d6.</p>"
+    },
+    "rules": [],
+    "slug": "telekinetic-projectile",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "cantrip",
+        "concentrate",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": true,
+        "formula": "1d6",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d6"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {
+      "2I469pfbYcmFvzOA": {
+        "_id": "2I469pfbYcmFvzOA",
+        "name": "Telekinetic Projectile (Bludgeoning)",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "damage": {
+            "0": {
+              "type": "bludgeoning",
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "defense": null
+        }
+      },
+      "cUFX7ExSLeoa3vIF": {
+        "_id": "cUFX7ExSLeoa3vIF",
+        "name": "Telekinetic Projectile (Piercing)",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "damage": {
+            "0": {
+              "type": "piercing",
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "defense": null
+        }
+      },
+      "zFWsMjoeCnLxqJaV": {
+        "_id": "zFWsMjoeCnLxqJaV",
+        "name": "Telekinetic Projectile (Slashing)",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "damage": {
+            "0": {
+              "type": "slashing",
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "defense": null
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.60sgbuMWN0268dB7",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!60sgbuMWN0268dB7"
+}

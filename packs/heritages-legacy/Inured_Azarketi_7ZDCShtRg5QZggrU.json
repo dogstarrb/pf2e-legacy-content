@@ -1,0 +1,64 @@
+{
+  "_id": "7ZDCShtRg5QZggrU",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Inured Azarketi",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your ancestors had to survive in polluted water that made every breath noxious. You gain poison resistance equal to half your level (minimum 1). Furthermore, you can survive outside of water for 72 hours before you begin to suffocate.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "poison",
+        "value": "max(1,floor(@actor.level/2))"
+      }
+    ],
+    "slug": "inured-azarketi",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Azarketi",
+      "slug": "azarketi",
+      "uuid": "Compendium.pf2e.ancestries.Item.yFoojz6q3ZjvceFw"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.7ZDCShtRg5QZggrU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.7ZDCShtRg5QZggrU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7ZDCShtRg5QZggrU"
+}

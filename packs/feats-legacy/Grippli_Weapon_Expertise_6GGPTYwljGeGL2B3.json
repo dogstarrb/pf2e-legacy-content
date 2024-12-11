@@ -1,0 +1,102 @@
+{
+  "_id": "6GGPTYwljGeGL2B3",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Grippli Weapon Expertise",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You fight with effortless expertise with grippli weapons. Whenever you gain a class feature that grants you expert or greater proficiency in a given weapon or weapons, you also gain that proficiency in the @UUID[Compendium.pf2e.equipment-srd.Item.FPwsiGqMCNPLHmjX]{Blowgun}, @UUID[Compendium.pf2e.equipment-srd.Item.LGgvev6AV0So8tP9]{Hatchet}, @UUID[Compendium.pf2e.equipment-srd.Item.H74vYwHJ8XT4qOPI]{Scythe}, @UUID[Compendium.pf2e.equipment-srd.Item.hIgqLgH3YcLZBeoT]{Shortbow}, and @UUID[Compendium.pf2e.equipment-srd.Item.e4NwsnPnpQKbDZ9F]{Composite Shortbow}, or grippli weapons in which you are trained.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-blowgun.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-hatchet.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-scythe.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-shortbow.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-composite-shortbow.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      }
+    ],
+    "slug": "grippli-weapon-expertise",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "grippli"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Mwangi Expanse",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.6GGPTYwljGeGL2B3"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.6GGPTYwljGeGL2B3",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6GGPTYwljGeGL2B3"
+}

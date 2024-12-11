@@ -1,0 +1,92 @@
+{
+  "_id": "u4nlOzPj2WHkIj9l",
+  "img": "icons/magic/nature/leaf-elm-sparkle-glow-green.webp",
+  "name": "Leaf Order",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You revere plants and the bounty of nature, acting as both a gardener and warden for the wilderness, teaching sustainable techniques to communities, and helping areas regrow after disasters or negligent humanoid expansion. You are trained in Diplomacy.</p>\n<p>You also gain the @UUID[Compendium.pf2e.feats-srd.Item.7y1BCJLrdk9mKXlc]{Leshy Familiar} druid feat. You gain the <em>@UUID[Compendium.pf2e.spells-srd.Item.vQuwLqtFFYt0K15N]{Goodberry}</em> order spell, and you increase the number of Focus Points in your focus pool by 1. Committing wanton cruelty to plants or fungi or killing them unnecessarily is anathema to your order.</p>\n<p>(This doesn't prevent you from defending yourself against plants or fungi or harvesting them when necessary for survival.)</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.diplomacy.rank",
+        "predicate": [
+          {
+            "not": "feat:order-explorer:leaf-order"
+          }
+        ],
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "predicate": [
+          "class:druid"
+        ],
+        "uuid": "Compendium.pf2e.feats-srd.Item.7y1BCJLrdk9mKXlc"
+      }
+    ],
+    "slug": "leaf-order",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "druid-order"
+      ],
+      "value": [
+        "druid"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.u4nlOzPj2WHkIj9l"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.u4nlOzPj2WHkIj9l",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!u4nlOzPj2WHkIj9l"
+}

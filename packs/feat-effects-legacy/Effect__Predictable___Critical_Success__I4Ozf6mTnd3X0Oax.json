@@ -1,0 +1,91 @@
+{
+  "_id": "I4Ozf6mTnd3X0Oax",
+  "img": "systems/pf2e/icons/equipment/shields/precious-material-shields/orichalcum-buckler.webp",
+  "name": "Effect: Predictable! (Critical Success)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted if you critically succeed with @UUID[Compendium.pf2e.feats-srd.Item.cErltcAC7OVnIyO1]{Predictable!}</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "predicatable"
+        ],
+        "selector": [
+          "ac",
+          "reflex"
+        ],
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Defending against target of Predictable!",
+        "option": "predicable",
+        "toggleable": true
+      }
+    ],
+    "slug": "effect-predictable-critical-success",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.I4Ozf6mTnd3X0Oax"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.I4Ozf6mTnd3X0Oax",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!I4Ozf6mTnd3X0Oax"
+}

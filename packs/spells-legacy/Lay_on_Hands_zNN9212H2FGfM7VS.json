@@ -1,0 +1,149 @@
+{
+  "_id": "zNN9212H2FGfM7VS",
+  "img": "systems/pf2e/icons/spells/lay-on-hands.webp",
+  "name": "Lay on Hands",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your hands become infused with positive energy, healing a living creature or damaging an undead creature with a touch.</p>\n<p>If you use lay on hands on a willing living target, you restore 6 Hit Points; if the target is one of your allies, they also gain a +2 status bonus to AC for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.lyLMiauxIVUM3oF1]{Spell Effect: Lay on Hands}</p>\n<p>Against an undead target, you deal 1d6 damage and it must attempt a basic Fortitude save; if it fails, it also takes a -2 status penalty to AC for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.JhihziXQuoteftdd]{Spell Effect: Lay on Hands (Vs. Undead)}</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing increases by 6, and the damage to an undead target increases by 1d6.</p>"
+    },
+    "rules": [],
+    "slug": "lay-on-hands",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "champion",
+        "focus",
+        "healing",
+        "manipulate",
+        "vitality"
+      ],
+      "rarity": "uncommon",
+      "traditions": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 willing living creature or 1 undead creature"
+    },
+    "range": {
+      "value": "touch"
+    },
+    "area": null,
+    "time": {
+      "value": "1"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {},
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "overlays": {
+      "a33QUFoKgoOprovO": {
+        "_id": "a33QUFoKgoOprovO",
+        "name": "Lay on Hands (Vs. Undead)",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "damage": {
+            "37YW4ZGhxx7Y2mdI": {
+              "applyMod": false,
+              "formula": "1d6",
+              "type": "vitality",
+              "materials": [],
+              "kinds": [
+                "damage"
+              ]
+            }
+          },
+          "heightening": {
+            "damage": {
+              "37YW4ZGhxx7Y2mdI": "1d6"
+            },
+            "interval": 1,
+            "type": "interval"
+          },
+          "defense": {
+            "passive": null,
+            "save": {
+              "statistic": "fortitude",
+              "basic": true
+            }
+          }
+        }
+      },
+      "uLuOg62dVyxvbW66": {
+        "_id": "uLuOg62dVyxvbW66",
+        "name": "Lay on Hands (Healing)",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "damage": {
+            "b39tbePoPlJSzLku": {
+              "applyMod": false,
+              "formula": "6",
+              "type": "vitality",
+              "materials": [],
+              "kinds": [
+                "healing"
+              ]
+            }
+          },
+          "heightening": {
+            "damage": {
+              "b39tbePoPlJSzLku": "6"
+            },
+            "interval": 1,
+            "type": "interval"
+          },
+          "defense": null
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.zNN9212H2FGfM7VS"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.zNN9212H2FGfM7VS",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zNN9212H2FGfM7VS"
+}

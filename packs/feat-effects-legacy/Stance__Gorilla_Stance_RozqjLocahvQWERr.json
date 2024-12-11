@@ -1,0 +1,113 @@
+{
+  "_id": "RozqjLocahvQWERr",
+  "img": "systems/pf2e/icons/features/feats/gorilla-stance.webp",
+  "name": "Stance: Gorilla Stance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.DqD7htz8Sd1dh3BT]{Gorilla Stance}</p>\n<p>You lower yourself to the ground and take an imposing, knuckle-walking stance. While in this stance, the only Strikes you can make are gorilla slam unarmed attacks. These deal 1d8 bludgeoning damage; are in the brawling group; and have the backswing, forceful, grapple, nonlethal, and unarmed traits.</p>\n<p>While you are in Gorilla Stance, you gain a +2 circumstance bonus to Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb}, and if you roll a success on an Athletics check to Climb, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d8"
+          }
+        },
+        "group": "brawling",
+        "img": "systems/pf2e/icons/features/feats/gorilla-stance.webp",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Stance.Attack.GorillaSlam",
+        "range": null,
+        "replaceAll": true,
+        "traits": [
+          "backswing",
+          "forceful",
+          "grapple",
+          "unarmed",
+          "nonlethal"
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:climb"
+        ],
+        "selector": "athletics",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "action:climb"
+        ],
+        "selector": "athletics",
+        "text": "If you roll a success on an Athletics check to Climb, you get a critical success instead.",
+        "title": "Gorilla Stance"
+      }
+    ],
+    "slug": "stance-gorilla-stance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.RozqjLocahvQWERr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.RozqjLocahvQWERr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!RozqjLocahvQWERr"
+}

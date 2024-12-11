@@ -1,0 +1,83 @@
+{
+  "_id": "5FyvwI24mnROzh61",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Combat Assessment",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You make a telegraphed attack to learn about your foe.</p>\n<p>Make a melee Strike. On a hit, you can immediately attempt a check to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} about the target. On a critical hit, you gain a +2 circumstance bonus to the check to Recall Knowledge.</p>\n<p>The target is temporarily immune to Combat Assessment for 1 day.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Combat Assessment (critical hit)",
+        "predicate": [
+          "action:recall-knowledge",
+          "critical-assessment"
+        ],
+        "selector": "skill-check",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "combat-assessment",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fighter"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.5FyvwI24mnROzh61"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.5FyvwI24mnROzh61",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5FyvwI24mnROzh61"
+}

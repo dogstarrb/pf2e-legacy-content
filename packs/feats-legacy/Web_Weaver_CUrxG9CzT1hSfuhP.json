@@ -1,0 +1,79 @@
+{
+  "_id": "CUrxG9CzT1hSfuhP",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Web Weaver",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can produce a soft silk to weave into useful items. You gain the @UUID[Compendium.pf2e.feats-srd.Item.QLeMH5mQgh28sa5o]{Specialty Crafting} feat with a specialty in weaving.</p>\n<p>You can use your webbing to @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft} simple, nonconsumable threaded items, such as clothing and rope, at zero cost as long as their base Price is 1 sp or less. These items have no resale value, and they naturally degrade after 24 hours without regular (if minor) maintenance. You can maintain up to 10 such items at a time; if you create a new one, your oldest creation breaks down from neglect.</p>\n<p>These temporary items take you only 1 day to Craft instead of 4. If you're an expert in Crafting, you can Craft these items in 1 hour; if you're a master, you can Craft them in 10 minutes; if you're legendary, you can Craft them in 1 minute.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "preselectChoices": {
+          "specialtyCrafting": "weaving"
+        },
+        "uuid": "Compendium.pf2e.feats-srd.Item.QLeMH5mQgh28sa5o"
+      }
+    ],
+    "slug": "web-weaver",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "anadi"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Mwangi Expanse",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.CUrxG9CzT1hSfuhP"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.CUrxG9CzT1hSfuhP",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CUrxG9CzT1hSfuhP"
+}

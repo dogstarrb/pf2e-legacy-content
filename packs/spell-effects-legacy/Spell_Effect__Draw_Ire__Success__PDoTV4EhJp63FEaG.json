@@ -1,0 +1,83 @@
+{
+  "_id": "PDoTV4EhJp63FEaG",
+  "img": "icons/skills/targeting/target-glowing-yellow.webp",
+  "name": "Spell Effect: Draw Ire (Success)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature takes a -1 status penalty to attack rolls against creatures other than you. The spell ends at the end of the target's next turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "not": "target:drawIre"
+          }
+        ],
+        "selector": "attack",
+        "type": "status",
+        "value": -1
+      }
+    ],
+    "slug": "spell-effect-draw-ire-success",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.PDoTV4EhJp63FEaG"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 18400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.PDoTV4EhJp63FEaG",
+    "duplicateSource": null
+  },
+  "_key": "!items!PDoTV4EhJp63FEaG"
+}

@@ -1,0 +1,115 @@
+{
+  "_id": "3A3ueS9Q0s3U8KXE",
+  "img": "systems/pf2e/icons/spells/noxious-metals.webp",
+  "name": "Noxious Metals",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This spell forces toxic metal to coalesce on the skin or surface of all living creatures in the area, dealing @Damage[4d6[poison]] damage with a basic Fortitude save. Any creature that has the plant trait, has the wood trait, or has an anathema toward metal, takes the following effects depending on the result of that Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature suffers no additional effects.</p>\n<p><strong>Success</strong> The creature takes @Damage[1[persistent,poison]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} as long as it takes this persistent damage.</p>\n<p><strong>Failure</strong> As success, except @Damage[1d4[persistent,poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> As success, except @Damage[1d8[persistent,poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial poison damage increases by [[/r 2d6]].</p>"
+    },
+    "rules": [],
+    "slug": "noxious-metals",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate",
+        "metal",
+        "poison"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 3
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": {
+      "type": "burst",
+      "value": 20
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "DzJpYMdE0NBqqQXM": {
+        "applyMod": false,
+        "formula": "4d6",
+        "type": "bludgeoning",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "DzJpYMdE0NBqqQXM": "2d6"
+      },
+      "interval": 1,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.3A3ueS9Q0s3U8KXE"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.3A3ueS9Q0s3U8KXE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3A3ueS9Q0s3U8KXE"
+}

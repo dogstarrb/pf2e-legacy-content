@@ -1,0 +1,170 @@
+{
+  "_id": "xxSpHT2vnCFxTr0q",
+  "img": "systems/pf2e/icons/default-icons/weapon.svg",
+  "name": "Ghosthand's Comet",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The barrel of this long rifle is translucent in places, forming a swirled pattern along the metal, and its stock is formed of crimson wood. Ghosthand's Comet is a <em>+4 major striking beast-bane greater impactful </em>advanced firearm with a range increment of 300 feet. It deals @Damage[5d8[force]] and has the backstabber, concussive, kickback, and fatal d12 traits. As a star gun, <em>Ghosthand's Comet </em>runs on magic and doesn't use ammunition or black powder. The weapon is silent when fired.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Trigger</strong> You attempt a ranged Strike with <em>Ghosthand's Comet</em></p>\n<hr />\n<p><strong>Effect</strong> For the triggering Strike, <em>Ghosthand's Comet </em>changes its damage type to your choice of acid, cold, electricity, fire, or sonic.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">1</span> envision</p>\n<hr />\n<p><strong>Effect</strong> On your next attempt at a ranged Strike with <em>Ghosthand's Comet</em>, the shot phases through any material or magical obstacle, such as a <em>@UUID[Compendium.pf2e.spells-srd.Item.7Iela4GgVeO3LfAo]{Wall of Force}</em>, in its path, ignoring all cover. You must attempt the Strike by the end of your turn or this effect is lost.</p>\n<p><strong>Destruction</strong> If the Grim Reaper slays the wielder of Ghosthand's Comet, the Reaper's scythe, as it strikes the killing blow, is destined to slice the star gun in half.</p>"
+    },
+    "rules": [
+      {
+        "diceNumber": 1,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "label": "Bane",
+        "predicate": [
+          "target:trait:beast"
+        ],
+        "selector": "damage"
+      }
+    ],
+    "slug": "ghosthands-comet",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "artifact",
+        "backstabber",
+        "concussive",
+        "fatal-d12",
+        "kickback",
+        "magical"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 23
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 71300
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": "inubrix",
+      "grade": "high"
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "category": "advanced",
+    "group": "firearm",
+    "bonus": {
+      "value": 0
+    },
+    "damage": {
+      "dice": 5,
+      "die": "d8",
+      "damageType": "force",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": 300,
+    "reload": {
+      "value": "0"
+    },
+    "runes": {
+      "potency": 4,
+      "striking": 3,
+      "property": [
+        "bane",
+        "greaterImpactful"
+      ]
+    },
+    "specific": {
+      "material": {
+        "type": "inubrix",
+        "grade": "high"
+      },
+      "runes": {
+        "potency": 4,
+        "striking": 3,
+        "property": [
+          "bane",
+          "greaterImpactful"
+        ]
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.xxSpHT2vnCFxTr0q"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.xxSpHT2vnCFxTr0q",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!xxSpHT2vnCFxTr0q"
+}

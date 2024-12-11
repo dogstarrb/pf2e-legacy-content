@@ -1,0 +1,108 @@
+{
+  "_id": "kvZCQz4NoMAfjvif",
+  "img": "systems/pf2e/icons/spells/gasping-marsh.webp",
+  "name": "Gasping Marsh",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>With a rattling hiss, you create a quickly evaporating mist of invisible poisonous marsh gas to smother creatures in the area. When you Sustain the Spell, the mist dissipates completely from the previous area, and you can select a new area within range to fill with the mist. If you don't Sustain the Spell, the mist dissipates and the spell ends.</p>\n<p>You deal 4d6 poison damage to each breathing creature that starts its turn in the area. Each affected creature must attempt a Fortitude save.</p>\n<p>The creature is then temporarily immune to <em>gasping marsh</em> for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage, is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}, and takes @Damage[1d8[persistent,poison]].</p>"
+    },
+    "rules": [],
+    "slug": "gasping-marsh",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate",
+        "poison"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "arcane",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder #171: Hurricane's Howl",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": {
+      "type": "burst",
+      "value": 10
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": true
+    },
+    "damage": {
+      "q8ptrzvf1kb0ms3q": {
+        "applyMod": false,
+        "formula": "4d6",
+        "type": "poison",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.kvZCQz4NoMAfjvif"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.kvZCQz4NoMAfjvif",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!kvZCQz4NoMAfjvif"
+}

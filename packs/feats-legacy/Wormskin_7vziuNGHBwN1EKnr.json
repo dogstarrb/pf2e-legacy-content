@@ -1,0 +1,100 @@
+{
+  "_id": "7vziuNGHBwN1EKnr",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Wormskin",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your flesh grows thick and bloated, protecting you against harm. You gain resistance equal to half your level versus one of the following types of damage, chosen when you take the feat: fire, cold, or bludgeoning. This choice cannot be changed.</p>\n<p>When you're unarmored, your flesh gives you a +2 item bonus to AC with a Dexterity cap of +3. You can apply with armor potency runes and property runes directly to your flesh, though excruciatingly painful.</p>\n<p><strong>Special</strong> You can take this feat up to three times, each time selecting a new damage type from the list.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitBludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "PF2E.TraitCold",
+            "value": "cold"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          }
+        ],
+        "flag": "damage",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.DamageType"
+      },
+      {
+        "key": "Resistance",
+        "type": "{item|flags.pf2e.rulesSelections.damage}",
+        "value": "floor(@actor.level/2)"
+      }
+    ],
+    "slug": "wormskin",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #194: Cult of the Cave Worm",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Worm Caller Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.7vziuNGHBwN1EKnr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.7vziuNGHBwN1EKnr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7vziuNGHBwN1EKnr"
+}

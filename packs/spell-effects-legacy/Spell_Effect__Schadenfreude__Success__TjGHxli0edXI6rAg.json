@@ -1,0 +1,79 @@
+{
+  "_id": "TjGHxli0edXI6rAg",
+  "img": "icons/magic/death/projectile-skull-flaming-yellow.webp",
+  "name": "Spell Effect: Schadenfreude (Success)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature is distracted by its amusement and takes a -1 status penalty on Perception checks and Will saves for 1 round.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Schadenfreude",
+        "selector": "perception",
+        "type": "status",
+        "value": -1
+      }
+    ],
+    "slug": "spell-effect-schadenfreude-success",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.TjGHxli0edXI6rAg"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 21000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.TjGHxli0edXI6rAg",
+    "duplicateSource": null
+  },
+  "_key": "!items!TjGHxli0edXI6rAg"
+}

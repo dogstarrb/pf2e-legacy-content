@@ -1,0 +1,99 @@
+{
+  "_id": "y7DDs03GtDnmhxFp",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Poisoner Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You make a point of always having a few toxins near at hand-you never know when some arsenic or the like might prove useful.</p>\n<p>You gain the basic alchemy benefits, though they can be used only for alchemical poisons. You gain batches of infused reagents per day equal to your level. Your advanced alchemy level for creating these is 1 and doesn't increase on its own.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained at least two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.HvbDEgCsLbzuMRiR]{Poisoner} archetype.</p>"
+    },
+    "rules": [
+      {
+        "craftableItems": [
+          "item:trait:alchemical",
+          "item:trait:poison"
+        ],
+        "isAlchemical": true,
+        "isDailyPrep": true,
+        "key": "CraftingAbility",
+        "label": "PF2E.SpecificRule.DedicationCraftingEntry.Poisoner",
+        "maxItemLevel": 1,
+        "slug": "poisoner"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.resources.crafting.infusedReagents.max",
+        "value": "@actor.level"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K"
+      }
+    ],
+    "slug": "poisoner-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Crafting"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.y7DDs03GtDnmhxFp"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.y7DDs03GtDnmhxFp",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!y7DDs03GtDnmhxFp"
+}

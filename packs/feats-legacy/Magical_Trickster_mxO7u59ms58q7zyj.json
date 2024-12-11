@@ -1,0 +1,83 @@
+{
+  "_id": "mxO7u59ms58q7zyj",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Magical Trickster",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Whether you're using magic items, wielding innate magic, or dabbling in spellcasting, you can sneak spells past your foes' defenses as easily as any blade. When you succeed at a spell attack roll against an off-guard foe's AC and the spell deals damage, you can add your sneak attack damage to the damage roll. If your single spell leads to multiple separate damage rolls, apply your sneak attack damage only once per target.</p>"
+    },
+    "rules": [
+      {
+        "category": "precision",
+        "diceNumber": "@actor.flags.pf2e.sneakAttackDamage.number",
+        "dieSize": "d{actor|flags.pf2e.sneakAttackDamage.faces}",
+        "key": "DamageDice",
+        "predicate": [
+          "item:trait:attack",
+          "target:condition:off-guard"
+        ],
+        "selector": "spell-damage"
+      }
+    ],
+    "slug": "magical-trickster",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "rogue"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.mxO7u59ms58q7zyj"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.mxO7u59ms58q7zyj",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!mxO7u59ms58q7zyj"
+}

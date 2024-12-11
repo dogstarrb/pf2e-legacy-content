@@ -1,0 +1,88 @@
+{
+  "_id": "Crcz9cW0To2pkfSy",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Murderous Thorns",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your thorns are many, vicious, and sharp. If you have the Hidden Thorn feat, your thorn attack gains the deadly d6 trait. If you have the thorned rose heritage, you can use the @UUID[Compendium.pf2e.actionspf2e.Item.ncdryKskPwHMgHFh]{Wicked Thorns} reaction once every hour.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:slug:thorns"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          "feat:hidden-thorn"
+        ],
+        "property": "weapon-traits",
+        "value": "deadly-d6"
+      }
+    ],
+    "slug": "murderous-thorns",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "ghoran"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Hidden Thorn or thorned rose"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.Crcz9cW0To2pkfSy"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.Crcz9cW0To2pkfSy",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Crcz9cW0To2pkfSy"
+}

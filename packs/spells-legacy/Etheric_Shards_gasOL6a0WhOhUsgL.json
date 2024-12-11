@@ -1,0 +1,146 @@
+{
+  "_id": "gasOL6a0WhOhUsgL",
+  "img": "systems/pf2e/icons/spells/etheric-shards.webp",
+  "name": "Etheric Shards",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You reach out and sow glittering splinters of force throughout the area, otherworldly caltrops of will and ectoplasm. The area is difficult terrain, even to flying or incorporeal creatures. Any creature that moves through the area takes 1d4 piercing damage per square traversed, with a basic Reflex save made at the end of each move action they take through the area.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The spell's area increases by 5 feet, and the piercing damage increases by 1.</p>"
+    },
+    "rules": [],
+    "slug": "etheric-shards",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "force",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "60 feet"
+    },
+    "area": {
+      "type": "burst",
+      "value": 20
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "1 minute",
+      "sustained": false
+    },
+    "damage": {
+      "u4xykvzyx1ej6xl4": {
+        "applyMod": false,
+        "formula": "1d4",
+        "type": "piercing",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "u4xykvzyx1ej6xl4": "+1"
+      },
+      "interval": 2,
+      "type": "interval"
+    },
+    "overlays": {
+      "cZnJKUusAPSiR1de": {
+        "_id": "cZnJKUusAPSiR1de",
+        "name": "Etheric Shards (5)",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {}
+      },
+      "i6bpmbq7m2xyhw5h": {
+        "_id": "i6bpmbq7m2xyhw5h",
+        "name": "Etheric Shards (7)",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "area": {
+            "value": 25
+          }
+        }
+      },
+      "qc6zredmnvsz6x0m": {
+        "_id": "qc6zredmnvsz6x0m",
+        "name": "Etheric Shards (9)",
+        "overlayType": "override",
+        "sort": 3,
+        "system": {
+          "area": {
+            "value": 30
+          }
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.gasOL6a0WhOhUsgL"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.gasOL6a0WhOhUsgL",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!gasOL6a0WhOhUsgL"
+}

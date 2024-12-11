@@ -1,0 +1,88 @@
+{
+  "_id": "sDN9b4bjCGH2nQnG",
+  "img": "icons/magic/nature/leaf-oak-wreath-glow-green.webp",
+  "name": "Spell Effect: Rapid Adaptation (Mountain)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.fTK6ysisGhy3hRvz]{Rapid Adaptation}</em></p>\n<p>The target isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} when Climbing, and when it rolls a success on an Acrobatics check to Balance on rubble, it gets a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:balance",
+          {
+            "or": [
+              "terrain:rubble"
+            ]
+          }
+        ],
+        "selector": "acrobatics",
+        "type": "skill"
+      }
+    ],
+    "slug": "spell-effect-rapid-adaptation-mountain",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.sDN9b4bjCGH2nQnG"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 39600000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.sDN9b4bjCGH2nQnG",
+    "duplicateSource": null
+  },
+  "_key": "!items!sDN9b4bjCGH2nQnG"
+}

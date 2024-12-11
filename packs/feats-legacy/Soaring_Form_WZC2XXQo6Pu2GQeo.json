@@ -1,0 +1,81 @@
+{
+  "_id": "WZC2XXQo6Pu2GQeo",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Soaring Form",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your wings grow stronger. You gain the effects of @UUID[Compendium.pf2e.feats-srd.Item.Tl8yckXeTCHnwrlM]{Soaring Flight} at all times.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": "max(20,(@actor.attributes.speed.total))"
+      }
+    ],
+    "slug": "soaring-form",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "tengu"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Soaring Flight"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.WZC2XXQo6Pu2GQeo"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.WZC2XXQo6Pu2GQeo",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!WZC2XXQo6Pu2GQeo"
+}

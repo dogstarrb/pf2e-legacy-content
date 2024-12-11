@@ -1,0 +1,111 @@
+{
+  "_id": "Cq6NjvcKZOMySBVj",
+  "img": "systems/pf2e/icons/features/classes/incredible-movement.webp",
+  "name": "Incredible Movement",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You move like the wind. You gain a +10-foot status bonus to your Speed whenever you're not wearing armor. The bonus increases by 5 feet for every 4 levels you have beyond 3rd.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "not": "self:armored"
+          }
+        ],
+        "selector": "land-speed",
+        "slug": "incredible-movement",
+        "type": "status",
+        "value": {
+          "brackets": [
+            {
+              "end": 6,
+              "start": 3,
+              "value": 10
+            },
+            {
+              "end": 10,
+              "start": 7,
+              "value": 15
+            },
+            {
+              "end": 14,
+              "start": 11,
+              "value": 20
+            },
+            {
+              "end": 18,
+              "start": 15,
+              "value": 25
+            },
+            {
+              "start": 19,
+              "value": 30
+            }
+          ]
+        }
+      }
+    ],
+    "slug": "incredible-movement",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.Cq6NjvcKZOMySBVj"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.Cq6NjvcKZOMySBVj",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Cq6NjvcKZOMySBVj"
+}

@@ -1,0 +1,115 @@
+{
+  "_id": "JCGsj7iY88o9uTP5",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/hunters-arrowhead.webp",
+  "name": "Hunter's Arrowhead",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A<em> hunter's arrowhead </em>is meant to be worn as a charm, such as a pendant, or carried in a pocket or quiver. The arrowhead is etched with images sacred to the elven god Ketephys. While you wear or carry the arrowhead, it infuses you with great skill at hunting, and you gain a +1 item bonus to Survival checks and attack rolls against any creature you've currently designated as your prey with @UUID[Compendium.pf2e.actionspf2e.Item.JYi4MnsdFu618hPm]{Hunt Prey}. A hunter's arrowhead is also a religious symbol of Ketephys.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">R</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You would miss with an attack made with a bow</p>\n<hr />\n<p><strong>Effect</strong> You gain a +2 circumstance bonus to your attack roll, possibly turning a miss into a hit.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "hunted-prey"
+        ],
+        "selector": [
+          "attack-roll",
+          "survival"
+        ],
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "hunters-arrowhead",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 80
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.JCGsj7iY88o9uTP5"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.JCGsj7iY88o9uTP5",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!JCGsj7iY88o9uTP5"
+}

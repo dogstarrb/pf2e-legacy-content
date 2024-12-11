@@ -1,0 +1,98 @@
+{
+  "_id": "eGZzifQWCf5gSq2y",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Unshakable Grit",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've become hardened by conflict after everything you've faced, and you possess a certain intractable stubbornness. If the reroll granted to you by your Grit and Tenacity reaction is a success, you get a critical success instead; if it's a critical failure, you get a failure instead.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better",
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "grit-and-tenacity"
+        ],
+        "selector": "fortitude"
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better",
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "grit-and-tenacity"
+        ],
+        "selector": "will"
+      }
+    ],
+    "slug": "unshakable-grit",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "gunslinger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Grit and Tenacity"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.eGZzifQWCf5gSq2y"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.eGZzifQWCf5gSq2y",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!eGZzifQWCf5gSq2y"
+}

@@ -1,0 +1,82 @@
+{
+  "_id": "DZWQspPi4IkfXV2E",
+  "img": "systems/pf2e/icons/features/classes/keen-recollection.webp",
+  "name": "Keen Recollection",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can recall pertinent facts on topics that aren't your specialty. Your proficiency bonus to untrained skill checks to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} is equal to your level instead of +0.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:recall-knowledge",
+          "proficiency:untrained"
+        ],
+        "selector": "skill-check",
+        "type": "proficiency",
+        "value": "@actor.level"
+      }
+    ],
+    "slug": "keen-recollection",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "investigator"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.DZWQspPi4IkfXV2E"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.DZWQspPi4IkfXV2E",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!DZWQspPi4IkfXV2E"
+}

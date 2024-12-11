@@ -1,0 +1,99 @@
+{
+  "_id": "0OC945wcZ4H4akLz",
+  "img": "systems/pf2e/icons/spells/summoners-visage.webp",
+  "name": "Spell Effect: Summoner's Visage",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your eidolon gains a +4 status bonus to Deception checks to Impersonate you and can add its level to such checks even if it's untrained.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "summoners-visage-status",
+        "predicate": [
+          "impersonating-summoner"
+        ],
+        "selector": "deception",
+        "type": "status",
+        "value": 4
+      },
+      {
+        "key": "FlatModifier",
+        "label": "summoners-visage-proficiency",
+        "predicate": [
+          "impersonating-summoner"
+        ],
+        "selector": "deception",
+        "type": "proficiency",
+        "value": "@actor.level"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Impersonate Master (Summoner's Visage)",
+        "option": "impersonating-summoner",
+        "toggleable": true
+      }
+    ],
+    "slug": "spell-effect-summoners-visage",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.0OC945wcZ4H4akLz"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.0OC945wcZ4H4akLz",
+    "duplicateSource": null
+  },
+  "_key": "!items!0OC945wcZ4H4akLz"
+}

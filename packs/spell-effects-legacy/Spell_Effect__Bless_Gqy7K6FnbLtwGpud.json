@@ -1,0 +1,78 @@
+{
+  "_id": "Gqy7K6FnbLtwGpud",
+  "img": "systems/pf2e/icons/spells/bless.webp",
+  "name": "Spell Effect: Bless",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.XSujb7EsSwKl19Uu]{Bless}</em></p>\n<p>Blessings from beyond help you strike true. You gain a +1 status bonus to attack rolls.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "attack-roll",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-bless",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.Gqy7K6FnbLtwGpud"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 14100000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.Gqy7K6FnbLtwGpud",
+    "duplicateSource": null
+  },
+  "_key": "!items!Gqy7K6FnbLtwGpud"
+}

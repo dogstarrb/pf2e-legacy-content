@@ -1,0 +1,84 @@
+{
+  "_id": "9SruVg2lZpNaYLOB",
+  "img": "icons/skills/melee/strike-sword-blood-red.webp",
+  "name": "Debilitating Strikes",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When taking advantage of an opening, you both hinder and harm your foe. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.bp0Up04x3dzGK5bB]{Debilitating Strike} free action.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "target:condition:off-guard"
+        ],
+        "selector": "strike-damage",
+        "text": "<p class='compact-text'><strong>Debilitation choices</strong></p><p data-visibility='owner'><span class='pf2-icon'>f</span>@UUID[Compendium.pf2e.actionspf2e.Item.bp0Up04x3dzGK5bB]{Debilitating Strike}</p>"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.actionspf2e.Item.bp0Up04x3dzGK5bB"
+      }
+    ],
+    "slug": "debilitating-strikes",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "rogue"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.9SruVg2lZpNaYLOB"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.9SruVg2lZpNaYLOB",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9SruVg2lZpNaYLOB"
+}

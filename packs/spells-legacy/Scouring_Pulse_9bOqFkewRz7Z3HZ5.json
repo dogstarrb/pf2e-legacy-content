@@ -1,0 +1,125 @@
+{
+  "_id": "9bOqFkewRz7Z3HZ5",
+  "img": "systems/pf2e/icons/spells/scouring-pulse.webp",
+  "name": "Scouring Pulse",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Area</strong> 10-foot radius, 60-foot-tall cylinder</p>\n<hr />\n<p>You inundate the area with concentrated positive energy, which scours away the stain of undeath. Each creature in the area takes 6d8 positive damage and must attempt a basic Reflex save. Creatures that fail the save also take @Damage[1d8[persistent,vitality]] damage. Creatures that take persistent positive damage from scouring pulse are wreathed in a heatless halo of light. They emit bright light in a 5-foot radius preventing them from being @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}; if the creature is @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}, they're concealed while affected by scouring pulse, rather than being undetected.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> The positive damage increases to 9d8 damage, and the persistent positive damage increases to @Damage[2d8[persistent,vitality]] damage. Creatures remain suffused in light for [[/r 1d4 #Rounds]]{1d4 additional rounds} after removing the persistent positive damage.</p>"
+    },
+    "rules": [],
+    "slug": "scouring-pulse",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "light",
+        "manipulate",
+        "vitality"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "arcane",
+        "divine",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Knights of Lastwall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "120 feet"
+    },
+    "area": {
+      "type": "burst",
+      "value": 10
+    },
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "8lhfdml2dfwh0pc1": {
+        "applyMod": false,
+        "formula": "6d8",
+        "type": "vitality",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "8": {
+          "damage": {
+            "8lhfdml2dfwh0pc1": {
+              "applyMod": false,
+              "formula": "9d8",
+              "type": "vitality",
+              "materials": []
+            }
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.9bOqFkewRz7Z3HZ5"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.9bOqFkewRz7Z3HZ5",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9bOqFkewRz7Z3HZ5"
+}

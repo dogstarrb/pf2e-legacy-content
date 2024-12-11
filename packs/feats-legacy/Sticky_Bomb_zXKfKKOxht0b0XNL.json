@@ -1,0 +1,95 @@
+{
+  "_id": "zXKfKKOxht0b0XNL",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Sticky Bomb",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> You use @UUID[Compendium.pf2e.classfeatures.Item.sPtl05wwTpqFI0lL]{Quick Alchemy} to craft an alchemical bomb, and that bomb's level is at least 2 levels lower than your advanced alchemy level</p>\n<hr />\n<p>You mix in an additive to make your bomb's contents adhere to the target and continue to deal damage.</p>\n<p>A creature that takes a direct hit from one of your sticky bombs also takes persistent damage equal to and of the same type as the bomb's splash damage. If the bomb already deals persistent damage, combine the two amounts.</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "option": "sticky-bomb",
+        "toggleable": true
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "alchemical",
+          "bomb",
+          "sticky-bomb"
+        ],
+        "selector": "strike-damage",
+        "text": "If you hit, your bomb deals persistent damage equal to, and of the same type, as the bomb's splash damage.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "sticky-bomb",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "additive2",
+        "alchemist"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "free"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "frequency": {
+      "max": 1,
+      "per": "round",
+      "value": 1
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.zXKfKKOxht0b0XNL"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.zXKfKKOxht0b0XNL",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!zXKfKKOxht0b0XNL"
+}

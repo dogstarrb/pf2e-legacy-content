@@ -1,0 +1,97 @@
+{
+  "_id": "62glnJI2o0KnHULB",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Triangle Shot",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.Item.YG2RxXE9SMfwo6wP]{Monastic Archer Stance} and wielding a bow usable with that stance.</p>\n<hr />\n<p>You string three arrows to your bow and fire them all at once. Make three ranged Strikes against a single target with the required weapon, each using your current multiple attack penalty, and you take an additional -2 penalty. This counts as two attacks when calculating your multiple attack penalty, and you combine the attacks' damage for the purpose of resistances and weaknesses.</p>\n<p>Your @UUID[Compendium.pf2e.feats-srd.Item.8bMmGBO6gsMfWZk3]{Stunning Fist} benefit applies to Triangle Shot, even though it isn't a @UUID[Compendium.pf2e.actionspf2e.Item.nbfNETdpee8CVM17]{Flurry of Blows}. If all three Strikes hit, the target takes @Damage[3d6[bleed]].</p>"
+    },
+    "rules": [
+      {
+        "domain": "attack-roll",
+        "key": "RollOption",
+        "label": "Triangle Shot (-2 penalty to attack)",
+        "option": "triangle-shot",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "triangle-shot",
+          "ranged"
+        ],
+        "selector": "attack",
+        "value": -2
+      }
+    ],
+    "slug": "triangle-shot",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "flourish",
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Monastic Archer Stance"
+        },
+        {
+          "value": "Stunning Fist"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.62glnJI2o0KnHULB"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.62glnJI2o0KnHULB",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!62glnJI2o0KnHULB"
+}

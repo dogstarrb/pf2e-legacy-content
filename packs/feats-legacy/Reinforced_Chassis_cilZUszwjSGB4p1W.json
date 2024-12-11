@@ -1,0 +1,113 @@
+{
+  "_id": "cilZUszwjSGB4p1W",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Reinforced Chassis",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your body is designed to be particularly resilient. Your chassis is medium armor in the plate armor group that grants a +4 item bonus to AC, a Dex cap of +1, a check penalty of -2, a speed penalty of -5 feet, and a Strength value of 16. You can never wear other armor or remove your chassis; however, you still don't become @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} from sleeping. Finally, you can etch armor runes onto your chassis as normal.</p>\n<p><strong>Enhancement</strong> Your chassis becomes difficult to overcome. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.uOlyklPCUWLtCaYI]{Chassis Deflection} reaction.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.equipment-srd.Item.U5IGgD7Z225OPnhK"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.automaton.enhancements.lesser",
+        "value": {
+          "label": "PF2E.SpecificRule.Automaton.EnhanceableFeats.ReinforcedChassis",
+          "predicate": [
+            {
+              "not": "enhancement:reinforced-chassis"
+            }
+          ],
+          "value": "reinforced-chassis"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.automaton.enhancements.greater",
+        "value": {
+          "label": "PF2E.SpecificRule.Automaton.EnhanceableFeats.ReinforcedChassis",
+          "predicate": [
+            {
+              "not": "enhancement:reinforced-chassis"
+            }
+          ],
+          "value": "reinforced-chassis"
+        }
+      },
+      {
+        "allowDuplicate": false,
+        "key": "GrantItem",
+        "predicate": [
+          "enhancement:reinforced-chassis"
+        ],
+        "reevaluateOnUpdate": true,
+        "uuid": "Compendium.pf2e.actionspf2e.Item.uOlyklPCUWLtCaYI"
+      }
+    ],
+    "slug": "reinforced-chassis",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "automaton"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.cilZUszwjSGB4p1W"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.cilZUszwjSGB4p1W",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!cilZUszwjSGB4p1W"
+}

@@ -1,0 +1,99 @@
+{
+  "_id": "YzZs7r8VUOp7PiAW",
+  "img": "systems/pf2e/icons/spells/magic-stone.webp",
+  "name": "Spell Effect: Magic Stone",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.9u6X9ykhzG11NK1n]{Magic Stone}</em></p>\n<p>The stones become <em>+1 striking disrupting sling bullets</em>.</p>"
+    },
+    "rules": [
+      {
+        "key": "WeaponPotency",
+        "predicate": [
+          "item:group:sling"
+        ],
+        "selector": "strike-attack-roll",
+        "value": 1
+      },
+      {
+        "key": "Striking",
+        "predicate": [
+          "item:group:sling"
+        ],
+        "selector": "strike-damage",
+        "value": 1
+      },
+      {
+        "definition": [
+          "item:group:sling"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "property-runes",
+        "value": "disrupting"
+      }
+    ],
+    "slug": "spell-effect-magic-stone",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": {
+      "type": "counter",
+      "value": 1
+    },
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.YzZs7r8VUOp7PiAW"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 24600000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.YzZs7r8VUOp7PiAW",
+    "duplicateSource": null
+  },
+  "_key": "!items!YzZs7r8VUOp7PiAW"
+}

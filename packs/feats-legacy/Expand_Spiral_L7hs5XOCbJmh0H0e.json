@@ -1,0 +1,82 @@
+{
+  "_id": "L7hs5XOCbJmh0H0e",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Expand Spiral",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your prayers encompass your companions, granting you the ability to share Pharasma's blessings. When you use Spiral Sworn, you can spend 2 actions instead of 1 to grant the benefits to all allies who are in the light of your spiral when you take the action.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.soulWarden.featCount",
+        "value": 1
+      }
+    ],
+    "slug": "expand-spiral",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Spiral Sworn"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.L7hs5XOCbJmh0H0e"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.L7hs5XOCbJmh0H0e",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!L7hs5XOCbJmh0H0e"
+}

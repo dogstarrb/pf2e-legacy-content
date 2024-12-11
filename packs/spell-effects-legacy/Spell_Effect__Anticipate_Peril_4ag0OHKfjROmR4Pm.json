@@ -1,0 +1,80 @@
+{
+  "_id": "4ag0OHKfjROmR4Pm",
+  "img": "systems/pf2e/icons/spells/anticipate-peril.webp",
+  "name": "Spell Effect: Anticipate Peril",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.EUMjrJJwSgsqNidi]{Anticipate Peril}</em></p>\n<p>The target gains a +1 status bonus to its next initiative roll, after which the spell ends.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The status bonus increases by 1, to a maximum of +4 at 7th level.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "removeAfterRoll": [
+          "check:type:initiative"
+        ],
+        "selector": "initiative",
+        "type": "status",
+        "value": "clamped(ceil(@item.level / 2), 1, 4)"
+      }
+    ],
+    "slug": "spell-effect-anticipate-peril",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Gods & Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.4ag0OHKfjROmR4Pm"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 4800000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.4ag0OHKfjROmR4Pm",
+    "duplicateSource": null
+  },
+  "_key": "!items!4ag0OHKfjROmR4Pm"
+}

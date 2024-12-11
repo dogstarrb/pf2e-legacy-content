@@ -1,0 +1,138 @@
+{
+  "_id": "IqJ9URobmJ9L9UBG",
+  "img": "icons/magic/unholy/beam-impact-purple.webp",
+  "name": "Shadow Blast",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You shape the quasi-real substance of the Shadow Plane into a blast. Choose acid, bludgeoning, cold, electricity, fire, force, piercing, slashing, or sonic damage, and choose a @Template[type:cone|distance:30], a @Template[type:burst|distance:15] within 120 feet, or a @Template[type:line|distance:50]. The blast deals 5d8 damage of the type you chose to each creature in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d8.</p>"
+    },
+    "rules": [],
+    "slug": "shadow-blast",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate",
+        "shadow"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "divine",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "requirements": "",
+    "target": {
+      "value": ""
+    },
+    "range": {
+      "value": "varies"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "5d8",
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "0": "1d8"
+      },
+      "interval": 1,
+      "type": "interval"
+    },
+    "overlays": {
+      "UTMlHk0o5FXLlwwM": {
+        "_id": "UTMlHk0o5FXLlwwM",
+        "name": "Shadow Blast (Will)",
+        "overlayType": "override",
+        "sort": 2,
+        "system": {
+          "defense": {
+            "passive": null,
+            "save": {
+              "statistic": "will",
+              "basic": false
+            }
+          }
+        }
+      },
+      "zjyfdrWBaUVi4O7b": {
+        "_id": "zjyfdrWBaUVi4O7b",
+        "name": "Shadow Blast (Reflex)",
+        "overlayType": "override",
+        "sort": 1,
+        "system": {
+          "defense": {
+            "passive": null,
+            "save": {
+              "statistic": "reflex",
+              "basic": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.IqJ9URobmJ9L9UBG"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.IqJ9URobmJ9L9UBG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!IqJ9URobmJ9L9UBG"
+}

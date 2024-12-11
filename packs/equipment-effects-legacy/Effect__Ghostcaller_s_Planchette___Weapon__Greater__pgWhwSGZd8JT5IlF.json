@@ -1,0 +1,111 @@
+{
+  "_id": "pgWhwSGZd8JT5IlF",
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "name": "Effect: Ghostcaller's Planchette - Weapon (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.utRZnCD2XI9Q1dWE]{Ghostcaller's Planchette (Greater)}</p>\n<p>After you cast a necromancy spell by activating the <em>planchette</em>, the affixed weapon gains the effects of both the <em>ghost touch</em> and <em>greater disrupting</em> property runes until the end of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "includeHandwraps": true,
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "effectGhostcallersPlanchetteWeaponGreater",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "definition": [
+          {
+            "or": [
+              "item:category:{item|flags.pf2e.rulesSelections.effectGhostcallersPlanchetteWeaponGreater}",
+              "item:id:{item|flags.pf2e.rulesSelections.effectGhostcallersPlanchetteWeaponGreater}"
+            ]
+          }
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "property-runes",
+        "value": "ghost-touch"
+      },
+      {
+        "definition": [
+          {
+            "or": [
+              "item:category:{item|flags.pf2e.rulesSelections.effectGhostcallersPlanchetteWeaponGreater}",
+              "item:id:{item|flags.pf2e.rulesSelections.effectGhostcallersPlanchetteWeaponGreater}"
+            ]
+          }
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "property-runes",
+        "value": "greater-disrupting"
+      }
+    ],
+    "slug": "effect-ghostcallers-planchette-weapon-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 18
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.pgWhwSGZd8JT5IlF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.pgWhwSGZd8JT5IlF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!pgWhwSGZd8JT5IlF"
+}

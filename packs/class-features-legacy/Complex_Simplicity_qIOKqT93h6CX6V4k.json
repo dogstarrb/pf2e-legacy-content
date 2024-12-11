@@ -1,0 +1,168 @@
+{
+  "_id": "qIOKqT93h6CX6V4k",
+  "img": "systems/pf2e/icons/features/classes/complex-simplicity.webp",
+  "name": "Complex Simplicity",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Increase your innovation's weapon damage die by one step (d4 to d6, d6 to d8, d8 to d10, d10 to d12). In addition, it gains one of the following traits of your choice: versatile B, versatile P, or versatile S.</p>"
+    },
+    "rules": [
+      {
+        "key": "DamageDice",
+        "override": {
+          "upgrade": true
+        },
+        "selector": "{actor|flags.pf2e.trackedItems.weaponInnovation}-damage"
+      },
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitVersatileB",
+            "predicate": [
+              {
+                "nor": [
+                  "weapon-innovation:damage:type:bludgeoning",
+                  "weapon-innovation:trait:versatile-b"
+                ]
+              }
+            ],
+            "value": "versatile-b"
+          },
+          {
+            "label": "PF2E.TraitVersatileP",
+            "predicate": [
+              {
+                "nor": [
+                  "weapon-innovation:damage:type:piercing",
+                  "weapon-innovation:trait:versatile-p"
+                ]
+              }
+            ],
+            "value": "versatile-p"
+          },
+          {
+            "label": "PF2E.TraitVersatileS",
+            "predicate": [
+              {
+                "nor": [
+                  "weapon-innovation:damage:type:slashing",
+                  "weapon-innovation:trait:versatile-s"
+                ]
+              }
+            ],
+            "value": "versatile-s"
+          }
+        ],
+        "flag": "versatileTrait",
+        "key": "ChoiceSet",
+        "predicate": [
+          {
+            "or": [
+              {
+                "nor": [
+                  "weapon-innovation:damage:type:bludgeoning",
+                  "weapon-innovation:trait:versatile-b"
+                ]
+              },
+              {
+                "nor": [
+                  "weapon-innovation:damage:type:piercing",
+                  "weapon-innovation:trait:versatile-p"
+                ]
+              },
+              {
+                "nor": [
+                  "weapon-innovation:damage:type:slashing",
+                  "weapon-innovation:trait:versatile-s"
+                ]
+              }
+            ]
+          }
+        ],
+        "prompt": "PF2E.SpecificRule.Prompt.VersatileTrait",
+        "rollOption": "complex-simplicity"
+      },
+      {
+        "definition": [
+          "item:id:{actor|flags.pf2e.trackedItems.weaponInnovation}"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "predicate": [
+          {
+            "or": [
+              "complex-simplicity:versatile-b",
+              "complex-simplicity:versatile-p",
+              "complex-simplicity:versatile-s"
+            ]
+          }
+        ],
+        "property": "weapon-traits",
+        "value": "{item|flags.pf2e.rulesSelections.versatileTrait}"
+      }
+    ],
+    "slug": "complex-simplicity",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "inventor"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "actionCategory": {
+      "value": ""
+    }
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.qIOKqT93h6CX6V4k"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.qIOKqT93h6CX6V4k",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!qIOKqT93h6CX6V4k"
+}

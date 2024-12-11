@@ -1,0 +1,81 @@
+{
+  "_id": "7hwTeZNq6Jmzmtz4",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Agonizing Rebuke",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When you terrorize your enemies, you also cause them painful mental distress. When you successfully @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} a foe, that foe takes @Damage[1d4[mental]] damage at the start of each of its turns as long as it remains @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} and continues to engage in combat with you. If you have master proficiency in Intimidation, the damage increases to @Damage[2d4[mental]]{2d4}, and if you have legendary proficiency, the damage increases to @Damage[3d4[mental]]{3d4}.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          "action:demoralize"
+        ],
+        "selector": "intimidation",
+        "text": "PF2E.SpecificRule.Hobgoblin.AgonizingRebuke.Note",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "agonizing-rebuke",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "hobgoblin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.7hwTeZNq6Jmzmtz4"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.7hwTeZNq6Jmzmtz4",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!7hwTeZNq6Jmzmtz4"
+}

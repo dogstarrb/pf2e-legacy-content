@@ -1,0 +1,82 @@
+{
+  "_id": "wFP3SqPoO0bCPmyK",
+  "img": "systems/pf2e/icons/equipment/shields/specific-shields/krakens-guard.webp",
+  "name": "Effect: Kraken's Guard",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When you use the shield to Grapple, you gain a +3 item bonus to your Athletics check.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Kraken's Guard (Grapple)",
+        "predicate": [
+          "action:grapple"
+        ],
+        "selector": "athletics",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "effect-krakens-guard",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.wFP3SqPoO0bCPmyK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.wFP3SqPoO0bCPmyK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!wFP3SqPoO0bCPmyK"
+}

@@ -1,0 +1,179 @@
+{
+  "_id": "bheWnrBqMphBRUmn",
+  "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/oathbow.webp",
+  "name": "Oathbow",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Constructed of a flexible, white wood and with ornate, twisting designs carved into its surface, this +2 striking composite longbow appears to have been made by elves. Sometimes when you loose an arrow, its whistling in flight sounds like a voice whispering in Elven, wishing for the swift defeat of your enemies.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> command</p>\n<hr />\n<p><strong>Effect</strong> You swear an oath to destroy one creature you can see. For the next 7 days or until that creature is slain, your attacks with the bow against that creature deal 1d6 additional damage, and you gain a +2 circumstance bonus to Survival checks to Track that creature.</p>\n<p>Your critical hits against the target gain the bow's critical specialization effect; if they would already do so, they instead increase the DC of the Athletics check to Escape when critically hit to DC 20.</p>\n<p>After you activate the bow, you can't activate it again for 7 days. If you kill the creature you've sworn an oath against, the oath ends and you need to wait only 10 minutes before you can activate it again.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Target is Oathbow's sworn target",
+        "option": "target:oathbow",
+        "toggleable": true
+      },
+      {
+        "diceNumber": 1,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "label": "Oathbow's sworn target",
+        "predicate": [
+          "target:oathbow"
+        ],
+        "selector": "{item|_id}-damage"
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Oathbow (tracking Oathbow's sworn target)",
+        "predicate": [
+          "target:oathbow"
+        ],
+        "selector": "survival",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "oathbow",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "deadly-d10",
+        "magical",
+        "propulsive",
+        "volley-30"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "quantity": 1,
+    "baseItem": "longbow",
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1300
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-plus-hands"
+    },
+    "category": "martial",
+    "group": "bow",
+    "bonus": {
+      "value": 2
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d8",
+      "damageType": "piercing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": 100,
+    "reload": {
+      "value": "0"
+    },
+    "runes": {
+      "potency": 2,
+      "striking": 1,
+      "property": []
+    },
+    "specific": {
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "runes": {
+        "potency": 2,
+        "striking": 1,
+        "property": []
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.bheWnrBqMphBRUmn"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.bheWnrBqMphBRUmn",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bheWnrBqMphBRUmn"
+}

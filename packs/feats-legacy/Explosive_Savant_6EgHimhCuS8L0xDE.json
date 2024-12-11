@@ -1,0 +1,102 @@
+{
+  "_id": "6EgHimhCuS8L0xDE",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Explosive Savant",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Access</strong> You are from Dongun Hold or Alkenstar.</p>\n<hr />\n<p>A lifetime wielding firearms and explosive ordinance amid the chaos of battle has granted you great skill with volatile weapons. You become trained in simple and martial bombs and firearms.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:category:simple",
+          {
+            "or": [
+              "item:group:firearm",
+              "item:group:bomb"
+            ]
+          }
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.SimpleBombsFirearms",
+        "slug": "simple-bombs-firearms",
+        "value": 1
+      },
+      {
+        "definition": [
+          "item:category:martial",
+          {
+            "or": [
+              "item:group:firearm",
+              "item:group:bomb"
+            ]
+          }
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.MartialBombsFirearms",
+        "slug": "martial-bombs-firearms",
+        "value": 1
+      }
+    ],
+    "slug": "explosive-savant",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "dwarf"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.6EgHimhCuS8L0xDE"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.6EgHimhCuS8L0xDE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6EgHimhCuS8L0xDE"
+}

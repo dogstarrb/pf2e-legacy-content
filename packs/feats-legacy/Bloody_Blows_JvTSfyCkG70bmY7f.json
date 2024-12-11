@@ -1,0 +1,87 @@
+{
+  "_id": "JvTSfyCkG70bmY7f",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Bloody Blows",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your lethal unarmed attacks leave bloody gouges or cause severe internal bleeding. When you critically hit with a Strike using an unarmed attack that isn't nonlethal, the target takes @Damage[1d4[bleed]].</p>\n<p>This can be because you're taking the penalty to use a fist for a lethal attack or because you have an unarmed attack without the nonlethal trait due to @UUID[Compendium.pf2e.feats-srd.Item.JP5pptkl1Fx1JK4m]{Iron Fists}, @UUID[Compendium.pf2e.feats-srd.Item.M5195FvfCN3X7gi9]{Tusks}, or a similar ability.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "predicate": [
+          "unarmed",
+          {
+            "not": "nonlethal"
+          }
+        ],
+        "selector": "strike-damage",
+        "text": "When you critically hit with a Strike using an unarmed attack that isn't nonlethal, the target takes @Damage[1d4[bleed]].",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "bloody-blows",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "orc"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.JvTSfyCkG70bmY7f"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.JvTSfyCkG70bmY7f",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!JvTSfyCkG70bmY7f"
+}

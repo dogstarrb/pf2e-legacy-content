@@ -1,0 +1,73 @@
+{
+  "_id": "eFsD7W6hnK33jlDQ",
+  "img": "systems/pf2e/icons/features/ancestry/sewer-rat.webp",
+  "name": "Sewer Rat",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You come from a long line of ysoki from a community based in the sewers beneath a large settlement. You are immune to the disease filth fever. Each of your successful saving throws against a disease or poison reduces its stage by 2, or by 1 for a virulent disease or poison. Each critical success against an ongoing disease or poison reduces its stage by 3, or by 2 for a virulent disease or poison.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "predicate": [
+          {
+            "or": [
+              "disease",
+              "poison"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "text": "Your succesful saving throws against a disease or poison reduce its stage by 2 (or 1 for a virulent disease or poison). Each critical success reduces its stage by 3 (or 2 for a virulent disease or poison).",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "sewer-rat",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Ratfolk",
+      "slug": "ratfolk",
+      "uuid": "Compendium.pf2e.ancestries.Item.P6PcVnCkh4XMdefw"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.eFsD7W6hnK33jlDQ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.eFsD7W6hnK33jlDQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!eFsD7W6hnK33jlDQ"
+}

@@ -1,0 +1,185 @@
+{
+  "_id": "U266pQUnWwKYImhD",
+  "img": "icons/weapons/polearms/spear-hooked-blue.webp",
+  "name": "Rod of Razors",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This ornate, polearm-like weapon appears to be a cross between a halberd and a strange scepter of alien design. The rod's blades are edged in adamantine, and its haft is surprisingly elastic and can be used to extend the item's reach in combat dynamically, as needed.</p>\n<p>A rod of razors gains the effects of a <em>+2 adamantine greater striking halberd</em>, but these effects are high-tech in nature, not magical. You can't etch property runes onto a rod of razors. The rod of razors has a long-lasting internal power source that does not require recharging from batteries, but if the rod of razors becomes broken, its power supply grows unreliable. In such a case, each time the rod of razors is activated, the user must also succeed at a @Check[type:flat|dc:5]. Failure indicates that the rod's power supply fails and causes the rod to explode. This destroys the rod and causes @Damage[10d6[piercing]] damage and @Damage[10d6[slashing]] damage to the rod's wielder (@Check[type:reflex|dc:36|basic:true]). Additionally, if the rod is destroyed through other means, the rod's current wielder must make a successful @Check[type:flat|dc:11] to avoid having the rod explode in the same way. Stories of desperate people intentionally destroying a rod of razors as a last ditch attack have inadvertently given these Numearian weapons a poor reputation among certain circles in that nation, particularly with the Technic League, who regard those who fight with these weapons as fools.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<p><strong>Frequency</strong> six times per day</p>\n<p><strong>Effect</strong> You fire a razor-sharp flechette from the rod of razors. This is a ranged weapon attack that has a range of 100 feet, a reload of 0, and the deadly d10 and volley 30 feet traits. The flechette inflicts @Damage[3d8[piercing]] damage on a hit, and belongs to the dart weapon group. The flechette is an adamantine weapon.</p>"
+    },
+    "rules": [
+      {
+        "category": "martial",
+        "damage": {
+          "base": {
+            "damageType": "piercing",
+            "dice": 1,
+            "die": "d8"
+          }
+        },
+        "group": "dart",
+        "key": "Strike",
+        "label": "Rod of Razors Flechette",
+        "range": {
+          "max": 100
+        },
+        "slug": "flechette",
+        "traits": [
+          "adamantine",
+          "reload-0",
+          "deadly-d10",
+          "volley-30"
+        ]
+      },
+      {
+        "key": "WeaponPotency",
+        "selector": "flechette-attack",
+        "value": "@item.system.runes.potency"
+      },
+      {
+        "key": "Striking",
+        "selector": "flechette-damage",
+        "value": "@item.system.runes.striking"
+      }
+    ],
+    "slug": "rod-of-razors",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical",
+        "reach",
+        "tech",
+        "versatile-s"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Kingmaker",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 15
+    },
+    "quantity": 1,
+    "baseItem": "halberd",
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1300
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": "adamantine",
+      "grade": "standard"
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "category": "martial",
+    "group": "polearm",
+    "bonus": {
+      "value": 0
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d10",
+      "damageType": "piercing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": null,
+    "reload": {
+      "value": ""
+    },
+    "runes": {
+      "potency": 2,
+      "striking": 2,
+      "property": []
+    },
+    "specific": {
+      "material": {
+        "type": "adamantine",
+        "grade": "standard"
+      },
+      "runes": {
+        "potency": 2,
+        "striking": 2,
+        "property": []
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.U266pQUnWwKYImhD"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.U266pQUnWwKYImhD",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!U266pQUnWwKYImhD"
+}

@@ -1,0 +1,250 @@
+{
+  "_id": "oDDS6D2KTjpbA491",
+  "img": "systems/pf2e/icons/spells/electrified-crystal-ward.webp",
+  "name": "Spell Effect: Glass Shield",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.cgfl9Qr46bKaA59e]{Glass Shield}</em></p>\n<p>You summon a layer of clear glass to keep you from harm.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.attributes.shield",
+        "predicate": [
+          {
+            "or": [
+              "self:type:character",
+              "self:type:npc"
+            ]
+          }
+        ],
+        "value": {
+          "ac": 1,
+          "broken": false,
+          "brokenThreshold": 0,
+          "destroyed": false,
+          "hp": {
+            "max": 0,
+            "value": 0
+          },
+          "icon": "systems/pf2e/icons/spells/shield.webp",
+          "itemId": "{item|_id}",
+          "name": "PF2E.ShieldLabel",
+          "raised": true
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.attributes.shield.hardness",
+        "predicate": [
+          {
+            "or": [
+              "self:type:character",
+              "self:type:npc"
+            ]
+          }
+        ],
+        "value": {
+          "brackets": [
+            {
+              "end": 2,
+              "value": 2
+            },
+            {
+              "end": 4,
+              "start": 3,
+              "value": 4
+            },
+            {
+              "end": 6,
+              "start": 5,
+              "value": 7
+            },
+            {
+              "end": 8,
+              "start": 7,
+              "value": 10
+            },
+            {
+              "start": 9,
+              "value": 12
+            }
+          ],
+          "field": "item|system.level.value"
+        }
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "self:shield:equipped",
+        "predicate": [
+          {
+            "or": [
+              "self:type:character",
+              "self:type:npc"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.attributes.shield.hp",
+        "predicate": [
+          {
+            "or": [
+              "self:type:character",
+              "self:type:npc"
+            ]
+          }
+        ],
+        "value": {
+          "brackets": [
+            {
+              "end": 2,
+              "value": {
+                "max": 4,
+                "value": 4
+              }
+            },
+            {
+              "end": 4,
+              "start": 3,
+              "value": {
+                "max": 8,
+                "value": 8
+              }
+            },
+            {
+              "end": 6,
+              "start": 5,
+              "value": {
+                "max": 16,
+                "value": 16
+              }
+            },
+            {
+              "end": 8,
+              "start": 7,
+              "value": {
+                "max": 24,
+                "value": 24
+              }
+            },
+            {
+              "start": 9,
+              "value": {
+                "max": 32,
+                "value": 32
+              }
+            }
+          ],
+          "field": "item|system.level.value"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.attributes.shield.brokenThreshold",
+        "predicate": [
+          {
+            "or": [
+              "self:type:character",
+              "self:type:npc"
+            ]
+          }
+        ],
+        "value": {
+          "brackets": [
+            {
+              "end": 2,
+              "value": 2
+            },
+            {
+              "end": 4,
+              "start": 3,
+              "value": 4
+            },
+            {
+              "end": 6,
+              "start": 5,
+              "value": 8
+            },
+            {
+              "end": 8,
+              "start": 7,
+              "value": 12
+            },
+            {
+              "start": 9,
+              "value": 16
+            }
+          ],
+          "field": "item|system.level.value"
+        }
+      }
+    ],
+    "slug": "spell-effect-glass-shield",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.oDDS6D2KTjpbA491"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 36400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.oDDS6D2KTjpbA491",
+    "duplicateSource": null
+  },
+  "_key": "!items!oDDS6D2KTjpbA491"
+}

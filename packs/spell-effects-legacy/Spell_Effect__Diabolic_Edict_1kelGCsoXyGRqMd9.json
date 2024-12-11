@@ -1,0 +1,123 @@
+{
+  "_id": "1kelGCsoXyGRqMd9",
+  "img": "systems/pf2e/icons/spells/diabolic-edict.webp",
+  "name": "Spell Effect: Diabolic Edict",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.Vctwx1ewa8HUOA94]{Diabolic Edict}</em></p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Performing requested Diabolic Edict task",
+        "option": "diabolic-edict-agree",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Diabolic Edict Request",
+        "predicate": [
+          "diabolic-edict-agree"
+        ],
+        "selector": "attack",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Diabolic Edict Refused",
+        "predicate": [
+          {
+            "not": "diabolic-edict-agree"
+          }
+        ],
+        "selector": "attack",
+        "type": "status",
+        "value": -1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Diabolic Edict Performed",
+        "predicate": [
+          "diabolic-edict"
+        ],
+        "selector": "skill-check",
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Diabolic Edict Refused",
+        "predicate": [
+          {
+            "not": "diabolic-edict"
+          }
+        ],
+        "selector": "skill-check",
+        "type": "status",
+        "value": -1
+      }
+    ],
+    "slug": "spell-effect-diabolic-edict",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.1kelGCsoXyGRqMd9"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 2600000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.1kelGCsoXyGRqMd9",
+    "duplicateSource": null
+  },
+  "_key": "!items!1kelGCsoXyGRqMd9"
+}

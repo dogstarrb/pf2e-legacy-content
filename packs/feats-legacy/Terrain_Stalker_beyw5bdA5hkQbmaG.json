@@ -1,0 +1,111 @@
+{
+  "_id": "beyw5bdA5hkQbmaG",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Terrain Stalker",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Select one type of difficult terrain from the following list: rubble, snow, or underbrush. While undetected by all non-allies in that type of terrain, you can @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{Sneak} without attempting a Stealth check as long as you move no more than 5 feet and do not move within 10 feet of an enemy at any point during your movement. This also allows you to automatically approach creatures to within 15 feet while @UUID[Compendium.pf2e.actionspf2e.Item.IE2nThCmoyhQA0Jn]{Avoiding Notice} during exploration as long as they aren't actively Searching or on guard.</p>\n<p><strong>Special</strong> You can select this feat multiple times. Each time, choose a different type of terrain.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.SpecificRule.TerrainStalker.Rubble",
+            "predicate": [
+              {
+                "not": "terrain-stalker:rubble"
+              }
+            ],
+            "value": "rubble"
+          },
+          {
+            "label": "PF2E.SpecificRule.TerrainStalker.Snow",
+            "predicate": [
+              {
+                "not": "terrain-stalker:snow"
+              }
+            ],
+            "value": "snow"
+          },
+          {
+            "label": "PF2E.SpecificRule.TerrainStalker.Underbrush",
+            "predicate": [
+              {
+                "not": "terrain-stalker:underbrush"
+              }
+            ],
+            "value": "underbrush"
+          }
+        ],
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.TerrainExpertise.Prompt",
+        "rollOption": "terrain-stalker"
+      }
+    ],
+    "slug": "terrain-stalker",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "general",
+        "skill"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "skill",
+    "onlyLevel1": false,
+    "maxTakable": null,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in Stealth"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.beyw5bdA5hkQbmaG"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.beyw5bdA5hkQbmaG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!beyw5bdA5hkQbmaG"
+}

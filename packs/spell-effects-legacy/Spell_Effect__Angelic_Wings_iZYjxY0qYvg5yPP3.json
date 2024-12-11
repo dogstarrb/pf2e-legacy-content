@@ -1,0 +1,89 @@
+{
+  "_id": "iZYjxY0qYvg5yPP3",
+  "img": "systems/pf2e/icons/spells/angelic-wings.webp",
+  "name": "Spell Effect: Angelic Wings",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.kRsmUlSWhi6PJvZ7]{Angelic Wings}</em></p>\n<p>Wings of pure light spread out from your back, granting you a fly Speed equal to your Speed. Your wings cast bright light in a 30-foot radius.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": "@actor.attributes.speed.total"
+      },
+      {
+        "key": "TokenLight",
+        "value": {
+          "animation": {
+            "intensity": 2,
+            "speed": 2,
+            "type": "starlight"
+          },
+          "bright": 30,
+          "color": "#8f8f8f"
+        }
+      }
+    ],
+    "slug": "spell-effect-angelic-wings",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "duration": {
+      "value": 3,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.iZYjxY0qYvg5yPP3"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 31000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.iZYjxY0qYvg5yPP3",
+    "duplicateSource": null
+  },
+  "_key": "!items!iZYjxY0qYvg5yPP3"
+}

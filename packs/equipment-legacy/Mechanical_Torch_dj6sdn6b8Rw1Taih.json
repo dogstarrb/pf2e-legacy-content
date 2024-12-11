@@ -1,0 +1,167 @@
+{
+  "_id": "dj6sdn6b8Rw1Taih",
+  "img": "systems/pf2e/icons/equipment/held-items/mechanical-torch.webp",
+  "name": "Mechanical Torch",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Powered by electricity, you can turn a mechanical torch on and off by toggling a lever on the torch with an Interact action. When active, the torch sheds bright light in either a 20-foot radius (and dim light to the next 40 feet) or a 40-foot cone (and dim light to the next 40 feet). Changing this area requires a single Interact action to flip a switch. The torch carries sufficient charge to operate for ten minutes. You can recharge the torch in 1 minute via an integrated crank-charging mechanism, turning the clockwork gears and generating sparks to power the torch, though doing so requires two hands.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.MechanicalTorch.Label",
+        "option": "lit-mechanical-torch",
+        "suboptions": [
+          {
+            "label": "PF2E.SpecificRule.MechanicalTorch.LitCone",
+            "value": "cone"
+          },
+          {
+            "label": "PF2E.SpecificRule.MechanicalTorch.LitRadius",
+            "value": "radius"
+          }
+        ],
+        "toggleable": true,
+        "value": true
+      },
+      {
+        "key": "TokenLight",
+        "predicate": [
+          "lit-mechanical-torch:radius"
+        ],
+        "value": {
+          "animation": {
+            "intensity": 4,
+            "speed": 1,
+            "type": "torch"
+          },
+          "bright": 20,
+          "color": "#535387",
+          "dim": 60,
+          "shadows": 0.2
+        }
+      },
+      {
+        "key": "TokenLight",
+        "predicate": [
+          "lit-mechanical-torch:cone"
+        ],
+        "value": {
+          "angle": 90,
+          "animation": {
+            "intensity": 4,
+            "speed": 1,
+            "type": "torch"
+          },
+          "bright": 40,
+          "color": "#535387",
+          "dim": 80,
+          "shadows": 0.2
+        }
+      },
+      {
+        "key": "TokenEffectIcon",
+        "predicate": [
+          {
+            "or": [
+              "lit-mechanical-torch-radius",
+              "lit-mechanical-torch-cone"
+            ]
+          }
+        ],
+        "value": "systems/pf2e/icons/equipment/held-items/mechanical-torch.webp"
+      }
+    ],
+    "slug": "mechanical-torch",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "clockwork"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 10
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.dj6sdn6b8Rw1Taih"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.dj6sdn6b8Rw1Taih",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!dj6sdn6b8Rw1Taih"
+}

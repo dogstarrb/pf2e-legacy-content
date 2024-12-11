@@ -1,0 +1,86 @@
+{
+  "_id": "ZcKW5n7F0oAqRw5o",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Death's Drums",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your life has been spent challenging death itself, and proximity to that implacable foe only makes your heart beat harder.</p>\n<p>When you are taking persistent damage or your @UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{Wounded} value is 1 or greater, you gain a +2 circumstance bonus to Fortitude saving throws.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "self:condition:persistent-damage",
+              "self:condition:wounded"
+            ]
+          }
+        ],
+        "selector": "fortitude",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "deaths-drums",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "orc"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ZcKW5n7F0oAqRw5o"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ZcKW5n7F0oAqRw5o",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ZcKW5n7F0oAqRw5o"
+}

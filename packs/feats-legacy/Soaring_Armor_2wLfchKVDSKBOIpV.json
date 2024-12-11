@@ -1,0 +1,85 @@
+{
+  "_id": "2wLfchKVDSKBOIpV",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Soaring Armor",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Whether through a release of jets of flame, propeller blades, sonic bursts, streamlined aerodynamic structure, electromagnetic fields, or some combination of the above, you've managed to free your innovation from the bonds of gravity! While wearing your innovation, you gain a fly Speed equal to your land Speed.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}"
+        ],
+        "selector": "fly",
+        "value": "@actor.system.attributes.speed.value"
+      }
+    ],
+    "slug": "soaring-armor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "inventor",
+        "modification"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "armor innovation"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.2wLfchKVDSKBOIpV"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.2wLfchKVDSKBOIpV",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2wLfchKVDSKBOIpV"
+}

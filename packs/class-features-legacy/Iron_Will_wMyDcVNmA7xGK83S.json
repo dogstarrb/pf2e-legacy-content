@@ -1,0 +1,76 @@
+{
+  "_id": "wMyDcVNmA7xGK83S",
+  "img": "systems/pf2e/icons/features/classes/iron-will.webp",
+  "name": "Iron Will",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Alchemist</strong> Your mental defenses are an iron fortress. Your proficiency rank for Will saves increases to expert.</p>\n<p><strong>Ranger</strong> Your training has hardened your resolve. Your proficiency rank for Will saves increases to expert.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.saves.will.rank",
+        "value": 2
+      }
+    ],
+    "slug": "iron-will",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.wMyDcVNmA7xGK83S"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.wMyDcVNmA7xGK83S",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!wMyDcVNmA7xGK83S"
+}

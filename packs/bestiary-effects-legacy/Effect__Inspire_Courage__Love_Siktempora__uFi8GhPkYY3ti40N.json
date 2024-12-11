@@ -1,0 +1,90 @@
+{
+  "_id": "uFi8GhPkYY3ti40N",
+  "img": "systems/pf2e/icons/spells/inspire-courage.webp",
+  "name": "Effect: Inspire Courage (Love Siktempora)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature gains a +2 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "attack",
+          "damage"
+        ],
+        "type": "status",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "fear"
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "effect-inspire-courage-love-siktempora",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Bestiary 3",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.uFi8GhPkYY3ti40N"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.uFi8GhPkYY3ti40N",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uFi8GhPkYY3ti40N"
+}

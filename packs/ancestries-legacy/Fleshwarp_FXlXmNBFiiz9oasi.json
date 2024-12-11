@@ -1,0 +1,135 @@
+{
+  "_id": "FXlXmNBFiiz9oasi",
+  "img": "systems/pf2e/icons/default-icons/alternatives/ancestries/fleshwarp.svg",
+  "name": "Fleshwarp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><em>Fleshwarps are people whose forms were created or radically transformed by magic, alchemy, or unnatural energies. Their unorthodox appearance can make it difficult for them to find a place for themselves in the world.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.45SK8rdbbxvEHfMn.JournalEntryPage.vTB1bTYVE4onyyy1]{Fleshwarp}</em></p>"
+    },
+    "rules": [
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.ActorSizeSmall",
+            "value": "sm"
+          },
+          {
+            "label": "PF2E.ActorSizeMedium",
+            "value": "med"
+          }
+        ],
+        "flag": "fleshwarpSize",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.CreatureSize"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.traits.size.value",
+        "value": "{item|flags.pf2e.rulesSelections.fleshwarpSize}"
+      }
+    ],
+    "slug": "fleshwarp",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "aberration",
+        "humanoid"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "hp": 10,
+    "size": "med",
+    "reach": 5,
+    "speed": 25,
+    "boosts": {
+      "0": {
+        "value": [
+          "con"
+        ]
+      },
+      "1": {
+        "value": []
+      },
+      "2": {
+        "value": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    },
+    "flaws": {
+      "0": {
+        "value": []
+      }
+    },
+    "languages": {
+      "value": [
+        "common"
+      ],
+      "custom": ""
+    },
+    "additionalLanguages": {
+      "count": 0,
+      "value": [
+        "aklo",
+        "draconic",
+        "dwarven",
+        "elven",
+        "goblin",
+        "sakvroth"
+      ],
+      "custom": ""
+    },
+    "items": {
+      "31xm9": {
+        "img": "systems/pf2e/icons/default-icons/feat.svg",
+        "level": 1,
+        "name": "Unusual Anatomy",
+        "uuid": "Compendium.pf2e.ancestryfeatures.Item.mEDTJi7d1bTEiwUD"
+      }
+    },
+    "vision": "low-light-vision"
+  },
+  "type": "ancestry",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.ancestries.Item.FXlXmNBFiiz9oasi"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.ancestries-legacy.Item.FXlXmNBFiiz9oasi",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!FXlXmNBFiiz9oasi"
+}

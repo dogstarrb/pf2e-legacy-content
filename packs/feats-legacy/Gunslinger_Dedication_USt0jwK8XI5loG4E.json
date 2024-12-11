@@ -1,0 +1,123 @@
+{
+  "_id": "USt0jwK8XI5loG4E",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Gunslinger Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You become trained in simple and martial crossbows and simple and martial firearms. You become trained in gunslinger class DC. Choose a @UUID[Compendium.pf2e.classfeatures.Item.LDqVxLKrwEqSegiu]{Gunslinger Way}. You become trained in your way's associated skill; if you were already trained in this skill, you become trained in a skill of your choice. You don't gain any other abilities from your choice of way.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you've gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.CSVoyUvynmM5LzPW]{Gunslinger} archetype.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.classfeatures.Item.LDqVxLKrwEqSegiu"
+      },
+      {
+        "definition": [
+          "item:category:simple",
+          {
+            "or": [
+              "item:group:firearm",
+              "item:group:crossbow"
+            ]
+          }
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.SimpleFirearmsCrossbows",
+        "slug": "simple-firearms-crossbows",
+        "value": 1
+      },
+      {
+        "definition": [
+          "item:category:martial",
+          {
+            "or": [
+              "item:group:firearm",
+              "item:group:crossbow"
+            ]
+          }
+        ],
+        "key": "MartialProficiency",
+        "label": "PF2E.SpecificRule.MartialProficiency.MartialFirearmsCrossbows",
+        "slug": "martial-firearms-crossbows",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.classDCs.gunslinger",
+        "priority": 39,
+        "value": {
+          "ability": "dex",
+          "label": "PF2E.TraitGunslinger",
+          "rank": 1
+        }
+      }
+    ],
+    "slug": "gunslinger-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication",
+        "multiclass"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dexterity 14"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.USt0jwK8XI5loG4E"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.USt0jwK8XI5loG4E",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!USt0jwK8XI5loG4E"
+}

@@ -1,0 +1,103 @@
+{
+  "_id": "ctMxYPGEpstvhW9C",
+  "img": "systems/pf2e/icons/spells/forbidding-ward.webp",
+  "name": "Spell Effect: Forbidding Ward",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.RA7VKcen3p56rVyZ]{Forbidding Ward}</em>.</p>\n<p>You are warded against the attacks and hostile spells from the target enemy. You gain a +1 status bonus to Armor Class and saving throws against the target enemy's attacks, spells, and other effects.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Attacked by target of Forbidding Ward",
+        "option": "forbidding-ward",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "forbidding-ward"
+        ],
+        "selector": [
+          "ac",
+          "saving-throw"
+        ],
+        "type": "status",
+        "value": {
+          "brackets": [
+            {
+              "end": 5,
+              "value": 1
+            },
+            {
+              "start": 6,
+              "value": 2
+            }
+          ],
+          "field": "item|system.level.value"
+        }
+      }
+    ],
+    "slug": "spell-effect-forbidding-ward",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.ctMxYPGEpstvhW9C"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 27200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.ctMxYPGEpstvhW9C",
+    "duplicateSource": null
+  },
+  "_key": "!items!ctMxYPGEpstvhW9C"
+}

@@ -1,0 +1,101 @@
+{
+  "_id": "81TfqzTfIqkQA4Dy",
+  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
+  "name": "Spell Effect: Thundering Dominance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You shroud the target in a powerful predatory aura and amplify its vocalizations. It gains a +1 status bonus to Intimidation checks. Once during this spell's duration, it can take the Thundering Roar action.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The status bonus to Intimidation checks increases by 1 (to a maximum of a +4 status bonus for an 8th-level spell), and the damage from the roar increases by 2d8.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "intimidation",
+        "type": "status",
+        "value": {
+          "brackets": [
+            {
+              "end": 3,
+              "start": 2,
+              "value": 1
+            },
+            {
+              "end": 5,
+              "start": 4,
+              "value": 2
+            },
+            {
+              "end": 7,
+              "start": 6,
+              "value": 3
+            },
+            {
+              "start": 8,
+              "value": 4
+            }
+          ],
+          "field": "item|system.level.value"
+        }
+      }
+    ],
+    "slug": "spell-effect-thundering-dominance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.81TfqzTfIqkQA4Dy"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 7900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.81TfqzTfIqkQA4Dy",
+    "duplicateSource": null
+  },
+  "_key": "!items!81TfqzTfIqkQA4Dy"
+}

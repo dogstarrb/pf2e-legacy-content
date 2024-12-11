@@ -1,0 +1,106 @@
+{
+  "_id": "ECcFHAeAmh5F3mxg",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Azarketi Weapon Expertise",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your mastery with weapons both above and below water is unmatched. Whenever you gain a class feature that grants you expert or greater proficiency in certain weapons, you also gain that proficiency in @UUID[Compendium.pf2e.equipment-srd.Item.62nnVQvGhoVLLl2K]{Crossbows}, @UUID[Compendium.pf2e.equipment-srd.Item.XyA6PKV46aNlLXOd]{Hand Crossbows}, @UUID[Compendium.pf2e.equipment-srd.Item.aXuJh4i8HqSu6NYV]{Longspears}, @UUID[Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS]{Spears}, @UUID[Compendium.pf2e.equipment-srd.Item.FJrsDoaIXksVjld9]{Tridents}, and all azarketi weapons in which you are trained.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-crossbow.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-hand-crossbow.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-longspear.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-spear.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.attacks.weapon-base-trident.rank",
+        "value": "@actor.system.proficiencies.attacks.unarmed.rank"
+      }
+    ],
+    "slug": "azarketi-weapon-expertise",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "azarketi"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Absalom, City of Lost Omens",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Azarketi Weapon Familiarity"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ECcFHAeAmh5F3mxg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ECcFHAeAmh5F3mxg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ECcFHAeAmh5F3mxg"
+}

@@ -1,0 +1,96 @@
+{
+  "_id": "Q0DKJRnDuuUnLpvn",
+  "img": "systems/pf2e/icons/features/ancestry/venomtail-kobold.webp",
+  "name": "Effect: Tail Toxin",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.actionspf2e.Item.ev8OHpBO3xq3Zt08]{Tail Toxin}</p>\n<p>You apply your tail's venom to a piercing or slashing weapon. If your next Strike with that weapon before the end of your next turn hits and deals damage, you deal persistent poison damage equal to your level to the target.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "predicate": [
+            {
+              "or": [
+                "item:damage:type:slashing",
+                "item:damage:type:piercing"
+              ]
+            }
+          ],
+          "types": [
+            "weapon"
+          ]
+        },
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "damageCategory": "persistent",
+        "damageType": "poison",
+        "key": "FlatModifier",
+        "selector": "{item|flags.pf2e.rulesSelections.effectTailToxin}-damage",
+        "value": "@actor.level"
+      }
+    ],
+    "slug": "effect-tail-toxin",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.Q0DKJRnDuuUnLpvn"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.Q0DKJRnDuuUnLpvn",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Q0DKJRnDuuUnLpvn"
+}

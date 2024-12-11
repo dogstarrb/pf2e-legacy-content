@@ -1,0 +1,105 @@
+{
+  "_id": "OeUP3ASaS5deBsWw",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Accurate Swing",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You strike cleanly with wide, sweeping attacks to inflict maximum damage, taking advantage of your judged foe's fear to land a felling blow. If you Strike a creature you condemned with Harsh Judgment that has the frightened condition with a sweep melee weapon or a sweep unarmed attack, you gain a circumstance bonus to the Strike's damage equal to the number of weapon damage dice your weapon deals.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "harsh-judgement",
+          "item:trait:sweep",
+          "target:condition:frightened",
+          {
+            "or": [
+              "item:category:unarmed",
+              {
+                "and": [
+                  "item:type:weapon",
+                  "item:melee"
+                ]
+              }
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "type": "circumstance",
+        "value": "@weapon.system.damage.dice"
+      }
+    ],
+    "slug": "accurate-swing",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "vigilante"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Adventure: Night of the Gray Death",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Vigilante Dedication"
+        },
+        {
+          "value": "Member of the Grey Gardeners"
+        },
+        {
+          "value": "Harsh Judgement"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.OeUP3ASaS5deBsWw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.OeUP3ASaS5deBsWw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OeUP3ASaS5deBsWw"
+}

@@ -1,0 +1,115 @@
+{
+  "_id": "6gEKZaGdH842RF3J",
+  "img": "systems/pf2e/icons/spells/ymeris-mark.webp",
+  "name": "Ymeri's Mark",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You place the fiery mark of the Queen of the Inferno on the target, burning into the creature's very essence. The mark gives off a heat that only you can sense; as long as you're on the same plane as the target, you can sense the direction it's in. The target is @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} and can't reduce the value of this condition normally.</p>\n<p>You can detonate the mark at any point during its duration by Dismissing the spell. The rune explodes in a @Template[type:emanation|distance:10] centered on the target that deals @Damage[5d6[fire]] damage with a basic Reflex save. You choose whether the mark's target is included in the explosion.</p>\n<p>When you cast the spell, the target attempts a Fortitude save to determine how long the mark lasts. If the spell's duration elapses, the rune doesn't detonate.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The duration is 1 minute.</p>\n<p><strong>Failure</strong> The duration is 1 week.</p>\n<p><strong>Critical Failure</strong> The duration is unlimited.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by [[/r 2d6]].</p>"
+    },
+    "rules": [],
+    "slug": "ymeris-mark",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "curse",
+        "detection",
+        "fire",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "divine",
+        "primal"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "touch"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "varies",
+      "sustained": false
+    },
+    "damage": {
+      "wKqdAiiIiDLodRJm": {
+        "applyMod": false,
+        "formula": "5d6",
+        "type": "fire",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "reflex",
+        "basic": true
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "damage": {
+        "wKqdAiiIiDLodRJm": "2d6"
+      },
+      "interval": 1,
+      "type": "interval"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.6gEKZaGdH842RF3J"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.6gEKZaGdH842RF3J",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6gEKZaGdH842RF3J"
+}

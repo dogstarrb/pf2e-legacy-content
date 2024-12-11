@@ -1,0 +1,83 @@
+{
+  "_id": "0i4zOM1p0rFxnc5m",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Harrower Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You become trained in Occultism; if you are already trained in this skill, you become trained in a different skill of your choice instead. You also become trained in Fortune-Telling Lore, and you learn the <em>@UUID[Compendium.pf2e.spells-srd.Item.ofAQyLtLEGnOIs3N]{Harrowing}</em> ritual.</p>\n<p>In addition, once a day when you perform your daily preparations, you can perform a harrow reading for yourself if you have access to a harrow deck. Draw a card from your harrow deck—that card's suit becomes your active harrow omen for the next 24 hours and modifies several other harrower feats as detailed on the following pages. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.ePfdZYZRmycMpSWU]{Avoid Dire Fate} reaction.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.rp6hA52dWVwtuu5F]{Effect: Harrow Omen}</p>\n<p><strong>Special</strong> You can't select another dedication feat until you've gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.OtBPlgtudM4PlTWD]{Harrower} archetype. If you retrain out of this feat, you lose the harrowing ritual you learned from it</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.occultism.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.spells-srd.Item.ofAQyLtLEGnOIs3N"
+      }
+    ],
+    "slug": "harrower-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder: Stolen Fate Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.0i4zOM1p0rFxnc5m"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.0i4zOM1p0rFxnc5m",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0i4zOM1p0rFxnc5m"
+}

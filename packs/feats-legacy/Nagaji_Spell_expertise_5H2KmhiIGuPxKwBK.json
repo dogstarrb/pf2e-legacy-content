@@ -1,0 +1,82 @@
+{
+  "_id": "5H2KmhiIGuPxKwBK",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Nagaji Spell expertise",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your magical skill rivals that of accomplished naga spellcasters. During your daily preparations, choose <em>@UUID[Compendium.pf2e.spells-srd.Item.zR67Rt3UMHKC5evy]{Blink}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.zfn5RqAdF63neqpP]{Control Water}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.Item.GP3wewkQXEPrLxYj]{Subconscious Suggestion}</em>. You can Cast this Spell as a 5th-level occult innate spell once that day. You become an expert in occult spell DCs and occult spell attack rolls.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.spellcasting.rank",
+        "value": 2
+      }
+    ],
+    "slug": "nagaji-spell-expertise",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "nagaji"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Nagaji Spell Mysteries"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.5H2KmhiIGuPxKwBK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.5H2KmhiIGuPxKwBK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5H2KmhiIGuPxKwBK"
+}

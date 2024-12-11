@@ -1,0 +1,119 @@
+{
+  "_id": "V8cYi1Gawe71d0rE",
+  "img": "icons/equipment/back/mantle-collared-blue.webp",
+  "name": "Curtain Call Cloak",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This blue velvet cloak is cut from the remains of a curtain from a destroyed theater. When worn, you gain a +2 item bonus to Performance checks while acting, orating, or singing, as the cloak makes minor motions to accentuate your performance.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You take a bow, spread your arms, and the cloak casts 4th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{Darkness}</em> centered on a corner of your space. This darkness doesn't impede your vision. While the darkness persists, it emits noise like the applauding of a moderately sized crowd.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "action:perform:acting",
+              "action:perform:oratory",
+              "action:perform:singing"
+            ]
+          }
+        ],
+        "selector": "performance",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "curtain-call-cloak",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #185: A Taste of Ashes",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1900
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worncloak"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.V8cYi1Gawe71d0rE"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.V8cYi1Gawe71d0rE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!V8cYi1Gawe71d0rE"
+}

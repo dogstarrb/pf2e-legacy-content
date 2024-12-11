@@ -1,0 +1,82 @@
+{
+  "_id": "ST6AhCbEDSMxXf20",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Perfect Ki Exemplar",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain an appropriate ki spell for your School of Perfection: <em>@UUID[Compendium.pf2e.spells-srd.Item.KADeCawMG6WAzYHa]{Unblinking Flame Emblem} </em>for Unblinking Flame, <em>@UUID[Compendium.pf2e.spells-srd.Item.YtJXpiu4ijkB6nP2]{Unbreaking Wave Barrier}</em> for Unbreaking Waves, <em>@UUID[Compendium.pf2e.spells-srd.Item.Ww4cPZ3QHTSpaM1m]{Unfolding Wind Blitz}</em> for Unfolding Wind, or <em>@UUID[Compendium.pf2e.spells-srd.Item.8eOMAIvT7S1CJSit]{Untwisting Iron Augmentation}</em> for Untwisting Iron. Increase the number of Focus Points in your focus pool by 1. You become an expert in occult spell DCs and occult spell attack rolls.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.spellcasting.rank",
+        "value": 2
+      }
+    ],
+    "slug": "perfect-ki-exemplar",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Student of Perfection Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ST6AhCbEDSMxXf20"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ST6AhCbEDSMxXf20",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ST6AhCbEDSMxXf20"
+}

@@ -1,0 +1,91 @@
+{
+  "_id": "QUnN2wUfvOD6Tz69",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Defy Fey",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You are keen to the wiles of the fey and can usually shake off their magic. Whenever you fail, but don't critically fail, a save against a spell with a duration of at least 1 round cast by a fey creature, you can attempt a second save against the original DC at the start of your next turn to end any lingering effects the spell might have. This can end persistent damage caused by a spell but can't reverse any effects that have been resolved already (such as damage dealt when the spell was cast).</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "failure"
+        ],
+        "predicate": [
+          "origin:trait:fey",
+          "item:type:spell"
+        ],
+        "selector": "saving-throw",
+        "text": "{item|system.description.value}",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "defy-fey",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "gunslinger",
+        "investigator",
+        "ranger"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Greenwatch Initiate"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.QUnN2wUfvOD6Tz69"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.QUnN2wUfvOD6Tz69",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!QUnN2wUfvOD6Tz69"
+}

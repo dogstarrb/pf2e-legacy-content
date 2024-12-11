@@ -1,0 +1,151 @@
+{
+  "_id": "CPZC4rAHGkQqPLJ9",
+  "img": "systems/pf2e/icons/equipment/staves/atmospheric-staff.webp",
+  "name": "Atmospheric Staff",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This staff is made of a dense wood and strikes the ground with an imposing boom. At the top of the staff is a perfectly round obsidian sphere that, when stared at for too long, makes viewers feel as though they're heavier than before. When wielding this staff, you gain a +1 item bonus to saves against forced movement.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list</p>\n<hr />\n<p><strong>Cantrip</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.dDiOnjcsBFbAvP6t]{Gale Blast}</em></p>\n<p><strong>1st</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.W69zswpj0Trdy5rj]{Air Bubble}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.F1fQC9SarAkjNxpP]{Gravitational Pull}</em></p>\n<p><strong>2nd</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.C0D2eqzTAhiKm4j9]{Gentle Breeze}</em></p>\n<p><strong>3rd</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.06pzGkKTyPE3tHR8]{Gravity Well}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.70BjbNRVc4OTLAgN]{Tempest Cloak}</em></p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply one casting of all listed ranks of all listed spells.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "inflicts:forced-movement"
+        ],
+        "selector": "saving-throw",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "atmospheric-staff",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "air",
+        "magical",
+        "staff",
+        "two-hand-d8"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 8
+    },
+    "quantity": 1,
+    "baseItem": "staff",
+    "bulk": {
+      "value": 2
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 480
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "category": "simple",
+    "group": "club",
+    "bonus": {
+      "value": 0
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d4",
+      "damageType": "bludgeoning",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": null,
+    "reload": {
+      "value": ""
+    },
+    "runes": {
+      "potency": 0,
+      "striking": 0,
+      "property": []
+    },
+    "specific": null,
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.CPZC4rAHGkQqPLJ9"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.CPZC4rAHGkQqPLJ9",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CPZC4rAHGkQqPLJ9"
+}

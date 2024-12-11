@@ -1,0 +1,112 @@
+{
+  "_id": "m1XubXwbBy3JzMkY",
+  "img": "systems/pf2e/icons/default-icons/consumable.svg",
+  "name": "Pummel-Growth Toxin",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p>This substance is the result of a failed alchemical experiment to regrow a severed arm. An extra outsized, uncontrolled limb of the sort used for manipulation grows from the victim's body. The limb initially flails about, throwing the creature off-balance. Once it \"matures,\" the limb pummels the victim instead. The limb can't deal its bludgeoning damage if the victim is unable to take actions. Upon recovery from the poison, the extra limb withers and falls off.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:32]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[4d6[poison]], @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, and must succeed at a @Check[type:flat|dc:5] to perform an action with the manipulate trait or the action fails and is lost (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[4d6[poison]], clumsy 1, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, @Damage[2d6[bludgeoning]] (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[4d6[poison]], @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2}, @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2}, @Damage[4d6[bludgeoning]] (1 round)</p>"
+    },
+    "rules": [],
+    "slug": "pummel-growth-toxin",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemical",
+        "consumable",
+        "injury",
+        "morph",
+        "poison"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 550
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "poison",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "autoDestroy": true
+    },
+    "damage": null,
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "stackGroup": null,
+    "spell": null
+  },
+  "type": "consumable",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.m1XubXwbBy3JzMkY"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.m1XubXwbBy3JzMkY",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!m1XubXwbBy3JzMkY"
+}

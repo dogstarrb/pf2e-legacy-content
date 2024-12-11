@@ -1,0 +1,138 @@
+{
+  "_id": "oAewXfq9c0ecaSfw",
+  "img": "icons/consumables/potions/potion-bottle-corked-fancy-blue.webp",
+  "name": "Effect: Silvertongue Mutagen (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.uggpIk6vguWFXVli]{Silvertongue Mutagen (Greater)}</p>\n<p>Implemented effects:</p>\n<ul>\n<li>+3 item bonus to Deception, Diplomacy, Intimidation and Performance checks</li>\n<li>-2 item penalty to Arcana, Crafting, Occulism and Society checks</li>\n<li>Your critical failures for Deception, Diplomacy, Intimidation, Performance become failures instead</li>\n<li>-2 item penalty to Lore checks</li>\n<li>All Recall Knowledge failures are critical failure</li>\n</ul>\n<p>Unimplemented effects:</p>\n<ul>\n<li>Become untrained in one skill you're trained in</li>\n</ul>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "deception",
+          "diplomacy",
+          "intimidation",
+          "performance"
+        ],
+        "type": "item",
+        "value": 3
+      },
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "arcana",
+          "crafting",
+          "lore-skill-check",
+          "occultism",
+          "society"
+        ],
+        "type": "item",
+        "value": -2
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "selector": "deception",
+        "type": "skill"
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "selector": "diplomacy",
+        "type": "skill"
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "selector": "intimidation",
+        "type": "skill"
+      },
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "selector": "performance",
+        "type": "skill"
+      },
+      {
+        "adjustment": {
+          "failure": "one-degree-worse"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:recall-knowledge"
+        ],
+        "selector": "skill-check",
+        "type": "skill"
+      }
+    ],
+    "slug": "effect-silvertongue-mutagen-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.oAewXfq9c0ecaSfw"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.oAewXfq9c0ecaSfw",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!oAewXfq9c0ecaSfw"
+}

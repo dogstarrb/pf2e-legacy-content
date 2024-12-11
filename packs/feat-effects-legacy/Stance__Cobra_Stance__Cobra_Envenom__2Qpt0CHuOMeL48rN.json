@@ -1,0 +1,107 @@
+{
+  "_id": "2Qpt0CHuOMeL48rN",
+  "img": "systems/pf2e/icons/features/feats/cobra-stance.webp",
+  "name": "Stance: Cobra Stance (Cobra Envenom)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.AkV4Jyllo6nlK2Sl]{Cobra Stance} if you have @UUID[Compendium.pf2e.feats-srd.Item.xQuNswWB3eg1UM28]{Cobra Envenom}, which increases the circumstance bonus to Fortitude saves and Fortitude DC to +2.</p>\n<p>You enter a tight stance, coiled up like a lashing cobra with your hands poised as venomous fangs. While in this stance, the only Strikes you can make are cobra fang unarmed attacks. These deal 1d4 poison damage; are in the brawling group; and have the agile, deadly d10, finesse, nonlethal, poison, and unarmed traits.</p>\n<p>While in Cobra Stance, you gain a +2 circumstance bonus to Fortitude saves and your Fortitude DC, and you gain poison resistance equal to half your level.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "poison",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "brawling",
+        "img": "systems/pf2e/icons/features/feats/cobra-stance.webp",
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.Stance.Attack.CobraFang",
+        "range": null,
+        "replaceAll": true,
+        "traits": [
+          "agile",
+          "deadly-d10",
+          "finesse",
+          "poison",
+          "unarmed",
+          "nonlethal"
+        ]
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "fortitude",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "Resistance",
+        "type": "poison",
+        "value": "floor(@actor.level/2)"
+      }
+    ],
+    "slug": "stance-cobra-stance-cobra-envenom",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.2Qpt0CHuOMeL48rN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.2Qpt0CHuOMeL48rN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!2Qpt0CHuOMeL48rN"
+}

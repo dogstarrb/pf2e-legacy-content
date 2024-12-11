@@ -1,0 +1,81 @@
+{
+  "_id": "dHUoQVzDa9Cf4QCG",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Reflexive Shield",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can use your shield to fend off the worst of area effects and other damage.</p>\n<p>When you @UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{Raise your Shield}, you gain your shield's circumstance bonus to Reflex saves. If you have the @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block} reaction, damage you take as a result of a Reflex save can trigger that reaction, even if the damage isn't physical damage.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "self:effect:raise-a-shield"
+        ],
+        "selector": "reflex",
+        "type": "circumstance",
+        "value": "@actor.system.attributes.shield.ac"
+      }
+    ],
+    "slug": "reflexive-shield",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fighter"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.dHUoQVzDa9Cf4QCG"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.dHUoQVzDa9Cf4QCG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!dHUoQVzDa9Cf4QCG"
+}

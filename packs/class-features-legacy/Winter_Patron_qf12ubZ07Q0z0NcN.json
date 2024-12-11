@@ -1,0 +1,87 @@
+{
+  "_id": "qf12ubZ07Q0z0NcN",
+  "img": "systems/pf2e/icons/features/classes/winter-patron.webp",
+  "name": "Winter Patron",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your patron reflects the frozen reaches of the world, bitterly cruel to those who underestimate that power.</p>\n<p><strong>Spell List</strong> primal</p>\n<p><strong>Patron Skill</strong> Nature</p>\n<p><strong>Hex Cantrip</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.MraZBLJ4Be3ogmWL]{Clinging Ice}</em></p>\n<p><strong>Granted Spell</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{Gust of Wind}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.nature.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.aliases.witch",
+        "priority": 39,
+        "value": "primal"
+      }
+    ],
+    "slug": "winter-patron",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "witch-patron"
+      ],
+      "value": [
+        "witch"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.qf12ubZ07Q0z0NcN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.qf12ubZ07Q0z0NcN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!qf12ubZ07Q0z0NcN"
+}

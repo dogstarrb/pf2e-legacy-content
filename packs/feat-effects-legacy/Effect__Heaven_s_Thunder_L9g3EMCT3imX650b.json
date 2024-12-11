@@ -1,0 +1,102 @@
+{
+  "_id": "L9g3EMCT3imX650b",
+  "img": "systems/pf2e/icons/spells/polar-ray.webp",
+  "name": "Effect: Heaven's Thunder",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.qJdbK8vgIqeHU7bu]{Heaven's Thunder}</p>\n<p>Until the end of your next turn, your unarmed attacks and any monk weapons you wield deal additional electricity and sonic damage; the amount of each damage type is equal to the number of damage dice for the weapon or unarmed attack. Any creature who successfully Grapples you or is successfully Grappled by you takes this damage immediately after the Grapple check is resolved (using the number of damage dice of your unarmed attack to determine the damage dealt).</p>\n<p>If you also know the <em>ki blast</em> ki spell, you can choose to deal either electricity or sonic damage with the spell instead of force while this effect is active (<em>ki blast</em> loses the force trait and gains the electricity or sonic trait instead).</p>"
+    },
+    "rules": [
+      {
+        "damageType": "electricity",
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "unarmed",
+              "monk"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "heavens-thunder-electricity",
+        "value": "@weapon.system.damage.dice"
+      },
+      {
+        "damageType": "sonic",
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "unarmed",
+              "monk"
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "heavens-thunder-sonic",
+        "value": "@weapon.system.damage.dice"
+      }
+    ],
+    "slug": "effect-heavens-thunder",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.L9g3EMCT3imX650b"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.L9g3EMCT3imX650b",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!L9g3EMCT3imX650b"
+}

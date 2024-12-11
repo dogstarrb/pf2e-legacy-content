@@ -1,0 +1,91 @@
+{
+  "_id": "v0ovKn4ZKmtXfXnu",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Vanara Weapon Trickery",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've learned how to trick your foes using vanara weapons. Whenever you critically hit using a bo staff, chakram, katar, panabas, urumi, or vanara weapon, you apply the weapon's critical specialization effect.</p>"
+    },
+    "rules": [
+      {
+        "key": "CriticalSpecialization",
+        "predicate": [
+          {
+            "or": [
+              "item:trait:vanara",
+              "item:base:bo-staff",
+              "item:base:chakram",
+              "item:base:katar",
+              "item:base:panabas",
+              "item:base:urumi"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": "vanara-weapon-trickery",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "vanara"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Vanara Weapon Familiarity"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.v0ovKn4ZKmtXfXnu"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.v0ovKn4ZKmtXfXnu",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!v0ovKn4ZKmtXfXnu"
+}

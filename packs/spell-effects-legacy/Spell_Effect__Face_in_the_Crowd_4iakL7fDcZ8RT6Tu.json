@@ -1,0 +1,85 @@
+{
+  "_id": "4iakL7fDcZ8RT6Tu",
+  "img": "systems/pf2e/icons/spells/face-in-the-crowd.webp",
+  "name": "Spell Effect: Face in the Crowd",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.yH13KXUK2x093NUv]{Face in the Crowd}</em></p>\n<p>You gain a +2 status bonus to Deception and Stealth checks to go unnoticed among the crowd, and you ignore difficult terrain caused by the crowd.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Unnoticed in crowd",
+        "predicate": [
+          "terrain:crowd"
+        ],
+        "selector": [
+          "deception",
+          "stealth"
+        ],
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-face-in-the-crowd",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.4iakL7fDcZ8RT6Tu"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 5000000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.4iakL7fDcZ8RT6Tu",
+    "duplicateSource": null
+  },
+  "_key": "!items!4iakL7fDcZ8RT6Tu"
+}

@@ -1,0 +1,108 @@
+{
+  "_id": "enQieRrITuEQZxx2",
+  "img": "systems/pf2e/icons/actions/Reaction.webp",
+  "name": "Selfish Shield",
+  "system": {
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "category": "defensive",
+    "description": {
+      "value": "<p><strong>Trigger</strong> An enemy within 15 feet damages you</p>\n<hr />\n<p>Your self-interest keeps you safe. You gain resistance against the triggering damage equal to 2 + half your level, regardless of damage type.</p>\n<p>In addition, your Strikes against the triggering creature deal 1 extra damage until the end of your next turn. You choose whether this extra damage is evil or negative each time you use this reaction. This extra damage increases to 2 at 9th level and 3 at 16th level.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "license": "OGL",
+      "remaster": false,
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": ""
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Champion.TargetReaction",
+        "option": "selfish-shield",
+        "suboptions": [
+          {
+            "label": "PF2E.SpecificRule.Champion.NegativeDamage",
+            "value": "void"
+          },
+          {
+            "label": "PF2E.SpecificRule.Champion.EvilDamage",
+            "value": "evil"
+          }
+        ],
+        "toggleable": true
+      },
+      {
+        "damageType": "{item|flags.pf2e.rulesSelections.selfishShield}",
+        "key": "FlatModifier",
+        "predicate": [
+          "selfish-shield"
+        ],
+        "selector": "strike-damage",
+        "slug": "selfish-shield-damage",
+        "value": {
+          "brackets": [
+            {
+              "end": 8,
+              "value": 1
+            },
+            {
+              "end": 15,
+              "start": 9,
+              "value": 2
+            },
+            {
+              "start": 16,
+              "value": 3
+            }
+          ]
+        }
+      }
+    ],
+    "selfEffect": {
+      "name": "Effect: Selfish Shield",
+      "uuid": "Compendium.pf2e.feat-effects.Item.h6nyMp4dtPXBfCJc"
+    },
+    "traits": {
+      "value": [
+        "champion"
+      ],
+      "otherTags": []
+    },
+    "slug": "selfish-shield",
+    "_migration": {
+      "version": 0.935,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    }
+  },
+  "type": "action",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.actionspf2e.Item.enQieRrITuEQZxx2"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.actions-legacy.Item.enQieRrITuEQZxx2",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!enQieRrITuEQZxx2"
+}

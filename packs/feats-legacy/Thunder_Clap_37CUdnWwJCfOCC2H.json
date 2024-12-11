@@ -1,0 +1,76 @@
+{
+  "_id": "37CUdnWwJCfOCC2H",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Thunder Clap",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You slam your hands together to unleash a deafening blast. Creatures in a @Template[type:cone|distance:15] cone take @Damage[3d6[sonic]] damage, with a @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|basic:true] against your class DC. Creatures that critically fail their save are also @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. You can't use this ability again for [[/r 1d4 #Recharge Thunder Clap]]{1d4 rounds} as your hands recover from the thunderous vibrations.</p>\n<p>At 8th level, and every 2 levels thereafter, the damage from Thunder Clap increases by [[/r 1d6]]{1d6}. (<span style=\"font-family:var(--font-primary);font-size:var(--font-size-14)\">[[/r floor(@actor.level/2)d6[sonic]]]{leveled sonic damage})<br /></span></p>"
+    },
+    "rules": [],
+    "slug": "thunder-clap",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "sonic"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #178: Punks in a Powder Keg",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Powder Punch Stance"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.37CUdnWwJCfOCC2H"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.37CUdnWwJCfOCC2H",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!37CUdnWwJCfOCC2H"
+}

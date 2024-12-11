@@ -1,0 +1,139 @@
+{
+  "_id": "u9BdrpYhJDUPQFCF",
+  "img": "icons/equipment/chest/breastplate-gorget-steel-white.webp",
+  "name": "Dragon Turtle Plate",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This harness of <em>+1 resilient half plate</em> is made from the shell plates of a dragon turtle and has the aquadynamic trait. Fashioned from organic material, the suit is one of the few heavy armors not anathema to druids.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> Interact</p>\n<p><strong>Trigger</strong> A creature adjacent to you targets you with a melee attack</p>\n<hr />\n<p><strong>Effect</strong> You roll the hefty plates of the <em>dragon turtle armor</em> toward the attacker to gain a +1 circumstance bonus to AC against the triggering attack.</p>\n<hr />\n<p><strong>Craft Requirements</strong> The initial raw materials must include the shell of a dragon turtle.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "dragon-turtle-plate",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "dragon-turtle-plate",
+          "item:melee"
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "dragon-turtle-plate",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "aquadynamic"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "quantity": 1,
+    "baseItem": "half-plate",
+    "bulk": {
+      "value": 3
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 700
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "category": "heavy",
+    "group": "plate",
+    "acBonus": 5,
+    "strength": 3,
+    "dexCap": 1,
+    "checkPenalty": -3,
+    "speedPenalty": -10,
+    "runes": {
+      "potency": 1,
+      "resilient": 1,
+      "property": []
+    },
+    "subitems": [],
+    "specific": {
+      "material": {
+        "grade": null,
+        "type": null
+      },
+      "runes": {
+        "potency": 1,
+        "resilient": 1,
+        "property": []
+      }
+    }
+  },
+  "type": "armor",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.u9BdrpYhJDUPQFCF"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.u9BdrpYhJDUPQFCF",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!u9BdrpYhJDUPQFCF"
+}

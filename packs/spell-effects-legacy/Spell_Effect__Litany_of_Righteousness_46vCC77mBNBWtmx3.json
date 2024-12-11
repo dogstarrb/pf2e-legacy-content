@@ -1,0 +1,77 @@
+{
+  "_id": "46vCC77mBNBWtmx3",
+  "img": "icons/magic/holy/saint-glass-portrait-halo.webp",
+  "name": "Spell Effect: Litany of Righteousness",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.n3b3pDmA6L5YRTyq]{Litany of Righteousness}</em>.</p>\n<p>You gain weakness 7 to good.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The weakness increases by 1.</p>"
+    },
+    "rules": [
+      {
+        "key": "Weakness",
+        "type": "holy",
+        "value": "@item.level"
+      }
+    ],
+    "slug": "spell-effect-litany-of-righteousness",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.46vCC77mBNBWtmx3"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 4300000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.46vCC77mBNBWtmx3",
+    "duplicateSource": null
+  },
+  "_key": "!items!46vCC77mBNBWtmx3"
+}

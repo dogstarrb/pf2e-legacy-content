@@ -1,0 +1,87 @@
+{
+  "_id": "NAXRmMjj0gcyD7ie",
+  "img": "icons/commodities/biological/eye-green-pink.webp",
+  "name": "Curse Patron",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Foiling foes and undermining those who stand in your way are the tools of the curse patrons.</p>\n<p><strong>Spell List</strong> occult</p>\n<p><strong>Patron Skill</strong> Occultism</p>\n<p><strong>Hex Cantrip</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.f45JpY7Ph2cAJGW2]{Evil Eye}</em></p>\n<p><strong>Granted Spell</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.J7Y7tl0bbdz7TcCc]{Ray of Enfeeblement}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.occultism.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.aliases.witch",
+        "priority": 39,
+        "value": "occult"
+      }
+    ],
+    "slug": "curse-patron",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "witch-patron"
+      ],
+      "value": [
+        "witch"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.NAXRmMjj0gcyD7ie"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.NAXRmMjj0gcyD7ie",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!NAXRmMjj0gcyD7ie"
+}

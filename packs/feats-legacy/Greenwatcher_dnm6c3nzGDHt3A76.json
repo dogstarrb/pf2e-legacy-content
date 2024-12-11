@@ -1,0 +1,90 @@
+{
+  "_id": "dnm6c3nzGDHt3A76",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Greenwatcher",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your experience fighting against and alongside fey creatures is nearly unrivaled. Any weapon you wield or unarmed attack you make against a fey creature is treated as cold iron. Whenever you critically fail a save against a spell cast by a fey creature, it's instead treated as a normal failure. Whenever you critically succeed on a Strike against a fey creature, the target is immediately subject to the effects of a <em>@UUID[Compendium.pf2e.spells-srd.Item.HRb2doyaLtaoCfi3]{Faerie Fire}</em> spell. For the purposes of counteracting this effect, it's an innate 2nd-level primal spell.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "criticalFailure": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "item:type:spell",
+          "origin:trait:fey"
+        ],
+        "selector": "saving-throw",
+        "type": "saves"
+      }
+    ],
+    "slug": "greenwatcher",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "gunslinger",
+        "investigator",
+        "ranger"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Impossible Lands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Defy Fey"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.dnm6c3nzGDHt3A76"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.dnm6c3nzGDHt3A76",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!dnm6c3nzGDHt3A76"
+}

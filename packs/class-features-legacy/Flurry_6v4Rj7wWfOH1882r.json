@@ -1,0 +1,94 @@
+{
+  "_id": "6v4Rj7wWfOH1882r",
+  "img": "icons/skills/melee/strike-polearm-light-orange.webp",
+  "name": "Flurry",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have trained to unleash a devastating flurry of attacks upon your prey.</p>\n<p>Your multiple attack penalty for attacks against your hunted prey is -3 (-2 with an agile weapon) on your second attack of the turn instead of -5, and -6 (-4 with an agile weapon) on your third or subsequent attack of the turn, instead of -10.</p>"
+    },
+    "rules": [
+      {
+        "key": "MultipleAttackPenalty",
+        "predicate": [
+          "agile",
+          "hunted-prey"
+        ],
+        "selector": "attack",
+        "value": -2
+      },
+      {
+        "key": "MultipleAttackPenalty",
+        "predicate": [
+          "hunted-prey",
+          {
+            "not": "agile"
+          }
+        ],
+        "selector": "attack",
+        "value": -3
+      }
+    ],
+    "slug": "flurry",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "ranger-hunters-edge"
+      ],
+      "value": [
+        "ranger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.6v4Rj7wWfOH1882r"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.6v4Rj7wWfOH1882r",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6v4Rj7wWfOH1882r"
+}

@@ -1,0 +1,78 @@
+{
+  "_id": "rjM25qfw5BKj9h97",
+  "img": "icons/magic/nature/root-vines-grow-brown.webp",
+  "name": "Spell Effect: Entangle",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e-legacy-content.spells-legacy.Item.J6vNvrUT3b1hx2iA]{Entangle}</em></p>\n<p>The creature takes a -10-foot circumstance penalty to its Speeds.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "all-speeds",
+        "type": "circumstance",
+        "value": -10
+      }
+    ],
+    "slug": "spell-effect-entangling-flora",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.rjM25qfw5BKj9h97"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 39400000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.rjM25qfw5BKj9h97",
+    "duplicateSource": null
+  },
+  "_key": "!items!rjM25qfw5BKj9h97"
+}

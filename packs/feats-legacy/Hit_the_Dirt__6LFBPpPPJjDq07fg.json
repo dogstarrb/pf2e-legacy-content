@@ -1,0 +1,88 @@
+{
+  "_id": "6LFBPpPPJjDq07fg",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Hit the Dirt!",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Trigger</strong> A creature you can see attempts a ranged Strike against you.</p>\n<hr />\n<p>You fling yourself out of harm's way. You @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap}. Your movement gives you a +2 circumstance bonus to AC against the triggering attack. Regardless of whether or not the triggering attack hits, you land @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} after completing your Leap.</p>"
+    },
+    "rules": [
+      {
+        "domain": "ac",
+        "key": "RollOption",
+        "option": "hit-the-dirt",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "hit-the-dirt",
+          "item:ranged"
+        ],
+        "selector": "ac",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "hit-the-dirt",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "gunslinger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "reaction"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.6LFBPpPPJjDq07fg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.6LFBPpPPJjDq07fg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6LFBPpPPJjDq07fg"
+}

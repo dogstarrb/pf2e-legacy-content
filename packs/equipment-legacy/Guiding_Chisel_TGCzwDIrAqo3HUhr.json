@@ -1,0 +1,113 @@
+{
+  "_id": "TGCzwDIrAqo3HUhr",
+  "img": "systems/pf2e/icons/equipment/held-items/guiding-chisel.webp",
+  "name": "Guiding Chisel",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This magical chisel evokes the holy symbol of the elven goddess of art and architecture, Findeladlara. The <em>Guiding Chisel's</em> original function was as a portal key to Duskgate, but as Alseta's Ring faded from the collective memories of the elves, the chisel became known and used exclusively for its other abilities. Eventually, elven emissaries gave it to the dwarves of Saggorak as a gesture of friendship.</p>\n<p>You gain a +3 item bonus to Crafting checks related to stonemasonry.</p>\n<p>In addition, it takes you only 1 day to Craft items using the <em>Guiding Chisel</em> instead of 4 days, and you quadruple the discount you get for spending additional days Crafting items with the <em>Guiding Chisel</em>. If it's unclear whether you could use the <em>Guiding Chisel</em> to Craft an item, the GM decides.</p>\n<hr />\n<p><strong>Activate</strong> 10 minutes (command, envision, Interact)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You embed the Guiding Chisel in the ground and imagine a building. After 10 minutes, you remove the chisel and the building appears. The building can take any shape you wish, filling up to ten contiguous 10-foot cubes within 1,000 feet of the chisel. The building lasts until you use the chisel to create another building. This building has the structure trait.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Guiding Chisel (stonemasonry)",
+        "predicate": [
+          "stonemasonry"
+        ],
+        "selector": "crafting",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "guiding-chisel",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "elf",
+        "magical"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder #148: Fires of the Haunted City",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 16
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 10000
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.TGCzwDIrAqo3HUhr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.TGCzwDIrAqo3HUhr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!TGCzwDIrAqo3HUhr"
+}

@@ -1,0 +1,85 @@
+{
+  "_id": "wigOSPSxXnapFxeh",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Dogfang Bite",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can swing your beak to slash your foes when piercing attacks won't do. Your beak unarmed attack gains the versatile S weapon trait.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:beak"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "versatile-s"
+      }
+    ],
+    "slug": "dogfang-bite",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "tengu"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "dogtooth tengu heritage"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.wigOSPSxXnapFxeh"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.wigOSPSxXnapFxeh",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!wigOSPSxXnapFxeh"
+}

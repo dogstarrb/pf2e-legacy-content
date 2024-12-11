@@ -1,0 +1,89 @@
+{
+  "_id": "VOOShYoB4gTopZtg",
+  "img": "systems/pf2e/icons/spells/destructive-aura.webp",
+  "name": "Effect: Aura of Faith",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.7sFhBYoz5GSBFNbY]{Aura of Faith}</p>\n<p>Each good-aligned ally within 15 feet deal an extra 1 good damage against evil creatures on their first Strike that hits an evil creature each round.</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "label": "First Stike that hits an evil foe this round",
+        "option": "aura-of-faith",
+        "toggleable": true
+      },
+      {
+        "damageType": "spirit",
+        "key": "FlatModifier",
+        "label": "Aura of Faith (Allies)",
+        "predicate": [
+          "aura-of-faith"
+        ],
+        "selector": "strike-damage",
+        "value": 1
+      }
+    ],
+    "slug": "effect-aura-of-faith",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.VOOShYoB4gTopZtg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.VOOShYoB4gTopZtg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VOOShYoB4gTopZtg"
+}

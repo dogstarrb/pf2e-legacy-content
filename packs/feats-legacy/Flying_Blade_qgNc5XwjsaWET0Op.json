@@ -1,0 +1,83 @@
+{
+  "_id": "qgNc5XwjsaWET0Op",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Flying Blade",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You've learned to apply your flashy techniques to thrown weapons as easily as melee attacks.</p>\n<p>When you have @UUID[Compendium.pf2e.classfeatures.Item.LzYi0OuOoypNb6jd]{Panache}, you apply your @UUID[Compendium.pf2e.classfeatures.Item.RQH6vigvhmiYKKjg]{Precise Strike} damage on ranged Strikes you make with a thrown weapon within that weapon's first range increment. The thrown weapon must be an agile or finesse weapon.</p>\n<p>This also allows you to make a thrown weapon ranged Strike for @UUID[Compendium.pf2e.classfeatures.Item.pyo0vmxUFIFX2GNl]{Confident Finisher} and any other finisher that includes a Strike that can benefit from your precise strike.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.TOTMToggle.FirstRangeIncrement",
+        "option": "target:range-increment:1",
+        "toggleable": "totm"
+      }
+    ],
+    "slug": "flying-blade",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "swashbuckler"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "precise strike"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.qgNc5XwjsaWET0Op"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.qgNc5XwjsaWET0Op",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!qgNc5XwjsaWET0Op"
+}

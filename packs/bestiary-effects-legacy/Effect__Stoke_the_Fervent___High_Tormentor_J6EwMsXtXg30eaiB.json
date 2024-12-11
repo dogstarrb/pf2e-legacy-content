@@ -1,0 +1,96 @@
+{
+  "_id": "J6EwMsXtXg30eaiB",
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "name": "Effect: Stoke the Fervent - High Tormentor",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Each ally that hears the call gains a +4 status bonus to attack rolls and damage rolls, a +2 status bonus to saving throws, and takes a -2 status penalty to AC. Affected allies must use at least one of their actions to Strike each round, if they are able (even if it means attacking an ally, object, or thin air).</p>\n<p>The effect duration has been set to the average duration for [[/br 2d4 #rounds]]{2d4 rounds}. Set the duration to the correct value when the effect is added.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Stoke the Fervent",
+        "selector": [
+          "attack",
+          "strike-damage"
+        ],
+        "type": "status",
+        "value": 4
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Stoke the Fervent",
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Stoke the Fervent",
+        "selector": "ac",
+        "type": "status",
+        "value": -2
+      }
+    ],
+    "slug": "effect-stoke-the-fervent-high-tormentor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #155: Lord of the Black Sands",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 5,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.J6EwMsXtXg30eaiB"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.J6EwMsXtXg30eaiB",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!J6EwMsXtXg30eaiB"
+}

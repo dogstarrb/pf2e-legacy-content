@@ -1,0 +1,92 @@
+{
+  "_id": "UuPZ7drPBnSmI8Eo",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Red Mantis Assassin Dedication",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Access</strong> You are from Mediogalti Island.</p>\n<hr />\n<p>You have learned how to stalk your foes and slay them with a sawtooth sabre. You become trained in Stealth and Assassin Lore; if you were already trained, you become an expert instead. Whenever your proficiency in any weapon increases to expert or beyond, you also gain that new proficiency with @UUID[Compendium.pf2e.equipment-srd.Item.wkzxLpSe7LN6c5Ld]{Sawtooth Saber}.</p>\n<hr />\n<p><strong>Special</strong> You cannot select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.CB9YE4P7A2Wty1IX]{Red Mantis Assassin} archetype.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.redMantisAssassin.archetypeFeatCount",
+        "value": 1
+      }
+    ],
+    "slug": "red-mantis-assassin-dedication",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "dedication"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: World Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "trained in sawtooth sabres"
+        },
+        {
+          "value": "deity is Achaekek"
+        },
+        {
+          "value": "lawful evil alignment"
+        },
+        {
+          "value": "member of the Red Mantis assassins"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.UuPZ7drPBnSmI8Eo"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.UuPZ7drPBnSmI8Eo",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!UuPZ7drPBnSmI8Eo"
+}

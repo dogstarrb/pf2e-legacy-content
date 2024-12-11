@@ -1,0 +1,91 @@
+{
+  "_id": "nB8BD9rIg9hfFGns",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Eye For Treasure",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You know good artisanship when you see it and can wax poetic about crafting techniques and forms.</p>\n<p>You become trained in Crafting and gain a +1 circumstance bonus on all Crafting checks made to @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge}. If you would automatically become trained in Crafting (from your background or class, for example), you instead become trained in a skill of your choice.</p>\n<p>In addition, you gain the @UUID[Compendium.pf2e.feats-srd.Item.voYr7ygVcWmlg1f4]{Crafter's Appraisal} skill feat, enabling you to identify magic items using the Crafting skill.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:recall-knowledge"
+        ],
+        "selector": "crafting",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.voYr7ygVcWmlg1f4"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.crafting.rank",
+        "value": 1
+      }
+    ],
+    "slug": "eye-for-treasure",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "dwarf"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.nB8BD9rIg9hfFGns"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.nB8BD9rIg9hfFGns",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!nB8BD9rIg9hfFGns"
+}

@@ -1,0 +1,78 @@
+{
+  "_id": "Fjnm1l59KH5YJ7G9",
+  "img": "systems/pf2e/icons/spells/inspire-heroics.webp",
+  "name": "Spell Effect: Inspire Heroics (Strength, +2)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by succeeding on <em>@UUID[Compendium.pf2e.spells-srd.Item.kF0rs9mCPvJGfAZE]{Inspire Heroics}</em> to enhance <em>@UUID[Compendium.pf2e.spells-srd.Item.Xxdwkt0EEDgP1LGc]{Song of Strength}</em></p>\n<p>You bolster your allies' physical strength with a hearty exhortation. You and your allies gain a +2 status bonus to Athletics checks and to their DCs against Athletics skill actions such as Disarm, Shove, and Trip.</p>\n<p><em>Note: bonus to DCs is not automatically added.</em></p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "athletics",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-inspire-heroics-strength-2",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.Fjnm1l59KH5YJ7G9"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 13500000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.Fjnm1l59KH5YJ7G9",
+    "duplicateSource": null
+  },
+  "_key": "!items!Fjnm1l59KH5YJ7G9"
+}

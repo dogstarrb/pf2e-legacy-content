@@ -1,0 +1,86 @@
+{
+  "_id": "O0QrBJfiMCTR0n0z",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Greater Despair",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You increase the frequency of @UUID[Compendium.pf2e.feats-srd.Item.uBOToHKQJr5JBEsg]{Mummy's Despair} to once per 10 minutes instead of once per hour. A creature that critically fails its Will saving throw is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round instead of @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}. Mummy's Despair gains the incapacitation trait.</p>"
+    },
+    "rules": [
+      {
+        "itemType": "feat",
+        "key": "ItemAlteration",
+        "mode": "override",
+        "predicate": [
+          "item:slug:mummys-despair"
+        ],
+        "property": "frequency-per",
+        "value": "PT10M"
+      }
+    ],
+    "slug": "greater-despair",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Mummy's Despair"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.O0QrBJfiMCTR0n0z"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.O0QrBJfiMCTR0n0z",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!O0QrBJfiMCTR0n0z"
+}

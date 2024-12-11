@@ -1,0 +1,152 @@
+{
+  "_id": "3qqvnC2U8W26yae7",
+  "img": "icons/commodities/biological/eye-blue-gold.webp",
+  "name": "Bloodline: Aberrant",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Something speaks to you from beyond the stars or below the earth. Ancient and unknowable, this alien influence presses against your mind.</p>\n<p><strong>Spell List</strong> occult</p>\n<p><strong>Bloodline Skills</strong> Intimidation, Occultism</p>\n<p><strong>Granted Spells</strong> cantrip <em>@UUID[Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4]{Daze}</em>, 1st: <em>@UUID[Compendium.pf2e.spells-srd.Item.DYdvMZ8G2LiSLVWw]{Spider Sting}</em>, 2nd: <em>@UUID[Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h]{Touch of Idiocy}</em>, 3rd: <em>@UUID[Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE]{Vampiric Touch}</em>, 4th: <em>@UUID[Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY]{Confusion}</em>, 5th: <em>@UUID[Compendium.pf2e.spells-srd.Item.2w4OpAGihn1JSHFD]{Black Tentacles}</em>, 6th: <em>@UUID[Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD]{Feeblemind}</em>, 7th: <em>@UUID[Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs]{Warp Mind}</em>, 8th: <em>@UUID[Compendium.pf2e.spells-srd.Item.Jvyy6oVIQsD34MHB]{Uncontrollable Dance}</em>, 9th: <em>@UUID[Compendium.pf2e.spells-srd.Item.Ht35SDf9PDStJfoC]{Spirit Song}</em></p>\n<p><strong>Bloodline Spells</strong> initial: <em>@UUID[Compendium.pf2e.spells-srd.Item.i8PBZsnoCrK7IWph]{Tentacular Limbs}</em>, advanced: <em>@UUID[Compendium.pf2e.spells-srd.Item.qhJfRnkCRrMI4G1O]{Aberrant Whispers}</em>, greater: <em>@UUID[Compendium.pf2e.spells-srd.Item.ddKBoCjmSyPSHcws]{Unusual Anatomy}</em></p>\n<p><strong>Blood Magic</strong> Aberrant whispers shield one target's mind or your own, granting a +2 status bonus to Will saving throws for 1 round.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.UQ7vZgmfK0VSFS8A]{Effect: Aberrant Blood Magic}</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.intimidation.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.occultism.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.aliases.sorcerer",
+        "priority": 39,
+        "value": "occult"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.sorcerer.bloodline.spells",
+        "value": {
+          "1st": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.DYdvMZ8G2LiSLVWw",
+            "slug": "spider-sting"
+          },
+          "2nd": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.CQb8HtQ1BPeZmu9h",
+            "slug": "touch-of-idiocy"
+          },
+          "3rd": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.N1Z1oLPdBxaSgrEE",
+            "slug": "vampiric-touch"
+          },
+          "4th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.LiGbewa9pO0yjbsY",
+            "slug": "confusion"
+          },
+          "5th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.2w4OpAGihn1JSHFD",
+            "slug": "black-tentacles"
+          },
+          "6th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.5BbU1V6wGSGbrmRD",
+            "slug": "feeblemind"
+          },
+          "7th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs",
+            "slug": "warp-mind"
+          },
+          "8th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.Jvyy6oVIQsD34MHB",
+            "slug": "uncontrollable-dance"
+          },
+          "9th": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.Ht35SDf9PDStJfoC",
+            "slug": "spirit-song"
+          },
+          "advanced": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.qhJfRnkCRrMI4G1O",
+            "slug": "aberrant-whispers"
+          },
+          "cantrip": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4",
+            "slug": "daze"
+          },
+          "greater": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.ddKBoCjmSyPSHcws",
+            "slug": "unusual-anatomy"
+          },
+          "initial": {
+            "UUID": "Compendium.pf2e.spells-srd.Item.i8PBZsnoCrK7IWph",
+            "slug": "tentacular-limbs"
+          }
+        }
+      }
+    ],
+    "slug": "bloodline-aberrant",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "sorcerer-bloodline"
+      ],
+      "value": [
+        "sorcerer"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.3qqvnC2U8W26yae7"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.3qqvnC2U8W26yae7",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3qqvnC2U8W26yae7"
+}

@@ -1,0 +1,99 @@
+{
+  "_id": "h45sUZFs5jhuQdCE",
+  "img": "icons/magic/unholy/beam-ringed-impact-purple.webp",
+  "name": "Stance: Vitality-Manipulation Stance",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have learned to attack meridians and pressure points like your rival Shino Hakusa. You gain a vitality blast ranged unarmed Strike that deals @Damage[1d4[void]] damage, has a range of 30 feet, and has the unarmed and versatile positive traits.</p>\n<p>Additionally, when you use Stunning Fist, instead of saving against being stunned, you can choose to have the target make a Fortitude save against your class DC with the following results. You must choose to do this before the target rolls its save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's muscles become temporarily weaker. For 1 round, the target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}, and any time it attempts to take an action with the manipulate trait, the action is disrupted unless it succeeds at a flat check with a DC equal to 5 + its enfeebled value.</p>\n<p><strong>Failure</strong> As success, but the duration is 1 minute.</p>\n<p><strong>Critical Failure</strong> As success, but the duration is 1 minute, the flat check is DC 11, and the target takes -10-foot status penalty to all Speeds for the duration.</p>"
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "void",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "key": "Strike",
+        "label": "PF2E.SpecificRule.VitalityManipulationStance.StrikeLabel",
+        "range": {
+          "max": 30
+        },
+        "traits": [
+          "unarmed",
+          "versatile-vitality"
+        ]
+      },
+      {
+        "key": "Note",
+        "predicate": [
+          "stunning-fist"
+        ],
+        "selector": "strike-damage",
+        "text": "PF2E.SpecificRule.VitalityManipulationStance.Note"
+      }
+    ],
+    "slug": "stance-vitality-manipulation-stance",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #168: King of the Mountain",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "encounter",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.h45sUZFs5jhuQdCE"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.h45sUZFs5jhuQdCE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!h45sUZFs5jhuQdCE"
+}

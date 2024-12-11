@@ -1,0 +1,87 @@
+{
+  "_id": "0Aocw3igLwna9cjp",
+  "img": "systems/pf2e/icons/features/classes/warpriest.webp",
+  "name": "Warpriest",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have trained in the more militant doctrine of your church, focusing on both spells and battle.</p>\n<p><strong>@UUID[Compendium.pf2e.classfeatures.Item.xxkszluN9icAiTO4]{First Doctrine (1st)}</strong> You're trained in light and medium armor, and you have expert proficiency in Fortitude saves. You gain the @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block} general feat, a reaction to reduce damage with a shield. If your deity's weapon is simple weapon or an unarmed attack, you gain the @UUID[Compendium.pf2e.feats-srd.Item.DfLkIIg2reyYW3a8]{Deadly Simplicity} cleric feat. At 13th level, if you gain the divine defense class feature, you also gain expert proficiency in light and medium armor.</p>\n<p><strong>@UUID[Compendium.pf2e.classfeatures.Item.D34mPo29r1J3DPaX]{Second Doctrine (3rd)}</strong> You're trained in martial weapons.</p>\n<p><strong>@UUID[Compendium.pf2e.classfeatures.Item.Zp81uTBItG1xlH4O]{Third Doctrine (7th)}</strong> You gain expert proficiency with your deity's favored weapon, simple weapons, and unarmed attacks. When you critically succeed at an attack roll using your deity's favored weapon, you apply the weapon's critical specialization effect; use your divine spell DC if necessary.</p>\n<p><strong>@UUID[Compendium.pf2e.classfeatures.Item.px3gVYp7zlEQIpcl]{Fourth Doctrine (11th)}</strong> Your proficiency ranks for divine spell attack rolls and spell DCs increase to expert.</p>\n<p><strong>@UUID[Compendium.pf2e.classfeatures.Item.kmimy4VOaoEOgOiQ]{Fifth Doctrine (15th)}</strong> Your proficiency rank for Fortitude saves increases to master. When you roll a success at a Fortitude save, you get a critical success instead.</p>\n<p><strong>@UUID[Compendium.pf2e.classfeatures.Item.N1ugDqZlslxbp3Uy]{Final Doctrine (19th)}</strong> Your proficiency ranks for divine spell attack rolls and spell DCs increase to master.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e.cleric",
+        "value": {
+          "fifthDoctrine": "Compendium.pf2e.classfeatures.Item.kmimy4VOaoEOgOiQ",
+          "finalDoctrine": "Compendium.pf2e.classfeatures.Item.N1ugDqZlslxbp3Uy",
+          "firstDoctrine": "Compendium.pf2e.classfeatures.Item.xxkszluN9icAiTO4",
+          "fourthDoctrine": "Compendium.pf2e.classfeatures.Item.px3gVYp7zlEQIpcl",
+          "secondDoctrine": "Compendium.pf2e.classfeatures.Item.D34mPo29r1J3DPaX",
+          "thirdDoctrine": "Compendium.pf2e.classfeatures.Item.Zp81uTBItG1xlH4O"
+        }
+      }
+    ],
+    "slug": "warpriest",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "cleric-doctrine"
+      ],
+      "value": [
+        "cleric"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.0Aocw3igLwna9cjp"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.0Aocw3igLwna9cjp",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!0Aocw3igLwna9cjp"
+}

@@ -1,0 +1,117 @@
+{
+  "_id": "spqcRLBsMOC9WTcd",
+  "img": "systems/pf2e/icons/equipment/held-items/keymaking-tools.webp",
+  "name": "Keymaking Tools",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>These thieves' tools provide their owner the ability to have continued control over a lock while leaving it in place. They grant a +1 item bonus to Thievery checks to Pick a Lock. Upon completely opening a lock by picking it with these tools, the tools produce a temporary copy of the key for the picked lock. This phantom key can lock or unlock the lock just like the original key. The key appears attached to the thieves' tools case by a fine silver chain and lasts for 12 hours before it fades into nothing. Only one key created this way can exist in the same set of thieves' tools. Creating a new key replaces the previous one.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Keymaking Tools (Pick Lock & Disable Devices)",
+        "predicate": [
+          {
+            "or": [
+              "action:disable-a-device",
+              "action:pick-a-lock"
+            ]
+          }
+        ],
+        "selector": "thievery",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "keymaking-tools",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 3
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0.1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 55
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.spqcRLBsMOC9WTcd"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.spqcRLBsMOC9WTcd",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!spqcRLBsMOC9WTcd"
+}

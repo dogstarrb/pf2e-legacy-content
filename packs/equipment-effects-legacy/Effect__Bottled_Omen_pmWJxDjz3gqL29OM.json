@@ -1,0 +1,87 @@
+{
+  "_id": "pmWJxDjz3gqL29OM",
+  "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/comprehension-elixir.webp",
+  "name": "Effect: Bottled Omen",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When you attempt a saving throw, you can roll twice and use the better result.</p>"
+    },
+    "rules": [
+      {
+        "keep": "higher",
+        "key": "RollTwice",
+        "predicate": [
+          "bottled-omen"
+        ],
+        "selector": "saving-throw"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.BottledOmen.Label",
+        "option": "bottled-omen",
+        "toggleable": true
+      }
+    ],
+    "slug": "effect-bottled-omen",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #187: The Seventh Arch",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.pmWJxDjz3gqL29OM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.pmWJxDjz3gqL29OM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!pmWJxDjz3gqL29OM"
+}

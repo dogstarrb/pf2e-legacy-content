@@ -1,0 +1,83 @@
+{
+  "_id": "OQAo3Us0ODGYdNNn",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Expert Backstabber",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When you Strike an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} foe with a weapon that has the backstabber weapon trait, you deal 2 extra precision damage instead of 1.</p>\n<p>If the weapon is a +3 weapon, you deal 4 extra precision damage instead of 2.</p>"
+    },
+    "rules": [
+      {
+        "key": "AdjustModifier",
+        "mode": "multiply",
+        "selector": "strike-damage",
+        "slug": "backstabber",
+        "value": 2
+      }
+    ],
+    "slug": "expert-backstabber",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Assassin Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.OQAo3Us0ODGYdNNn"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.OQAo3Us0ODGYdNNn",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OQAo3Us0ODGYdNNn"
+}

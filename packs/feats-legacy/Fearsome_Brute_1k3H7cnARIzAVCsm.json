@@ -1,0 +1,97 @@
+{
+  "_id": "1k3H7cnARIzAVCsm",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Fearsome Brute",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Fear makes your foes weak and more vulnerable to your attacks.</p>\n<p>You gain a circumstance bonus to damage rolls for Strikes against @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} creatures. The bonus is equal to double the target's frightened value.</p>\n<p>If you have master proficiency in Intimidation, increase the bonus to triple the target's frightened value.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "target:condition:frightened"
+        ],
+        "selector": "strike-damage",
+        "slug": "fearsome-brute",
+        "type": "circumstance",
+        "value": "2 * @target.conditions.frightened.badge.value"
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "multiply",
+        "predicate": [
+          {
+            "gte": [
+              "skill:rank:intimidation",
+              3
+            ]
+          }
+        ],
+        "selector": "strike-damage",
+        "slug": "fearsome-brute",
+        "value": 1.5
+      }
+    ],
+    "slug": "fearsome-brute",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fighter"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.1k3H7cnARIzAVCsm"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.1k3H7cnARIzAVCsm",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1k3H7cnARIzAVCsm"
+}

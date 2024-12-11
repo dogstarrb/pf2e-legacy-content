@@ -1,0 +1,148 @@
+{
+  "_id": "CF43oiymCFVVEkVS",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Automaton Lore",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have come to better understand the process that made your body and the magic that powers it. You gain the trained proficiency rank in Arcana and Crafting. If you would automatically become trained in one of those skills (from your background or class, for example), you instead become trained in a skill of your choice. You also become trained in Automaton Lore.</p>\n<p><strong>Enhancement</strong> Your gain greater understanding. Increase your proficiency rank in either Arcana or Crafting, as well as Automaton Lore, to expert. If you were already an expert in the chosen skill, increase your rank to master instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.arcana.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.crafting.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.automaton.enhancements.lesser",
+        "predicate": [
+          {
+            "not": "enhancement:automaton-lore"
+          }
+        ],
+        "value": {
+          "label": "PF2E.SpecificRule.Automaton.EnhanceableFeats.AutomatonLore",
+          "value": "automaton-lore"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.automaton.enhancements.greater",
+        "predicate": [
+          {
+            "not": "enhancement:automaton-lore"
+          }
+        ],
+        "value": {
+          "label": "PF2E.SpecificRule.Automaton.EnhanceableFeats.AutomatonLore",
+          "value": "automaton-lore"
+        }
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.arcana.rank",
+        "predicate": [
+          "enhancement:automaton-lore:arc-expert"
+        ],
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.crafting.rank",
+        "predicate": [
+          "enhancement:automaton-lore:cra-expert"
+        ],
+        "value": 2
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.arcana.rank",
+        "predicate": [
+          "enhancement:automaton-lore:arc-master"
+        ],
+        "value": 3
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.crafting.rank",
+        "predicate": [
+          "enhancement:automaton-lore:cra-master"
+        ],
+        "value": 3
+      }
+    ],
+    "slug": "automaton-lore",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "automaton"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.CF43oiymCFVVEkVS"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.CF43oiymCFVVEkVS",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CF43oiymCFVVEkVS"
+}

@@ -1,0 +1,89 @@
+{
+  "_id": "M41PGiFlLE2tByUL",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Jungle Strider",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You are adept at dodging roots, foliage, and other jungle obstacles. You ignore difficult terrain in forests and jungles. In addition, when you use the Acrobatics skill to Balance on narrow surfaces or uneven ground made of plant material, you aren't off-guard, and when you roll a success at one of these Acrobatics checks, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "action:balance",
+          "terrain:plant"
+        ],
+        "selector": "acrobatics"
+      },
+      {
+        "key": "Note",
+        "selector": "acrobatics",
+        "text": "When you roll a success at an Acrobatics check to Balance on narrow surfaces or uneven ground made of plant material,  get a critical success instead.",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "jungle-strider",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "grippli"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Mwangi Expanse",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.M41PGiFlLE2tByUL"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.M41PGiFlLE2tByUL",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!M41PGiFlLE2tByUL"
+}

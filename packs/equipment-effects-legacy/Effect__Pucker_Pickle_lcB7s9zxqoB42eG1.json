@@ -1,0 +1,89 @@
+{
+  "_id": "lcB7s9zxqoB42eG1",
+  "img": "icons/consumables/vegetable/cucumber-pickle-green.webp",
+  "name": "Effect: Pucker Pickle",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.VnUXcWG4xWGcb7sc]{Pucker Pickle}</p>\n<p>You take a –2 circumstance penalty to further attacks against the target that allow you to taste it, including attacks like Grappling or Tripping it using your jaws or Swallowing it Whole.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "pucker-pickle",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "pucker-pickle"
+        ],
+        "selector": [
+          "attack-roll",
+          "skill-check"
+        ],
+        "type": "circumstance",
+        "value": -2
+      }
+    ],
+    "slug": "effect-pucker-pickle",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Treasure Vault",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.lcB7s9zxqoB42eG1"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.lcB7s9zxqoB42eG1",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!lcB7s9zxqoB42eG1"
+}

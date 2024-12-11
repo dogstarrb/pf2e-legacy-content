@@ -1,0 +1,87 @@
+{
+  "_id": "GstmxSP75eKmHtCQ",
+  "img": "icons/creatures/slimes/slime-movement-splash-green.webp",
+  "name": "Effect: Hallucinogenic Pollen (Failure)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The creature takes a -2 status penalty to Perception checks and saves against mental effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "perception",
+        "type": "status",
+        "value": -2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "mental"
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": -2
+      }
+    ],
+    "slug": "effect-hallucinogenic-pollen-failure",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #151: The Show Must Go On",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 4,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.GstmxSP75eKmHtCQ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.GstmxSP75eKmHtCQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!GstmxSP75eKmHtCQ"
+}

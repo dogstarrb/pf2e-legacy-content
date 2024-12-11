@@ -1,0 +1,124 @@
+{
+  "_id": "fuDYKpDN9RmCX7do",
+  "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/wayfinder.webp",
+  "name": "Razmiri Wayfinder",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Worn on a chain around the neck, a Razmiri wayfinder functions as a compass and provides its wearer a +1 item bonus to Deception checks to Lie or Impersonate. Razmiri wayfinders can also be used to grant temporary healing, making it easier for the wearer to impersonate a divine spellcaster.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> envision</p>\n<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> You touch an adjacent creature, granting them [[/r 3d8 #Temporary Hit Points]]{3d8 temporary Hit Points} for 1 hour.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> manipulate</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You touch an adjacent creature and attempt a counteract check against one poison or disease afflicting the creature. On a success, you halt the effects of the poison or disease for 1 day, rather than removing it. This temporarily relieves any penalties imposed by the affliction but doesn't cure the effect or count against its duration; the poison or disease is merely halted for a time, and it resumes where it left off once this effect ends.</p>"
+    },
+    "rules": [
+      {
+        "domain": "skill-check",
+        "key": "RollOption",
+        "option": "compass-in-possession",
+        "requiresEquipped": false
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Razmiri Wayfinder (Lie or Impersonate)",
+        "predicate": [
+          {
+            "or": [
+              "action:lie",
+              "action:impersonate"
+            ]
+          }
+        ],
+        "selector": "deception",
+        "type": "item",
+        "value": 1
+      }
+    ],
+    "slug": "razmiri-wayfinder",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "illusion",
+        "magical"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Pathfinder Society Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 900
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.fuDYKpDN9RmCX7do"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.fuDYKpDN9RmCX7do",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fuDYKpDN9RmCX7do"
+}

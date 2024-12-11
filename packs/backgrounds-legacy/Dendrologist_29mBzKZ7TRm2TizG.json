@@ -1,0 +1,97 @@
+{
+  "_id": "29mBzKZ7TRm2TizG",
+  "img": "systems/pf2e/icons/default-icons/background.svg",
+  "name": "Dendrologist",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Trees grow in every biome, and your awe at their ability to conquer terrain has inspired deeper study into their workings. There are trees everywhere, and your study of them will inevitably take you ever further afield in search of new varieties, perhaps even to the Plane of Wood itself.</p>\n<p>Choose two attribute boosts. One must be to <strong>Intelligence</strong> or <strong>Wisdom</strong>, and one is a free attribute boost.</p>\n<p>You're trained in the Survival skill and the Plane of Wood Lore skill. You gain the @UUID[Compendium.pf2e.feats-srd.Item.4tTkRyOQ0VuRBac3]{Terrain Expertise} skill feat for forests.</p>"
+    },
+    "rules": [
+      {
+        "allowDuplicate": false,
+        "key": "GrantItem",
+        "preselectChoices": {
+          "terrain": "forest"
+        },
+        "uuid": "Compendium.pf2e.feats-srd.Item.4tTkRyOQ0VuRBac3"
+      }
+    ],
+    "slug": "dendrologist",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "boosts": {
+      "0": {
+        "value": [
+          "int",
+          "wis"
+        ]
+      },
+      "1": {
+        "value": [
+          "cha",
+          "con",
+          "dex",
+          "int",
+          "str",
+          "wis"
+        ]
+      }
+    },
+    "items": {
+      "UzOU5": {
+        "img": "systems/pf2e/icons/features/feats/feats.webp",
+        "level": 1,
+        "name": "Terrain Expertise",
+        "uuid": "Compendium.pf2e.feats-srd.Item.4tTkRyOQ0VuRBac3"
+      }
+    },
+    "trainedSkills": {
+      "value": [
+        "survival"
+      ],
+      "lore": [
+        "Plane of Wood Lore"
+      ],
+      "custom": ""
+    }
+  },
+  "type": "background",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.backgrounds.Item.29mBzKZ7TRm2TizG"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.backgrounds-legacy.Item.29mBzKZ7TRm2TizG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!29mBzKZ7TRm2TizG"
+}

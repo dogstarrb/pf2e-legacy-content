@@ -1,0 +1,102 @@
+{
+  "_id": "SELSj1vvVLx5cP72",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Dragon Roar",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.Item.8sy3sHwOHS4ImwvJ]{Dragon Stance}</p>\n<hr />\n<p>You bellow, instilling fear in your enemies. Enemies within a @Template[type:emanation|distance:15] must succeed at a Will save against your Intimidation DC or be @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). When a creature frightened by the roar begins its turn adjacent to you, it can't reduce its frightened value below 1 on that turn.</p>\n<p>Your first attack that hits a frightened creature after you roar and before the end of your next turn gains a +4 circumstance bonus to damage.</p>\n<p>After you use Dragon Roar, you can't use it again for [[/r 1d4 #rounds]]{1d4 rounds}. Its effects end immediately if you leave Dragon Stance. Creatures in the area of your roar are then temporarily immune for 1 minute.</p>"
+    },
+    "rules": [
+      {
+        "disabledIf": [
+          {
+            "not": "self:effect:dragon-stance"
+          }
+        ],
+        "disabledValue": false,
+        "domain": "all",
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Monk.DragonRoar.Label",
+        "option": "dragon-roar",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "dragon-roar"
+        ],
+        "selector": "strike-damage",
+        "type": "circumstance",
+        "value": 4
+      }
+    ],
+    "slug": "dragon-roar",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "auditory",
+        "emotion",
+        "fear",
+        "mental",
+        "monk"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 1
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Dragon Stance"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.SELSj1vvVLx5cP72"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.SELSj1vvVLx5cP72",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!SELSj1vvVLx5cP72"
+}

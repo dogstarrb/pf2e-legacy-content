@@ -1,0 +1,90 @@
+{
+  "_id": "pbKvPM4cnmGTkDiZ",
+  "img": "systems/pf2e/icons/effects/critical-effect.webp",
+  "name": "Effect: +4 circumstance bonus to AC against your ranged attacks",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Effect applied by @UUID[Compendium.pf2e.criticaldeck.JournalEntry.4MkOtc3bBYsBGF97]{Critical Fumble Deck #6}</strong></p>\n<p>Cover provides +4 circumstance bonus to AC against your ranged attacks</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "PF2E.SpecificRule.CriticalDeck.Effect.Label",
+        "predicate": [
+          "overcompensate-effect"
+        ],
+        "selector": "ac",
+        "slug": "critical-effect-bonus-to-ac-vs-ranged",
+        "type": "circumstance",
+        "value": 4
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "label": "Has cover from target of Overcompensate fumble effect",
+        "option": "overcompensate-effect",
+        "toggleable": true
+      }
+    ],
+    "slug": "effect-4-circumstance-bonus-to-ac-against-your-ranged-attacks",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Critical Decks",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.other-effects.Item.pbKvPM4cnmGTkDiZ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.other-effects-legacy.Item.pbKvPM4cnmGTkDiZ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!pbKvPM4cnmGTkDiZ"
+}

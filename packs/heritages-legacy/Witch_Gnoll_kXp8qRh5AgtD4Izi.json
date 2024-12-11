@@ -1,0 +1,75 @@
+{
+  "_id": "kXp8qRh5AgtD4Izi",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Witch Gnoll",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You're a shaggy, dark-furred gnoll capable of making some truly uncanny sounds. You can cast the <em>@UUID[Compendium.pf2e.spells-srd.Item.atlgGNI1E1Ox3O3a]{Ghost Sound}</em> cantrip as an occult innate spell at will. A cantrip is heightened to a spell level equal to half your level rounded up. In addition, you gain a +1 circumstance bonus to checks to Impersonate and Create a Diversion when using only your voice.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Witch Gnoll (voice bonus only)",
+        "predicate": [
+          "auditory",
+          {
+            "or": [
+              "action:impersonate",
+              "action:create-a-diversion"
+            ]
+          }
+        ],
+        "selector": "deception",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "witch-gnoll",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Mwangi Expanse",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Gnoll",
+      "slug": "gnoll",
+      "uuid": "Compendium.pf2e.ancestries.Item.vxbQ1Yw4qwgjTzqo"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.kXp8qRh5AgtD4Izi"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.kXp8qRh5AgtD4Izi",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!kXp8qRh5AgtD4Izi"
+}

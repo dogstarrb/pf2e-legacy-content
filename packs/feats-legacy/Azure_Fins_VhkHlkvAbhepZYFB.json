@@ -1,0 +1,81 @@
+{
+  "_id": "VhkHlkvAbhepZYFB",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Azure Fins",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When submerged in water or another liquid, you form small fin-like arms along your body, granting you far greater maneuverability while swimming. You gain a swim Speed equal to your land Speed. Furthermore, while swimming on the surface of a liquid, you can @UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{Leap} out of the liquid and do not fall until the end of your turn, allowing you to spend the rest of the turn above the surface.</p>"
+    },
+    "rules": [
+      {
+        "key": "BaseSpeed",
+        "selector": "swim",
+        "value": "@actor.attributes.speed.total"
+      }
+    ],
+    "slug": "azure-fins",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #194: Cult of the Cave Worm",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Worm Caller Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.VhkHlkvAbhepZYFB"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.VhkHlkvAbhepZYFB",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VhkHlkvAbhepZYFB"
+}

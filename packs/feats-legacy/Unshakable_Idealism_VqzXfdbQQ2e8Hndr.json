@@ -1,0 +1,94 @@
+{
+  "_id": "VqzXfdbQQ2e8Hndr",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Unshakable Idealism",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your faith and hope can't be shaken, and you won't flee when lives are at stake. You gain a +1 circumstance bonus on saves against fear effects and emotion effects that inflict despair. When you would gain the fleeing condition, you can choose to stand your ground and be stunned for the effect's duration as well, preventing you from running and allowing you to re-enter the fight more quickly when the effect ends.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "vs. fear or despair (Unshakable Idealism)",
+        "predicate": [
+          {
+            "or": [
+              "fear",
+              "emotion-despair"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "unshakable-idealism",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Knight Vigilant"
+        },
+        {
+          "value": "expert in Will saves"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.VqzXfdbQQ2e8Hndr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.VqzXfdbQQ2e8Hndr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!VqzXfdbQQ2e8Hndr"
+}

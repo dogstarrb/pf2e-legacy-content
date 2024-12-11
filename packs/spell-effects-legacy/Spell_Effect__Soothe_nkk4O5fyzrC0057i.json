@@ -1,0 +1,81 @@
+{
+  "_id": "nkk4O5fyzrC0057i",
+  "img": "icons/magic/air/air-burst-spiral-teal-green.webp",
+  "name": "Spell Effect: Soothe",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]{Soothe}</em></p>\n<p>Your mind is bolstered against hostile effects, granting a +2 status bonus to saves against mental effects for the duration.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "mental"
+        ],
+        "selector": "saving-throw",
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-soothe",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.nkk4O5fyzrC0057i"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 36200000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.nkk4O5fyzrC0057i",
+    "duplicateSource": null
+  },
+  "_key": "!items!nkk4O5fyzrC0057i"
+}

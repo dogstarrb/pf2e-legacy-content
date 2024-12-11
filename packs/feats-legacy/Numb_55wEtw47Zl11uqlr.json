@@ -1,0 +1,121 @@
+{
+  "_id": "55wEtw47Zl11uqlr",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Numb",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>As your body continues to rot and putrefy, your senses deaden and your undead powers grow. You gain the @UUID[Compendium.pf2e.ancestryfeatures.Item.YGk41WV42aTM7CQV]{Advanced Undead Benefits} as well as a +1 circumstance bonus on saving throws against emotion and pain effects. While your body is @UUID[Compendium.pf2e.feat-effects.Item.94MzLpLykQIWKcA1]{Deteriorated}, your numbness amplifies in two ways: the circumstance bonus from this feat increases to +2, and if you roll a success on a saving throw against an emotion or pain effect, you get a critical success instead.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "emotion",
+              "pain"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "slug": "numb",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "AdjustModifier",
+        "mode": "upgrade",
+        "predicate": [
+          "self:effect:deteriorated"
+        ],
+        "selector": "saving-throw",
+        "slug": "numb",
+        "value": 2
+      },
+      {
+        "adjustment": {
+          "success": "one-degree-better"
+        },
+        "key": "AdjustDegreeOfSuccess",
+        "predicate": [
+          "self:effect:deteriorated",
+          {
+            "or": [
+              "emotion",
+              "pain"
+            ]
+          }
+        ],
+        "selector": "saving-throw"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.ancestryfeatures.Item.YGk41WV42aTM7CQV"
+      }
+    ],
+    "slug": "numb",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Zombie Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.55wEtw47Zl11uqlr"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.55wEtw47Zl11uqlr",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!55wEtw47Zl11uqlr"
+}

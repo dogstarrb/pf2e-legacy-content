@@ -1,0 +1,87 @@
+{
+  "_id": "I1xq9TDYRHNtqzGz",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Sink and Swim",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your body looks like it's made of flowing water, clear and pristine, providing a natural grace to all your movements. You gain a swim Speed equal to your land Speed. If you already had a swim Speed, it's increased by 10 feet. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.eBgO5gp5kKhGtmk9]{Water Transfer} activity, which enables you to teleport through a body of water.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "swim-speed",
+        "value": 10
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "swim",
+        "value": "@actor.attributes.speed.total"
+      }
+    ],
+    "slug": "sink-and-swim",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "aftermath",
+        "water"
+      ],
+      "rarity": "rare"
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 14
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "You've been brought to 0 Hit Points by an enemy that has the water trait or an enemy's ability that has the water trait"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.I1xq9TDYRHNtqzGz"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.I1xq9TDYRHNtqzGz",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!I1xq9TDYRHNtqzGz"
+}

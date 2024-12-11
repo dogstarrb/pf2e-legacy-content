@@ -1,0 +1,86 @@
+{
+  "_id": "Pe0zmIqyTBc2Td0I",
+  "img": "systems/pf2e/icons/features/classes/advanced-alchemy.webp",
+  "name": "Advanced Alchemy",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>During your daily preparations, after producing new @UUID[Compendium.pf2e.classfeatures.Item.wySB9VHOW1v3TX1L]{Infused Reagents}, you can spend batches of those infused reagents to create infused alchemical items.</p>\n<p>You don't need to attempt a Crafting check to do this, and you ignore both the number of days typically required to create the items and any alchemical reagent requirements.</p>\n<p>Your advanced alchemy level is equal to your level. For each batch of infused reagents you spend, choose an alchemical item of your advanced alchemy level or lower that's in your formula book, and make a batch of two of that item.</p>\n<p>These items have the infused trait and remain potent for 24 hours or until your next daily preparations, whichever comes first.</p>"
+    },
+    "rules": [
+      {
+        "craftableItems": [
+          "item:trait:alchemical"
+        ],
+        "isAlchemical": true,
+        "isDailyPrep": true,
+        "key": "CraftingAbility",
+        "label": "PF2E.TraitAlchemist",
+        "maxItemLevel": "@actor.level",
+        "predicate": [
+          "class:alchemist"
+        ],
+        "slug": "alchemist"
+      }
+    ],
+    "slug": "advanced-alchemy",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "alchemist"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.Pe0zmIqyTBc2Td0I"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.Pe0zmIqyTBc2Td0I",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!Pe0zmIqyTBc2Td0I"
+}

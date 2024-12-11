@@ -1,0 +1,100 @@
+{
+  "_id": "XMBoKRRyooKnGkHk",
+  "img": "icons/magic/symbols/clover-luck-white-green.webp",
+  "name": "Spell Effect: Practice Makes Perfect",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.HOj2YsTpkoMpYJH9]{Practice Makes Perfect}</em>.</p>\n<p>The target gains a +2 status bonus to the triggering check, or a +3 bonus if the target has master or better proficiency in the skill.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "nor": [
+              "proficiency:master",
+              "proficiency:legendary"
+            ]
+          }
+        ],
+        "selector": "skill-check",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "proficiency:master",
+              "proficiency:legendary"
+            ]
+          }
+        ],
+        "selector": "skill-check",
+        "type": "status",
+        "value": 3
+      }
+    ],
+    "slug": "spell-effect-practice-makes-perfect",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #148: Fires of the Haunted City",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.XMBoKRRyooKnGkHk"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 23800000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.XMBoKRRyooKnGkHk",
+    "duplicateSource": null
+  },
+  "_key": "!items!XMBoKRRyooKnGkHk"
+}

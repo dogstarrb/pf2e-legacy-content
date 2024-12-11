@@ -1,0 +1,82 @@
+{
+  "_id": "EsA2F4R3UwUdI8Px",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Cycle Spell",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your devotion to the cycle of souls grants you an additional divine spell. Choose from <em>@UUID[Compendium.pf2e.spells-srd.Item.XSujb7EsSwKl19Uu]{Bless}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.2iQKhCQBijhj5Rf3]{Disrupting Weapons}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</em>. You must make this selection when you take this feat and it can't be changed. Once per day, while your spiral is glowing, you can cast the selected spell as a divine innate spell.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.soulWarden.featCount",
+        "value": 1
+      }
+    ],
+    "slug": "cycle-spell",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Soul Warden Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.EsA2F4R3UwUdI8Px"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.EsA2F4R3UwUdI8Px",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!EsA2F4R3UwUdI8Px"
+}

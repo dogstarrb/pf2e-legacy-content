@@ -1,0 +1,87 @@
+{
+  "_id": "4IfYHrQMosJNM8hv",
+  "img": "systems/pf2e/icons/features/classes/fervor.webp",
+  "name": "Fervor Patron",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your patron represents a grand ideal or goal, granting you magic to further their mission and bring others to the cause.</p>\n<p><strong>Spell List</strong> divine</p>\n<p><strong>Patron Skill</strong> Religion</p>\n<p><strong>Hex Cantrip</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.GeUbPvwdZ4B4l0up]{Stoke the Heart}</em></p>\n<p><strong>Granted Spell</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{Command}</em></p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.religion.rank",
+        "value": 1
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.proficiencies.aliases.witch",
+        "priority": 39,
+        "value": "divine"
+      }
+    ],
+    "slug": "fervor-patron",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "witch-patron"
+      ],
+      "value": [
+        "witch"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.4IfYHrQMosJNM8hv"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.4IfYHrQMosJNM8hv",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4IfYHrQMosJNM8hv"
+}

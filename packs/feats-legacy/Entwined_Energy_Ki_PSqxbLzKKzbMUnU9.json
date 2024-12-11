@@ -1,0 +1,104 @@
+{
+  "_id": "PSqxbLzKKzbMUnU9",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Entwined Energy Ki",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You can transform your inner power into a type of energy to empower your ki abilities. When you gain this feat, choose either acid, cold, electricity, fire, or sonic damage. When you cast ki blast, you can choose to have the spell deal the type of damage you chose instead of force damage. When you cast ki form or ki strike, add the type of damage you chose to the list of damage types you can select for the spell.</p>\n<p><strong>Special</strong> At the GM's discretion, this feat can alter other ki spells.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAcid",
+            "value": "acid"
+          },
+          {
+            "label": "PF2E.TraitCold",
+            "value": "cold"
+          },
+          {
+            "label": "PF2E.TraitElectricity",
+            "value": "electricity"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitSonic",
+            "value": "sonic"
+          }
+        ],
+        "flag": "entwinedEnergyKi",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.DamageType"
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "entwined-energy-ki:{item|flags.pf2e.rulesSelections.entwinedEnergyKi}"
+      }
+    ],
+    "slug": "entwined-energy-ki",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "monk"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #166: Despair on Danger Island",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.PSqxbLzKKzbMUnU9"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.PSqxbLzKKzbMUnU9",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PSqxbLzKKzbMUnU9"
+}

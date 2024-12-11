@@ -1,0 +1,98 @@
+{
+  "_id": "8RNPIAuV7ixaXeq5",
+  "img": "icons/consumables/potions/potion-flask-corked-shiny-red.webp",
+  "name": "Effect: War Blood Mutagen (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.oaGUNWmrqtKhy1HP]{War Blood Mutagen (Greater)}</p>\n<p>You gain a +3 item bonus to your attack rolls with this weapon and to Will saves against fear effects.</p>"
+    },
+    "rules": [
+      {
+        "choices": {
+          "ownedItems": true,
+          "types": [
+            "weapon"
+          ]
+        },
+        "flag": "effectWarBloodMutagenGreater",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.Weapon"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "{item|flags.pf2e.rulesSelections.effectWarBloodMutagenGreater}-attack",
+        "type": "item",
+        "value": 3
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "fear"
+        ],
+        "selector": "will",
+        "type": "item",
+        "value": 3
+      }
+    ],
+    "slug": "effect-war-blood-mutagen-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #178: Punks in a Powder Keg",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 11
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.8RNPIAuV7ixaXeq5"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.8RNPIAuV7ixaXeq5",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8RNPIAuV7ixaXeq5"
+}

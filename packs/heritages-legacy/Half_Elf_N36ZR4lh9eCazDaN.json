@@ -1,0 +1,90 @@
+{
+  "_id": "N36ZR4lh9eCazDaN",
+  "img": "systems/pf2e/icons/features/ancestry/half-elf.webp",
+  "name": "Half-Elf",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Either one of your parents was an elf, or one or both were half-elves. You have pointed ears and other telltale signs of elf heritage. You gain the elf trait, the half-elf trait, and Low-Light Vision. In addition, you can select elf, half-elf, and human feats whenever you gain an ancestry feat.</p>"
+    },
+    "rules": [
+      {
+        "key": "Sense",
+        "selector": "low-light-vision"
+      },
+      {
+        "add": [
+          "elf",
+          "aiuvarin"
+        ],
+        "key": "ActorTraits"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.details.ancestry.versatile",
+        "value": "elf"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.details.ancestry.countsAs",
+        "value": "elf"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.details.ancestry.countsAs",
+        "value": "aiuvarin"
+      }
+    ],
+    "slug": "aiuvarin",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "aiuvarin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Human",
+      "slug": "human",
+      "uuid": "Compendium.pf2e.ancestries.Item.IiG7DgeLWYrSNXuX"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.N36ZR4lh9eCazDaN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.N36ZR4lh9eCazDaN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!N36ZR4lh9eCazDaN"
+}

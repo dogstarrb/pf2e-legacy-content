@@ -1,0 +1,113 @@
+{
+  "_id": "x9RIFhquazom4p02",
+  "img": "icons/weapons/axes/axe-double-white-red.webp",
+  "name": "Deity's Strike",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A manifested version of your deity's favored weapon appears in the air above and attacks the target, using your spell attack roll. On a hit, the weapon deals 7d12 force damage, or double damage on a critical hit.</p>\n<p>After the attack, whether it succeeds or fails, divine energy bursts from the weapon in a shock wave. It emits in a <strong>10-foot-wide, 30-foot-long line</strong> starting from the target and continuing in a direction you choose. Choose an alignment your deity has (chaotic, evil, good, or lawful). Your target and any other creatures within the area of the spell take [[/r 5d6]] damage of the chosen alignment type, with a basic Reflex save. The spell gains the trait of the alignment you choose. If your deity is true neutral, the weapon doesn't create a shock wave.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The force damage increases by 1d12 and the alignment damage increases by 1d6. ([[/r 6d6]])</p>"
+    },
+    "rules": [],
+    "slug": "deitys-strike",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "attack",
+        "concentrate",
+        "force",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "divine"
+      ]
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 7
+    },
+    "requirements": "You have a deity.",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "500 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "applyMod": false,
+        "formula": "7d12",
+        "type": "force",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "levels": {
+        "9": {
+          "damage": {
+            "0": {
+              "applyMod": false,
+              "formula": "8d12",
+              "type": "force"
+            }
+          }
+        }
+      },
+      "type": "fixed"
+    }
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.x9RIFhquazom4p02"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.x9RIFhquazom4p02",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!x9RIFhquazom4p02"
+}

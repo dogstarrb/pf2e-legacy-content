@@ -1,0 +1,78 @@
+{
+  "_id": "8GG4h6DbpAEGGETG",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Lightning Dash",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>For an instant, you transform yourself into a being of pure lightning and fly forward, shocking anyone in your way. You propel yourself forward in a @Template[type:line|distance:30]. You can move through creatures during this movement, and this movement doesn't trigger reactions that are triggered by movement. Each creature you move through takes @Damage[(floor((@actor.level -4)/3)+2)d12[electricity]] damage with a @Check[type:reflex|dc:resolve(@actor.system.proficiencies.classDCs.kineticist.dc)|basic:true] save against your class DC. You return to your normal form in the final square of the line. If you're in the air, you fall unless you have a fly Speed.</p>\n<hr />\n<p><strong>Level (+3)</strong> The length of the line increases by 5 feet, and the damage increases by 1d12.</p>"
+    },
+    "rules": [],
+    "slug": "lightning-dash",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "air",
+        "electricity",
+        "impulse",
+        "kineticist",
+        "move",
+        "overflow",
+        "polymorph",
+        "primal"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.8GG4h6DbpAEGGETG"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.8GG4h6DbpAEGGETG",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8GG4h6DbpAEGGETG"
+}

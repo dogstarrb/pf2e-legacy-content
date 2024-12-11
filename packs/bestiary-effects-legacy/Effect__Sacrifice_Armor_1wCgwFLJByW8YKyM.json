@@ -1,0 +1,79 @@
+{
+  "_id": "1wCgwFLJByW8YKyM",
+  "img": "icons/skills/melee/shield-damaged-broken-gold.webp",
+  "name": "Effect: Sacrifice Armor",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The scrapborn's AC is lowered for 24 hours. The scrapborn's AC cannot be reduced below 16 in this way.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "ac",
+        "value": "max(-@item.badge.value,-6)"
+      }
+    ],
+    "slug": "effect-sacrifice-armor",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Adventure: The Enmity Cycle",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "duration": {
+      "value": 24,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": {
+      "type": "counter",
+      "value": 2
+    },
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.bestiary-effects.Item.1wCgwFLJByW8YKyM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.bestiary-effects-legacy.Item.1wCgwFLJByW8YKyM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1wCgwFLJByW8YKyM"
+}

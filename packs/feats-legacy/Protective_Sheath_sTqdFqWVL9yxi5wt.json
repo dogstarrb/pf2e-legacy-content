@@ -1,0 +1,92 @@
+{
+  "_id": "sTqdFqWVL9yxi5wt",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Protective Sheath",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>When you lash out with your @UUID[Compendium.pf2e.equipment-srd.Item.kJJvKm80KwWXPukV]{Clan Dagger}, you keep its sheath close at hand. When you use @UUID[Compendium.pf2e.feats-srd.Item.X7wFUWjYjYhzpejU]{Clan's Edge}, if the hand you're not holding the dagger with is empty, you can use your clan dagger's sheath to block attacks as well. The circumstance bonus to your AC from parrying increases to a +2 against any target you hit with a Strike this turn.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.fRlvmul3LbLo2xvR]{Effect: Parry}</p>"
+    },
+    "rules": [
+      {
+        "key": "AdjustModifier",
+        "mode": "add",
+        "predicate": [
+          "protective-sheath"
+        ],
+        "selector": "ac",
+        "slug": "parry",
+        "value": 1
+      },
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "protective-sheath",
+        "toggleable": true
+      }
+    ],
+    "slug": "protective-sheath",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "dwarf"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Character Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Clan's Edge"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.sTqdFqWVL9yxi5wt"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.sTqdFqWVL9yxi5wt",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!sTqdFqWVL9yxi5wt"
+}

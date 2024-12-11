@@ -1,0 +1,102 @@
+{
+  "_id": "bIU1q05vzkKBtFj2",
+  "img": "systems/pf2e/icons/spells/harm.webp",
+  "name": "Effect: Necrotic Infusion",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.6erzXaxxvcXYnL9H]{Necrotic Infusion}.</p>\n<p>If the next action you use is to cast <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}</em> to restore Hit Points to a single undead creature, the target then deals an additional 1d6 negative damage with its melee weapons and unarmed attacks until the end of its next turn. If the <em>harm</em> spell is at least 5th level, this damage increases to 2d6, and if the <em>harm</em> spell is at least 8th level, the damage increases to 3d6.</p>"
+    },
+    "rules": [
+      {
+        "damageType": "void",
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "selector": "strike-damage",
+        "value": {
+          "brackets": [
+            {
+              "end": 4,
+              "value": {
+                "diceNumber": 1
+              }
+            },
+            {
+              "end": 7,
+              "start": 5,
+              "value": {
+                "diceNumber": 2
+              }
+            },
+            {
+              "start": 8,
+              "value": {
+                "diceNumber": 3
+              }
+            }
+          ],
+          "field": "item|system.level.value"
+        }
+      }
+    ],
+    "slug": "effect-necrotic-infusion",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.bIU1q05vzkKBtFj2"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.bIU1q05vzkKBtFj2",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bIU1q05vzkKBtFj2"
+}

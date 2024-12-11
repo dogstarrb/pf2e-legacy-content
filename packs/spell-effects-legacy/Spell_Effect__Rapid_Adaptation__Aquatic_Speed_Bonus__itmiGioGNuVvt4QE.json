@@ -1,0 +1,78 @@
+{
+  "_id": "itmiGioGNuVvt4QE",
+  "img": "icons/magic/nature/leaf-oak-wreath-glow-green.webp",
+  "name": "Spell Effect: Rapid Adaptation (Aquatic Speed Bonus)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.fTK6ysisGhy3hRvz]{Rapid Adaptation}</em></p>\n<p>The target gains a swim Speed equal to its land Speed. If it already had a swim Speed, it gains a +10-foot status bonus to its swim Speed.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "swim-speed",
+        "type": "status",
+        "value": 10
+      }
+    ],
+    "slug": "spell-effect-rapid-adaptation-aquatic-speed-bonus",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Secrets of Magic",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hours",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.itmiGioGNuVvt4QE"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 31600000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.itmiGioGNuVvt4QE",
+    "duplicateSource": null
+  },
+  "_key": "!items!itmiGioGNuVvt4QE"
+}

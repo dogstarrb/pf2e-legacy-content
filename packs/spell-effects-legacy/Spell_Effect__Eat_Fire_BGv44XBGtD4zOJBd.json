@@ -1,0 +1,76 @@
+{
+  "_id": "BGv44XBGtD4zOJBd",
+  "img": "systems/pf2e/icons/spells/eat-fire.webp",
+  "name": "Spell Effect: Eat Fire",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.FWuLUKIbkJZjBiuA]{Eat Fire}</em></p>\n<p>You gain resistance to fire damage until the end of the current turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "type": "fire",
+        "value": "5*ceil((@item.level)/3)"
+      }
+    ],
+    "slug": "spell-effect-eat-fire",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.BGv44XBGtD4zOJBd"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 10100000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.BGv44XBGtD4zOJBd",
+    "duplicateSource": null
+  },
+  "_key": "!items!BGv44XBGtD4zOJBd"
+}

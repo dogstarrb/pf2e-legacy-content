@@ -1,0 +1,80 @@
+{
+  "_id": "dWbg2gACxMkSnZag",
+  "img": "systems/pf2e/icons/spells/protective-ward.webp",
+  "name": "Spell Effect: Protective Ward",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.lY9fOk1qBDDhBT8s]{Protective Ward}</em></p>\n<p>You emanate a shimmering aura of protective magic. You and any allies in the area gain a +1 status bonus to AC. Each time you @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Sustain the Spell}, the emanation's radius increases by 5 feet, to a maximum of 30 feet.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "ac",
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-protective-ward",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "wizard"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.dWbg2gACxMkSnZag"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 27900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.dWbg2gACxMkSnZag",
+    "duplicateSource": null
+  },
+  "_key": "!items!dWbg2gACxMkSnZag"
+}

@@ -1,0 +1,172 @@
+{
+  "_id": "pvxRcuBexbFawjCg",
+  "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/flame-tongue.webp",
+  "name": "Flame Tongue (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This <em>+3 greater striking @UUID[Compendium.pf2e.equipment-srd.Item.RSZwUlCzUX7Nb4UA]{Greater Flaming} longsword</em> has an ornate brass hilt and a blade shaped like stylized flames. When wielded, the blade projects illumination resembling shimmering firelight, emitting dim light in a 10-foot radius.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> command, Interact</p>\n<hr />\n<p><strong>Effect</strong> You cast the <em>@UUID[Compendium.pf2e.spells-srd.Item.O9w7r4BKgPogYDDe]{Produce Flame}</em> cantrip from the sword as a 9th-level arcane spell, using your melee attack modifier with <em>flametongue</em> as your spell attack modifier.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> A @Template[type:emanation|distance:10] of flame radiates from the <em>greater flame tongue</em> for 1 minute. All weapon and unarmed attacks by you and your allies within the area gain the effect of the <em>flaming</em> property rune.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.4XO5mkjnh5riwZPM]{Aura: Flame Tongue (Greater)}</p>"
+    },
+    "rules": [
+      {
+        "key": "TokenLight",
+        "value": {
+          "animation": {
+            "intensity": 4,
+            "speed": 1,
+            "type": "torch"
+          },
+          "color": "#9b7337",
+          "dim": 10,
+          "shadows": 0.2
+        }
+      },
+      {
+        "key": "TokenEffectIcon",
+        "value": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/flame-tongue.webp"
+      }
+    ],
+    "slug": "flame-tongue-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fire",
+        "magical",
+        "versatile-p"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 17
+    },
+    "quantity": 1,
+    "baseItem": "longsword",
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 13800
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "category": "martial",
+    "group": "sword",
+    "bonus": {
+      "value": 3
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d8",
+      "damageType": "slashing",
+      "persistent": null
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": null,
+    "reload": {
+      "value": ""
+    },
+    "runes": {
+      "potency": 3,
+      "striking": 2,
+      "property": [
+        "greaterFlaming"
+      ]
+    },
+    "specific": {
+      "material": {
+        "type": null,
+        "grade": null
+      },
+      "runes": {
+        "potency": 3,
+        "striking": 2,
+        "property": [
+          "greaterFlaming"
+        ]
+      }
+    },
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": ""
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.pvxRcuBexbFawjCg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.pvxRcuBexbFawjCg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!pvxRcuBexbFawjCg"
+}

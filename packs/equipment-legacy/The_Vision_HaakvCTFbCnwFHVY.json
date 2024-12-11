@@ -1,0 +1,117 @@
+{
+  "_id": "HaakvCTFbCnwFHVY",
+  "img": "icons/sundries/gaming/playing-cards-grey.webp",
+  "name": "The Vision",
+  "system": {
+    "description": {
+      "gm": "<p><strong>Epitome</strong> Harrowheart's workshops become enhanced. Any character may now use a workshop in Harrowheart to attempt to Borrow a Spell, Identify Alchemy, Identify Magic, or Learn a Spell. If they do so, they apply the workshop's item bonus to their skill check.</p>",
+      "value": "<p><strong>Suit</strong> Book (Int)</p>\n<p><strong>Alignment</strong> chaotic neutral</p>\n<hr />\n<p><em>The Vision</em> represents arcane knowledge. As long as you have <em>The Vision</em> invested, it grants you a +2 item bonus to all checks made to @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identify Magic}. This increases to a +3 item bonus if you are at least 17th level.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> A visible bolt of blue energy bursts from your head. Attempt to Recall Knowledge about a subject, rolling the check with the most appropriate Lore skill check. This check always resolves as if you were master in the most appropriate Lore skill to Recall Knowledge on the subject (or if you're at least 15th level, as if you were legendary in that Lore skill). If you're already master (or legendary) in that Lore, the result of your Recall Knowledge check is one degree of success better than it would otherwise be.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "action:identify-magic"
+        ],
+        "selector": [
+          "arcana",
+          "religion",
+          "nature",
+          "occultism"
+        ],
+        "type": "item",
+        "value": "ternary(gte(@actor.level,17),3,2)"
+      }
+    ],
+    "slug": "the-vision",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "artifact",
+        "harrow-court",
+        "invested",
+        "magical"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder #190: The Choosing",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "carried"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.HaakvCTFbCnwFHVY"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.HaakvCTFbCnwFHVY",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!HaakvCTFbCnwFHVY"
+}

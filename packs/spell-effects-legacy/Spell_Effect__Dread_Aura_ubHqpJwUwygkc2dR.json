@@ -1,0 +1,78 @@
+{
+  "_id": "ubHqpJwUwygkc2dR",
+  "img": "systems/pf2e/icons/spells/dread-aura.webp",
+  "name": "Spell Effect: Dread Aura",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.KPGGkyBFbKse7KpK]{Dread Aura}</em></p>\n<p>Foes in the area are frightened 1 and unable to reduce the condition.</p>"
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "onDeleteActions": {
+          "granter": "cascade"
+        },
+        "uuid": "Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL"
+      }
+    ],
+    "slug": "spell-effect-dread-aura",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.ubHqpJwUwygkc2dR"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 41700000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.ubHqpJwUwygkc2dR",
+    "duplicateSource": null
+  },
+  "_key": "!items!ubHqpJwUwygkc2dR"
+}

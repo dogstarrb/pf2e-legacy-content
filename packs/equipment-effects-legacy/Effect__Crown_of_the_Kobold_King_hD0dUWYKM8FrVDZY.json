@@ -1,0 +1,83 @@
+{
+  "_id": "hD0dUWYKM8FrVDZY",
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "name": "Effect: Crown of the Kobold King",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a +1 status bonus to attack rolls, saving throws, and Charisma-based skill checks.</p>"
+    },
+    "rules": [
+      {
+        "critical": false,
+        "key": "FlatModifier",
+        "selector": [
+          "attack",
+          "saving-throw",
+          "cha-based"
+        ],
+        "type": "status",
+        "value": 1
+      }
+    ],
+    "slug": "effect-crown-of-the-kobold-king",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Adventure: Crown of the Kobold King",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-effects.Item.hD0dUWYKM8FrVDZY"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-effects-legacy.Item.hD0dUWYKM8FrVDZY",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!hD0dUWYKM8FrVDZY"
+}

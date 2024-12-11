@@ -1,0 +1,91 @@
+{
+  "_id": "D3ypq5kAmLbwrgjq",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "No Stranger to Death",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your regular exposure to the insidious putrescence of undeath inured you to its effects. You gain a +2 circumstance bonus to saving throws made against spells and effects with the death, disease, and evil traits. Whenever you become drained or sickened, reduce the status penalty you take from the condition by 1, to a minimum of 0.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "death",
+              "disease",
+              "evil"
+            ]
+          }
+        ],
+        "selector": "saving-throw",
+        "type": "circumstance",
+        "value": 2
+      }
+    ],
+    "slug": "no-stranger-to-death",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Knights of Lastwall",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 12
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Lastwall Sentry Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.D3ypq5kAmLbwrgjq"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.D3ypq5kAmLbwrgjq",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!D3ypq5kAmLbwrgjq"
+}

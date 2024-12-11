@@ -1,0 +1,92 @@
+{
+  "_id": "ln2Y1a4SxlU9sizX",
+  "img": "systems/pf2e/icons/features/classes/alchemical-sciences-methodology.webp",
+  "name": "Alchemical Sciences Methodology",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your methodology emphasizes chemical and alchemical analysis, collecting information from unusual particles and fluids found on the scene. You possess enough alchemical know-how to whip up a few tinctures to help you with your cases.</p>\n<p>You're trained in Crafting and gain the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat. In addition, you gain a @UUID[Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx]{Formula Book (Blank)} for free and learn the formulas for two additional common 1st-level alchemical items, which must be elixirs or tools. Each time you gain a level, you learn the formula for one common alchemical elixir or alchemical tool of any level of item you can create.</p>\n<p>During your daily preparations, you can create a number of versatile vials-alchemical concoctions that can quickly be turned into elixirs and tools-equal to your Intelligence modifier. You can use the @UUID[Compendium.pf2e.actionspf2e.Item.QHFMeJGzFWj2QczA]{Quick Tincture} action to turn one of these vials into an elixir or alchemical tool for which you know the formula.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.skills.crafting.rank",
+        "value": 1
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.actionspf2e.Item.QHFMeJGzFWj2QczA"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx"
+      }
+    ],
+    "slug": "alchemical-sciences-methodology",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "investigator-methodology"
+      ],
+      "value": [
+        "investigator"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.ln2Y1a4SxlU9sizX"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.ln2Y1a4SxlU9sizX",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ln2Y1a4SxlU9sizX"
+}

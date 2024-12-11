@@ -1,0 +1,121 @@
+{
+  "_id": "myWvjlGLvbzkSCNO",
+  "img": "icons/magic/fire/flame-burning-campfire-yellow-blue.webp",
+  "name": "Effect: Cinder Gaze",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.mOUwbIN1SUp8FyPR]{Cinder Gaze}</em>.</p>\n<ol>\n<li><strong>Terrible Danger</strong> You gain a +2 status bonus to your next initiative roll.</li>\n<li><strong>New Life</strong> The next time you take damage, just before taking the damage, you gain temporary Hit Points equal to 1 plus your spellcasting ability modifier.</li>\n<li><strong>Vivid Insight</strong> (fortune) The next time you attempt a check to Recall Knowledge, roll twice and take the higher result.</li>\n<li><strong>Good Fortune</strong> (fortune) The next time you attempt a saving throw, roll twice and take the better result.</li>\n</ol>"
+    },
+    "rules": [
+      {
+        "hideIfDisabled": true,
+        "key": "FlatModifier",
+        "predicate": [
+          "self:effect:cinder-gaze:1"
+        ],
+        "removeAfterRoll": "if-enabled",
+        "selector": "initiative",
+        "type": "status",
+        "value": 2
+      },
+      {
+        "keep": "higher",
+        "key": "RollTwice",
+        "predicate": [
+          "self:effect:cinder-gaze:4"
+        ],
+        "removeAfterRoll": true,
+        "selector": "saving-throw"
+      },
+      {
+        "keep": "higher",
+        "key": "RollTwice",
+        "predicate": [
+          "action:recall-knowledge",
+          "self:effect:cinder-gaze:3"
+        ],
+        "removeAfterRoll": true,
+        "selector": "skill-check"
+      },
+      {
+        "key": "TempHP",
+        "predicate": [
+          "self:effect:cinder-gaze:2"
+        ],
+        "value": "2 * @item.level - 1 + @item.system.context.origin.spellcasting.attribute.mod"
+      }
+    ],
+    "slug": "effect-cinder-gaze",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Dark Archive",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": {
+      "evaluate": true,
+      "labels": [
+        "Terrible Danger",
+        "New Life",
+        "Vivid Insight",
+        "Good Fortune"
+      ],
+      "reevaluate": null,
+      "type": "formula",
+      "value": "1d4",
+      "-=min": null,
+      "-=max": null
+    },
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.myWvjlGLvbzkSCNO"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 34900000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.myWvjlGLvbzkSCNO",
+    "duplicateSource": null
+  },
+  "_key": "!items!myWvjlGLvbzkSCNO"
+}

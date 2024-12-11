@@ -1,0 +1,82 @@
+{
+  "_id": "Chol7ExtoN2T36mP",
+  "img": "systems/pf2e/icons/spells/inspire-heroics.webp",
+  "name": "Spell Effect: Inspire Heroics (Defense, +2)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by succeeding on <em>@UUID[Compendium.pf2e.spells-srd.Item.kF0rs9mCPvJGfAZE]{Inspire Heroics}</em> to enhance <em>@UUID[Compendium.pf2e.spells-srd.Item.bH0kPuf7UKxRvi2P]{Inspire Defense}</em>.</p>\n<p>You inspire your allies to protect themselves more effectively. You and all allies in the area gain a +2 status bonus to AC and saving throws, as well as resistance equal to half the spell's level to physical damage.</p>\n<p><em>Note: resistance is not automatically added.</em></p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Inspire Defense",
+        "selector": [
+          "ac",
+          "saving-throw"
+        ],
+        "type": "status",
+        "value": 2
+      }
+    ],
+    "slug": "spell-effect-inspire-heroics-defense-2",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.Chol7ExtoN2T36mP"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 11300000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.Chol7ExtoN2T36mP",
+    "duplicateSource": null
+  },
+  "_key": "!items!Chol7ExtoN2T36mP"
+}

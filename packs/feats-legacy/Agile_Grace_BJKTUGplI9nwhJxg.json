@@ -1,0 +1,80 @@
+{
+  "_id": "BJKTUGplI9nwhJxg",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Agile Grace",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your graceful moves with agile weapons are beyond compare. Your multiple attack penalty with agile weapons and agile unarmed attacks becomes -3 for your second attack and -6 for subsequent attacks (rather than -4 and -8).</p>"
+    },
+    "rules": [
+      {
+        "key": "MultipleAttackPenalty",
+        "predicate": [
+          "agile"
+        ],
+        "selector": "attack",
+        "value": -3
+      }
+    ],
+    "slug": "agile-grace",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "fighter"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.BJKTUGplI9nwhJxg"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.BJKTUGplI9nwhJxg",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!BJKTUGplI9nwhJxg"
+}

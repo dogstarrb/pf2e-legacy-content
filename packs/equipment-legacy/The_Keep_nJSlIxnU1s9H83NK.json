@@ -1,0 +1,112 @@
+{
+  "_id": "nJSlIxnU1s9H83NK",
+  "img": "icons/sundries/gaming/playing-cards-grey.webp",
+  "name": "The Keep",
+  "system": {
+    "description": {
+      "gm": "<p><strong>Epitome</strong> When you epitomize <em>The Keep</em>, assign it to a point of interest in the farmland. A small, fortified keep springs up here. Its interior is a complex maze of locked rooms and barricaded hallways—exploring this keep can be an exhausting ordeal, but a character who does so can be rewarded by discovering a hidden armory. A character who wishes to seek out this armory must spend 8 hours @UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{Forcing Open} doors, portcullises, and barricades with a @Check[type:athletics|dc:35] check, after which no one may search for the armory again for 1 week.</p>\n<hr />\n<p><strong>Critical Success</strong> You make it to one of the armories and discover a suit of +2 greater resilient armor. The type of armor is up to you, but it must be a common type of armor. For you, The Keep's armories are now forever empty, and you can never attempt this activity again.</p>\n<p><strong>Success</strong> You spend time pushing your way through the maze but don't quite reach your goal. The next time you perform this activity, you gain a +4 circumstance check to your Stealth check.</p>\n<p><strong>Failure</strong> You fail to reach the hidden armory.</p>\n<p><strong>Critical Failure</strong> You fail to reach the hidden armory and strain your muscles in an attempt to wrench open a barrier. You become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} for 1 week, or until the condition is removed via an effect like <em>@UUID[Compendium.pf2e.spells-srd.Item.SnaLVgxZ9ryUFmUr]{Restoration}</em>.</p>",
+      "value": "<p><strong>Suit</strong> Hammers (Str)</p>\n<p><strong>Alignment</strong> neutral good</p>\n<hr />\n<p><em>The Keep</em> represents steadfastness and being unshakable to threats. As long as <em>The Keep</em> is invested, you gain a +2 item bonus to saving throws against fear effects. Whenever you become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}, reduce the condition value by 1 (to a minimum of 0). If you are 20th level, the item bonus increases to +3.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cast <em>@UUID[Compendium.pf2e.spells-srd.Item.vPWMEyVTreMOoFnm]{Planar Palace}</em>. The level of the spell is one-half your level, rounded down (minimum 7th level), and the interior of the mansion appears to be the inside of a resplendent keep made of stone.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "fear"
+        ],
+        "selector": "saving-throw",
+        "type": "item",
+        "value": "ternary(gte(@actor.level,20),3,2)"
+      }
+    ],
+    "slug": "the-keep",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "artifact",
+        "harrow-court",
+        "invested",
+        "magical"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder #191: The Destiny War",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 20
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {}
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "carried"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.nJSlIxnU1s9H83NK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.nJSlIxnU1s9H83NK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!nJSlIxnU1s9H83NK"
+}

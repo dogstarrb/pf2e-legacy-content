@@ -1,0 +1,132 @@
+{
+  "_id": "OdpmSFarov2qUoyN",
+  "img": "systems/pf2e/icons/equipment/tattoos/warding-tattoo.webp",
+  "name": "Sparkwarden",
+  "system": {
+    "description": {
+      "gm": "<p><strong>Aspects</strong> forge, shadow</p>\n<p><strong>Forming the Bond</strong> Defeat Tuom Molgrade and befriend her tattoo guardian with Clan Molgrade's blessing.</p>\n<p><strong>Advancing the Bond</strong> Create extraordinary objects that earn renown. Protect innocents and your companions despite great personal risk.</p>\n<p><strong>Minor Gifts</strong> @UUID[Compendium.pf2e.adventure-specific-actions.Item.bweyCSaXUjmcSTAO]{Creative Spark}, @UUID[Compendium.pf2e.adventure-specific-actions.Item.hi80qyUsXbaq2Wf4]{Obscure}, @UUID[Compendium.pf2e.adventure-specific-actions.Item.LuUOQ5HvoFK9xUs4]{Shadow Smith}</p>\n<p><strong>Major Gifts</strong> @UUID[Compendium.pf2e.adventure-specific-actions.Item.y6qvt8ac3fF4snwU]{Dancing Shadow}, @UUID[Compendium.pf2e.adventure-specific-actions.Item.URZRO1ROM9VOS1nN]{Elements of Creation}; dancing shadow Strikes use the relic's spell attack modifier.</p>",
+      "value": "<p>The geometric designs of this <em>@UUID[Compendium.pf2e.equipment-srd.Item.vx5bG5YNeC78u49n]{Warding Tattoo}</em> extend the length of your arm, resembling an armored sleeve. The crimson ink sometimes glows softly like warm coals when you're excited or building something new.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> An enemy, hazard, or the environment makes an attack against your AC, requires you to attempt a saving throw, or causes you to take damage automatically</p>\n<hr />\n<p><strong>Effect</strong> Until the end of the current turn, against the triggering effect, you gain a +1 status bonus to AC and saving throws and gain resistance 2 to damage.</p>"
+    },
+    "rules": [
+      {
+        "domain": "all",
+        "key": "RollOption",
+        "option": "warding-tattoo",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "warding-tattoo"
+        ],
+        "selector": [
+          "ac",
+          "saving-throw"
+        ],
+        "type": "status",
+        "value": 1
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "warding-tattoo"
+        ],
+        "type": "all-damage",
+        "value": 2
+      }
+    ],
+    "slug": "sparkwarden",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "magical",
+        "relic",
+        "shadow",
+        "tattoo"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "Pathfinder #193: Mantle of Gold",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 140
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": "null",
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "tattooed-on-the-body"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.OdpmSFarov2qUoyN"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.OdpmSFarov2qUoyN",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!OdpmSFarov2qUoyN"
+}

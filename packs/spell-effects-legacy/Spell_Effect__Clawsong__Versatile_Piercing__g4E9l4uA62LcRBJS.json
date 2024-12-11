@@ -1,0 +1,81 @@
+{
+  "_id": "g4E9l4uA62LcRBJS",
+  "img": "icons/creatures/claws/claw-hooked-purple.webp",
+  "name": "Spell Effect: Clawsong (Versatile Piercing)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The target's claw attack gains the versatile (piercing) trait.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:base:claw"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "versatile-p"
+      }
+    ],
+    "slug": "spell-effect-clawsong-versatile-piercing",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #171: Hurricane's Howl",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": true
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.g4E9l4uA62LcRBJS"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 29500000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.g4E9l4uA62LcRBJS",
+    "duplicateSource": null
+  },
+  "_key": "!items!g4E9l4uA62LcRBJS"
+}

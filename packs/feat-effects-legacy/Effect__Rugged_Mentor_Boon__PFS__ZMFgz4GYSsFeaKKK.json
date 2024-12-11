@@ -1,0 +1,78 @@
+{
+  "_id": "ZMFgz4GYSsFeaKKK",
+  "img": "systems/pf2e/icons/features/feats/pfs-rugged-mentor-boon.webp",
+  "name": "Effect: Rugged Mentor Boon (PFS)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Effect</strong> While working with less experienced Pathfinder allies, you provide important insights that keep your less experienced colleagues safe from harm. For any PCs benefiting from a Level Bump and whose levels are lower than yours, you increase the Level Bump's modifier to saving throws to 2.</p>\n<p><strong>Normal</strong> A Level Bump increases a PC's saving throw modifiers by 1.</p>\n<p><strong>Special</strong> A PC can only benefit from two mentor boons.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Rugged Mentor Adjustment",
+        "selector": "saving-throw",
+        "value": 1
+      }
+    ],
+    "slug": "effect-rugged-mentor-boon-pfs",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": false
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.ZMFgz4GYSsFeaKKK"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.ZMFgz4GYSsFeaKKK",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ZMFgz4GYSsFeaKKK"
+}

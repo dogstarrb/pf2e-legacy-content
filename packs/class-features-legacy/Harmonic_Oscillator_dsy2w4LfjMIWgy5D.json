@@ -1,0 +1,102 @@
+{
+  "_id": "dsy2w4LfjMIWgy5D",
+  "img": "systems/pf2e/icons/features/classes/harmonic-oscillator.webp",
+  "name": "Harmonic Oscillator",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You designed your armor to inaudibly thrum at just the right frequency to create interference against force and sound waves. You gain resistance equal to 3 + half your level to force and sonic damage. When under the effects of Overdrive, the resistance increases by 2.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}"
+        ],
+        "type": [
+          "force",
+          "sonic"
+        ],
+        "value": "3 + floor(@actor.level / 2)"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          {
+            "or": [
+              "self:effect:overdrive-success",
+              "self:effect:overdrive-critical-success"
+            ]
+          }
+        ],
+        "type": [
+          "force",
+          "sonic"
+        ],
+        "value": "5 + floor(@actor.level / 2)"
+      }
+    ],
+    "slug": "harmonic-oscillator",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "armor-innovation-modification"
+      ],
+      "value": [
+        "inventor"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.dsy2w4LfjMIWgy5D"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.dsy2w4LfjMIWgy5D",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!dsy2w4LfjMIWgy5D"
+}

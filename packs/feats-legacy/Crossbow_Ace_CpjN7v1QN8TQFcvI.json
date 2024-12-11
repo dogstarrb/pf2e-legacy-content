@@ -1,0 +1,102 @@
+{
+  "_id": "CpjN7v1QN8TQFcvI",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Crossbow Ace",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have a deep understanding of the crossbow. When you're wielding a crossbow and use Hunt Prey or use Interact to reload your crossbow, you gain a +2 circumstance bonus to the damage roll on your next Strike with that crossbow.</p>\n<p>If the crossbow is a simple crossbow, also increase the damage die size for that attack by one step.</p>\n<p>You must make the attack before the end of your next turn or these benefits are lost.</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "label": "Reloaded crossbow or Hunted Prey",
+        "option": "crossbow-ace",
+        "toggleable": true
+      },
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "crossbow-ace",
+          "item:group:crossbow"
+        ],
+        "selector": "strike-damage",
+        "type": "circumstance",
+        "value": 2
+      },
+      {
+        "key": "DamageDice",
+        "override": {
+          "upgrade": true
+        },
+        "predicate": [
+          "crossbow-ace",
+          "item:group:crossbow",
+          "item:category:simple"
+        ],
+        "selector": "strike-damage",
+        "slug": "crossbow-ace-dice-upgrade"
+      }
+    ],
+    "slug": "crossbow-ace",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "ranger"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.CpjN7v1QN8TQFcvI"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.CpjN7v1QN8TQFcvI",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CpjN7v1QN8TQFcvI"
+}

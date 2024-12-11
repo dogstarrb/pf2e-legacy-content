@@ -1,0 +1,113 @@
+{
+  "_id": "PGBAg9ywfdlJCoCl",
+  "img": "systems/pf2e/icons/default-icons/equipment.svg",
+  "name": "Resonant Guitar",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Every part of this dark, shining guitar, from the strings to the soundboard, is constructed of metal. When the strings are strummed, the gilding on the guitar ripples like a liquid. A <em>resonant guitar</em> is a virtuoso handheld musical instrument that grants a +2 item bonus to Performance checks attempted while using it.</p>\n<p>A <em>resonant guitar</em> is a planar key for <em>@UUID[Compendium.pf2e.spells-srd.Item.nRINcQb81Wt4KeFu]{Interplanar Teleport}</em> and similar magic to travel to the Plane of Metal. When using it in this way, you can play a tune inspired by your destination to make it more likely to arrive where you intend to be, appearing 1d6×25 miles from your intended destination instead of 1d10×25 miles away.</p>\n<hr />\n<p><strong>Activate-Strum of Thunder</strong> 1 minute (manipulate)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You play a magnetic tune, enchanting one metallic weapon within 60 feet of you. This item gains the @UUID[Compendium.pf2e.equipment-srd.Item.dTxbaa7HSiJbIuNN]{Thundering} rune for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.ogtcaPeypLDiUXMS]{Effect: Strum of Thunder}</p>\n<hr />\n<p><strong>Activate-Chord of Protection</strong> <span class=\"action-glyph\">R</span> (manipulate)</p>\n<p><strong>Trigger</strong> A creature within 30 feet of you targets you or an ally with a melee attack</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> You strike a piercing chord, putting up an invisible sound barrier between the target and the attacker. The target gains a +2 status bonus to AC against the triggering attack. If the Strike still hits, the barrier breaks, dealing @Damage[3d10[sonic]] damage to the attacker.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "playing"
+        ],
+        "selector": "performance",
+        "type": "item",
+        "value": 2
+      }
+    ],
+    "slug": "resonant-guitar",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "magical",
+        "metal",
+        "sonic"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 12
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 1850
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-two-hands"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.PGBAg9ywfdlJCoCl"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.PGBAg9ywfdlJCoCl",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!PGBAg9ywfdlJCoCl"
+}

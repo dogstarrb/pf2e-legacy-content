@@ -1,0 +1,92 @@
+{
+  "_id": "d81PT3w97SkyAiXQ",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Lion's Fury",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain access to the @UUID[Compendium.pf2e.equipment-srd.Item.Ak3oHoPDJoMR14yg]{Lion Scythe's} and @UUID[Compendium.pf2e.equipment-srd.Item.zWp7Kcn7mhKyGFxW]{Sun Sling's} critical specialization effects.</p>"
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "selector": "lion-scythe-damage",
+        "text": "PF2E.Item.Weapon.CriticalSpecialization.knife"
+      },
+      {
+        "key": "Note",
+        "outcome": [
+          "criticalSuccess"
+        ],
+        "selector": "sun-sling-damage",
+        "text": "PF2E.Item.Weapon.CriticalSpecialization.sling"
+      }
+    ],
+    "slug": "lions-fury",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #172: Secrets of the Temple-City",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Lion's Might"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.d81PT3w97SkyAiXQ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.d81PT3w97SkyAiXQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!d81PT3w97SkyAiXQ"
+}

@@ -1,0 +1,291 @@
+{
+  "_id": "XjoKCfvaSVaRHIV1",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Elemental Evolution",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The elemental power within you is more mutable and versatile than most. Choose a second damage type for your element. Whenever you Rage, you can choose that type instead of the damage type you would normally gain. The new damage type can be the one you did not choose when you selected the element initially if you had multiple options available for your element, or one of the following types:</p>\n<p><strong>air</strong> cold</p>\n<p><strong>earth</strong> poison</p>\n<p><strong>fire</strong> cold</p>\n<p><strong>metal</strong> electricity</p>\n<p><strong>water</strong> acid</p>\n<p><strong>wood</strong> poison.</p>"
+    },
+    "rules": [
+      {
+        "choices": [
+          {
+            "label": "PF2E.TraitAcid",
+            "predicate": [
+              "elemental-instinct:water"
+            ],
+            "value": "acid"
+          },
+          {
+            "label": "PF2E.TraitBludgeoning",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:earth",
+                  "elemental-instinct:water",
+                  "elemental-instinct:wood"
+                ]
+              },
+              {
+                "not": "elemental-instinct:damage:bludgeoning"
+              }
+            ],
+            "value": "bludgeoning"
+          },
+          {
+            "label": "PF2E.TraitCold",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:water",
+                  "elemental-instinct:air",
+                  "elemental-instinct:fire"
+                ]
+              },
+              {
+                "not": "elemental-instinct:damage:cold"
+              }
+            ],
+            "value": "cold"
+          },
+          {
+            "label": "PF2E.TraitElectricity",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:air",
+                  "elemental-instinct:metal"
+                ]
+              },
+              {
+                "not": "elemental-instinct:damage:electricity"
+              }
+            ],
+            "value": "electricity"
+          },
+          {
+            "label": "PF2E.TraitPiercing",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:earth",
+                  "elemental-instinct:metal",
+                  "elemental-instinct:wood"
+                ]
+              },
+              {
+                "not": "elemental-instinct:damage:piercing"
+              }
+            ],
+            "value": "piercing"
+          },
+          {
+            "label": "PF2E.TraitPoison",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:wood",
+                  "elemental-instinct:earth"
+                ]
+              }
+            ],
+            "value": "poison"
+          },
+          {
+            "label": "PF2E.TraitSlashing",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:air",
+                  "elemental-instinct:metal"
+                ]
+              },
+              {
+                "not": "elemental-instinct:damage:slashing"
+              }
+            ],
+            "value": "slashing"
+          }
+        ],
+        "flag": "damage",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.DamageType",
+        "rollOption": "elemental-instinct:evolution"
+      },
+      {
+        "alwaysActive": true,
+        "key": "RollOption",
+        "label": "PF2E.SpecificRule.Barbarian.Elemental.ElementalEvolutionLabel",
+        "option": "evolution-damage",
+        "suboptions": [
+          {
+            "label": "PF2E.TraitAcid",
+            "predicate": [
+              "elemental-instinct:evolution:acid"
+            ],
+            "value": "acid"
+          },
+          {
+            "label": "PF2E.TraitBludgeoning",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:damage:bludgeoning",
+                  "elemental-instinct:evolution:bludgeoning"
+                ]
+              }
+            ],
+            "value": "bludgeoning"
+          },
+          {
+            "label": "PF2E.TraitCold",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:damage:cold",
+                  "elemental-instinct:evolution:cold"
+                ]
+              }
+            ],
+            "value": "cold"
+          },
+          {
+            "label": "PF2E.TraitElectricity",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:damage:electricity",
+                  "elemental-instinct:evolution:electricity"
+                ]
+              }
+            ],
+            "value": "electricity"
+          },
+          {
+            "label": "PF2E.TraitFire",
+            "predicate": [
+              "elemental-instinct:damage:fire"
+            ],
+            "value": "fire"
+          },
+          {
+            "label": "PF2E.TraitPiercing",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:damage:piercing",
+                  "elemental-instinct:evolution:piercing"
+                ]
+              }
+            ],
+            "value": "piercing"
+          },
+          {
+            "label": "PF2E.TraitPoison",
+            "predicate": [
+              "elemental-instinct:evolution:poison"
+            ],
+            "value": "poison"
+          },
+          {
+            "label": "PF2E.TraitSlashing",
+            "predicate": [
+              {
+                "or": [
+                  "elemental-instinct:damage:slashing",
+                  "elemental-instinct:evolution:slashing"
+                ]
+              }
+            ],
+            "value": "slashing"
+          }
+        ],
+        "toggleable": true,
+        "value": true
+      },
+      {
+        "damageType": "{item|flags.pf2e.rulesSelections.evolutionDamage}",
+        "key": "AdjustModifier",
+        "mode": "upgrade",
+        "predicate": [
+          {
+            "or": [
+              "class:barbarian",
+              "feat:instinct-ability"
+            ]
+          }
+        ],
+        "priority": 99,
+        "selectors": [
+          "strike-damage"
+        ],
+        "slug": "rage",
+        "value": 2
+      }
+    ],
+    "slug": "elemental-evolution",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "barbarian"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 2
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "elemental instinct"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.XjoKCfvaSVaRHIV1"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.XjoKCfvaSVaRHIV1",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!XjoKCfvaSVaRHIV1"
+}

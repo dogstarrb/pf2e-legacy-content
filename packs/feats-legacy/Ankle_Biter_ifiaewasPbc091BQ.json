@@ -1,0 +1,86 @@
+{
+  "_id": "ifiaewasPbc091BQ",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "name": "Ankle Biter",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You fight just as well on the ground as you do standing up. While you are @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, you are always @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Taking Cover} against ranged attacks, you ignore the status penalty on your attack rolls from being prone, and you gain a +1 circumstance bonus to Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip}.</p>\n<p>You can choose to move up to half your Speed when you @UUID[Compendium.pf2e.actionspf2e.Item.Tj055UcNm6UEgtCg]{Crawl}. You can instead move up to your full Speed when you Crawl, but if you do, you must succeed at a @Check[type:flat|dc:6] or your body deteriorates.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          "self:condition:prone",
+          "action:trip"
+        ],
+        "selector": "athletics",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "ankle-biter",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Book of the Dead",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Zombie Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.ifiaewasPbc091BQ"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.ifiaewasPbc091BQ",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ifiaewasPbc091BQ"
+}

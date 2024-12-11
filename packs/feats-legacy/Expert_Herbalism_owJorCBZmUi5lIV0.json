@@ -1,0 +1,89 @@
+{
+  "_id": "owJorCBZmUi5lIV0",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Expert Herbalism",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your @UUID[Compendium.pf2e.classfeatures.Item.Pe0zmIqyTBc2Td0I]{Advanced Alchemy} level for herbalism increases to your level -3.</p>\n<p>You gain the formulas for elixirs of life as soon as your advanced alchemy level is high enough to create them: @UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]{lesser} at 8th level, @UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]{moderate} at 12th level, @UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]{greater} at 16th level, and @UUID[Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W]{major} at 18th level.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.crafting.entries.herbalist.maxItemLevel",
+        "phase": "beforeDerived",
+        "predicate": [
+          "crafting:entry:herbalist"
+        ],
+        "value": "@actor.level - 3"
+      }
+    ],
+    "slug": "expert-herbalism",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Advanced Player's Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Herbalist Dedication"
+        },
+        {
+          "value": "expert in Nature"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.owJorCBZmUi5lIV0"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.owJorCBZmUi5lIV0",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!owJorCBZmUi5lIV0"
+}

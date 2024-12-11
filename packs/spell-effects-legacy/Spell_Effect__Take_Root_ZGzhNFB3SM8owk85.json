@@ -1,0 +1,89 @@
+{
+  "_id": "ZGzhNFB3SM8owk85",
+  "img": "icons/magic/nature/tree-elm-roots-brown.webp",
+  "name": "Spell Effect: Take Root",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by <em>@UUID[Compendium.pf2e.spells-srd.Item.WUNZizIe6rnVHGcr]{Take Root}</em></p>\n<p>The targeted creature gains a +1 circumstance bonus to their Fortitude DC against attempts to Shove them and a +1 circumstance bonus to their Reflex DC against attempts to Disarm or Trip them.</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "predicate": [
+          {
+            "or": [
+              "action:disarm",
+              "action:shove",
+              "action:trip"
+            ]
+          }
+        ],
+        "selector": [
+          "fortitude",
+          "reflex"
+        ],
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "spell-effect-take-root",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Rage of Elements",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spell-effects.Item.ZGzhNFB3SM8owk85"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 24700000,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "coreVersion": "12.331",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spell-effects-legacy.Item.ZGzhNFB3SM8owk85",
+    "duplicateSource": null
+  },
+  "_key": "!items!ZGzhNFB3SM8owk85"
+}

@@ -1,0 +1,86 @@
+{
+  "_id": "CBJ3GZZsrAXioDNM",
+  "img": "systems/pf2e/icons/features/feats/feats.webp",
+  "name": "Worm Sense",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You emulate the senses of the cave worm. You gain darkvision and tremorsense as an imprecise sense within 5 feet.</p>\n<p>The range of the tremorsense increases to 10 feet at 8th level and to 15 feet at 12th level.</p>"
+    },
+    "rules": [
+      {
+        "key": "Sense",
+        "selector": "darkvision"
+      },
+      {
+        "acuity": "imprecise",
+        "key": "Sense",
+        "range": "ternary(gte(@actor.level,12), 15, ternary(gte(@actor.level,8), 10, 5))",
+        "selector": "tremorsense"
+      }
+    ],
+    "slug": "worm-sense",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder #194: Cult of the Cave Worm",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Worm Caller Dedication"
+        }
+      ]
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feats-srd.Item.CBJ3GZZsrAXioDNM"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feats-legacy.Item.CBJ3GZZsrAXioDNM",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!CBJ3GZZsrAXioDNM"
+}

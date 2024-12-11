@@ -1,0 +1,102 @@
+{
+  "_id": "5Xj38QeMKcFdrzqH",
+  "img": "icons/magic/defensive/armor-shield-barrier-steel.webp",
+  "name": "Phlogistonic Regulator",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A layer of insulation within your armor protects you from rapid temperature fluctuations. You gain resistance equal to half your level to cold and fire damage. When under the effects of Overdrive, the resistance increases by 2.</p>"
+    },
+    "rules": [
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}"
+        ],
+        "type": [
+          "cold",
+          "fire"
+        ],
+        "value": "floor(@actor.level / 2)"
+      },
+      {
+        "key": "Resistance",
+        "predicate": [
+          "armor:id:{actor|flags.pf2e.innovationId}",
+          {
+            "or": [
+              "self:effect:overdrive-success",
+              "self:effect:overdrive-critical-success"
+            ]
+          }
+        ],
+        "type": [
+          "cold",
+          "fire"
+        ],
+        "value": "2 + floor(@actor.level / 2)"
+      }
+    ],
+    "slug": "phlogistonic-regulator",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [
+        "armor-innovation-modification"
+      ],
+      "value": [
+        "inventor"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Guns & Gears",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "category": "classfeature",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "type": "feat",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.classfeatures.Item.5Xj38QeMKcFdrzqH"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.class-features-legacy.Item.5Xj38QeMKcFdrzqH",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!5Xj38QeMKcFdrzqH"
+}

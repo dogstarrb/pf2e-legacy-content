@@ -1,0 +1,94 @@
+{
+  "_id": "v2HDcrxQF2Dncjbs",
+  "img": "systems/pf2e/icons/spells/suns-fury.webp",
+  "name": "Effect: Flamboyant Cruelty",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted when you use @UUID[Compendium.pf2e.feats-srd.Item.SAOtGk9k8veaX3Ww]{Flamboyant Cruelty}</p>"
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "label": "Tumble Through (Flamboyant Cruelty)",
+        "predicate": [
+          "action:tumble-through",
+          "flamboyant-cruelty"
+        ],
+        "selector": "acrobatics",
+        "type": "circumstance",
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Panache-granting action (Flamboyant Cruelty)",
+        "predicate": [
+          "panache-granting",
+          "flamboyant-cruelty"
+        ],
+        "selector": "skill-check",
+        "type": "circumstance",
+        "value": 1
+      }
+    ],
+    "slug": "effect-flamboyant-cruelty",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Legends",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.v2HDcrxQF2Dncjbs"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.v2HDcrxQF2Dncjbs",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!v2HDcrxQF2Dncjbs"
+}

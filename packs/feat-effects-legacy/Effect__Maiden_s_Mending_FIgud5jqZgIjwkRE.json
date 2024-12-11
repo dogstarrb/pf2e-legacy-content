@@ -1,0 +1,76 @@
+{
+  "_id": "FIgud5jqZgIjwkRE",
+  "img": "systems/pf2e/icons/spells/healers-blessing.webp",
+  "name": "Effect: Maiden's Mending",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain a number of temporary Hit Points equal to half your level (minimum 1) that last until the end of your next turn.</p>"
+    },
+    "rules": [
+      {
+        "key": "TempHP",
+        "value": "max(floor(@actor.level/2),1)"
+      }
+    ],
+    "slug": "effect-maidens-mending",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.88,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: Ancestry Guide",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null
+  },
+  "type": "effect",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.feat-effects.Item.FIgud5jqZgIjwkRE"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.feat-effects-legacy.Item.FIgud5jqZgIjwkRE",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!FIgud5jqZgIjwkRE"
+}

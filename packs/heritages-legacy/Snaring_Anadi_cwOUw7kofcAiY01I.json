@@ -1,0 +1,77 @@
+{
+  "_id": "cwOUw7kofcAiY01I",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "name": "Snaring Anadi",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You were hatched with hooked fangs that give you an edge when hunting in your true form. Your fangs attack gains the grapple and trip traits.</p>"
+    },
+    "rules": [
+      {
+        "definition": [
+          "item:slug:fangs"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "grapple"
+      },
+      {
+        "definition": [
+          "item:slug:fangs"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "weapon-traits",
+        "value": "trip"
+      }
+    ],
+    "slug": "snaring-anadi",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Mwangi Expanse",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Anadi",
+      "slug": "anadi",
+      "uuid": "Compendium.pf2e.ancestries.Item.TQEqWqc7BYiadUdY"
+    }
+  },
+  "type": "heritage",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.heritages.Item.cwOUw7kofcAiY01I"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.heritages-legacy.Item.cwOUw7kofcAiY01I",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!cwOUw7kofcAiY01I"
+}

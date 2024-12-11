@@ -1,0 +1,105 @@
+{
+  "_id": "LVwmAH5NGvTuuQSU",
+  "img": "icons/creatures/invertebrates/fly-wasp-mosquito-green.webp",
+  "name": "Swarming Wasp Stings",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You manifest a swarm of disembodied wasp stingers that stab creatures in the area, possibly poisoning them. Creatures in the affected area take @Damage[1d6[piercing]] damage. Each creature that takes piercing damage must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes @Damage[2d6[poison]] damage.</p>\n<p><strong>Failure</strong> The target is afflicted with Swarming Wasp Venom at stage 1.</p>\n<p><strong>Critical Failure</strong> The target is afflicted with swarming wasp venom at stage 2.</p>\n<hr />\n<p><strong>Swarming Wasp Venom</strong> (poison)</p>\n<p><strong>Level 7</strong></p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>"
+    },
+    "rules": [],
+    "slug": "swarming-wasp-stings",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "manipulate",
+        "poison"
+      ],
+      "rarity": "uncommon",
+      "traditions": [
+        "arcane",
+        "primal"
+      ],
+      "selected": []
+    },
+    "publication": {
+      "title": "Pathfinder #160: Assault on Hunting Lodge Seven",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 4
+    },
+    "requirements": "",
+    "target": {
+      "value": "10-foot burst"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "0": {
+        "formula": "1d6",
+        "type": "piercing",
+        "category": null,
+        "materials": [],
+        "kinds": [
+          "damage"
+        ]
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "fortitude",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false
+  },
+  "type": "spell",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.spells-srd.Item.LVwmAH5NGvTuuQSU"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.spells-legacy.Item.LVwmAH5NGvTuuQSU",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!LVwmAH5NGvTuuQSU"
+}

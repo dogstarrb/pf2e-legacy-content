@@ -1,0 +1,120 @@
+{
+  "_id": "uQNw11Osk2pwx6d8",
+  "img": "systems/pf2e/icons/equipment/worn-items/companion-items/horned-hand-rests.webp",
+  "name": "Horned Hand Rests (Greater)",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>These thick bull or ram horns fuse into the armrests of your legchair companion, giving it more aggressive options. Your animal companion can only invest this item if it is a legchair.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> or <span class=\"action-glyph\">2</span> envision</p>\n<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> You trace your finger along the base of the ram horns, with an effect depending on how many actions you spent.</p>\n<p><span class=\"action-glyph\">1</span> Your legchair draws force from its momentum. Until the end of this turn, if your legchair Strides, it deals 3d6 additional force damage on its next Strike and, on a critical success, pushes the target away by 10 feet.</p>\n<p><span class=\"action-glyph\">2</span> Your legchair fires a beam of force from its ram horns. The target takes @Damage[6d6[force]] damage and must attempt a @Check[type:fortitude|dc:32] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is pushed 5 feet.</p>\n<p><strong>Failure</strong> The target takes full damage and is pushed 10 feet.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is pushed 20 feet.</p>"
+    },
+    "rules": [
+      {
+        "domain": "damage",
+        "key": "RollOption",
+        "option": "horned-hand-rest",
+        "toggleable": true
+      },
+      {
+        "damageType": "force",
+        "diceNumber": 3,
+        "dieSize": "d6",
+        "key": "DamageDice",
+        "predicate": [
+          "horned-hand-rest"
+        ],
+        "selector": "strike-damage"
+      }
+    ],
+    "slug": "horned-hand-rests-greater",
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.879,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "companion",
+        "invested",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens: The Grand Bazaar",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 13
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "value": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "gp": 2750
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "",
+        "img": "",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "worn"
+    },
+    "subitems": []
+  },
+  "type": "equipment",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.uQNw11Osk2pwx6d8"
+    }
+  },
+  "effects": [],
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2",
+    "compendiumSource": "Compendium.pf2e-legacy-content.equipment-legacy.Item.uQNw11Osk2pwx6d8",
+    "duplicateSource": null
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!uQNw11Osk2pwx6d8"
+}
