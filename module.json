@@ -142,9 +142,35 @@
             "type": "Item"
         },
         {
-            "name": "bestiary-legacy",
-            "label": "Legacy Bestiary 1-3",
-            "path": "packs/bestiary-legacy",
+            "name": "bestiary-1-legacy",
+            "label": "Legacy Bestiary 1",
+            "path": "packs/bestiary-1-legacy",
+            "type": "Actor",
+            "banner": "systems/pf2e/assets/compendium-banner/green.webp",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "system": "pf2e",
+            "flags": {}
+        },
+        {
+            "name": "bestiary-2-legacy",
+            "label": "Legacy Bestiary 2",
+            "path": "packs/bestiary-2-legacy",
+            "type": "Actor",
+            "banner": "systems/pf2e/assets/compendium-banner/green.webp",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "system": "pf2e",
+            "flags": {}
+        },
+        {
+            "name": "bestiary-3-legacy",
+            "label": "Legacy Bestiary 3",
+            "path": "packs/bestiary-3-legacy",
             "type": "Actor",
             "banner": "systems/pf2e/assets/compendium-banner/green.webp",
             "ownership": {
@@ -185,7 +211,18 @@
                 "other-effects-legacy",
                 "spell-effects-legacy"
             ]
+        },
+        {
+            "name": "Legacy Bestiaries",
+            "sorting": "a",
+            "color": "#850505",
+            "packs": [
+                "bestiary-1-legacy",
+                "bestiary-2-legacy",
+                "bestiary-3-legacy"
+            ]
         }
+
     ],
     "flags": {
         "pf2e-legacy-content": {
