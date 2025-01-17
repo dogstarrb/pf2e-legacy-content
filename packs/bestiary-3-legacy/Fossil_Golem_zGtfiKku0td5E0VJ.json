@@ -1,0 +1,540 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "name": "Fossil Golem",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/npc.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      }
+    },
+    "randomImg": false
+  },
+  "_id": "zGtfiKku0td5E0VJ",
+  "img": "systems/pf2e/icons/default-icons/npc.svg",
+  "items": [
+    {
+      "_id": "TTotdT50Y6eFIsHY",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Jaws",
+      "sort": 100000,
+      "system": {
+        "attackEffects": {
+          "value": [
+            "fossilization"
+          ]
+        },
+        "bonus": {
+          "value": 26
+        },
+        "damageRolls": {
+          "0": {
+            "damage": "3d10 + 13",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "deadly-d10",
+            "magical",
+            "reach-15"
+          ],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        }
+      },
+      "type": "melee",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!zGtfiKku0td5E0VJ.TTotdT50Y6eFIsHY"
+    },
+    {
+      "_id": "LAhnCuHlBH3zJBoP",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-family-ability-glossary.Item.r34QDwKiWZoVymJa"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Golem Antimagic",
+      "sort": 200000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>harmed by cold and water ([[/r {5d10}]]{5d10 damage}, [[/r {2d8}]]{2d8 damage} from areas or persistent damage); healed by acid (area [[/r 2d8[healing]]] Hit Points); slowed by earth</p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p>\n<ul>\n<li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li>\n<li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li>\n<li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/br 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li>\n<li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li>\n</ul>"
+        },
+        "rules": [],
+        "slug": "golem-golem-antimagic",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.r34QDwKiWZoVymJa",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!zGtfiKku0td5E0VJ.LAhnCuHlBH3zJBoP"
+    },
+    {
+      "_id": "ZZpXzxmtbX8o1MxN",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Vulnerable to Stone to Flesh",
+      "sort": 300000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A @UUID[Compendium.pf2e.spells-srd.Item.Pr1ruNTbzGn3H9w5]{Stone to Flesh} spell negates the golem's golem antimagic and its resistance to physical damage for 1 round. A @UUID[Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA]{Petrify} spell reverses this effect immediately.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!zGtfiKku0td5E0VJ.ZZpXzxmtbX8o1MxN"
+    },
+    {
+      "_id": "nXUfkwitBNWhIe8d",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Fossilization",
+      "sort": 400000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The first time each round a creature takes damage from the fossil golem's jaws, the target must attempt a @Check[type:fortitude|dc:32] save.</p>\n<p>If it fails and has not already been slowed by this ability, it becomes @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute. If the creature was already slowed by this ability, a failed save causes it to be @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} permanently.</p>"
+        },
+        "rules": [],
+        "slug": "fossilization",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "arcane",
+            "incapacitation"
+          ]
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!zGtfiKku0td5E0VJ.nXUfkwitBNWhIe8d"
+    },
+    {
+      "_id": "sMOW7L2I7HwP3CtJ",
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "name": "Reassemble",
+      "sort": 500000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The fossil golem reorganizes its bones, increasing its reach to 25 feet and reducing its Speed to 15 feet. It can revert to its original form by taking this action again.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 1
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!zGtfiKku0td5E0VJ.sMOW7L2I7HwP3CtJ"
+    }
+  ],
+  "name": "Fossil Golem",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 195,
+        "temp": 0,
+        "max": 195,
+        "details": ""
+      },
+      "speed": {
+        "value": 25,
+        "otherSpeeds": [],
+        "details": ""
+      },
+      "ac": {
+        "value": 33,
+        "details": ""
+      },
+      "allSaves": {
+        "value": ""
+      },
+      "immunities": [
+        {
+          "type": "acid"
+        }
+      ],
+      "resistances": [
+        {
+          "exceptions": [
+            "adamantine",
+            "bludgeoning"
+          ],
+          "type": "physical",
+          "value": 10
+        }
+      ]
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [],
+        "details": ""
+      },
+      "level": {
+        "value": 12
+      },
+      "blurb": "",
+      "publicNotes": "<p>Fossil golems are typically made from the fossilized bones of dinosaurs and other ancient megafauna, though some crafters stretch the definition and instead use magically petrified bones of dragons or even giants. Not bound to any specific model, fossil golems are crafted to be as terrifying as possible instead of models of anatomic accuracy. As such, most fossil golems are nightmarish saurian amalgams whose massive arms end with the complete skulls of apex predators like tyrannosauruses, their bite enhanced to petrify flesh.</p>\n<p>The enchantments that animate fossil golems grant them a form of modular flexibility, letting them trade mobility for extended reach through the rapid rearrangement of their limbs. This also lets them appear like a jumbled mass of bones at rest, making them likely to be mistaken for decor rather than guardians.</p>\n<hr />\n<p>Powerful constructs that blend magic and raw material, golems make ideal guardians and bodyguards, with forms and functions as varied as the needs of those who employ them. As their crafters experiment with more exotic components and create new formulas, golems with surprising abilities emerge.</p>",
+      "privateNotes": "",
+      "publication": {
+        "title": "Pathfinder Bestiary 3",
+        "authors": "",
+        "license": "OGL",
+        "remaster": false
+      }
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.935,
+      "previous": {
+        "schema": 0.932,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 7
+      },
+      "dex": {
+        "mod": 2
+      },
+      "con": {
+        "mod": 6
+      },
+      "int": {
+        "mod": -5
+      },
+      "wis": {
+        "mod": 0
+      },
+      "cha": {
+        "mod": -5
+      }
+    },
+    "perception": {
+      "details": "",
+      "mod": 20,
+      "senses": [
+        {
+          "type": "darkvision"
+        }
+      ],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 26,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 20,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 18,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "athletics": {
+        "base": 20
+      }
+    },
+    "traits": {
+      "value": [
+        "construct",
+        "golem",
+        "mindless"
+      ],
+      "rarity": "rare",
+      "size": {
+        "value": "huge"
+      }
+    }
+  },
+  "type": "npc",
+  "_stats": {
+    "compendiumSource": "Compendium.pf2e.pathfinder-bestiary-3.Actor.zGtfiKku0td5E0VJ",
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2"
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.pathfinder-bestiary-3.Actor.zGtfiKku0td5E0VJ"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "Yb7GAnhzVbd5I9T9": 3
+  },
+  "sort": 0,
+  "_key": "!actors!zGtfiKku0td5E0VJ"
+}

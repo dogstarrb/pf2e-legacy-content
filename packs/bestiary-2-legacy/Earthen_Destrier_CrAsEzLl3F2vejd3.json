@@ -1,0 +1,696 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "name": "Earthen Destrier",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/npc.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      }
+    },
+    "randomImg": false
+  },
+  "_id": "CrAsEzLl3F2vejd3",
+  "img": "systems/pf2e/icons/default-icons/npc.svg",
+  "items": [
+    {
+      "_id": "J83izDOsrGU2y7y6",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Lance Arm",
+      "sort": 100000,
+      "system": {
+        "attackEffects": {
+          "value": [
+            "lancing-charge"
+          ]
+        },
+        "bonus": {
+          "value": 14
+        },
+        "damageRolls": {
+          "0": {
+            "damage": "2d8+6",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "deadly-d8",
+            "reach-10"
+          ],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        }
+      },
+      "type": "melee",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!CrAsEzLl3F2vejd3.J83izDOsrGU2y7y6"
+    },
+    {
+      "_id": "Nz33adJeSgdyaAw6",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Hoof",
+      "sort": 200000,
+      "system": {
+        "attackEffects": {
+          "value": []
+        },
+        "bonus": {
+          "value": 14
+        },
+        "damageRolls": {
+          "zz3rsf1t3kjh4booxjkv": {
+            "damage": "2d6+6",
+            "damageType": "bludgeoning",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        }
+      },
+      "type": "melee",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!CrAsEzLl3F2vejd3.Nz33adJeSgdyaAw6"
+    },
+    {
+      "_id": "lSfQ3gfSsjhNS3HW",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Tremorsense 60 feet",
+      "sort": 300000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
+        },
+        "rules": [],
+        "slug": "tremorsense",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "interaction",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!CrAsEzLl3F2vejd3.lSfQ3gfSsjhNS3HW"
+    },
+    {
+      "_id": "eIV0ZcgzUZI0e8VM",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Earth Glide",
+      "sort": 400000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>An earthen destrier can @UUID[Compendium.pf2e.actionspf2e.Item.H6v1VgowHaKHnVlG]{Burrow} through earthen matter, including rock. When it does so, it moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!CrAsEzLl3F2vejd3.eIV0ZcgzUZI0e8VM"
+    },
+    {
+      "_id": "st5T6nXfjzQXbUOB",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Lancing Charge",
+      "sort": 500000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>If the destrier moved at least 10 feet directly before its lance arm Strike, it gains a +2 circumstance bonus to its damage roll.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "lancing-charge"
+            ],
+            "selector": "strike-damage",
+            "type": "circumstance",
+            "value": 2
+          },
+          {
+            "domain": "damage",
+            "key": "RollOption",
+            "option": "lancing-charge",
+            "toggleable": true
+          }
+        ],
+        "slug": "lancing-charge",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!CrAsEzLl3F2vejd3.st5T6nXfjzQXbUOB"
+    },
+    {
+      "_id": "AKHyZQZIqFBrYLLC",
+      "img": "systems/pf2e/icons/actions/Reaction.webp",
+      "name": "Tilting Strike",
+      "sort": 600000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> The earthen destrier tramples a creature</p>\n<hr />\n<p><strong>Effect</strong> The earthen destrier makes a lance arm Strike against the creature it's trampling at a -5 penalty.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "tilting-strike"
+            ],
+            "selector": "attack-roll",
+            "value": -5
+          },
+          {
+            "domain": "attack-roll",
+            "key": "RollOption",
+            "option": "tilting-strike",
+            "toggleable": true
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "reaction"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!CrAsEzLl3F2vejd3.AKHyZQZIqFBrYLLC"
+    },
+    {
+      "_id": "yokGmVR1dAkRTCmE",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/ThreeActions.webp",
+      "name": "Trample",
+      "sort": 700000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Medium or smaller, hoof, @Check[type:reflex|dc:20|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+        },
+        "rules": [],
+        "slug": "trample",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 3
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.UNah0bxXxkcZjxO3",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!CrAsEzLl3F2vejd3.yokGmVR1dAkRTCmE"
+    }
+  ],
+  "name": "Earthen Destrier",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 72,
+        "temp": 0,
+        "max": 72,
+        "details": ""
+      },
+      "speed": {
+        "value": 50,
+        "otherSpeeds": [
+          {
+            "type": "burrow",
+            "value": 30
+          }
+        ],
+        "details": ""
+      },
+      "ac": {
+        "value": 20,
+        "details": ""
+      },
+      "allSaves": {
+        "value": ""
+      },
+      "immunities": [
+        {
+          "type": "bleed"
+        },
+        {
+          "type": "paralyzed"
+        },
+        {
+          "type": "poison"
+        },
+        {
+          "type": "sleep"
+        }
+      ]
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [
+          "petran"
+        ],
+        "details": ""
+      },
+      "level": {
+        "value": 4
+      },
+      "blurb": "",
+      "publicNotes": "<p>This wave of dirt takes the crude likeness of the melded forequarters of a charging warhorse and a rocky knight wielding a rudimentary lance of gray stone.</p>",
+      "privateNotes": "",
+      "publication": {
+        "title": "Pathfinder Bestiary 2",
+        "authors": "",
+        "license": "OGL",
+        "remaster": false
+      }
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.935,
+      "previous": {
+        "schema": 0.932,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 4
+      },
+      "dex": {
+        "mod": 1
+      },
+      "con": {
+        "mod": 4
+      },
+      "int": {
+        "mod": -1
+      },
+      "wis": {
+        "mod": 3
+      },
+      "cha": {
+        "mod": 0
+      }
+    },
+    "perception": {
+      "details": "",
+      "mod": 10,
+      "senses": [
+        {
+          "type": "darkvision"
+        },
+        {
+          "acuity": "imprecise",
+          "range": 60,
+          "type": "tremorsense"
+        }
+      ],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 14,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 9,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 10,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "athletics": {
+        "base": 12
+      }
+    },
+    "traits": {
+      "value": [
+        "earth",
+        "elemental"
+      ],
+      "rarity": "common",
+      "size": {
+        "value": "lg"
+      }
+    }
+  },
+  "type": "npc",
+  "_stats": {
+    "compendiumSource": "Compendium.pf2e.pathfinder-bestiary-2.Actor.CrAsEzLl3F2vejd3",
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2"
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.pathfinder-bestiary-2.Actor.CrAsEzLl3F2vejd3"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "Yb7GAnhzVbd5I9T9": 3
+  },
+  "sort": 0,
+  "_key": "!actors!CrAsEzLl3F2vejd3"
+}

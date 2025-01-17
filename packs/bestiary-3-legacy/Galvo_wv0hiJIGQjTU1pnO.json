@@ -1,0 +1,721 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "name": "Galvo",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/npc.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      }
+    },
+    "randomImg": false
+  },
+  "_id": "wv0hiJIGQjTU1pnO",
+  "img": "systems/pf2e/icons/default-icons/npc.svg",
+  "items": [
+    {
+      "_id": "ozywltVfeeRvEgor",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Eel Jaws",
+      "sort": 100000,
+      "system": {
+        "attackEffects": {
+          "value": []
+        },
+        "bonus": {
+          "value": 21
+        },
+        "damageRolls": {
+          "0": {
+            "damage": "2d6+7",
+            "damageType": "piercing",
+            "category": null
+          },
+          "vlom5kdyn1m8ije9vanq": {
+            "damage": "1d12",
+            "damageType": "electricity",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "agile",
+            "finesse"
+          ],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        }
+      },
+      "type": "melee",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!wv0hiJIGQjTU1pnO.ozywltVfeeRvEgor"
+    },
+    {
+      "_id": "IFBwgiXBfRM7tF8Q",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Eel Dart",
+      "sort": 200000,
+      "system": {
+        "attackEffects": {
+          "value": []
+        },
+        "bonus": {
+          "value": 21
+        },
+        "damageRolls": {
+          "0": {
+            "damage": "1d6+7",
+            "damageType": "piercing",
+            "category": null
+          },
+          "wyn9lhqgpbjsjmgxgh7w": {
+            "damage": "1d12",
+            "damageType": "electricity",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "agile",
+            "thrown-20"
+          ],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        }
+      },
+      "type": "melee",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!wv0hiJIGQjTU1pnO.IFBwgiXBfRM7tF8Q"
+    },
+    {
+      "_id": "2ERFu4hiXliGhhKj",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.9qV49KjZujZnSp6w"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "All-Around Vision",
+      "sort": 300000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AllAroundVision]</p>"
+        },
+        "rules": [
+          {
+            "key": "ActiveEffectLike",
+            "mode": "override",
+            "path": "system.attributes.flanking.flankable",
+            "value": false
+          }
+        ],
+        "slug": "all-around-vision",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.9qV49KjZujZnSp6w",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!wv0hiJIGQjTU1pnO.2ERFu4hiXliGhhKj"
+    },
+    {
+      "_id": "kqcQU0n1PhfM4fgW",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.baA0nSMhQyFyJIia"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Swarm Mind",
+      "sort": 400000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.SwarmMind]</p>"
+        },
+        "rules": [],
+        "slug": "swarm-mind",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.baA0nSMhQyFyJIia",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!wv0hiJIGQjTU1pnO.kqcQU0n1PhfM4fgW"
+    },
+    {
+      "_id": "KUErEL0JPCYaIeu0",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Electrical Field",
+      "sort": 500000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>5 feet. @Damage[1d12[electricity]] damage (@Check[type:reflex|dc:26|basic:true])</p>"
+        },
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 5,
+            "slug": "electrical-field",
+            "traits": [
+              "electricity"
+            ]
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "aura",
+            "electricity"
+          ]
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!wv0hiJIGQjTU1pnO.KUErEL0JPCYaIeu0"
+    },
+    {
+      "_id": "pRXjlEM0YDK7HrCS",
+      "img": "systems/pf2e/icons/actions/TwoActions.webp",
+      "name": "Squirming Embrace",
+      "sort": 600000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The galvo Strides, ending its movement sharing a space with another creature, and deals @Damage[3d6[piercing],2d12[electricity]]{3d6 piercing damage plus 2d12 electricity damage} to the creature. The creature must attempt a @Check[type:reflex|dc:28|basic:true] save.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!wv0hiJIGQjTU1pnO.pRXjlEM0YDK7HrCS"
+    },
+    {
+      "_id": "1Ld61yL8VIWBvakX",
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "name": "Swarm Shape",
+      "sort": 700000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The galvo collapses into a shapeless swarm of eels. It drops all held, worn, and carried items. While discorporated, the galvo can't use attack actions, but it can move through areas small enough for its individual eels to fit without having to @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze}. It can use Swarm Shape again to coalesce back into its normal form.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate"
+          ]
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 1
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!wv0hiJIGQjTU1pnO.1Ld61yL8VIWBvakX"
+    }
+  ],
+  "name": "Galvo",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 158,
+        "temp": 0,
+        "max": 158,
+        "details": ""
+      },
+      "speed": {
+        "value": 20,
+        "otherSpeeds": [
+          {
+            "type": "swim",
+            "value": 30
+          }
+        ],
+        "details": ""
+      },
+      "ac": {
+        "value": 27,
+        "details": "all-around vision"
+      },
+      "allSaves": {
+        "value": ""
+      },
+      "immunities": [
+        {
+          "type": "precision"
+        },
+        {
+          "type": "swarm-mind"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "bludgeoning",
+          "value": 5
+        },
+        {
+          "type": "electricity",
+          "value": 12
+        },
+        {
+          "type": "piercing",
+          "value": 8
+        },
+        {
+          "type": "slashing",
+          "value": 8
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "area-damage",
+          "value": 8
+        },
+        {
+          "type": "splash-damage",
+          "value": 8
+        }
+      ]
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [
+          "thalassic"
+        ],
+        "details": "(can't speak any language)"
+      },
+      "level": {
+        "value": 9
+      },
+      "blurb": "",
+      "publicNotes": "<p>A galvo is a bizarre humanoid creature made up of electric eels-dozens of them, transmogrified into one cooperative, electrified body. The story of their creation is lost to antiquity, though their propensity for attacking sea devils and alghollthus suggests they might have been engineered by some enemy of these creatures. Modern galvos aren't choosy about their prey, and because they can operate as well on land as they do in the water, they enjoy feasting on aquatic creatures and land dwellers alike.</p>\n<p>A galvo's body forms something roughly shaped like a human, but with eels continually moving throughout it and shifting the shape of its mass. The galvo can even disperse into a swarm of eels, though it usually does so only to travel through narrow spaces or otherwise accomplish things it's incapable of in its normal form.</p>\n<p>These component eels share some element of a collective consciousness, giving the galvo more intelligence than a typical animal. Individual galvos generally don't have any need for or interest in socializing, though they sometimes gather to collaborate while hunting.</p>\n<p>Electricity arcs throughout a galvo, and the more the eels that make it up move about, the larger and more impressive the electric display. This electricity creates a damaging field around the galvo that causes small fish and other sea life to drop dead. Many galvos contentedly snack on these prey. Even beyond the harmful field, underwater creatures feel a faint unease from galvos, and might notice how ferrous trinkets and sediment slowly drift toward them.</p>\n<p>A galvo attack could come from a lone creature or a small group. In addition to dangers of the electricity field generated by galvos' eels, galvos might attack by biting with their eels' maws or even firing off one of their eels like a dart, striking a distant target with a living, electrified projectile.</p>",
+      "privateNotes": "",
+      "publication": {
+        "title": "Pathfinder Bestiary 3",
+        "authors": "",
+        "license": "OGL",
+        "remaster": false
+      }
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.935,
+      "previous": {
+        "schema": 0.932,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 4
+      },
+      "dex": {
+        "mod": 6
+      },
+      "con": {
+        "mod": 3
+      },
+      "int": {
+        "mod": -2
+      },
+      "wis": {
+        "mod": 4
+      },
+      "cha": {
+        "mod": -1
+      }
+    },
+    "perception": {
+      "details": "",
+      "mod": 17,
+      "senses": [
+        {
+          "type": "darkvision"
+        }
+      ],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 18,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 21,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 15,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "acrobatics": {
+        "base": 19
+      },
+      "athletics": {
+        "base": 19
+      },
+      "stealth": {
+        "base": 19
+      }
+    },
+    "traits": {
+      "value": [
+        "aberration",
+        "amphibious",
+        "evil"
+      ],
+      "rarity": "common",
+      "size": {
+        "value": "med"
+      }
+    }
+  },
+  "type": "npc",
+  "_stats": {
+    "compendiumSource": "Compendium.pf2e.pathfinder-bestiary-3.Actor.wv0hiJIGQjTU1pnO",
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2"
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.pathfinder-bestiary-3.Actor.wv0hiJIGQjTU1pnO"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "Yb7GAnhzVbd5I9T9": 3
+  },
+  "sort": 0,
+  "_key": "!actors!wv0hiJIGQjTU1pnO"
+}

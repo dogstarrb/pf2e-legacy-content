@@ -1,0 +1,1100 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "name": "Mu Spore",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/npc.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      }
+    },
+    "randomImg": false
+  },
+  "_id": "VUJrPHKOjYkIQnWn",
+  "img": "systems/pf2e/icons/default-icons/npc.svg",
+  "items": [
+    {
+      "_id": "rGYOx7SHsrayrSsA",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Jaws",
+      "sort": 100000,
+      "system": {
+        "attackEffects": {
+          "value": [
+            "improved-grab"
+          ]
+        },
+        "bonus": {
+          "value": 40
+        },
+        "damageRolls": {
+          "h1baxzxwk0adq18a7lst": {
+            "damage": "4d12+18",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "deadly-3d12",
+            "reach-30"
+          ],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        }
+      },
+      "type": "melee",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.rGYOx7SHsrayrSsA"
+    },
+    {
+      "_id": "qfEnUMdNzlNIipCp",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Tentacle",
+      "sort": 200000,
+      "system": {
+        "attackEffects": {
+          "value": [
+            "improved-grab"
+          ]
+        },
+        "bonus": {
+          "value": 40
+        },
+        "damageRolls": {
+          "10l0p7meojfaz1586cra": {
+            "damage": "4d10+18",
+            "damageType": "bludgeoning",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "agile",
+            "reach-100"
+          ],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        }
+      },
+      "type": "melee",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.qfEnUMdNzlNIipCp"
+    },
+    {
+      "_id": "Fzou6YacIfdWk8Rx",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Windsense 240 feet",
+      "sort": 300000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The mu spore senses vibrations in the air through its aerial spores.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "interaction",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.Fzou6YacIfdWk8Rx"
+    },
+    {
+      "_id": "82HFjbpYVotosFsA",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Regeneration 50 (Deactivated by Sonic)",
+      "sort": 400000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>"
+        },
+        "rules": [
+          {
+            "deactivatedBy": [
+              "sonic"
+            ],
+            "key": "FastHealing",
+            "type": "regeneration",
+            "value": 50
+          }
+        ],
+        "slug": "regeneration",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": true
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.82HFjbpYVotosFsA"
+    },
+    {
+      "_id": "JrkBo5yZM19wv3KX",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Enormous",
+      "sort": 500000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A mu spore is a massive creature and takes up a space of 10 squares by 10 squares (50 feet by 50 feet).</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.JrkBo5yZM19wv3KX"
+    },
+    {
+      "_id": "bZ4JNU36mcWHHrmR",
+      "img": "systems/pf2e/icons/actions/FreeAction.webp",
+      "name": "Grasping Tendrils",
+      "sort": 600000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> A creature within 10 feet of the mu spore moves or attacks the mu spore.</p>\n<hr />\n<p><strong>Effect</strong> The spore uses @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI]{Grab} on the triggering creature. There is no limit to how many creatures it can grab with the sticky tendrils that cover its body.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.bZ4JNU36mcWHHrmR"
+    },
+    {
+      "_id": "VJqYJwxq4m0v6j2M",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Spores",
+      "sort": 700000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>60 feet. A living creature that enters the area or ends its turn within it is corrupted by spores. It must succeed at a @Check[type:fortitude|dc:42] save or be @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}, and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round. Fungi and plants are immune.</p>"
+        },
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 60,
+            "slug": "spores",
+            "traits": []
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "aura"
+          ]
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.VJqYJwxq4m0v6j2M"
+    },
+    {
+      "_id": "Xm0r5sx1GTiEAKc4",
+      "img": "systems/pf2e/icons/actions/TwoActions.webp",
+      "name": "Cough Spores",
+      "sort": 800000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The mu spore releases a cloud of burrowing spores in a @Template[type:cone|distance:400]. The spores deal @Damage[22d6[piercing]] damage to all creatures, objects, and wooden structures in the area, but not to plants or fungi (@Check[type:reflex|dc:46|basic:true] save).</p>\n<p>The mu spore can't use this ability again for [[/br 1d4 #Recharge Cough Spores]]{1d4 rounds}.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.Xm0r5sx1GTiEAKc4"
+    },
+    {
+      "_id": "S9z7EwyzhGnCFZDI",
+      "img": "systems/pf2e/icons/actions/TwoActions.webp",
+      "name": "Enormous Inhalation",
+      "sort": 900000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The mu spore pulls all creatures and objects in a @Template[type:cone|distance:400] 400 feet towards it's mouth. A successful @Check[type:fortitude|dc:43] save halves the distance, or avoids the pull on a critical success. The mu spore automatically attempts to Swallow Whole each creature adjacent to it at the end of the inhalation.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.S9z7EwyzhGnCFZDI"
+    },
+    {
+      "_id": "bjN59WI6VS1niQFU",
+      "img": "systems/pf2e/icons/actions/Reaction.webp",
+      "name": "Fast Swallow",
+      "sort": 1000000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> The mu spore @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabs} a creature with its jaws.</p>\n<hr />\n<p><strong>Effect</strong> The spore uses Swallow Whole.</p>"
+        },
+        "rules": [],
+        "slug": "fast-swallow",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "reaction"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.bjN59WI6VS1niQFU"
+    },
+    {
+      "_id": "fSUvadSPPhS9kOAB",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "name": "Greater Constrict",
+      "sort": 1100000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Damage[15[bludgeoning]] damage, @Check[type:fortitude|dc:45|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+        },
+        "rules": [],
+        "slug": "greater-constrict",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 1
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.OmV6E3aELvq9CkK1",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.fSUvadSPPhS9kOAB"
+    },
+    {
+      "_id": "zpUaHpTkfVbbw7sX",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Overpowering Jaws",
+      "sort": 1200000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The mu spore still deals @Damage[18[piercing]] damage if its jaws Strike is a failure</p>"
+        },
+        "rules": [
+          {
+            "key": "Note",
+            "outcome": [
+              "failure"
+            ],
+            "selector": "jaws-attack",
+            "text": "{item|system.description.value}",
+            "title": "{item|name}",
+            "visibility": "owner"
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.zpUaHpTkfVbbw7sX"
+    },
+    {
+      "_id": "lYUnEWGhnlYFvH6B",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "name": "Swallow Whole",
+      "sort": 1300000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Gargantuan, @Damage[(20d6+9)[acid]] damage, Rupture 37.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+        },
+        "rules": [],
+        "slug": "swallow-whole",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "attack"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 1
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.lYUnEWGhnlYFvH6B"
+    },
+    {
+      "_id": "Sjf1HpLuxn9U6lr2",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/FreeAction.webp",
+      "name": "Improved Grab",
+      "sort": 1400000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedGrab]</p>"
+        },
+        "rules": [],
+        "slug": "improved-grab",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.i18TlebMzwONyPhI",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!VUJrPHKOjYkIQnWn.Sjf1HpLuxn9U6lr2"
+    }
+  ],
+  "name": "Mu Spore",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 350,
+        "temp": 0,
+        "max": 350,
+        "details": "regeneration 50 (deactivated by sonic)"
+      },
+      "speed": {
+        "value": 40,
+        "otherSpeeds": [
+          {
+            "type": "fly",
+            "value": 50
+          }
+        ],
+        "details": ""
+      },
+      "ac": {
+        "value": 45,
+        "details": ""
+      },
+      "allSaves": {
+        "value": ""
+      },
+      "resistances": [
+        {
+          "type": "acid",
+          "value": 20
+        },
+        {
+          "exceptions": [
+            "sonic"
+          ],
+          "type": "all-damage",
+          "value": 10
+        }
+      ]
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [
+          "aklo",
+          "common",
+          "petran",
+          "sakvroth"
+        ],
+        "details": ""
+      },
+      "level": {
+        "value": 21
+      },
+      "blurb": "",
+      "publicNotes": "<p>A mu spore is a thankfully rare fungoid monstrosity of vast power and strange intellect. Even the smallest mu spores are never less than a hundred feet long from tentacle tip to tentacle tip, yet despite this vast bulk, they are capable of flying with an uncommon grace, venting jets of foul-smelling spores to guide their flight.</p>\n<p>Many societies tell tales of vast mu spores appearing over cities at the dawn of apocalyptic events, but they're more than just ravenous eaters of nations. Mu spores often possess rare or esoteric knowledge, and if peaceful contact can be made, this lore can be quite valuable. Their spores can also be used to craft certain foul drugs or deadly alchemical poisons, but harvesting these ingredients is dangerous, as the spores are not viable for long once they've been shed, forcing alchemists seeking to harvest them to operate in perilously close proximity to the abominations.</p>",
+      "privateNotes": "",
+      "publication": {
+        "title": "Pathfinder Bestiary",
+        "authors": "",
+        "license": "OGL",
+        "remaster": false
+      }
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.935,
+      "previous": {
+        "schema": 0.932,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 10
+      },
+      "dex": {
+        "mod": 3
+      },
+      "con": {
+        "mod": 9
+      },
+      "int": {
+        "mod": 4
+      },
+      "wis": {
+        "mod": 9
+      },
+      "cha": {
+        "mod": 9
+      }
+    },
+    "perception": {
+      "details": "windsense 240 feet",
+      "mod": 36,
+      "senses": [
+        {
+          "type": "low-light-vision"
+        }
+      ],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 38,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 32,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 38,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "acrobatics": {
+        "base": 26
+      },
+      "athletics": {
+        "base": 41
+      },
+      "nature": {
+        "base": 38
+      },
+      "occultism": {
+        "base": 36
+      }
+    },
+    "traits": {
+      "value": [
+        "chaotic",
+        "fungus"
+      ],
+      "rarity": "common",
+      "size": {
+        "value": "grg"
+      }
+    }
+  },
+  "type": "npc",
+  "_stats": {
+    "compendiumSource": "Compendium.pf2e.pathfinder-bestiary.Actor.VUJrPHKOjYkIQnWn",
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2"
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.pathfinder-bestiary.Actor.VUJrPHKOjYkIQnWn"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "Yb7GAnhzVbd5I9T9": 3
+  },
+  "sort": 0,
+  "_key": "!actors!VUJrPHKOjYkIQnWn"
+}

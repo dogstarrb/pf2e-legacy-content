@@ -1,0 +1,910 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "name": "Thunderbird",
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/npc.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      }
+    },
+    "randomImg": false
+  },
+  "_id": "fpBJiCOoHDlefgpO",
+  "img": "systems/pf2e/icons/default-icons/npc.svg",
+  "items": [
+    {
+      "_id": "oeKkvXrgefM5UhPG",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05"
+        }
+      },
+      "img": "icons/magic/lightning/bolts-salvo-clouds-sky.webp",
+      "name": "Control Weather",
+      "sort": 100000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You alter the weather, making it calm and normal for the season or choosing up to two effects based on the season.</p>\n<p>You can't specifically control the manifestations, such as the exact path of a tornado or the targets of lightning strikes.</p>\n<ul>\n<li><strong>Autumn</strong> cold weather, fog, mild heat, sleet</li>\n<li><strong>Spring</strong> drizzle, heat, hurricane, sleet, thunderstorm, tornado</li>\n<li><strong>Summer</strong> drizzle, downpour, extreme heat, hail, heat</li>\n<li><strong>Winter</strong> blizzard, mild cold, extreme cold, thaw</li>\n</ul>\n<hr />\n<p><strong>Critical Success</strong> You change the weather as desired and can affect a larger area (up to a 5-mile-radius circle), or a longer duration (any number of additional d12 hours, up to 16d12).</p>\n<p><strong>Success</strong> You change the weather as desired.</p>\n<p><strong>Failure</strong> You fail to change the weather as desired.</p>\n<p><strong>Critical Failure</strong> The weather changes in an unanticipated way, determined by the GM but generally as contradictory to your true desires as possible (for instance, a terrible storm emerges when you would prefer good weather).</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can create unseasonable weather and contradictory weather effects, such as extreme cold and a hurricane. You can make the weather calm and normal weather for a different season or choose weather effects from any season's list.</p>"
+        },
+        "rules": [],
+        "slug": "control-weather",
+        "_migration": {
+          "version": 0.935,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "uncommon",
+          "traditions": []
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 8
+        },
+        "requirements": "",
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": ""
+        },
+        "area": null,
+        "time": {
+          "value": "1 day"
+        },
+        "duration": {
+          "value": "4d12 hours",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": null,
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": null
+        },
+        "counteraction": false,
+        "ritual": {
+          "primary": {
+            "check": "Nature (master)"
+          },
+          "secondary": {
+            "casters": 1,
+            "checks": "Survival"
+          }
+        }
+      },
+      "type": "spell",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.XkDCzMIyc0YOjw05",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_key": "!actors.items!fpBJiCOoHDlefgpO.oeKkvXrgefM5UhPG"
+    },
+    {
+      "_id": "weN7yMZk4CWGAypb",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Beak",
+      "sort": 200000,
+      "system": {
+        "attackEffects": {
+          "value": []
+        },
+        "bonus": {
+          "value": 24
+        },
+        "damageRolls": {
+          "1547pusm81kglm93klt4": {
+            "damage": "2d6+12",
+            "damageType": "piercing",
+            "category": null
+          },
+          "pinzll2yhzptobv7xyyz": {
+            "damage": "3d6",
+            "damageType": "electricity",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        }
+      },
+      "type": "melee",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!fpBJiCOoHDlefgpO.weN7yMZk4CWGAypb"
+    },
+    {
+      "_id": "GcML4HwZyqVy7XVw",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Talon",
+      "sort": 300000,
+      "system": {
+        "attackEffects": {
+          "value": []
+        },
+        "bonus": {
+          "value": 24
+        },
+        "damageRolls": {
+          "4qemjkt5wdytl5ospcnc": {
+            "damage": "2d8+12",
+            "damageType": "slashing",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "agile"
+          ],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        }
+      },
+      "type": "melee",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!fpBJiCOoHDlefgpO.GcML4HwZyqVy7XVw"
+    },
+    {
+      "_id": "tZ28zS8D4Ibrkmjl",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Thunderbolt",
+      "sort": 400000,
+      "system": {
+        "attackEffects": {
+          "value": [
+            "thunderstrike"
+          ]
+        },
+        "bonus": {
+          "value": 23
+        },
+        "damageRolls": {
+          "ymv26g275ppzc5xkmy8f": {
+            "damage": "3d6",
+            "damageType": "electricity",
+            "category": null
+          },
+          "h722qh238fu6bm5aq3jo": {
+            "damage": "3d6",
+            "damageType": "sonic",
+            "category": null
+          }
+        },
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "license": "OGL",
+          "remaster": false,
+          "title": "",
+          "authors": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "range-increment-200"
+          ],
+          "otherTags": []
+        },
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        }
+      },
+      "type": "melee",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!fpBJiCOoHDlefgpO.tZ28zS8D4Ibrkmjl"
+    },
+    {
+      "_id": "Jd5I0ORcv8JckftL",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Stormsight",
+      "sort": 500000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Wind, precipitation, and clouds don't impair a thunderbird's vision; it ignores the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition from storms, mist, precipitation, and the like.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "interaction",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!fpBJiCOoHDlefgpO.Jd5I0ORcv8JckftL"
+    },
+    {
+      "_id": "Jw5v3XqSesAoiBsp",
+      "img": "systems/pf2e/icons/actions/Reaction.webp",
+      "name": "Reactive Shock",
+      "sort": 600000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> A creature enters the thunderbird's reach or uses a move action within their reach</p>\n<hr />\n<p><strong>Effect</strong> A lightning bolt dancing on the thunderbird's body leaps onto the creature, dealing @Damage[8d6[electricity]] damage (@Check[type:reflex|dc:30|basic:true] save).</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "move"
+          ]
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "reaction"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!fpBJiCOoHDlefgpO.Jw5v3XqSesAoiBsp"
+    },
+    {
+      "_id": "IoE3s3hLaVewsjSQ",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Storm Aura",
+      "sort": 700000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>100 feet. The thunderbird is surrounded by a cyclone of wind and driving rain. This area is greater difficult terrain for flying creatures, who must successfully @UUID[Compendium.pf2e.actionspf2e.Item.Qf1ylAbdVi1rkc8M]{Maneuver in Flight} (DC 27) or be blown 30 feet away from the thunderbird. Creatures on the ground must succeed at a @Check[type:reflex|dc:27] save to perform any move action and are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} on a critical failure.</p>\n<p>The driving rain in the storm aura imposes a -2 circumstance penalty on Perception checks and extinguishes smaller flames.</p>\n<p>A thunderbird can deactivate or activate the storm aura as a free action with the concentrate trait.</p>"
+        },
+        "rules": [
+          {
+            "key": "Aura",
+            "radius": 100,
+            "slug": "storm-aura",
+            "traits": [
+              "air",
+              "primal",
+              "water",
+              "move",
+              "concentrate"
+            ]
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "air",
+            "aura",
+            "concentrate",
+            "move",
+            "primal",
+            "water"
+          ]
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!fpBJiCOoHDlefgpO.IoE3s3hLaVewsjSQ"
+    },
+    {
+      "_id": "4BH9uwuYigIuBuzB",
+      "img": "systems/pf2e/icons/actions/TwoActions.webp",
+      "name": "Lightning Blast",
+      "sort": 800000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The thunderbird spreads their wings and blasts their foe with thunderous bolts of lightning. Each creature in a @Template[type:emanation|distance:30] takes @Damage[6d6[electricity]] damage and @Damage[6d6[sonic]] damage (@Check[type:reflex|dc:30|basic:true] save). The thunderbird can't use Lightning Blast for [[/br 1d4 #Recharge Lightning Blast]]{1d4 rounds}.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "primal"
+          ]
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!fpBJiCOoHDlefgpO.4BH9uwuYigIuBuzB"
+    },
+    {
+      "_id": "LcmY1jYUhcSTLbed",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Stormflight",
+      "sort": 900000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A thunderbird can move in wind with ease. They don't treat wind as difficult terrain or need to @UUID[Compendium.pf2e.actionspf2e.Item.Qf1ylAbdVi1rkc8M]{Maneuver in Flight} in high winds.</p>"
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!fpBJiCOoHDlefgpO.LcmY1jYUhcSTLbed"
+    },
+    {
+      "_id": "KBUEqfW6m7bI5a0g",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Thunderstrike",
+      "sort": 1000000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A creature that takes damage from a thunderbird's thunderbolt Strike must succeed at a @Check[type:fortitude|dc:28] save or be knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>"
+        },
+        "rules": [],
+        "slug": "thunderstrike",
+        "_migration": {
+          "version": 0.935,
+          "previous": {
+            "schema": 0.932,
+            "foundry": "12.331",
+            "system": "6.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.7.2"
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_key": "!actors.items!fpBJiCOoHDlefgpO.KBUEqfW6m7bI5a0g"
+    }
+  ],
+  "name": "Thunderbird",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 200,
+        "temp": 0,
+        "max": 200,
+        "details": ""
+      },
+      "speed": {
+        "value": 25,
+        "otherSpeeds": [
+          {
+            "type": "fly",
+            "value": 80
+          }
+        ],
+        "details": ""
+      },
+      "ac": {
+        "value": 31,
+        "details": ""
+      },
+      "allSaves": {
+        "value": ""
+      },
+      "immunities": [
+        {
+          "type": "electricity"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "sonic",
+          "value": 10
+        }
+      ]
+    },
+    "initiative": {
+      "statistic": "perception"
+    },
+    "details": {
+      "languages": {
+        "value": [
+          "common",
+          "sussuran"
+        ],
+        "details": ""
+      },
+      "level": {
+        "value": 11
+      },
+      "blurb": "",
+      "publicNotes": "<p>Thunderbirds bring storms on their wings. In times of drought, they are welcomed. Other times, they are offered gifts in hopes they might leave before flooding begins. When angered, they call down hurricanes and lay waste to entire villages, so many settlements conduct extensive rites to appease and honor local thunderbirds.</p>\n<p>Thunderbird parents carry their newly hatched offspring to hidden mountaintop nests, where the young are struck by their first bolts of lightning and learn the mysteries of the storm.</p>",
+      "privateNotes": "",
+      "publication": {
+        "title": "Pathfinder Bestiary 2",
+        "authors": "",
+        "license": "OGL",
+        "remaster": false
+      }
+    },
+    "resources": {
+      "focus": {
+        "max": 1,
+        "value": 1
+      }
+    },
+    "_migration": {
+      "version": 0.935,
+      "previous": {
+        "schema": 0.932,
+        "foundry": "12.331",
+        "system": "6.7.2"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 8
+      },
+      "dex": {
+        "mod": 3
+      },
+      "con": {
+        "mod": 7
+      },
+      "int": {
+        "mod": 3
+      },
+      "wis": {
+        "mod": 5
+      },
+      "cha": {
+        "mod": 3
+      }
+    },
+    "perception": {
+      "details": "stormsight",
+      "mod": 22,
+      "senses": [
+        {
+          "type": "darkvision"
+        }
+      ],
+      "vision": true
+    },
+    "saves": {
+      "fortitude": {
+        "value": 24,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 20,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 22,
+        "saveDetail": ""
+      }
+    },
+    "skills": {
+      "acrobatics": {
+        "base": 22
+      },
+      "athletics": {
+        "base": 23
+      },
+      "intimidation": {
+        "base": 20
+      },
+      "nature": {
+        "base": 20
+      }
+    },
+    "traits": {
+      "value": [
+        "air",
+        "beast",
+        "electricity"
+      ],
+      "rarity": "uncommon",
+      "size": {
+        "value": "grg"
+      }
+    },
+    "spellcasting": {
+      "rituals": {
+        "dc": 30
+      }
+    }
+  },
+  "type": "npc",
+  "_stats": {
+    "compendiumSource": "Compendium.pf2e.pathfinder-bestiary-2.Actor.fpBJiCOoHDlefgpO",
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.7.2"
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.pathfinder-bestiary-2.Actor.fpBJiCOoHDlefgpO"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "Yb7GAnhzVbd5I9T9": 3
+  },
+  "sort": 0,
+  "_key": "!actors!fpBJiCOoHDlefgpO"
+}
